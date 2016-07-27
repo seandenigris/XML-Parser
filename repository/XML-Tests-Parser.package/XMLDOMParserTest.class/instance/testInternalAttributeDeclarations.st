@@ -21,6 +21,6 @@ testInternalAttributeDeclarations
 	self
 		assert: secondAttribute element = 'root';
 		assert: secondAttribute attribute = 'number';
-		assert: secondAttribute type = '(one |two |three )';
+		assert: secondAttribute type = '(one|two|three)';
 		assert: secondAttribute defaultPragma isEmpty;
 		assert: secondAttribute defaultValue = 'three'.

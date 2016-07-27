@@ -27,10 +27,10 @@ testElementMixedContentDeclaration
 		should: [
 			XMLDOMParser parse: "missing *"
 				'<!DOCTYPE root [<!ELEMENT root (#PCDATA|one)>]><root/>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	'+*?,' do: [:each |
 		self
 			should: [
 				XMLDOMParser parse:
 					'<!DOCTYPE root [<!ELEMENT two (#PCDATA', each asString, ')>]><root/>']
-			raise: XMLValidationException].
+			raise: XMLWellFormednessException].

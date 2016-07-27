@@ -2,20 +2,20 @@ tests
 testInvalidElementContentModels
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root ()>]>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root (one,)>]>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root (one|)>]>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root (one)(two)>]>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root (one|,two)>]>']
-		raise: XMLValidationException.
+		raise: XMLWellFormednessException.
 	'|,?*+' do: [:each |
 		self
 			should: [SAXHandler parse: '<!DOCTYPE root [<!ELEMENT root (', each asString, 'one)>]>']
-			raise: XMLValidationException].
+			raise: XMLWellFormednessException].
