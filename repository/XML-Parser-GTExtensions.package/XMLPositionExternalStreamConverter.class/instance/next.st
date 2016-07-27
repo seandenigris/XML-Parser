@@ -1,4 +1,6 @@
 private 
 next
 	^ streamReader next
-		ifNotNil: [:nextChar | outputStream nextPut: nextChar]
+		ifNotNil: [:nextChar |
+			outputStream nextPut: nextChar.
+			nextChar]

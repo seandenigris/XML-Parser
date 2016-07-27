@@ -14,7 +14,7 @@ addOrderedListTableToComposite: aComposite paneTitle: aPaneTitle columnTitle: aC
 				for: each value
 				logged: false];
 		column: 'Index' evaluated: [:assoc | assoc key printString];
-		column: aColumnTitle evaluated: [:assoc | assoc value treeNodeLabelText];
+		column: aColumnTitle evaluated: [:assoc | assoc value printString];
 		send: [:result |
 			result ifNotNil: [
 				result value size = 1 
