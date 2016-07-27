@@ -1,0 +1,3 @@
+tests
+test01emptyNodeWithElements
+	self assertNodeHasNoChildren: XMLMockNodeWithElements new

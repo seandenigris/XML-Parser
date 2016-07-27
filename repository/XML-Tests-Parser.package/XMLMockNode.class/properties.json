@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Tests-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XMLMockNode",
+	"pools" : [
+		 ],
+	"super" : "XMLNode",
+	"type" : "normal" }

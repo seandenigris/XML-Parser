@@ -1,0 +1,3 @@
+test - creation
+collectionClass
+	^ XMLOrderedList

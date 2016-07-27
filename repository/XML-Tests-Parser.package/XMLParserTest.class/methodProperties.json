@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addressBookXML" : "AlexandreBergel 1/29/2009 11:49",
+		"addressBookXMLWithDTD" : "AlexandreBergel 1/29/2009 11:49",
+		"benchmark1" : "JAAyer 10/20/2010 11:39",
+		"benchmark2" : "JAAyer 10/18/2010 08:15",
+		"benchmark3" : "JAAyer 10/18/2010 08:15",
+		"benchmark4" : "JAAyer 10/18/2010 08:18",
+		"exampleCDATASectionXML" : "jvds 8/9/2010 11:03",
+		"exampleEncodedXML" : "DamienPollet 5/16/2010 19:25",
+		"testCDATASection" : "JAAyer 10/15/2010 13:00",
+		"testDecodingCharacters" : "JAAyer 9/20/2010 17:40",
+		"testExampleAddressBook" : "JAAyer 3/11/2010 09:06",
+		"testExampleAddressBookWithDTD" : "JAAyer 3/11/2010 09:04",
+		"testLineEndingsDoNotMatter" : "JAAyer 8/11/2010 21:19",
+		"testParsing" : "JAAyer 8/11/2010 21:19",
+		"testParsingCharacters" : "JAAyer 3/14/2010 12:54",
+		"testTokenizerAddressBook" : "JAAyer 3/11/2010 09:06",
+		"testTokenizerAddressBookWithDTD" : "JAAyer 3/11/2010 09:06" } }

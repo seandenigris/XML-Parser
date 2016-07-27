@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assertAttribute:hasName:value:" : "JAAyer 10/30/2010 21:02",
+		"assertCData:hasString:" : "JAAyer 10/29/2010 16:30",
+		"assertComment:hasString:" : "JAAyer 10/29/2010 06:21",
+		"assertNode:canNotifyNodes:" : "JAAyer 10/28/2010 21:29",
+		"assertPI:hasTarget:data:" : "JAAyer 10/28/2010 21:19",
+		"assertStringNode:hasString:printString:" : "JAAyer 10/29/2010 00:30",
+		"test1basicNodeProtocol" : "JAAyer 11/15/2010 05:02",
+		"test2nodeNotification" : "JAAyer 11/6/2010 00:05",
+		"test3processingInstructionNodes" : "JAAyer 11/6/2010 00:03",
+		"test4stringNodes" : "JAAyer 11/6/2010 00:03",
+		"test5cdataNode" : "JAAyer 11/6/2010 00:03",
+		"test6commentNodes" : "JAAyer 11/6/2010 00:03",
+		"test7attributeNodes" : "JAAyer 11/6/2010 00:03" } }

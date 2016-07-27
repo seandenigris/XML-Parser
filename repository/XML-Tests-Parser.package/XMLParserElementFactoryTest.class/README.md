@@ -1,0 +1,1 @@
+This class tests the pluggable element factory.
