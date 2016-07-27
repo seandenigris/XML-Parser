@@ -9,7 +9,7 @@ testAttributeDefaultDeclaration
 						three CDATA #FIXED "fixedDefault"
 						three CDATA #FIXED "redundant"
 						four CDATA "default" >]>'.
-	document := XMLDOMParser parse: dtd, '<root two="required" three="nonDefault" />'.
+	document := XMLDOMParser parse: dtd, '<root two=''required'' three="nonDefault" />'.
 	self
 		assert: (document root attributeAt: 'two') = 'required';
 		deny: (document root includesAttribute: 'one');

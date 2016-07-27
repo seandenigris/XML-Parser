@@ -2,10 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
+		"benchmark1" : "monty 2/5/2014 23:10",
+		"benchmark2" : "monty 2/5/2014 23:07",
 		"testDecodingCharacters" : "monty 2/4/2014 02:50",
 		"testHTMLEntities" : "monty 2/3/2014 22:48",
+		"testParsingAttributes" : "monty 2/6/2014 03:56",
+		"testParsingForms" : "monty 2/6/2014 18:46",
 		"testParsingInvalidPCData" : "monty 2/4/2014 02:50",
 		"testParsingNonHTMLSections" : "monty 1/16/2014 05:09",
+		"testParsingTables" : "monty 2/5/2014 23:45",
 		"testParsingText" : "monty 12/11/2013 22:00",
 		"testParsingVoidElements" : "monty 12/11/2013 22:03",
 		"testParsingXML" : "monty 2/3/2014 22:53",
