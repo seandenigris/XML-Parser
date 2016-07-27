@@ -5,11 +5,11 @@ pushBackEntity: anEntity onClose: aBlock
 			aBlock ifNotNil: [aBlock value].
 			^ self].
 
-	self addActiveEntity: anEntity.
+	self addPushedBackEntity: anEntity.
 	streamReader
 		pushBackStream: anEntity replacementStream
 		onClose: [
-			self removeActiveEntity: anEntity.
+			self removePushedBackEntity: anEntity.
 			aBlock ifNotNil: [aBlock value]].
 
 	anEntity isExternal

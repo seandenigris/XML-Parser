@@ -1,6 +1,6 @@
 initialization
 on: aStream
 	stream :=
-		aStream isConvertingStreamAdapter
+		aStream isXMLConvertingStreamAdapter
 			ifTrue: [aStream stream]
 			ifFalse: [aStream]

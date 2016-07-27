@@ -1,3 +1,3 @@
 testing
 hasHost
-	^ self host notEmpty
+	^ self rawHost notEmpty

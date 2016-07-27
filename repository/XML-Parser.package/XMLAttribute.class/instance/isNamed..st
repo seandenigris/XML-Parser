@@ -1,5 +1,5 @@
 testing
 isNamed: aName
 	^ aName
-		isQualifiedName: self name
+		isXMLQualifiedName: self name
 		orLocalName: self localName

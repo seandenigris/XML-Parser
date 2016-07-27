@@ -3,7 +3,7 @@ handleGeneralEntityDeclaration: aName replacement: aReplacement
 	self doctypeDefinition
 		addGeneralEntity: aName
 		replacement: aReplacement
-		from: self currentURI.
+		from: self baseURI.
 
 	self saxHandler
 		generalEntityDeclaration: aName

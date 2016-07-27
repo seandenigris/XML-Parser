@@ -2,7 +2,9 @@ tokenizing - dtd
 nextIgnoreSection
 	| openSections |
 
-	self expectNextAll: 'GNORE'.
+	self
+		expectNextAll: 'IGNORE'
+		startingAt: 2. "the 'I' was already read"
 	streamReader skipSeparators.
 	self expectNext: $[.
 

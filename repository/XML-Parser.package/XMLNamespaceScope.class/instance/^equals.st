@@ -2,6 +2,7 @@ comparing
 = anObject
 	self == anObject
 		ifTrue: [^ true].
+
 	self species == anObject species
 		ifFalse: [^ false].
 

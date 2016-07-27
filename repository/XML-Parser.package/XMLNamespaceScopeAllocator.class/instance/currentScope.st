@@ -1,3 +1,3 @@
 accessing
 currentScope
-	^ self scopes lastOrNil ifNil: [self emptyScope]
+	^ self scopes xmlLastOrNil ifNil: [self emptyScope]

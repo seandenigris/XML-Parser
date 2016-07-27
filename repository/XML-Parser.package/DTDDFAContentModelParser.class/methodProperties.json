@@ -1,19 +1,16 @@
 {
 	"class" : {
-		"initialize" : "monty 2/20/2016 02:43",
+		"initialize" : "monty 4/1/2016 22:59",
 		"initializeOperatorApplicators" : "monty 2/20/2016 02:42",
-		"initializeSpecialCharacterParsers" : "monty 2/20/2016 02:42" },
+		"initializeSpecialCharacterParsers" : "monty 4/1/2016 23:02" },
 	"instance" : {
-		"applyBinaryOperatorOnStack" : "monty 12/28/2013 19:46",
-		"applyOperator:" : "monty 12/30/2013 22:29",
-		"errorMismatchedParens" : "monty 12/18/2013 22:44",
-		"errorMissingOperand" : "monty 12/18/2013 22:44",
-		"hasOperatorOnStack" : "monty 11/2/2014 09:17",
-		"isBinaryOperator:higherPrecedenceThan:" : "monty 12/18/2013 22:44",
-		"parse" : "monty 11/10/2015 17:11",
-		"parseBinaryOperator:" : "monty 12/29/2013 02:23",
-		"parseParen:" : "monty 12/29/2013 02:24",
-		"parseUnaryOperator:" : "monty 12/29/2013 02:23",
+		"applyBinaryOperatorOnStack" : "monty 4/1/2016 21:40",
+		"applyOperator:" : "monty 4/1/2016 23:03",
+		"hasBinaryOperatorOnStack" : "monty 4/1/2016 21:44",
+		"parse" : "monty 4/2/2016 00:46",
+		"parseBinaryOperator:" : "monty 4/1/2016 21:39",
+		"parseClosingParenthesis:" : "monty 4/1/2016 23:02",
+		"parseOpeningParenthesis:" : "monty 4/1/2016 23:02",
+		"parseUnaryOperator:" : "monty 4/1/2016 21:39",
 		"parserForSpecialCharacter:" : "monty 1/8/2016 07:08",
-		"popParenthesizedOperators" : "monty 12/28/2013 23:02",
-		"popRemainingOperators" : "monty 12/18/2013 22:44" } }
+		"popRemainingBinaryOperators" : "monty 4/1/2016 21:44" } }

@@ -6,38 +6,37 @@ combinedWithRelativeURI: aRelativeURI
 	aRelativeURI hasUserInfo
 		ifTrue: [
 			^ copy
-				userInfo: aRelativeURI userInfo;
-				host: aRelativeURI host;
+				rawUserInfo: aRelativeURI rawUserInfo;
+				rawHost: aRelativeURI rawHost;
 				port: aRelativeURI port;
-				pathSegments: aRelativeURI pathSegments;
-				query: aRelativeURI query;
-				fragment: aRelativeURI fragment].
+				rawPathSegments: aRelativeURI rawPathSegments;
+				rawQuery: aRelativeURI rawQuery;
+				rawFragment: aRelativeURI rawFragment].
 	aRelativeURI hasHost
 		ifTrue: [
 			^ copy
-				host: aRelativeURI host;
+				rawHost: aRelativeURI rawHost;
 				port: aRelativeURI port;
-				pathSegments: aRelativeURI pathSegments;
-				query: aRelativeURI query;
-				fragment: aRelativeURI fragment].
+				rawPathSegments: aRelativeURI rawPathSegments;
+				rawQuery: aRelativeURI rawQuery;
+				rawFragment: aRelativeURI rawFragment].
 	aRelativeURI hasPort
 		ifTrue: [
 			^ copy
 				port: aRelativeURI port;
-				pathSegments: aRelativeURI pathSegments;
-				query: aRelativeURI query;
-				fragment: aRelativeURI fragment].
+				rawPathSegments: aRelativeURI rawPathSegments;
+				rawQuery: aRelativeURI rawQuery;
+				rawFragment: aRelativeURI rawFragment].
 	aRelativeURI hasPath
 		ifTrue: [
-			^ copy "copy path segments before modifying"
-				pathSegments: self pathSegments copy;
-				addPathSegmentsFrom: aRelativeURI;
-				query: aRelativeURI query;
-				fragment: aRelativeURI fragment].
+			^ copy
+				addRawPathSegmentsFrom: aRelativeURI;
+				rawQuery: aRelativeURI rawQuery;
+				rawFragment: aRelativeURI rawFragment].
 	aRelativeURI hasQuery
 		ifTrue: [
 			^ copy
-				query: aRelativeURI query;
-				fragment: aRelativeURI fragment].
+				rawQuery: aRelativeURI rawQuery;
+				rawFragment: aRelativeURI rawFragment].
 	aRelativeURI hasFragment
-		ifTrue: [^ copy fragment: aRelativeURI fragment].
+		ifTrue: [^ copy rawFragment: aRelativeURI rawFragment].

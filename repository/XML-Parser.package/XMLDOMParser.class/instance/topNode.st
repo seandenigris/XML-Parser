@@ -1,3 +1,3 @@
 private
 topNode
-	^ self nodeStack lastOrNil
+	^ self nodeStack xmlLastOrNil

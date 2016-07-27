@@ -1,6 +1,3 @@
 accessing
 pathSegments
-	"users should copy the return value before modifying it to preserve immutability"
-
-	self parseURIStringIfUnparsed.
-	^ pathSegments.
+	^ self rawPathSegments collect: [:each | self percentDecoded: each]

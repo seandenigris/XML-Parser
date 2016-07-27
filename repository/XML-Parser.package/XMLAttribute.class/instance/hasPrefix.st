@@ -1,3 +1,5 @@
 testing
 hasPrefix
-	^ self name hasPrefixBeforeLocalName
+	^ (self name
+		indexOf: $:
+		startingAt: 2) > 0

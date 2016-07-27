@@ -5,4 +5,6 @@ initialize
 	self
 		initializeNormalizedSpace;
 		initializePublicIDChars;
-		initializeEncodingNameChars
+		initializeEncodingNameStartChars;
+		initializeEncodingNameChars;
+		initializeVersionDigitChars

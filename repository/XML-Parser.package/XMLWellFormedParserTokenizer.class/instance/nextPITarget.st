@@ -7,7 +7,7 @@ nextPITarget
 			target = 'xml'
 				ifTrue: [
 					context isXMLDeclarationContext
-						ifFalse: [self errorXMLDeclarationNotAtBeginning]]
+						ifFalse: [self errorXMLDeclarationNotAtStart]]
 				ifFalse: [
 					target asLowercase = 'xml'
 						ifTrue: [self errorReservedPITarget: target]]].

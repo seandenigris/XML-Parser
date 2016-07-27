@@ -1,4 +1,3 @@
 accessing
 userInfo
-	self parseURIStringIfUnparsed.
-	^ userInfo.
+	^ self percentDecoded: self rawUserInfo

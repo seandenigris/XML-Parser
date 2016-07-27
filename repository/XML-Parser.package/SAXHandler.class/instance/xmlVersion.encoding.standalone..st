@@ -1,4 +1,4 @@
-handling - content
+handling - lexical
 xmlVersion: aVersionFloat encoding: anEncoding standalone: aBoolean
 	"Handles the '<?xml ...?>' declaration of a document.
 	

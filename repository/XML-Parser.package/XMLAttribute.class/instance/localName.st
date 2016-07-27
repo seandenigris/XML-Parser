@@ -1,3 +1,3 @@
 accessing
 localName
-	^ self name localNameAfterPrefix
+	^ self name xmlLocalNameAfterPrefix

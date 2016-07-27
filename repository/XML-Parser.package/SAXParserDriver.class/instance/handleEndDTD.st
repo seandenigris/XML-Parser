@@ -1,8 +1,6 @@
 handling - dtd
 handleEndDTD
-	(self resolvesExternalEntities
-		and: [self externalSubsetURI notEmpty
-			and: [self isValidating or: [self isStandalone not]]])
+	self hasExternalSubsetToParse
 		ifTrue: [self parseExternalSubset].
 
 	self saxHandler

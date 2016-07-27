@@ -1,17 +1,22 @@
 {
 	"class" : {
 		"new" : "monty 12/11/2014 05:39",
-		"new:" : "monty 12/11/2014 05:39" },
+		"new:" : "monty 12/11/2014 05:39",
+		"newFrom:" : "monty 3/29/2016 07:11" },
 	"instance" : {
-		"=" : "monty 11/12/2015 22:11",
+		"," : "monty 3/30/2016 05:25",
+		"=" : "monty 3/29/2016 06:53",
 		"add:" : "monty 12/28/2013 18:52",
 		"asDFAState" : "monty 4/25/2015 15:15",
 		"asDFAStateWithStateCache:" : "monty 4/16/2015 01:12",
+		"capacity" : "monty 3/29/2016 08:17",
 		"do:" : "monty 12/28/2013 18:47",
-		"hash" : "monty 12/28/2013 18:50",
+		"hash" : "monty 3/29/2016 07:00",
 		"includes:" : "monty 12/28/2013 18:48",
 		"initialize:" : "monty 12/11/2014 05:39",
 		"isAccepting" : "monty 12/28/2013 18:53",
-		"remove:ifAbsent:" : "monty 12/28/2013 18:46",
+		"postCopy" : "monty 3/29/2016 08:09",
+		"remove:ifAbsent:" : "monty 3/29/2016 08:28",
+		"removeAll" : "monty 4/2/2016 01:52",
 		"set" : "monty 12/28/2013 18:50",
 		"size" : "monty 12/28/2013 19:01" } }

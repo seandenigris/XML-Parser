@@ -4,7 +4,7 @@ validateAttributePrefixes: aDictionary
 	| namespacedAttributes |
 
 	aDictionary keysDo: [:each | | prefix |
-		(prefix := each prefixBeforeLocalName) size > 0 "optimization"
+		(prefix := each xmlPrefixBeforeLocalName) size > 0 "optimization"
 			ifTrue: [| namespace oldSize |
 				"not initialized unless needed"
 				namespacedAttributes
@@ -13,7 +13,8 @@ validateAttributePrefixes: aDictionary
 
 				"checking size after is faster than includes:"
 				oldSize := namespacedAttributes size.
-				namespacedAttributes add: namespace, (each localNameAfterPrefix: prefix).
-				namespacedAttributes size > oldSize
+				(namespacedAttributes
+					add: namespace, (each xmlLocalNameAfterPrefix: prefix);
+					size) > oldSize
 					ifFalse: [self errorAttribute: each aliasesNamespace: namespace]]
 			ifFalse: [self validateUnprefixedName: each]]

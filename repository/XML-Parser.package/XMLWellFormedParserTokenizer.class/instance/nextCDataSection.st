@@ -1,15 +1,16 @@
 tokenizing
 nextCDataSection
-	| wasTerminated |
+	| wasTerminated nextChar |
 
 	self expectNextAll: '[CDATA['.
 	writeStream reset.
 	wasTerminated := false.
 	[streamReader atEnd
-		or: [wasTerminated := streamReader nextMatchAll: ']]>']]
-		whileFalse: [| nextChar |
-			(nextChar := streamReader next) isXMLChar
-				ifFalse: [self errorNonCharInPCData: nextChar].
+		or: [(nextChar := streamReader next) == $]
+			and: [wasTerminated := streamReader nextMatch: $] followedBy: $>]]]
+		whileFalse: [
+			nextChar isXMLChar
+				ifFalse: [self errorNonCharInCDataSection: nextChar].
 			writeStream nextPut: nextChar].
 	wasTerminated
 		ifFalse: [self errorExpectedCDataSectionTerminator].

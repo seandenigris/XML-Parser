@@ -1,5 +1,6 @@
 accessing
-queryAt: aName ifAbsent: aBlock
-	^ self query
-		at: aName
-		ifAbsent: aBlock
+queryAt: aKey ifAbsent: aBlock
+	^ self percentAndPlusDecoded:
+		(self rawQuery
+			at: aKey
+			ifAbsent: [^ aBlock value])

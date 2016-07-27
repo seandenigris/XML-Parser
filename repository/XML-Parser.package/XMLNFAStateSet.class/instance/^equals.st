@@ -1,5 +1,14 @@
 comparing
 = anObject
-	^ self == anObject
-		or: [self species == anObject species
-			and: [set = anObject set]]
+	self == anObject
+		ifTrue: [^ true].
+
+	(self species == anObject species
+		and: [self size = anObject size])
+		ifFalse: [^ false].
+
+	"avoid allSatisfy: for speed"
+	self do: [:each |
+		(anObject includes: each)
+			ifFalse: [^ false]].
+	^ true.

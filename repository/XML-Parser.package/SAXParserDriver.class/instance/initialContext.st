@@ -1,3 +1,0 @@
-initialization
-initialContext
-	^ XMLXMLDeclarationContext new

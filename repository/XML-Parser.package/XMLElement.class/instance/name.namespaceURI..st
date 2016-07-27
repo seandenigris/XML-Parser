@@ -1,5 +1,5 @@
 accessing
 name: aQualifiedName namespaceURI: aURI
 	self
-		declarePrefix: (aQualifiedName prefixBeforeLocalName) uri: aURI;
+		declarePrefix: (aQualifiedName xmlPrefixBeforeLocalName) uri: aURI;
 		name: aQualifiedName

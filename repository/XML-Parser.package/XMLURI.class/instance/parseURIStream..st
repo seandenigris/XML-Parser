@@ -10,14 +10,14 @@ parseURIStream: aStream
 		or: [self hasAuthorityPrefix])
 		ifTrue: [
 			self
-				userInfo: parser parseUserInfo;
-				host: parser parseHost;
+				rawUserInfo: parser parseUserInfo;
+				rawHost: parser parseHost;
 				port: parser parsePort]
 		ifFalse: [
 			self
-				userInfo: '';
-				host: ''].
+				rawUserInfo: '';
+				rawHost: ''].
 	self
-		pathSegments: parser parsePathSegments;
-		query: parser parseQuery;
-		fragment: parser parseFragment.
+		rawPathSegments: parser parsePathSegments;
+		rawQuery: parser parseQuery;
+		rawFragment: parser parseFragment.

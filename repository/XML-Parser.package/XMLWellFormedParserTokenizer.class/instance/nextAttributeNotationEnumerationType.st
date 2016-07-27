@@ -2,9 +2,14 @@ tokenizing - dtd
 nextAttributeNotationEnumerationType
 	writeStream
 		reset;
-		nextPutAll: 'NOTATION '.
-	self expectSeparatorsInDeclaration.
-	writeStream nextPut: (self expectNext: $().
+		nextPutAll:
+			(self
+				expectNextAll: 'NOTATION'
+				startingAt: 2). "the 'N' was already read"
+	self
+		expectSeparatorsInDeclaration;
+		expectNext: $(.
+	writeStream nextPutAll: ' ('.
 
 	self
 		skipSeparatorsInDeclaration;

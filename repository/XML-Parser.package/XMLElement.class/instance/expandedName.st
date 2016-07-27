@@ -1,3 +1,3 @@
 accessing
 expandedName
-	^ self localName expandWithNamespaceURI: self namespaceURI
+	^ self localName expandWithXMLNamespaceURI: self namespaceURI

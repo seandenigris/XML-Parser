@@ -1,5 +1,5 @@
 testing
 isNamedAny: aNameCollection
 	^ aNameCollection
-		includesQualifiedName: self name
+		includesXMLQualifiedName: self name
 		orLocalName: self localName

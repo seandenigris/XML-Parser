@@ -3,7 +3,7 @@ parseScheme
 	| oldPosition scheme |
 
 	oldPosition := self position.
-	scheme := self nextPercentEncodedDelimitedBy: SchemeDelimiters.
+	scheme := self nextDelimitedBy: SchemeDelimiters.
 	(self peekFor: $:)
 		ifTrue: [^ scheme asLowercase]
 		ifFalse: [

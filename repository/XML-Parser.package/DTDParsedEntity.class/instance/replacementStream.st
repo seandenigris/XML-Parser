@@ -1,3 +1,5 @@
 accessing
 replacementStream
-	^ self replacement readStream
+	self isExternal
+		ifTrue: [^ XMLDecodingReadStreamAdapter on: self replacement readStream]
+		ifFalse: [^ self replacement readStream]

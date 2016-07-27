@@ -1,3 +1,6 @@
 enumerating
 queryKeysAndValuesDo: aTwoArgumentBlock
-	self query keysAndValuesDo: aTwoArgumentBlock
+	self rawQuery keysAndValuesDo: [:key :value |
+		aTwoArgumentBlock
+			value: (self percentAndPlusDecoded: key)
+			value: (self percentAndPlusDecoded: value)]

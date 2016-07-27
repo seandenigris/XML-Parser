@@ -7,14 +7,11 @@ printQueryOn: aStream
 	
 	aStream nextPut: $?.
 	atBeginning := true.
-	self queryKeysAndValuesDo: [:key :value |
+	self rawQuery keysAndValuesDo: [:key :value |
 		atBeginning
 			ifTrue: [atBeginning := false]
 			ifFalse: [aStream nextPut: $&].
-		self
-			print: key
-			withPercentOrPlusEncodingOn: aStream.
-		aStream nextPut: $=.
-		self
-			print: value
-			withPercentOrPlusEncodingOn: aStream].
+		aStream
+			nextPutAll: key;
+			nextPut: $=;
+			nextPutAll: value].

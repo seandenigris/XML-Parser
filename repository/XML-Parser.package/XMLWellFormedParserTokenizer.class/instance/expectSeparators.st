@@ -1,9 +1,6 @@
 tokenizing - expecting
 expectSeparators
 	"nil understands isXMLSeparator so no nil test is needed"
-	streamReader peek isXMLSeparator
-		ifTrue: [
-			streamReader
-				next;
-				skipSeparators]
+	streamReader next isXMLSeparator
+		ifTrue: [streamReader skipSeparators]
 		ifFalse: [self errorExpectedSeparators]

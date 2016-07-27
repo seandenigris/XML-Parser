@@ -7,4 +7,4 @@ addExternalParameterEntity: aName resolver: aResolver publicID: aPublicID system
 				resolveExternalParameterEntity: aName
 				publicID: aPublicID
 				systemID: aSystemID
-				from: aSourceURIString]
+				baseURI: aSourceURIString]

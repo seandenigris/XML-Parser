@@ -2,8 +2,4 @@ class initialization
 initialize
 	"self initialize"
 
-	(UnreservedCharacters := BitmapCharacterSet new)
-		addRangeFrom: $a to: $z;
-		addRangeFrom: $A to: $Z;
-		addRangeFrom: $0 to: $9;
-		addAll: '-._~'
+	self initializeUnreservedCharacters.

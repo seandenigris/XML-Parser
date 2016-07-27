@@ -5,10 +5,10 @@
 	"classvars" : [
 		"OperatorApplicators",
 		"SpecialCharacterParsers" ],
-	"commentStamp" : "monty 12/29/2013 04:00",
+	"commentStamp" : "monty 4/2/2016 00:35",
 	"instvars" : [
-		"operatorStack",
-		"nfaBuilder" ],
+		"nfaBuilder",
+		"binaryOperatorStack" ],
 	"name" : "DTDDFAContentModelParser",
 	"pools" : [
 		 ],

@@ -8,17 +8,22 @@ comparing
 
 	self scheme = anObject scheme
 		ifFalse: [^ false].
-	self userInfo = anObject userInfo
+	((self hasUserInfo = anObject hasUserInfo)
+		and: [self userInfo = anObject userInfo])
 		ifFalse: [^ false].
-	self host = anObject host
+	((self hasHost = anObject hasHost)
+		and: [self host = anObject host])
 		ifFalse: [^ false].
 	self port = anObject port
 		ifFalse: [^ false].
-	self pathSegments = anObject pathSegments
+	(self hasPath = anObject hasPath
+		and: [self pathSegments = anObject pathSegments])
 		ifFalse: [^ false].
-	self query = anObject query
+	((self hasQuery = anObject hasQuery)
+		and: [self query = anObject query])
 		ifFalse: [^ false].
-	self fragment = anObject fragment
+	((self hasFragment = anObject hasFragment)
+		and: [self fragment = anObject fragment])
 		ifFalse: [^ false].
 
 	^ true.

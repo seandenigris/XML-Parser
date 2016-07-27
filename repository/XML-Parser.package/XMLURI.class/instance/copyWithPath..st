@@ -1,3 +1,9 @@
 copying
 copyWithPath: aString
-	^ self copyWithPathSegments: (XMLURIParser on: aString) parsePathSegments
+	| newRawPathSegments |
+
+	newRawPathSegments := self rawPathSegments copyEmpty.
+	$/
+		xmlSplit: aString
+		do: [:each | newRawPathSegments addLast: (self percentEncoded: each)].
+	^ self copy rawPathSegments: newRawPathSegments.

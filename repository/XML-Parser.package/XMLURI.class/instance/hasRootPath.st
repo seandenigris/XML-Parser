@@ -1,4 +1,4 @@
 testing
 hasRootPath
-	^ self pathSegments size = 2
-		and: [self pathSegments allSatisfy: [:each | each isEmpty]]
+	^ self rawPathSegments size = 2
+		and: [self rawPathSegments allSatisfy: [:each | each isEmpty]]

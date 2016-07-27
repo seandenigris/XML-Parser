@@ -1,10 +1,12 @@
 tokenizing - expecting
-expectNextAll: anExpectedLiteral
-	1 to: anExpectedLiteral size do: [:i | | nextChar |
-		(nextChar := streamReader next) == (anExpectedLiteral at: i)
+expectNextAll: aString
+	"uses to:do: and not implemented in terms of expectNextAll:startingAt:
+	for speed"
+	1 to: aString size do: [:i | | nextChar |
+		(nextChar := streamReader next) == (aString at: i)
 			ifFalse: [
 				self
-					errorExpectedLiteral: anExpectedLiteral
+					errorExpectedLiteral: aString
 					butGot: nextChar
 					at: i]].
-	^ anExpectedLiteral.
+	^ aString.

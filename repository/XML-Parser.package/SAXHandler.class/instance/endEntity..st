@@ -1,4 +1,5 @@
 handling - lexical
 endEntity: anEntityName
-	"This call corresponds to the Java SAX ext call
-	endEntity(java.lang.String name)."
+	"Handles the end of some general entity's replacement in content.
+	Not sent if the entity is undeclared or if content entity replacement
+	is disabled."

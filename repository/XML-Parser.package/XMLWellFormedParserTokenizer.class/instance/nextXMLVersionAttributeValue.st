@@ -6,13 +6,13 @@ nextXMLVersionAttributeValue
 
 	writeStream
 		reset;
-		nextPut: self expectDigit;
+		nextPut: self expectVersionDigit;
 		nextPut: (self expectNext: $.);
-		nextPut: self expectDigit.
+		nextPut: self expectVersionDigit.
 
 	[streamReader atEnd
 		or: [streamReader peek == quote]]
-		whileFalse: [writeStream nextPut: self expectDigit].
+		whileFalse: [writeStream nextPut: self expectVersionDigit].
 
 	self expectNext: quote.
 	^ writeStream contents.

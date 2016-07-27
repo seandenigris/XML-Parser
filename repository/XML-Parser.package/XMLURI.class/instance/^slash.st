@@ -4,10 +4,4 @@ combining
 	context of the receiver if it is relative, to do relative path resolution
 	or replace hosts, query strings, and other components."
 
-	| uriToCombineWith |
-
-	(uriToCombineWith := aURIOrURIString asXMLURI) isEmpty
-		ifFalse: [
-			(uriToCombineWith isRelative)
-				ifTrue: [^ self combinedWithRelativeURI: uriToCombineWith]
-				ifFalse: [^ uriToCombineWith]]
+	^ self combinedWith: aURIOrURIString

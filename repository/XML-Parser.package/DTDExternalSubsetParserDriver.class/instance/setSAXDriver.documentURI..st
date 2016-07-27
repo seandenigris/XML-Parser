@@ -1,5 +1,5 @@
 initialization
-setSAXDriver: aSaxdriver documentURI: aURI
-	saxDriver := aSaxdriver.
-	doctypeDefinition := aSaxdriver doctypeDefinition.
-	documentURI := aURI.
+setSAXDriver: aSAXDriver documentURI: anExternalSubsetURIString
+	saxDriver := aSAXDriver.
+	doctypeDefinition := aSAXDriver doctypeDefinition.
+	documentURI := anExternalSubsetURIString.

@@ -1,3 +1,3 @@
 testing
 hasQuery
-	^ self query notEmpty
+	^ self rawQuery notEmpty

@@ -4,7 +4,7 @@ parseHost
 
 	self peek == $[
 		ifTrue: [
-			host := (self nextPercentEncodedDelimitedBy: ']') copyWith: $].
+			host := (self nextDelimitedBy: ']') copyWith: $].
 			self peekFor: $]]
-		ifFalse: [host := self nextPercentEncodedDelimitedBy: HostDelimiters].
-	^ host asLowercase.
+		ifFalse: [host := self nextDelimitedBy: HostDelimiters].
+	^ host.

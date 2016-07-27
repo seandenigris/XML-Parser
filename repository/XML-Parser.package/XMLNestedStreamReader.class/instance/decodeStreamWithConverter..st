@@ -1,6 +1,6 @@
 decoding
 decodeStreamWithConverter: aStreamConverter
-	stream isConvertingStreamAdapter
+	stream isXMLConvertingStreamAdapter
 		ifTrue: [stream streamConverter: aStreamConverter]
 		ifFalse: [
 			stream :=

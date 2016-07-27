@@ -16,13 +16,10 @@ nextPCDataToken
 						ifFalse: [self nextGeneralEntityReferenceOnWriteStream])
 							ifTrue: [isIgnorableWhitespace := false]]
 				ifFalse: [
-					(nextChar == $]
-						and: [streamReader peek == $]])
+					nextChar == $]
 						ifTrue: [
-							streamReader next.
-							streamReader peek == $>
-								ifTrue: [self errorUnexpectedCDataTerminatorInPCData]
-								ifFalse: [streamReader pushBackCharacter: $]]].
+							(streamReader nextMatch: $] followedBy: $>)
+								ifTrue: [self errorUnexpectedCDataTerminatorInPCData]].
 					isIgnorableWhitespace
 						ifTrue: [isIgnorableWhitespace := nextChar isXMLSeparator].
 					writeStream nextPut: nextChar]].

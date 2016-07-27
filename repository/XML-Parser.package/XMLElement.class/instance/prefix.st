@@ -1,3 +1,3 @@
 accessing
 prefix
-	^ self name prefixBeforeLocalName: self localName
+	^ self name xmlPrefixBeforeLocalName: self localName

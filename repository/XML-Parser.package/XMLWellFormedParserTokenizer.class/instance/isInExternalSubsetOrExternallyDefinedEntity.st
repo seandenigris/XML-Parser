@@ -2,9 +2,9 @@ testing
 isInExternalSubsetOrExternallyDefinedEntity
 	context isExternalSubsetContext
 		ifTrue: [^ true].
-	self hasActiveEntities
+	self hasPushedBackEntities
 		ifTrue: [
-			self activeEntities do: [:each |
+			self pushedBackEntities do: [:each |
 				(each isInternalTo: driver documentURI)
 					ifFalse: [^ true]]].
 	^ false.

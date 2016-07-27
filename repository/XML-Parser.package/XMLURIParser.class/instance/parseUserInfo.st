@@ -3,7 +3,7 @@ parseUserInfo
 	| userInfo oldPosition |
 
 	oldPosition := self position.
-	userInfo := self nextPercentEncodedDelimitedBy: UserInfoDelimiters.
+	userInfo := self nextDelimitedBy: UserInfoDelimiters.
 	(self peekFor: $@)
 		ifTrue: [^ userInfo]
 		ifFalse: [

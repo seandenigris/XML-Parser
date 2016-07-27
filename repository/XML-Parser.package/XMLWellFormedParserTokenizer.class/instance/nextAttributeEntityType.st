@@ -1,10 +1,10 @@
 tokenizing - dtd
 nextAttributeEntityType
-	streamReader next.
-	self expectNextAll: 'NTIT'.
+	self expectNextAll: 'ENTIT'.
 	streamReader peek == $Y
-		ifTrue: [
-			streamReader next.
-			^ 'ENTITY'].
-	self expectNextAll: 'IES'.
-	^ 'ENTITIES'.
+		ifFalse: [
+			^ self
+				expectNextAll: 'ENTITIES'
+				startingAt: 6 "'ENTITIES' indexOfSubCollection: 'IES'"].
+	streamReader next.
+	^ 'ENTITY'.

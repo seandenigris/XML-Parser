@@ -1,5 +1,5 @@
 parsing
 parseFragment
 	(self peekFor: $#)
-		ifTrue: [^ self nextPercentEncodedUpToEnd]
+		ifTrue: [^ readStream upToEnd]
 		ifFalse: [^ '']

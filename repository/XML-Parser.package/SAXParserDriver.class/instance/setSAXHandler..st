@@ -4,6 +4,7 @@ setSAXHandler: aHandler
 	elementNester := self elementNesterClass new.
 	doctypeDefinition := DTDDoctypeDefinition new.
 	validator := (aHandler schema ifNil: [doctypeDefinition]) newValidator.
-	externalSubsetURI := ''.
+	externalSubsetPublicID := ''.
+	externalSubsetSystemID := ''.
 	isStandalone := false.
 	hasUnhandledReservedAttributes := false.

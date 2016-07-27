@@ -2,6 +2,6 @@ tokenizing - dtd
 nextEndInternalSubset
 	self hasOpenIncludeSections
 		ifTrue: [^ self nextEndIncludeSection].
-	self hasActiveEntities
+	self hasPushedBackEntities
 		ifTrue: [self errorParameterEntityTerminatingSubset].
 	super nextEndInternalSubset.

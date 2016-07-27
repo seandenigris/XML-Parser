@@ -1,3 +1,4 @@
 enumerating
 queryKeysDo: aBlock
-	self query keysDo: aBlock
+	self rawQuery keysDo: [:each |
+		aBlock value: (self percentAndPlusDecoded: each)]

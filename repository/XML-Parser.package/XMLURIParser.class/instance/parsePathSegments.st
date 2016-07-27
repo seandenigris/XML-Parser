@@ -4,11 +4,11 @@ parsePathSegments
 
 	pathSegments := OrderedCollection new.
 
-	segment := self nextPercentEncodedDelimitedBy: PathDelimiters.
+	segment := self nextDelimitedBy: PathDelimiters.
 	[self peekFor: $/]
 		whileTrue: [
 			pathSegments addLast: segment.
-			segment := self nextPercentEncodedDelimitedBy: PathDelimiters].
+			segment := self nextDelimitedBy: PathDelimiters].
 	(pathSegments isEmpty
 		and: [segment isEmpty])
 		ifFalse: [pathSegments addLast: segment].

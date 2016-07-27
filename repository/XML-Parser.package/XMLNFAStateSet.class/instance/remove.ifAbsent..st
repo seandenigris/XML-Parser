@@ -1,8 +1,8 @@
 removing
-remove: aState ifAbsent: anExceptionBlock
+remove: aState ifAbsent: aBlock
 	set
 		remove: aState
-		ifAbsent: [^ anExceptionBlock value].
+		ifAbsent: [^ aBlock value].
 
 	isAccepting
 		ifTrue: [isAccepting := set anySatisfy: [:each | each isAccepting]].

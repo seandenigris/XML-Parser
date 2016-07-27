@@ -1,3 +1,3 @@
 copying
 copyWithUserInfo: aString
-	^ self copy userInfo: aString
+	^ self copy rawUserInfo: (self percentEncoded: aString)

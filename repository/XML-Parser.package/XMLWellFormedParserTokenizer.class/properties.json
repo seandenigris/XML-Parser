@@ -4,12 +4,14 @@
 		 ],
 	"classvars" : [
 		"EncodingNameChars",
+		"EncodingNameStartChars",
 		"NormalizedSpace",
-		"PublicIDChars" ],
+		"PublicIDChars",
+		"VersionDigitChars" ],
 	"commentStamp" : "monty 6/15/2015 23:55",
 	"instvars" : [
-		"activeEntities",
-		"totalOpenIncludeSections" ],
+		"totalOpenIncludeSections",
+		"pushedBackEntities" ],
 	"name" : "XMLWellFormedParserTokenizer",
 	"pools" : [
 		 ],

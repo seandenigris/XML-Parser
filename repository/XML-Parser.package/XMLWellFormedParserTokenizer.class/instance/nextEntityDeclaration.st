@@ -2,7 +2,9 @@ tokenizing - dtd
 nextEntityDeclaration
 	| isParameterEntity name |
 
-	self expectNextAll: 'NTITY'.
+	self
+		expectNextAll: 'ENTITY'
+		startingAt: 2. "the 'E' was already read"
 
 	context isExternalSubsetContext
 		ifTrue: [

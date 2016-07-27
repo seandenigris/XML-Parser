@@ -1,3 +1,3 @@
 accessing
 localName
-	^ localName ifNil: [localName := self name localNameAfterPrefix]
+	^ localName ifNil: [localName := self name xmlLocalNameAfterPrefix]

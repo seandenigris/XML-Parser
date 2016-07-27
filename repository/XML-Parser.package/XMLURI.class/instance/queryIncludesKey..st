@@ -1,3 +1,6 @@
 testing
 queryIncludesKey: aKey
-	^ self query includesKey: aKey
+	self
+		queryAt: aKey
+		ifAbsent: [^ false].
+	^ true.

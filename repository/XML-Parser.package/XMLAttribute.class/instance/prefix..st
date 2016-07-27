@@ -1,3 +1,3 @@
 accessing
 prefix: aPrefix
-	self renameWith: [name := self localName qualifyWithPrefix:  aPrefix]
+	self renameWith: [name := self localName qualifyWithXMLPrefix:  aPrefix]

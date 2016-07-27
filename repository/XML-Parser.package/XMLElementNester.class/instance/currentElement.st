@@ -1,3 +1,3 @@
 accessing
 currentElement
-	^ self openElements lastOrNil
+	^ self openElements xmlLastOrNil

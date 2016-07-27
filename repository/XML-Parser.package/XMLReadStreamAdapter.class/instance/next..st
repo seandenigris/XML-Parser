@@ -1,10 +1,12 @@
 accessing
 next: anInteger
-	| writeStream |
+	| writeStream i |
 
 	writeStream := self newWriteStream.
-	1 to: anInteger do: [:i |
-		self atEnd
-			ifTrue: [^ writeStream contents].
-		writeStream nextPut: self next].
+	i := anInteger.
+	[self atEnd
+		or: [i <= 0]]
+		whileFalse: [
+			writeStream nextPut: self next.
+			i := i - 1].
 	^ writeStream contents.

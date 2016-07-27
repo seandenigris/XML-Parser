@@ -5,7 +5,7 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 
 	self elementNester startElement: anElementName.
 
-	prefix := anElementName prefixBeforeLocalName.
+	prefix := anElementName xmlPrefixBeforeLocalName.
 	totalAttributes := anAttributeDictionary size.
 	self usesNamespaces
 		ifTrue: [
@@ -40,7 +40,7 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		startElement: anElementName
 		prefix: prefix
 		uri: (namespaceURI ifNil: [''])
-		localName: (anElementName localNameAfterPrefix: prefix)
+		localName: (anElementName xmlLocalNameAfterPrefix: prefix)
 		attributes: anAttributeDictionary.
 
 	currentScope

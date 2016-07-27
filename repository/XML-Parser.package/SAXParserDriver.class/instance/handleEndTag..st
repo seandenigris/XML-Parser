@@ -3,14 +3,9 @@ handleEndTag: anElementName
 	"performance critical method"
 	| prefix currentScope |
 
-	self elementNester hasScopedAttributes
-		ifTrue: [
-			self
-				endNestingOfElement: anElementName
-				withScopedAttributes: self elementNester currentScopedAttributes]
-		ifFalse: [self elementNester endElement: anElementName].
+	self elementNester endElement: anElementName.
 
-	prefix := anElementName prefixBeforeLocalName.
+	prefix := anElementName xmlPrefixBeforeLocalName.
 	self saxHandler 
 		endElement: anElementName
 		prefix: prefix
@@ -20,7 +15,7 @@ handleEndTag: anElementName
 					(currentScope := self scopeAllocator exitScope)
 						resolvePrefix: prefix]
 				ifFalse: [''])
-		localName: (anElementName localNameAfterPrefix: prefix).
+		localName: (anElementName xmlLocalNameAfterPrefix: prefix).
 
 	currentScope ifNotNil: [
 		currentScope hasNamespaces

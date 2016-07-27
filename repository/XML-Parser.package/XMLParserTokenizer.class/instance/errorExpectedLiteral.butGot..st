@@ -1,6 +1,6 @@
 errors
-errorExpectedLiteral: aCharacterOrString butGot: aCharacter
+errorExpectedLiteral: anExpectedCharacterOrString butGot: anReceivedCharacterOrString
 	self
-		errorExpectedLiteral: aCharacterOrString
-		butGot: aCharacter
-		at: 1
+		formatParseError: 'Expected "{1}" but got "{2}"' 
+		with: anExpectedCharacterOrString
+		with: (anReceivedCharacterOrString ifNil: [''])

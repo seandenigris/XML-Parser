@@ -1,3 +1,3 @@
 copying
 copyWithFragment: aString
-	^ self copy fragment: aString
+	^ self copy rawFragment: (self percentEncoded: aString)

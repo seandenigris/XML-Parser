@@ -1,3 +1,3 @@
 testing
 hasUserInfo
-	^ self userInfo notEmpty
+	^ self rawUserInfo notEmpty

@@ -1,3 +1,3 @@
 accessing
 queryKeys
-	^ self query keys
+	^ self rawQuery keys collect: [:each | self percentAndPlusDecoded: each]

@@ -1,4 +1,3 @@
 accessing
 fragment
-	self parseURIStringIfUnparsed.
-	^ fragment.
+	^ self percentDecoded: self rawFragment

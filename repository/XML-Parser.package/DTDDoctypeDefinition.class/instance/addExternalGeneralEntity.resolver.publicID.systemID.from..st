@@ -7,4 +7,4 @@ addExternalGeneralEntity: aName resolver: aResolver publicID: aPublicID systemID
 				resolveExternalGeneralEntity: aName
 				publicID: aPublicID
 				systemID: aSystemID
-				from: aSourceURIString]
+				baseURI: aSourceURIString]
