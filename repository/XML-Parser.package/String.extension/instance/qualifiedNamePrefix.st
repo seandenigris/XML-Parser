@@ -4,7 +4,7 @@ qualifiedNamePrefix
 	(Optimized code)"
 	| i |
 
-	i := self size - 1.
+	i := self size.
 	[i > 1]
 		whileTrue: [
 			((self at: i) == $:)

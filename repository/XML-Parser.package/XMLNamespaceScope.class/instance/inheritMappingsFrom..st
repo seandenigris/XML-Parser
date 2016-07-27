@@ -3,9 +3,8 @@ inheritMappingsFrom: anEnclosingScope
 	anEnclosingScope hasNamespaces
 		ifFalse: [^ self].
 
-	(anEnclosingScope defaultNamespace notEmpty and: [self hasDefaultNamespace not])
-		ifTrue: [self defaultNamespace: anEnclosingScope defaultNamespace].
-
+	(anEnclosingScope hasDefaultNamespace and: [self hasDefaultNamespace not])
+		ifFalse: [self defaultNamespace: anEnclosingScope defaultNamespace].
 	anEnclosingScope hasPrefixMappings
 		ifTrue: [
 			anEnclosingScope prefixesAndURIsDo: [:prefix :uri |

@@ -1,22 +1,23 @@
 accessing
 mapPrefix: aPrefix to: aUri
-	aPrefix isEmptyOrNil
+	aPrefix isEmpty
 		ifTrue: [^ self defaultNamespace: aUri].
-	aUri isEmptyOrNil
-		ifTrue: [XMLNamespaceException signal: 'Cannot clear prefix by mapping it to nil or an empty string.'].
-
-	aPrefix = 'xml'
+	(aPrefix at: 1) == $x "skip comparisons below"
 		ifTrue: [
-			aUri = self xmlNamespaceURI
-				ifFalse: [
+			aPrefix = 'xml'
+				ifTrue: [
+					aUri = self class xmlNamespaceURI
+						ifTrue: [^ self].
 					XMLNamespaceException signal:
 						'Cannot rebind the "xml" prefix to a different namespace URI'].
-			^ self].
+			aPrefix = 'xmlns'
+				ifTrue: [XMLNamespaceException signal: 'Cannot bind "xmlns" prefix at all']].
+	(aPrefix indexOf: $:) > 0 
+		ifTrue: [XMLNamespaceException signal: 'Prefix "', aPrefix, '" contains ":" character'].
 
-	aPrefix = 'xmlns'
-		ifTrue: [XMLNamespaceException signal: 'Cannot bind "xmlns" prefix at all'].
-
-	(aUri = self xmlNamespaceURI or: [aUri = self xmlnsNamespaceURI])
+	aUri isEmpty
+		ifTrue: [XMLNamespaceException signal: 'Empty URIs cannot be mapped to prefixes'].
+	(aUri = self class xmlNamespaceURI or: [aUri = self class xmlnsNamespaceURI])
 		ifTrue: [XMLNamespaceException signal: 'Cannot alias the "xml" or "xmlns" prefixes'].
 
 	self prefixMappings at: aPrefix put: aUri.

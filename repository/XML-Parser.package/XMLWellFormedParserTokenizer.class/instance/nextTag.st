@@ -3,7 +3,7 @@ nextTag
 	"performance critical method"
 	| tagName attributes reservedAttributes namespaces nextChar attributeName attributeValue |
 
-	(streamReader peek = $/)
+	(streamReader peek == $/)
 		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
 

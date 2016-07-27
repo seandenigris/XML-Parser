@@ -1,14 +1,14 @@
 accessing
 resolvePrefix: aPrefix ifUnmapped: aBlock
-	(aPrefix isNil or: [aPrefix isEmpty])
+	aPrefix isEmpty
 		ifTrue: [^ self defaultNamespace].
 
 	^ self prefixMappings
 		at: aPrefix
 		ifAbsent: [
 			aPrefix = 'xml'
-				ifTrue: [self xmlNamespaceURI]
+				ifTrue: [self class xmlNamespaceURI]
 				ifFalse: [
 					aPrefix = 'xmlns'
-						ifTrue: [self xmlnsNamespaceURI]
+						ifTrue: [self class xmlnsNamespaceURI]
 						ifFalse: [aBlock value]]]
