@@ -2,8 +2,9 @@ content
 startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName attributes: aDictionary
 	| element |
 
-	(element := self findUniqueElementFor: aQualifiedName)
-		ifNotNil: [
+	(self document root notNil
+		and: [(element := self uniqueElementNamed: aQualifiedName) notNil])
+		ifTrue: [
 			self pushNode: element.
 			^ self].
 

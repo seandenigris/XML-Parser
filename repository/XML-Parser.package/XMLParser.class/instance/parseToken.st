@@ -4,5 +4,5 @@ parseToken
 		on: XMLParserException
 		do: [:error |
 			error
-				messageText: error messageText, ' (line ', self currentLineNumber printString, ')';
+				appendLineNumber: self currentLineNumber;
 				pass].

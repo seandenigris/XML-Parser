@@ -4,5 +4,5 @@ characterFromCodePoint: aCodePoint
 		ifTrue: [
 			[aCodePoint asCharacter]
 				on: Error
-				do: [:error | self invalidCodePoint: aCodePoint]]
-		ifFalse: [self invalidCodePoint: aCodePoint]
+				do: [:error | nil]]
+		ifFalse: [nil]

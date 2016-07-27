@@ -10,7 +10,7 @@ handleEndTag: anElementName
 		ifFalse: [self elementNester endElement: anElementName].
 
 	prefix := anElementName qualifiedNamePrefix.
-	saxHandler 
+	self saxHandler 
 		endElement: anElementName
 		prefix: prefix
 		uri:

@@ -2,8 +2,15 @@ tokenizing
 nextGeneralEntityReference
 	| name |
 
-	name := self nextName.
-	self expectNext: $;.
+	((name := self nextName) notEmpty
+		and: [streamReader peek == $;])
+		ifFalse: [
+			streamReader pushBack: name.
+			^ $&].
+	streamReader next.
+
 	^ self class predefinedEntities
 		at: name
-		ifAbsent: [nil].
+		ifAbsent: [
+			streamReader pushBack: name, ';'.
+			$&].

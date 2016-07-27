@@ -20,11 +20,11 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 	self isValidating
 		ifTrue: [self validateStartTag: anElementName attributes: anAttributeDictionary].
 
-	saxHandler
+	self saxHandler
 		startElement: anElementName
 		prefix: prefix
 		uri: (namespaceUri ifNil: [''])
 		localName: (anElementName qualifiedNameLocalPart: prefix)
 		attributes: anAttributeDictionary.
 	self usesNamespaces
-		ifTrue: [saxHandler currentScope: self scopeAllocator currentScope].
+		ifTrue: [self saxHandler currentScope: self scopeAllocator currentScope].

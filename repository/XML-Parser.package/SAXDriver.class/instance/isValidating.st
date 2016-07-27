@@ -1,4 +1,3 @@
 testing
 isValidating
-	"direct acceess for speed"
-	^ saxHandler isValidating
+	^ self saxHandler isValidating

@@ -1,3 +1,4 @@
 streaming
 pushBack: aString
-	self pushStream: (ReadStream on: aString)
+	aString size > 0
+		ifTrue: [self pushStream: (ReadStream on: aString)]
