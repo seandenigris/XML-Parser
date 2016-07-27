@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDefaultLimits" : "monty 1/26/2014 04:29",
+		"testDefaultLimits" : "monty 1/27/2015 23:06",
 		"testExternalEntitiesLimit" : "monty 11/24/2014 00:43",
 		"testExternalEntitySizeLimit" : "monty 10/25/2014 11:05",
 		"testExternalSubsetReadLimit" : "monty 10/25/2014 11:06",
 		"testOnURLUpToLimit" : "monty 10/25/2014 11:06",
-		"testRemoveLimits" : "monty 10/27/2014 09:28",
+		"testRemoveLimits" : "monty 1/27/2015 23:05",
 		"testResolvingLocalFromNonLocal" : "monty 1/24/2014 17:33" } }

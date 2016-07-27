@@ -24,6 +24,7 @@
 		"testDocument" : "monty 11/24/2014 00:12",
 		"testHasChildren" : "monty 11/19/2014 21:08",
 		"testHasParent" : "monty 11/19/2014 21:12",
+		"testIsAttribute" : "monty 1/29/2015 00:31",
 		"testIsCData" : "monty 11/19/2014 21:40",
 		"testIsComment" : "monty 11/19/2014 21:40",
 		"testIsContentNode" : "monty 11/19/2014 21:40",

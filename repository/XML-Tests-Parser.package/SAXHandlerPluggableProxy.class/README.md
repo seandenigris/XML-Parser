@@ -1,0 +1,1 @@
+A pluggable version that allows blocks to be injected to respond to handlers.

@@ -4,6 +4,7 @@ testDefaultLimits
 
 	resolver := (SAXHandler on: '') externalEntityResolver.
 	self
+		assert: resolver externalSubsetReadLimit = DTDExternalEntityLimits defaultExternalSubsetReadLimit;
 		assert: resolver maxExternalEntities > 0;
 		assert: resolver maxExternalEntitySize = DTDExternalEntityLimits defaultMaxExternalEntitySize;
-		assert: (resolver resolvesLocalFromNonLocal isKindOf: Boolean).
+		deny: resolver resolvesLocalFromNonLocal.
