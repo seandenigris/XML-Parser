@@ -10,6 +10,8 @@ next
 		ifNotNil: [
 			nextChar := peekChar.
 			peekChar := nil].
+
 	nextChar == normalizedLineEndingChar
 		ifTrue: [currentLineNumber := currentLineNumber + 1].
+
 	^ nextChar.

@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream",
+		"peekChar",
+		"source" ],
+	"name" : "XMLPeekableStreamAdapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

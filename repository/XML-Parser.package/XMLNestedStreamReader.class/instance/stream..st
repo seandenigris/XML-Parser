@@ -1,3 +1,3 @@
 accessing
 stream: aNewStream
-	stream := aNewStream
+	stream := XMLPeekableStreamAdapter on: aNewStream

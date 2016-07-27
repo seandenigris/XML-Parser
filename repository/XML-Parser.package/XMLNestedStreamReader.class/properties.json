@@ -13,7 +13,6 @@
 		"nestedStreams",
 		"hasNestedStreams",
 		"peekChar",
-		"basicNextChar",
 		"writeBuffer",
 		"normalizedLineEndingChar",
 		"currentLineNumber" ],

@@ -5,10 +5,8 @@ pushBack: aString
 
 	pushBackString := aString.
 	peekChar
-		ifNotNil: [pushBackString := pushBackString copyWith: peekChar].
-	basicNextChar
-		ifNotNil: [pushBackString := pushBackString copyWith: basicNextChar].
-	peekChar := nil.
-	basicNextChar := nil.
+		ifNotNil: [
+			pushBackString := pushBackString copyWith: peekChar.
+			peekChar := nil].
 
 	self pushStream: (ReadStream on: pushBackString).
