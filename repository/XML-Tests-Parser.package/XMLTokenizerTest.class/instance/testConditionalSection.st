@@ -11,7 +11,12 @@ testConditionalSection
 				', included]]>, included.'.
 	tokenizer tokenContext: XMLExternalSubsetContext new.
 	tokenizer nextToken.
-	self assert: tokenizer streamReader upToEnd = 'included, included, included.'.
+	self assert:
+		(String streamContents: [:stream | | streamReader |
+			streamReader := tokenizer streamReader.
+			[streamReader atEnd]
+				whileFalse: [stream nextPut: streamReader next]]) =
+			'included, included, included.'.
 
 	self
 		should: [SAXHandler parse: '<!DOCTYPE root [ <![IGNORE[<!--ignored-->]]> ]><root/>']
