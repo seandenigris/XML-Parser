@@ -16,7 +16,7 @@ testCopy
 
 	visitedPairs := Set new.
 	copiedTypes :=
-		#(OrderedCollection Dictionary OrderPreservingStringDictionary
+		#(OrderedCollection Dictionary
 			XMLNode XMLNamespaceScope XMLOrderedList)
 			collect: [:each | Smalltalk at: each].
 	[unvisitedPairs isEmpty]

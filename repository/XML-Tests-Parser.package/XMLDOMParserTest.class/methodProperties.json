@@ -30,6 +30,7 @@
 		"testInternalNotationDeclarations" : "monty 12/21/2013 06:09",
 		"testInternalParameterEntityDeclarations" : "monty 12/21/2013 06:09",
 		"testNamespaces" : "monty 1/25/2014 04:44",
+		"testNamespacesCopyOnWrite" : "monty 12/28/2014 23:42",
 		"testNamespacesDeclaring" : "monty 1/25/2014 04:46",
 		"testNamespacesDeclaringDisabled" : "monty 1/25/2014 04:46",
 		"testNamespacesDisabled" : "monty 1/25/2014 04:44",

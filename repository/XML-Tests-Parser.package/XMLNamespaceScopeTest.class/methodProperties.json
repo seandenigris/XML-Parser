@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"namespaces" : "monty 12/28/2014 23:25",
+		"newNamespaceScope" : "monty 12/28/2014 23:18",
+		"newNamespaceScopeWithNamespaces" : "monty 12/28/2014 23:24",
+		"testCopy" : "monty 12/28/2014 23:13",
+		"testEquals" : "monty 12/28/2014 23:31",
+		"testInheritMappingsFrom" : "monty 12/28/2014 23:57",
+		"testMapPrefixTo" : "monty 12/28/2014 23:22",
+		"testSetPrefixMappingsFrom" : "monty 12/28/2014 23:29",
+		"testSize" : "monty 12/28/2014 23:30",
+		"testUnmapPrefix" : "monty 12/28/2014 23:21" } }

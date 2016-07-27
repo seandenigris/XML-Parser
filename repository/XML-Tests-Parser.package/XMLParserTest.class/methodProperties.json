@@ -48,7 +48,7 @@
 		"testInvalidElementContentModels" : "monty 12/8/2014 12:35",
 		"testLineEndingsDoNotMatter" : "monty 12/7/2013 00:15",
 		"testNamespacePrefixAliasing" : "monty 1/31/2014 00:15",
-		"testNamespacePrefixInheritance" : "monty 1/31/2014 00:24",
+		"testNamespacePrefixInheritance" : "monty 12/28/2014 19:50",
 		"testParserLittleDocument" : "StephaneDucasse 12/27/2013 16:52",
 		"testPredefinedEntityReplacement" : "monty 2/10/2014 02:43",
 		"testPrefixedAttributeDeclarations" : "monty 12/18/2013 23:49",
