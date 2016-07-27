@@ -2,6 +2,7 @@ examples
 addressBookXMLWithDTD
 	^'<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE addressbook SYSTEM "addressbook.dtd">
+<?xml:stylesheet type="text/xsl" href="demo.xsl"?>
 <addressbook>
   <person employee-number="A0000" family-name="Gates" first-name="Bob">
     <contact-info><!--Confidential--></contact-info>

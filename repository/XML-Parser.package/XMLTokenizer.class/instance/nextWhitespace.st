@@ -3,7 +3,7 @@ nextWhitespace
 	| nextChar resultStream resultString|
 	resultStream _ (String new: 10) writeStream.
 	[((nextChar _ self peek) == nil)
-		or: [SeparatorTable at: nextChar asciiValue+1 ifAbsent:[true]]]
+		or: [SeparatorTable at: nextChar asciiValue+1]]
 		whileFalse: [resultStream nextPut: nextChar. self next].
 	(nestedStreams == nil or: [self atEnd not])
 		ifFalse: [self checkNestedStream.

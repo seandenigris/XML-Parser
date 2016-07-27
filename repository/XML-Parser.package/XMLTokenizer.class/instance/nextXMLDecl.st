@@ -10,4 +10,6 @@ nextXMLDecl
 	self next.
 	self next == $>
 		ifFalse: [self errorExpected: '> expected.'].
+	(attributes includesKey: 'encoding') ifTrue: [self streamEncoding: (attributes at: 'encoding')].
 	self handleXMLDecl: attributes namespaces: namespaces
+	
