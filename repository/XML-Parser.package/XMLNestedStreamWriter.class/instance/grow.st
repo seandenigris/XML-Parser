@@ -1,7 +1,7 @@
 private
 grow
 	streams :=
-		(Array new: ((streams size * 2) max: 10))
+		(Array new: streams size + 5)
 			replaceFrom: 1
 			to: streams size
 			with: streams

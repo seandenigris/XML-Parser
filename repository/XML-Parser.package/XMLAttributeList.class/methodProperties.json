@@ -22,4 +22,5 @@
 		"beforeAdding:" : "JAAyer 11/22/2010 15:42",
 		"includesAttribute:" : "JAAyer 12/6/2010 21:23",
 		"removeAttributeNodeAt:" : "JAAyer 12/6/2010 21:24",
-		"renamedAttribute:from:to:" : "JAAyer 6/15/2010 15:13" } }
+		"renamedAttribute:from:to:" : "JAAyer 6/15/2010 15:13",
+		"setFromDictionary:andElement:" : "monty 11/26/2013 01:56" } }

@@ -2,11 +2,9 @@
 	"class" : {
 		"name:contentModel:" : "monty 11/20/2013 01:43" },
 	"instance" : {
-		"addElementMatchingState:" : "monty 11/20/2013 03:59",
 		"applyBinaryOperatorOnStack" : "monty 11/20/2013 03:24",
 		"applyUnaryOperator:" : "monty 11/20/2013 03:27",
 		"errorMismatchedParens" : "monty 11/20/2013 05:20",
-		"errorUnexpectedPCData" : "monty 11/20/2013 05:19",
 		"hasOperatorOnStack" : "monty 11/20/2013 02:56",
 		"isBinaryOperator:" : "monty 11/20/2013 03:02",
 		"isBinaryOperator:higherPrecedenceThan:" : "monty 11/20/2013 03:04",
@@ -16,5 +14,5 @@
 		"parseMixedContentModel" : "monty 11/20/2013 22:46",
 		"popParenthesizedOperators" : "monty 11/20/2013 04:03",
 		"popRemainingOperators" : "monty 11/20/2013 04:03",
-		"pushElementMatcher" : "monty 11/20/2013 04:17",
+		"pushElementMatcher" : "monty 11/26/2013 01:49",
 		"setName:contentModel:" : "monty 11/18/2013 18:35" } }

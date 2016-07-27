@@ -3,9 +3,7 @@
 		"new" : "JAAyer 9/19/2010 23:48",
 		"new:" : "JAAyer 9/19/2010 23:51" },
 	"instance" : {
-		"acquireStream" : "JAAyer 9/19/2010 23:54",
-		"grow" : "JAAyer 10/16/2010 04:41",
+		"grow" : "monty 11/26/2013 00:06",
 		"initialize:" : "JAAyer 9/19/2010 23:50",
-		"newStream" : "JAAyer 7/12/2010 01:19",
-		"releaseStream" : "JAAyer 9/19/2010 23:54",
-		"writeWith:" : "JAAyer 9/19/2010 23:42" } }
+		"newStream" : "monty 11/26/2013 01:18",
+		"writeWith:" : "monty 11/26/2013 00:05" } }

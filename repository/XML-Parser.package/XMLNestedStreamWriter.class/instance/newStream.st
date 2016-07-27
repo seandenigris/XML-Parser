@@ -1,3 +1,3 @@
 private
 newStream
-	^ WriteStream on: (String new: 128)
+	^ WriteStream on: (String new: 64)

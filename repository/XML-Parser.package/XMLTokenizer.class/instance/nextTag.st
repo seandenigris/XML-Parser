@@ -8,7 +8,7 @@ nextTag
 
 	attributes := OrderPreservingDictionary new: 10 withDefaultValue: ''.
 	driver usesNamespaces
-		ifTrue: [namespaces := OrderPreservingDictionary defaultValue: ''].
+		ifTrue: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
 	[streamReader skipSeparators.
 	((nextChar := streamReader peek) isNil
 		or: [nextChar == $>

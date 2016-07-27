@@ -11,6 +11,6 @@ pushElementMatcher
 
 	element := writeStream contents.
 	element = '#PCDATA'
-		ifTrue: [self errorUnexpectedPCData].
+		ifTrue: [XMLValidationException signal: 'Unexpected #PCDATA in content model'].
 
 	nfaBuilder pushMatcher: (DTDElementMatcher element: element).

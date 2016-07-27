@@ -7,4 +7,4 @@ setDriver: aDriver stream: aStream
 			on: aStream
 			from: (driver ifNotNil: [driver documentURI])
 			onClose: nil).
-	streamWriter := XMLNestedStreamWriter new.
+	streamWriter := XMLNestedStreamWriter new: 3.

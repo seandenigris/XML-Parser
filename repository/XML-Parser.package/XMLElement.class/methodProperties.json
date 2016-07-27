@@ -7,8 +7,6 @@
 		"name:namespaces:" : "JAAyer 7/22/2010 03:06",
 		"name:namespaces:attributes:" : "JAAyer 7/22/2010 03:06",
 		"named:" : "JAAyer 3/11/2010 23:10",
-		"named:attributes:" : "JAAyer 10/24/2010 16:15",
-		"named:namespace:uri:attributes:" : "JAAyer 9/2/2010 04:54",
 		"qualifiedName:prefix:localName:attributes:namespaceScope:" : "JAAyer 6/25/2010 22:47" },
 	"instance" : {
 		"addContent:" : "JAAyer 10/24/2010 19:07",
@@ -72,7 +70,7 @@
 		"renamedAttribute:from:to:" : "JAAyer 8/6/2010 20:16",
 		"resolvePrefix:" : "JAAyer 6/20/2010 23:08",
 		"setAttributes:" : "JAAyer 7/12/2010 14:40",
-		"setQualifiedName:prefix:localName:attributes:namespaceScope:" : "JAAyer 10/24/2010 18:19",
+		"setQualifiedName:prefix:localName:attributes:namespaceScope:" : "monty 11/26/2013 01:54",
 		"stringNodes" : "JAAyer 7/22/2010 08:08",
 		"stringNodesDo:" : "JAAyer 7/22/2010 08:08",
 		"strings" : "JAAyer 8/9/2010 01:44",
