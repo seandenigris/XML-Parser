@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"initialize" : "JAA 3/23/2011 10:40",
-		"on:from:onClose:" : "monty 11/16/2013 23:01" },
+		"on:onClose:" : "monty 12/13/2013 05:13" },
 	"instance" : {
 		"atEnd" : "JAAyer 12/14/2010 02:23",
 		"atQuote" : "monty 12/6/2013 08:36",
@@ -19,11 +19,11 @@
 		"popCurrentStream" : "JAAyer 10/18/2010 16:08",
 		"pushBack:" : "monty 12/6/2013 06:44",
 		"pushBackPeekChar" : "monty 12/6/2013 06:45",
-		"pushStream:" : "monty 12/6/2013 06:44",
-		"pushStream:from:onClose:" : "monty 12/6/2013 06:47",
+		"pushStream:" : "monty 12/13/2013 05:05",
+		"pushStream:onClose:" : "monty 12/13/2013 05:13",
+		"setStream:onClose:" : "monty 12/13/2013 05:13",
 		"skipSeparators" : "JAAyer 7/21/2010 11:39",
 		"stream" : "JAAyer 3/11/2010 08:01",
-		"stream:from:onClose:" : "monty 11/16/2013 04:54",
 		"upTo:" : "JAA 3/22/2011 11:49",
 		"upToAll:" : "JAA 3/22/2011 11:49",
 		"upToEnd" : "monty 11/13/2013 02:59",

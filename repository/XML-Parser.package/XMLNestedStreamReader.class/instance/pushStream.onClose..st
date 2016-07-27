@@ -1,5 +1,5 @@
 streaming
-pushStream: aStream from: aSource onClose: aBlock
+pushStream: aStream onClose: aBlock
 	peekChar
 		ifNotNil: [self pushBackPeekChar].
 
@@ -11,7 +11,4 @@ pushStream: aStream from: aSource onClose: aBlock
 			nestedStreams addLast: stream].
 	hasNestedStreams := true.
 
-	self
-		stream: aStream
-		from: aSource
-		onClose: aBlock
+	self setStream: aStream onClose: aBlock

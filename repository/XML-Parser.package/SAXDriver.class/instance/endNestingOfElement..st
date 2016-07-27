@@ -1,3 +1,3 @@
 element nesting
-endNestingElement: anElementName
+endNestingOfElement: anElementName
 	self elementNester endElement: anElementName

@@ -1,6 +1,6 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
-	self startNestingElement: anElementName.
+	self startNestingOfElement: anElementName.
 
 	(anAttributeDictionary includesKey: 'xml:lang')
 		ifTrue: [self languageEnvironment: (anAttributeDictionary at: 'xml:lang')].

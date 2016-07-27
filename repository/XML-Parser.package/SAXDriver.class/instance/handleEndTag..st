@@ -1,6 +1,6 @@
 handling tokens
 handleEndTag: anElementName
-	self endNestingElement: anElementName.
+	self endNestingOfElement: anElementName.
 
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		self saxHandler 

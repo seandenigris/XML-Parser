@@ -1,3 +1,5 @@
 resolving
 defaultDocumentURI
-	^ self fileClient currentWorkingDirectory, 'default.xml'
+	^ self fileClient
+		pathToFile: 'default'
+		inDirectory: self fileClient currentWorkingDirectory

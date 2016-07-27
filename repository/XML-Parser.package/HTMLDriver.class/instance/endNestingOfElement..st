@@ -1,5 +1,5 @@
 element nesting
-endNestingElement: anElementName
+endNestingOfElement: anElementName
 	((self elementNester isVoidElement: anElementName)
 		or: [(self elementNester hasOpenElement: anElementName) not])
 		ifTrue: [^ self].
@@ -7,4 +7,4 @@ endNestingElement: anElementName
 	self preEndElements:
 		(self elementNester elementsToEndBeforeEnding: anElementName).
 
-	super endNestingElement: anElementName.
+	super endNestingOfElement: anElementName.

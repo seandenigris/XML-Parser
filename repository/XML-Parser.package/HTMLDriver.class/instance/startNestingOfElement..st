@@ -1,5 +1,5 @@
 element nesting
-startNestingElement: anElementName
+startNestingOfElement: anElementName
 	(self elementNester isOpenUniqueElement: anElementName)
 		ifTrue: [^ self].
 
@@ -8,4 +8,4 @@ startNestingElement: anElementName
 	self preStartElements:
 		(self elementNester elementsToStartBeforeStarting: anElementName).
 
-	super startNestingElement: anElementName.
+	super startNestingOfElement: anElementName.
