@@ -1,5 +1,5 @@
 tests
-testXMLIDAttribute
+testXMLIDAttributeValidation
 	| xml xmlWithDuplicateId |
 
 	xml := '<a xml:id="one"><b xml:id="two"/></a>'.

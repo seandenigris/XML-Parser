@@ -68,6 +68,7 @@
 		"testValidationAndConstraintsToggle" : "monty 12/29/2013 02:49",
 		"testValidationAndEntityReferenceToggle" : "monty 12/29/2013 03:24",
 		"testWhitespacePreservation" : "monty 11/19/2014 17:12",
-		"testWhitespacePreservationValidation" : "monty 11/19/2014 17:25",
-		"testXMLIDAttribute" : "monty 1/21/2014 05:58",
+		"testWhitespacePreservationValidation" : "monty 12/23/2014 21:09",
+		"testXMLIDAttributeValidation" : "monty 12/23/2014 21:06",
+		"testXMLIDAttributeValidationDTD" : "monty 12/23/2014 21:08",
 		"testXMLPrefixedAttributes" : "monty 11/2/2014 18:09" } }

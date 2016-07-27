@@ -32,6 +32,7 @@
 		"testIsElement" : "monty 11/19/2014 21:35",
 		"testIsElementNamed" : "monty 11/19/2014 21:41",
 		"testIsElementNamedAny" : "monty 11/19/2014 21:35",
+		"testIsInLanguage" : "monty 12/23/2014 16:23",
 		"testIsPI" : "monty 11/19/2014 21:38",
 		"testIsStringNode" : "monty 11/20/2014 02:49",
 		"testNextNode" : "monty 11/19/2014 20:58",

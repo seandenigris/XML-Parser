@@ -41,6 +41,7 @@
 		"testIsElement" : "monty 11/19/2014 21:41",
 		"testIsElementNamed" : "monty 11/23/2014 05:24",
 		"testIsElementNamedAny" : "monty 11/23/2014 05:23",
+		"testIsInLanguage" : "monty 12/23/2014 16:19",
 		"testIsNamed" : "monty 11/23/2014 05:00",
 		"testIsNamedAny" : "monty 11/23/2014 05:02",
 		"testIsRoot" : "monty 11/24/2014 08:09",
