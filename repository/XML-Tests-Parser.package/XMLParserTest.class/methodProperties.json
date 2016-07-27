@@ -19,6 +19,7 @@
 		"testConditionalSection" : "monty 12/10/2013 08:56",
 		"testDeclaringNamespaces" : "monty 12/6/2013 08:29",
 		"testDecodingCharacters" : "monty 12/9/2013 16:42",
+		"testDefaultDocumentURI" : "monty 12/13/2013 05:02",
 		"testDisabledNamespacesAttributes" : "monty 12/7/2013 00:04",
 		"testDoctypeRoot" : "monty 11/26/2013 21:42",
 		"testElementAnyAndEmptyDeclarations" : "monty 11/26/2013 21:44",
