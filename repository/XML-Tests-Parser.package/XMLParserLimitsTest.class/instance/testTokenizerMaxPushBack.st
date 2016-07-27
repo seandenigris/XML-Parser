@@ -3,7 +3,7 @@ testTokenizerMaxPushBack
 	| tokenizer |
 
 	tokenizer :=
-		XMLTokenizer
+		XMLWellFormedParserTokenizer
 			driver: nil
 			on: '' readStream.
 	self

@@ -1,8 +1,6 @@
 tests
 testParsingExternalEntities
-	"This test uses HTTP and takes time to run so it is skipped by default.
-	(self isSkipping: false) testParsingExternalEntities
-	"
+	"This test uses HTTP so is skipped by default."
 	| entityCache entityCacheCopy |
 
 	self isSkipping

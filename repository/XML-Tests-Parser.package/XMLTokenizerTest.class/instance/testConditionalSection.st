@@ -3,12 +3,12 @@ testConditionalSection
 	| tokenizer |
 
 	tokenizer :=
-		XMLTokenizer
+		XMLWellFormedParserTokenizer
 			driver: nil
 			on:
-			'<![INCLUDE [included',
-			'<![ IGNORE [ignored; <![INCLUDE[ignored;]]> ignored.]]>',
-			', included]]>, included.'.
+				'<![INCLUDE [included',
+				'<![ IGNORE [ignored; <![INCLUDE[ignored;]]> ignored.]]>',
+				', included]]>, included.'.
 	tokenizer tokenContext enterExternalSubset.
 	tokenizer nextToken.
 	self assert: tokenizer streamReader upToEnd = 'included, included, included.'.

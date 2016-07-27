@@ -1,5 +1,8 @@
 tests
 testTokenizerAddressBookWithDTD
 	| tokenizer |
-	tokenizer := XMLTokenizer driver: nil on: self addressBookXMLWithDTD readStream.
-	[tokenizer streamReader next notNil] whileTrue
+	tokenizer :=
+		XMLWellFormedParserTokenizer
+			driver: nil
+			on: self addressBookXMLWithDTD readStream.
+	[tokenizer streamReader next notNil] whileTrue.

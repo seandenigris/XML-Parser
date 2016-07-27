@@ -1,3 +1,7 @@
-instance creation
+testing
 isSkipping: aBoolean
-	^ self new isSkipping: aBoolean
+	"
+	XMLExternalEntityTest isSkipping: false.
+	XMLExternalEntityTest isSkipping: true.
+	"
+	IsSkipping := aBoolean

@@ -12,7 +12,7 @@
 		"testAttributeRenaming" : "monty 2/2/2014 22:04",
 		"testAttributesExcludingDeclarations" : "monty 1/25/2014 04:46",
 		"testAttributesIncludingDeclarations" : "monty 1/25/2014 04:46",
-		"testCDATASection" : "monty 12/12/2013 01:09",
+		"testCDATASection" : "monty 2/11/2014 00:22",
 		"testChangingNamespaces" : "monty 1/25/2014 04:46",
 		"testCollectingParsedNodes" : "monty 12/21/2013 06:10",
 		"testConfiguration" : "monty 12/29/2013 00:56",
@@ -41,4 +41,5 @@
 		"testParseDocumentWhile" : "monty 1/31/2014 22:22",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingRoot" : "monty 12/12/2013 00:42",
-		"testXMLComment" : "monty 12/12/2013 01:09" } }
+		"testXMLComment" : "monty 12/12/2013 01:09",
+		"testXMLDeclaration" : "monty 2/9/2014 00:22" } }

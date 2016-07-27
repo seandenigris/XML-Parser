@@ -1,8 +1,5 @@
 tests
 testExternalSubsetReadLimit
-	"
-	(self isSkipping: false) testExternalSubsetReadLimit
-	"
 	| xml externalSubset fileName parser |
 
 	self isSkipping
@@ -16,12 +13,14 @@ testExternalSubsetReadLimit
 		shouldnt: [
 			(parser := SAXHandler on: xml)
 				externalSubsetReadLimit: externalSubset size;
+				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLLimitException.
 	self
 		should: [
 			(parser := SAXHandler on: xml)
 				externalSubsetReadLimit: externalSubset size - 1;
+				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLLimitException.
 	self deleteFileNamed: fileName.

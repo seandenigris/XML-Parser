@@ -1,8 +1,5 @@
 tests
 testOnURL
-	"
-	(self isSkipping: false) testOnURL
-	"
 	| parser |
 
 	self isSkipping

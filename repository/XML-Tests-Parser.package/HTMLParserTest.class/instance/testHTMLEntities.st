@@ -1,12 +1,16 @@
 tests
 testHTMLEntities
-	| entity string |
+	| entity character string |
 
 	entity := 'nbsp'.
-	string := ((HTMLParser parse: '<p>&', entity, ';</p>') findElementNamed: 'p') contentString.
+	character := HTMLParserTokenizer predefinedEntities at: entity.
+	string :=
+		((HTMLParser parse: '<p>&', entity, ';&', entity, '</p>')
+			findElementNamed: 'p') contentString.
 	self
-		assert: string size = 1;
-		assert: string first == (HTMLParserTokenizer predefinedEntities at: entity).
+		assert: string size = 2;
+		assert: string first == character;
+		assert: string second == character.
 		
 	self assert:
 		((HTMLParser parse: '<body>&undeclared; &undeclared &;')

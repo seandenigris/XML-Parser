@@ -1,8 +1,5 @@
 tests
 testOnURLUpToLimit
-	"
-	(self isSkipping: false) testOnURLUpToLimit
-	"
 	| parser size |
 
 	self isSkipping

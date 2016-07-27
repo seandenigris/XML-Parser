@@ -1,8 +1,5 @@
 tests
 testOnFileNamed
-	"
-	(self isSkipping: false) testOnFileNamed
-	"
 	| parser fileName |
 
 	self isSkipping

@@ -1,3 +1,3 @@
 accessing
 isSkipping
-	^ isSkipping ifNil: [isSkipping := true]
+	^ self class isSkipping

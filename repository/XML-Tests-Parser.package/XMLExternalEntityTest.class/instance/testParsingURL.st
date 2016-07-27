@@ -1,8 +1,6 @@
 tests
 testParsingURL
-	"This uses HTTP so is skipped by default
-	(self isSkipping: false) testParsingURL
-	"
+	"This uses HTTP so is skipped by default"
 	| doc |
 
 	self isSkipping

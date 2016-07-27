@@ -1,8 +1,6 @@
 tests
 testParsingFile
-	"This test creates/deletes a file so is skipped by default
-	(self isSkipping: false) testParsingFile
-	"
+	"This test creates/deletes a file so is skipped by default"
 	| fileName doc |
 
 	self isSkipping
