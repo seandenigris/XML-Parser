@@ -1,0 +1,3 @@
+configuration
+resolvesLocalFromNonLocal: aBoolean
+	self externalEntityLimits resolvesLocalFromNonLocal: aBoolean

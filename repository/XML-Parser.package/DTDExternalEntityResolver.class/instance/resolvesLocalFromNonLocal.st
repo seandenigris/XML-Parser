@@ -1,0 +1,3 @@
+configuration
+resolvesLocalFromNonLocal
+	^ self externalEntityLimits resolvesLocalFromNonLocal

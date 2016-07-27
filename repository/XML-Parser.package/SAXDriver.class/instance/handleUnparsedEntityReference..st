@@ -6,7 +6,7 @@ handleUnparsedEntityReference: aName
 	self isValidating
 		ifTrue: [
 			notationName
-				ifNil: [XMLValidationException signal: 'Undeclared unparsed entity reference &', aName, ';'].
+				ifNil: [(XMLValidationException undeclaredUnparsedEntity: aName) signal].
 			(self dtd includesNotation: notationName)
 				ifFalse: [XMLValidationException signal: 'Undeclared notation "', notationName, '"']].
 	^ notationName.

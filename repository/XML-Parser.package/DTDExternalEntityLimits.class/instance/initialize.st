@@ -1,3 +1,5 @@
 initialization
 initialize
-	super initialize
+	super initialize.
+
+	resolvesLocalFromNonLocal := false.
