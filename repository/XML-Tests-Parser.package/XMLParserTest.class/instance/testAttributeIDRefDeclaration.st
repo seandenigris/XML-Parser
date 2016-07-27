@@ -3,6 +3,10 @@ testAttributeIDRefDeclaration
 	| dtd |
 
 	dtd := '<!DOCTYPE root [
+		<!ELEMENT root (unique|ref|refs)+>
+		<!ELEMENT unique EMPTY>
+		<!ELEMENT ref EMPTY>
+		<!ELEMENT refs EMPTY>
 		<!ATTLIST unique id ID #REQUIRED>
 		<!ATTLIST ref idref IDREF #REQUIRED>
 		<!ATTLIST refs idrefs IDREFS #REQUIRED>]>'.

@@ -3,6 +3,9 @@ testAttributeIDDeclaration
 	| dtd |
 
 	dtd := '<!DOCTYPE root [
+		<!ELEMENT root (unique|unique2)+>
+		<!ELEMENT unique EMPTY>
+		<!ELEMENT unique2 EMPTY>
 		<!ATTLIST unique id ID #REQUIRED>
 		<!ATTLIST unique2 id ID #REQUIRED>]>'.
 	self

@@ -3,11 +3,12 @@ testAttributeDefaultDeclaration
 	| dtd document |
 
 	dtd := '<!DOCTYPE root [
-		<!ATTLIST root one #IMPLIED >
-		<!ATTLIST root two #REQUIRED >
-		<!ATTLIST root three #FIXED "fixedDefault" >
-		<!ATTLIST root three #FIXED "redundant" >
-		<!ATTLIST root four "default" >]>'.
+		<!ELEMENT root EMPTY>
+		<!ATTLIST root one #IMPLIED
+						two #REQUIRED
+						three #FIXED "fixedDefault"
+						three #FIXED "redundant"
+						four "default" >]>'.
 	document := XMLDOMParser parse: dtd, '<root two="required" three="nonDefault" />'.
 	self
 		assert: (document root attributeAt: 'two') = 'required';

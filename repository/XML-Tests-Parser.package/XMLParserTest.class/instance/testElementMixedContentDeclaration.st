@@ -4,8 +4,10 @@ testElementMixedContentDeclaration
 
 	dtd := '<!DOCTYPE root [
 		<!ELEMENT root (#PCDATA | one | two | three)*>
+		<!ELEMENT one EMPTY>
 		<!ELEMENT two (#PCDATA)>
-		<!ELEMENT three (#PCDATA)*>]>'.
+		<!ELEMENT three (#PCDATA)*>
+		<!ELEMENT four EMPTY>]>'.
 	self
 		shouldnt: [
 			XMLDOMParser parse:

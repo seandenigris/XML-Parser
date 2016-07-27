@@ -1,8 +1,13 @@
 tests
 testElementContentModels
-	| dtd |
+	| dtd declarations |
 
-	dtd := '<!DOCTYPE root [
+	declarations := 
+		self elementDeclarationsNamed:
+			#('one' 'two' 'three' 'four' 'red' 'blue' 'green' 'orange' 'mon' 'tue' 'wed' 'fri').
+	dtd := '<!DOCTYPE root [',
+		declarations,
+		'<!ELEMENT root (numbers|colors|days)>
 		<!ELEMENT numbers (one,two?,three)>
 		<!ELEMENT colors (red|blue|green)*>
 		<!ELEMENT days (mon+,tue*,wed)>]>'.

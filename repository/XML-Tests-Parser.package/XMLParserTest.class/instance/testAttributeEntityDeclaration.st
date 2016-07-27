@@ -5,6 +5,7 @@ testAttributeEntityDeclaration
 	dtd := '<!DOCTYPE root [
 		<!ENTITY firstEntity SYSTEM "first.txt" NDATA first>
 		<!ENTITY secondEntity SYSTEM "second.txt" NDATA second>
+		<!ELEMENT root EMPTY>
 		<!ATTLIST root
 			unparsedEntity ENTITY #IMPLIED
 			unparsedEntities ENTITIES #IMPLIED>]>'.

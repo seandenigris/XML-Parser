@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"testAcceptingInvalidPCData" : "monty 12/11/2013 22:58",
+		"testHTMLEntities" : "monty 12/18/2013 23:29",
 		"testParsingNonHTMLSections" : "monty 12/11/2013 22:02",
 		"testParsingText" : "monty 12/11/2013 22:00",
 		"testParsingVoidElements" : "monty 12/11/2013 22:03",

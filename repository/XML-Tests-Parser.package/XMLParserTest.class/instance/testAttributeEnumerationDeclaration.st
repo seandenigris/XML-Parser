@@ -5,6 +5,7 @@ testAttributeEnumerationDeclaration
 	dtd := '<!DOCTYPE root [
 		<!NOTATION txtFile PUBLIC "//file.txt//">
 		<!NOTATION confFile PUBLIC "//file.conf//">
+		<!ELEMENT root EMPTY>
 		<!ATTLIST root
 			number ( one | two | three) #IMPLIED
 			note NOTATION (txtFile | confFile ) #IMPLIED>]>'.

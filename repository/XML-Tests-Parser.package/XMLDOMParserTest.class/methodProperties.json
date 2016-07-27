@@ -6,6 +6,7 @@
 		"testCDATASection" : "monty 12/12/2013 01:09",
 		"testInnerXML" : "monty 12/12/2013 01:07",
 		"testNodeListClass" : "monty 12/12/2013 01:06",
+		"testParseDocumentWhile" : "monty 12/19/2013 01:13",
 		"testParsingAllElementsNamespaceURIs" : "monty 12/12/2013 00:50",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingChangingNamespaces" : "monty 12/12/2013 00:52",

@@ -3,9 +3,9 @@ testAttributeNmtokenDeclaration
 	| dtd |
 
 	dtd := '<!DOCTYPE root [
-		<!ATTLIST root
-			name NMTOKEN #IMPLIED
-			names NMTOKENS #IMPLIED>]>'.
+		<!ELEMENT root ANY>
+		<!ATTLIST root name NMTOKEN #IMPLIED>
+		<!ATTLIST root names NMTOKENS #IMPLIED>]>'.
 	self
 		shouldnt: [SAXHandler parse: dtd, '<root name="one" names="  one  two three"/> ']
 		raise: XMLValidationException.
