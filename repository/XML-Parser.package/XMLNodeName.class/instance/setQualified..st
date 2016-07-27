@@ -1,3 +1,3 @@
-private
+initialization
 setQualified: aQualifiedName
 	qualified := aQualifiedName

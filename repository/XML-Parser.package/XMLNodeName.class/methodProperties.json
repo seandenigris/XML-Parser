@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"qualified:" : "monty 10/1/2014 15:20",
+		"qualified:prefix:localPart:" : "monty 10/1/2014 15:20" },
 	"instance" : {
 		"addObserver:" : "OttoBehrens 2/15/2011 08:18",
 		"changeWith:" : "JAAyer 11/1/2010 04:36",
@@ -14,12 +15,11 @@
 		"notifyOf:with:with:with:" : "OttoBehrens 2/15/2011 08:18",
 		"notifyOf:withArguments:" : "OttoBehrens 2/15/2011 08:18",
 		"prefix" : "monty 1/28/2014 19:42",
-		"prefix:" : "JAAyer 6/27/2010 15:17",
+		"prefix:" : "monty 10/1/2014 15:29",
 		"printOn:" : "JAAyer 6/27/2010 15:15",
 		"qualified" : "JAAyer 7/26/2010 14:23",
 		"qualified:" : "monty 1/28/2014 20:17",
 		"removeObserver:" : "OttoBehrens 2/15/2011 08:18",
 		"setFromQualified" : "monty 2/2/2014 05:23",
-		"setPrefix:localPart:" : "JAAyer 8/14/2010 20:50",
 		"setQualified:" : "monty 1/28/2014 19:42",
 		"setQualified:prefix:localPart:" : "JAAyer 6/27/2010 15:20" } }
