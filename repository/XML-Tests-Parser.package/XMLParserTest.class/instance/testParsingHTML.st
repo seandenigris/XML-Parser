@@ -7,6 +7,10 @@ testParsingHTML
 		assert: document allNodes size = 4;
 		assert: (document allElementsCollect: [:each | each name]) asArray = #('html' 'body');
 		assert: (document findElementNamed: 'body') contentString = 'text'.
+	document := HTMLParser parse: '< text'.
+	self
+		assert: document allNodes size = 4;
+		assert: (document findElementNamed: 'body') contentString = '< text'.
 
 	document := HTMLParser parse:
 		'<head><title><b>"title</b></title><script>',

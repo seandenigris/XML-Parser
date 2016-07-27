@@ -1,5 +1,5 @@
 tests
-testComments
+testXMLComment
 	| document comment|
 
 	document := XMLDOMParser parse: self addressBookXML.

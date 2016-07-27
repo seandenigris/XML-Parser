@@ -11,11 +11,13 @@ testTokenizerCharacters
 		assert: tokenizer streamReader next == $<;
 		assert: ('address' allSatisfy: [:each | tokenizer streamReader next == each]);
 		assert: tokenizer streamReader peek == $b.
+
 	tokenizer streamReader pushBack: 'test'.
 	self
 		assert: ('test' allSatisfy: [:each | tokenizer streamReader next == each]);
 		assert: tokenizer streamReader peek == $b;
 		assert: ('book' allSatisfy: [:each | tokenizer streamReader next == each]).
+
 	tokenizer streamReader
 		pushBack: 'book';
 		pushBack: 'test'.

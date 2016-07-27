@@ -3,13 +3,15 @@ testSAXEntityHandlers
 	| xml parser |
 
 	xml := '<!DOCTYPE root [
-		<!ENTITY first " &second; ">
+		<!ENTITY % firstDeclaration "<!ENTITY first &#39; &second; &#39;>">
+		%firstDeclaration;
 		<!ENTITY second " replacement ">]>
-	<root>&first;</root>'.
+	<root name="&second;">&first;</root>'.
 	(parser :=SAXHandlerProxy saxHandler: (SAXHandler on: xml)) parseDocument.
 	self assert:
 		#(startDocument
 			startDTD:publicID:systemID:
+			parameterEntityDeclaration:replacement:
 			generalEntityDeclaration:replacement: generalEntityDeclaration:replacement:
 			endDTD
 			startElement:prefix:uri:localName:attributes:
