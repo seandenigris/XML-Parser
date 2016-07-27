@@ -1,5 +1,5 @@
 tests
-testSortingAttributes
+testAttributeSorting
 	| element |
 
 	element :=

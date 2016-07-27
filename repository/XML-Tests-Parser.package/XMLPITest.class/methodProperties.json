@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"nodeClass" : "monty 11/2/2014 11:18",
+		"testCanonicallyEquals" : "monty 12/6/2014 14:23",
 		"testData" : "monty 11/22/2014 23:24",
 		"testIsPI" : "monty 11/19/2014 21:46",
+		"testSortKey" : "monty 12/3/2014 01:09",
 		"testTarget" : "monty 11/22/2014 23:24",
 		"testTargetData" : "monty 11/22/2014 19:31",
 		"testWriteXMLOn" : "monty 11/24/2014 07:35" } }

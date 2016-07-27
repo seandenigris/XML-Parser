@@ -8,6 +8,7 @@
 		"testAncestorElementsDo" : "monty 11/19/2014 21:17",
 		"testAncestorNodes" : "monty 11/19/2014 21:17",
 		"testAncestorNodesDo" : "monty 11/19/2014 21:17",
+		"testCanonicallyEquals" : "monty 12/6/2014 14:24",
 		"testCopy" : "monty 11/22/2014 20:14",
 		"testElement" : "monty 11/19/2014 21:06",
 		"testExpandedName" : "monty 11/24/2014 08:13",
@@ -23,5 +24,6 @@
 		"testParent" : "monty 11/19/2014 21:11",
 		"testPrefix" : "monty 11/23/2014 20:27",
 		"testPreviousNode" : "monty 11/24/2014 18:46",
+		"testSortKey" : "monty 12/3/2014 01:10",
 		"testValue" : "monty 11/23/2014 20:16",
 		"testWriteXMLOn" : "monty 11/23/2014 05:17" } }

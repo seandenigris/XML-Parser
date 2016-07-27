@@ -6,7 +6,7 @@
 		"IsSkipping" ],
 	"commentStamp" : "monty 10/14/2014 00:42",
 	"instvars" : [
-		"isSkipping" ],
+		 ],
 	"name" : "XMLExternalEntityTest",
 	"pools" : [
 		 ],
