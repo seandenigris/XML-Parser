@@ -1,1 +1,0 @@
-This is a base class for attribute default value validators that implement the constraints (like #REQUIRED) from the default declaration.

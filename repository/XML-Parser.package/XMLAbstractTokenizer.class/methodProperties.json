@@ -54,6 +54,7 @@
 		"nextXMLDecl" : "monty 12/9/2013 01:21",
 		"nextXMLDeclAttribute:" : "monty 12/9/2013 07:40",
 		"nextXMLDeclAttributeValue" : "monty 12/9/2013 06:50",
+		"parseError:" : "monty 12/7/2013 01:15",
 		"pushBackReplacement:forEntity:onClose:" : "monty 12/9/2013 17:54",
 		"replaceParameterEntityReference" : "monty 12/7/2013 04:31",
 		"replacementFromGeneralEntity:" : "monty 12/10/2013 07:33",

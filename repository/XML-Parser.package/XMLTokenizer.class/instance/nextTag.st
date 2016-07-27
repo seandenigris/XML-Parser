@@ -36,7 +36,6 @@ nextTag
 		handleStartTag: tagName
 		attributes: attributes
 		namespaces: namespaces.
-
 	streamReader peek == $/
 		ifTrue: [
 			streamReader next.

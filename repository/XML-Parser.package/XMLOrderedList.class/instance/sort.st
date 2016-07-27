@@ -1,3 +1,3 @@
-sorting
+enumerating
 sort
 	collection sort
