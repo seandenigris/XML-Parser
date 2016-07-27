@@ -1,5 +1,6 @@
 *XML-Parser
 xmlParserIsWhitespace
+	"Overridden in Gemstone version"
 	value = 32 "space"
 		ifTrue: [^ true].
 	value = 10 "lf"
