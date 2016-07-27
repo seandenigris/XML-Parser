@@ -7,11 +7,12 @@ handleGeneralEntityReference: aName
 			generalEntityAt: aName
 			ifAbsent: [
 				self isValidating
-					ifTrue: [self errorUndeclaredGeneralEntity: aName]
-					ifFalse: [
-						self isStandalone
-							ifTrue: [self errorStandaloneUndeclaredGeneralEntity: aName]].
+					ifTrue: [self errorUndeclaredGeneralEntity: aName].
+				self isStandalone
+					ifTrue: [self errorStandaloneUndeclaredGeneralEntity: aName].
 				^ nil].
+
 	entity isUnparsed
 		ifTrue: [self errorUnparsedGeneralEntityReference: aName].
+
 	^ entity.

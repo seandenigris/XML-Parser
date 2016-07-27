@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 7/18/2016 03:19",
+	"commentStamp" : "monty 7/18/2016 08:18",
 	"instvars" : [
-		"ndata" ],
-	"name" : "DTDUnparsedEntity",
+		 ],
+	"name" : "DTDUnresolvableExternalEntity",
 	"pools" : [
 		 ],
-	"super" : "DTDEntity",
+	"super" : "DTDExternalEntity",
 	"type" : "normal" }

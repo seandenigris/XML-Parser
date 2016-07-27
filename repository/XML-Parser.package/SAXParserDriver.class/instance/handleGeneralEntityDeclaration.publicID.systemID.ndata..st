@@ -9,7 +9,13 @@ handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID nd
 						resolver: self externalEntityResolver
 						publicID: aPublicID
 						systemID: aSystemID
-						baseURI: self baseURI]]
+						baseURI: self baseURI]
+				ifFalse: [
+					(self isValidating
+						or: [self isStandalone])
+						ifTrue: [
+							self doctypeDefinition
+								addUnresolvableExternalGeneralEntity: aName]]]
 		ifFalse: [
 			self doctypeDefinition
 				addUnparsedEntity: aName

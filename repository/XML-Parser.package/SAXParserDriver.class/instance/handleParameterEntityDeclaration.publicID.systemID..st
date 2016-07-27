@@ -7,7 +7,13 @@ handleParameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID
 				resolver: self externalEntityResolver
 				publicID: aPublicID
 				systemID: aSystemID
-				baseURI: self baseURI].
+				baseURI: self baseURI]
+		ifFalse: [
+			(self isValidating
+				or: [self isStandalone])
+				ifTrue: [
+					self doctypeDefinition
+						addUnresolvableExternalParameterEntity: aName]].
 
 	self saxHandler
 		parameterEntityDeclaration: aName
