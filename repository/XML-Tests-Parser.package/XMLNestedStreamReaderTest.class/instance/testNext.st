@@ -6,7 +6,8 @@ testNext
 	currentLineNumber := 1.
 	currentColumnNumber := currentPosition := 0.
 	self normalizedSourceXML do: [:each |
-		streamReader next == self normalizedLineEnding
+		self assert: streamReader next = each.
+		each = self normalizedLineEnding
 			ifTrue: [
 				currentLineNumber := currentLineNumber + 1.
 				currentColumnNumber := 0]

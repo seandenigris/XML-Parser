@@ -9,8 +9,8 @@ testPushBackStreamOnClose
 		onClose: [closed := true].
 	self normalizedSourceXML do: [:each |
 		self
-			assert: streamReader peek == each;
-			assert: streamReader next == each;
+			assert: streamReader peek = each;
+			assert: streamReader next = each;
 			deny: closed].
 	self
 		assert: streamReader next isNil;

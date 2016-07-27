@@ -11,7 +11,7 @@ testSkipSeparators
 			totalSeparatorsSkipped := 0.
 			[readStream peek isXMLSeparator]
 				whileTrue: [
-					readStream next == self normalizedLineEnding
+					readStream next = self normalizedLineEnding
 						ifTrue: [
 							currentLineNumber := currentLineNumber + 1.
 							currentColumnNumber := 0]

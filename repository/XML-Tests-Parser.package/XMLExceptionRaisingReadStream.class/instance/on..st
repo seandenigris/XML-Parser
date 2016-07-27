@@ -1,3 +1,4 @@
 initialization
 on: aCollection
-	stream := aCollection readStream
+	stream := aCollection readStream.
+	isClosed := false.

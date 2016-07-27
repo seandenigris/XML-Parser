@@ -8,22 +8,24 @@ testAttributeDefaultFixedValue
 			<!ATTLIST root
 				one CDATA #FIXED "fixedDefault"
 				one CDATA #FIXED "redundant"
-				two CDATA #FIXED "fixedDefaultTwo"
-				three CDATA #FIXED "" >
+				two IDREF #FIXED "fixedDefaultTwo"
+				three CDATA #FIXED ""
+				four ID #REQUIRED >
 		]>'.
 
 	document :=
 		XMLDOMParser parse:
-			dtd, '<root one=''fixedDefault'' two="fixedDefaultTwo" three=""/>'.
+			dtd, '<root one=''fixedDefault'' two="  fixedDefaultTwo  " three="" four="fixedDefaultTwo"/>'.
 	root := document root.
 	self
 		assert: (root attributeAt: 'one') = 'fixedDefault';
 		assert: (root attributeAt: 'two') = 'fixedDefaultTwo';
 		assert: (root includesAttribute: 'three');
-		assert: (root attributeAt: 'three') isEmpty.
+		assert: (root attributeAt: 'three') isEmpty;
+		assert: (root attributeAt: 'four') = 'fixedDefaultTwo'.
 
 	"attributes with fixed defaults are set automatically if not present"
-	document := XMLDOMParser parse: dtd, '<root />'.
+	document := XMLDOMParser parse: dtd, '<root four="fixedDefaultTwo"/>'.
 	root := document root.
 	self
 		assert: (root attributeAt: 'one') = 'fixedDefault';

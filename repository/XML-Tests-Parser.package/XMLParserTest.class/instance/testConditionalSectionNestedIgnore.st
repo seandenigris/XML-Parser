@@ -17,7 +17,7 @@ testConditionalSectionNestedIgnore
 			dtd := dtdTemplate format: (Array with: ']]').
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver entities:
+					(DTDPluggableExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]
@@ -27,7 +27,7 @@ testConditionalSectionNestedIgnore
 			dtd := dtdTemplate format: (Array with: ']]>').
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver entities:
+					(DTDPluggableExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]

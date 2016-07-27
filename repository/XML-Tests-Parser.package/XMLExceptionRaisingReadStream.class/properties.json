@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 6/18/2015 00:58",
+	"commentStamp" : "monty 4/10/2016 00:59",
 	"instvars" : [
-		"stream" ],
+		"stream",
+		"isClosed" ],
 	"name" : "XMLExceptionRaisingReadStream",
 	"pools" : [
 		 ],

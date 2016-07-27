@@ -2,10 +2,10 @@
 	"class" : {
 		"on:" : "monty 2/15/2016 23:29" },
 	"instance" : {
-		"atEnd" : "monty 10/13/2014 21:56",
-		"close" : "monty 10/13/2014 22:00",
+		"atEnd" : "monty 4/10/2016 00:53",
+		"close" : "monty 4/10/2016 00:41",
 		"isBinary" : "monty 5/26/2015 01:46",
 		"isStream" : "monty 10/13/2014 22:00",
 		"next" : "monty 10/13/2014 21:57",
-		"on:" : "monty 2/15/2016 23:29",
+		"on:" : "monty 4/10/2016 00:41",
 		"peek" : "monty 10/13/2014 22:01" } }

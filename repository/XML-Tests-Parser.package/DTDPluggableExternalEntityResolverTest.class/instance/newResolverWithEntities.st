@@ -1,3 +1,3 @@
 instance creation
 newResolverWithEntities
-	^ self newResolver entities: self entityAssociations
+	^ self newResolver externalEntities: self entityAssociations

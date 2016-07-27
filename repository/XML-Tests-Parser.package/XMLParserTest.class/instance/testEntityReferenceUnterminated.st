@@ -16,6 +16,7 @@ testEntityReferenceUnterminated
 			self
 				should: [SAXHandler parse: each]
 				raise: XMLWellFormednessException.
+			"should still raise erros even when replacement is disabled"
 			self
 				should: [
 					(SAXHandler on: each)

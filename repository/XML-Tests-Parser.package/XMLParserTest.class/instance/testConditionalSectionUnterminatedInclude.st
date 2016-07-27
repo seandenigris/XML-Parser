@@ -12,7 +12,7 @@ testConditionalSectionUnterminatedInclude
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver entities:
+							(DTDPluggableExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						resolvesExternalEntities: true;
 						parseDocument]

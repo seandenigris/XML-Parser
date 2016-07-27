@@ -1,6 +1,6 @@
 tests
 testProcessingInstructionBadTarget
-	XMLStringMethodsTest badNames, #('xml' 'XML' 'XmL' 'xMl' 'xML' 'XMl')
+	self badNames, #('xml' 'XML' 'Xml' 'xML' 'XMl' 'xmL' 'XmL' 'xMl')
 		do: [:each |
 			self
 				should: [SAXHandler parse: '<?', each, ' value?><test/>']

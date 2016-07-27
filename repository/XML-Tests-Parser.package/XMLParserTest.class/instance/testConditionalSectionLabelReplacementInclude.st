@@ -17,7 +17,7 @@ testConditionalSectionLabelReplacementInclude
 					dtd := each format: (Array with: 'INCLUDE').
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver entities:
+							(DTDPluggableExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> dtd));
 						resolvesExternalEntities: true;
 						parseDocument]
@@ -27,7 +27,7 @@ testConditionalSectionLabelReplacementInclude
 					dtd := each format: (Array with: 'IGNORE').
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver entities:
+							(DTDPluggableExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> dtd));
 						resolvesExternalEntities: true;
 						parseDocument]

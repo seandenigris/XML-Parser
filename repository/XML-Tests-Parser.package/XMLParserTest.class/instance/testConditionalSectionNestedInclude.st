@@ -17,7 +17,7 @@ testConditionalSectionNestedInclude
 		shouldnt: [
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver entities:
+					(DTDPluggableExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]

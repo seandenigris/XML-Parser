@@ -6,10 +6,10 @@
 		"newEntityLimits" : "monty 3/22/2016 04:39",
 		"newResolver" : "monty 3/22/2016 04:37",
 		"resolverClass" : "monty 3/22/2016 03:51",
-		"testCopy" : "monty 3/23/2016 01:15",
+		"testCopy" : "monty 4/3/2016 00:45",
 		"testExternalEntityLimits" : "monty 3/22/2016 04:41",
 		"testExternalSubsetReadLimit" : "monty 3/23/2016 01:19",
 		"testMaxExternalEntities" : "monty 3/22/2016 04:43",
 		"testMaxExternalEntitySize" : "monty 3/23/2016 01:19",
 		"testResolvesLocalFromNonLocal" : "monty 3/22/2016 04:46",
-		"testTotalResolvedEntities" : "monty 3/29/2016 04:24" } }
+		"testTotalResolvedExternalEntities" : "monty 4/3/2016 00:46" } }

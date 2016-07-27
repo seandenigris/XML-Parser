@@ -8,7 +8,7 @@ testExternalSubsetImplicitEncodingDetection
 		shouldnt: [
 			(SAXHandler on: document)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver entities:
+					(DTDPluggableExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> (self asciiToUTF16BE: dtd)));
 				resolvesExternalEntities: true;
 				parseDocument]
@@ -17,7 +17,7 @@ testExternalSubsetImplicitEncodingDetection
 		shouldnt: [
 			(SAXHandler on: document)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver entities:
+					(DTDPluggableExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> (self asciiToUTF16LE: dtd)));
 				resolvesExternalEntities: true;
 				parseDocument]

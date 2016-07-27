@@ -2,19 +2,23 @@ tests
 testAttributeEnumerationDeclaration
 	| dtd |
 
-	dtd := '<!DOCTYPE root [
-		<!NOTATION txtFile PUBLIC "//file.txt//">
-		<!NOTATION confFile PUBLIC "//file.conf//">
-		<!ELEMENT root EMPTY>
-		<!ATTLIST root
-			number ( one | two | three) #IMPLIED
-			note NOTATION (txtFile | confFile ) #IMPLIED>]>'.
-	self
-		shouldnt: [SAXHandler parse: dtd, '<root number="two" note="txtFile"/>']
-		raise: XMLValidationException.
+	dtd := '
+		<!DOCTYPE root [
+			<!ELEMENT root ANY>
+			<!ATTLIST root number ( one | two | three) #IMPLIED>
+		]>'.
+	#('one' 'two' 'three' '  one  ' '		two 	' '
+		three
+		') do: [:each |
+		self
+			shouldnt: [SAXHandler parse: dtd, '<root number="', each, '"/>']
+			raise: XMLValidationException].
 	self
 		should: [SAXHandler parse: dtd, '<root number="four"/>']
 		raise: XMLValidationException.
 	self
-		should: [SAXHandler parse: dtd, '<root note="htmlFile" />']
+		shouldnt: [
+			(SAXHandler on: dtd, '<root number="four"/>')
+				isValidating: false;
+				parseDocument]
 		raise: XMLValidationException.
