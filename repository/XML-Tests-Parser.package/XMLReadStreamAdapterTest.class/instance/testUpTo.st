@@ -1,12 +1,11 @@
 tests
 testUpTo
-	| adapter |
-
-	self outputCollection do: [:each |
+	self outputCollection do: [:each | | adapter |
 		adapter := self newStreamAdapter.
 		self assert:
 			(adapter upTo: each) =
-				(self outputCollection copyUpTo: each)].
-
-	adapter := self newStreamAdapter.
-	self assert: (adapter upTo: #absent) = self outputCollection.
+				(self outputCollection copyUpTo: each).
+		self assert:
+			adapter upToEnd =
+				(self outputCollection copyAfter: each)].
+	self assert: (self newStreamAdapter upTo: #absent) = self outputCollection.
