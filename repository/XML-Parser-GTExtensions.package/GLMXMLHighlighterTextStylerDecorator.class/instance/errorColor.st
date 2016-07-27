@@ -1,3 +1,3 @@
 accessing
 errorColor
-	^ TextColor red
+	^ errorColor

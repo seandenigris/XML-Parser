@@ -1,22 +1,23 @@
 parsing
 parse: aString onError: anError
-	| highlightingParser parser |
+	| highlightingParser parser highlightedText |
 
 	aString size > self highlightableLengthLimit
 		ifTrue: [^ aString asText].
 
 	highlightingParser := XMLHighlightingParser on: aString.
-	parser := highlightingParser parser.
-	^ [parser parseDocument.
-		highlightingParser asHighlightedText]
+	parser := highlightingParser parser. "used to get position on error"
+	[parser parseDocument.
+		highlightedText := highlightingParser asHighlightedText]
 		on: XMLParserException
-		do: [:error | | errorPosition |
-			(errorPosition := parser currentPosition) >= aString size
-				ifTrue: [
-					highlightingParser
-						asHighlightedTextWithRemainderColored: self errorColor
-						startingAt: 1]
-				ifFalse: [
-					highlightingParser
-						asHighlightedTextWithRemainderColored: self errorColor
-						startingAt: errorPosition - 1]].
+		do: [:error |
+			highlightedText :=
+				highlightingParser
+					asHighlightedTextWithRemainderColored: self errorColor
+					startingAt:
+						(parser currentPosition >= aString size
+							ifTrue: [1]
+							ifFalse: [parser currentPosition])].
+	encodingName := highlightingParser encodingName.
+
+	^ highlightedText.

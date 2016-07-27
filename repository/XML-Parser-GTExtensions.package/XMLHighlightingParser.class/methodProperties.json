@@ -4,6 +4,7 @@
 	"instance" : {
 		"asHighlightedText" : "monty 10/1/2015 22:24",
 		"asHighlightedTextWithRemainderColored:startingAt:" : "monty 10/2/2015 02:11",
+		"encodingName" : "monty 10/3/2015 01:54",
 		"endCDataPosition:" : "monty 10/1/2015 04:49",
 		"endCommentPosition:" : "monty 10/1/2015 04:49",
 		"endDeclarationPosition:" : "monty 10/1/2015 04:49",
@@ -15,7 +16,7 @@
 		"endXMLDeclarationPosition:" : "monty 10/1/2015 04:49",
 		"highlighter" : "monty 10/1/2015 04:50",
 		"inputText" : "monty 10/1/2015 22:24",
-		"on:" : "monty 10/1/2015 04:27",
+		"on:" : "monty 10/3/2015 02:06",
 		"parsingResult" : "monty 10/1/2015 22:22",
 		"startCDataPosition:" : "monty 10/1/2015 04:43",
 		"startCommentPosition:" : "monty 10/1/2015 04:47",
@@ -25,4 +26,5 @@
 		"startPIPosition:" : "monty 10/1/2015 04:47",
 		"startQuotedStringValuePosition:" : "monty 10/1/2015 04:47",
 		"startTagPosition:" : "monty 10/1/2015 04:48",
-		"startXMLDeclarationPosition:" : "monty 10/1/2015 04:46" } }
+		"startXMLDeclarationPosition:" : "monty 10/1/2015 04:46",
+		"xmlVersion:encoding:standalone:" : "monty 10/3/2015 01:54" } }

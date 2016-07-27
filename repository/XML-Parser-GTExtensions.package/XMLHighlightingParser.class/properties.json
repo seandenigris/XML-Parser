@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "monty 10/2/2015 04:56",
 	"instvars" : [
-		"highlighter" ],
+		"highlighter",
+		"encodingName" ],
 	"name" : "XMLHighlightingParser",
 	"pools" : [
 		 ],

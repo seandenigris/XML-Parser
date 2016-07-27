@@ -1,3 +1,3 @@
 accessing
 highlightableLengthLimit
-	^ 100000
+	^ highlightableLengthLimit

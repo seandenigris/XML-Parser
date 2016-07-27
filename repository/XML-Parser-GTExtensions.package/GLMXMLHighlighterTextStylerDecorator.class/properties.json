@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "monty 10/2/2015 04:52",
 	"instvars" : [
-		 ],
+		"highlightableLengthLimit",
+		"errorColor",
+		"encodingName" ],
 	"name" : "GLMXMLHighlighterTextStylerDecorator",
 	"pools" : [
 		 ],
