@@ -1,9 +1,10 @@
 tests
 testFromStream
-	self allURIStringsDo: [:each | | readStream uri |
-		readStream := each readStream.
-		uri := XMLURI fromStream: readStream.
+	self allURIStringsDo: [:each | | stream uri |
+		stream := each readStream.
+		uri := XMLURI fromStream: stream.
 		self
 			assert: uri class == XMLURI;
-			assert: readStream atEnd;
-			assert: uri = each asXMLURI]
+			assert: uri uriString isNil;
+			assert: uri = each asXMLURI;
+			assert: stream atEnd]
