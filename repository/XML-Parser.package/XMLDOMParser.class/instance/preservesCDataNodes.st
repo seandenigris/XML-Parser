@@ -1,3 +1,3 @@
-testing
+configuring
 preservesCDataNodes
 	^ self configuration preservesCDataNodes

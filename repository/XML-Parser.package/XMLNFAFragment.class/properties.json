@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "monty 12/28/2013 21:51",
 	"instvars" : [
 		"firstState",
-		"hasTerminalFirstState",
-		"unconnectedTerminalState" ],
+		"terminalStates" ],
 	"name" : "XMLNFAFragment",
 	"pools" : [
 		 ],

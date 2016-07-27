@@ -1,3 +1,3 @@
-accessing
+private
 scopeAllocator
-	^ saxHandler scopeAllocator
+	^ scopeAllocator ifNil: [scopeAllocator := XMLNamespaceScopeAllocator new]

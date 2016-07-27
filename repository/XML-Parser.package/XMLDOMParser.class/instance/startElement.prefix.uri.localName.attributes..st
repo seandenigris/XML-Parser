@@ -9,5 +9,4 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 				qualifiedName: aQualifiedName
 				prefix: aPrefix
 				localName: aLocalName
-				attributes: aDictionary
-				namespaceScope: self currentScope)
+				attributes: aDictionary)

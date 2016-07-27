@@ -1,3 +1,3 @@
-accessing
+configuration
 externalEntityResolver: anExternalEntityResolver
 	self configuration externalEntityResolver: anExternalEntityResolver

@@ -1,2 +1,3 @@
 validation
 validateAttributeValue: aValue
+	self subclassResponsibility

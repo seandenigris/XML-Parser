@@ -1,5 +1,5 @@
 instance creation
 firstState: aFirstState terminalState: aTerminalState
 	^ self new
-		setFirstState: aFirstState
+		firstState: aFirstState;
 		terminalState: aTerminalState

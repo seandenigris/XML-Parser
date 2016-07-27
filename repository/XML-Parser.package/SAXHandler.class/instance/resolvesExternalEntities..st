@@ -1,3 +1,3 @@
-accessing
+configuration
 resolvesExternalEntities: aBoolean
 	self configuration resolvesExternalEntities: aBoolean

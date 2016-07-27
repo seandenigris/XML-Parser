@@ -1,7 +1,5 @@
 accessing
 entityURIFromRelative: aRelativeUri andBase: aBaseUri
-	^ ((self httpClient beginsWithSupportedURLProtocol: aRelativeUri)
-		ifTrue: [self httpClient]
-		ifFalse: [self fileClient])
-			combineRelative: aRelativeUri
-			withBase: aBaseUri
+	^ (self clientForURIs: (Array with: aBaseUri with: aRelativeUri))
+		combineRelative: aRelativeUri
+		withBase: aBaseUri

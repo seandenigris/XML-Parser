@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "monty 12/28/2013 22:34",
 	"instvars" : [
 		"nfaStates",
-		"cachedDfaStates" ],
+		"cachedDfaStates",
+		"transitions" ],
 	"name" : "XMLDFAState",
 	"pools" : [
 		 ],

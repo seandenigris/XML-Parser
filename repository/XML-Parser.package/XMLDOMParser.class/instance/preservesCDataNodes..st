@@ -1,3 +1,3 @@
-accessing
+configuring
 preservesCDataNodes: aBoolean
 	self configuration preservesCDataNodes: aBoolean

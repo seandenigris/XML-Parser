@@ -1,3 +1,3 @@
-testing
+configuration
 requiresDocumentConstraints
 	^ self configuration requiresDocumentConstraints

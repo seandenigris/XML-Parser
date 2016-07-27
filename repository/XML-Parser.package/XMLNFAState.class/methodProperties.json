@@ -2,10 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addTransition:" : "monty 11/17/2013 21:44",
-		"asDFA" : "monty 12/18/2013 21:39",
-		"copyAndRedirectIncomingTransitionsTo:" : "monty 11/17/2013 23:24",
-		"incomingTransition:" : "monty 11/17/2013 23:22",
-		"incomingTransitions" : "monty 12/18/2013 21:05",
-		"previousStatesDo:" : "monty 11/17/2013 22:55",
-		"redirectIncomingTransitionsTo:" : "monty 11/17/2013 16:45" } }
+		"addTo:" : "monty 12/28/2013 18:59",
+		"asDFAState" : "monty 12/28/2013 22:33",
+		"connectToState:" : "monty 12/27/2013 23:45",
+		"matches:" : "monty 12/27/2013 21:10" } }

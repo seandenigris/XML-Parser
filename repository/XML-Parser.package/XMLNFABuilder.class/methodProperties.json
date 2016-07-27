@@ -2,16 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyAlternation" : "monty 11/17/2013 23:29",
-		"applyConcatenation" : "monty 11/18/2013 01:46",
-		"applyOptional" : "monty 11/17/2013 23:50",
-		"applyPlus" : "monty 11/17/2013 22:20",
-		"applyStar" : "monty 11/17/2013 12:02",
-		"buildNFAFromFragments" : "monty 11/18/2013 17:56",
+		"applyBranch" : "monty 12/28/2013 01:26",
+		"applyConcatenation" : "monty 12/27/2013 23:46",
+		"applyOptional" : "monty 12/27/2013 23:43",
+		"applyPlus" : "monty 12/28/2013 01:19",
+		"applyStar" : "monty 12/27/2013 23:55",
+		"firstStateOfAcceptingNFA" : "monty 12/28/2013 22:51",
 		"fragmentStack" : "monty 11/17/2013 14:16",
 		"hasFragments" : "monty 12/6/2013 06:40",
 		"popFragment" : "monty 11/17/2013 08:01",
 		"pushFragment:" : "monty 11/17/2013 08:01",
-		"pushMatcher:" : "monty 11/17/2013 20:48",
+		"pushMatcher:" : "monty 12/27/2013 21:41",
 		"topFragment" : "monty 11/17/2013 12:01",
 		"totalFragments" : "monty 11/17/2013 15:04" } }

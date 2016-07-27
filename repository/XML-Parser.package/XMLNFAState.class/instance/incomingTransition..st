@@ -1,3 +1,0 @@
-transitions
-incomingTransition: aTransition
-	self incomingTransitions addIfNotPresent: aTransition

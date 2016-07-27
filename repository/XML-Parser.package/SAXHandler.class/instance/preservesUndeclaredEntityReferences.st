@@ -1,3 +1,3 @@
-testing
+configuration
 preservesUndeclaredEntityReferences
 	^ self configuration preservesUndeclaredEntityReferences

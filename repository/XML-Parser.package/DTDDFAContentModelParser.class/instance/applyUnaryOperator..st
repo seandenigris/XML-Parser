@@ -1,4 +1,4 @@
-parsing
+evaluation
 applyUnaryOperator: aCharacter
 	nfaBuilder hasFragments
 		ifFalse: [self errorMissingOperand].

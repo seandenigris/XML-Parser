@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 12/28/2013 22:29",
 	"instvars" : [
 		"input",
 		"documentUri",
-		"configuration",
-		"elementNester",
-		"scopeAllocator" ],
+		"configuration" ],
 	"name" : "SAXHandler",
 	"pools" : [
 		 ],

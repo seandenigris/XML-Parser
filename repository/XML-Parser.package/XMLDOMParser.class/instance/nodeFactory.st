@@ -1,3 +1,3 @@
-accessing
+configuring
 nodeFactory
 	^ self configuration nodeFactory

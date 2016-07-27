@@ -1,2 +1,3 @@
 validation
 validateAttributeDefaultIn: anAttributeDictionary
+	self subclassResponsibility

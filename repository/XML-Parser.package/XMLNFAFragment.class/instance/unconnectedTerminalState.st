@@ -1,3 +1,0 @@
-accessing
-unconnectedTerminalState
-	^ unconnectedTerminalState

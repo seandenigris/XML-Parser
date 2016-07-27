@@ -1,3 +1,3 @@
 testing
 isAccepting
-	^ isAccepting ifNil: [isAccepting := false]
+	^ false

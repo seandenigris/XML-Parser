@@ -15,7 +15,7 @@ The #on: messages create new parsers on the given input string, stream, URL, or 
 
 There is also #parseDocumentWhile: to stop parsing before the end.
 	(SAXHandlerSubclass on: xml)
-		parseDocumentWhile: [self shouldStopParsing not].
+		parseDocumentWhile: [self shouldKeepParsing].
 
 To parse incrementally, send #parser to an instance to get the underlying XMLParser object and send it #parseToken repeatedly:
 	(handler := SAXHandlerSubclass on: xml)

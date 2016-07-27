@@ -1,3 +1,3 @@
-testing
+configuration
 usesNamespaces
 	^ self configuration usesNamespaces

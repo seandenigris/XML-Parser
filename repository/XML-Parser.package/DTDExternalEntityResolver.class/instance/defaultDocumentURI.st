@@ -1,4 +1,4 @@
-resolving
+accessing
 defaultDocumentURI
 	^ self fileClient
 		pathToFile: 'default'

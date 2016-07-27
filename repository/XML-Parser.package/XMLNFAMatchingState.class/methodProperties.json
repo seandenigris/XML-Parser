@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"matcher:" : "monty 12/27/2013 21:15" },
+	"instance" : {
+		"connectToState:" : "monty 12/28/2013 21:52",
+		"matcher:" : "monty 12/27/2013 21:16",
+		"matches:" : "monty 12/27/2013 21:15",
+		"nextState" : "monty 12/27/2013 21:13" } }

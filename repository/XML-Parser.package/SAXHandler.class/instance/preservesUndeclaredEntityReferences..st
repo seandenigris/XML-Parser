@@ -1,3 +1,3 @@
-accessing
+configuration
 preservesUndeclaredEntityReferences: aBoolean
 	self configuration preservesUndeclaredEntityReferences: aBoolean

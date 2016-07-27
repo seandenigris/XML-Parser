@@ -1,0 +1,1 @@
+This class parses a content model using postfix conversion and an NFABuilder to build a NFA, which it converts to a DFA.

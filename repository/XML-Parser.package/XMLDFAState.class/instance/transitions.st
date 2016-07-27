@@ -1,7 +1,3 @@
 accessing
 transitions
-	^ transitions
-		ifNil: [
-			transitions := OrderedCollection new.
-			self initializeDFAStateTransitions.
-			transitions].
+	^ transitions ifNil: [transitions := Dictionary new]

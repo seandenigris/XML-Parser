@@ -1,15 +1,9 @@
 building
 pushMatcher: aMatcher
-	| firstState transition terminalState |
+	| firstState |
 
-	terminalState := XMLNFAState new.
-	transition :=
-		XMLNFATransition
-			matcher: aMatcher
-			nextState: terminalState.
-	firstState := XMLNFAState transition: transition.
-
+	firstState := XMLNFAMatchingState matcher: aMatcher.
 	self pushFragment:
 		(XMLNFAFragment
 			firstState: firstState
-			terminalState: terminalState).
+			terminalState: firstState).

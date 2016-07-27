@@ -1,1 +1,0 @@
-Matchers are used to tell what state to enter and to group NFA states together to construct DFA states.

@@ -1,3 +1,3 @@
-testing
+configuration
 resolvesExternalEntities
 	^ self configuration resolvesExternalEntities

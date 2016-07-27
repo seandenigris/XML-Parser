@@ -1,12 +1,14 @@
 {
 	"class" : {
-		"firstState:" : "monty 11/17/2013 11:51",
-		"firstState:terminalState:" : "monty 11/17/2013 11:32" },
+		"firstState:terminalState:" : "monty 12/27/2013 23:50",
+		"firstState:terminalStates:" : "monty 12/27/2013 23:50" },
 	"instance" : {
+		"combinedTerminalStatesFrom:" : "monty 12/27/2013 23:14",
+		"connectToFragment:" : "monty 12/27/2013 23:46",
+		"connectToState:" : "monty 12/27/2013 23:46",
 		"firstState" : "monty 11/17/2013 10:48",
 		"firstState:" : "monty 11/17/2013 11:51",
-		"hasTerminalFirstState" : "monty 11/17/2013 23:49",
-		"hasTerminalFirstState:" : "monty 11/17/2013 23:49",
-		"setFirstState:terminalState:" : "monty 11/17/2013 23:41",
-		"unconnectedTerminalState" : "monty 11/17/2013 23:43",
-		"unconnectedTerminalState:" : "monty 11/17/2013 23:43" } }
+		"terminalState:" : "monty 12/27/2013 23:50",
+		"terminalStates" : "monty 12/27/2013 21:46",
+		"terminalStates:" : "monty 12/27/2013 23:50",
+		"terminalStatesWith:" : "monty 12/27/2013 23:40" } }

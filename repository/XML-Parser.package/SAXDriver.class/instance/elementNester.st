@@ -1,3 +1,3 @@
-accessing
+private
 elementNester
-	^ saxHandler elementNester
+	^ elementNester ifNil: [elementNester := self elementNesterClass new]

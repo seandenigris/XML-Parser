@@ -1,3 +1,2 @@
-accessing
-currentScope: aScope
-	self scopeAllocator currentScope: aScope
+private
+currentScope: aNamespaceScope

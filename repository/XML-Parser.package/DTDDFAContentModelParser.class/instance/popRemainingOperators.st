@@ -1,4 +1,4 @@
-parsing
+evaluation
 popRemainingOperators
 	[operatorStack notEmpty]
 		whileTrue: [

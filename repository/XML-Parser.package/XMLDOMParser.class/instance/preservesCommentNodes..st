@@ -1,3 +1,3 @@
-accessing
+configuring
 preservesCommentNodes: aBoolean
 	self configuration preservesCommentNodes: aBoolean

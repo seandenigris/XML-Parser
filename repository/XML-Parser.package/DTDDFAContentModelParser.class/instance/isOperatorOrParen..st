@@ -1,3 +1,3 @@
 testing
 isOperatorOrParen: aCharacter
-	^ '|,?*+()' includes: aCharacter
+	^ SpecialCharacters includes: aCharacter

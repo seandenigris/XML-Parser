@@ -3,12 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"SpecialCharacters" ],
+	"commentStamp" : "monty 12/29/2013 00:43",
 	"instvars" : [
 		"contentModelStream",
 		"operatorStack",
-		"nfaBuilder" ],
+		"nfaBuilder",
+		"nameStream" ],
 	"name" : "DTDDFAContentModelParser",
 	"pools" : [
 		 ],

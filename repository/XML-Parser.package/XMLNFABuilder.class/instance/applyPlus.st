@@ -1,7 +1,9 @@
 building
 applyPlus
-	| plusFragment |
+	| plusFragment branchState |
 
 	plusFragment := self topFragment.
-	plusFragment unconnectedTerminalState
-		copyAndRedirectIncomingTransitionsTo: plusFragment firstState.
+	branchState := XMLNFABranchingState branch: plusFragment firstState.
+	plusFragment
+		connectToState: branchState;
+		terminalState: branchState.

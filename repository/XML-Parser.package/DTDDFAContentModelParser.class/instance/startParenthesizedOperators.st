@@ -1,0 +1,3 @@
+evaluation
+startParenthesizedOperators
+	operatorStack addLast: $(

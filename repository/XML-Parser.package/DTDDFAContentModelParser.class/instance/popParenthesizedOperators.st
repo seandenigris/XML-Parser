@@ -1,4 +1,4 @@
-parsing
+evaluation
 popParenthesizedOperators
 	[operatorStack notEmpty]
 		whileTrue: [
@@ -7,4 +7,5 @@ popParenthesizedOperators
 					operatorStack removeLast.
 					^ self]
 				ifFalse: [self applyBinaryOperatorOnStack]].
+
 	self errorMismatchedParens.

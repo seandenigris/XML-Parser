@@ -18,3 +18,6 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 					ifFalse: [''])
 			localName: localPart
 			attributes: anAttributeDictionary].
+
+	self usesNamespaces
+		ifTrue: [self saxHandler currentScope: self scopeAllocator currentScope].

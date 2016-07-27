@@ -1,11 +1,12 @@
 {
 	"class" : {
-		"on:withRootNode:" : "monty 11/18/2013 16:09" },
+		"on:withRootNode:" : "monty 12/27/2013 04:09" },
 	"instance" : {
 		"attributeDeclaration:name:type:defaultDeclaration:" : "monty 12/21/2013 03:00",
 		"characters:" : "JAAyer 11/23/2010 14:19",
 		"comment:" : "JAAyer 11/23/2010 14:43",
 		"configurationClass" : "JAAyer 11/23/2010 14:37",
+		"currentScope:" : "monty 12/27/2013 03:43",
 		"document" : "JAAyer 3/9/2010 01:38",
 		"document:" : "JAAyer 11/24/2010 12:31",
 		"elementDeclaration:contentModel:" : "monty 12/21/2013 03:14",
@@ -24,6 +25,7 @@
 		"notationDeclaration:publicID:systemID:" : "monty 12/21/2013 03:03",
 		"parameterEntityDeclaration:publicID:systemID:" : "monty 12/21/2013 03:02",
 		"parameterEntityDeclaration:replacement:" : "monty 12/21/2013 03:02",
+		"parser" : "monty 12/27/2013 08:21",
 		"parsingResult" : "monty 12/19/2013 00:38",
 		"popNode" : "JAAyer 3/16/2010 09:31",
 		"preservesCDataNodes" : "JAAyer 11/23/2010 14:18",
@@ -36,6 +38,6 @@
 		"startCData" : "JAAyer 8/9/2010 17:27",
 		"startDTD:publicID:systemID:" : "monty 11/12/2013 23:02",
 		"startDocument" : "JAAyer 11/28/2010 13:25",
-		"startElement:prefix:uri:localName:attributes:" : "JAAyer 11/10/2010 05:43",
+		"startElement:prefix:uri:localName:attributes:" : "monty 12/27/2013 03:41",
 		"topNode" : "JAAyer 3/16/2010 09:29",
 		"xmlVersion:encoding:standalone:" : "monty 11/19/2013 05:37" } }
