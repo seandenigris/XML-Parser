@@ -1,9 +1,9 @@
-tokenizing
-nextAttributeValue
-	| attributeValue |
+tokenizing - dtd
+nextSystemIDLiteral
+	| systemID |
 
 	driver handleStartQuotedStringValuePosition: self currentPosition.
-	attributeValue := super nextAttributeValue.
+	systemID := super nextSystemIDLiteral.
 	driver handleEndQuotedStringValuePosition: self currentPosition - 1.
 
-	^ attributeValue.
+	^ systemID.

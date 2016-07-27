@@ -4,4 +4,5 @@ nextGeneralEntityReferenceOnWriteStream
 	self nextName.
 	driver handleEndEntityReferencePosition: self currentPosition.
 	self expectNext: $;.
+
 	^ false.

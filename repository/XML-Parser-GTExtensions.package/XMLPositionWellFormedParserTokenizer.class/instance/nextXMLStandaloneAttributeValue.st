@@ -1,9 +1,9 @@
 tokenizing
-nextAttributeValue
-	| attributeValue |
+nextXMLStandaloneAttributeValue
+	| yesOrNo |
 
 	driver handleStartQuotedStringValuePosition: self currentPosition.
-	attributeValue := super nextAttributeValue.
+	yesOrNo := super nextXMLStandaloneAttributeValue.
 	driver handleEndQuotedStringValuePosition: self currentPosition - 1.
 
-	^ attributeValue.
+	^ yesOrNo.

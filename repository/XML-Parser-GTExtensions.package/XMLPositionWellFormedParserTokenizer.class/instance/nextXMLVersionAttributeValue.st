@@ -1,9 +1,9 @@
 tokenizing
-nextAttributeValue
-	| attributeValue |
+nextXMLVersionAttributeValue
+	| version |
 
 	driver handleStartQuotedStringValuePosition: self currentPosition.
-	attributeValue := super nextAttributeValue.
+	version := super nextXMLVersionAttributeValue.
 	driver handleEndQuotedStringValuePosition: self currentPosition - 1.
 
-	^ attributeValue.
+	^ version.
