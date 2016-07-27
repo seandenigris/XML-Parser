@@ -1,3 +1,3 @@
 converting
 asDictionary
-	^ XMLOrderPreservingDictionary newFrom: self asNameValueAssociations
+	^ OrderPreservingDictionary newFrom: self asNameValueAssociations

@@ -1,3 +1,0 @@
-removing
-unreferencedKeys
-	^ dictionary unreferencedKeys
