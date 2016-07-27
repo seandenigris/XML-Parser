@@ -1,4 +1,4 @@
-streaming
+positioning
 pushStream: aStream onClose: aBlock
 	peekChar
 		ifNotNil: [self pushBackPeekChar].

@@ -4,7 +4,8 @@ nextDecodedCharReference
 
 	"skip #"
 	streamReader next.
-	codePoint := streamReader nextInteger.
+	(codePoint := streamReader nextInteger)
+		ifNil: [self errorExpected: 'integer'].
 	self expectNext: $;.
 
 	^ (self characterFromCodePoint: codePoint)

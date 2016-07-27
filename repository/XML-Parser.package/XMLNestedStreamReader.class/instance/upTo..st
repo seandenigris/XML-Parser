@@ -1,4 +1,4 @@
-streaming
+accessing
 upTo: aDelimiter
 	| nextChar |
 

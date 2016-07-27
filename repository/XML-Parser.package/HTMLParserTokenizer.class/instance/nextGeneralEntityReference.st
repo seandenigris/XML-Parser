@@ -8,6 +8,6 @@ nextGeneralEntityReference
 			ifAbsent: [
 				streamReader pushBack: name.
 				^ $&].
-	streamReader peek == $;
+	streamReader peek == $; "; is optional"
 		ifTrue: [streamReader next].
 	^ character.

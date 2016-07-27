@@ -1,4 +1,4 @@
-streaming
+positioning
 skipTo: aDelimiter
 	[self atEnd] whileFalse: [
 		self next == aDelimiter

@@ -1,4 +1,4 @@
-streaming
+accessing
 upToAll: aDelimitingString
 	"Answer a subcollection from the current access position to the occurrence
 	(if any, but not inclusive) of delimitingString. If delimitingString is not

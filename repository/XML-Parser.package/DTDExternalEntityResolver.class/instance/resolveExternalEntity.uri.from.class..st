@@ -1,10 +1,14 @@
 private
 resolveExternalEntity: aName uri: anEntityUri from: aSourceUri class: aClass
-	| combinedUri replacement |
+	| combinedUri replacement replacementStream |
 
 	combinedUri := self combineURI: aSourceUri with: anEntityUri.
-	replacement := self resolveEntityURI: combinedUri.
+
+	replacementStream := self resolveEntityURI: combinedUri.
+	replacement  := replacementStream contents.
+	replacementStream close.
+
 	^ aClass
 		name: aName
-		replacement: replacement contents
+		replacement: replacement
 		uri: combinedUri asString.
