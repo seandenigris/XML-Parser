@@ -1,3 +1,3 @@
 *XML-Parser-GemstoneCompatibility
 capacity
-	^ collection size
+	^ self size
