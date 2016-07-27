@@ -3,8 +3,9 @@ testReset
 	| list oldCapacity |
 
 	list := self listWithElements.
-	oldCapacity := list capacity.
+	self hasCapacity
+		ifTrue: [oldCapacity := list capacity].
 	list reset.
-	self
-		assert: list isEmpty;
-		assert: list capacity >= oldCapacity.
+	self assert: list isEmpty.
+	oldCapacity
+		ifNotNil: [self assert: list capacity >= oldCapacity].

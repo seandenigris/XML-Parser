@@ -14,7 +14,13 @@ testReplaceFromToWith
 			1 to: start - 1 do: [:i | self assert: (list at: i) = self absentElement].
 			start to: stop do: [:i | self assert: (list at: i) = (self listWithElements at: i)].
 			stop + 1 to: list size do: [:i | self assert: (list at: i) = self absentElement].
-	
-			self
-				should: [self emptyList replaceFrom: start to: stop with: self listElements]
-				raise: Error]].
+
+			self supportsAtPutOnePastEnd
+				ifFalse: [
+					self
+						should: [
+							self emptyList
+								replaceFrom: start
+								to: stop
+								with: self listElements]
+						raise: Error]]].

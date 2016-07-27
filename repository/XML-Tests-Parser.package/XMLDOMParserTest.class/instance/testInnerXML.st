@@ -6,7 +6,7 @@ testInnerXML
 	document allElementsNamed: 'person' do: [:person | | contactInfo address1 address2 |
 		#('address' 'job-info' 'manager') do: [:each |
 			self assert: (person elementAt: each) innerXML isEmpty].
-.
+
 		contactInfo := person elementAt: 'contact-info'.
 		address1 := (person attributeAt: 'first-name'), '@example.com'.
 		address2 := (person attributeAt: 'first-name'), '@users.example.com'.

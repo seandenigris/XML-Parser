@@ -8,4 +8,4 @@ testWithIndexCollect
 		collectedFrom: list
 		equals:
 			(self listSpecies newFrom:
-				(self listElements with: (1 to: list size) collect: [:each :i | each -> i])).
+				(self listElements withIndexCollect: [:each :i | each -> i])).

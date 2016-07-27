@@ -7,5 +7,5 @@ testDoWithIndex
 	list withIndexDo: [:each :i | enumerated addLast: each -> i].
 	self assert:
 		enumerated =
-			(self listElements with: (1 to: list size) collect: [:each : i | each -> i ])
+			(self listElements withIndexCollect: [:each : i | each -> i ])
 				asOrderedCollection.

@@ -5,9 +5,9 @@ testUTF32Characters
 	source :=
 		self stringFromValues:
 			#(16r000000FE
-				16r0000DCFE
+				16r0000D7FE
 				16r0010FFFF).
-	decoded := self stringFromValues: #(16rFE 16rDCFE 16r10FFFF).
+	decoded := self stringFromValues: #(16rFE 16rD7FE 16r10FFFF).
 
 	document :=
 		XMLDOMParser parse:
