@@ -2,10 +2,10 @@ tokenizing
 nextName
 	| nextChar |
 
-	buffer reset.
-	[(nextChar := streamReader peek) isNil
-		or: [NameDelimiters includes: nextChar]]
-			whileFalse: [buffer nextPut: streamReader next].
-	(buffer position isZero)
-		ifTrue: [self errorExpected: 'name'].
-	^ buffer stringContents.
+	^ streamWriter writeWith: [:writeStream |
+		[(nextChar := streamReader peek) isNil
+			or: [NameDelimiters includes: nextChar]]
+				whileFalse: [writeStream nextPut: streamReader next].
+		(writeStream position isZero)
+			ifTrue: [self errorExpected: 'name'].
+		writeStream stringContents]

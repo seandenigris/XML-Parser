@@ -1,11 +1,11 @@
 tokenizing
 nextPCData
 
-	buffer reset.
-	self isValidating
-		ifTrue: [self nextPCDataDelimitedBy: $< putOn: buffer]
-		ifFalse: [
-			[streamReader peek == $<]
-				whileFalse: [buffer nextPut: streamReader next]].
+	streamWriter writeWith: [:writeStream |
+		self isValidating
+			ifTrue: [self nextPCDataDelimitedBy: $< putOn: writeStream]
+			ifFalse: [
+				[streamReader peek == $<]
+					whileFalse: [writeStream nextPut: streamReader next]].
 
-	self handlePCData: buffer stringContents.
+		self handlePCData: writeStream stringContents]

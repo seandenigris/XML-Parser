@@ -1,0 +1,1 @@
+The class represents a list of currently open tags. It ensures tags are opened and closed in the right order.

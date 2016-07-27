@@ -20,3 +20,5 @@ test030stringNode
 		assertString: (XMLString string: (XMLString string: raw))
 		is: raw
 		printed: escaped.
+
+	self assertString: raw asXMLNode is: raw printed: escaped.

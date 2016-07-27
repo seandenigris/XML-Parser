@@ -34,4 +34,4 @@ test054elementConstructors
 		attributes: attributes.
 	self
 		assertElement: element name: 'prefix:foo' attributes: attributes contentString: '';
-		assertNode: element namespace: 'prefix' uri: 'http://foo'.
+		assertNode: element prefix: 'prefix' uri: 'http://foo'.

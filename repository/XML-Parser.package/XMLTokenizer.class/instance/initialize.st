@@ -1,6 +1,6 @@
 initialize
 initialize
 	streamReader := XMLStreamReader new.
-	buffer := WriteStream on: (String new: 256).
+	streamWriter := XMLStreamWriter new.
 	parsingMarkup := false.
 	isValidating := false.

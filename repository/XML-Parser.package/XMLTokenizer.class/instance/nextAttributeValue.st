@@ -3,8 +3,7 @@ nextAttributeValue
 	| delimiterChar |
 
 	delimiterChar := self expectQuote.
-	buffer reset.
-	self nextPCDataDelimitedBy: delimiterChar putOn: buffer.
-	self expectNext: delimiterChar.
-
-	^ buffer stringContents.
+	^ streamWriter writeWith: [:writeStream |
+		self nextPCDataDelimitedBy: delimiterChar putOn: writeStream.
+		self expectNext: delimiterChar.
+		writeStream stringContents]

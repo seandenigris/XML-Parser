@@ -7,7 +7,7 @@
 		"DigitTable",
 		"LineFeed",
 		"SeparatorTable" ],
-	"commentStamp" : "",
+	"commentStamp" : "JAAyer 3/23/2010 14:06",
 	"instvars" : [
 		"stream",
 		"nestedStreams",

@@ -6,17 +6,17 @@ nextLiteral
 		or: [nextChar == $_])
 		ifFalse: [self errorExpected: 'name literal.'].
 
-	buffer reset.
-	[LiteralChars includes: nextChar]
-		whileTrue: [
-			nextChar == $&
-				ifTrue: [
-					nextChar := streamReader next.
-					buffer nextPut: (streamReader peek == $#
-						ifTrue: [self nextCharReference]
-						ifFalse: [^ buffer stringContents])]
-				ifFalse: [buffer nextPut: streamReader next].
-			nextChar := streamReader peek].
-	buffer position isZero
-		ifTrue: [self errorExpected: 'name literal'].
-	^ buffer stringContents.
+	^ streamWriter writeWith: [:writeStream |
+		[LiteralChars includes: nextChar]
+			whileTrue: [
+				nextChar == $&
+					ifTrue: [
+						nextChar := streamReader next.
+						writeStream nextPut: (streamReader peek == $#
+							ifTrue: [self nextCharReference]
+							ifFalse: [^ writeStream stringContents])]
+					ifFalse: [writeStream nextPut: streamReader next].
+				nextChar := streamReader peek].
+		writeStream position isZero
+			ifTrue: [self errorExpected: 'name literal'].
+		writeStream stringContents]

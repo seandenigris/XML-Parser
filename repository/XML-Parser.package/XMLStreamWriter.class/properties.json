@@ -3,11 +3,15 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "JAAyer 3/23/2010 14:07",
+		"CarriageReturn",
+		"DigitTable",
+		"LineFeed",
+		"SeparatorTable" ],
+	"commentStamp" : "",
 	"instvars" : [
-		"tags" ],
-	"name" : "XMLOpenTags",
+		"streams",
+		"nextStream" ],
+	"name" : "XMLStreamWriter",
 	"pools" : [
 		 ],
 	"super" : "Object",

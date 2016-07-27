@@ -1,9 +1,9 @@
 printing
 enclosedTagsAsString: aTagName
-	| stream |
+	| enclosedTags |
 
-	stream := String new writeStream..
+	enclosedTags := String new writeStream..
 	self
-		printOn: stream
+		printOn: enclosedTags
 		startingAt: (self tags lastIndexOf: aTagName) + 1.
-	^ stream contents.
+	^ enclosedTags contents.

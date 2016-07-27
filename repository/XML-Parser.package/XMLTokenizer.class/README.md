@@ -1,6 +1,1 @@
-XMLTokenizer
-
-bolot@cc.gatech.edu
-
-breaks the stream of characters into a stream of XMLnodes (aka token stream)
-token stream is used by XMLparser to generate XMLdocument tree
+This class reads XML tokens from a stream using an XMLStreamReader. To create a parser, subclass XMLTokenizer and override the #handle- messages to handle tokens as they are read. To cause a token to be read, send #nextToken to an instance.
