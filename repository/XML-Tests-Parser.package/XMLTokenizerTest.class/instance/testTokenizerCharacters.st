@@ -5,7 +5,10 @@ testTokenizerCharacters
 	This test is here just for specification purpose"
 	"self debug: #testParsingCharacters"
 
-	tokenizer := XMLWellFormedParserTokenizer driver: nil on: self addressBookXML readStream.
+	tokenizer :=
+		self tokenizerClass
+			driver: nil
+			on: self addressBookXML readStream.
 
 	self
 		assert: tokenizer streamReader next == $<;

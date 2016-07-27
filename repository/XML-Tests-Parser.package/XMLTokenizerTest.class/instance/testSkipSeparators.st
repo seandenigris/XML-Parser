@@ -6,7 +6,7 @@ testSkipSeparators
 	<test/>'.
 	readLimit := xml size.
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: xml readStream
 			readLimit: readLimit.
@@ -18,7 +18,7 @@ testSkipSeparators
 			assert: streamReader readLimit = (readLimit - ((xml copyUpTo: $<) size))].
 
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: xml readStream
 			readLimit: nil.

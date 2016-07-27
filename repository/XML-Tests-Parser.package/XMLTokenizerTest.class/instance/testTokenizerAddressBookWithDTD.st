@@ -3,7 +3,7 @@ testTokenizerAddressBookWithDTD
 	| tokenizer |
 
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: self addressBookXMLWithDTD readStream.
 	self

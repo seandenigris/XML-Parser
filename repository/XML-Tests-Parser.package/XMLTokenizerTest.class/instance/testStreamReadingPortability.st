@@ -3,7 +3,7 @@ testStreamReadingPortability
 	| tokenizer stream |
 
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: (stream := XMLExceptionRaisingReadStream on: self addressBookXML).
 	self

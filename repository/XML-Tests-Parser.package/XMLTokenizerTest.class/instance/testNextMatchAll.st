@@ -7,7 +7,7 @@ test
 </test>'.
 	readLimit := xml size.
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: xml readStream
 			readLimit: readLimit.
@@ -26,7 +26,7 @@ test
 		assert: streamReader readLimit = (readLimit - '<test>' size).
 
 	tokenizer :=
-		XMLWellFormedParserTokenizer
+		self tokenizerClass
 			driver: nil
 			on: xml readStream
 			readLimit: nil.
