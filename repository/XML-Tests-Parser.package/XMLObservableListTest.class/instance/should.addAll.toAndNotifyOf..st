@@ -3,7 +3,7 @@ should: aBlock addAll: anElementCollection toAndNotifyOf: aList
 	| observer |
 
 	observer := XMLStubListObserver new.
-	aList addObserver: observer.
+	aList observer: observer.
 	aBlock value.
 	anElementCollection do: [:each |
 		self assert: (aList includes: each).

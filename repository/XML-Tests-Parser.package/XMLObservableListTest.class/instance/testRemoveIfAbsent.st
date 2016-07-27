@@ -11,7 +11,7 @@ testRemoveIfAbsent
 		fromAndNotifyOf: list.
 
 	observer := XMLStubListObserver new.
-	list addObserver: observer.
+	list observer: observer.
 	self
 		assert: (list remove: self singleElement ifAbsent: [nil]) isNil;
 		assert: observer notifications isEmpty.

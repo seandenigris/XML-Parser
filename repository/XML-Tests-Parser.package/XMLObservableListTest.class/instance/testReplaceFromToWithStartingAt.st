@@ -6,7 +6,7 @@ testReplaceFromToWithStartingAt
 
 	list := self listWithElements.
 	observer := XMLStubListObserver new.
-	list addObserver: observer.
+	list observer: observer.
 	list
 		replaceFrom: 2
 		to: 3

@@ -43,5 +43,6 @@
 		"testParseDocumentWhile" : "monty 10/14/2014 23:11",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingRoot" : "monty 12/12/2013 00:42",
+		"testStringParseXML" : "monty 10/18/2014 05:52",
 		"testXMLComment" : "monty 12/12/2013 01:09",
 		"testXMLDeclaration" : "monty 2/9/2014 00:22" } }

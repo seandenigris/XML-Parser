@@ -11,7 +11,7 @@ testRemoveAt
 		fromAndNotifyOf: list.
 
 	observer := XMLStubListObserver new.
-	list addObserver: observer.
+	list observer: observer.
 	self
 		should: [list removeAt: 1] raise: Error;
 		assert: observer notifications isEmpty.

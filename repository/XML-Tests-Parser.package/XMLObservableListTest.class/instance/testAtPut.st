@@ -6,7 +6,7 @@ testAtPut
 
 	list := self listWithSingleElement.
 	observer := XMLStubListObserver new.
-	list addObserver: observer.
+	list observer: observer.
 	list at: 1 put: self absentElement.
 	self
 		assertObserver: observer
