@@ -8,9 +8,16 @@ testAttributeXMLSpaceValidation
 		<!DOCTYPE whitespace [
 			<!ELEMENT whitespace EMPTY>
 			<!ATTLIST whitespace xml:space {1} #IMPLIED>
-		]><whitespace></whitespace>'.
-	#('CDATA' 'ID' 'IDREF' 'IDREFS' 'ENTITY' 'ENTITIES'
-		'(default|preserve|other)' 'NOTATION (default|preserve)')
+		]>
+		<whitespace></whitespace>'.
+	#('CDATA'
+		'ID'
+		'IDREF'
+		'IDREFS'
+		'ENTITY'
+		'ENTITIES'
+		'(default|preserve|other)'
+		'NOTATION (default|preserve)')
 		do: [:each |
 			xml := xmlTemplate format: (Array with: each).
 			self
