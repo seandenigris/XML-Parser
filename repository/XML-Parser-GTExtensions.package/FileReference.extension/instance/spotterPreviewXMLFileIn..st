@@ -2,12 +2,16 @@
 spotterPreviewXMLFileIn: aComposite
 	<spotterPreview: 10>
 
-	self isXMLFile
+	| xmlFileHandle |
+
+	xmlFileHandle := XMLFileSystemFileHandle fileReference: self.
+	xmlFileHandle isXMLDocumentFile
 		ifFalse: [^ self].
 
 	aComposite text
 		title: 'Source';
 		display: [
+			"the source is converted to a decoded string and then highlighted"
 			XMLHighlightingParser parse:
-				(XMLExternalDocumentConverter convertFileNamed: self fullName)];
+				(XMLExternalDocumentConverter convert: xmlFileHandle rawReadStream)];
 		entity: self.

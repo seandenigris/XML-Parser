@@ -2,5 +2,5 @@ instance creation
 onFileNamed: aFileName
 	^ self on:
 		(aFileName asXMLFileHandle
-			readStreamUpToLimit: nil
+			streamGetUpToLimit: nil
 			decoding: false)

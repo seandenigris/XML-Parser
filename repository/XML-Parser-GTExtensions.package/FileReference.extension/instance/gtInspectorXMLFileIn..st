@@ -2,9 +2,10 @@
 gtInspectorXMLFileIn: aComposite
 	<gtInspectorPresentationOrder: 4>
 
-	| currentTextStylerDecorator |
+	| xmlFileHandle currentTextStylerDecorator |
 
-	self isXMLFile
+	xmlFileHandle := XMLFileSystemFileHandle fileReference: self.
+	xmlFileHandle isXMLDocumentFile
 		ifFalse: [^ self].
 
 	aComposite custom:
@@ -12,14 +13,18 @@ gtInspectorXMLFileIn: aComposite
 			title: 'Source';
 			editingMode: [
 				"saved to get the encoding later"
-				currentTextStylerDecorator := GLMXMLHighlighterTextStylerDecorator new.
-				GLMHighlighterTextRubEditingMode withStylerDecorator: currentTextStylerDecorator];
-			display: [XMLExternalDocumentConverter convertFileNamed: self fullName];
+				currentTextStylerDecorator :=
+					GLMXMLHighlighterTextStylerDecorator new.
+				GLMHighlighterTextRubEditingMode withStylerDecorator:
+					currentTextStylerDecorator];
+			display: [
+				XMLExternalDocumentConverter convert: xmlFileHandle rawReadStream];
 			withLineNumbers: true;
 			act: [:presentation | | sourceToSave streamConverter |
 				sourceToSave := presentation text asString.
-				streamConverter := currentTextStylerDecorator encoding asXMLStreamConverter.
-				self fullName asXMLFileHandle writeStreamDo: [:writeStream |
+				streamConverter :=
+					currentTextStylerDecorator encoding asXMLStreamConverter.
+				xmlFileHandle writeStreamDo: [:writeStream |
 					writeStream
 						streamConverter: streamConverter;
 						nextPutByteOrderMark;

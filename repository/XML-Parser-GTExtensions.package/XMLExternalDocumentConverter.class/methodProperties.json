@@ -1,10 +1,11 @@
 {
 	"class" : {
 		"convert:" : "monty 10/2/2015 00:11",
+		"convert:readLimit:" : "monty 3/13/2016 13:21",
 		"convertFileNamed:" : "monty 2/14/2016 00:06",
 		"on:" : "monty 10/2/2015 00:11",
 		"on:readLimit:" : "monty 10/1/2015 05:57",
-		"onFileNamed:" : "monty 2/14/2016 00:03" },
+		"onFileNamed:" : "monty 3/13/2016 10:59" },
 	"instance" : {
 		"close" : "monty 10/2/2015 22:17",
 		"contents" : "monty 10/2/2015 22:18",
@@ -16,5 +17,5 @@
 		"nextXMLDeclaration" : "monty 10/2/2015 06:10",
 		"peek" : "monty 9/30/2015 19:21",
 		"setStream:readLimit:" : "monty 2/10/2016 22:34",
-		"skipSeparators" : "monty 9/30/2015 19:43",
+		"skipSeparators" : "monty 3/12/2016 19:09",
 		"skipToEnd" : "monty 10/2/2015 22:17" } }

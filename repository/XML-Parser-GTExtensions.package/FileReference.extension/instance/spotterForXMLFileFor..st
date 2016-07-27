@@ -2,12 +2,16 @@
 spotterForXMLFileFor: aStep
 	<spotterOrder: 40>
 
-	self isXMLFile
+	| xmlFileHandle |
+
+	xmlFileHandle := XMLFileSystemFileHandle fileReference: self.
+	xmlFileHandle isXMLDocumentFile
 		ifFalse: [^ self].
 
 	aStep listProcessor
 		title: 'XML Document';
-		allCandidates: [(XMLDOMParser parseFileNamed: self fullName) allElements];
+		allCandidates: [
+			(XMLDOMParser parse: xmlFileHandle rawReadStream) allElements];
 		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true.

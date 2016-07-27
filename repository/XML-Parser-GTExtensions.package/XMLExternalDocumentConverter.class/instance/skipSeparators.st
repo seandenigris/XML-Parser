@@ -1,4 +1,4 @@
 private 
 skipSeparators
-	[self peek xmlParserIsSeparator]
+	[self peek isXMLSeparator]
 		whileTrue: [self next]
