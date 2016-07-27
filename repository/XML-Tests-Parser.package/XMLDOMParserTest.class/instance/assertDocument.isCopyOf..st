@@ -14,7 +14,7 @@ assertDocument: aDocumentCopy isCopyOf: aDocument
 
 	visitedPairs := Set new.
 	searchedClasses :=
-		#(OrderedCollection Dictionary OrderPreservingDictionary
+		#(OrderedCollection Dictionary OrderPreservingStringDictionary
 			XMLNode XMLNamespaceScope XMLOrderedList)
 			collect: [:each | Smalltalk at: each].
 	[unvisitedPairs isEmpty]
