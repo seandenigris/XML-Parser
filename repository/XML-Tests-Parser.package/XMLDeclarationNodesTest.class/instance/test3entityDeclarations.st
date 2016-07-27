@@ -1,7 +1,7 @@
 tests
 test3entityDeclarations
 	self
-		assertEntityDecl: XMLEntityDeclaration new
+		assertEntityDecl: XMLGeneralEntityDeclaration new
 		hasName: ''
 		replacement: ''
 		publicID: ''
@@ -9,7 +9,7 @@ test3entityDeclarations
 		ndada: ''.
 	self
 		assertEntityDecl:
-			(XMLEntityDeclaration
+			(XMLGeneralEntityDeclaration
 				name: 'testEntity'
 				replacement: 'testReplacement')
 		hasName: 'testEntity'
@@ -19,7 +19,7 @@ test3entityDeclarations
 		ndada: ''.
 	self
 		assertEntityDecl:
-			(XMLEntityDeclaration
+			(XMLGeneralEntityDeclaration
 				name: 'testEntity'
 				publicID: '-//test//test-id//EN'
 				systemID: '')
@@ -30,7 +30,7 @@ test3entityDeclarations
 		ndada: ''.
 	self
 		assertEntityDecl:
-			(XMLEntityDeclaration
+			(XMLGeneralEntityDeclaration
 				name: 'testEntity'
 				publicID: '-//test//test-id//EN'
 				systemID: 'http://test')
@@ -41,7 +41,7 @@ test3entityDeclarations
 		ndada: ''.
 	self
 		assertEntityDecl:
-			(XMLEntityDeclaration
+			(XMLGeneralEntityDeclaration
 				name: 'testEntity'
 				publicID: ''
 				systemID: 'http://test')
@@ -52,7 +52,7 @@ test3entityDeclarations
 		ndada: ''.
 	self
 		assertEntityDecl:
-			(XMLEntityDeclaration
+			(XMLGeneralEntityDeclaration
 				name: 'testEntity'
 				publicID: '-//test//test-id//EN'
 				systemID: 'http://test'
