@@ -1,7 +1,8 @@
 private
 currentWorkingDirectoryPathString
 	^ String streamContents: [:stream |
-		(Smalltalk at: #FileSystem) workingDirectory
+		"the class-side workingDirectory isn't used for backwards compatibility"
+		(Smalltalk at: #FileSystem) disk workingDirectory
 			path segments do: [:each |
 				stream
 					nextPut: $/;
