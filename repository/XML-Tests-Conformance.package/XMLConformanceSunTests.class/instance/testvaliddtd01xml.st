@@ -2,6 +2,8 @@ tests
 testvaliddtd01xml
 	"Source file: sun/valid/dtd01.xml"
 
+	(self isSkippableTest: #testvaliddtd01xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testvaliddtd01xml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

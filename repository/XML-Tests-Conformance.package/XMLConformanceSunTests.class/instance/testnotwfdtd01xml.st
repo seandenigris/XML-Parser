@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfdtd01xml
 	"Source file: sun/not-wf/dtd01.xml"
 
+	(self isSkippableTest: #testnotwfdtd01xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

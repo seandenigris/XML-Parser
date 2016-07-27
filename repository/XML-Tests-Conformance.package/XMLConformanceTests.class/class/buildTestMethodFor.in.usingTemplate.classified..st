@@ -1,11 +1,11 @@
 building subclasses
 buildTestMethodFor: aFileReference in: aClass usingTemplate: aTemplate classified: aCategory
-	| failingTestSelector sourceSelector pathString documentUri |
+	| failingTestSelector sourceSelector pathString documentURI |
 
 	failingTestSelector := self testSelectorFor: aFileReference.
 	sourceSelector := self sourceSelectorFor: aFileReference.
 	pathString := self relativePathStringFor: aFileReference.
-	documentUri := self documentURIFor: aFileReference.
+	documentURI := self documentURIFor: aFileReference.
 	aClass
 		compile:
 			(aTemplate format:
@@ -13,5 +13,5 @@ buildTestMethodFor: aFileReference in: aClass usingTemplate: aTemplate classifie
 					with: failingTestSelector asString
 					with: pathString
 					with: sourceSelector asString
-					with: documentUri))
+					with: documentURI))
 		classified: aCategory

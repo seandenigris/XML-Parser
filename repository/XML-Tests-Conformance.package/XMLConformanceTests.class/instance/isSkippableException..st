@@ -1,3 +1,4 @@
 testing
 isSkippableException: anError
-	^ (XMLFileException, XMLHTTPException, XMLLimitException) handles: anError
+	^ self class isSkipping
+		and: [self skippableExceptions handles: anError]

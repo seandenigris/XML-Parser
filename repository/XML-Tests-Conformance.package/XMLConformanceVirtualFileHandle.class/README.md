@@ -1,1 +1,1 @@
-This class handles file requests by converting paths into XML source selectors.
+This class handles file requests by converting paths into selectors of test suite class methods.

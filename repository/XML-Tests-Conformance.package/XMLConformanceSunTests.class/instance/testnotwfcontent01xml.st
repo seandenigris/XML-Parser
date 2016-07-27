@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfcontent01xml
 	"Source file: sun/not-wf/content01.xml"
 
+	(self isSkippableTest: #testnotwfcontent01xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

@@ -2,6 +2,8 @@ tests - exception raising
 testinvalidattr10xml
 	"Source file: sun/invalid/attr10.xml"
 
+	(self isSkippableTest: #testinvalidattr10xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

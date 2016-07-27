@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfsa151xml
 	"Source file: xmltest/not-wf/sa/151.xml"
 
+	(self isSkippableTest: #testnotwfsa151xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

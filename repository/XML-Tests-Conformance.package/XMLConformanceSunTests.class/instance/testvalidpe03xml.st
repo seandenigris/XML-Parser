@@ -2,6 +2,8 @@ tests
 testvalidpe03xml
 	"Source file: sun/valid/pe03.xml"
 
+	(self isSkippableTest: #testvalidpe03xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testvalidpe03xml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

@@ -3,10 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "<historical>",
+		"IsSkipping" ],
+	"commentStamp" : "monty 4/4/2015 08:30",
 	"instvars" : [
-		 ],
+		"skippableTests",
+		"skippableExceptions" ],
 	"name" : "XMLConformanceTests",
 	"pools" : [
 		 ],

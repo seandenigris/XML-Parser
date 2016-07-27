@@ -3,6 +3,8 @@ passingTestMethodTemplate
 	^ '{1}
 	"Source file: {2}"
 
+	(self isSkippableTest: #{1})
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -11,6 +13,6 @@ passingTestMethodTemplate
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions'

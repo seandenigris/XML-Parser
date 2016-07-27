@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfsgml11xml
 	"Source file: sun/not-wf/sgml11.xml"
 
+	(self isSkippableTest: #testnotwfsgml11xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

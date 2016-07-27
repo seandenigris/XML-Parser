@@ -2,6 +2,8 @@ tests
 testvalidvlang02xml
 	"Source file: sun/valid/v-lang02.xml"
 
+	(self isSkippableTest: #testvalidvlang02xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testvalidvlang02xml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

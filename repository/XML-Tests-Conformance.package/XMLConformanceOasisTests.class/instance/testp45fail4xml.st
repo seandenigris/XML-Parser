@@ -2,6 +2,8 @@ tests - exception raising
 testp45fail4xml
 	"Source file: oasis/p45fail4.xml"
 
+	(self isSkippableTest: #testp45fail4xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

@@ -3,6 +3,8 @@ failingTestMethodTemplate
 	^ '{1}
 	"Source file: {2}"
 
+	(self isSkippableTest: #{1})
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

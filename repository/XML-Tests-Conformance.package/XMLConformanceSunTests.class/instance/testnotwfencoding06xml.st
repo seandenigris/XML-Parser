@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfencoding06xml
 	"Source file: sun/not-wf/encoding06.xml"
 
+	(self isSkippableTest: #testnotwfencoding06xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

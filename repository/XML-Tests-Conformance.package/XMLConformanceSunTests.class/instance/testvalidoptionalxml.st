@@ -2,6 +2,8 @@ tests
 testvalidoptionalxml
 	"Source file: sun/valid/optional.xml"
 
+	(self isSkippableTest: #testvalidoptionalxml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testvalidoptionalxml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

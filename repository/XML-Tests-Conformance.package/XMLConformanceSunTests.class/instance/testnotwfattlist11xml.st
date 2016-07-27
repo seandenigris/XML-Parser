@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfattlist11xml
 	"Source file: sun/not-wf/attlist11.xml"
 
+	(self isSkippableTest: #testnotwfattlist11xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

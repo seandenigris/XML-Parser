@@ -2,6 +2,8 @@ tests - exception raising
 testnotwfpubid05xml
 	"Source file: sun/not-wf/pubid05.xml"
 
+	(self isSkippableTest: #testnotwfpubid05xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self

@@ -2,6 +2,8 @@ tests
 testvalidsa088xml
 	"Source file: xmltest/valid/sa/088.xml"
 
+	(self isSkippableTest: #testvalidsa088xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testvalidsa088xml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

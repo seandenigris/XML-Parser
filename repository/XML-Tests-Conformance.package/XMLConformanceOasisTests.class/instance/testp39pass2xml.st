@@ -2,6 +2,8 @@ tests
 testp39pass2xml
 	"Source file: oasis/p39pass2.xml"
 
+	(self isSkippableTest: #testp39pass2xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		shouldnt: [
 			[self
@@ -10,6 +12,6 @@ testp39pass2xml
 				on: self parserExceptions
 				do: [:error |
 					(self isSkippableException: error)
-						ifTrue: [self skip]
+						ifTrue: [self skipOrReturnWith: [^ self]]
 						ifFalse: [error pass]]]
 		raise: self parserExceptions

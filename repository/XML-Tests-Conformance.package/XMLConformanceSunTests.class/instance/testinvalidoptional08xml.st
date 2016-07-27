@@ -2,6 +2,8 @@ tests - exception raising
 testinvalidoptional08xml
 	"Source file: sun/invalid/optional08.xml"
 
+	(self isSkippableTest: #testinvalidoptional08xml)
+		ifTrue: [self skipOrReturnWith: [^ self]].
 	self
 		should: [
 			self
