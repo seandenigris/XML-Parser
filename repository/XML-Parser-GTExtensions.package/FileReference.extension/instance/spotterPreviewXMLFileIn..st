@@ -9,5 +9,5 @@ spotterPreviewXMLFileIn: aComposite
 		title: 'Source';
 		display: [
 			XMLHighlightingParser parse:
-				(XMLPositionExternalStreamConverter convert: self readStream)];
+				(XMLExternalDocumentConverter convertFileNamed: self fullName)];
 		entity: self.

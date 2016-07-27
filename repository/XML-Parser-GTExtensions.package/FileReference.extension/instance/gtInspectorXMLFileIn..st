@@ -14,18 +14,19 @@ gtInspectorXMLFileIn: aComposite
 				"saved to get the converter later"
 				currentTextStylerDecorator := GLMXMLHighlighterTextStylerDecorator new.
 				GLMHighlighterTextRubEditingMode withStylerDecorator: currentTextStylerDecorator];
-			display: [XMLPositionExternalStreamConverter convert: self readStream];
+			display: [XMLExternalDocumentConverter convertFileNamed: self fullName];
 			withLineNumbers: true;
-			act: [:presentation | | outputConverter outputString |
-					"can raise exceptions so must be called before deleting"
-					outputConverter := currentTextStylerDecorator converter.
+			act: [:presentation | | outputString outputStreamConverter |
 					outputString := presentation text asString.
-					self
-						ensureDelete;
-						writeStreamDo: [:stream |
-							outputConverter
-								ifNotNil: [stream converter: outputConverter].
-							stream nextPutAll: outputString].
+					outputStreamConverter :=
+						(XMLStreamConverter newForEncoding:
+							currentTextStylerDecorator encodingName)
+							ifNil: [XMLStreamConverter default].
+					self fullName asXMLFileHandle writeStreamDo: [:writeStream |
+						writeStream
+							streamConverter: outputStreamConverter;
+							nextPutByteOrderMark;
+							nextPutAll: outputString].
 					presentation clearUserEdits]
 				icon: GLMUIThemeExtraIcons glamorousSave
 				on: $s

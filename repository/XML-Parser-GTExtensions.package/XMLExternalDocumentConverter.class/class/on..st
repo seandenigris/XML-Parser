@@ -1,4 +1,4 @@
-converting
+instance creation
 on: aStringOrStream
 	^ self
 		on: aStringOrStream

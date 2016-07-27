@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/2/2015 06:13",
+	"commentStamp" : "monty 2/14/2016 04:25",
 	"instvars" : [
 		"streamReader",
 		"outputStream",
 		"writeStream" ],
-	"name" : "XMLPositionExternalStreamConverter",
+	"name" : "XMLExternalDocumentConverter",
 	"pools" : [
 		 ],
 	"super" : "Object",

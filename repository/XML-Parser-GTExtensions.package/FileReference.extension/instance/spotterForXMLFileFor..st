@@ -7,7 +7,7 @@ spotterForXMLFileFor: aStep
 
 	aStep listProcessor
 		title: 'XML Document';
-		allCandidates: [(XMLDOMParser parse: self readStream) allElements];
+		allCandidates: [(XMLDOMParser parseFileNamed: self fullName) allElements];
 		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true
