@@ -17,6 +17,7 @@
 		"testAttributeIDRefDeclaration" : "monty 12/18/2013 19:54",
 		"testAttributeNmtokenDeclaration" : "monty 12/29/2013 00:58",
 		"testAttributeValueNormalization" : "monty 11/19/2013 05:55",
+		"testAttributeValueWithAngleBrackets" : "monty 3/11/2015 16:10",
 		"testDeclaringNamespaces" : "monty 10/9/2014 00:55",
 		"testDeclaringNamespacesBadPrefixes" : "monty 10/9/2014 20:40",
 		"testDeclaringNamespacesBadURIs" : "monty 10/9/2014 00:58",
