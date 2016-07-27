@@ -1,4 +1,4 @@
 tokenizing - dtd
 nextEndDoctypeDeclaration
 	super nextEndDoctypeDeclaration.
-	driver handleEndDoctypeDeclarationPosition: self currentPosition - 1.
+	driver handleEndDoctypeDeclarationPosition: self currentPosition.

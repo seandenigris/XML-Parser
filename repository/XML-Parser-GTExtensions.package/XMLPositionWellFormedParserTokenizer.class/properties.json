@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "monty 3/6/2016 08:18",
 	"instvars" : [
-		"initialReadLimit" ],
+		 ],
 	"name" : "XMLPositionWellFormedParserTokenizer",
 	"pools" : [
 		 ],

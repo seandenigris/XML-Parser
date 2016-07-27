@@ -1,1 +1,0 @@
-This class allows access to the current 1-based  input position.

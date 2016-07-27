@@ -2,8 +2,8 @@ tokenizing
 nextCharacterReferenceOnWriteStream
 	| result |
 
-	driver handleStartEntityReferencePosition: self currentPosition - 1.
+	driver handleStartEntityReferencePosition: self currentPosition.
 	result := super nextCharacterReferenceOnWriteStream.
-	driver handleEndEntityReferencePosition: self currentPosition - 1.
+	driver handleEndEntityReferencePosition: self currentPosition.
 
 	^ result.

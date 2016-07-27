@@ -1,5 +1,5 @@
 tokenizing - dtd
 nextSubsetDeclaration
-	driver handleStartDeclaration: self currentPosition - 2.
+	driver handleStartDeclaration: self currentPosition - 1.
 	super nextSubsetDeclaration.
-	driver handleEndDeclaration: self currentPosition - 1.
+	driver handleEndDeclaration: self currentPosition.

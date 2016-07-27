@@ -2,8 +2,8 @@ tokenizing
 nextXMLEncodingAttributeValue
 	| encoding |
 
-	driver handleStartQuotedStringValuePosition: self currentPosition.
+	driver handleStartQuotedStringValuePosition: self currentPosition + 1.
 	encoding := super nextXMLEncodingAttributeValue.
-	driver handleEndQuotedStringValuePosition: self currentPosition - 1.
+	driver handleEndQuotedStringValuePosition: self currentPosition.
 
 	^ encoding.

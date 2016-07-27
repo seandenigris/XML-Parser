@@ -1,5 +1,5 @@
 tokenizing
 nextXMLDeclaration
-	driver handleStartXMLDeclarationPosition: self currentPosition - 5. "'<?xml' size"
+	driver handleStartXMLDeclarationPosition: self currentPosition - 4. "'<?xml' size"
 	super nextXMLDeclaration.
-	driver handleEndXMLDeclarationPosition: self currentPosition - 1.
+	driver handleEndXMLDeclarationPosition: self currentPosition.

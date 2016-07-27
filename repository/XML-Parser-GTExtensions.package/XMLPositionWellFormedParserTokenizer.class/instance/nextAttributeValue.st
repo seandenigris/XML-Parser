@@ -2,8 +2,8 @@ tokenizing
 nextAttributeValue
 	| attributeValue |
 
-	driver handleStartQuotedStringValuePosition: self currentPosition.
+	driver handleStartQuotedStringValuePosition: self currentPosition + 1.
 	attributeValue := super nextAttributeValue.
-	driver handleEndQuotedStringValuePosition: self currentPosition - 1.
+	driver handleEndQuotedStringValuePosition: self currentPosition.
 
 	^ attributeValue.

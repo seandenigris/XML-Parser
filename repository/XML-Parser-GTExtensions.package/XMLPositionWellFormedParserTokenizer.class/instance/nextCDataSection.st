@@ -1,5 +1,5 @@
 tokenizing
 nextCDataSection
-	driver handleStartCDataPosition: self currentPosition - 2.
+	driver handleStartCDataPosition: self currentPosition - 1.
 	super nextCDataSection.
-	driver handleEndCDataPosition: self currentPosition - 1.
+	driver handleEndCDataPosition: self currentPosition.
