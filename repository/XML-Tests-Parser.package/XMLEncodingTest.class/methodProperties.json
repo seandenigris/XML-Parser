@@ -11,6 +11,8 @@
 		"stringFromValues:" : "monty 12/14/2014 07:05",
 		"testBinaryDecoding" : "monty 3/22/2015 17:31",
 		"testDecodingCharacters" : "monty 10/22/2014 07:00",
+		"testDecodingDisabledEncodingDeclaration" : "monty 5/8/2015 22:42",
+		"testDecodingDisabledEncodingDetection" : "monty 5/8/2015 22:42",
 		"testEncodingDeclarationLatin1" : "monty 12/14/2014 07:05",
 		"testEncodingDeclarationUTF16BE" : "monty 11/20/2014 03:30",
 		"testEncodingDeclarationUTF16LE" : "monty 11/20/2014 03:30",
