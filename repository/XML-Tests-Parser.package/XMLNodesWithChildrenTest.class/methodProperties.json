@@ -11,7 +11,7 @@
 		"test1emptyNodeWithChildren" : "JAAyer 11/6/2010 00:02",
 		"test2addingNodes" : "JAAyer 11/8/2010 19:19",
 		"test3removingNodes" : "JAAyer 11/8/2010 19:20",
-		"test4accessingAdjacentNodes" : "JAAyer 11/6/2010 02:40",
+		"test4accessingAdjacentNodes" : "OttoBehrens 2/22/2011 23:42",
 		"test5accessingFirstAndLastNodes" : "JAAyer 11/6/2010 00:02",
 		"test6replacingNodes" : "JAAyer 11/6/2010 00:02",
 		"test7childNodeEnumeration" : "JAAyer 11/6/2010 00:02" } }

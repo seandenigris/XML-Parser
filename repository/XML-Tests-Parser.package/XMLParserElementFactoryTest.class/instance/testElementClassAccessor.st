@@ -1,5 +1,5 @@
 tests
-testDefaultElementAccessor
+testElementClassAccessor
 	| document |
 
 	document :=
