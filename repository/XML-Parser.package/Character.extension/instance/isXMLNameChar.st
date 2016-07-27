@@ -34,7 +34,7 @@ isXMLNameChar
 
 			tempValue = 16r2E "$. asciiValue hex"
 				ifTrue: [^ true].
-			^ tempValue = 16r2D]. "$- asciiValue hex".
+			^ tempValue = 16r2D]. "$- asciiValue hex"
 
 	tempValue >= 16rC0
 		ifFalse: [^ tempValue = 16rB7].
