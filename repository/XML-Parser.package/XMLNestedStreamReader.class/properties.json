@@ -14,7 +14,7 @@
 		"normalizedLineEndingChar",
 		"currentLineNumber",
 		"readLimit",
-		"characterEscaper" ],
+		"isEscapingQuotes" ],
 	"name" : "XMLNestedStreamReader",
 	"pools" : [
 		 ],

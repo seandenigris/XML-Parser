@@ -7,7 +7,7 @@
 	"commentStamp" : "monty 12/18/2014 19:25",
 	"instvars" : [
 		 ],
-	"name" : "DTDCachingEntityResolver",
+	"name" : "DTDCachingExternalEntityResolver",
 	"pools" : [
 		 ],
 	"super" : "DTDExternalEntityResolver",

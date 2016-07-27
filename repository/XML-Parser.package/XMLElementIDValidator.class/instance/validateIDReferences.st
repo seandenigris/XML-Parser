@@ -1,4 +1,4 @@
-validation
+validating
 validateIDReferences
 	self idReferences do: [:each |
 		(self ids includes: each)

@@ -1,4 +1,4 @@
-validation
+validating
 validateStartTag: aName attributes: anAttributeDictionary
 	(self hasElementValidators or: [self hasAttributeValidators])
 		ifFalse: [^ self].

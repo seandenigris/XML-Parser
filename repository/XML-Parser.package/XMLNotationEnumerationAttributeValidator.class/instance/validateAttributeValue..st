@@ -1,4 +1,4 @@
-validation
+validating
 validateAttributeValue: aValue
 	super validateAttributeValue: aValue.
 	self unparsedEntityValidator

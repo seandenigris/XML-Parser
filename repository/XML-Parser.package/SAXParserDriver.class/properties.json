@@ -9,7 +9,7 @@
 		"saxHandler",
 		"elementNester",
 		"scopeAllocator",
-		"dtd",
+		"doctypeDefinition",
 		"validator",
 		"hasUnhandledReservedAttributes" ],
 	"name" : "SAXParserDriver",

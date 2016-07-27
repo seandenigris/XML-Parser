@@ -1,10 +1,10 @@
-validation
+validating
 validateIDAttribute: anAttribute forElement: anElement
 	| oldSize |
 
 	"checking size after is faster than includes test"
-	oldSize := self idAttributes size.
-	(self idAttributes
+	oldSize := self elementsAndIDAttributes size.
+	(self elementsAndIDAttributes
 		at: anElement
 		put: anAttribute;
 		size) > oldSize

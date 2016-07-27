@@ -5,7 +5,7 @@ handleXMLVersion: aVersion encoding: anEncoding standalone: aYesOrNo
 	versionNumber := Float readFrom: aVersion readStream.
 	isStandalone := aYesOrNo = 'yes'.
 
-	self dtd isStandalone: isStandalone.
+	self doctypeDefinition isStandalone: isStandalone.
 
 	self saxHandler
 		xmlVersion: versionNumber

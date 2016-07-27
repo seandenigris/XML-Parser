@@ -1,4 +1,4 @@
-validation
+validating
 validateIDReference: anId inAttribute: anAttribute
 	(XMLWellFormedParserTokenizer isName: anId)
 		ifFalse: [

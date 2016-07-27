@@ -19,6 +19,6 @@ basicNext
 		ifFalse: [
 			nextChar == LineFeed
 				ifTrue: [nextChar := normalizedLineEndingChar]].
-	characterEscaper
-		ifNil: [^ nextChar]
-		ifNotNil: [^ characterEscaper nextCharacter: nextChar].
+	isEscapingQuotes
+		ifTrue: [^ self escapeNextQuoteCharacter: nextChar]
+		ifFalse: [^ nextChar].

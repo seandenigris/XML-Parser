@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"rootElement",
+		"root",
 		"externalSubsetUri",
 		"isStandalone",
 		"elementValidators",

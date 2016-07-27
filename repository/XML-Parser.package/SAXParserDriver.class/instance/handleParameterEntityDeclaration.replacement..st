@@ -1,6 +1,6 @@
 handling tokens
 handleParameterEntityDeclaration: aName replacement: aReplacement
-	self dtd
+	self doctypeDefinition
 		addParameterEntity: aName
 		replacement:aReplacement
 		from: self currentURI.

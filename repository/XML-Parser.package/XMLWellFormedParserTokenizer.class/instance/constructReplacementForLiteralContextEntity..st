@@ -1,15 +1,13 @@
 entity replacing
 constructReplacementForLiteralContextEntity: anEntity
-	| previousEscaper |
+	| wasEscapingQuotes |
 
-	previousEscaper := streamReader characterEscaper.
+	wasEscapingQuotes := streamReader isEscapingQuotes.
 	self
 		pushBackEntity: anEntity
-		onClose: [streamReader characterEscaper: previousEscaper].
+		onClose: [streamReader isEscapingQuotes: wasEscapingQuotes].
 
 	"wait till after the text declaration was read to start escaping"
 	(self currentActiveEntity == anEntity
-		and: [previousEscaper isNil])
-		ifTrue: [
-			streamReader characterEscaper:
-				(XMLQuoteCharacterEscaper for: streamReader)].
+		and: [wasEscapingQuotes not])
+		ifTrue: [streamReader isEscapingQuotes: true].

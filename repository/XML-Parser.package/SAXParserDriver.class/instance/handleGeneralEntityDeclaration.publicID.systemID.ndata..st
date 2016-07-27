@@ -4,16 +4,16 @@ handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId nd
 		ifNotEmpty: [
 			self isValidating
 				ifTrue: [
-					self dtd unparsedEntityValidator
+					self doctypeDefinition unparsedEntityValidator
 						validateUnparsedEntity: aName
 						withNotation: aNotation].
-			self dtd
+			self doctypeDefinition
 				addUnparsedEntity: aName
 				ndata: aNotation]
 		ifEmpty: [
 			self resolvesExternalEntities
 				ifTrue: [
-					self dtd
+					self doctypeDefinition
 						addExternalGeneralEntity: aName
 						resolver: self externalEntityResolver
 						uri: aSystemId

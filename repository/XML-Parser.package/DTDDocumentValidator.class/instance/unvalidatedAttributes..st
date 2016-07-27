@@ -1,4 +1,4 @@
-validation
+validating
 unvalidatedAttributes: anAttributeCollection
 	XMLValidationException
 		formatSignal: 'Undeclared attribute "{1}"'

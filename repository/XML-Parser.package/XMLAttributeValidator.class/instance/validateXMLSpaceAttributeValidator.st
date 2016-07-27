@@ -1,4 +1,4 @@
-validation
+validating
 validateXMLSpaceAttributeValidator
 	(self isEnumerationValidator
 		and: [self allowedValues size = 2

@@ -1,6 +1,6 @@
 handling tokens
 handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
-	self dtd
+	self doctypeDefinition
 		addExternalParameterEntity: aName
 		resolver: self externalEntityResolver
 		uri: aSystemId

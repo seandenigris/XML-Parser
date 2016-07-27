@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "monty 1/1/2015 21:00",
 	"instvars" : [
+		"elementsAndNotationAttributes",
 		"unparsedEntities",
-		"notations",
-		"notationAttributes" ],
+		"notations" ],
 	"name" : "XMLUnparsedEntityValidator",
 	"pools" : [
 		 ],

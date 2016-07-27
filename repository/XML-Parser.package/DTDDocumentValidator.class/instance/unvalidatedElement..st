@@ -1,4 +1,4 @@
-validation
+validating
 unvalidatedElement: aName
 	XMLValidationException
 		formatSignal: 'Undeclared element <{1}>'

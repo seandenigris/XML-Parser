@@ -1,4 +1,4 @@
-validation
+validating
 validateNotationReference: aNotation inAttribute: anAttribute
 	(self notations includes: aNotation)
 		ifFalse: [

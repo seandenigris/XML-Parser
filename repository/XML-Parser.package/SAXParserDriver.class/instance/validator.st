@@ -1,3 +1,3 @@
 accessing
 validator
-	^ validator ifNil: [validator := DTDDocumentValidator dtd: self dtd]
+	^ validator ifNil: [validator := DTDDocumentValidator doctypeDefinition: self doctypeDefinition]

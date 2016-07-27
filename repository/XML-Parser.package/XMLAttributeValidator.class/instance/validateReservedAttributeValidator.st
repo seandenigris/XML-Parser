@@ -1,4 +1,4 @@
-validation
+validating
 validateReservedAttributeValidator
 	(self attribute at: 1) == $x
 		ifTrue: [

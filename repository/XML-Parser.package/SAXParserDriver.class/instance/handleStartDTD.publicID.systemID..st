@@ -1,7 +1,7 @@
 handling tokens
 handleStartDTD: aRoot publicID: aPublicId systemID: aSystemId
-	self dtd
-		rootElement: aRoot
+	self doctypeDefinition
+		root: aRoot
 		externalSubsetURI: aSystemId.
 	
 	self saxHandler

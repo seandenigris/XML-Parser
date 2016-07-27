@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"saxDriver",
-		"dtd",
+		"doctypeDefinition",
 		"documentUri" ],
 	"name" : "DTDExternalSubsetParserDriver",
 	"pools" : [

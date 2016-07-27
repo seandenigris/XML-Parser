@@ -1,6 +1,6 @@
 handling tokens
 handleGeneralEntityReference: aName
-	^ self dtd
+	^ self doctypeDefinition
 		generalEntityAt: aName
 		ifAbsent: [
 			self isValidating

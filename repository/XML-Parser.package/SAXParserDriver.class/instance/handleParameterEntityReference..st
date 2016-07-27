@@ -1,6 +1,6 @@
 handling tokens
 handleParameterEntityReference: aName
-	^ self dtd
+	^ self doctypeDefinition
 		parameterEntityAt: aName
 		ifAbsent: [
 			self isValidating

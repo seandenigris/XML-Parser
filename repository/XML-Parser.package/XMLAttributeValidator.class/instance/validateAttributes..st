@@ -1,4 +1,4 @@
-validation
+validating
 validateAttributes: anAttributeDictionary
 	self
 		validateAttributeDefaultIn: anAttributeDictionary;

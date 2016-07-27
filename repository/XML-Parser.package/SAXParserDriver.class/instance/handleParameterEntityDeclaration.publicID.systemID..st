@@ -2,7 +2,7 @@ handling tokens
 handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
 	self resolvesExternalEntities
 		ifTrue: [
-			self dtd
+			self doctypeDefinition
 				addExternalParameterEntity: aName
 				resolver: self externalEntityResolver
 				uri: aSystemId

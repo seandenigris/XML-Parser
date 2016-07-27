@@ -1,3 +1,3 @@
 changing
 internalSubsetContext
-	^ XMLInternalSubetContext new
+	^ XMLInternalSubsetContext new

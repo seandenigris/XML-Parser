@@ -1,3 +1,3 @@
 accessing
 elementIDValidator
-	self dtd elementIDValidator
+	self doctypeDefinition elementIDValidator

@@ -1,6 +1,6 @@
 handling tokens
 handleGeneralEntityDeclaration: aName replacement: aReplacement
-	self dtd
+	self doctypeDefinition
 		addGeneralEntity: aName
 		replacement: aReplacement
 		from: self currentURI

@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"dtd" ],
+		"doctypeDefinition" ],
 	"name" : "DTDDocumentValidator",
 	"pools" : [
 		 ],

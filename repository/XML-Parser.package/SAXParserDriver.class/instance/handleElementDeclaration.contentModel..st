@@ -2,7 +2,7 @@ handling tokens
 handleElementDeclaration: aName contentModel: aContentModel
 	self isValidating
 		ifTrue: [
-			self dtd
+			self doctypeDefinition
 				addValidatorForElement: aName
 				contentModel: aContentModel].
 

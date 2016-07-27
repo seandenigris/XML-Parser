@@ -1,4 +1,4 @@
-validation
+validating
 validateStartTag: aName
 	self currentElementValidator
 		ifNotNil: [:currentValidator | currentValidator validateStartTag: aName].

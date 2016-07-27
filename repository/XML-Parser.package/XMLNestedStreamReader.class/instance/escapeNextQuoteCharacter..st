@@ -1,5 +1,5 @@
 private
-escapeQuote: aCharacter
+escapeNextQuoteCharacter: aCharacter
 	aCharacter ==  $"
 		ifTrue: [
 			self pushBack: '#34;'.

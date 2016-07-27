@@ -1,4 +1,4 @@
-validation
+validating
 validateIDReferences
-	self dtd hasElementIDValidator
-		ifTrue: [self dtd elementIDValidator validateIDReferences]
+	self doctypeDefinition hasElementIDValidator
+		ifTrue: [self doctypeDefinition elementIDValidator validateIDReferences]

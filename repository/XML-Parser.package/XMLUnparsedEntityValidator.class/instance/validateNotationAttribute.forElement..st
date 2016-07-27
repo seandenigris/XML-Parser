@@ -1,10 +1,10 @@
-validation
+validating
 validateNotationAttribute: anAttribute forElement: anElement
 	| oldSize |
 
 	"checking size after is faster than includes"
-	oldSize := self notationAttributes size.
-	(self notationAttributes
+	oldSize := self elementsAndNotationAttributes size.
+	(self elementsAndNotationAttributes
 		at: anElement
 		put: anAttribute;
 		size) > oldSize

@@ -10,7 +10,7 @@
 		"UTF32BigEndianBOM",
 		"UTF32LittleEndianBOM",
 		"UTF8BOM" ],
-	"commentStamp" : "monty 12/8/2014 15:27",
+	"commentStamp" : "monty 3/2/2015 04:12",
 	"instvars" : [
 		"stream",
 		"streamReader" ],

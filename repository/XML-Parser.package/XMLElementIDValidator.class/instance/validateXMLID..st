@@ -1,4 +1,4 @@
-validation
+validating
 validateXMLID: anId
 	(XMLWellFormedParserTokenizer isNCName: anId)
 		ifFalse: [

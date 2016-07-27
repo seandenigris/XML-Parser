@@ -1,3 +1,3 @@
-validation
+validating
 validateStartTag: aName
 	self errorMustBeEmpty

@@ -1,4 +1,4 @@
-validation
+validating
 validateEndTag: aName
 	self hasElementValidators
 		ifTrue: [

@@ -1,4 +1,4 @@
-validation
+validating
 validateAttributeValue: aValue
 	self elementIDValidator
 		validateID: aValue

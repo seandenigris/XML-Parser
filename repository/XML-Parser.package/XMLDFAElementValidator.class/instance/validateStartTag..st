@@ -1,4 +1,4 @@
-validation
+validating
 validateStartTag: aName
 	currentState :=
 		currentState

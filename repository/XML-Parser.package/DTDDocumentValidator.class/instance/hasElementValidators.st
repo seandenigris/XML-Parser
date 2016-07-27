@@ -1,3 +1,3 @@
 testing
 hasElementValidators
-	^ self dtd hasElementValidators
+	^ self doctypeDefinition hasElementValidators

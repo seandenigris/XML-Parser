@@ -1,5 +1,5 @@
 accessing
 attributeValidatorsFor: anElement
-	^ self dtd attributeValidators
+	^ self doctypeDefinition attributeValidators
 		at: anElement
 		ifAbsent: [nil]

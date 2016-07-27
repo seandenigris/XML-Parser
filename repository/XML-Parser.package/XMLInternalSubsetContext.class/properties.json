@@ -7,7 +7,7 @@
 	"commentStamp" : "monty 11/9/2014 16:23",
 	"instvars" : [
 		 ],
-	"name" : "XMLInternalSubetContext",
+	"name" : "XMLInternalSubsetContext",
 	"pools" : [
 		 ],
 	"super" : "XMLDoctypeContext",

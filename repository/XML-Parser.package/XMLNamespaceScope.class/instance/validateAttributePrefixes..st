@@ -1,4 +1,4 @@
-validation
+validating
 validateAttributePrefixes: aDictionary
 	"performance critical method"
 	| namespacedAttributes |

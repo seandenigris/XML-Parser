@@ -1,5 +1,5 @@
-validation
+validating
 validateRootElement: anElementName
-	(self dtd rootElement notEmpty
-		and: [self dtd rootElement ~= anElementName])
+	(self doctypeDefinition root notEmpty
+		and: [self doctypeDefinition root ~= anElementName])
 		ifTrue: [self errorInvalidRoot: anElementName]

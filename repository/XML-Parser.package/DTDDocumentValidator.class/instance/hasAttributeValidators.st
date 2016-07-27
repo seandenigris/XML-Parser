@@ -1,3 +1,3 @@
 testing
 hasAttributeValidators
-	^ self dtd hasAttributeValidators
+	^ self doctypeDefinition hasAttributeValidators

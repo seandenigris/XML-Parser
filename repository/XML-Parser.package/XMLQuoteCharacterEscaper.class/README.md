@@ -1,1 +1,0 @@
-An escaper for $' and $" characters used for entities in literal contexts.
