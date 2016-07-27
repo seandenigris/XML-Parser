@@ -1,0 +1,3 @@
+tokenizing
+nextXMLDeclAttributeValue
+	^ self nextQuotedValue

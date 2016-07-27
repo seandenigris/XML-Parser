@@ -10,14 +10,17 @@ nextExternalIDSystemLiteralRequired: aBoolean
 		ifTrue: [
 			streamReader peek == $P
 				ifTrue: [
-					self expectNextAll: 'PUBLIC'.
-					self skipSeparatorsReplacingParameterEntities.
+					self
+						expectNextAll: 'PUBLIC';
+						skipSeparatorsReplacingParameterEntities.
 					publicId := self nextPubidLiteral.
 
 					self skipSeparatorsReplacingParameterEntities.
 					systemId := self nextSystemLiteralRequired: aBoolean]
 				ifFalse: [
-					self expectNextAll: 'SYSTEM'.
-					self skipSeparatorsReplacingParameterEntities.
+					self
+						expectNextAll: 'SYSTEM';
+						skipSeparatorsReplacingParameterEntities.
 					systemId := self nextSystemLiteralRequired: true]].
+
 	^ publicId -> systemId.

@@ -2,4 +2,4 @@ This is a node list that caches child elements by name, keeping both an ordered 
 
 You can inject it into the DOM parser like this:
 parser := XMLDOMParser on: xmlSource.
-parser configuration nodeListClass: XMLCachingNodeList.
+parser nodeListClass: XMLCachingNodeList.

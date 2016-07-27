@@ -11,8 +11,5 @@ validateStartTag: aName attributes: anAttributeDictionary
 
 	self hasAttributeValidators
 		ifTrue: [
-			(self attributeValidatorsFor: aName)
-				do: [:each |
-					each
-						validateDefaultValueIn: anAttributeDictionary;
-						validateAttributes: anAttributeDictionary]].
+			(self attributeValidatorsFor: aName) do: [:each |
+				each validateAttributes: anAttributeDictionary]].

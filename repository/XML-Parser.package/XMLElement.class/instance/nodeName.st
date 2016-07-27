@@ -4,4 +4,4 @@ nodeName
 		ifNil: [ 
 			(name := XMLNodeName new)
 				addObserver: self;
-				yourself ]
+				yourself]

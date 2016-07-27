@@ -1,0 +1,3 @@
+entity replacement
+characterFromCodePoint: aCodePoint
+	self subclassResponsibility

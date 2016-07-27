@@ -1,0 +1,3 @@
+errors
+entityDepthError: anErrorString
+	XMLEntityDepthException signal: anErrorString

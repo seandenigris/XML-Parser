@@ -10,5 +10,5 @@
 	"name" : "DTDMixedContentListParser",
 	"pools" : [
 		 ],
-	"super" : "DTDEnumerationListParser",
+	"super" : "DTDValueListParser",
 	"type" : "normal" }

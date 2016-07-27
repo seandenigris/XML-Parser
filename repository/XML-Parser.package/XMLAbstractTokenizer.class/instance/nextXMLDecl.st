@@ -12,8 +12,9 @@ nextXMLDecl
 		ifFalse: [standalone := self nextXMLDeclAttribute: 'standalone'].
 
 	streamReader skipSeparators.
-	self expectNext: $?.
-	self expectTerminator: $>.
+	self
+		expectNext: $?;
+		expectTerminator: $>.
 
 	encoding
 		ifNotEmpty: [streamReader useConverterForEncoding: encoding].

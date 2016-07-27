@@ -5,6 +5,7 @@ nextComment
 	"Skip first -"
 	streamReader next.
 	self expectNext: $-.
+
 	comment := streamReader upToAll: '--'.
 	self expectTerminator: $>.
 

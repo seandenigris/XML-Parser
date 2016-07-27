@@ -8,7 +8,9 @@ expectUpToAll: aString
 		[streamReader atEnd
 			or: [(isTerminated := streamReader nextMatchAll: aString)]]
 			whileFalse: [writeStream nextPut: streamReader next].
+
 		writeStream contents].
+
 	isTerminated
 		ifFalse: [self errorExpected: 'terminating ', aString].
 

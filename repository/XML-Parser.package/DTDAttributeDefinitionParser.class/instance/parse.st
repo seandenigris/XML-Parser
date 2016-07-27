@@ -15,7 +15,7 @@ parse
 			name: name
 			defaultValueValidator: defaultValueValidator.
 
-	attributeValidator isEnumerationValidator
-		ifTrue: [attributeValidator values: (self parseEnumerationType)].
+	attributeValidator isValueListValidator
+		ifTrue: [attributeValidator allowedValues: (self parseEnumerationType)].
 
 	^ attributeValidator.

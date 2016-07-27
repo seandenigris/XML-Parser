@@ -15,6 +15,7 @@ nextIgnoreSection
 					(streamReader nextMatchAll: '<![')
 						ifTrue: [openSections := openSections + 1]
 						ifFalse: [streamReader next]]].
+
 	openSections > 0
 		ifTrue: [self errorExpected: 'terminating ]]>'].
 

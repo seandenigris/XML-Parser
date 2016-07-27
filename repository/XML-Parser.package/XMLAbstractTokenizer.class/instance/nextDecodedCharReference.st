@@ -1,10 +1,10 @@
 tokenizing
 nextDecodedCharReference
-	| charValue |
+	| codePoint |
 
 	"skip #"
 	streamReader next.
-	(charValue := streamReader nextInteger) > 0
-		ifFalse: [self errorExpected: 'integral character value'].
+	codePoint := streamReader nextInteger.
 	self expectNext: $;.
-	^ Unicode value: charValue.
+
+	^ self characterFromCodePoint: codePoint.

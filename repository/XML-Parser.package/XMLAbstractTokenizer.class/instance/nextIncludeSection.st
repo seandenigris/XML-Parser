@@ -17,6 +17,7 @@ nextIncludeSection
 							ifTrue: [isOpen := false]
 							ifFalse: [writeStream nextPut: streamReader next]]].
 		writeStream contents].
+
 	isOpen
 		ifTrue: [self errorExpected: 'terminating ]]>'].
 

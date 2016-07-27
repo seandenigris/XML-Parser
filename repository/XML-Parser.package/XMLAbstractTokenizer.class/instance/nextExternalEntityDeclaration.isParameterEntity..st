@@ -14,13 +14,15 @@ nextExternalEntityDeclaration: aName isParameterEntity: aBoolean
 			streamReader peek == $>
 				ifTrue: [notation := '']
 				ifFalse: [
-					self expectNextAll: 'NDATA'.
-					self skipSeparatorsReplacingParameterEntities.
+					self
+						expectNextAll: 'NDATA';
+						skipSeparatorsReplacingParameterEntities.
 					notation := self nextName].
 			driver
 				handleGeneralEntityDeclaration: aName
 				publicID: externalId key
 				systemID: externalId value
 				ndata: notation].
-	self skipSeparatorsReplacingParameterEntities.
-	self expectTerminator: $>.
+	self
+		skipSeparatorsReplacingParameterEntities;
+		expectTerminator: $>.

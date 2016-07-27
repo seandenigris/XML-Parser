@@ -1,0 +1,3 @@
+testing
+isValueListValidator
+	^ true

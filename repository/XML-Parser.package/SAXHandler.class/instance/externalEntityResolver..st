@@ -1,0 +1,3 @@
+accessing
+externalEntityResolver: anExternalEntityResolver
+	self configuration externalEntityResolver: anExternalEntityResolver

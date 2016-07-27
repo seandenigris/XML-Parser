@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"enumerationList" ],
+		 ],
 	"name" : "DTDEnumerationListParser",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "DTDValueListParser",
 	"type" : "normal" }

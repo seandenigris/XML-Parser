@@ -3,8 +3,9 @@ nextInternalEntityDeclaration: aName isParameterEntity: aBoolean
 	| value |
 
 	value := self nextEntityValue.
-	self skipSeparatorsReplacingParameterEntities.
-	self expectTerminator: $>.
+	self
+		skipSeparatorsReplacingParameterEntities;
+		expectTerminator: $>.
 
 	aBoolean
 		ifTrue: [driver handleParameterEntityDeclaration: aName replacement: value]

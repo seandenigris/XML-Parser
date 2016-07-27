@@ -5,6 +5,6 @@ replacementFromGeneralEntity: anEntity
 	^ context isInLiteralValue
 		ifTrue: [
 			anEntity isExternal
-				ifTrue: [self entityError: 'External general entity ', anEntity asReference, ' in literal context'].
+				ifTrue: [self parseError: 'External general entity ', anEntity asReference, ' in literal context'].
 			anEntity replacementForLiteralContext]
 		ifFalse: [anEntity replacementForContentContext].

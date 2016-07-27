@@ -2,14 +2,17 @@ tokenizing dtd
 nextNotationDeclaration
 	| name externalId |
 
-	self expectNextAll: 'NOTATION'.
-	self skipSeparatorsReplacingParameterEntities.
+	self
+		expectNextAll: 'NOTATION';
+		skipSeparatorsReplacingParameterEntities.
 
 	name := self nextName.
 	self skipSeparatorsReplacingParameterEntities.
 	externalId := self nextExternalIDSystemLiteralRequired: false.
-	self skipSeparatorsReplacingParameterEntities.
-	self expectTerminator: $>.
+
+	self
+		skipSeparatorsReplacingParameterEntities;
+		expectTerminator: $>.
 
 	driver
 		handleNotationDeclaration: name

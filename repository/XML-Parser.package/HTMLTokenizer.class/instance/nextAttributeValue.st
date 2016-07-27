@@ -7,6 +7,7 @@ nextAttributeValue
 
 	streamReader atQuote
 		ifFalse: [^ self nextName].
+
 	quote := streamReader next.
 	context resetAfter: [
 		context enterLiteralValue.

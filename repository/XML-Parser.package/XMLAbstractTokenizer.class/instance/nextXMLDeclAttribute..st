@@ -1,7 +1,5 @@
 tokenizing
 nextXMLDeclAttribute: aName
-	| quote |
-
 	streamReader skipSeparators.
 	streamReader peek == $?
 		ifTrue: [^ ''].
@@ -11,5 +9,4 @@ nextXMLDeclAttribute: aName
 	self expectNext: $=.
 	streamReader skipSeparators.
 
-	quote := self expectQuote.
-	^ streamReader upTo: quote.
+	^ self nextXMLDeclAttributeValue.

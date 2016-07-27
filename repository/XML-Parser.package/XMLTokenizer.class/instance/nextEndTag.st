@@ -8,4 +8,4 @@ nextEndTag
 	streamReader skipSeparators.
 	self expectTerminator: $>.
 
-	driver handleEndTag: tagName
+	driver handleEndTag: tagName.

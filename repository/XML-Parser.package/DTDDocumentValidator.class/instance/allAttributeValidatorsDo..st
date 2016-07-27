@@ -1,3 +1,3 @@
 enumerating
 allAttributeValidatorsDo: aBlock
-	^ self dtd attributeValidators do: [:each | each valuesDo: aBlock]
+	^ self dtd attributeValidators valuesDo: [:each | each valuesDo: aBlock]

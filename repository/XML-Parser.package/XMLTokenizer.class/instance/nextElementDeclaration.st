@@ -2,8 +2,10 @@ tokenizing dtd
 nextElementDeclaration
 	| name nextChar contentModel |
 
-	self expectNextAll: 'LEMENT'.
-	self skipSeparatorsReplacingParameterEntities.
+	self
+		expectNextAll: 'LEMENT';
+		skipSeparatorsReplacingParameterEntities.
+
 	name := self nextName.
 	contentModel := streamWriter writeWith: [:writeStream |
 		[self skipSeparatorsReplacingParameterEntities.
@@ -18,8 +20,10 @@ nextElementDeclaration
 				('?*+' includes: streamReader peek)
 					ifTrue: [writeStream nextPut: streamReader next]].
 		writeStream contents].
-	self skipSeparatorsReplacingParameterEntities.
-	self expectTerminator: $>.
+
+	self
+		skipSeparatorsReplacingParameterEntities;
+		expectTerminator: $>.
 
 	driver
 		handleElementDeclaration: name

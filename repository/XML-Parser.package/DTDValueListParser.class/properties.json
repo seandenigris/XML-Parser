@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-DTD",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"valueList" ],
+	"name" : "DTDValueListParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

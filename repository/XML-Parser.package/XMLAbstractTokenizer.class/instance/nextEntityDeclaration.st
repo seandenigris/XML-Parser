@@ -3,8 +3,9 @@ nextEntityDeclaration
 	| isParameterEntity name  |
 
 	self expectNextAll: 'NTITY'.
-	isParameterEntity := false.
+
 	"this is to distinguish a parameter reference from declaration"
+	isParameterEntity := false.
 	[streamReader skipSeparators.
 	streamReader peek == $%]
 		whileTrue: [

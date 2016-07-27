@@ -1,3 +1,3 @@
 private
 asReferenceStartingWith: aString
-	^ aString, (self name copyWith: $;)
+	^ (aString, self name) copyWith: $;

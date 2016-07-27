@@ -2,7 +2,7 @@ enumerating
 allElementsSelect: aBlock
 	| selectedElements |
 
-	selectedElements := self elements copyEmpty.
+	selectedElements := self nodes copyEmpty.
 	self allElementsDo: [:each |
 		(aBlock value: each)
 			ifTrue: [selectedElements add: each]].
