@@ -1,3 +1,0 @@
-writing markup
-elementDeclaration
-	^ self addNewMarkupWriter: XMLElementDeclarationWriter

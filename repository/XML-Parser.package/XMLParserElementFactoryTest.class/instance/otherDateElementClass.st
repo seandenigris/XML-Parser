@@ -1,3 +1,0 @@
-accessing
-otherDateElementClass
-	^ self elementClassAt: #XMLTESTOtherDateRegisteredElement

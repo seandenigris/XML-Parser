@@ -1,3 +1,0 @@
-accessing
-xmlns
-	^ defaultNamespace ifNil: ['']
