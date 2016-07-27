@@ -1,5 +1,5 @@
 private
-clearCache
+clear
 	cachedStates
 		removeAll;
 		at: firstState nfaStates

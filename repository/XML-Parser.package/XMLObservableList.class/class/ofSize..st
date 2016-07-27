@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 ofSize: aSize
 	self shouldNotImplement

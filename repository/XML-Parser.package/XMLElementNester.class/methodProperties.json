@@ -6,8 +6,9 @@
 		"currentElement" : "monty 10/7/2014 03:16",
 		"currentScopedAttributes" : "monty 10/27/2014 09:09",
 		"enclosedElementsAsString:" : "monty 10/22/2014 13:56",
-		"endElement:" : "monty 1/20/2014 19:59",
+		"endElement:" : "monty 4/16/2015 01:06",
 		"endNesting" : "monty 2/2/2014 02:45",
+		"endScopedAttributes" : "monty 4/16/2015 01:07",
 		"hasExternalRootElement" : "monty 11/3/2014 13:20",
 		"hasOpenElement:" : "monty 12/6/2013 17:29",
 		"hasOpenElements" : "monty 11/3/2014 13:18",
@@ -26,4 +27,5 @@
 		"scopedAttributes" : "monty 1/20/2014 19:33",
 		"setExternalRootElement:" : "monty 11/3/2014 13:20",
 		"setScopedAttributesNamed:from:" : "monty 1/5/2015 07:16",
-		"startElement:" : "monty 1/20/2014 19:59" } }
+		"startElement:" : "monty 4/16/2015 01:06",
+		"startScopedAttributes" : "monty 4/16/2015 01:06" } }

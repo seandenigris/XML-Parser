@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"new" : "monty 4/16/2015 01:05" },
 	"instance" : {
 		"afterAdding:at:" : "monty 1/21/2015 11:54",
 		"afterAddingLast:" : "monty 1/21/2015 12:27",

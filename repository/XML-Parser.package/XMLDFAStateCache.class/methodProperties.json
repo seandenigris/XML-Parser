@@ -2,8 +2,8 @@
 	"class" : {
 		"firstState:" : "monty 12/29/2013 01:02" },
 	"instance" : {
-		"clearCache" : "monty 12/29/2013 03:29",
-		"dfaStateFor:" : "monty 12/27/2014 03:12",
+		"addDFAState:" : "monty 4/16/2015 01:11",
+		"clear" : "monty 4/16/2015 01:10",
+		"dfaStateFor:" : "monty 4/16/2015 01:10",
 		"firstState:" : "monty 11/19/2014 19:28",
-		"maxCachedStates" : "monty 12/29/2013 01:07",
-		"newDFAStateFor:" : "monty 12/29/2013 03:29" } }
+		"maxCachedStates" : "monty 12/29/2013 01:07" } }
