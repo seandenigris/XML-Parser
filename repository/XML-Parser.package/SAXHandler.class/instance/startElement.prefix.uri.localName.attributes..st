@@ -1,5 +1,5 @@
 handling - content
-startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName attributes: aDictionary
+startElement: aQualifiedName prefix: aPrefix uri: aURI localName: aLocalName attributes: aDictionary
 	"This call corresonds to the Java SAX call
 	startElement(java.lang.String namespaceURI, java.lang.String localName,
 		java.lang.String qName, Attributes atts)."
@@ -7,5 +7,5 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 	self
 		startElement: aQualifiedName
 		prefix: aPrefix
-		uri: aUri
+		uri: aURI
 		attributes: aDictionary

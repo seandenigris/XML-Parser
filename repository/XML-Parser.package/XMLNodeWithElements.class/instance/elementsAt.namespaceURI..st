@@ -1,3 +1,3 @@
 accessing
-elementsAt: aName namespaceURI: aUri
-	^ self nodes elementsAt: aName namespaceURI: aUri
+elementsAt: aName namespaceURI: aURI
+	^ self nodes elementsAt: aName namespaceURI: aURI

@@ -1,3 +1,3 @@
-handling tokens
-handleNotationDeclaration: aName publicID: aPublicId systemID: aSystemId
+handling - dtd
+handleNotationDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self doctypeDefinition addNotation: aName

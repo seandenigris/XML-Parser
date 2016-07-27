@@ -1,6 +1,6 @@
 instance creation
-name: aString replacement: aValueString uri: aUri
+name: aString replacement: aValueString uri: aURI
 	^ self new
 		setName: aString
 		replacement: aValueString
-		uri: aUri
+		uri: aURI

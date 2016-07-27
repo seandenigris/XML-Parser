@@ -1,6 +1,6 @@
 instance creation
-name: aName publicID: aPublicId systemID: aSystemId
+name: aName publicID: aPublicID systemID: aSystemID
 	^ self new
 		name: aName;
-		publicID: aPublicId;
-		systemID: aSystemId
+		publicID: aPublicID;
+		systemID: aSystemID

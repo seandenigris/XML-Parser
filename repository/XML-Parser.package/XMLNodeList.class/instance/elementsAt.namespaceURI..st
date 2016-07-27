@@ -1,3 +1,3 @@
 accessing
-elementsAt: aName namespaceURI: aUri
-	^ (self elementsAt: aName) select: [:each | each namespaceURI = aUri]
+elementsAt: aName namespaceURI: aURI
+	^ (self elementsAt: aName) select: [:each | each namespaceURI = aURI]

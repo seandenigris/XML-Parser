@@ -1,5 +1,5 @@
-handling tokens
-handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId ndata: aNotation
+handling - dtd
+handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotation
 	aNotation
 		ifNotEmpty: [
 			self isValidating
@@ -16,11 +16,11 @@ handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId nd
 					self doctypeDefinition
 						addExternalGeneralEntity: aName
 						resolver: self externalEntityResolver
-						uri: aSystemId
+						uri: aSystemID
 						from: self currentURI]].
 
 	self saxHandler
 		generalEntityDeclaration: aName
-		publicID: aPublicId
-		systemID: aSystemId
+		publicID: aPublicID
+		systemID: aSystemID
 		ndata: aNotation.

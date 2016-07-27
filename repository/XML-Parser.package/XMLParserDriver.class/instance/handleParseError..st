@@ -1,3 +1,3 @@
-handling tokens
+handling
 handleParseError: anErrorString
 	XMLWellFormednessException signal: anErrorString

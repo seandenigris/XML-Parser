@@ -1,8 +1,8 @@
 resolving
-resolveEntityURI: aUri
+resolveEntityURI: aURI
 	| uri |
 
-	^ (uri := aUri asXMLURI) isLocalURI
+	^ (uri := aURI asXMLURI) isLocalURI
 		ifTrue: [super resolveEntityURI: uri]
 		ifFalse: [
 			(self class

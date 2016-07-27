@@ -1,2 +1,2 @@
-handling tokens
+handling - dtd
 handleEndDTD

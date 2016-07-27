@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"checkExternalEntityLimit" : "monty 10/31/2014 21:03",
-		"combineURI:with:" : "monty 10/31/2014 21:01",
+		"combineURI:with:" : "monty 3/22/2015 03:50",
 		"defaultDocumentURI" : "monty 1/22/2014 18:55",
 		"erorrExternalEntityLimitExceeded" : "monty 11/6/2014 12:21",
 		"errorLocalFromNonLocal" : "monty 10/31/2014 21:33",
@@ -16,10 +16,10 @@
 		"maxExternalEntitySize" : "monty 1/16/2014 06:20",
 		"maxExternalEntitySize:" : "monty 1/16/2014 06:54",
 		"removeLimits" : "monty 1/16/2014 06:16",
-		"resolveEntityURI:" : "monty 1/23/2014 05:44",
-		"resolveExternalEntity:uri:from:class:" : "monty 2/18/2014 04:58",
-		"resolveExternalGeneralEntity:uri:from:" : "monty 1/16/2014 05:41",
-		"resolveExternalParameterEntity:uri:from:" : "monty 1/16/2014 05:41",
+		"resolveEntityURI:" : "monty 3/21/2015 22:36",
+		"resolveExternalEntity:uri:from:class:" : "monty 3/22/2015 03:51",
+		"resolveExternalGeneralEntity:uri:from:" : "monty 3/22/2015 03:10",
+		"resolveExternalParameterEntity:uri:from:" : "monty 3/22/2015 03:10",
 		"resolvesLocalFromNonLocal" : "monty 1/24/2014 06:50",
 		"resolvesLocalFromNonLocal:" : "monty 1/24/2014 06:50",
 		"totalResolvedEntities" : "monty 1/16/2014 06:40" } }

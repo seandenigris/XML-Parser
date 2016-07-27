@@ -1,3 +1,3 @@
-handling tokens
+handling
 handleComment: aString
 	self saxHandler comment: aString

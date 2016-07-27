@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleGeneralEntityReference: aName
 	^ self doctypeDefinition
 		generalEntityAt: aName

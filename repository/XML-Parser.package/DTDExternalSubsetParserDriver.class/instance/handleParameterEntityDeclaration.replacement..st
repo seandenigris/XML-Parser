@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleParameterEntityDeclaration: aName replacement: aReplacement
 	self doctypeDefinition
 		addParameterEntity: aName

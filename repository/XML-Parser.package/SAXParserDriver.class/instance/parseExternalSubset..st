@@ -1,10 +1,10 @@
 private
-parseExternalSubset: aUri
+parseExternalSubset: aURI
 	| parser |
 
 	parser :=
 		self externalSubsetParserOnURI:
 			(self externalEntityResolver
 				combineURI: self documentURI
-				with: aUri).
+				with: aURI).
 	parser parseDocument.

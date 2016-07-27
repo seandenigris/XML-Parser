@@ -7,7 +7,7 @@
 	"commentStamp" : "monty 2/13/2015 21:20",
 	"instvars" : [
 		"input",
-		"documentUri",
+		"documentURI",
 		"configuration",
 		"isInInternalSubset",
 		"isInCDataSection" ],

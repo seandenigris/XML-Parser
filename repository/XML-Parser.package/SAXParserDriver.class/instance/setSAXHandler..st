@@ -2,6 +2,6 @@ initialization
 setSAXHandler: aHandler
 	saxHandler := aHandler.
 	elementNester := self elementNesterClass new.
-	externalSubsetUri := ''.
+	externalSubsetURI := ''.
 	isStandalone := false.
 	hasUnhandledReservedAttributes := false.

@@ -8,7 +8,7 @@
 	"instvars" : [
 		"saxDriver",
 		"doctypeDefinition",
-		"documentUri" ],
+		"documentURI" ],
 	"name" : "DTDExternalSubsetParserDriver",
 	"pools" : [
 		 ],

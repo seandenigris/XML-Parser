@@ -1,9 +1,9 @@
 accessing
-classForElement: aQualifiedName namespaceURI: aUri
+classForElement: aQualifiedName namespaceURI: aURI
 	| prefix |
 
 	^ self
 		classForElement: aQualifiedName
 		prefix: (prefix := aQualifiedName prefixBeforeLocalName)
-		uri: aUri
+		uri: aURI
 		localName: (aQualifiedName localNameAfterPrefix: prefix)

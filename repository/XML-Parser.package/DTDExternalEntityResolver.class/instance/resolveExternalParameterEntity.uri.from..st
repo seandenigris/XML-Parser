@@ -1,7 +1,7 @@
 resolving
-resolveExternalParameterEntity: aName uri: anEntityUri from: aSourceUri
+resolveExternalParameterEntity: aName uri: anEntityURI from: aSourceURI
 	^ self
 		resolveExternalEntity: aName
-		uri: anEntityUri
-		from: aSourceUri
+		uri: anEntityURI
+		from: aSourceURI
 		class: DTDExternalParameterEntity

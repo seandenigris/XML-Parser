@@ -1,6 +1,6 @@
 handling - content
-processingInstruction: aTarget data: aDataString
+processingInstruction: aTargetString data: aDataString
 	self topNode addNode:
 		(self nodeFactory newPI
-			target: aTarget;
+			target: aTargetString;
 			data: aDataString)

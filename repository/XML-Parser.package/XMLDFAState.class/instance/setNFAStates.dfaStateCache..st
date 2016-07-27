@@ -1,4 +1,4 @@
 initialization
-setNFAStates: anNfaStateSet dfaStateCache: aDfaStateCache
-	nfaStates := anNfaStateSet.
-	dfaStateCache := (aDfaStateCache ifNil: [XMLDFAStateCache firstState: self]).
+setNFAStates: anNFAStateSet dfaStateCache: aDFAStateCache
+	nfaStates := anNFAStateSet.
+	dfaStateCache := (aDFAStateCache ifNil: [XMLDFAStateCache firstState: self]).

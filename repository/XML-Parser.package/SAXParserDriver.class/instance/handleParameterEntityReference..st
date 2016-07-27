@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleParameterEntityReference: aName
 	^ self doctypeDefinition
 		parameterEntityAt: aName

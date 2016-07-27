@@ -1,9 +1,9 @@
 private
-addPathSegmentsFrom: aUri
-	aUri hasPath
+addPathSegmentsFrom: aURI
+	aURI hasPath
 		ifFalse: [^ self].
 
-	aUri hasAbsolutePath
+	aURI hasAbsolutePath
 		ifTrue: [pathSegments removeAll]
 		ifFalse: [
 			self hasNonDirectoryPath
@@ -12,4 +12,4 @@ addPathSegmentsFrom: aUri
 					self hasPath
 						ifTrue: [self haveDirectoryPath]]].
 
-	aUri pathSegments do: [:each | self addPathSegment: each].
+	aURI pathSegments do: [:each | self addPathSegment: each].

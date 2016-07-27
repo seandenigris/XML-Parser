@@ -1,3 +1,3 @@
 accessing
 documentURI
-	^ documentUri ifNil: [documentUri := self defaultDocumentURI]
+	^ documentURI ifNil: [documentURI := self defaultDocumentURI]

@@ -1,5 +1,5 @@
 instance creation
-newElementNamed: aName namespaceURI: aUri
-	^ (self classForElement: aName namespaceURI: aUri)
+newElementNamed: aName namespaceURI: aURI
+	^ (self classForElement: aName namespaceURI: aURI)
 		name: aName
-		namespaceURI: aUri
+		namespaceURI: aURI

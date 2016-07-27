@@ -1,3 +1,3 @@
-handling tokens
+handling
 handleEndContentEntityReplacement: aName
 	self saxHandler endEntity: aName

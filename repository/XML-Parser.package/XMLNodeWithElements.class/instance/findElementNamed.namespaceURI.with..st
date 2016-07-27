@@ -1,6 +1,6 @@
 searching
-findElementNamed: aName namespaceURI: aUri with: aBlock
+findElementNamed: aName namespaceURI: aURI with: aBlock
 	^ self allElementsDetect: [:each |
 		(each isNamed: aName)
-			and: [each namespaceURI = aUri
+			and: [each namespaceURI = aURI
 				and: [aBlock value: each]]]

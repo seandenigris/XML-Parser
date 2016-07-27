@@ -1,7 +1,7 @@
 handling - declarations
-notationDeclaration: aName publicID: aPublicId systemID: aSystemId
+notationDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self topNode addNode:
 		(self nodeFactory notationDeclarationClass
 			name: aName
-			publicID: aPublicId
-			systemID: aSystemId)
+			publicID: aPublicID
+			systemID: aSystemID)

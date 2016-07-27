@@ -1,5 +1,5 @@
 private
-errorUnknownIDReference: anId
+errorUnknownIDReference: anID
 	XMLValidationException
 		formatSignal: 'Reference to unknown element ID "{1}"'
-		with: anId
+		with: anID

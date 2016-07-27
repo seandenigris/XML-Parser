@@ -1,8 +1,8 @@
 private
-validatePrefix: aPrefix beforeMappingTo: aUri
+validatePrefix: aPrefix beforeMappingTo: aURI
 	aPrefix = 'xml'
 		ifTrue: [
-			aUri = self class xmlNamespaceURI
+			aURI = self class xmlNamespaceURI
 				ifFalse: [self errorCannotRemapXmlPrefix]]
 		ifFalse: [
 			aPrefix isEmpty "avoid ifEmpty: overhead"
@@ -11,8 +11,8 @@ validatePrefix: aPrefix beforeMappingTo: aUri
 						ifTrue: [self errorCannotMapXmlnsPrefix].
 					(aPrefix indexOf: $:) > 0 
 						ifTrue: [self errorInvalidPrefix: aPrefix].
-					aUri isEmpty
+					aURI isEmpty
 						ifTrue: [self errorCannotMapPrefixToEmptyURI]].
-			(aUri = self class xmlNamespaceURI
-				or: [aUri = self class xmlnsNamespaceURI])
+			(aURI = self class xmlNamespaceURI
+				or: [aURI = self class xmlnsNamespaceURI])
 				ifTrue: [self errorCannotAliasXmlOrXmlnsURIWithPrefix: aPrefix]]

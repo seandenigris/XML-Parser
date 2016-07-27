@@ -13,7 +13,7 @@
 		"parameterEntities",
 		"unparsedEntities",
 		"notations",
-		"elementIdValidator",
+		"elementIDValidator",
 		"unparsedEntityValidator" ],
 	"name" : "DTDDoctypeDefinition",
 	"pools" : [

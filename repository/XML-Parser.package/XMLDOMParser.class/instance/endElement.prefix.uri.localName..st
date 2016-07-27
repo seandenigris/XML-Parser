@@ -1,3 +1,3 @@
 handling - content
-endElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName
+endElement: aQualifiedName prefix: aPrefix uri: aURI localName: aLocalName
 	self popNode

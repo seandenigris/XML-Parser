@@ -1,7 +1,7 @@
 handling - declarations
-parameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
+parameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self topNode addNode:
 		(self nodeFactory parameterEntityDeclarationClass
 			name: aName
-			publicID: aPublicId
-			systemID: aSystemId)
+			publicID: aPublicID
+			systemID: aSystemID)

@@ -1,5 +1,5 @@
 instance creation
-nfaStates: anNfaStateSet
+nfaStates: anNFAStateSet
 	^ self
-		nfaStates: anNfaStateSet
+		nfaStates: anNFAStateSet
 		dfaStateCache: nil

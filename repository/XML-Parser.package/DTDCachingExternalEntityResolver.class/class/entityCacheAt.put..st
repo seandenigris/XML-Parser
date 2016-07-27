@@ -1,5 +1,5 @@
 private
-entityCacheAt: aUri put: anEntity
+entityCacheAt: aURI put: anEntity
 	^ self entityCache
-		at: aUri
+		at: aURI
 		put: anEntity.

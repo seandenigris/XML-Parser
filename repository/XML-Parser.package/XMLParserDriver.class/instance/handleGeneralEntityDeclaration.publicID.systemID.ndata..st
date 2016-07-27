@@ -1,2 +1,2 @@
-handling tokens
-handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId ndata: aNotation
+handling - dtd
+handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotation

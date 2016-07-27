@@ -1,10 +1,10 @@
-handling tokens
-handleStartDTD: aRoot publicID: aPublicId systemID: aSystemId
-	externalSubsetUri := aSystemId.
+handling - dtd
+handleStartDTD: aRoot publicID: aPublicID systemID: aSystemID
+	externalSubsetURI := aSystemID.
 
 	self doctypeDefinition root: aRoot.
 	self saxHandler
 		startDTD: aRoot
-		publicID: aPublicId
-		systemID: aSystemId;
+		publicID: aPublicID
+		systemID: aSystemID;
 		startInternalSubset.

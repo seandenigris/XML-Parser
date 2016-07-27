@@ -1,13 +1,13 @@
 combining
-combineURI: aBaseUri with: aRelativeUri
-	| baseUri combinedUri |
+combineURI: aBaseURI with: aRelativeURI
+	| baseURI combinedURI |
 
-	baseUri := XMLURI fromString: aBaseUri.
-	combinedUri := baseUri / aRelativeUri.
-	(combinedUri isLocalURI
-		and: [baseUri isLocalURI not
+	baseURI := XMLURI fromString: aBaseURI.
+	combinedURI := baseURI / aRelativeURI.
+	(combinedURI isLocalURI
+		and: [baseURI isLocalURI not
 			and: [self resolvesLocalFromNonLocal notNil
 				and: [self resolvesLocalFromNonLocal not]]])
 		ifTrue: [self errorLocalFromNonLocal].
 
-	^ combinedUri.
+	^ combinedURI.

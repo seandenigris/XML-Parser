@@ -1,10 +1,10 @@
 validating
-validateID: anId inAttribute: anAttribute
-	(XMLWellFormedParserTokenizer isName: anId)
+validateID: anID inAttribute: anAttribute
+	(XMLWellFormedParserTokenizer isName: anID)
 		ifFalse: [
 			self
-				errorInvalidID: anId
+				errorInvalidID: anID
 				inAttribute: anAttribute].
 	self
-		validateUniquenessOfID: anId
+		validateUniquenessOfID: anID
 		inAttribute: anAttribute.

@@ -1,3 +1,3 @@
 parsing
-parseURL: aUrl
-	^ (self onURL: aUrl) parseDocument
+parseURL: aURLString
+	^ (self onURL: aURLString) parseDocument

@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleEndTag: anElementName
 	"performance critical method"
 	| prefix currentScope |

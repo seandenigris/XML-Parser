@@ -1,14 +1,14 @@
-handling tokens
-handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
+handling - dtd
+handleParameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self resolvesExternalEntities
 		ifTrue: [
 			self doctypeDefinition
 				addExternalParameterEntity: aName
 				resolver: self externalEntityResolver
-				uri: aSystemId
+				uri: aSystemID
 				from: self currentURI].
 
 	self saxHandler
 		parameterEntityDeclaration: aName
-		publicID: aPublicId
-		systemID: aSystemId.
+		publicID: aPublicID
+		systemID: aSystemID.

@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleElementDeclaration: aName contentModel: aContentModel
 	self isValidating
 		ifTrue: [

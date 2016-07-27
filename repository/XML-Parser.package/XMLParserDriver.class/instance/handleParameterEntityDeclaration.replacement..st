@@ -1,2 +1,2 @@
-handling tokens
+handling - dtd
 handleParameterEntityDeclaration: aName replacement: aReplacement

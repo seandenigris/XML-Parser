@@ -1,5 +1,5 @@
 private
-classForElement: aName uri: aUri
+classForElement: aName uri: aURI
 	| classesForElement |
 
 	classesForElement :=
@@ -8,7 +8,7 @@ classForElement: aName uri: aUri
 			ifAbsent: [^ nil].
 
 	^ classesForElement
-		at: aUri
+		at: aURI
 		ifAbsent: [
 			classesForElement
 				at: ''

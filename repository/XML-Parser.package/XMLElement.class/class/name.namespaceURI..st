@@ -1,3 +1,3 @@
 instance creation
-name: aQualifiedName namespaceURI: aUri
-	^ self new name: aQualifiedName namespaceURI: aUri
+name: aQualifiedName namespaceURI: aURI
+	^ self new name: aQualifiedName namespaceURI: aURI

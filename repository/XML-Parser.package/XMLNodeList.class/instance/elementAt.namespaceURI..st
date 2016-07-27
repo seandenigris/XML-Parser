@@ -1,6 +1,6 @@
 accessing
-elementAt: aName namespaceURI: aUri
+elementAt: aName namespaceURI: aURI
 	^ self
 		elementAt: aName
-		namespaceURI: aUri
+		namespaceURI: aURI
 		ifAbsent: [self defaultValue]

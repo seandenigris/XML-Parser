@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleEndDTD
 	(self resolvesExternalEntities
 		and: [self externalSubsetURI notEmpty

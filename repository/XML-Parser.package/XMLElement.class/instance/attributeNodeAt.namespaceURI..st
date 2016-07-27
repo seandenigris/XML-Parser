@@ -1,3 +1,3 @@
 accessing
-attributeNodeAt: aLocalName namespaceURI: aUri
-	^ self attributeNodes attributeNodeAt: aLocalName namespaceURI: aUri
+attributeNodeAt: aLocalName namespaceURI: aURI
+	^ self attributeNodes attributeNodeAt: aLocalName namespaceURI: aURI

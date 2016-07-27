@@ -6,4 +6,5 @@
 		"hasNotationValues" : "monty 1/4/2014 04:58",
 		"initializeWithValidatorsFrom:" : "monty 1/1/2015 23:26",
 		"unparsedEntityValidator" : "monty 1/1/2015 20:50",
-		"validateAttributeValue:" : "monty 1/1/2015 21:31" } }
+		"validateAttributeValue:" : "monty 1/1/2015 21:31",
+		"validateXMLSpaceAttributeValidator" : "monty 3/22/2015 03:56" } }

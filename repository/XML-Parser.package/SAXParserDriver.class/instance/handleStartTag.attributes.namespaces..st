@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	"performance critical method"
 	| prefix totalAttributes namespaceUri currentScope |

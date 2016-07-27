@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleGeneralEntityDeclaration: aName replacement: aReplacement
 	self doctypeDefinition
 		addGeneralEntity: aName

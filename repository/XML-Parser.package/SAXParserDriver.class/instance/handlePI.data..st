@@ -1,5 +1,5 @@
-handling tokens
-handlePI: piTarget data: piData
+handling
+handlePI: aTargetString data: aDataString
 	self saxHandler 
-		processingInstruction: piTarget
-		data: piData
+		processingInstruction: aTargetString
+		data: aDataString

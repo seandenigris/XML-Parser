@@ -1,5 +1,5 @@
 accessing
-setElement: aName dfa: aDfa
+setElement: aName dfa: aDFA
 	element := aName.
-	dfa := aDfa.
+	dfa := aDFA.
 	currentState := dfa.

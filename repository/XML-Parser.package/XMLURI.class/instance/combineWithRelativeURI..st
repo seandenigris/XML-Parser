@@ -1,19 +1,19 @@
 private
-combineWithRelativeURI: aRelativeUri
-	(aRelativeUri hasHost
-		or: [aRelativeUri hasPath])
+combineWithRelativeURI: aRelativeURI
+	(aRelativeURI hasHost
+		or: [aRelativeURI hasPath])
 		ifTrue: [
 			queryString := ''.
 			fragment := ''].
-	aRelativeUri hasHost
+	aRelativeURI hasHost
 		ifTrue: [
-			host := aRelativeUri host.
+			host := aRelativeURI host.
 			pathSegments removeAll].
-	aRelativeUri hasPort
-		ifTrue: [port := aRelativeUri port].
-	aRelativeUri hasPath
-		ifTrue: [self addPathSegmentsFrom: aRelativeUri].
-	aRelativeUri hasQueryString
-		ifTrue: [queryString := aRelativeUri queryString].
-	aRelativeUri hasFragment
-		ifTrue: [fragment := aRelativeUri fragment].
+	aRelativeURI hasPort
+		ifTrue: [port := aRelativeURI port].
+	aRelativeURI hasPath
+		ifTrue: [self addPathSegmentsFrom: aRelativeURI].
+	aRelativeURI hasQueryString
+		ifTrue: [queryString := aRelativeURI queryString].
+	aRelativeURI hasFragment
+		ifTrue: [fragment := aRelativeURI fragment].

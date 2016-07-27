@@ -1,3 +1,3 @@
-handling tokens
+handling
 handleGeneralEntityReference: aName
 	^ nil

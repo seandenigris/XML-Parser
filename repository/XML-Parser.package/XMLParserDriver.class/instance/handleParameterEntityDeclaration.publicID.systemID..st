@@ -1,2 +1,2 @@
-handling tokens
-handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
+handling - dtd
+handleParameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID

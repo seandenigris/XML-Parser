@@ -1,3 +1,3 @@
-handling tokens
+handling - dtd
 handleParameterEntityReference: aName
 	^ nil

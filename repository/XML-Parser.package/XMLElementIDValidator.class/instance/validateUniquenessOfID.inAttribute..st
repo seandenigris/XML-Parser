@@ -1,13 +1,13 @@
 private
-validateUniquenessOfID: anId inAttribute: anAttribute
+validateUniquenessOfID: anID inAttribute: anAttribute
 	| oldSize |
 
 	"checking size after is faster than includes test"
 	oldSize := self ids size.
 	(self ids
-		add: anId;
+		add: anID;
 		size) > oldSize
 		ifFalse: [
 			self
-				errorDuplicateID: anId
+				errorDuplicateID: anID
 				inAttribute: anAttribute].

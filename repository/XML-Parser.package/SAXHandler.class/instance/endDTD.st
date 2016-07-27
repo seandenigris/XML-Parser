@@ -1,2 +1,2 @@
-handling - declarations
+handling - lexical
 endDTD

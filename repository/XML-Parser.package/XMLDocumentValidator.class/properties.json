@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"elementValidatorStack",
-		"defaultXmlIdValidator" ],
+		"defaultXMLIDValidator" ],
 	"name" : "XMLDocumentValidator",
 	"pools" : [
 		 ],

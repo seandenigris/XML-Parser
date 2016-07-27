@@ -1,3 +1,3 @@
 private
 elementIDValidator
-	^ elementIdValidator ifNil: [elementIdValidator := XMLElementIDValidator new]
+	^ elementIDValidator ifNil: [elementIDValidator := XMLElementIDValidator new]

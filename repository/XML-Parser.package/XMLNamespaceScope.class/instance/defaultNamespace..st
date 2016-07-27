@@ -1,10 +1,10 @@
 accessing
-defaultNamespace: aUri
+defaultNamespace: aURI
 	self
 		validatePrefix: ''
-		beforeMappingTo: aUri.
+		beforeMappingTo: aURI.
 
 	"copy-on-write"
 	self copiedPrefixMappings
 		at: ''
-		put: aUri.
+		put: aURI.

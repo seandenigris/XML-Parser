@@ -1,5 +1,5 @@
 searching
-findElementNamed: aName namespaceURI: aUri
+findElementNamed: aName namespaceURI: aURI
 	^ self allElementsDetect: [:each |
 		(each isNamed: aName)
-			and: [each namespaceURI = aUri]]
+			and: [each namespaceURI = aURI]]

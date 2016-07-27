@@ -1,3 +1,2 @@
 validating
 validateXMLIDAttributeValidator
-	self errorInvalidXMLIDAttributeValidator

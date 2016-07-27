@@ -1,5 +1,5 @@
 private
-entityCacheAt: aUri ifAbsentPut: aBlock
+entityCacheAt: aURI ifAbsentPut: aBlock
 	^ self entityCache
-		at: aUri
+		at: aURI
 		ifAbsentPut: aBlock

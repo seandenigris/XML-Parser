@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleEndDocument
 	self elementNester endNesting.
 	self isValidating

@@ -1,5 +1,5 @@
 accessing
-allElementsNamed: aName namespaceURI: aUri
+allElementsNamed: aName namespaceURI: aURI
 	^ self allElementsSelect: [:each |
 		(each isNamed: aName)
-			and: [each namespaceURI = aUri]]
+			and: [each namespaceURI = aURI]]

@@ -1,3 +1,3 @@
 accessing
-classForElement: aQualifiedName prefix: aPrefix uri: aNamespaceUri localName: aLocalName
+classForElement: aQualifiedName prefix: aPrefix uri: aNamespaceURI localName: aLocalName
 	^ self elementClass

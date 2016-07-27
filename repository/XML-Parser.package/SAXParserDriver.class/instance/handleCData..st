@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleCData: aString
 	self elementNester isInElement
 		ifFalse: [self errorCharacterDataOutsideElement].

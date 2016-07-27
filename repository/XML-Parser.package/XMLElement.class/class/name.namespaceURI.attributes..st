@@ -1,4 +1,4 @@
 instance creation
-name: aQualifiedName namespaceURI: aUri attributes: aDictionaryOrArray
-	^ (self name: aQualifiedName namespaceURI: aUri)
+name: aQualifiedName namespaceURI: aURI attributes: aDictionaryOrArray
+	^ (self name: aQualifiedName namespaceURI: aURI)
 		setAttributes: aDictionaryOrArray

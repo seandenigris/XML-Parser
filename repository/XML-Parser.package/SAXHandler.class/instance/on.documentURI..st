@@ -1,7 +1,7 @@
 initialization
-on: aStringOrStream documentURI: aUri
+on: aStringOrStream documentURI: aURI
 	input := aStringOrStream.
-	documentUri := aUri.
+	documentURI := aURI.
 	configuration
 		ifNil: [self configuration: self configurationClass new].
 	isInInternalSubset := false.

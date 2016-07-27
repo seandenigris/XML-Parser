@@ -1,11 +1,11 @@
-handling - declarations
-startDTD: aRootElementName publicID: aPublicId systemID: aSystemId
+handling - lexical
+startDTD: aRootElementName publicID: aPublicID systemID: aSystemID
 	| doctypeDeclaration |
 
 	doctypeDeclaration := 
 		self nodeFactory doctypeDeclarationClass
 			root: aRootElementName
-			publicID: aPublicId
-			systemID: aSystemId.
+			publicID: aPublicID
+			systemID: aSystemID.
 	self pushNode: doctypeDeclaration.
 	self document doctypeDeclaration: doctypeDeclaration.

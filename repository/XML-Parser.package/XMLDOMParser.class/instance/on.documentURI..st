@@ -1,7 +1,7 @@
 initialization
-on: aStringOrStream documentURI: aUri
+on: aStringOrStream documentURI: aURI
 	super
 		on: aStringOrStream
-		documentURI: aUri.
+		documentURI: aURI.
 
 	nodeStack := OrderedCollection new: 10.

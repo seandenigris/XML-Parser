@@ -1,7 +1,7 @@
 accessing
-removeURI: aUri
+removeURI: aURI
 	"remove: removes the first match"
 	self uris removeAt:
 		(self uris
-			lastIndexOf: aUri
+			lastIndexOf: aURI
 			ifAbsent: [^ self])

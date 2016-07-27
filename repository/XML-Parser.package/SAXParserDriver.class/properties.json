@@ -11,7 +11,7 @@
 		"scopeAllocator",
 		"doctypeDefinition",
 		"validator",
-		"externalSubsetUri",
+		"externalSubsetURI",
 		"isStandalone",
 		"hasUnhandledReservedAttributes" ],
 	"name" : "SAXParserDriver",

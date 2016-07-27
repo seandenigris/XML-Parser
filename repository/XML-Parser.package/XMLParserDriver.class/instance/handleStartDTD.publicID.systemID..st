@@ -1,2 +1,2 @@
-handling tokens
-handleStartDTD: aRoot publicID: aPublicId systemID: aSystemId
+handling - dtd
+handleStartDTD: aRoot publicID: aPublicID systemID: aSystemID

@@ -1,6 +1,6 @@
 instance creation
-root: aRootElementName publicID: aPublicId systemID: aSystemId
+root: aRootElementName publicID: aPublicID systemID: aSystemID
 	^ self new
 		root: aRootElementName;
-		publicID: aPublicId;
-		systemID: aSystemId
+		publicID: aPublicID;
+		systemID: aSystemID

@@ -1,8 +1,8 @@
 validating
-validateIDReference: anId inAttribute: anAttribute
-	(XMLWellFormedParserTokenizer isName: anId)
+validateIDReference: anID inAttribute: anAttribute
+	(XMLWellFormedParserTokenizer isName: anID)
 		ifFalse: [
 			self
-				errorInvalidID: anId
+				errorInvalidID: anID
 				inAttribute: anAttribute].
-	self idReferences add: anId.
+	self idReferences add: anID.

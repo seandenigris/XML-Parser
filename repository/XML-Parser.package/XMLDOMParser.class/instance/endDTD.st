@@ -1,3 +1,3 @@
-handling - declarations
+handling - lexical
 endDTD
 	self popNode

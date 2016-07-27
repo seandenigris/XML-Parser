@@ -1,6 +1,6 @@
 instance creation
-newElementNamed: aName namespaceURI: aUri
+newElementNamed: aName namespaceURI: aURI
 	^ (self nodeFactory
 		newElementNamed: aName
-		namespaceURI: aUri)
+		namespaceURI: aURI)
 		configuration: self configuration

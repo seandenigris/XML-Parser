@@ -1,5 +1,5 @@
 initialization
-setName: aName replacement: aReplacement uri: aUri
+setName: aName replacement: aReplacement uri: aURI
 	name := aName.
 	replacement := aReplacement.
-	uri := aUri.
+	uri := aURI.

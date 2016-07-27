@@ -1,9 +1,9 @@
 private
-externalSubsetParserOnURI: aUri
+externalSubsetParserOnURI: aURI
 	^ self saxHandler parserClass
 		driver:
 			(DTDExternalSubsetParserDriver
 				saxDriver: self
-				documentURI: aUri asString)
-		on: (self externalEntityResolver resolveEntityURI: aUri)
+				documentURI: aURI asString)
+		on: (self externalEntityResolver resolveEntityURI: aURI)
 	

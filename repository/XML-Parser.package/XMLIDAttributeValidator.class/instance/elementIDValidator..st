@@ -1,3 +1,3 @@
 accessing
-elementIDValidator: anElementIdValidator
-	elementIdValidator := anElementIdValidator
+elementIDValidator: anElementIDValidator
+	elementIdValidator := anElementIDValidator

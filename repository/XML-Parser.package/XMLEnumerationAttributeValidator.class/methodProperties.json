@@ -7,4 +7,5 @@
 		"errorInvalidValue:" : "monty 10/31/2014 17:30",
 		"isEnumerationValidator" : "monty 12/11/2014 09:40",
 		"setAllowedValuesFromString:" : "monty 12/11/2014 05:53",
-		"validateAttributeValue:" : "monty 10/31/2014 17:30" } }
+		"validateAttributeValue:" : "monty 10/31/2014 17:30",
+		"validateXMLSpaceAttributeValidator" : "monty 3/22/2015 05:56" } }

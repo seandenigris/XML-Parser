@@ -1,6 +1,6 @@
 element handling
-handleElement: anElementName namespaceURI: aUri withClass: aClass
+handleElement: anElementName namespaceURI: aURI withClass: aClass
 	(self elementClassesByName
 		at: anElementName
 		ifAbsentPut: [Dictionary new])
-			at: aUri put: aClass
+			at: aURI put: aClass

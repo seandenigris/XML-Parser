@@ -1,3 +1,3 @@
 accessing
-attributeNodeAt: aLocalName namespaceURI: aUri ifAbsent: aBlock
-	^ self attributeNodes attributeNodeAt: aLocalName namespaceURI: aUri ifAbsent: aBlock
+attributeNodeAt: aLocalName namespaceURI: aURI ifAbsent: aBlock
+	^ self attributeNodes attributeNodeAt: aLocalName namespaceURI: aURI ifAbsent: aBlock

@@ -1,8 +1,8 @@
 combining
-/ aUriOrString
+/ aURIOrString
 	| uriToCombineWith |
 
-	(uriToCombineWith := aUriOrString asXMLURI) isEmpty
+	(uriToCombineWith := aURIOrString asXMLURI) isEmpty
 		ifFalse: [
 			(uriToCombineWith isRelative)
 				ifTrue: [^ self copy combineWithRelativeURI: uriToCombineWith]

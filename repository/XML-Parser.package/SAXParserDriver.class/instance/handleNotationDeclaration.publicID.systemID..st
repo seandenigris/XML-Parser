@@ -1,9 +1,9 @@
-handling tokens
-handleNotationDeclaration: aName publicID: aPublicId systemID: aSystemId
+handling - dtd
+handleNotationDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self isValidating
 		ifTrue: [self doctypeDefinition addNotation: aName].
 
 	self saxHandler
 		notationDeclaration: aName
-		publicID: aPublicId
-		systemID: aSystemId.
+		publicID: aPublicID
+		systemID: aSystemID.

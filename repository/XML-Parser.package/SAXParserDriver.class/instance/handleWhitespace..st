@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleWhitespace: aString
 	(self elementNester hasScopedAttributes
 		and: [(self elementNester scopedAttributeAt: 'xml:space') = 'preserve'])

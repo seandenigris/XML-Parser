@@ -1,15 +1,15 @@
 accessing
-prefixesOfNamespaceURI: aNamespaceUri
+prefixesOfNamespaceURI: aURI
 	| prefixes |
 
 	prefixes := Set new.
-	aNamespaceUri = self class xmlNamespaceURI
+	aURI = self class xmlNamespaceURI
 		ifTrue: [prefixes add: 'xml']
 		ifFalse: [
-			aNamespaceUri = self class xmlnsNamespaceURI
+			aURI = self class xmlnsNamespaceURI
 				ifTrue: [prefixes add: 'xmlns']
 				ifFalse: [
 					self prefixesAndURIsDo: [:prefix :uri |
-						uri = aNamespaceUri
+						uri = aURI
 							ifTrue: [prefixes add: prefix]]]].
 	^ prefixes.

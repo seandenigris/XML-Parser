@@ -1,4 +1,4 @@
-handling tokens
+handling
 handleXMLVersion: aVersion encoding: anEncoding standalone: aYesOrNo
 	isStandalone := aYesOrNo = 'yes'.
 

@@ -1,7 +1,7 @@
 instance creation
-onURL: aUrlString
+onURL: aURLString
 	"Fetches the URL and returns a new instance on the response"
 
 	^ self
-		onURL: aUrlString
+		onURL: aURLString
 		upToLimit: XMLParserLimits defaultDocumentReadLimit

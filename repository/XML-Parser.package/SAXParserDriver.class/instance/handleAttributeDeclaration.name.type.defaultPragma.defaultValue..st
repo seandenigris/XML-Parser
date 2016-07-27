@@ -1,4 +1,4 @@
-handling tokens
+handling - dtd
 handleAttributeDeclaration: anElement name: aName type: aType defaultPragma: aDefaultPragma defaultValue: aDefaultValue
 	self isValidating
 		ifTrue: [

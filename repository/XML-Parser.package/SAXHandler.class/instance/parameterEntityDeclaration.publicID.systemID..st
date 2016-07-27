@@ -1,2 +1,2 @@
 handling - declarations
-parameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
+parameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID
