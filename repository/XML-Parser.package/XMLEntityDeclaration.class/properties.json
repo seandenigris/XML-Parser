@@ -8,8 +8,8 @@
 	"instvars" : [
 		"name",
 		"replacement",
-		"publicId",
-		"systemId" ],
+		"publicID",
+		"systemID" ],
 	"name" : "XMLEntityDeclaration",
 	"pools" : [
 		 ],

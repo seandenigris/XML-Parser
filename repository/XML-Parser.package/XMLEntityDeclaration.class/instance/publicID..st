@@ -1,3 +1,3 @@
 accessing
 publicID: aPublicID
-	publicId := aPublicID
+	publicID := aPublicID

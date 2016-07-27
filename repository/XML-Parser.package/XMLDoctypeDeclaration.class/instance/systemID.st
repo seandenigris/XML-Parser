@@ -1,3 +1,3 @@
 accessing
 systemID
-	^ systemId ifNil: [systemId := '']
+	^ systemID ifNil: [systemID := '']

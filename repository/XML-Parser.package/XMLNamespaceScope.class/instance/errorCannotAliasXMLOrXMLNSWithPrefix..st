@@ -1,5 +1,5 @@
 private
-errorCannotAliasXmlOrXmlnsURIWithPrefix: aPrefix
+errorCannotAliasXMLOrXMLNSWithPrefix: aPrefix
 	aPrefix
 		ifEmpty: [
 			XMLNamespaceException signal:
