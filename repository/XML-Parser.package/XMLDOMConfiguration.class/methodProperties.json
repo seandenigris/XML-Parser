@@ -6,6 +6,7 @@
 		"nodeFactory:" : "JAAyer 11/23/2010 14:10",
 		"nodeListClass" : "monty 11/26/2013 22:22",
 		"nodeListClass:" : "monty 11/26/2013 22:22",
+		"parserHandlerClass" : "monty 10/28/2014 18:06",
 		"preservesCDataNodes" : "JAAyer 11/23/2010 14:08",
 		"preservesCDataNodes:" : "JAAyer 11/23/2010 14:08",
 		"preservesCommentNodes" : "JAAyer 11/23/2010 14:08",

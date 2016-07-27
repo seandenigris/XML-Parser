@@ -3,7 +3,7 @@ elementAfter: anElement
 	| last |
 
 	self elementsDo: [:each |
-		last == anElement
+		last = anElement
 			ifTrue: [^ each].
 		last := each].
-	^ nil.
+	^ self defaultValue.

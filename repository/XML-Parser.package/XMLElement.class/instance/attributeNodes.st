@@ -1,3 +1,3 @@
 accessing
 attributeNodes
-	^ attributes ifNil: [attributes := XMLAttributeList observer: self]
+	^ attributes ifNil: [attributes := self attributeListClass observer: self]

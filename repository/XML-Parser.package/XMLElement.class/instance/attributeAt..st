@@ -1,3 +1,4 @@
 accessing
 attributeAt: aName
-	^ self attributeAt: aName ifAbsent: ['']
+	"returns empty string when absent"
+	^ self attributeNodes attributeValueAt: aName

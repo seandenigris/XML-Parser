@@ -1,3 +1,3 @@
 private
 newNodeListForSelect
-	^ XMLOrderedList new
+	^ XMLNodeList new

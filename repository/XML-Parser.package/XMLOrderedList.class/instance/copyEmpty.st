@@ -1,3 +1,3 @@
 copying
 copyEmpty
-	^ self species new
+	^ self newWithCollection: collection copyEmpty

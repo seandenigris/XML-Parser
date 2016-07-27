@@ -1,7 +1,7 @@
 private
-afterAdding: anObject
+afterAdding: anAttribute
 	self attributesByName
-		at: anObject name ifPresent: [self removeAttributeNodeAt: anObject name];
-		at: anObject name put: anObject.
+		at: anAttribute name ifPresent: [self removeAttributeNodeAt: anAttribute name];
+		at: anAttribute name put: anAttribute.
 
-	observer ifNotNil: [observer addedAttribute: anObject].
+	observer ifNotNil: [observer addedAttribute: anAttribute].

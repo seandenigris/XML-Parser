@@ -1,3 +1,3 @@
 copying
 grownBy: aSize
-	^ self speciesNewWithCollection: (collection grownBy: aSize)
+	^ self newWithCollection: (collection grownBy: aSize)

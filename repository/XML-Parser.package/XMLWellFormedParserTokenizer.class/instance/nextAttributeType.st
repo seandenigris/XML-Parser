@@ -4,7 +4,7 @@ nextAttributeType
 
 	writeStream reset.
 	[self skipSeparatorsReplacingParameterEntities.
-	(nextChar := streamReader peek) isNil
+	(nextChar := streamReader peek) == nil
 		or: [AttributeTypeDelimiters includes: nextChar]]
 		whileFalse: [
 			(ValueListChars includes: nextChar)

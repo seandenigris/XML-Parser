@@ -1,3 +1,3 @@
 accessing
 nextElement
-	^ self parent ifNotNil: [self parent elementAfter: self]
+	^ self parent ifNotNil: [:node | node elementAfter: self]

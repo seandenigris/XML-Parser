@@ -7,6 +7,6 @@ setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attribute
 			"The setFrom method is used to avoid revalidating the
 			attributes when adding them to the list"
 			(attributes :=
-				(XMLAttributeList new: anAttributeDictionary size)
-					observer: self)
-				setFromDictionary: anAttributeDictionary].
+				(self attributeListClass new: anAttributeDictionary size)
+					observer: self;
+					setFromDictionary: anAttributeDictionary)].

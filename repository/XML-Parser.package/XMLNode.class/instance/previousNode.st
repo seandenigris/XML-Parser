@@ -1,3 +1,3 @@
 accessing
 previousNode
-	^ self parent ifNotNil: [self parent nodeBefore: self]
+	^ self parent ifNotNil: [:node | node nodeBefore: self]

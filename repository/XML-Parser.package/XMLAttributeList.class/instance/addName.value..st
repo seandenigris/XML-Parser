@@ -1,6 +1,6 @@
 adding
 addName: aName value: aValue
 	^ self addLast:
-		(XMLAttribute
+		(self attributeClass
 			name: aName
 			value: aValue)

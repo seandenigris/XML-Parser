@@ -3,7 +3,7 @@ copyReplaceAll: anOldCollection with: aNewCollection
 	| copy |
 
 	"workaround so the interal collection is always copied"
-	^ self speciesNewWithCollection:
+	^ self newWithCollection:
 		((copy :=
 			collection
 				copyReplaceAll: anOldCollection

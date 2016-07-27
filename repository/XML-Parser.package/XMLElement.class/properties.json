@@ -8,8 +8,7 @@
 	"instvars" : [
 		"name",
 		"attributes",
-		"namespaceScope",
-		"document" ],
+		"namespaceScope" ],
 	"name" : "XMLElement",
 	"pools" : [
 		 ],

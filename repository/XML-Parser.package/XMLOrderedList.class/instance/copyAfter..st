@@ -1,3 +1,3 @@
 copying
 copyAfter: anObject
-	^ self speciesNewWithCollection: (collection copyAfter: anObject)
+	^ self newWithCollection: (collection copyAfter: anObject)

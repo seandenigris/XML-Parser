@@ -1,3 +1,7 @@
 accessing
 allElements
-	^ self allElementsCollect: [:each | each]
+	| allElements |
+
+	allElements := self newNodeListForSelect.
+	self allElementsDo: [:each | allElements addLast: each].
+	^ allElements.

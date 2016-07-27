@@ -12,7 +12,7 @@ setFromDictionary: anOrderPreservingDictionary
 		(association := attributesByName associationAt: each ifAbsent: nil)
 			value:
 				(collection addLast: 
-					(XMLAttribute new
+					(self attributeClass new
 						setName: each
 						value: association value
 						element: observer))].

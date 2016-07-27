@@ -1,3 +1,3 @@
 testing
 hasParent
-	^ self parent notNil
+	^ parent notNil

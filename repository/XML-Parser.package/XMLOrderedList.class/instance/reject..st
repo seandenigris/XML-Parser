@@ -1,3 +1,3 @@
 enumerating
 reject: aBlock
-	^ self speciesNewWithCollection: (collection reject: aBlock)
+	^ self newWithCollection: (collection reject: aBlock)

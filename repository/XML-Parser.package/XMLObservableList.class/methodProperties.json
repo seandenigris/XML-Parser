@@ -12,6 +12,7 @@
 		"afterRemoving:" : "monty 10/18/2014 00:51",
 		"at:put:" : "JAA 3/21/2011 20:08",
 		"beforeAdding:" : "monty 10/18/2014 00:51",
+		"deepCopyWithObserver:" : "monty 10/29/2014 09:35",
 		"observer" : "monty 10/18/2014 00:50",
 		"observer:" : "monty 10/18/2014 00:50",
 		"remove:ifAbsent:" : "JAAyer 7/22/2010 10:58",

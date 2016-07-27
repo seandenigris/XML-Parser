@@ -1,9 +1,10 @@
 accessing
 elementBefore: anElement
 	| last |
-	
+
+	last := self defaultValue.
 	self elementsDo: [:each |
-		each == anElement
+		each = anElement
 			ifTrue: [^ last].
 		last := each].
-	^ nil.
+	^ self defaultValue.

@@ -5,9 +5,9 @@ renameWith: aBlock
 	oldName := self name.
 	aBlock value.
 	(self name ~= oldName
-		and: [self hasParent])
+		and: [self element notNil])
 			ifTrue: [
-				self parent
+				self element
 					renamedAttribute: self
 					from: oldName
 					to: self name].
