@@ -12,7 +12,7 @@ testAttributeDefaultDeclaration
 	document := XMLDOMParser parse: dtd, '<root two="required" three="nonDefault" />'.
 	self
 		assert: (document root attributeAt: 'two') = 'required';
-		assert: (document root includesAttribute: 'one');
+		deny: (document root includesAttribute: 'one');
 		assert: (document root attributeAt: 'three') = 'fixedDefault';
 		assert: (document root attributeAt: 'four') = 'default'.
 	self should: [XMLDOMParser parse: dtd, '<root />'] raise: XMLValidationException.

@@ -7,11 +7,11 @@ testAttributeNmtokenDeclaration
 		<!ATTLIST root name NMTOKEN #IMPLIED>
 		<!ATTLIST root names NMTOKENS #IMPLIED>]>'.
 	self
-		shouldnt: [SAXHandler parse: dtd, '<root name="one" names="  one  two three"/> ']
+		shouldnt: [SAXHandler parse: dtd, '<root name=" one " names="  one  two three "/> ']
 		raise: XMLValidationException.
 	self
-		should: [SAXHandler parse: dtd, '<root name="1"/> ']
+		should: [SAXHandler parse: dtd, '<root name="#" names="one two"/>']
 		raise: XMLValidationException.
 	self
-		should: [SAXHandler parse: dtd, '<root names="1 2 3" />']
+		should: [SAXHandler parse: dtd, '<root name="one" names="# #" />']
 		raise: XMLValidationException.

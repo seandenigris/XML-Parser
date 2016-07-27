@@ -14,7 +14,7 @@ testPredefinedEntityReplacement
 	document :=
 		XMLDOMParser parse:
 			('<!DOCTYPE root [
-				<!ENTITY nonRecursive "&amp;notAReference;">]>
+				<!ENTITY nonRecursive "&amp;nonRecursive;">]>
 			<root name=''{1}''>
 				<one>{1}</one>
 				<two>&nonRecursive;</two>
@@ -22,4 +22,4 @@ testPredefinedEntityReplacement
 	self
 		assert: (document root attributeAt: 'name') = replacements contents;
 		assert: (document findElementNamed: 'one') contentString = replacements contents;
-		assert: (document findElementNamed: 'two') contentString = '&notAReference;'.
+		assert: (document findElementNamed: 'two') contentString = '&nonRecursive;'.
