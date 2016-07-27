@@ -11,16 +11,12 @@ testAtPut
 		list at: i put: new.
 		self
 			assertList: list
-			receivedNotificationOfRemoving: old.
-		self
-			assertList: list
-			receivedNotificationOfAdding: new].
+			receivedNotificationOfReplacing: old
+			with: new].
 	self
 		should: [list at: list size + 2 put: self newElement]
 		raise: Error.
 	self
-		assert: list observer hasNotifications;
-		assert:
-			(self beforeAddingToNotifications includes:
-				list observer nextNotification selector);
-		deny: list observer hasNotifications.
+		assertList: list
+		receivedNotificationOfBeforeAdding: self newElement.
+	self deny: list observer hasNotifications.

@@ -15,8 +15,6 @@ testReplaceFromToWithStartingAt
 			old with: new do: [:oldElement :newElement |
 				self
 					assertList: list
-					receivedNotificationOfRemoving: oldElement.
-				self
-					assertList: list
-					receivedNotificationOfAdding: newElement].
+					receivedNotificationOfReplacing: oldElement
+					with: newElement].
 			self deny: list observer hasNotifications]].

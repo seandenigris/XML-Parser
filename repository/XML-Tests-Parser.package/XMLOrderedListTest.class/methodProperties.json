@@ -51,7 +51,7 @@
 		"testAtIfAbsent" : "monty 10/23/2014 19:32",
 		"testAtLast" : "monty 10/23/2014 06:56",
 		"testAtLastIfAbsent" : "monty 10/23/2014 06:57",
-		"testAtPut" : "monty 1/18/2015 13:23",
+		"testAtPut" : "monty 1/21/2015 14:30",
 		"testBefore" : "monty 10/23/2014 07:03",
 		"testBeforeIfAbsent" : "monty 10/23/2014 07:03",
 		"testBeginsWith" : "monty 10/23/2014 16:41",
