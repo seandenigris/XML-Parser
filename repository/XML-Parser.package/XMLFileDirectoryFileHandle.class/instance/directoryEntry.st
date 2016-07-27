@@ -1,4 +1,3 @@
 private
 directoryEntry
-	^ directoryEntry
-		ifNil: [directoryEntry := (Smalltalk at: #FileDirectory) directoryEntryFor: path]
+	^ self fileDirectory directoryEntryFor: path

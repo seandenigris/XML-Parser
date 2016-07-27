@@ -1,3 +1,3 @@
 instance creation
-on: aPath
+fileReadStreamOn: aPath
 	^ (Smalltalk at: #GsFile) openRead: aPath
