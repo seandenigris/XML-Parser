@@ -1,15 +1,13 @@
 validation
 validateAttributes: anAttributeDictionary with: aValidatorDictionary
-	| undeclaredAttributes |
+	| unvalidatedAttributes |
 
-	undeclaredAttributes := anAttributeDictionary keys asSet.
+	unvalidatedAttributes := anAttributeDictionary keys asSet.
 	aValidatorDictionary keysAndValuesDo: [:attribute :validator |
 		validator validateAttributes: anAttributeDictionary.
-		undeclaredAttributes
+		unvalidatedAttributes
 			remove: attribute
 			ifAbsent: []].
 
-	undeclaredAttributes
-		ifNotEmpty: [
-			XMLValidationException signal:
-				'Undeclared attribute(s) ', (', ' join: undeclaredAttributes)].
+	unvalidatedAttributes
+		ifNotEmpty: [self unvalidatedAttributes: unvalidatedAttributes].

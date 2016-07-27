@@ -2,11 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"attributeDeclarationClass" : "monty 12/21/2013 02:58",
 		"cdataClass" : "JAAyer 11/10/2010 03:18",
 		"classForElement:prefix:uri:localName:" : "JAAyer 11/10/2010 03:20",
 		"commentClass" : "JAAyer 11/10/2010 03:18",
 		"doctypeDeclarationClass" : "JAAyer 11/10/2010 03:19",
 		"documentClass" : "JAAyer 11/10/2010 03:19",
 		"elementClass" : "JAAyer 11/10/2010 03:18",
+		"elementDeclarationClass" : "monty 12/21/2013 02:59",
+		"generalEntityDeclarationClass" : "monty 12/21/2013 02:59",
+		"notationDeclarationClass" : "monty 12/21/2013 02:59",
+		"parameterEntityDeclarationClass" : "monty 12/21/2013 02:59",
 		"piClass" : "JAAyer 11/10/2010 03:18",
 		"stringClass" : "JAAyer 11/10/2010 03:18" } }

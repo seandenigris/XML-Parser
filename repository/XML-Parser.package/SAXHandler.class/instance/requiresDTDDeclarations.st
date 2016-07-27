@@ -1,3 +1,0 @@
-testing
-requiresDTDDeclarations
-	^ self configuration requiresDTDDeclarations

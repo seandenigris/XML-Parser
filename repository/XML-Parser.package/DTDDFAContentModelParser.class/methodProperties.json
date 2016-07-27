@@ -10,7 +10,7 @@
 		"isBinaryOperator:" : "monty 12/18/2013 22:44",
 		"isBinaryOperator:higherPrecedenceThan:" : "monty 12/18/2013 22:44",
 		"isOperatorOrParen:" : "monty 12/18/2013 22:44",
-		"parse" : "monty 12/18/2013 22:45",
+		"parse" : "monty 12/22/2013 00:06",
 		"popParenthesizedOperators" : "monty 12/18/2013 22:44",
 		"popRemainingOperators" : "monty 12/18/2013 22:44",
 		"pushElementMatcher" : "monty 12/18/2013 22:44" } }

@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"name",
-		"contentModel" ],
+		"contentModel",
+		"element" ],
 	"name" : "DTDContentModelParser",
 	"pools" : [
 		 ],

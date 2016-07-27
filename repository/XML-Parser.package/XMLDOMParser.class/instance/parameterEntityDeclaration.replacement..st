@@ -1,6 +1,6 @@
 declaration
 parameterEntityDeclaration: aName replacement: aReplacement
 	self topNode addNode:
-		(XMLParameterEntityDeclaration
+		(self nodeFactory parameterEntityDeclarationClass
 			name: aName
 			replacement: aReplacement)

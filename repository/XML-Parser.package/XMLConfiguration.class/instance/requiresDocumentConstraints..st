@@ -1,4 +1,4 @@
 accessing
-requiresDTDDeclarations: aBoolean
+requiresDocumentConstraints: aBoolean
 	(requiresDtdDeclarations := aBoolean)
 		ifTrue: [self isValidating: true]

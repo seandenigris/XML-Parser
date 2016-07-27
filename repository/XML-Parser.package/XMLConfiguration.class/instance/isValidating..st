@@ -1,4 +1,4 @@
 accessing
 isValidating: aBoolean
 	(isValidating := aBoolean)
-		ifFalse: [self requiresDTDDeclarations: false]
+		ifFalse: [self requiresDocumentConstraints: false]

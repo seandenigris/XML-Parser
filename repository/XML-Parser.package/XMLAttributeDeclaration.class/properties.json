@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"attributeName",
 		"type",
-		"defaultDeclaration" ],
+		"defaultDeclaration",
+		"attribute",
+		"element" ],
 	"name" : "XMLAttributeDeclaration",
 	"pools" : [
 		 ],

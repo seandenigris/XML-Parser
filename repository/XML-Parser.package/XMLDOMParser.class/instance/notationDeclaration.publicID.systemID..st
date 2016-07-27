@@ -1,7 +1,7 @@
 declaration
 notationDeclaration: aName publicID: aPublicId systemID: aSystemId
 	self topNode addNode:
-		(XMLNotationDeclaration
+		(self nodeFactory notationDeclarationClass
 			name: aName
 			publicID: aPublicId
 			systemID: aSystemId)

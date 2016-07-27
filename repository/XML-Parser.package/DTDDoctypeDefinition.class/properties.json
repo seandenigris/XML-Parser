@@ -8,12 +8,12 @@
 	"instvars" : [
 		"rootElement",
 		"isStandalone",
+		"elementValidators",
+		"attributeValidators",
 		"generalEntities",
 		"parameterEntities",
 		"unparsedEntities",
-		"notations",
-		"elementValidators",
-		"attributeValidators" ],
+		"notations" ],
 	"name" : "DTDDoctypeDefinition",
 	"pools" : [
 		 ],

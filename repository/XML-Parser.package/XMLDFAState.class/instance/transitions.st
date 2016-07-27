@@ -2,6 +2,6 @@ accessing
 transitions
 	^ transitions
 		ifNil: [
-			transitions := Set new.
+			transitions := OrderedCollection new.
 			self initializeDFAStateTransitions.
 			transitions].

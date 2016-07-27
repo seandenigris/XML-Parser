@@ -1,5 +1,5 @@
 printing
 writeXMLOn: aWriter
 	aWriter elementDeclaration
-		name: self name;
+		element: self element;
 		contentModel: self contentModel

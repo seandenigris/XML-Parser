@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"name",
 		"publicId",
 		"systemId" ],
 	"name" : "XMLNotationDeclaration",

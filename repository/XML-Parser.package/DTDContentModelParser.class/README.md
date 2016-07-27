@@ -1,1 +1,1 @@
-This class parses a DTD content model from an element declaration and produces a validator object from it.
+This is a base class for DTD content model parsers that turn element declarations into validators.

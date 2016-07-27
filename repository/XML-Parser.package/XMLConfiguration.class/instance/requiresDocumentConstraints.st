@@ -1,3 +1,3 @@
 accessing
-requiresDTDDeclarations
+requiresDocumentConstraints
 	^ requiresDtdDeclarations ifNil: [requiresDtdDeclarations := false]

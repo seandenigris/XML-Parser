@@ -2,9 +2,6 @@ validation
 validateIDsAndReferences
 	| ids references |
 
-	self hasAttributeValidators
-		ifFalse: [^ self].
-
 	ids := Set new.
 	references := Set new.
 	self allAttributeValidatorsDo: [:each |

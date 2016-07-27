@@ -1,6 +1,6 @@
 declaration
 generalEntityDeclaration: aName replacement: aReplacement
 	self topNode addNode:
-		(XMLGeneralEntityDeclaration
+		(self nodeFactory generalEntityDeclarationClass
 			name: aName
 			replacement: aReplacement)

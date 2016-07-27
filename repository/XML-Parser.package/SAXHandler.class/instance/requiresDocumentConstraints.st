@@ -1,0 +1,3 @@
+testing
+requiresDocumentConstraints
+	^ self configuration requiresDocumentConstraints

@@ -2,6 +2,6 @@ handling tokens
 handleEndDocument
 	self elementNester ensureNoElementsRemainOpen.
 	self isValidating
-		ifTrue: [self validator validateIDsAndReferences].
+		ifTrue: [self validator validateEndDocument].
 
 	self saxHandler endDocument.

@@ -1,6 +1,6 @@
 declaration
 elementDeclaration: aName contentModel: aContentModel
 	self topNode addNode:
-		(XMLElementDeclaration
-			name: aName
+		(self nodeFactory elementDeclarationClass
+			element: aName
 			contentModel: aContentModel)

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"contentModel" ],
+		"contentModel",
+		"element" ],
 	"name" : "XMLElementDeclaration",
 	"pools" : [
 		 ],

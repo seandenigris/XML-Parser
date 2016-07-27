@@ -22,6 +22,6 @@ initializeDFAStateTransitions
 						cachedDFAStates: cachedDfaStates
 						isAccepting: (matchersWithAcceptingTransitionStates includes: matcher)].
 		self addTransition:
-			(XMLDFATransition
+			(XMLFATransition
 				matcher: matcher
 				nextState: dfaState)].

@@ -1,9 +1,9 @@
 SystemOrganization addCategory: #'XML-Parser'!
-SystemOrganization addCategory: #'XML-Parser-Clients'!
-SystemOrganization addCategory: #'XML-Parser-DTD'!
-SystemOrganization addCategory: #'XML-Parser-Exceptions'!
-SystemOrganization addCategory: #'XML-Parser-HTML'!
-SystemOrganization addCategory: #'XML-Parser-Namespaces'!
-SystemOrganization addCategory: #'XML-Parser-Nodes'!
-SystemOrganization addCategory: #'XML-Parser-Validation'!
-SystemOrganization addCategory: #'XML-Parser-Validation-DFA'!
+SystemOrganization addCategory: 'XML-Parser-Clients'!
+SystemOrganization addCategory: 'XML-Parser-DTD'!
+SystemOrganization addCategory: 'XML-Parser-Exceptions'!
+SystemOrganization addCategory: 'XML-Parser-HTML'!
+SystemOrganization addCategory: 'XML-Parser-Namespaces'!
+SystemOrganization addCategory: 'XML-Parser-Nodes'!
+SystemOrganization addCategory: 'XML-Parser-Validation'!
+SystemOrganization addCategory: 'XML-Parser-Validation-DFA'!

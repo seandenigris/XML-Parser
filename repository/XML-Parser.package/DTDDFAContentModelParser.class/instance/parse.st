@@ -1,6 +1,6 @@
 parsing
 parse
-	|  nextChar |
+	| nextChar |
 
 	contentModelStream := contentModel readStream.
 	nfaBuilder := XMLNFABuilder new.
@@ -29,5 +29,5 @@ parse
 	self popRemainingOperators.
 
 	^ XMLDFAElementValidator
-		element: name
+		element: element
 		dfa: nfaBuilder buildNFAFromFragments asDFA.

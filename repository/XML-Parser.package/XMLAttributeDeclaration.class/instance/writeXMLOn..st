@@ -1,7 +1,7 @@
 printing
 writeXMLOn: aWriter
 	aWriter attributeDeclaration
-		elementName: self elementName;
-		attributeName: self attributeName;
+		element: self element;
+		attribute: self attribute;
 		type: self type;
 		defaultDeclaration: self defaultDeclaration
