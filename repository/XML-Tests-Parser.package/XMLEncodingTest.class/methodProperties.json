@@ -17,6 +17,8 @@
 		"testEncodingDeclarationUTF32BE" : "monty 11/20/2014 03:31",
 		"testEncodingDeclarationUTF32LE" : "monty 11/20/2014 03:30",
 		"testEncodingDeclarationUTF8" : "monty 11/20/2014 03:32",
+		"testExternalSubsetByteOrderMarkDetection" : "monty 5/3/2015 18:23",
+		"testExternalSubsetImplicitEncodingDetection" : "monty 5/3/2015 18:22",
 		"testImplicitUTF16EncodingDetection" : "monty 11/20/2014 03:31",
 		"testImplicitUTF32EncodingDetection" : "monty 11/20/2014 03:32",
 		"testUTF16BigEndianByteOrderMarkDetection" : "monty 11/20/2014 03:32",

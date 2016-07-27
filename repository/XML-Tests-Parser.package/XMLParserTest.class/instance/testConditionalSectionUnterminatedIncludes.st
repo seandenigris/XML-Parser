@@ -1,7 +1,5 @@
 tests
 testConditionalSectionUnterminatedIncludes
-	| handler parser |
-
 	#('<![INCLUDE['
 		'<![INCLUDE[<!--comment-->'
 		'<![INCLUDE[<!--comment--><![INCLUDE['
@@ -9,8 +7,7 @@ testConditionalSectionUnterminatedIncludes
 	) do: [:each |
 		self
 			should: [
-				handler := SAXHandler on: each.
-				parser := handler parser.
-				parser tokenizer tokenContext: XMLExternalSubsetContext new.
-				parser parseDocument]
+				(SAXHandler on: each) parser
+					context: XMLExternalSubsetContext new;
+					parseDocument]
 			raise: XMLWellFormednessException].

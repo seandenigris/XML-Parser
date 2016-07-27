@@ -1,6 +1,6 @@
 tests
 testConditionalSectionMixedIncludeIgnore
-	| xml handler parser |
+	| xml |
 
 	xml := '
 		<![INCLUDE[
@@ -18,8 +18,7 @@ testConditionalSectionMixedIncludeIgnore
 		%commentTwo;'.
 	self
 		shouldnt: [
-				handler := SAXHandler on: xml.
-				parser := handler parser.
-				parser tokenizer tokenContext: XMLExternalSubsetContext new.
-				parser parseDocument]
+			(SAXHandler on: xml) parser
+				context: XMLExternalSubsetContext new;
+				parseDocument]
 		raise: XMLValidationException.

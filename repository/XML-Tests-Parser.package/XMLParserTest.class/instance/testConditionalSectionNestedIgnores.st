@@ -1,6 +1,6 @@
 tests
 testConditionalSectionNestedIgnores
-	| xml handler parser |
+	| xml |
 
 	xml := '
 		<![ IGNORE [
@@ -13,15 +13,15 @@ testConditionalSectionNestedIgnores
 		]]>'.
 	self
 		shouldnt: [
-			handler := SAXHandler on: (xml format: (Array with: ']]')).
-			parser := handler parser.
-			parser tokenizer tokenContext: XMLExternalSubsetContext new.
-			parser parseDocument]
+			(SAXHandler on: (xml format: (Array with: ']]')))
+				parser
+					context: XMLExternalSubsetContext new;
+					parseDocument]
 		raise: XMLWellFormednessException.
 	self
 		should: [
-			handler := SAXHandler on: (xml format: (Array with: ']]>')).
-			parser := handler parser.
-			parser tokenizer tokenContext: XMLExternalSubsetContext new.
-			parser parseDocument]
+			(SAXHandler on: (xml format: (Array with: ']]>')))
+				parser
+					context: XMLExternalSubsetContext new;
+					parseDocument]
 		raise: XMLWellFormednessException.
