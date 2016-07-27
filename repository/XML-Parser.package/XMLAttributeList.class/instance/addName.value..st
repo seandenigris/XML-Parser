@@ -1,7 +1,7 @@
 adding
-addName: aName value: aValue scope: aScope
+addName: aName value: aValue
 	^ self addLast:
 		(XMLAttribute
 			name: aName
 			value: aValue
-			scope: aScope)
+			scope: self scope)

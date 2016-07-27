@@ -1,3 +1,3 @@
 enumerating
 attributeNamesAndValuesDo: aTwoArgumentBlock
-	self attributeList namesAndValuesDo: aTwoArgumentBlock
+	self attributeNodes namesAndValuesDo: aTwoArgumentBlock

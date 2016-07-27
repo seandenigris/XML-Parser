@@ -1,5 +1,5 @@
 instance creation
-named: aQualifiedName namespaces: aNamespaceDictionary
+named: aQualifiedName namespaces: aNamespaceDictionaryOrArray
 	^ self new
-		declareNamespaces: aNamespaceDictionary;
-		qualifiedName: aQualifiedName
+		declareNamespaces: aNamespaceDictionaryOrArray;
+		named: aQualifiedName

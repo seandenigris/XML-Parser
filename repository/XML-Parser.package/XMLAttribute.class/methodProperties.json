@@ -1,22 +1,20 @@
 {
 	"class" : {
-		"name:value:" : "JAAyer 3/10/2010 23:58",
-		"name:value:scope:" : "JAAyer 3/10/2010 22:27" },
+		"name:value:" : "JAAyer 3/11/2010 13:56",
+		"name:value:scope:" : "JAAyer 3/11/2010 13:56" },
 	"instance" : {
+		"expandedName" : "JAAyer 3/11/2010 14:05",
 		"isAttribute" : "JAAyer 3/7/2010 04:38",
 		"localName" : "JAAyer 3/7/2010 02:02",
-		"localName:" : "JAAyer 3/7/2010 02:02",
 		"name" : "JAAyer 3/5/2010 08:21",
-		"name:" : "JAAyer 3/5/2010 08:21",
-		"name:value:" : "JAAyer 3/10/2010 22:27",
+		"name:" : "JAAyer 3/11/2010 23:28",
 		"namespace" : "JAAyer 3/7/2010 03:06",
 		"namespaceURI" : "JAAyer 3/7/2010 03:06",
 		"namespacedName" : "JAAyer 3/7/2010 21:04",
 		"prefix" : "JAAyer 3/7/2010 02:02",
-		"prefix:" : "JAAyer 3/7/2010 02:02",
+		"prefix:" : "JAAyer 3/11/2010 14:07",
 		"printXMLOn:" : "JAAyer 3/8/2010 10:19",
 		"qualifiedName" : "JAAyer 3/7/2010 02:02",
-		"qualifiedName:" : "JAAyer 3/7/2010 02:02",
 		"setScope:" : "JAAyer 3/7/2010 02:04",
 		"value" : "JAAyer 3/5/2010 08:17",
 		"value:" : "JAAyer 3/5/2010 08:18" } }

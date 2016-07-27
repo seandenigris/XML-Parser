@@ -13,7 +13,7 @@ test051elementNaming
 		assertElement: element name: 'bar:foo' localName: 'foo';
 		assertNode: element namespace: 'bar' uri: 'http://bar'.
 
-	element localName: 'baz'; prefix: 'foo' uri: 'http://foo'.
+	element name: 'foo:baz' namespaceURI: 'http://foo'.
 	self
 		assertElement: element name: 'foo:baz' localName: 'baz';
 		assertNode: element namespace: 'foo' uri: 'http://foo'.

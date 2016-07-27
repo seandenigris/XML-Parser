@@ -1,3 +1,3 @@
 instance creation
-named: aQualifiedName
-	^ self new qualifiedName: aQualifiedName
+named: aLocalName
+	^ self new name: aLocalName

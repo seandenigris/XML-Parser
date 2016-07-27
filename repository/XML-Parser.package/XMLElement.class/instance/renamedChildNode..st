@@ -1,4 +1,4 @@
-as yet unclassified
+private
 renamedChildNode: aNode
 	super renamedChildNode: aNode.
-	aNode isAttribute ifTrue: [self attributeList renamedNode: aNode]
+	aNode isAttribute ifTrue: [self attributeNodes renamedNode: aNode]

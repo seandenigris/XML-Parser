@@ -1,3 +1,3 @@
 testing
 hasAttributes
-	^ self attributeList notEmpty
+	^ self attributeNodes notEmpty

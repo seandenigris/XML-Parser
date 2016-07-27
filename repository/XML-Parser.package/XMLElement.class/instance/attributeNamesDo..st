@@ -1,3 +1,3 @@
 enumerating
 attributeNamesDo: aBlock
-	self attributeList namesDo: aBlock
+	self attributeNodes namesDo: aBlock

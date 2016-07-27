@@ -1,4 +1,4 @@
 instance creation
-named: aQualifiedName attributes: aDictionaryOrArray
-	^ (self named: aQualifiedName)
+named: aLocalName attributes: aDictionaryOrArray
+	^ (self named: aLocalName)
 		setAttributes: aDictionaryOrArray

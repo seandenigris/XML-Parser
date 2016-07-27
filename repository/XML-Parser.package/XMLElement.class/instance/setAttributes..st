@@ -1,11 +1,8 @@
 initialization
 setAttributes: aDictionaryOrArray
-	self attributeList removeAll.
+	self attributeNodes removeAll.
 	aDictionaryOrArray isEmptyOrNil ifTrue: [^ self].
-	(aDictionaryOrArray isDictionary
-		ifTrue: [aDictionaryOrArray associations]
-		ifFalse: [aDictionaryOrArray]) do: [:association |
-			self attributeList
-				addName: association key
-				value: association value
-				scope: self scope].
+	self
+		from: aDictionaryOrArray
+		keysAndValuesDo: [:name :value |
+			self attributeNodes addName: name value: value].

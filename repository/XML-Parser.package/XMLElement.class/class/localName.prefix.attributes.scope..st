@@ -1,9 +1,9 @@
 private
-localName: aString prefix: ns attributes: attributeList scope: namespaceScope
+localName: aString prefix: aPrefix attributes: attributeList scope: namespaceScope
 	| element |
-	element := self new
-		setScope: namespaceScope;
-		setPrefix: ns localName: aString.
+	element := self new.
+	element setScope: namespaceScope.
+	element namespacedName setPrefix: aPrefix localName: aString.
 	attributeList keysAndValuesDo: [:key :value |
-		element attributeList addName: key value: value scope: namespaceScope].
+		element attributeNodes addName: key value: value].
 	^ element.

@@ -1,3 +1,4 @@
 accessing
-name: aQualifiedName
-	self qualifiedName: aQualifiedName
+name: aName
+	self namespacedName qualifiedName: aName.
+	self notifyParentOfRenaming.

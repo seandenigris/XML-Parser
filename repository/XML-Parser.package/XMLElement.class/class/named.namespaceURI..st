@@ -1,6 +1,3 @@
 instance creation
 named: aQualifiedName namespaceURI: aUri
-	^ aQualifiedName splitQualifiedNameInto: [:prefixPart :localPart |
-		self new
-			declareNamespace: prefixPart uri: aUri;
-			setPrefix: prefixPart localName: localPart]
+	^ self new name: aQualifiedName namespaceURI: aUri

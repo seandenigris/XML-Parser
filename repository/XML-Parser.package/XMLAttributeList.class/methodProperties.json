@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addName:value:scope:" : "JAAyer 3/10/2010 23:54",
+		"addName:value:" : "JAAyer 3/11/2010 13:11",
 		"attributesByName" : "JAAyer 3/8/2010 23:25",
 		"errorNonAttributeNode" : "JAAyer 3/11/2010 05:22",
 		"includesName:" : "JAAyer 3/8/2010 04:54",
@@ -18,6 +18,6 @@
 		"valueAt:" : "JAAyer 3/7/2010 07:25",
 		"valueAt:ifAbsent:" : "JAAyer 3/7/2010 07:25",
 		"valueAt:ifAbsentPut:" : "JAAyer 3/7/2010 07:26",
-		"valueAt:put:" : "JAAyer 3/10/2010 22:52",
+		"valueAt:put:" : "JAAyer 3/11/2010 13:11",
 		"with:add:" : "JAAyer 3/10/2010 22:35",
 		"with:remove:" : "JAAyer 3/7/2010 07:19" } }

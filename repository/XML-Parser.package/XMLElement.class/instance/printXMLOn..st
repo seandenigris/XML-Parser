@@ -2,10 +2,10 @@ printing
 printXMLOn: writer
 	writer
 		startElement: self name
-		attributeList: self attributeList
+		attributeList: self attributeNodes
 		scope: self scope.
 	(writer canonical not
-		and: [self isEmpty and: [self attributeList notEmpty]])
+		and: [self isEmpty and: [self attributeNodes notEmpty]])
 		ifTrue: [writer endEmptyTag: self name]
 		ifFalse: [
 			writer endTag.
