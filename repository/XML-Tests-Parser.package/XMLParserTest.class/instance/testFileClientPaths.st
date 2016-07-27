@@ -5,6 +5,8 @@ testFileClientPaths
 	fileClient := XMLFileClient defaultImplementation new.
 	cwd := fileClient currentWorkingDirectory.
 	self
+		assert: cwd first == $/;
+		deny: cwd last == $/;
 		assert: (fileClient combineRelative: 'relative' withBase: 'relative/path') = 'relative/relative';
 		assert: (fileClient combineRelative: 'relative/path' withBase: 'relative/path') = 'relative/relative/path';
 		assert: (fileClient combineRelative: 'relative' withBase: cwd) = (cwd, '/relative');

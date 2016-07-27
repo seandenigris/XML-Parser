@@ -7,7 +7,9 @@ testAttributeEnumerationDeclaration
 		<!NOTATION txtFile PUBLIC "//file.txt//">
 		<!NOTATION confFile PUBLIC "//file.conf//">
 		<!ATTLIST root note NOTATION (txtFile | confFile ) #IMPLIED>]>'.
-	XMLDOMParser parse: dtd, '<root number="two" note="txtFile"/>'.
+	self
+		shouldnt: [XMLDOMParser parse: dtd, '<root number="two" note="txtFile"/>']
+		raise: XMLValidationException.
 	self
 		should: [XMLDOMParser parse: dtd, '<root number="four"/>']
 		raise: XMLValidationException.
