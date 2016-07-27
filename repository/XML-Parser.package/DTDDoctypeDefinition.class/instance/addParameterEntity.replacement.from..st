@@ -1,9 +1,9 @@
 adding
-addParameterEntity: aName replacement: aReplacement from: aDocumentOrEntityUri
+addParameterEntity: aName replacement: aReplacement from: aDocumentOrEntityURI
 	self parameterEntities
 		at: aName
 		ifAbsentPut: [
 			DTDParameterEntity
 				name: aName
 				replacement: aReplacement
-				uri: aDocumentOrEntityUri]
+				uri: aDocumentOrEntityURI]

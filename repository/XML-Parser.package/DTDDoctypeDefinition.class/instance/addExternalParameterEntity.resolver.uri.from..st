@@ -1,9 +1,9 @@
 adding
-addExternalParameterEntity: aName resolver: aResolver uri: aSystemUri from: aDocumentOrEntityUri
+addExternalParameterEntity: aName resolver: aResolver uri: aSystemURI from: aDocumentOrEntityURI
 	self parameterEntities
 		at: aName
 		ifAbsentPut: [
 			aResolver
 				resolveExternalParameterEntity: aName
-				uri: aSystemUri
-				from: aDocumentOrEntityUri]
+				uri: aSystemURI
+				from: aDocumentOrEntityURI]
