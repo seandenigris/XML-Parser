@@ -1,1 +1,1 @@
-This class can place limits on parser input.
+This class places security limits on parser input. You can set these using the configuration messages in SAXHandler or remove them using removeLimits.

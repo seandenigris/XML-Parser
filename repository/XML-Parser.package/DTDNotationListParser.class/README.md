@@ -1,0 +1,1 @@
+This class parses notation attribute value lists.

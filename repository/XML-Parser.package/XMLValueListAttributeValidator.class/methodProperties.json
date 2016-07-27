@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"allowedValues" : "monty 12/9/2013 02:17",
-		"allowedValues:" : "monty 12/9/2013 02:16",
 		"isValueListValidator" : "monty 12/9/2013 02:24",
-		"validateAttributeValue:" : "monty 12/11/2013 02:12" } }
+		"setAllowedValuesFromString:" : "monty 1/25/2014 01:24",
+		"validateAttributeValue:" : "monty 12/11/2013 02:12",
+		"valueListParserClass" : "monty 1/25/2014 01:17" } }

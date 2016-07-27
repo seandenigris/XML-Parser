@@ -1,3 +1,3 @@
 accessing
 resolvesExternalEntities
-	^ resolvesExternalEntities ifNil: [resolvesExternalEntities := true]
+	^ resolvesExternalEntities ifNil: [resolvesExternalEntities := false]

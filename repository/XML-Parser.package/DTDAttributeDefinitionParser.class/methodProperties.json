@@ -5,8 +5,8 @@
 		"initializeDefaultValueValidators" : "monty 12/31/2013 02:53",
 		"initializeNonEnumerationValidators" : "monty 12/31/2013 02:54" },
 	"instance" : {
-		"isNotationList:" : "monty 12/11/2013 02:38",
-		"parse" : "monty 1/4/2014 04:43",
-		"parseValueListTypeFor:" : "monty 1/4/2014 04:59",
+		"hasNotationType" : "monty 1/25/2014 01:25",
+		"parse" : "monty 1/25/2014 01:28",
 		"setElement:attribute:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:52",
-		"validatorClassForType" : "monty 1/4/2014 03:43" } }
+		"validatorClassForType" : "monty 1/25/2014 01:26",
+		"validatorForTypeWithDefaultValueValidator:" : "monty 1/25/2014 01:29" } }

@@ -1,6 +1,6 @@
 parsing
 parse
-	| defaultValueValidator attributeValidator |
+	| defaultValueValidator |
 
 	defaultValueValidator :=
 		(DefaultValueValidators
@@ -9,12 +9,4 @@ parse
 				attribute: attribute
 				defaultValue: defaultValue.
 
-	attributeValidator :=
-		self validatorClassForType
-			element: element
-			attribute: attribute
-			defaultValueValidator: defaultValueValidator.
-	attributeValidator isValueListValidator
-		ifTrue: [self parseValueListTypeFor: attributeValidator].
-
-	^ attributeValidator.
+	^ self validatorForTypeWithDefaultValueValidator: defaultValueValidator.
