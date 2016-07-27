@@ -18,6 +18,17 @@ testWhitespacePreservationValidation
 				(dtd copyReplaceAll: '(default|preserve)' with: '(preserve|default)')]
 		raise: XMLValidationException.
 	self
+		shouldnt: [SAXHandler parse: (dtd copyReplaceAll: '(default|preserve)' with: '(preserve)')]
+		raise: XMLValidationException.
+	self
+		should: [
+			SAXHandler parse:
+				(dtd copyReplaceAll: '(default|preserve)' with: '(default|preserve|other)')]
+		raise: XMLValidationException.
+	self
+		should: [SAXHandler parse: (dtd copyReplaceAll: '(default|preserve)' with: 'CDATA')]
+		raise: XMLValidationException.
+	self
 		should: [SAXHandler parse: dtd, '<whitespace> </whitespace>']
 		raise: XMLValidationException.
 	self
