@@ -2,4 +2,5 @@ printing
 writeXMLOn: aWriter
 	aWriter pi
 		target: self target;
-		data: self data
+		data: self data;
+		write

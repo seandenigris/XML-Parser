@@ -6,4 +6,5 @@ writeXMLOn: aWriter
 		replacement: self replacement;
 		publicID: self publicID;
 		systemID: self systemID;
-		ndata: self ndata
+		ndata: self ndata;
+		write
