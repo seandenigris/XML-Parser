@@ -1,6 +1,6 @@
 *XML-Parser-GTExtensions
 gtInspectorSourceIn: composite
-	<gtInspectorPresentationOrder: 40>
+	<gtInspectorPresentationOrder: 9>
 
 	"removed unfinished source panel editing support for now"
 	composite text 

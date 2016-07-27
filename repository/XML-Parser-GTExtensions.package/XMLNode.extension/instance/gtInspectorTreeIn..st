@@ -1,6 +1,6 @@
 *XML-Parser-GTExtensions
 gtInspectorTreeIn: composite
-	<gtInspectorPresentationOrder: 40>
+	<gtInspectorPresentationOrder: 8>
 	^ composite tree
 		title: 'Tree';
 		display: [ {self} ];
