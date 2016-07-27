@@ -1,3 +1,3 @@
 testing
 preservesUndeclaredEntityReferences
-	^ saxHandler preservesUndeclaredEntityReferences
+	^ self saxHandler preservesUndeclaredEntityReferences

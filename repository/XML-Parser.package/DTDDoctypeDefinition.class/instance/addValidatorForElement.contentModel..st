@@ -1,4 +1,4 @@
-validators
+adding
 addValidatorForElement: anElement contentModel: aContentModel
 	self elementValidators
 		at: anElement

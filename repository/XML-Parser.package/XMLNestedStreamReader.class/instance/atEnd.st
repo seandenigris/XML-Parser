@@ -1,3 +1,5 @@
 testing
 atEnd
-	^ peekChar isNil and: [hasNestedStreams not and: [stream atEnd]]
+	^ peekChar isNil
+		and: [stream atEnd
+			and: [self hasNestedStreams not]]

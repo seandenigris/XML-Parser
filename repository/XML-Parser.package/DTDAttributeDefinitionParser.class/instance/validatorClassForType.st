@@ -1,5 +1,7 @@
 parsing
 validatorClassForType
+	type ifEmpty: [XMLValidationException signal: 'Missing attribute type'].
+
 	^ NonEnumerationValidators 
-		at: (type ifEmpty: ['CDATA'])
+		at: type
 		ifAbsent: [XMLValueListAttributeValidator]

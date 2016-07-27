@@ -1,3 +1,4 @@
 testing
 isValidating
-	^ self saxDriver isValidating
+	"direct acceess for speed"
+	^ saxDriver isValidating

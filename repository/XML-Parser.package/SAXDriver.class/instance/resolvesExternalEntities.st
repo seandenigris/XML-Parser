@@ -1,3 +1,3 @@
 testing
 resolvesExternalEntities
-	^ saxHandler resolvesExternalEntities
+	^ self saxHandler resolvesExternalEntities

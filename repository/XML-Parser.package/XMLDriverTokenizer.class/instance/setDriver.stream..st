@@ -5,5 +5,5 @@ setDriver: aDriver stream: aStream
 	streamReader :=
 		(XMLNestedStreamReader
 			on: aStream
-			onClose: nil).
+			readLimit: nil).
 	streamWriter := XMLNestedStreamWriter new: 3.

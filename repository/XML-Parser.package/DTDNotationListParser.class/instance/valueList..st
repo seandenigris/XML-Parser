@@ -1,6 +1,6 @@
-instance creation
-on: aString
-	^ super on:
+accessing
+valueList: aString
+	super valueList:
 		(aString
 			copyFrom: (aString indexOf: $()
 			to: aString size)

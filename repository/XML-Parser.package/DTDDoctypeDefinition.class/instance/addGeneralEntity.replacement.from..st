@@ -1,9 +1,9 @@
-accessing
+adding
 addGeneralEntity: aName replacement: aReplacement from: aDocumentOrEntityUri
-	self
-		generalEntityAt: aName
-		put:
-			(DTDGeneralEntity 
+	self generalEntities
+		at: aName
+		ifAbsentPut: [
+			DTDGeneralEntity 
 				name: aName
 				replacement: aReplacement
-				uri: aDocumentOrEntityUri)
+				uri: aDocumentOrEntityUri]

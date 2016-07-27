@@ -1,4 +1,4 @@
-accessing
+private
 setStream: aNewStream onClose: aBlock
 	stream :=
 		XMLPeekableStreamAdapter

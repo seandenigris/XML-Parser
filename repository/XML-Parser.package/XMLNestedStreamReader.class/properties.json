@@ -11,11 +11,11 @@
 	"instvars" : [
 		"stream",
 		"nestedStreams",
-		"hasNestedStreams",
 		"peekChar",
 		"writeBuffer",
 		"normalizedLineEndingChar",
-		"currentLineNumber" ],
+		"currentLineNumber",
+		"readLimit" ],
 	"name" : "XMLNestedStreamReader",
 	"pools" : [
 		 ],

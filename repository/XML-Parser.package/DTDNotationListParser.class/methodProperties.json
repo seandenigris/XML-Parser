@@ -1,5 +1,6 @@
 {
 	"class" : {
-		"on:" : "monty 12/30/2013 22:47" },
+		 },
 	"instance" : {
-		"isValidListValue:" : "monty 12/31/2013 02:08" } }
+		"isValidListValue:" : "monty 12/31/2013 02:08",
+		"valueList:" : "monty 1/4/2014 04:45" } }

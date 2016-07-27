@@ -1,3 +1,6 @@
 handling tokens
 handleEndDTD
-	self saxHandler endDTD
+	(self resolvesExternalEntities and: [self dtd hasExternalSubset])
+		ifTrue: [self parseExternalSubset: self dtd externalSubsetURI].
+
+	self saxHandler endDTD.

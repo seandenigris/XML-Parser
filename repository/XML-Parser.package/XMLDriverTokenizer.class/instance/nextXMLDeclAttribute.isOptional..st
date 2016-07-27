@@ -1,7 +1,7 @@
 tokenizing
-nextXMLDeclAttribute: aName
+nextXMLDeclAttribute: aName isOptional: aBoolean
 	streamReader skipSeparators.
-	streamReader peek == $?
+	(aBoolean and: [streamReader peek ~~ aName first])
 		ifTrue: [^ ''].
 
 	self expectNextAll: aName.

@@ -1,3 +1,3 @@
 errors
 entityDepthError: anErrorString
-	XMLEntityDepthException signal: anErrorString
+	XMLLimitException signal: anErrorString

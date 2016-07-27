@@ -1,5 +1,5 @@
-accessing
+adding
 addUnparsedEntity: aName ndata: aNotation
-	self 
-		unparsedEntityAt: aName
-		put: aNotation
+	self unparsedEntities
+		at: aName
+		ifAbsentPut: [aNotation]

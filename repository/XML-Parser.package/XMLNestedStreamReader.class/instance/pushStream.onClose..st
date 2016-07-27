@@ -9,6 +9,5 @@ pushStream: aStream onClose: aBlock
 			(nestedStreams size >= self maxNestedStreams)
 				ifTrue: [XMLParserException signal: 'cannot further nest input streams'].
 			nestedStreams addLast: stream].
-	hasNestedStreams := true.
 
 	self setStream: aStream onClose: aBlock

@@ -15,6 +15,6 @@ parse
 			attribute: attribute
 			defaultValueValidator: defaultValueValidator.
 	attributeValidator isValueListValidator
-		ifTrue: [attributeValidator allowedValues: (self parseValueListType)].
+		ifTrue: [self parseValueListTypeFor: attributeValidator].
 
 	^ attributeValidator.
