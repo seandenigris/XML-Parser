@@ -1,3 +1,3 @@
 accessing
 currentPosition
-	^ initialReadLimit - streamReader readLimit + 1
+	^ initialReadLimit - streamReader readLimit

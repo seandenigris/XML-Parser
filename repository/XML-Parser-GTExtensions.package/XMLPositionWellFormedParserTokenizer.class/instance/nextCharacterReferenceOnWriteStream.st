@@ -1,8 +1,8 @@
 tokenizing
 nextCharacterReferenceOnWriteStream
-	driver handleStartEntityReferencePosition: self currentPosition - 2.
-	streamReader nextInteger
-		ifNil: [self errorExpectedIntegerCharacterReference].
-	driver handleEndEntityReferencePosition: self currentPosition.
-	self expectNext: $;.
-	^ false.
+	| result |
+
+	driver handleStartEntityReferencePosition: self currentPosition - 1.
+	result := super nextCharacterReferenceOnWriteStream.
+	driver handleEndEntityReferencePosition: self currentPosition - 1.
+	^ result.
