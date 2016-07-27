@@ -1,3 +1,5 @@
 printing
 writeXMLOn: aWriter
-	aWriter writeName: self name value: self value
+	aWriter
+		writeName: self name
+		escapedContentValue: self value

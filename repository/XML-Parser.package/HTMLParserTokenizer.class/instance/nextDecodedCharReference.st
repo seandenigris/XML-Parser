@@ -4,17 +4,15 @@ nextDecodedCharReference
 
 	"skip $#"
 	streamReader next.
-	((codePoint := self nextName) notEmpty
-		and: [streamReader peek == $;])
+
+	codePoint := self nextName.
+	codePointStream := codePoint readStream.
+	character := self characterFromCodePoint: (XMLIntegerReader readFrom: codePointStream).
+	(character notNil and: [codePointStream atEnd])
+		ifTrue: [
+			streamReader peek == $;
+				ifTrue: [streamReader next].
+			^ character]
 		ifFalse: [
 			streamReader pushBack: (codePoint copyWithFirst: $#).
 			^ $&].
-	streamReader next.
-
-	codePointStream := codePoint readStream.
-	character := self characterFromCodePoint: (XMLIntegerReader readFrom: codePointStream).
-	^ (character notNil and: [codePointStream atEnd])
-		ifTrue: [character]
-		ifFalse: [
-			streamReader pushBack: ((codePoint copyWithFirst: $#) copyWith: $;).
-			$&].

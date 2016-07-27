@@ -1,16 +1,13 @@
 tokenizing
 nextGeneralEntityReference
-	| name |
+	| name character |
 
-	((name := self nextName) notEmpty
-		and: [streamReader peek == $;])
-		ifFalse: [
-			streamReader pushBack: name.
-			^ $&].
-	streamReader next.
-
-	^ self class predefinedEntities
-		at: name
-		ifAbsent: [
-			streamReader pushBack: name, ';'.
-			$&].
+	character :=
+		self class predefinedEntities
+			at: (name := self nextName)
+			ifAbsent: [
+				streamReader pushBack: name.
+				^ $&].
+	streamReader peek == $;
+		ifTrue: [streamReader next].
+	^ character.

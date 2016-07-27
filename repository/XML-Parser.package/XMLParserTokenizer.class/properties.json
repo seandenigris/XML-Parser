@@ -4,14 +4,13 @@
 		"predefinedEntities" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/17/2014 01:16",
+	"commentStamp" : "monty 2/9/2014 02:44",
 	"instvars" : [
 		"driver",
 		"context",
 		"streamReader",
 		"writeStream",
-		"nameStream",
-		"normalizedSpaceChar" ],
+		"nameStream" ],
 	"name" : "XMLParserTokenizer",
 	"pools" : [
 		 ],

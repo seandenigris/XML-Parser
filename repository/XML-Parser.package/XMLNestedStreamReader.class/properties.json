@@ -4,8 +4,7 @@
 		 ],
 	"classvars" : [
 		"CarriageReturn",
-		"LineFeed",
-		"SeparatorCharacters" ],
+		"LineFeed" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"stream",

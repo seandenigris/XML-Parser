@@ -2,6 +2,7 @@
 	"class" : {
 		"string:" : "JAAyer 2/25/2010 01:48" },
 	"instance" : {
+		"acceptsContent" : "monty 2/11/2014 00:14",
 		"addContent:" : "monty 1/1/2014 07:23",
 		"asString" : "monty 1/1/2014 07:14",
 		"asXMLString" : "JAAyer 7/22/2010 05:19",

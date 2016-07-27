@@ -1,4 +1,4 @@
-streaming
+private
 pushBackPeekChar
 	| peekCharString |
 

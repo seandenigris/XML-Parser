@@ -1,3 +1,3 @@
 private
 driverClass
-	^ SAXDriver
+	^ SAXParserDriver

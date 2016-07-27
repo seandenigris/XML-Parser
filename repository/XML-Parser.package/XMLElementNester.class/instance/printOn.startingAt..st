@@ -2,7 +2,7 @@ printing
 printOn: aStream startingAt: aPosition
 	| endPosition |
 
-	endPosition :=  self totalOpen min: (aPosition + self printLimit - 1).
+	endPosition :=  self openElements size min: (aPosition + self printLimit - 1).
 	(self openElements copyFrom: aPosition to: endPosition)
 		do: [:each |
 			aStream
@@ -10,5 +10,5 @@ printOn: aStream startingAt: aPosition
 				nextPutAll: each;
 				nextPut: $>]
 		separatedBy: [aStream nextPutAll: ', '].
-	(endPosition < self totalOpen)
+	(endPosition < self openElements size)
 		ifTrue: [aStream nextPutAll: '...'].

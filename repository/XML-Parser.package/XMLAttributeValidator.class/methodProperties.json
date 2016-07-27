@@ -4,18 +4,18 @@
 	"instance" : {
 		"attribute" : "monty 12/10/2013 06:17",
 		"element" : "monty 12/10/2013 06:17",
-		"furtherNormalizeAttributeValueIn:" : "monty 12/30/2013 22:41",
+		"furtherNormalizeAttributeValueIn:" : "monty 2/10/2014 19:58",
 		"hasIDRefs" : "monty 12/29/2013 02:57",
 		"hasIDs" : "monty 12/29/2013 02:57",
 		"hasNotationValues" : "monty 1/4/2014 05:02",
 		"isIDValidator" : "monty 12/10/2013 06:06",
 		"isValueListValidator" : "monty 12/9/2013 02:24",
+		"listValuesIn:do:" : "monty 2/10/2014 19:50",
 		"setElement:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
 		"shouldFurtherNormalizeAttributeValue" : "monty 12/11/2013 02:14",
-		"spaceSeparatedValuesIn:do:" : "monty 2/2/2014 23:05",
 		"validateAndAddTo:usingDeclarationsFrom:" : "monty 1/4/2014 22:49",
-		"validateAttributeDefaultIn:" : "monty 12/11/2013 02:23",
+		"validateAttributeDefaultIn:" : "monty 2/10/2014 19:58",
 		"validateAttributeValue:" : "monty 12/28/2013 20:03",
 		"validateAttributes:" : "monty 1/21/2014 05:29",
-		"validateID:" : "monty 12/10/2013 06:14",
-		"validateName:" : "monty 12/10/2013 06:14" } }
+		"validateID:" : "monty 2/10/2014 02:43",
+		"validateName:" : "monty 2/10/2014 02:43" } }

@@ -2,6 +2,5 @@ validation
 validateAttributeDefaultIn: anAttributeDictionary
 	defaultValueValidator validateAttributeDefaultIn: anAttributeDictionary.
 
-	(self shouldFurtherNormalizeAttributeValue
-		and: [anAttributeDictionary includesKey: attribute])
+	self shouldFurtherNormalizeAttributeValue
 		ifTrue: [self furtherNormalizeAttributeValueIn: anAttributeDictionary].

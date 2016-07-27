@@ -1,1 +1,1 @@
-This is the driver for the HTMLHandler. It uses the HTMLElementNester to build a DOM tree from possibly bad markup.
+This is the driver for the HTMLHandler. It uses the HTMLElementNester to make bad HTML nest correctly.

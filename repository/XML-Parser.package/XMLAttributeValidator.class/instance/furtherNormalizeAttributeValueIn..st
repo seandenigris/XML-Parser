@@ -2,7 +2,7 @@ normalization
 furtherNormalizeAttributeValueIn: anAttributeDictionary
 	| readStream writeStream |
 
-	readStream := (anAttributeDictionary at: attribute) readStream.
+	readStream := (anAttributeDictionary at: attribute ifAbsent: [^ self]) readStream.
 	writeStream := (String new: readStream size) writeStream.
 	readStream skipSeparators.
 	[readStream atEnd]

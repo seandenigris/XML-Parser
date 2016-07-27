@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"acceptsContent" : "monty 2/11/2014 00:13",
 		"addContent:" : "JAAyer 7/20/2010 10:15",
 		"addObserver:" : "OttoBehrens 2/15/2011 08:33",
 		"allNodesDo:" : "JAAyer 11/25/2010 10:59",

@@ -3,7 +3,9 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"HtmlNameDelimiters" ],
+		"HtmlNameDelimiters",
+		"NonHtmlCodeSectionTags",
+		"NonHtmlSectionTags" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],

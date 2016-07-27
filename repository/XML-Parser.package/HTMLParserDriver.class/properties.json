@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/17/2014 01:47",
+	"commentStamp" : "monty 2/9/2014 20:53",
 	"instvars" : [
 		 ],
 	"name" : "HTMLParserDriver",
 	"pools" : [
 		 ],
-	"super" : "SAXDriver",
+	"super" : "SAXParserDriver",
 	"type" : "normal" }

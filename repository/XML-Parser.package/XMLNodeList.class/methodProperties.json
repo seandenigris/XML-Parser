@@ -17,5 +17,7 @@
 		"elementsDetect:ifNone:" : "monty 11/26/2013 22:10",
 		"elementsDo:" : "monty 11/26/2013 22:11",
 		"elementsSelect:" : "monty 11/26/2013 22:08",
+		"firstElement" : "monty 2/10/2014 23:09",
 		"hasElements" : "monty 11/26/2013 22:03",
-		"includesElementAt:" : "monty 11/26/2013 22:04" } }
+		"includesElementAt:" : "monty 11/26/2013 22:04",
+		"lastElement" : "monty 2/10/2014 23:10" } }

@@ -1,3 +1,3 @@
 accessing
 firstElement
-	^ self elements first
+	^ self nodes firstElement

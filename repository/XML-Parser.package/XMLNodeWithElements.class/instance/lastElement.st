@@ -1,3 +1,3 @@
 accessing
 lastElement
-	^ self elements last
+	^ self nodes lastElement

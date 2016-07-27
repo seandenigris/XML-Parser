@@ -1,3 +1,3 @@
-private
+converting
 asString
 	^ self string

@@ -1,3 +1,3 @@
 testing
 isValidListValue: aValue
-	^ XMLTokenizer isName: aValue
+	^ XMLWellFormedParserTokenizer isName: aValue

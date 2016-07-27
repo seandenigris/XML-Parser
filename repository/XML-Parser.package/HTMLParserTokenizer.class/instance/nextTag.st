@@ -8,9 +8,9 @@ nextTag
 
 	attributes := OrderPreservingDictionary new: 10 withDefaultValue: ''.
 	[streamReader skipSeparators.
-	((nextChar := streamReader peek) == nil
-		or: [nextChar == $>
-			or: [nextChar == $/
+	((nextChar := streamReader peek) == $>
+		or: [nextChar == $/
+			or: [nextChar == nil
 				or: [(attributeName := self nextName asLowercase) isEmpty]]])]
 		whileFalse: [
 			streamReader skipSeparators.
@@ -27,6 +27,6 @@ nextTag
 			streamReader next.
 			driver handleEndTag: tagName]
 		ifFalse: [
-			(self isNonHTMLSectionTag: tagName)
+			(NonHtmlSectionTags includes: tagName)
 				ifTrue: [context enterNonHTMLSection: tagName]].
 	self expectTerminator: $>.

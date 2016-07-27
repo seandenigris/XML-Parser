@@ -3,5 +3,5 @@ allElementsCollect: aBlock
 	| collectedElements |
 
 	collectedElements := self nodes copyEmpty.
-	self allElementsDo: [:each | collectedElements add: (aBlock value: each)].
+	self allElementsDo: [:each | collectedElements addLast: (aBlock value: each)].
 	^ collectedElements.
