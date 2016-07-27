@@ -1,0 +1,19 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"XMLTranslation",
+		"XMLTranslationMap" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stream",
+		"stack",
+		"scope",
+		"scanner",
+		"canonical" ],
+	"name" : "XMLWriter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entity",
+		"stack",
+		"incremental" ],
+	"name" : "XMLDOMParser",
+	"pools" : [
+		 ],
+	"super" : "SAXHandler",
+	"type" : "normal" }

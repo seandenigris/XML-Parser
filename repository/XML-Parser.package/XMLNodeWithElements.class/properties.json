@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"elements",
+		"uri",
+		"namespace" ],
+	"name" : "XMLNodeWithElements",
+	"pools" : [
+		 ],
+	"super" : "XMLNode",
+	"type" : "normal" }

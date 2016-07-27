@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"saxHandler",
+		"scope",
+		"useNamespaces",
+		"validateAttributes" ],
+	"name" : "SAXDriver",
+	"pools" : [
+		 ],
+	"super" : "XMLTokenizer",
+	"type" : "normal" }
