@@ -7,5 +7,5 @@ testRemoveFirstFew
 	list := self listWithElements.
 	self
 		should: [list removeFirst: 2]
-		removeAll: (self listElements first: 2)
+		removeAll: (self listElementsFirst: 2)
 		fromAndNotifyOf: list.

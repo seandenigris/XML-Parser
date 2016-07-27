@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testHasPrefixBeforeLocalName" : "monty 11/22/2014 20:00",
 		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
 		"testLocalNameAfterPrefix" : "monty 11/16/2014 20:22",
 		"testParseXML" : "monty 10/24/2014 10:27",

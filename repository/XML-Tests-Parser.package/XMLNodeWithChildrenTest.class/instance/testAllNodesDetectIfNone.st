@@ -14,5 +14,5 @@ testAllNodesDetectIfNone
 		assert: detectedNode == (allNodes detect: [:each | each isPI] ifNone: [#absent]);
 		assert:
 			(nodeWithNodes
-				allNodesDetect: [:each | each isDeclaration]
+				allNodesDetect: [:each | each isElementNamed: 'absent']
 				ifNone: [#absent]) = #absent.

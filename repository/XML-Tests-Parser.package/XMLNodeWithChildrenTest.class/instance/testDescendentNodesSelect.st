@@ -9,7 +9,7 @@ testDescendentNodesSelect
 		selects: (descendentNodes select: [:each | each isComment]).
 
 	descendentNodes do: [:node |
-		(node respondsTo: #descendentNodesSelect:)
+		node canHaveChildren
 			ifTrue: [
 				self
 					assertList: (node descendentNodesSelect: [:each | each isComment])

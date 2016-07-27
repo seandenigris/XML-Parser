@@ -1,4 +1,4 @@
-accessing
+instance creation
 newNodeWithElements
 	^ self nodeClass new
 		addNode: (XMLComment string: 'before');

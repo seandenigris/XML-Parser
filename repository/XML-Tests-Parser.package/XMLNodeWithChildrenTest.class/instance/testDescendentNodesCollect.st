@@ -9,7 +9,7 @@ testDescendentNodesCollect
 		collects: (descendentNodes collect: [:each | each identityHash]).
 
 	descendentNodes do: [:node |
-		(node respondsTo: #descendentNodesCollect:)
+		node canHaveChildren
 			ifTrue: [
 				self
 					assertList: (node descendentNodesCollect: [:each | each identityHash])

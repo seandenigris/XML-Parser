@@ -7,5 +7,5 @@ testRemoveLastFew
 	list := self listWithElements.
 	self
 		should: [list removeLast: 2]
-		removeAll: (self listElements last: 2) reversed
+		removeAll: (self listElementsLast: 2) reversed
 		fromAndNotifyOf: list.

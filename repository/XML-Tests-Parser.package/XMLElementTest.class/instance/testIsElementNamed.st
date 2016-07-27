@@ -1,5 +1,13 @@
 tests
 testIsElementNamed
+	| element |
+
+	element := self nodeClass named: 'one'.
 	self
-		assert: ((self nodeClass named: 'one') isElementNamed: 'one');
-		deny: ((self nodeClass named: 'two') isElementNamed: 'one')
+		assert: (element isElementNamed: 'one');
+		deny: (element isElementNamed: 'two').
+	element name: 'one:two' namespaceURI: 'testNS'.
+	self
+		assert: (element isElementNamed: 'one:two');
+		assert: (element isElementNamed: 'two');
+		deny: (element isElementNamed: 'one').

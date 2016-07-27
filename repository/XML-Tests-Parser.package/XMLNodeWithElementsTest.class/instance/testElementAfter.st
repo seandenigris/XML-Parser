@@ -1,8 +1,9 @@
 tests
 testElementAfter
-	| root after |
+	| root elementAfter |
 
-	root := self newNodeWithElements nodeAt: 2.
-	root elements reversed do: [:each |
-		self assert: (root elementAfter: each) == after.
-		after := each].
+	root := self newNodeWithElements firstElement.
+	elementAfter := nil.
+	root elements reverseDo: [:each |
+		self assert: (root elementAfter: each) == elementAfter.
+		elementAfter := each].

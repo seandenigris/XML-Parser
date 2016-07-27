@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"isAbstract" : "monty 11/23/2014 19:21" },
+	"instance" : {
+		"nodeClass" : "monty 11/23/2014 19:22",
+		"testAttribute" : "monty 11/23/2014 19:24",
+		"testDefaultPragma" : "monty 11/23/2014 19:34",
+		"testDefaultValue" : "monty 11/23/2014 19:24",
+		"testElement" : "monty 11/23/2014 19:24",
+		"testElementAttributeTypeDefaultPragmaDefaultValue" : "monty 11/24/2014 06:50",
+		"testType" : "monty 11/23/2014 19:34",
+		"testWriteXMLOn" : "monty 11/23/2014 19:33" } }

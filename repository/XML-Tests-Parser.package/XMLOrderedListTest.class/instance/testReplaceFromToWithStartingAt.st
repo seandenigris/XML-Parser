@@ -7,7 +7,11 @@ testReplaceFromToWithStartingAt
 		start to: self listElements size do: [:stop |
 			list := self listClass new: self listElements size withAll: self absentElement.
 			self	 assert:
-				(list replaceFrom: start to: stop with: self listElements startingAt: start) == list.
+				(list
+					replaceFrom: start
+					to: stop
+					with: self listElements
+					startingAt: start) == list.
 
 			1 to: start - 1 do: [:i | self assert: (list at: i) = self absentElement].
 			start to: stop do: [:i | self assert: (list at: i) = (self listWithElements at: i)].

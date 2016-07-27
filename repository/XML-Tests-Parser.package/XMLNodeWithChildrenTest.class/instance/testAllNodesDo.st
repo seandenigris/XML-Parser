@@ -9,7 +9,7 @@ testAllNodesDo
 		enumerate: allNodes.
 
 	allNodes do: [:node |
-		node isElement
+		node canHaveChildren
 			ifTrue: [
 				self
 					should: [:block | node allNodesDo: block]

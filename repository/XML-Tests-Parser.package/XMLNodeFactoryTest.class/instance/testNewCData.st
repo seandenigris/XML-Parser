@@ -1,11 +1,8 @@
 tests
 testNewCData
-	| factory document cdata |
+	| cdata |
 
-	factory := self newFactory.
-	(document := factory newDocument)
-		nodeFactory: factory.
-	cdata := document newCData: 'test'.
+	cdata := self newFactory newCData: 'test'.
 	self
 		assert: cdata class == self cdataClass;
 		assert: cdata string = 'test'.

@@ -1,4 +1,4 @@
-accessing
+instance creation
 newNodeWithNodes
 	^ self nodeClass new
 		addNode: (XMLComment string: 'one');

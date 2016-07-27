@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertComment:hasString:" : "monty 11/2/2014 11:16",
 		"nodeClass" : "monty 11/2/2014 11:17",
-		"test6commentNodes" : "monty 11/4/2014 00:09",
-		"testIsComment" : "monty 11/19/2014 21:47" } }
+		"testIsComment" : "monty 11/19/2014 21:47",
+		"testString" : "monty 11/22/2014 23:25",
+		"testWriteXMLOn" : "monty 11/22/2014 19:27" } }

@@ -13,9 +13,9 @@ testCopyReplaceFromToWith
 				copiedFrom: list
 				equals:
 					(self listClass newFrom:
-						(self listElements first: ((minStart - 1 min: list size) max: 0)),
+						(self listElementsFirst: ((minStart - 1 min: list size) max: 0)),
 						(self listElements reversed),
-						(self listElements last: ((list size - minStop) max: 0))).
+						(self listElementsLast: ((list size - minStop) max: 0))).
 			self
 				assertList: (emptyList copyReplaceFrom: start to: stop with: self listElements)
 				copiedFrom: emptyList

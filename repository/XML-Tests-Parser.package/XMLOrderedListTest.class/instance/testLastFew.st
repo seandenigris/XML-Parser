@@ -7,7 +7,7 @@ testLastFew
 		self
 			assertList: (list last: i)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElements last: i)).
+			equals: (self listClass newFrom: (self listElementsLast: i)).
 		self
 			assertList: (list last: list size + i)
 			copiedFrom: list

@@ -2,7 +2,12 @@
 	"class" : {
 		"isAbstract" : "monty 11/2/2014 11:08" },
 	"instance" : {
-		"assertDocument:hasDoctype:version:encoding:" : "monty 11/2/2014 11:47",
+		"newNodeWithElements" : "monty 11/22/2014 20:49",
 		"nodeClass" : "monty 11/2/2014 11:08",
-		"test11documentTest" : "monty 11/2/2014 11:47",
-		"testIsDocument" : "monty 11/19/2014 21:45" } }
+		"testDoctypeDeclaration" : "monty 11/22/2014 19:09",
+		"testDocument" : "monty 11/24/2014 00:17",
+		"testEncoding" : "monty 11/22/2014 23:18",
+		"testIsDocument" : "monty 11/19/2014 21:45",
+		"testIsStandalone" : "monty 11/22/2014 23:18",
+		"testRoot" : "monty 11/22/2014 19:07",
+		"testVersion" : "monty 11/22/2014 23:19" } }

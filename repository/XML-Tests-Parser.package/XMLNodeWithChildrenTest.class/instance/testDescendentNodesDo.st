@@ -9,7 +9,7 @@ testDescendentNodesDo
 		enumerate: descendentNodes.
 
 	descendentNodes do: [:node |
-		node isElement
+		node canHaveChildren
 			ifTrue: [
 				self
 					should: [:block | node descendentNodesDo: block]

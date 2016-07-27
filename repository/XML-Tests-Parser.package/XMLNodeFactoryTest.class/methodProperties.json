@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"shouldInheritSelectors" : "monty 11/1/2014 15:57" },
+		 },
 	"instance" : {
 		"cdataClass" : "monty 11/1/2014 15:59",
 		"commentClass" : "monty 11/1/2014 15:59",
@@ -11,12 +11,12 @@
 		"piClass" : "monty 11/1/2014 16:02",
 		"sampleUserXML" : "monty 11/1/2014 21:32",
 		"stringClass" : "monty 11/1/2014 15:59",
-		"testNewCData" : "monty 11/9/2014 05:32",
-		"testNewComment" : "monty 11/9/2014 05:33",
-		"testNewDocument" : "monty 11/9/2014 05:33",
-		"testNewElement" : "monty 11/9/2014 05:34",
-		"testNewElementNamed" : "monty 11/9/2014 05:35",
-		"testNewElementNamedNamespaceURI" : "monty 11/9/2014 05:35",
-		"testNewPI" : "monty 11/9/2014 05:33",
-		"testNewString" : "monty 11/9/2014 05:36",
+		"testNewCData" : "monty 11/22/2014 23:02",
+		"testNewComment" : "monty 11/22/2014 23:02",
+		"testNewDocument" : "monty 11/22/2014 23:03",
+		"testNewElement" : "monty 11/22/2014 23:05",
+		"testNewElementNamed" : "monty 11/22/2014 23:05",
+		"testNewElementNamedNamespaceURI" : "monty 11/22/2014 23:07",
+		"testNewPI" : "monty 11/22/2014 23:06",
+		"testNewString" : "monty 11/22/2014 23:06",
 		"testParsingSample" : "monty 11/4/2014 20:23" } }

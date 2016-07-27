@@ -3,8 +3,8 @@ testEndsWith
 	| node |
 
 	node := self nodeClass string: 'test'.
-	1 to: 4 do: [:i | | suffix |
-		suffix := 'test' last: i.
+	0 to: node string size - 1 do: [:i | | suffix |
+		suffix := node string allButFirst: i.
 		self
 			assert: (node endsWith: suffix);
 			assert: (node endsWith: (self nodeClass string: suffix));

@@ -2,4 +2,13 @@
 	"class" : {
 		"isAbstract" : "monty 11/2/2014 11:06" },
 	"instance" : {
-		"nodeClass" : "monty 11/2/2014 11:02" } }
+		"newNodeWithNodes" : "monty 11/22/2014 20:38",
+		"nodeClass" : "monty 11/2/2014 11:02",
+		"selectNodeListClass" : "monty 11/23/2014 22:10",
+		"testAllNodes" : "monty 11/22/2014 20:40",
+		"testNodes" : "monty 11/22/2014 19:36",
+		"testPublicID" : "monty 11/23/2014 18:32",
+		"testRoot" : "monty 11/23/2014 18:32",
+		"testRootPublicIDSystemID" : "monty 11/23/2014 18:34",
+		"testSystemID" : "monty 11/23/2014 18:32",
+		"testWriteXMLOn" : "monty 11/23/2014 18:44" } }

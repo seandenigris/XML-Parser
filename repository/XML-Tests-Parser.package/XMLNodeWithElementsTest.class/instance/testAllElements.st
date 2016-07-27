@@ -9,7 +9,7 @@ testAllElements
 			self assert: allElements first == nodeWithElements.
 			allElements removeFirst].
 	self assert:
-		allElements elementNames asArray =
+		(allElements collect: [:each | each name]) asArray =
 			#('root' 'one' 'two' 'three' 'four' 'prefix:four' 'prefix:five' 'four').
 	self
 		assertList: allElements first allElements selects: (allElements copyFrom: 1 to: 8);

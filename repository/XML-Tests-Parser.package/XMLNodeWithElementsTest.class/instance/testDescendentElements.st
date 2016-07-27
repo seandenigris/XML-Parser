@@ -5,7 +5,7 @@ testDescendentElements
 	nodeWithElements := self newNodeWithElements.
 	descendentElements := nodeWithElements descendentElements.
 	self assert:
-		descendentElements elementNames asArray =
+		(descendentElements collect: [:each | each name]) asArray =
 			#('root' 'one' 'two' 'three' 'four' 'prefix:four' 'prefix:five' 'four').
 	self
 		assertList: descendentElements first descendentElements selects: (descendentElements copyFrom: 2 to: 8);

@@ -9,4 +9,4 @@ testAllNodesDetect
 		assert: detectedNode notNil;
 		assert: detectedNode isPI;
 		assert: detectedNode == (allNodes detect: [:each | each isPI]);
-		assert: (nodeWithNodes allNodesDetect: [:each | each isDeclaration]) isNil.
+		assert: (nodeWithNodes allNodesDetect: [:each | each isElementNamed: 'absent']) isNil.

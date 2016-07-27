@@ -5,7 +5,7 @@ testExternalEntitiesLimit
 	self skipOrReturnWith: [^ self].
 
 	entityLimit := 2.
-	xml := self doctypeWithDeclarationsForEntityURIs: (self externalEntityURLs first: entityLimit).
+	xml := self doctypeWithDeclarationsForEntityURIs: (self externalEntityURLs copyFrom: 1 to: entityLimit).
 	((parser := SAXHandler on: xml)
 		resolvesExternalEntities: true;
 		externalEntityResolver)

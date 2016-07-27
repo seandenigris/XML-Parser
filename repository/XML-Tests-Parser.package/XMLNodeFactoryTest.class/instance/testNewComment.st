@@ -1,11 +1,8 @@
 tests
 testNewComment
-	| factory document comment |
+	| comment |
 
-	factory := self newFactory.
-	(document := factory newDocument)
-		nodeFactory: factory.
-	comment := document newComment: 'test'.
+	comment := self newFactory newComment: 'test'.
 	self
 		assert: comment class == self commentClass;
 		assert: comment string = 'test'.

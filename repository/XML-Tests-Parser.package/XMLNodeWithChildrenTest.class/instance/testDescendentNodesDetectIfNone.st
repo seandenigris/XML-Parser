@@ -14,5 +14,5 @@ testDescendentNodesDetectIfNone
 		assert: detectedNode == (descendentNodes detect: [:each | each isPI] ifNone: [#absent]);
 		assert:
 			(nodeWithNodes
-				descendentNodesDetect: [:each | each isDeclaration]
+				descendentNodesDetect: [:each | each isElementNamed: 'absent']
 				ifNone: [#absent]) = #absent.

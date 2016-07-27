@@ -1,8 +1,9 @@
 tests
 testElementBefore
-	| root before |
+	| root elementBefore |
 
-	root := self newNodeWithElements nodeAt: 2.
+	root := self newNodeWithElements firstElement.
+	elementBefore := nil.
 	root elements do: [:each |
-		self assert: (root elementBefore: each) == before.
-		before := each].
+		self assert: (root elementBefore: each) == elementBefore.
+		elementBefore := each].

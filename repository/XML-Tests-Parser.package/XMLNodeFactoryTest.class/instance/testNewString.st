@@ -1,11 +1,8 @@
 tests
 testNewString
-	| factory document string |
+	| string |
 
-	factory := self newFactory.
-	(document := factory newDocument)
-		nodeFactory: factory.
-	string := document newString: 'test'.
+	string := self newFactory newString: 'test'.
 	self
 		assert: string class == self stringClass;
 		assert: string string = 'test'.

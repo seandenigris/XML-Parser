@@ -9,7 +9,7 @@ testAllNodesSelect
 		selects: (allNodes select: [:each | each isComment]).
 
 	allNodes do: [:node |
-		(node respondsTo: #allNodesSelect:)
+		node canHaveChildren
 			ifTrue: [
 				self
 					assertList: (node allNodesSelect: [:each | each isComment])

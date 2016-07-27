@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"isAbstract" : "monty 11/23/2014 18:27" },
+	"instance" : {
+		"nodeClass" : "monty 11/23/2014 18:25",
+		"testContentModel" : "monty 11/23/2014 18:26",
+		"testElement" : "monty 11/23/2014 18:25",
+		"testElementContentModel" : "monty 11/23/2014 18:28",
+		"testWriteXMLOn" : "monty 11/23/2014 18:31" } }

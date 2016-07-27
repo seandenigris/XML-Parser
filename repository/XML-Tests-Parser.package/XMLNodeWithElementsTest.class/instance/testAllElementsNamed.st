@@ -3,6 +3,8 @@ testAllElementsNamed
 	| nodeWithElements allElements namedElements |
 
 	nodeWithElements := self newNodeWithElements.
+	self assert: (nodeWithElements allElementsNamed: 'absent') isEmpty.
+
 	allElements := nodeWithElements allElements.
 	namedElements := nodeWithElements allElementsNamed: 'four'. 
 	self

@@ -9,7 +9,7 @@ testDescendentNodes
 		selects: nodeWithNodes allNodes allButFirst.
 
 	descendentNodes do: [:node |
-		node isElement
+		node canHaveChildren
 			ifTrue: [
 				self
 					assertList: node descendentNodes

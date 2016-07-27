@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"testDefaultLimits" : "monty 1/26/2014 04:29",
-		"testExternalEntitiesLimit" : "monty 10/25/2014 11:05",
+		"testExternalEntitiesLimit" : "monty 11/24/2014 00:43",
 		"testExternalEntitySizeLimit" : "monty 10/25/2014 11:05",
 		"testExternalSubsetReadLimit" : "monty 10/25/2014 11:06",
 		"testOnURLUpToLimit" : "monty 10/25/2014 11:06",

@@ -9,7 +9,7 @@ testAllNodesCollect
 		collects: (allNodes collect: [:each | each identityHash]).
 
 	allNodes do: [:node |
-		(node respondsTo: #allNodesCollect:)
+		node canHaveChildren
 			ifTrue: [
 				self
 					assertList: (node allNodesCollect: [:each | each identityHash])

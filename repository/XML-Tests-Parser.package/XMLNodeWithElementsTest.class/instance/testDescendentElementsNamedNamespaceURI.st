@@ -3,6 +3,11 @@ testDescendentElementsNamedNamespaceURI
 	| nodeWithElements descendentElements namedElements |
 
 	nodeWithElements := self newNodeWithElements.
+	self assert:
+		(nodeWithElements
+			descendentElementsNamed: 'four'
+			namespaceURI: 'absent') isEmpty.
+
 	descendentElements := nodeWithElements descendentElements.
 	namedElements :=
 		nodeWithElements

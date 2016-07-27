@@ -3,8 +3,8 @@ testBeginsWith
 	| node |
 
 	node := self nodeClass string: 'test'.
-	1 to: 4 do: [:i | | prefix |
-		prefix := 'test' first: i.
+	0 to: node string size - 1 do: [:i | | prefix |
+		prefix := node string allButLast: i.
 		self
 			assert: (node beginsWith: prefix);
 			assert: (node beginsWith: (self nodeClass string: prefix));

@@ -1,0 +1,3 @@
+accessing
+attributes
+	^ self newElementWithAttributes attributeNodes asDictionary
