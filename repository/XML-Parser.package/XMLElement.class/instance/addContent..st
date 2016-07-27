@@ -1,3 +1,3 @@
-initialize
+accessing
 addContent: contentString
-	self addElement: contentString
+	self addNode: (XMLStringNode string: contentString)

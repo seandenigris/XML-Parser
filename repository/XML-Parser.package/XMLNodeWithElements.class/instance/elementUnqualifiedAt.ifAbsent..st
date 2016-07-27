@@ -1,5 +1,3 @@
 accessing
-elementUnqualifiedAt: entityName ifAbsent: aBlock
-	elementsAndContents
-		ifNil: [^aBlock value].
-	^self elements detect: [:each | each localName = entityName] ifNone: [^aBlock value]
+elementUnqualifiedAt: aSymbol ifAbsent: aBlock
+	^ self elementAt: aSymbol ifAbsent: aBlock

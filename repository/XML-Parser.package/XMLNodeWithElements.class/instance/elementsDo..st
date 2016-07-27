@@ -1,3 +1,3 @@
 enumerating
 elementsDo: aBlock
-	self elements do: [:each | aBlock value: each]
+	self elements do: aBlock

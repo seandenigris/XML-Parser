@@ -1,3 +1,3 @@
 accessing
 contents
-	^self elementsAndContents select: [:each | each isText]
+	^self nodes select: [:each | each isText]

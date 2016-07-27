@@ -5,6 +5,6 @@ firstTagNamed: aSymbol with: aBlock
 
 	| answer |
 
-	self elementsDo: [:node |
-		(answer := node firstTagNamed: aSymbol with: aBlock) ifNotNil: [^answer]].
+	self elementsDo: [:each |
+		(answer := each firstTagNamed: aSymbol with: aBlock) ifNotNil: [^answer]].
 	^nil

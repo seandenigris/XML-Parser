@@ -1,3 +1,3 @@
 enumerating
 elementsAndContentsDo: aBlock
-	self elementsAndContents do: aBlock
+	self nodesDo: [:each | each isTagOrText ifTrue: [aBlock value: each]]

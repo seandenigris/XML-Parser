@@ -1,3 +1,3 @@
 accessing
-elementAt: entityName
-	^self elementAt: entityName ifAbsent: [nil]
+elementAt: aSymbol
+	^self elementAt: aSymbol ifAbsent: [nil]

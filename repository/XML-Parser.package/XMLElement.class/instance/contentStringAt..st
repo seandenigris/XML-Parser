@@ -1,3 +1,3 @@
 accessing
-contentStringAt: entityName
-	^(self elementAt: entityName ifAbsent: [^'']) contentString
+contentStringAt: aSymbol
+	^(self elementAt: aSymbol ifAbsent: [^'']) contentString

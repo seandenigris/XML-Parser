@@ -1,3 +1,3 @@
 printing
 printXMLOn: writer
-	self elementsDo: [:element | element printXMLOn: writer]
+	self nodesDo: [:each | each printXMLOn: writer].

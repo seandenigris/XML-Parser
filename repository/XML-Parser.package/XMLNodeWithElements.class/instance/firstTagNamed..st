@@ -4,5 +4,5 @@ firstTagNamed: aSymbol
 
 	| answer |
 
-	self elementsDo: [:node | (answer := node firstTagNamed: aSymbol) ifNotNil: [^answer]].
+	self elementsDo: [:each | (answer := each firstTagNamed: aSymbol) ifNotNil: [^answer]].
 	^nil

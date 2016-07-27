@@ -1,0 +1,4 @@
+factory
+newElementCollection
+
+	^ OrderedCollection new

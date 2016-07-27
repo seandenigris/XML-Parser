@@ -6,7 +6,7 @@
 		"CanonicalTable" ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"parent" ],
 	"name" : "XMLNode",
 	"pools" : [
 		 ],

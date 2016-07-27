@@ -1,3 +1,3 @@
 accessing
-elementUnqualifiedAt: entityName
-	^self elementUnqualifiedAt: entityName ifAbsent: [nil]
+elementUnqualifiedAt: aSymbol
+	^self elementUnqualifiedAt: aSymbol ifAbsent: [nil]

@@ -1,0 +1,3 @@
+testing
+isPi
+	^ self isProcessingInstruction
