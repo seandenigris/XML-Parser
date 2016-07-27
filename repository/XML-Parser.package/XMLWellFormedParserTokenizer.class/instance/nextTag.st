@@ -30,23 +30,26 @@ nextTag
 						and: [driver usesNamespaces])
 						ifTrue: [
 							"initialize only if needed"
-							(namespaces
+							((namespaces
 								ifNil: [namespaces := OrderPreservingStringDictionary new: 5])
-								xmlNamespaceAt:
+								xmlAt:
 									((attributeName size > 6)
 										ifTrue: [attributeName copyFrom: 7 to: attributeName size]
 										ifFalse: [''])
-								put: attributeValue]
+								newPut: attributeValue)
+								ifFalse: [self errorDuplicateNamespace: attributeName]]
 						ifFalse: [							
 							attributeName isXMLReservedAttributeName
 								ifTrue: [driver haveUnhandledReservedAttributes].
-							attributes
-								xmlAttributeAt: attributeName
-								put: attributeValue]]
+							(attributes
+								xmlAt: attributeName
+								newPut: attributeValue)
+								ifFalse: [self errorDuplicateAttribute: attributeName]]]
 				ifFalse: [
-					attributes
-						xmlAttributeAt: attributeName
-						put: attributeValue]].
+					(attributes
+						xmlAt: attributeName
+						newPut: attributeValue)
+						ifFalse: [self errorDuplicateAttribute: attributeName]]].
 
 	driver
 		handleStartTag: tagName

@@ -10,5 +10,5 @@ nextPITarget
 						ifFalse: [self errorXMLDeclarationNotAtBeginning]]
 				ifFalse: [
 					target asLowercase = 'xml'
-						ifTrue: [self errorXMLPITargetReserved]]].
+						ifTrue: [self errorReservedPITarget: target]]].
 	^ target.

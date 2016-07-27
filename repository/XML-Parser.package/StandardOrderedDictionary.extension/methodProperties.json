@@ -2,7 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"errorDuplicateXMLAttribute:" : "monty 3/9/2016 16:10",
-		"errorDuplicateXMLNamespace:" : "monty 3/9/2016 16:10",
-		"xmlAttributeAt:put:" : "monty 3/9/2016 16:10",
-		"xmlNamespaceAt:put:" : "monty 3/9/2016 16:10" } }
+		"xmlAt:newPut:" : "monty 3/15/2016 00:09" } }
