@@ -4,9 +4,12 @@ testDoctypeRoot
 
 	xml := '<!DOCTYPE root><invalidRoot/>'.
 	self
-		should: [XMLDOMParser parse: xml]
+		should: [SAXHandler parse: xml]
 		raise: XMLValidationException.
-	XMLDOMParser
-		parse: xml
-		usingNamespaces: false
-		validation: false.
+	self
+		shouldnt: [
+			SAXHandler
+				parse: xml
+				usingNamespaces: false
+				validation: false]
+		raise: XMLValidationException 

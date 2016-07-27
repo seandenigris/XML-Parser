@@ -1,11 +1,14 @@
 tests
 testElementAnyAndEmptyDeclarations
-	XMLDOMParser parse: 
-		'<!DOCTYPE addressbook [<!ELEMENT addressbook ANY>]>',
-		self addressBookXML.
+	self
+		shouldnt: [
+			SAXHandler parse: 
+				'<!DOCTYPE addressbook [<!ELEMENT addressbook ANY>]>',
+				self addressBookXML]
+		raise: XMLValidationException.
 	self
 		should: [
-			XMLDOMParser parse: 
+			SAXHandler parse: 
 				'<!DOCTYPE addressbook [<!ELEMENT addressbook EMPTY>]>',
 				self addressBookXML]
 		raise: XMLValidationException
