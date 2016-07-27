@@ -2,6 +2,7 @@ tokenizing dtd
 nextDocTypeDecl
 	|  root externalId |
 
+	context enterDoctype.
 	self expectNextAll: 'DOCTYPE'.
 	streamReader skipSeparators.
 

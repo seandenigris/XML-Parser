@@ -1,3 +1,3 @@
 private
 systemPathFrom: aFileSystemPath
-	^ self systemPathFromSegments: aFileSystemPath segments
+	^ self pathSeparator join: aFileSystemPath segments

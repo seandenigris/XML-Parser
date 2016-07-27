@@ -7,7 +7,8 @@ nextXMLDecl
 	context isInTextDeclaration
 		ifFalse: [standalone := self nextXMLDeclAttribute: 'standalone'].
 	streamReader skipSeparators.
-	self expectNextAll: '?>'.
+	self expectNext: $?.
+	self expectTerminator: $>.
 
 	encoding
 		ifNotEmpty: [streamReader useConverterForEncoding: encoding].

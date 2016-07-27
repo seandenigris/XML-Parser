@@ -11,7 +11,6 @@ nextAttributeValue
 		value := self
 			nextDelimitedBy: quote and: $<
 			entityChar: $&
-			entitySelector: #nextGeneralEntityReference
 			normalizeWhitespace: true
 			ignorableWhitespace: false].
 	self expectNext: quote.

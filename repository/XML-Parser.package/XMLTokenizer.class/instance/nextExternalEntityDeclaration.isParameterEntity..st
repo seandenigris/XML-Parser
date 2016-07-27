@@ -23,4 +23,4 @@ nextExternalEntityDeclaration: aName isParameterEntity: aBoolean
 				systemID: externalId value
 				ndata: notation].
 	self skipSeparatorsReplacingParameterEntities.
-	self expectNext: $>.
+	self expectTerminator: $>.

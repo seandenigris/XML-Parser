@@ -10,15 +10,17 @@ nextTag
 	driver usesNamespaces
 		ifTrue: [namespaces := OrderPreservingDictionary defaultValue: ''].
 	[streamReader skipSeparators.
-	((nextChar := streamReader peek) == $>
-		or: [nextChar == $/])]
+	((nextChar := streamReader peek) isNil
+		or: [nextChar == $>
+			or: [nextChar == $/]])]
 		whileFalse: [self nextAttributeInto: attributes namespaces: namespaces].
 
 	driver
 		handleStartTag: tagName
 		attributes: attributes
 		namespaces: namespaces.
-	streamReader next == $/
+	streamReader peek == $/
 		ifTrue: [
-			self expectNext: $>.
+			streamReader next.
 			driver handleEndTag: tagName].
+	self expectTerminator: $>.

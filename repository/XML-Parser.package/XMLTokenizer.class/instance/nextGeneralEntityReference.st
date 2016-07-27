@@ -4,10 +4,8 @@ nextGeneralEntityReference
 
 	name := self nextName.
 	self expectNext: $;.
-	(PredefinedEntities includesKey: name)
-		ifTrue: [
-			streamReader pushBack: (PredefinedEntities at: name).
-			^ self].
+	(self predefinedEntities includesKey: name)
+		ifTrue: [^ self predefinedEntities at: name].
 
 	replacement := ''.
 	(entity := driver handleGeneralEntityReference: name)
@@ -17,7 +15,7 @@ nextGeneralEntityReference
 					ifTrue: [entity replacementForLiteralContext]
 					ifFalse: [entity replacementForContentContext])].
 	replacement
-		ifEmpty: [^ self].
+		ifEmpty: [^ nil].
 
 	context isInContent
 		ifTrue: [driver handleStartContentEntityReplacement: name].
@@ -29,3 +27,5 @@ nextGeneralEntityReference
 				ifTrue: [driver handleEndContentEntityReplacement: name]
 				ifFalse: [nil]).
 	self checkForTextDeclarationInEntity: entity replacement: replacement.
+
+	^ nil.

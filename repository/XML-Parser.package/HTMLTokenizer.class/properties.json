@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-HTML",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"NameDelimiters",
+		"NonHtmlSectionTags" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nonHtmlCommentStarter",
+		"nonHtmlElement" ],
+	"name" : "HTMLTokenizer",
+	"pools" : [
+		 ],
+	"super" : "XMLTokenizer",
+	"type" : "normal" }

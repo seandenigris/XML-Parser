@@ -1,0 +1,3 @@
+testing
+isInDoctype
+	^ context == #inDoctype

@@ -1,7 +1,7 @@
 initialization
 setDriver: aDriver stream: aStream
 	driver := aDriver.
-	context := XMLTokenContext new.
+	context := self tokenContextClass new.
 	streamReader :=
 		(XMLNestedStreamReader
 			on: aStream

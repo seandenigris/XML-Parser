@@ -1,5 +1,5 @@
 tokenizing dtd
 nextEndInternalSubset
-	self expectNext: $].
+	self expectTerminator: $].
 	context enterProlog.
 	self nextEndDocTypeDecl.

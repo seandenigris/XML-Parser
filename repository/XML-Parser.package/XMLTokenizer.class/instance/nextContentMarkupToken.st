@@ -1,8 +1,5 @@
 tokenizing
 nextContentMarkupToken
-	"skip <"
-	streamReader next.
-
 	streamReader peek == $?
 		ifTrue: [^ self nextPIOrXMLDecl].
 	streamReader peek == $!

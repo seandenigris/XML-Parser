@@ -1,4 +1,4 @@
-searching
+enumerating
 allElementsDo: aBlock
 	"See superclass version."
 

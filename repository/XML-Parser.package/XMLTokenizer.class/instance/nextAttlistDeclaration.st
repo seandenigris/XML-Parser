@@ -17,4 +17,4 @@ nextAttlistDeclaration
 				type: attributeType
 				default: defaultDeclaration].
 	self skipSeparatorsReplacingParameterEntities.
-	self expectNext: $>.
+	self expectTerminator: $>.

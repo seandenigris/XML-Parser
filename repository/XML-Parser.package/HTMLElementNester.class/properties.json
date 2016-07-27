@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser-HTML",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"MutuallyExcludingTags",
+		"NestableTagGroups",
+		"NestableTags",
+		"SelfClosingTags" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"openElementsByName" ],
+	"name" : "HTMLElementNester",
+	"pools" : [
+		 ],
+	"super" : "XMLElementNester",
+	"type" : "normal" }

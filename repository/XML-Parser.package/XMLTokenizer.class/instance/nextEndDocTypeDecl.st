@@ -1,5 +1,6 @@
 tokenizing dtd
 nextEndDocTypeDecl
 	streamReader skipSeparators.
-	self expectNext: $>.
+	self expectTerminator: $>.
+	context enterProlog.
 	driver handleEndDTD.

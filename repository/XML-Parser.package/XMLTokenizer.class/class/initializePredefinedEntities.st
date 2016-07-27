@@ -1,8 +1,8 @@
 class initialization
 initializePredefinedEntities
 	(PredefinedEntities := Dictionary new)
-		at: 'lt' put: '&#60;';
-		at: 'gt' put: '&#62;';
-		at: 'amp' put: '&#38;';
-		at: 'apos' put: '&#39;';
-		at: 'quot' put: '&#34;'
+		at: 'lt' put: $<;
+		at: 'gt' put: $>;
+		at: 'amp' put: $&;
+		at: 'apos' put: $';
+		at: 'quot' put: $"

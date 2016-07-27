@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-HTML",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HTMLDriver",
+	"pools" : [
+		 ],
+	"super" : "SAXDriver",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 accessing
 elementNester
-	^ elementNester ifNil: [elementNester := XMLElementNester new]
+	^ elementNester ifNil: [elementNester := self elementNesterClass new]

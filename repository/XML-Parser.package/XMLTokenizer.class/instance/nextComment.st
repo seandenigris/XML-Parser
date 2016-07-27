@@ -5,5 +5,5 @@ nextComment
 	streamReader next.
 	self expectNext: $-.
 	comment := streamReader upToAll: '--'.
-	self expectNext: $>.
+	self expectTerminator: $>.
 	driver handleComment: comment.

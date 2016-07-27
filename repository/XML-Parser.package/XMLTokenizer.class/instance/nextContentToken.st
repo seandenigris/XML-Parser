@@ -5,7 +5,6 @@ nextContentToken
 	pcData := self
 		nextDelimitedBy: $< and: nil
 		entityChar: $&
-		entitySelector: #nextGeneralEntityReference
 		normalizeWhitespace: false
 		ignorableWhitespace: true.
 	pcData
@@ -14,4 +13,6 @@ nextContentToken
 			^ self].
 
 	streamReader peek == $<
-		ifTrue: [self nextContentMarkupToken].
+		ifTrue: [
+			streamReader next.
+			self nextContentMarkupToken].

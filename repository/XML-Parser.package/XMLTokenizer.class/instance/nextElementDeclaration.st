@@ -19,7 +19,7 @@ nextElementDeclaration
 					ifTrue: [writeStream nextPut: streamReader next]].
 		writeStream contents].
 	self skipSeparatorsReplacingParameterEntities.
-	self expectNext: $>.
+	self expectTerminator: $>.
 
 	driver
 		handleElementDeclaration: name

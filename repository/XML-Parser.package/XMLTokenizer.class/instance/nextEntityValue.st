@@ -8,7 +8,6 @@ nextEntityValue
 		value := self
 			nextDelimitedBy: quote and: nil
 			entityChar: $%
-			entitySelector: #nextParameterEntityReference
 			normalizeWhitespace: false
 			ignorableWhitespace: false].
 	self expectNext: quote.

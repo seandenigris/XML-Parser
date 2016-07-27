@@ -6,6 +6,7 @@ handleXMLVersion: aVersion encoding: anEncoding standalone: aYesOrNo
 		ifNotEmpty: [versionNumber := aVersion asNumber].
 
 	standaloneBoolean := aYesOrNo asLowercase = 'yes'.
+	self dtd isStandalone: standaloneBoolean.
 
 	self saxHandler
 		xmlVersion: versionNumber

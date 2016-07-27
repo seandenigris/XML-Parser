@@ -3,5 +3,5 @@ parser
 	self configuration parserHandlerClass: self class.
 
 	^ XMLParser
-		driver: (SAXDriver saxHandler: self)
+		driver: (self driverClass saxHandler: self)
 		on: input.

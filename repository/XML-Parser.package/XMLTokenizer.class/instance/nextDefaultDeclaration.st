@@ -15,6 +15,6 @@ nextDefaultDeclaration
 									nextPutAll: (self expectNextAll: 'FIXED');
 									space.
 								self skipSeparatorsReplacingParameterEntities.
-								writeStream nextPutAll: self nextFixedValue]]]
-			ifFalse: [writeStream nextPutAll: self nextFixedValue].
+								writeStream nextPutAll: self nextDefaultValue]]]
+			ifFalse: [writeStream nextPutAll: self nextDefaultValue].
 		self removeTrailingSpacesFrom: writeStream contents].
