@@ -5,26 +5,31 @@ test1attributeDeclarations
 		hasElementName: ''
 		attributeName: ''
 		type: ''
-		defaultDecl: ''.
+		default: ''
+		value: ''.
 	self
 		assertAttributeDecl:
 			(XMLAttributeDeclaration
 				element: 'testElement'
 				attribute: 'testAttribute'
 				type: 'CDATA'
-				defaultDeclaration: '')
+				defaultPragma: 'IMPLIED'
+				defaultValue: '')
 		hasElementName: 'testElement'
 		attributeName: 'testAttribute'
 		type: 'CDATA'
-		defaultDecl: ''.
+		default: 'IMPLIED'
+		value: ''.
 	self
 		assertAttributeDecl:
 			(XMLAttributeDeclaration
 				element: 'testElement'
 				attribute: 'testAttribute'
 				type: 'CDATA'
-				defaultDeclaration: '(one|two|three)')
+				defaultPragma: ''
+				defaultValue:  'one')
 		hasElementName: 'testElement'
 		attributeName: 'testAttribute'
 		type: 'CDATA'
-		defaultDecl: '(one|two|three)'.
+		default: ''
+		value: 'one'.

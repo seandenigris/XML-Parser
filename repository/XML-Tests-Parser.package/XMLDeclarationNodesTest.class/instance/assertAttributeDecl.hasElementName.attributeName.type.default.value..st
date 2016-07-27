@@ -1,12 +1,13 @@
 assertions
-assertAttributeDecl: anAttributeDeclaration hasElementName: anElementName attributeName: anAttributeName type: aType defaultDecl: aDefaultDeclaration
+assertAttributeDecl: anAttributeDeclaration hasElementName: anElementName attributeName: anAttributeName type: aType default: aDefaultPragma value: aDefaultValue
 	| printString |
 
 	self
 		assert: anAttributeDeclaration element = anElementName;
 		assert: anAttributeDeclaration attribute = anAttributeName;
 		assert: anAttributeDeclaration type = aType;
-		assert: anAttributeDeclaration defaultDeclaration = aDefaultDeclaration.
+		assert: anAttributeDeclaration defaultPragma = aDefaultPragma;
+		assert: anAttributeDeclaration defaultValue = aDefaultValue.
 
 	(printString := String new writeStream)
 		nextPutAll: '<!ATTLIST';
@@ -16,10 +17,19 @@ assertAttributeDecl: anAttributeDeclaration hasElementName: anElementName attrib
 		nextPutAll: anAttributeName;
 		space;
 		nextPutAll: aType.
-	aDefaultDeclaration ifNotEmpty: [
+
+	aDefaultPragma ifNotEmpty: [
 		printString
 			space;
-			nextPutAll: aDefaultDeclaration].
+			nextPutAll: (aDefaultPragma copyWithFirst: $#)].
+
+	aDefaultValue ifNotEmpty: [
+		printString
+			space;
+			nextPut: $";
+			nextPutAll: aDefaultValue;
+			nextPut: $"].
+
 	printString nextPut: $>.
 		
 	self assert: anAttributeDeclaration printString = printString contents.
