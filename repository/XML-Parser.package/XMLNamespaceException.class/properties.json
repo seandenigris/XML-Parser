@@ -10,5 +10,5 @@
 	"name" : "XMLNamespaceException",
 	"pools" : [
 		 ],
-	"super" : "XMLException",
+	"super" : "XMLParserException",
 	"type" : "normal" }

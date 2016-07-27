@@ -5,12 +5,12 @@
 	"classtraitcomposition" : "TXMLObservable classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 8/14/2010 20:50",
+	"commentStamp" : "<historical>",
 	"instvars" : [
+		"qualified",
 		"prefix",
-		"notifier",
 		"localPart",
-		"qualified" ],
+		"notifier" ],
 	"name" : "XMLNodeName",
 	"pools" : [
 		 ],

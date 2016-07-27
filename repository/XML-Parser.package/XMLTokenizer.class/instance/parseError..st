@@ -1,3 +1,3 @@
 errors
 parseError: errorString
-	XMLParseException signal: errorString
+	XMLParsingException signal: errorString

@@ -1,1 +1,1 @@
-The class represents a name for an element or attribute. It stores the prefix, local part and qualified name.
+The class represents a name for an element or attribute. It stores the prefix, local part and qualified name. It also notifies any observers whenever any part of the name it models changes.

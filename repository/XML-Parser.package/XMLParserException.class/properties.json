@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "XMLWellFormednessException",
+	"name" : "XMLParserException",
 	"pools" : [
 		 ],
-	"super" : "XMLParserException",
+	"super" : "Error",
 	"type" : "normal" }

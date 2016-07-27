@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "XMLWellFormednessException",
+	"name" : "XMLParsingException",
 	"pools" : [
 		 ],
 	"super" : "XMLParserException",

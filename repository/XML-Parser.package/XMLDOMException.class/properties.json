@@ -10,5 +10,5 @@
 	"name" : "XMLDOMException",
 	"pools" : [
 		 ],
-	"super" : "XMLException",
+	"super" : "XMLParserException",
 	"type" : "normal" }

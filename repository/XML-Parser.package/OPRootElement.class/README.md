@@ -1,1 +1,0 @@
-This is the default root node of the entire XML tree.

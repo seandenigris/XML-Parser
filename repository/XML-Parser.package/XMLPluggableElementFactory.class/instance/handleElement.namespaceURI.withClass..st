@@ -1,4 +1,4 @@
-accessing
+element handling
 handleElement: anElementName namespaceURI: aUri withClass: aClass
 	(self elementClassesByName
 		at: anElementName

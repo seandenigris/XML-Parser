@@ -1,18 +1,13 @@
-accessing
+element handling
 handleElementsMatchingClass: aClass
-	| className camelCaseName camelCaseStream hyphenatedStream |
+	| className |
 
-	(className := self removePrefixAndElementSuffixFrom: aClass name asString)
+	(className := self toNameWithoutPrefixAndElementSuffix: aClass name asString)
 		ifEmpty: [^ self].
 
-	camelCaseName := className allButFirst copyWithFirst: className first asLowercase.
-	self handleElement: camelCaseName withClass: aClass.
-
-	camelCaseStream := camelCaseName readStream.
-	hyphenatedStream := (String new: camelCaseName size) writeStream.
-	[camelCaseStream atEnd]
-		whileFalse: [
-			camelCaseStream peek isUppercase
-				ifTrue: [hyphenatedStream nextPut: $-].
-			hyphenatedStream nextPut: camelCaseStream next asLowercase].
-	self handleElement: hyphenatedStream contents withClass: aClass.
+	self
+		handleElement: (self toCamelCasedName: className)
+		withClass: aClass.
+	self
+		handleElement: (self toHyphenatedName: className)
+		withClass: aClass.

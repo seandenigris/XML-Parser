@@ -1,4 +1,4 @@
-accessing
+element handling
 handleElement: anElementName withClass: aClass
 	self
 		handleElement: anElementName
