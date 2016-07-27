@@ -17,7 +17,7 @@ addAttributeValidator: aValidator
 				each isIDValidator
 					ifTrue: [
 						XMLValidationException signal:
-							'Element <', aValidator element, '> has multiple ID elements']]].
+							'Element <', aValidator element, '> has multiple ID attributes']]].
 
 	attributeValidatorsForElement
 		at: aValidator attribute

@@ -3,8 +3,8 @@ handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId nd
 	aNotation
 		ifNotEmpty: [
 			self dtd
-				unparsedEntityAt: aName
-				put: aNotation]
+				addUnparsedEntity: aName
+				ndata: aNotation]
 		ifEmpty: [
 			self resolvesExternalEntities
 				ifTrue: [

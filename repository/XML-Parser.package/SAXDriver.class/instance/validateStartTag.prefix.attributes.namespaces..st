@@ -3,13 +3,16 @@ validateStartTag: aStartTag prefix: aPrefix attributes: anAttributeDictionary na
 	self usesNamespaces
 		ifTrue: [
 			self scopeAllocator enterScope.
+
 			aNamespaceDictionary
 				ifNotNil: [self declareNamespaces: aNamespaceDictionary].
-		aPrefix ifNotEmpty: [
-			self scopeAllocator
-				validatePrefix: aPrefix
-				ofElementName: aStartTag].
-		self scopeAllocator validatePrefixedAttributeNames: anAttributeDictionary].
+
+			aPrefix
+				ifNotEmpty: [
+					self scopeAllocator
+						validatePrefix: aPrefix
+						ofElementName: aStartTag].
+			self scopeAllocator validatePrefixedAttributeNames: anAttributeDictionary].
 
 	self isValidating
 		ifTrue: [
