@@ -1,3 +1,3 @@
 testing
-isMappedPrefix: aNamespace
-	^ self prefixMappings includesKey: aNamespace
+isMappedPrefix: aPrefix
+	^ self prefixMappings includesKey: aPrefix

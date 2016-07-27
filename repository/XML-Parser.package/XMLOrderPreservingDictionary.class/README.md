@@ -1,0 +1,1 @@
+The class is a Dictionary that preserves the order in which associations are added to it.

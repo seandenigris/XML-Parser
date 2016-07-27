@@ -12,6 +12,7 @@
 		"at:put:" : "JAAyer 3/10/2010 07:17",
 		"copy" : "JAAyer 3/10/2010 08:27",
 		"copyEmpty" : "JAAyer 3/10/2010 08:34",
+		"errorNodeWithParent" : "JAAyer 3/10/2010 23:53",
 		"parent" : "JAAyer 3/10/2010 07:31",
 		"parent:" : "JAAyer 3/10/2010 02:04",
 		"printOn:" : "JAAyer 3/10/2010 22:10",
@@ -22,6 +23,6 @@
 		"removeFirst" : "JAAyer 3/10/2010 07:33",
 		"removeLast" : "JAAyer 3/10/2010 07:33",
 		"species" : "JAAyer 3/10/2010 08:27",
-		"with:add:" : "JAAyer 3/10/2010 22:44",
+		"with:add:" : "JAAyer 3/10/2010 23:53",
 		"with:onError:" : "JAAyer 3/10/2010 03:21",
 		"with:remove:" : "JAAyer 3/10/2010 22:44" } }

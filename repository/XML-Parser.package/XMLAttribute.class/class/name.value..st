@@ -1,3 +1,3 @@
 instance creation
 name: aName value: aValue
-	^ self name: aName value: aValue scope: nil.
+	^ self new name: aName value: aValue

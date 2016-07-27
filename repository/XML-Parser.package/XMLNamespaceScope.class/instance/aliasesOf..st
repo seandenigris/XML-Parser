@@ -8,4 +8,4 @@ aliasesOf: aPrefix
 		ifUnmapped: [self errorUndefinedAttributePrefix: aPrefix asString].
 
 	^ self mappedPrefixes keys select: [:each |
-		self isPrefix: each mappedTo: uri].
+		(each ~= aPrefix) and: [self isPrefix: each mappedTo: uri]].
