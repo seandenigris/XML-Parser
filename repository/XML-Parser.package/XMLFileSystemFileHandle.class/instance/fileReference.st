@@ -1,3 +1,3 @@
-private
+accessing
 fileReference
-	^ fileReference ifNil: [fileReference := path asFileReference]
+	^ fileReference ifNil: [fileReference := self path asFileReference]

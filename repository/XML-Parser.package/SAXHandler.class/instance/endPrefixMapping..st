@@ -1,4 +1,6 @@
 handling - content
 endPrefixMapping: aPrefix
-	"This call corresonds to the Java SAX call
-	endPrefixMapping(java.lang.String prefix)."
+	"Handles the end of a namespace prefix/URI mapping when namespaces are
+	enabled. After, aPrefix (empty for the default namespace) will be either
+	unmapped or mapped to a different URI. The 'xml' prefix is predefined
+	and never unmapped."

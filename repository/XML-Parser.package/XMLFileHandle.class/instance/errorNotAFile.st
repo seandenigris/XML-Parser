@@ -2,4 +2,4 @@ private
 errorNotAFile
 	XMLFileException
 		formatSignal: 'Not a file: {1}'
-		with: path
+		with: self path

@@ -1,3 +1,0 @@
-private
-currentWorkingDirectoryPathString
-	self subclassResponsibility

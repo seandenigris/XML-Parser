@@ -1,3 +1,4 @@
 errors
 errorExpectedIntegerCharacterReference
-	self errorExpected: 'decimal or hex integer character reference'
+	self errorExpected:
+		'decimal or hex integer after "&#" character reference start'

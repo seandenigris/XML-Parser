@@ -1,4 +1,9 @@
 handling - content
 ignorableWhitespace: aString
-	"This call corresonds to the Java SAX call
-	ignorableWhitespace(char[] ch, int start, int length)."
+	"Handles ignorable whitespace in content, such as between '<outer>'
+	and '<inner>' or between '</inner>' and '</outer>' in:
+	'<outer>
+		<inner>test</inner>
+	<outer>'
+
+	Whitespace around character data is not ignorable."

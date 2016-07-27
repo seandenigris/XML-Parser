@@ -1,14 +1,18 @@
 instance creation
-onURL: aURLString upToLimit: aLimit
-	"Fetches URL and returns new parser on the response up to
-	the input limit (use nil to disable) but doesn't parse"
+onURL: aURLString upToLimit: aMaxSize
+	"Fetches a URL and returns new parser on the response content up to the
+	input limit (use nil to disable) but doesn't parse it. If the URL has
+	no scheme, it will be treated as a file path.
+
+	Can be used to configure limited URL parsers with 'configuring' messages
+	before parsing with parseDocument."
 
 	^ (self
 		on:
 			(XMLDecodingReadStreamAdapter on:
 				(aURLString asXMLURI
-					streamGetUpToLimit: aLimit
+					streamGetUpToLimit: aMaxSize
 					"disable decoding so we can do our own looking at byte order
 					marks and <?xml ...?> encoding attributes"
 					decoding: false))
-		documentURI: aURLString) documentReadLimit: aLimit
+		documentURI: aURLString) documentReadLimit: aMaxSize

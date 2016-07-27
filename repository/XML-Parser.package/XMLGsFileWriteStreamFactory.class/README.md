@@ -1,1 +1,1 @@
-A GsFile write stream factory. This stream is preferred for Gemstone because it does no encoding and accepts byte characters, so XMLParser can do its own encoding.
+A GsFile write stream factory. This stream is preferred for Gemstone because it does no encoding and accepts byte characters so XMLParser can do its own encoding.

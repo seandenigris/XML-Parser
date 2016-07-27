@@ -1,3 +1,3 @@
 instance creation
-onPath: aPath
-	^ self implementation fileReadStreamOnPath: aPath
+onPath: aPathString
+	^ self implementation basicOnPath: aPathString

@@ -22,7 +22,7 @@ nextPCDataToken
 								ifTrue: [self errorUnexpectedCDataTerminatorInPCData]
 								ifFalse: [streamReader pushBackCharacter: $]]].
 					isIgnorableWhitespace
-						ifTrue: [isIgnorableWhitespace := nextChar xmlParserIsSeparator].
+						ifTrue: [isIgnorableWhitespace := nextChar isXMLSeparator].
 					writeStream nextPut: nextChar]].
 	isIgnorableWhitespace
 		ifTrue: [

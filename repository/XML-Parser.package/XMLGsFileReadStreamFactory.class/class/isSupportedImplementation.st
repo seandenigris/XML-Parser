@@ -1,3 +1,3 @@
 testing
 isSupportedImplementation
-	^ (Smalltalk includesKey: #GsFile)
+	^ Smalltalk includesKey: #GsFile

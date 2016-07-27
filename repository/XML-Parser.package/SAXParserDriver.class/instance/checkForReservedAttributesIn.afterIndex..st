@@ -6,5 +6,5 @@ checkForReservedAttributesIn: anAttributeDictionary afterIndex: anIndex
 			anIndex + 1
 				to: anAttributeDictionary size
 				do: [:i |
-					(anAttributeDictionary keyAtIndex: i) isReservedAttributeName
+					(anAttributeDictionary keyAtIndex: i) isXMLReservedAttributeName
 						ifTrue: [^ self haveUnhandledReservedAttributes]]]

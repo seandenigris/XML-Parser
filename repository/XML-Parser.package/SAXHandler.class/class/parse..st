@@ -1,5 +1,5 @@
 parsing
 parse: aStringOrStream
-	"Parse document in argument string or stream"
+	"Parses the document in the string or stream argument"
 
 	^ (self on: aStringOrStream) parseDocument

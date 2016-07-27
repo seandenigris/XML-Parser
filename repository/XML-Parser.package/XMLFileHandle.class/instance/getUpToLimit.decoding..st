@@ -1,6 +1,6 @@
 retrieving
 getUpToLimit: aMaxSize decoding: aBoolean
-	| stream upToEnd |
+	| stream contents |
 
 	"can be safely implemented using streamGetUpToLimit:decoding: rather
 	than the other way around like XMLHTTPRequest requires, because files
@@ -10,7 +10,8 @@ getUpToLimit: aMaxSize decoding: aBoolean
 		self
 			streamGetUpToLimit: aMaxSize
 			decoding: aBoolean.
-	upToEnd := stream upToEnd.
+	"the read stream adapters don't support #contents so #upToEnd is used instead"
+	contents := stream upToEnd.
 	stream close.
 
-	^ upToEnd.
+	^ contents.

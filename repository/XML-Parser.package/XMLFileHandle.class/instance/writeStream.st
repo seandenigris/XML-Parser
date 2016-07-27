@@ -1,3 +1,3 @@
 writing
 writeStream
-	^ self writeStreamDecoding: true
+	^ XMLEncodingWriteStreamAdapter on: self rawWriteStream

@@ -1,3 +1,3 @@
 accessing
-path: aPath
-	path := aPath
+path: aPathString
+	path := aPathString

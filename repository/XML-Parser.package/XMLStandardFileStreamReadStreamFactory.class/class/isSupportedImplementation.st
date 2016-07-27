@@ -1,3 +1,3 @@
 testing
 isSupportedImplementation
-	^ (Smalltalk includesKey: #StandardFileStream)
+	^ Smalltalk includesKey: #StandardFileStream

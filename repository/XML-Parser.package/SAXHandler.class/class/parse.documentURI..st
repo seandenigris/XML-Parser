@@ -1,6 +1,7 @@
 parsing
 parse: aStringOrStream documentURI: aURIString
-	"Parse document in argument string or stream with associated base URI"
+	"Parses the document in the string or stream argument treating the specified
+	URI as the base URI of the document."
 
 	^ (self
 		on: aStringOrStream

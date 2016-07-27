@@ -1,5 +1,8 @@
 instance creation
 on: aStringOrStream
-	"Returns new parser on the argument string or stream but doesn't parse"
+	"Returns a new parser on the string or stream argument but doesn't parse it.
+
+	Can be used to configure a parser with 'configuring' messages before
+	parsing with parseDocument."
 
 	^ self new on: aStringOrStream

@@ -1,4 +1,3 @@
 handling - lexical
 endCData
-	"This call corresponds to the Java SAX ext call
-	endCData()."
+	"Sent after the character data of a '<![CDATA[...]]>' section."

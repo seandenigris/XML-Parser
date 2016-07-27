@@ -1,3 +1,0 @@
-private
-startCDataSection
-	isInCDataSection := true

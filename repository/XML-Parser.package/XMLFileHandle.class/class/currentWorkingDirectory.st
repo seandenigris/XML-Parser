@@ -1,3 +1,5 @@
 accessing
 currentWorkingDirectory
-	^ self implementation currentWorkingDirectoryPathString
+	"returns a path string for the current working directory"
+
+	^ self implementation basicCurrentWorkingDirectory

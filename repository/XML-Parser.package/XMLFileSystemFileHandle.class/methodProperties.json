@@ -1,10 +1,14 @@
 {
 	"class" : {
-		"currentWorkingDirectoryPathString" : "monty 4/6/2015 10:49",
+		"basicCurrentWorkingDirectory" : "monty 3/13/2016 21:17",
+		"fileReference:" : "monty 3/13/2016 13:11",
 		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
 	"instance" : {
-		"deleteFileOrDo:" : "monty 1/22/2014 19:10",
-		"fileReference" : "monty 1/13/2014 04:37",
+		"basicDelete" : "monty 3/13/2016 21:33",
+		"exists" : "monty 3/13/2016 00:31",
+		"fileReference" : "monty 3/12/2016 19:29",
+		"fileReference:" : "monty 3/12/2016 19:40",
 		"fileSize" : "monty 1/22/2014 19:07",
-		"fileSystemError" : "monty 1/22/2014 19:09",
-		"isFile" : "monty 1/13/2014 04:37" } }
+		"isFile" : "monty 1/13/2014 04:37",
+		"newFileReadStreamOnPath" : "monty 3/13/2016 23:10",
+		"newFileWriteStreamOnPath" : "monty 3/13/2016 23:10" } }

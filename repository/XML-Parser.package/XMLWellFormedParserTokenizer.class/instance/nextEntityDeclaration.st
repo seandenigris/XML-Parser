@@ -13,8 +13,8 @@ nextEntityDeclaration
 					streamReader peek == $%
 						ifTrue: [
 							streamReader next.
-							"nil understands xmlParserIsSeparator so no nil test is needed"
-							streamReader peek xmlParserIsSeparator
+							"nil understands isXMLSeparator so no nil test is needed"
+							streamReader peek isXMLSeparator
 								ifTrue: [
 									isParameterEntity := true.
 									self expectSeparatorsInDeclaration]

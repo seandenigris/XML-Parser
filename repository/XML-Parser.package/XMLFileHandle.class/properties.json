@@ -3,8 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "monty 11/20/2014 02:27",
+		"XMLDocumentFileExtensions" ],
+	"commentStamp" : "monty 3/13/2016 23:21",
 	"instvars" : [
 		"path" ],
 	"name" : "XMLFileHandle",

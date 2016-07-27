@@ -11,4 +11,4 @@ nextSubsetDeclaration
 	streamReader peek == $N
 		ifTrue: [^ self nextNotationDeclaration].
 
-	self errorExpected: 'DTD subset declaration'.
+	self errorExpectedSubsetDeclaration.

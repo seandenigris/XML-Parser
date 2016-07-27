@@ -1,6 +1,7 @@
 parsing
 parse: aStringOrStream usingNamespaces: aBoolean
-	"Parses string or stream possibly with namespace checking (default enabled)"
+	"Parses the document in the string or stream argument possibly with namespace
+	checking enabled (default)"
 
 	^ (self on: aStringOrStream)
 		usesNamespaces: aBoolean;

@@ -1,3 +1,8 @@
 deleting
 delete
-	self deleteFileOrDo: [:error | XMLFileException signalMessageFrom: error]
+	self exists
+		ifFalse: [self errorFileDoesNotExist].
+
+	[self basicDelete]
+		on: Error
+		do: [:error | XMLFileException signalMessageFrom: error].

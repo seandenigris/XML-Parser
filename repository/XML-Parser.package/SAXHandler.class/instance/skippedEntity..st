@@ -1,4 +1,5 @@
 handling - content
 skippedEntity: anEntityName
-	"This call corresonds to the Java SAX call
-	skippedEntity(java.lang.String name)."
+	"Sent when a general parsed entity reference like '&name;' is
+	unreplaced in content. Only sent when validation is turned off
+	or entity replacement is disabled."

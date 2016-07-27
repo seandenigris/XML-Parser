@@ -1,4 +1,3 @@
 handling - lexical
 startCData
-	"This call corresponds to the Java SAX ext call
-	startCData()."
+	"Sent before the character data of a '<![CDATA[...]]>' section."

@@ -2,12 +2,13 @@ tokenizing
 nextPITarget
 	| target |
 
-	target := self nextName.
-	context isXMLDeclarationContext
-		ifFalse: [
+	(target := self nextName) size = 3
+		ifTrue: [
 			target = 'xml'
-				ifTrue: [self errorXMLDeclarationNotAtBeginning]].
-	target = 'XML'
-		ifTrue: [self errorXMLPITargetReserved].
-
+				ifTrue: [
+					context isXMLDeclarationContext
+						ifFalse: [self errorXMLDeclarationNotAtBeginning]]
+				ifFalse: [
+					target asLowercase = 'xml'
+						ifTrue: [self errorXMLPITargetReserved]]].
 	^ target.

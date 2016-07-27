@@ -3,5 +3,5 @@ printOn: aStream
 	super printOn: aStream.
 	aStream
 		nextPut: $(;
-		nextPutAll: path;
+		nextPutAll: self path;
 		nextPut: $).

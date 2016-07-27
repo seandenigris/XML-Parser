@@ -8,8 +8,8 @@ nextTag
 	tagName := self nextName.
 
 	attributes := OrderPreservingStringDictionary new: 10.
-	"nil understands xmlParserIsSeparator so is not tested for"
-	[(nextChar := streamReader peek) xmlParserIsSeparator
+	"nil understands isXMLSeparator so is not tested for"
+	[(nextChar := streamReader peek) isXMLSeparator
 		and: [
 			streamReader
 				next;
@@ -26,7 +26,7 @@ nextTag
 	
 			(attributeName at: 1) == $x
 				ifTrue: [
-					(attributeName isNamespaceAttributeName
+					(attributeName isXMLNSAttributeName
 						and: [driver usesNamespaces])
 						ifTrue: [
 							"initialize only if needed"
@@ -38,7 +38,7 @@ nextTag
 										ifFalse: [''])
 								put: attributeValue]
 						ifFalse: [							
-							attributeName isReservedAttributeName
+							attributeName isXMLReservedAttributeName
 								ifTrue: [driver haveUnhandledReservedAttributes].
 							attributes
 								xmlAttributeAt: attributeName

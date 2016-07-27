@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asXMLEscapedString" : "monty 12/27/2014 02:57",
+		"asXMLEscapedString" : "monty 3/13/2016 20:11",
 		"asXMLFileHandle" : "monty 2/2/2016 17:37",
 		"asXMLHTTPRequest" : "monty 2/13/2016 00:35",
 		"asXMLStreamConverter" : "monty 3/5/2016 06:36",
@@ -10,9 +10,9 @@
 		"asXMLURI" : "monty 1/10/2014 00:56",
 		"expandWithNamespaceURI:" : "monty 3/22/2015 05:41",
 		"hasPrefixBeforeLocalName" : "monty 11/22/2014 20:01",
-		"isNamespaceAttributeName" : "monty 11/16/2014 19:47",
 		"isQualifiedName:orLocalName:" : "monty 12/27/2014 03:00",
-		"isReservedAttributeName" : "monty 11/2/2014 17:45",
+		"isXMLNSAttributeName" : "monty 3/13/2016 20:10",
+		"isXMLReservedAttributeName" : "monty 3/13/2016 20:10",
 		"localNameAfterPrefix" : "monty 11/16/2014 20:23",
 		"localNameAfterPrefix:" : "monty 11/16/2014 19:41",
 		"parseXML" : "monty 10/18/2014 05:47",

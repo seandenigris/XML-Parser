@@ -2,6 +2,5 @@
 	"class" : {
 		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
 	"instance" : {
-		"getResponseUpToLimit:decoding:timeout:onError:" : "monty 2/19/2016 10:30",
-		"isMaxSizeException:" : "monty 12/16/2014 20:26",
-		"setZincMaxEntitySize:during:onError:" : "monty 2/19/2016 10:31" } }
+		"basicGetUpToLimit:decoding:" : "monty 3/13/2016 23:38",
+		"isMaxSizeException:" : "monty 12/16/2014 20:26" } }

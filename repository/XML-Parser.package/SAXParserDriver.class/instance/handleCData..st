@@ -6,8 +6,8 @@ handleCData: aString
 		ifTrue: [self validator validatePCData: aString].
 
 	self saxHandler
+		isInCDataSection: true;
 		startCData;
-		startCDataSection;
 		characters: aString;
-		endCDataSection;
-		endCData.
+		endCData;
+		isInCDataSection: false.

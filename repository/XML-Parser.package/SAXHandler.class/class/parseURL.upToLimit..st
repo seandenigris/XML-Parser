@@ -1,7 +1,9 @@
 parsing
-parseURL: aURLString upToLimit: aLimit
-	"Fetches URL upto specified input limit (nil to disable) and parses response"
+parseURL: aURLString upToLimit: aMaxSize
+	"Fetches the URL upto the input limit (nil to disable) and parses the
+	response content. If the URL has no scheme, it will be treated as a file
+	path."
 
 	^ (self
 		onURL: aURLString
-		upToLimit: aLimit) parseDocument
+		upToLimit: aMaxSize) parseDocument

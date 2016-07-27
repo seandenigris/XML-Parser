@@ -12,7 +12,7 @@ nextCharacterReferenceOnWriteStream
 			(codePoint := streamReader nextIntegerPrintedOn: nameStream)
 				ifNil: [self errorExpectedIntegerCharacterReference].
 			(self characterFromCodePoint: codePoint)
-				ifNil: [self errorInvalidCodePoint: codePoint].
+				ifNil: [self errorInvalidCharacterReferenceCodePoint: codePoint].
 			self expectNext: $;.
 			writeStream
 				nextPutAll: '&#';
@@ -22,7 +22,7 @@ nextCharacterReferenceOnWriteStream
 			(codePoint := streamReader nextInteger)
 				ifNil: [self errorExpectedIntegerCharacterReference].
 			(character := self characterFromCodePoint: codePoint)
-				ifNil: [self errorInvalidCodePoint: codePoint].
+				ifNil: [self errorInvalidCharacterReferenceCodePoint: codePoint].
 			self expectNext: $;.
 			writeStream nextPut: character].
 	^ true.

@@ -8,7 +8,7 @@ printHostOn: aStream
 					atBeginning := true.
 					aStream nextPut: $[.
 					$:
-						xmlParserSplit:
+						xmlSplit:
 							(self host
 								copyFrom: 2
 								to: self host size - 1)

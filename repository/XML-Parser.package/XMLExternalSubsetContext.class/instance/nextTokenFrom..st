@@ -1,3 +1,3 @@
 tokenizing
 nextTokenFrom: aTokenizer
-	aTokenizer nextSubsetToken
+	aTokenizer nextExternalSubsetToken
