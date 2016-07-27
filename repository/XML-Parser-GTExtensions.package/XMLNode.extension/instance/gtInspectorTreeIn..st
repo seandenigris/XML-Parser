@@ -4,7 +4,7 @@ gtInspectorTreeIn: composite
 	^ composite tree
 		title: 'Tree';
 		display: [ {self} ];
-		children: #elements;
+		children: #treeNodeChildren;
 		format: #treeNodeLabelText;
-		when: [ self hasElements ];
+		when: [self hasTreeNodeChildren];
 		rootsExpanded

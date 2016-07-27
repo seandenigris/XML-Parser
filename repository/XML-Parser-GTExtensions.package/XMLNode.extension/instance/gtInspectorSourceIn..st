@@ -5,4 +5,4 @@ gtInspectorSourceIn: composite
 	"removed unfinished source panel editing support for now"
 	composite text 
 		title: 'Source';
-		format: [ self asHighlightedText ]
+		format: #asHighlightedText
