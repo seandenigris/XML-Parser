@@ -7,7 +7,9 @@ nextPCDataToken
 	[(nextChar := streamReader peek) == $<
 		or: [nextChar == nil]]
 		whileFalse: [
-			streamReader next == $&
+			streamReader next isXMLChar
+				ifFalse: [self errorNonCharInPCData: nextChar].
+			nextChar == $&
 				ifTrue: [
 					(streamReader peek == $#
 						ifTrue: [self nextCharacterReferenceOnWriteStream]

@@ -1,10 +1,10 @@
 *XML-Parser
-xmlSplit: aCollection
+xmlSplit: aString
 	"faster, portable version"
 	| parts |
 
 	parts := OrderedCollection new.
 	self
-		xmlSplit: aCollection
+		xmlSplit: aString
 		do: [:each | parts addLast: each].
 	^ parts.

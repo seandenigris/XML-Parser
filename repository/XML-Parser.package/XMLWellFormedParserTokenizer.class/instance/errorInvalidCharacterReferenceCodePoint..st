@@ -1,4 +1,5 @@
 errors
 errorInvalidCharacterReferenceCodePoint: aCodePoint
-	self parseError:
-		'Invalid character reference to code point U+', aCodePoint printStringHex
+	self
+		formatParseError: 'Invalid character reference to U+{1} code point'
+		with: aCodePoint printStringHex

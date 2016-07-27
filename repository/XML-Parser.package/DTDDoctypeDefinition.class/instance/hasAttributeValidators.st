@@ -1,3 +1,6 @@
 testing
 hasAttributeValidators
-	^ attributeValidators notNil and: [attributeValidators notEmpty]
+	"optimized to avoid lazy initialization"
+	attributeValidators == nil
+		ifTrue: [^ false].
+	^ attributeValidators size > 0.

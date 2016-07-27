@@ -1,3 +1,3 @@
 private
 entities
-	^ resolvedEntities ifNil: [resolvedEntities := Dictionary new]
+	^ entities ifNil: [entities := Dictionary new]

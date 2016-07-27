@@ -11,4 +11,4 @@ nextPIWithTarget: aTarget
 			self expectSeparators.
 			driver
 				handlePI: aTarget
-				data: (self expectUpToAll: '?>')].
+				data: self nextPIValue].

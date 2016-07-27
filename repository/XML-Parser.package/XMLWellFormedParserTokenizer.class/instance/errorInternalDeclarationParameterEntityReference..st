@@ -1,3 +1,6 @@
 errors
 errorInternalDeclarationParameterEntityReference: aName
-	self parseError: 'Parameter entity reference %', aName, '; in internal subset declaration'
+	self
+		formatParseError:
+			'Parameter entity reference %{1}; in internal subset declaration'
+		with: aName

@@ -1,14 +1,16 @@
 *XML-Parser
-xmlSplit: aCollection do: aBlock
+xmlSplit: aString do: aBlock
 	"faster, portable version"
 	| start |
 
 	start := 1.
-	1 to: aCollection size do: [:end |
-		((aCollection at: end) == self)
+	1 to: aString size do: [:end |
+		(aString at: end) == self
 			ifTrue: [
-				aBlock value: (aCollection copyFrom: start to: end - 1).
+				aBlock value: (aString copyFrom: start to: end - 1).
 				start := end + 1]].
-	start > aCollection size
-		ifTrue: [aBlock value: '']
-		ifFalse: [aBlock value: (aCollection copyFrom: start to: aCollection size)].
+	start > aString size
+		ifTrue: [
+			"either aString is empty or it ends with self"
+			aBlock value: '']
+		ifFalse: [aBlock value: (aString copyFrom: start to: aString size)].

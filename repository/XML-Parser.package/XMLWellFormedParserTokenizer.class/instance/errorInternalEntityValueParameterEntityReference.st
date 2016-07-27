@@ -1,3 +1,4 @@
 errors
 errorInternalEntityValueParameterEntityReference
-	self parseError: 'Internal entity values cannot contain parameter entity references'
+	self parseError:
+		'Internal entity values cannot contain parameter entity references'

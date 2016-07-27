@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "monty 3/22/2016 01:57",
 	"instvars" : [
-		"resolvedEntities" ],
+		"entities" ],
 	"name" : "DTDPluggableExternalEntityResolver",
 	"pools" : [
 		 ],

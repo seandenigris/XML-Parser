@@ -1,4 +1,4 @@
-tokenizing - dtd
+testing
 isInExternalSubsetOrExternallyDefinedEntity
 	context isExternalSubsetContext
 		ifTrue: [^ true].

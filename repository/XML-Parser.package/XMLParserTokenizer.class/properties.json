@@ -3,7 +3,6 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"CharacterConverter",
 		"PredefinedEntities" ],
 	"commentStamp" : "monty 6/16/2015 01:48",
 	"instvars" : [

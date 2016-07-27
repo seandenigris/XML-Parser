@@ -2,5 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"isXMLChar" : "monty 3/24/2016 20:03",
+		"isXMLNCNameChar" : "monty 3/25/2016 17:35",
+		"isXMLNCNameStartChar" : "monty 3/25/2016 17:35",
+		"isXMLNameChar" : "monty 3/24/2016 20:03",
+		"isXMLNameStartChar" : "monty 3/24/2016 20:03",
 		"isXMLSeparator" : "monty 3/12/2016 19:09",
 		"isXMLWhitespace" : "monty 3/12/2016 19:09" } }

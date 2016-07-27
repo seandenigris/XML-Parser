@@ -1,8 +1,10 @@
 errors
 errorDuplicateNamespace: aPrefix
-	self parseError:
-		(aPrefix
-			ifEmpty: [
-				'Duplicate default namespace declaration in start tag']
-			ifNotEmpty: [
-				'Duplicate namespace declaration "xmlns:', aPrefix, '" in start tag'])
+	aPrefix
+		ifEmpty: [
+			self parseError: 'Duplicate default namespace declaration in start tag']
+		ifNotEmpty: [
+			self
+				formatParseError:
+					'Duplicate namespace declaration "xmlns:{1}" in start tag'
+				with: aPrefix]

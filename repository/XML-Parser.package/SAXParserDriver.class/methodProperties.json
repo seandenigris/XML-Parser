@@ -37,6 +37,7 @@
 		"handleParameterEntityDeclaration:publicID:systemID:" : "monty 3/20/2016 19:51",
 		"handleParameterEntityDeclaration:replacement:" : "monty 3/2/2015 11:14",
 		"handleParameterEntityReference:" : "monty 3/2/2015 11:14",
+		"handleParseError:" : "monty 3/25/2016 05:11",
 		"handleReservedAttributes:" : "monty 11/6/2014 02:28",
 		"handleStartContent" : "monty 3/24/2015 20:28",
 		"handleStartContentEntityReplacement:" : "monty 12/18/2013 22:08",

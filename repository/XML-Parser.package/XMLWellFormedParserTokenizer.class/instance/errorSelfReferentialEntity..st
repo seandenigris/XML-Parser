@@ -1,3 +1,5 @@
 errors
 errorSelfReferentialEntity: anEntity
-	self parseError: 'Illegal self-referential entity ', anEntity asReference
+	self
+		formatParseError: 'Illegal self-referential {1} entity'
+		with: anEntity asReference

@@ -6,7 +6,10 @@ nextSystemIDLiteral
 	writeStream reset.
 	[(nextChar := streamReader peek) == nil
 		or: [nextChar == quote]]
-		whileFalse: [writeStream nextPut: streamReader next].
+		whileFalse: [
+			nextChar isXMLChar
+				ifFalse: [self errorNonCharInSystemID: nextChar].
+			writeStream nextPut: streamReader next].
 	self expectNext: quote.
 
 	^ writeStream contents.

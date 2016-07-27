@@ -1,3 +1,3 @@
 errors
 errorExpectedName
-	self errorExpected: 'a name'
+	self errorExpected: 'an XML name'

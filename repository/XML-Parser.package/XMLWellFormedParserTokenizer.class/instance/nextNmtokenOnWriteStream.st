@@ -3,11 +3,11 @@ nextNmtokenOnWriteStream
 	"matches the Nmtoken production"
 	| nextChar |
 
-	((nextChar := streamReader peek) notNil
-		and: [(NameChars includes: nextChar)])
+	"nil understands isXMLNameChar so it does not need to be tested for"
+	(nextChar := streamReader next) isXMLNameChar
 		ifFalse: [self errorExpectedNmtoken].
-	writeStream nextPut: streamReader next.
-		
-	[(nextChar := streamReader peek) notNil
-		and: [NameChars includes: nextChar]]
+	writeStream nextPut: nextChar.
+
+	"nil understands isXMLNameChar so it does not need to be tested for"
+	[(nextChar := streamReader peek) isXMLNameChar]
 		whileTrue: [writeStream nextPut: streamReader next].

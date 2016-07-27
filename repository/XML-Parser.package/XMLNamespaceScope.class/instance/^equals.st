@@ -2,9 +2,12 @@ comparing
 = anObject
 	self == anObject
 		ifTrue: [^ true].
-	self class == anObject class
+	self species == anObject species
 		ifFalse: [^ false].
 
-	^ self hasNamespaces
-		ifTrue: [anObject hasNamespaces and: [prefixMappings = anObject prefixMappings]]
-		ifFalse: [anObject hasNamespaces not].
+	self hasNamespaces
+		ifFalse: [^ anObject hasNamespaces not].
+
+	"use hasNamespaces first to avoid initializing anObject's prefixMappings"
+	^ anObject hasNamespaces
+		and: [prefixMappings = anObject prefixMappings].

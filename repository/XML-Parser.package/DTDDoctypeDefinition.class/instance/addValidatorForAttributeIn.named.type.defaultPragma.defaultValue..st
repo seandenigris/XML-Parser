@@ -6,17 +6,19 @@ addValidatorForAttributeIn: anElement named: anAttribute type: aType defaultPrag
 		self attributeValidators
 			at: anElement
 			ifAbsentPut: [Dictionary new].
-	(attributeValidatorsForElement includesKey: anAttribute)
-		ifTrue: [^ self].
 
-	attributeValidatorsForElement
-		at: anAttribute
-		put: 
-			((DTDAttributeDefinitionParser
-				element:  anElement
-				attribute: anAttribute
-				type: aType
-				defaultPragma: aDefaultPragma
-				defaultValue: aDefaultValue) parse
-					initializeWithValidatorsFrom: self;
-					validateDeclaration).
+	"additional declarations for the same attribute are legal, unlike with
+	element declarations, but are ignored"
+	(attributeValidatorsForElement includesKey: anAttribute)
+		ifFalse: [
+			attributeValidatorsForElement
+				at: anAttribute
+				put: 
+					((DTDAttributeDefinitionParser
+						element:  anElement
+						attribute: anAttribute
+						type: aType
+						defaultPragma: aDefaultPragma
+						defaultValue: aDefaultValue) parse
+							initializeWithValidatorsFrom: self;
+							validateDeclaration)].

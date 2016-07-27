@@ -1,9 +1,10 @@
 decoding
 characterFromCodePoint: aCodePoint
 	(aCodePoint notNil
-		and: [aCodePoint > 0])
+		and: [aCodePoint > 0
+			and: [aCodePoint <= 16r10FFFF]])
 		ifTrue: [
-			^ [CharacterConverter characterFromCodePoint: aCodePoint]
+			^ [Character value: aCodePoint]
 				on: Error
 				do: [:error | nil]]
-		ifFalse: [^ nil].
+		ifFalse: [^ nil]

@@ -4,8 +4,8 @@ initializePublicIDChars
 
 	(PublicIDChars := BitmapCharacterSet new)
 		add: 16r20 asCharacter;
-		add: 16r0D asCharacter;
-		add: 16r0A asCharacter;
+		add: 16rD asCharacter;
+		add: 16rA asCharacter;
 		addRangeFrom: $a to: $z;
 		addRangeFrom: $A to: $Z;
 		addRangeFrom: $0 to: $9;

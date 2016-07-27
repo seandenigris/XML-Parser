@@ -4,8 +4,6 @@
 		 ],
 	"classvars" : [
 		"EncodingNameChars",
-		"NameChars",
-		"NonNameStartCharNameChars",
 		"NormalizedSpace",
 		"PublicIDChars" ],
 	"commentStamp" : "monty 6/15/2015 23:55",

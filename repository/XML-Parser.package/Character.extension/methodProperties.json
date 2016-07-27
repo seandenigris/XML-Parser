@@ -3,7 +3,12 @@
 		"xmlSeparators" : "monty 3/12/2016 19:10",
 		"xmlWhitespace" : "monty 3/12/2016 19:10" },
 	"instance" : {
-		"isXMLSeparator" : "monty 3/12/2016 19:09",
-		"isXMLWhitespace" : "monty 3/12/2016 19:09",
-		"xmlSplit:" : "monty 3/12/2016 19:12",
-		"xmlSplit:do:" : "monty 3/12/2016 19:11" } }
+		"isXMLChar" : "monty 3/25/2016 05:35",
+		"isXMLNCNameChar" : "monty 3/25/2016 05:42",
+		"isXMLNCNameStartChar" : "monty 3/25/2016 05:44",
+		"isXMLNameChar" : "monty 3/25/2016 05:53",
+		"isXMLNameStartChar" : "monty 3/25/2016 05:43",
+		"isXMLSeparator" : "monty 3/25/2016 05:39",
+		"isXMLWhitespace" : "monty 3/25/2016 05:38",
+		"xmlSplit:" : "monty 3/25/2016 02:03",
+		"xmlSplit:do:" : "monty 3/25/2016 02:03" } }

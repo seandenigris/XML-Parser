@@ -1,4 +1,6 @@
 testing
 hasNamespaces
-	^ prefixMappings notNil
-		and: [prefixMappings size > 0]
+	"optimized to avoid lazy initialization"
+	prefixMappings == nil
+		ifTrue: [^ false].
+	^ prefixMappings size > 0.

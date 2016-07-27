@@ -1,3 +1,5 @@
 errors
 errorDuplicateAttribute: anAttributeName
-	self parseError: 'Duplicate attribute "', anAttributeName, '" in start tag'
+	self
+		formatParseError: 'Duplicate attribute "{1}" in start tag'
+		with: anAttributeName

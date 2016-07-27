@@ -3,7 +3,7 @@ comparing
 	self == anObject
 		ifTrue: [^ true].
 
-	self class == anObject class
+	self species == anObject species
 		ifFalse: [^ false].
 
 	self scheme = anObject scheme

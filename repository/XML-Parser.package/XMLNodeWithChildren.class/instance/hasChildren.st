@@ -1,5 +1,6 @@
 testing
 hasChildren
-	"nil test and size check to avoid lazy initializing"
-	^ nodes notNil
-		and: [nodes size > 0]
+	"optimized with nil test and size check to avoid lazy initializing"
+	nodes == nil
+		ifTrue: [^ false ].
+	^ nodes size > 0.

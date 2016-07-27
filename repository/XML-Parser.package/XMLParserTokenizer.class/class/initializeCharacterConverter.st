@@ -1,3 +1,0 @@
-class initialization
-initializeCharacterConverter
-	CharacterConverter := XMLUTF8StreamConverter new

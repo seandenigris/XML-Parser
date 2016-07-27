@@ -6,12 +6,10 @@ isXMLWhitespace
 
 	(tempValue := self asciiValue) = 32 "space"
 		ifTrue: [^ true].
-	tempValue = 10 "lf"
+	tempValue = 10 "line feed"
 		ifTrue: [^ true].
 	tempValue = 9 "tab"
 		ifTrue: [^ true].
-	tempValue = 13 "cr"
+	tempValue = 13 "carriage return"
 		ifTrue: [^ true].
-	tempValue = 12 "form feed"
-		ifTrue: [^ true].
-	^ false.
+	^ tempValue = 12. "form feed"

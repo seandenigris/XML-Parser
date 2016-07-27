@@ -1,4 +1,4 @@
 validating
 validateNmtoken: aName
-	(XMLWellFormedParserTokenizer isNmtoken: aName)
+	aName isXMLNmtoken
 		ifFalse: [self errorInvalidNmtoken: aName]

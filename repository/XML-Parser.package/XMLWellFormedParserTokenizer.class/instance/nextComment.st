@@ -10,8 +10,11 @@ nextComment
 	writeStream reset.
 	[(nextChar := streamReader next) == nil
 		or: [nextChar == $-
-			and: [(streamReader peek) == $-]]]
-		whileFalse: [writeStream nextPut: nextChar].
+			and: [streamReader peek == $-]]]
+		whileFalse: [
+			nextChar isXMLChar
+				ifFalse: [self errorNonCharInComment: nextChar].
+			writeStream nextPut: nextChar].
 	self
 		expectNext: $-;
 		expectTerminator.

@@ -1,3 +1,3 @@
 errors
 errorExpectedNmtoken
-	self errorExpected: 'a Nmtoken name'
+	self errorExpected: 'an XML Nmtoken name'
