@@ -6,8 +6,8 @@ testOnURL
 		ifTrue: [self skip].
 
 	self
-		shouldnt: [parser := SAXHandler onURL: self rssURL]
+		shouldnt: [parser := SAXHandler onURL: self feedURL]
 		raise: XMLHTTPException.
 	self
-		assert: parser documentURI = self rssURL;
+		assert: parser documentURI = self feedURL;
 		deny: parser documentURI asXMLURI isLocalURI.

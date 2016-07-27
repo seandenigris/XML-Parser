@@ -6,6 +6,6 @@
 		"testExternalEntitiesLimit" : "monty 2/11/2014 01:02",
 		"testExternalEntitySizeLimit" : "monty 2/11/2014 00:56",
 		"testExternalSubsetReadLimit" : "monty 2/11/2014 00:56",
-		"testOnURLUpToLimit" : "monty 2/11/2014 00:56",
+		"testOnURLUpToLimit" : "monty 9/29/2014 12:12",
 		"testRemoveLimits" : "monty 1/24/2014 07:03",
 		"testResolvingLocalFromNonLocal" : "monty 1/24/2014 17:33" } }

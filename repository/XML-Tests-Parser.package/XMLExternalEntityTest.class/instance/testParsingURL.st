@@ -7,6 +7,6 @@ testParsingURL
 		ifTrue: [self skip].
 
 	self
-		shouldnt: [doc := XMLDOMParser parseURL: self rssURL]
+		shouldnt: [doc := XMLDOMParser parseURL: self feedURL]
 		raise: XMLHTTPException.
-	self assert: (doc root isNamed: 'rss').
+	self assert: (doc root isNamed: 'feed').
