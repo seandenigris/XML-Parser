@@ -1,5 +1,5 @@
 *XML-Parser-GemstoneCompatibility
-expandWithNamespaceURI: aNamespaceUri
-	aNamespaceUri size > 0
-		ifTrue: [^ 'Q{', aNamespaceUri, '}', self]
+expandWithNamespaceURI: aURI
+	aURI size > 0
+		ifTrue: [^ 'Q{', aURI, '}', self]
 		ifFalse: [^ self]
