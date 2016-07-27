@@ -1,3 +1,5 @@
 accessing
 firstElement
-	^ self elements first
+	^ self cachedElements
+		at: 1
+		ifAbsent: [self defaultValue]

@@ -1,15 +1,12 @@
 accessing
 elementsAt: aName
-	| elementsWithName |
+	| elementsWithName copiedElements |
 
-	elementsWithName :=
-		self elementsByName
+	copiedElements := self copyEmpty.
+	(elementsWithName :=
+		self cachedElementsByName
 			at: aName
-			ifAbsent: [^ self species new].
-
-	^ elementsWithName isCollection
-		ifTrue: [elementsWithName]
-		ifFalse: [
-			self elementsByName
-				at: aName
-				put: (self species with: elementsWithName)]
+			ifAbsent: [^ copiedElements]) isCollection
+		ifTrue: [copiedElements addAll: elementsWithName]
+		ifFalse: [copiedElements addLast: elementsWithName].
+	^ copiedElements.

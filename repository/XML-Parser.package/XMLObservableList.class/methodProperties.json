@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"observer:" : "monty 10/18/2014 01:02" },
+		"observer:" : "monty 10/18/2014 01:02",
+		"ofSize:" : "monty 1/17/2015 11:52" },
 	"instance" : {
 		"add:after:" : "JAAyer 8/4/2010 14:46",
 		"add:afterIndex:" : "JAAyer 7/22/2010 10:56",
@@ -10,9 +11,9 @@
 		"addLast:" : "monty 2/6/2014 01:02",
 		"afterAdding:" : "monty 10/18/2014 00:51",
 		"afterRemoving:" : "monty 10/18/2014 00:51",
-		"at:put:" : "JAA 3/21/2011 20:08",
+		"at:put:" : "monty 1/18/2015 13:09",
 		"beforeAdding:" : "monty 10/18/2014 00:51",
-		"deepCopyWithObserver:" : "monty 10/29/2014 09:35",
+		"deepCopyWithObserver:" : "monty 1/16/2015 13:09",
 		"observer" : "monty 10/18/2014 00:50",
 		"observer:" : "monty 10/18/2014 00:50",
 		"remove:ifAbsent:" : "JAAyer 7/22/2010 10:58",

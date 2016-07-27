@@ -1,0 +1,3 @@
+private
+copyClass
+	^ self class

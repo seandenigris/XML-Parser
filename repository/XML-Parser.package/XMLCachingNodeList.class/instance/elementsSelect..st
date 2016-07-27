@@ -1,3 +1,9 @@
 enumerating
 elementsSelect: aBlock
-	^ self elements select: aBlock
+	| selectedElements |
+
+	selectedElements := self copyEmpty.
+	self cachedElements do: [:each |
+		(aBlock value: each)
+			ifTrue: [selectedElements addLast: each]].
+	^ selectedElements.

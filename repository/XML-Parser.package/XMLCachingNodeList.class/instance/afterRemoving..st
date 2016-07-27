@@ -2,8 +2,13 @@ private
 afterRemoving: aNode
 	aNode isElement
 		ifTrue: [
-			self elements remove: aNode.
-			self elementsByNameAt: aNode name removeElement: aNode.
+			self cachedElements remove: aNode.
+			self
+				cachedElementsByNameAt: aNode name
+				removeElement: aNode.
 			aNode hasPrefix
-				ifTrue: [self elementsByNameAt: aNode localName removeElement: aNode]].
+				ifTrue: [
+					self
+						cachedElementsByNameAt: aNode localName
+						removeElement: aNode]].
 	super afterRemoving: aNode.

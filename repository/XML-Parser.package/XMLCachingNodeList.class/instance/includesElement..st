@@ -1,3 +1,3 @@
 testing
 includesElement: aName
-	^ self elementsByName includesKey: aName
+	^ self cachedElementsByName includesKey: aName

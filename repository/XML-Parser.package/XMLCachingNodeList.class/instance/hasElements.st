@@ -1,3 +1,3 @@
 testing
 hasElements
-	^ elements notNil and: [elements notEmpty]
+	^ cachedElements notNil and: [cachedElements notEmpty]

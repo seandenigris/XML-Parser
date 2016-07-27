@@ -1,3 +1,5 @@
 copying
-copyWith: anElement 
-	^ self newWithCollection: (collection copyWith: anElement)
+copyWith: anObject
+	^ self copy
+		addLast: anObject;
+		yourself

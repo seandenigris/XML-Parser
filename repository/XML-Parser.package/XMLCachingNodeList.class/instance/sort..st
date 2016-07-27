@@ -1,7 +1,7 @@
 sorting
 sort: aSortBlock
 	super sort: aSortBlock.
-	self elements sort: aSortBlock.
-	self elementsByName valuesDo: [:each |
+	self cachedElements sort: aSortBlock.
+	self cachedElementsByName valuesDo: [:each |
 		each isCollection
 			ifTrue: [each sort: aSortBlock]].

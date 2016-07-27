@@ -1,3 +1,5 @@
 accessing
 lastElement
-	^ self elements last
+	^ self cachedElements
+		at: self cachedElements size
+		ifAbsent: [self defaultValue]

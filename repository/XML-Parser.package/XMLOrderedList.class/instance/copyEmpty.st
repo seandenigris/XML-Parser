@@ -1,3 +1,3 @@
 copying
 copyEmpty
-	^ self newWithCollection: collection copyEmpty
+	^ self copyClass collection: collection copyEmpty

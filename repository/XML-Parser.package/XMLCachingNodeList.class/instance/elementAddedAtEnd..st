@@ -1,11 +1,11 @@
 private
 elementAddedAtEnd: anElement
-	self elements add: anElement.
+	self cachedElements addLast: anElement.
 	self
-		elementsByNameAt: anElement name
+		cachedElementsByNameAt: anElement name
 		addElement: anElement.
 	anElement hasPrefix
 		ifTrue: [
 			self
-				elementsByNameAt: anElement localName
+				cachedElementsByNameAt: anElement localName
 				addElement: anElement]

@@ -1,3 +1,5 @@
 accessing
 elements
-	^ elements ifNil: [elements := self species new]
+	^ self copyEmpty
+		addAll: self cachedElements;
+		yourself

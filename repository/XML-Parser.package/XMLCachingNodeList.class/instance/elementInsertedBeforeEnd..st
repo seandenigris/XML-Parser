@@ -1,13 +1,13 @@
 private
 elementInsertedBeforeEnd: anElement
-	| elementAfter |
-
-	elementAfter := self findElementAfter: anElement.
-	self elements add: anElement before: elementAfter.
-
-	self elementsByNameAt: anElement name insertElement: anElement.
+	self cachedElements
+		add: anElement
+		before: (self findElementAfter: anElement).
+	self
+		cachedElementsByNameAt: anElement name
+		insertElement: anElement.
 	anElement hasPrefix
 		ifTrue: [
 			self
-				elementsByNameAt: anElement localName
-				insertElement: anElement]
+				cachedElementsByNameAt: anElement localName
+				insertElement: anElement].

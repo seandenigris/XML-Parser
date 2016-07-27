@@ -1,11 +1,9 @@
 accessing
 at: anIndex put: anObject
-	| presentObject |
-
-	(presentObject := self at: anIndex)
-		ifNotNil: [
+	(self at: anIndex ifAbsent: nil)
+		ifNotNil: [:oldObject |
 			self
 				with: [super at: anIndex put: nil]
-				remove: presentObject].
+				remove: oldObject].
 
 	^ self with: [super at: anIndex put: anObject] add: anObject.

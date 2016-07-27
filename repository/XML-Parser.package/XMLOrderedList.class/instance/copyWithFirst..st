@@ -1,3 +1,6 @@
 copying
 copyWithFirst: anObject
-	^ self newWithCollection: (collection copyWithFirst: anObject)
+	^ self copyEmpty
+		addLast: anObject;
+		addAll: self;
+		yourself

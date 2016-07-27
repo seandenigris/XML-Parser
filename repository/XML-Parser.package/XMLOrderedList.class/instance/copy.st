@@ -1,3 +1,5 @@
 copying
 copy
-	^ self newWithCollection: collection copy
+	^ self copyEmpty
+		addAll: self;
+		yourself

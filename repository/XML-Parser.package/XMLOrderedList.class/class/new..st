@@ -1,3 +1,3 @@
 instance creation
-new: aSize
-	^ self basicNew setCollection: (self collectionClass new: aSize)
+new: aCapacity
+	^ self basicNew setCollection: (self collectionClass new: aCapacity)
