@@ -1,5 +1,5 @@
 *XML-Parser-GTExtensions
-hasTreeNodeChildren
+requiresTreeView
 	^ self hasChildren
 		and: [self nodes size > 1
-			or: [self nodes first isStringNode not]]
+			or: [self firstNode isStringNode not]]

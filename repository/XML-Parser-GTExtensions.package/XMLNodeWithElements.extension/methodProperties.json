@@ -2,6 +2,9 @@
 	"class" : {
 		"gtExampleXmlNode" : "monty 9/20/2015 22:19" },
 	"instance" : {
+		"addTreeViewChildrenTo:" : "monty 4/16/2016 13:18",
+		"requiresTreeView" : "monty 4/16/2016 13:12",
 		"spotterForAllElementsFor:" : "monty 10/1/2015 06:03",
 		"spotterForDirectElementsFor:" : "monty 10/1/2015 06:03",
-		"spotterPreviewSourceIn:" : "monty 9/29/2015 23:16" } }
+		"spotterPreviewSourceIn:" : "monty 9/29/2015 23:16",
+		"treeViewChildren" : "monty 4/16/2016 13:18" } }

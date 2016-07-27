@@ -1,3 +1,3 @@
 *XML-Parser-GTExtensions
-hasTreeNodeChildren
+requiresTreeView
 	^ self hasChildren

@@ -1,5 +1,5 @@
 *XML-Parser-GTExtensions
-treeNodeChildren
-	self hasTreeNodeChildren
+treeViewChildren
+	self hasChildren
 		ifTrue: [^ self nodes]
 		ifFalse: [^ #()]

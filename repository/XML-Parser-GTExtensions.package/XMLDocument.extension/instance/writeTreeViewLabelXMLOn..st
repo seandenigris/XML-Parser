@@ -1,3 +1,3 @@
 *XML-Parser-GTExtensions
-writeTreeNodeLabelXMLOn: aWriter
+writeTreeViewLabelXMLOn: aWriter
 	self writeXMLDeclarationOn: aWriter
