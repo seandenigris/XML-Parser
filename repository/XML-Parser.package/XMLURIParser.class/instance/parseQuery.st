@@ -7,11 +7,11 @@ parseQuery
 		ifFalse: [^ query].
 
 	[self atEnd
-		or: [(key := self nextPercentOrPlusEncodedDelimitedBy: '=&#') isEmpty
+		or: [(key := self nextPercentOrPlusEncodedDelimitedBy: QueryKeyDelimiters) isEmpty
 			and: [self peek == $#]]]
 		whileFalse: [| hasValue |
 			(hasValue := self peekFor: $=)
-				ifTrue: [value := self nextPercentOrPlusEncodedDelimitedBy: '&#']
+				ifTrue: [value := self nextPercentOrPlusEncodedDelimitedBy: QueryValueDelimiters]
 				ifFalse: [value := ''].
 			(key notEmpty
 				or: [hasValue])

@@ -6,5 +6,5 @@ parseHost
 		ifTrue: [
 			host := (self nextPercentEncodedDelimitedBy: ']') copyWith: $].
 			self peekFor: $]]
-		ifFalse: [host := self nextPercentEncodedDelimitedBy: ':/?#'].
+		ifFalse: [host := self nextPercentEncodedDelimitedBy: HostDelimiters].
 	^ host asLowercase.

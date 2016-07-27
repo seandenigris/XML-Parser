@@ -7,7 +7,9 @@ printPercentEncodedCharacter: aCharacter on: aStream
 			aStream nextPut: $%.
 			asciiValue < 16
 				ifTrue: [aStream nextPut: $0].
+			"printOn:base: on GS shows the radix, so the three arg form is used instead"
 			asciiValue
 				printOn: aStream
-				base: 16]
+				base: 16
+				showRadix: false]
 		ifFalse: [aStream nextPut: aCharacter]

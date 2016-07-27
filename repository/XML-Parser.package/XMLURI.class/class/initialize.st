@@ -6,7 +6,4 @@ initialize
 		addAll: ($a to: $z);
 		addAll: ($A to: $Z);
 		addAll: ($0 to: $9);
-		add: $-;
-		add: $.;
-		add: $_;
-		add: $~
+		addAll: '-._~'

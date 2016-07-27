@@ -8,7 +8,10 @@ printHostOn: aStream
 					atBeginning := true.
 					aStream nextPut: $[.
 					$:
-						xmlParserSplit: self host allButFirst allButLast
+						xmlParserSplit:
+							(self host
+								copyFrom: 2
+								to: self host size - 1)
 						do: [:each |
 							atBeginning
 								ifTrue: [atBeginning := false]

@@ -9,6 +9,6 @@ parsePort
 					nextIntegerWithBase: 10
 					upTo: nil.
 			[self atEnd
-				or: ['/?#' includes: self peek]]
+				or: [PathDelimiters includes: self peek]]
 				whileFalse: [self next]].
 	^ port.
