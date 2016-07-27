@@ -1,3 +1,0 @@
-accessing
-defaultImplementation
-	self subclassResponsibility

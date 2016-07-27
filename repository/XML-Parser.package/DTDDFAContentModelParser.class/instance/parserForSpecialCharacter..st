@@ -1,8 +1,8 @@
 parsing
 parserForSpecialCharacter: aCharacter
-	| i |
+	| asciiValue |
 
-	^ ((i := aCharacter asciiValue) > 0
-		and: [i <= SpecialCharacterParsers size])
-			ifTrue: [SpecialCharacterParsers at: i]
+	^ ((asciiValue := aCharacter asciiValue) > 0
+		and: [asciiValue <= SpecialCharacterParsers size])
+			ifTrue: [SpecialCharacterParsers at: asciiValue]
 			ifFalse: [nil]

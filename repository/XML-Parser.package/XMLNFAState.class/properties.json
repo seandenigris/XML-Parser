@@ -10,5 +10,5 @@
 	"name" : "XMLNFAState",
 	"pools" : [
 		 ],
-	"super" : "XMLFAState",
+	"super" : "Object",
 	"type" : "normal" }

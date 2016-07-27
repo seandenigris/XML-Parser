@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 1/7/2014 19:39",
 	"instvars" : [
 		"fragmentStack" ],
 	"name" : "XMLNFABuilder",

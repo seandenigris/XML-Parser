@@ -1,1 +1,0 @@
-A base class for HTTP clients. See the Zinc implementation for an example.

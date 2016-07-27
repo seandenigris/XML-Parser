@@ -1,5 +1,11 @@
 resolving
 resolveEntity: aUri
-	^ (self entityCache
-		at: aUri
-		ifAbsentPut: [(super resolveEntity: aUri) contents]) readStream
+	| uri |
+
+	^ (uri := aUri asXMLURI) isLocalURI
+		ifTrue: [super resolveEntity: uri]
+		ifFalse: [
+			ReadStream on:
+				(self class
+					entityCacheAt: uri
+					ifAbsentPut: [(super resolveEntity: uri) contents])]

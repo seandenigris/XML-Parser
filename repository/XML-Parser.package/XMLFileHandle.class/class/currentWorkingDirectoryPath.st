@@ -1,0 +1,3 @@
+private
+currentWorkingDirectoryPath
+	self subclassResponsibility

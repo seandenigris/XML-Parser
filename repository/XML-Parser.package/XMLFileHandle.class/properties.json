@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-File",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 1/9/2014 23:28",
+	"instvars" : [
+		"path" ],
+	"name" : "XMLFileHandle",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

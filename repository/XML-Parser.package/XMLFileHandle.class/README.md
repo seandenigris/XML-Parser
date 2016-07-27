@@ -1,0 +1,1 @@
+This is an abstract class for file handles to read files from disk.

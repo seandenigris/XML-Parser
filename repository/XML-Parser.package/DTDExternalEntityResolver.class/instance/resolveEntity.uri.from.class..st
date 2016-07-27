@@ -1,12 +1,12 @@
 private
 resolveEntity: aName uri: anEntityUri from: aSourceUri class: aClass
-	| absoluteUri |
+	| combinedUri |
 
-	absoluteUri :=
+	combinedUri :=
 		self
-			entityURIFromRelative: anEntityUri
-			andBase: aSourceUri.
+			combineURI: aSourceUri
+			with: anEntityUri.
 	^ aClass
 		name: aName
-		replacement: (self resolveEntity: absoluteUri) contents
-		uri: absoluteUri.
+		replacement: (self resolveEntity: combinedUri) contents
+		uri: combinedUri asString.

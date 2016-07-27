@@ -1,5 +1,5 @@
 instance creation
 onURL: aUrlString
 	^ self
-		on: (XMLHTTPClient defaultImplementation get: aUrlString)
+		on: (XMLHTTPRequest defaultImplementation url: aUrlString) get
 		documentURI: aUrlString

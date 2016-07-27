@@ -1,7 +1,8 @@
 printing
 printNamespaceDeclarationsOn: aTagWriter
 	(self declaresDefaultNamespace
-		or: [self defaultNamespace notEmpty and: [aTagWriter isEmbedded not]])
+		or: [self defaultNamespace notEmpty
+			and: [aTagWriter isEmbedded not]])
 		ifTrue: [aTagWriter xmlns: self defaultNamespace].
 
 	self namespaceScope prefixesAndURIsDo: [:prefix :uri |

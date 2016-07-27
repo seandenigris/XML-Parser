@@ -1,0 +1,3 @@
+testing
+isFileURI
+	^ scheme = 'file'

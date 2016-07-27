@@ -2,15 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"clientForURI:" : "monty 12/27/2013 06:29",
-		"clientForURIs:" : "monty 12/27/2013 06:29",
-		"defaultDocumentURI" : "monty 12/13/2013 05:02",
-		"entityURIFromRelative:andBase:" : "monty 12/27/2013 06:30",
-		"fileClient" : "monty 11/18/2013 22:40",
-		"fileClient:" : "monty 11/18/2013 22:24",
-		"httpClient" : "monty 11/18/2013 22:40",
-		"httpClient:" : "monty 11/18/2013 22:22",
-		"resolveEntity:" : "monty 12/27/2013 06:30",
-		"resolveEntity:uri:from:class:" : "monty 11/19/2013 02:16",
+		"combineURI:with:" : "monty 1/12/2014 23:27",
+		"defaultDocumentURI" : "monty 1/10/2014 00:41",
+		"resolveEntity:" : "monty 1/10/2014 00:58",
+		"resolveEntity:uri:from:class:" : "monty 1/12/2014 22:11",
 		"resolveGeneralEntity:uri:from:" : "monty 11/19/2013 02:07",
 		"resolveParameterEntity:uri:from:" : "monty 11/19/2013 02:08" } }

@@ -1,5 +1,5 @@
 comparing
 = anObject
-	^ anObject == self
-		or: [anObject class == self class
-			and: [anObject set = set]]
+	^ self == anObject
+		or: [self class == anObject class
+			and: [set = anObject set]]

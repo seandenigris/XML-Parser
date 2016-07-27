@@ -1,12 +1,13 @@
 {
 	"category" : "XML-Parser-DTD",
 	"classinstvars" : [
-		 ],
+		"entityCache",
+		"maxCachedEntities" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 1/10/2014 08:16",
 	"instvars" : [
-		"entityCache" ],
+		 ],
 	"name" : "DTDCachingEntityResolver",
 	"pools" : [
 		 ],

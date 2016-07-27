@@ -1,3 +1,3 @@
 removing
 removeFirst
-	^ collection removeFirst
+	^ self removeAt: 1

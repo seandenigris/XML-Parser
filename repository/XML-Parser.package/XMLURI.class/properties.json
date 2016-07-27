@@ -1,0 +1,18 @@
+{
+	"category" : "XML-Parser-URI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 1/7/2014 05:54",
+	"instvars" : [
+		"scheme",
+		"host",
+		"pathSegments",
+		"queryString",
+		"fragment" ],
+	"name" : "XMLURI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

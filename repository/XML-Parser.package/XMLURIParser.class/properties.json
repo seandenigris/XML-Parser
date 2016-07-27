@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-URI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 1/7/2014 04:42",
+	"instvars" : [
+		"uriStream",
+		"writeStream" ],
+	"name" : "XMLURIParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

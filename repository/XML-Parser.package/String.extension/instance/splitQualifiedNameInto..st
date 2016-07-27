@@ -1,4 +1,4 @@
-*xml-parser
+*XML-Parser
 splitQualifiedNameInto: aTwoArgumentBlock
 	"Split the name into namespace prefix and local name (the block arguments).
 	(Optimized code; profile when modifying.)"

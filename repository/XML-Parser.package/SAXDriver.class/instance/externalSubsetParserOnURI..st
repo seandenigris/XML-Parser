@@ -4,6 +4,6 @@ externalSubsetParserOnURI: aUri
 		driver:
 			(DTDExternalSubsetDriver
 				saxDriver: self
-				documentURI: aUri)
+				documentURI: aUri asString)
 		on: (self externalEntityResolver resolveEntity: aUri)
 	

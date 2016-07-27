@@ -1,4 +1,4 @@
-parsing
+private 
 validatorClassForType
 	type ifEmpty: [XMLValidationException signal: 'Missing attribute type'].
 

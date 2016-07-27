@@ -1,0 +1,3 @@
+accessing
+sizeOnDisk
+	self subclassResponsibility

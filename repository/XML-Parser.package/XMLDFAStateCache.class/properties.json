@@ -11,5 +11,5 @@
 	"name" : "XMLDFAStateCache",
 	"pools" : [
 		 ],
-	"super" : "XMLFAState",
+	"super" : "Object",
 	"type" : "normal" }

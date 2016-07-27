@@ -1,0 +1,1 @@
+This is a basic URI parser that can split a URI into scheme, host (with port), path, query string, and fragment.

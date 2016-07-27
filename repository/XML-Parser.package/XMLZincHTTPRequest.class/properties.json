@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-HTTP",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "XMLZincHTTPRequest",
+	"pools" : [
+		 ],
+	"super" : "XMLHTTPRequest",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+requesting
+get
+	^ self readStream

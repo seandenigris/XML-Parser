@@ -1,3 +1,3 @@
 removing
 removeLast
-	^ collection removeLast
+	^ self removeAt: self size

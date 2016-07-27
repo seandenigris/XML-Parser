@@ -1,3 +1,3 @@
 accessing
 externalEntityResolver
-	^ externalEntityResolver ifNil: [externalEntityResolver := DTDExternalEntityResolver new]
+	^ externalEntityResolver ifNil: [externalEntityResolver := DTDCachingEntityResolver new]
