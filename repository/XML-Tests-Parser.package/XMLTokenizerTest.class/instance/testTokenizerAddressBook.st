@@ -1,8 +1,11 @@
 tests
 testTokenizerAddressBook
 	| tokenizer |
+
 	tokenizer :=
 		XMLWellFormedParserTokenizer
 			driver: nil
 			on: self addressBookXML readStream.
-	[tokenizer streamReader next notNil] whileTrue.
+	self
+		shouldnt: [[tokenizer streamReader next notNil] whileTrue]
+		raise: XMLParserException.

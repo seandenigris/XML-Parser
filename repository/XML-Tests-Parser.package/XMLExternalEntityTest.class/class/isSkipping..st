@@ -1,7 +1,7 @@
 testing
 isSkipping: aBoolean
 	"
-	XMLExternalEntityTest isSkipping: false.
-	XMLExternalEntityTest isSkipping: true.
+	self isSkipping: false.
+	self isSkipping: true.
 	"
 	IsSkipping := aBoolean

@@ -1,0 +1,1 @@
+This is a read stream that raises errors when sent peek or next when atEnd.

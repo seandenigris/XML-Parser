@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"on:" : "monty 10/13/2014 21:55" },
+	"instance" : {
+		"atEnd" : "monty 10/13/2014 21:56",
+		"close" : "monty 10/13/2014 22:00",
+		"isStream" : "monty 10/13/2014 22:00",
+		"next" : "monty 10/13/2014 21:57",
+		"peek" : "monty 10/13/2014 22:01",
+		"stream:" : "monty 10/13/2014 21:56" } }
