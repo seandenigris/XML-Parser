@@ -1,0 +1,5 @@
+formatting
+formatBeforeDoctypeDeclaration: aDoctypeDeclarationWriter
+	super formatBeforeDoctypeDeclaration: aDoctypeDeclarationWriter.
+
+	doctypeDeclarationHighlight := self newHighlightColored: self doctypeDeclarationColor.

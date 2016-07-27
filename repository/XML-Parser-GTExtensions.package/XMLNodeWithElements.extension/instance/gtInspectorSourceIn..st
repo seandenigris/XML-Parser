@@ -5,4 +5,7 @@ gtInspectorSourceIn: composite
 	"removed unfinished source panel editing support for now"
 	composite text 
 		title: 'Source';
-		format: [ self prettyPrinted ]
+		format: [| writer |
+			writer := XMLHighlightingWriter new.
+			self writeXMLOn: writer.
+			writer asHighlightedText]

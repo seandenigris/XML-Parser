@@ -1,3 +1,3 @@
 *XML-Parser-GTExtensions
-gtDisplayOn: stream
+treeLabelText
 	self subclassResponsibility

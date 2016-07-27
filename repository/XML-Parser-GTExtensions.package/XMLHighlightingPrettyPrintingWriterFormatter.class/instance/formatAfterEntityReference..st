@@ -1,0 +1,5 @@
+formatting
+formatAfterEntityReference: anEntityReferenceWriter
+	self endHighlight: entityReferenceHighlight.
+
+	super formatAfterEntityReference: anEntityReferenceWriter.

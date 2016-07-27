@@ -5,6 +5,6 @@ gtInspectorTreeIn: composite
 		title: 'Tree';
 		display: [ { self } ];
 		children: #elements;
-		format: #gtDisplayString;
+		format: #treeLabelText;
 		when: [self hasElements];
 		rootsExpanded

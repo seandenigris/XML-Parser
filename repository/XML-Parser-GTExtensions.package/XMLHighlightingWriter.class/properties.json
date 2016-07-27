@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-GTExtensions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 9/21/2015 06:39",
+	"instvars" : [
+		"highlights" ],
+	"name" : "XMLHighlightingWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLWriter",
+	"type" : "normal" }

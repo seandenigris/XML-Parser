@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"gtExampleXmlNode" : "StefanReichhart 3/26/2015 18:28" },
+		"gtExampleXmlNode" : "monty 9/20/2015 22:19" },
 	"instance" : {
-		"gtDisplayOn:" : "monty 9/4/2015 09:51",
-		"gtInspectorSourceIn:" : "monty 9/6/2015 15:03",
-		"gtInspectorTreeIn:" : "TudorGirba 2/23/2015 22:29",
+		"gtInspectorSourceIn:" : "monty 9/20/2015 21:52",
+		"gtInspectorTreeIn:" : "monty 9/21/2015 06:36",
 		"gtName" : "TudorGirba 3/6/2015 14:40",
 		"gtSpotterAllElementsFor:" : "TudorGirba 7/12/2015 15:35",
 		"gtSpotterDirectElementsFor:" : "TudorGirba 7/12/2015 15:35",
-		"spotterPreviewSourceIn:" : "TudorGirba 7/12/2015 15:14" } }
+		"spotterPreviewSourceIn:" : "TudorGirba 7/12/2015 15:14",
+		"treeLabelText" : "monty 9/21/2015 06:36" } }
