@@ -2,16 +2,17 @@ building subclasses
 buildSourceFileClassMethodFor: aFileReference in: aClass
 	| sourceSelector pathString sourceStream |
 
-	sourceSelector := (self sourceSelectorFor: aFileReference).
+	sourceSelector := self sourceSelectorFor: aFileReference.
 	pathString := self relativePathStringFor: aFileReference.
 
 	sourceStream := (String new: aFileReference size) writeStream.
-	aFileReference readStreamDo: [:readStream |
-		[readStream atEnd not]
-			whileTrue: [
-				readStream peek == $'
-					ifTrue: [sourceStream nextPut: $'].
-				sourceStream nextPut: readStream next]].
+	"Use XMLFileHandle to get proper (inferred from BOMs) decoding of both
+	UTF-8 and UTF-16. This makes it harder to test for invalid UTF in source
+	but easier to get the xml source into the image."
+	aFileReference fullName asXMLFileHandle readStreamDo: [:readStream |
+		readStream peek == $'
+			ifTrue: [sourceStream nextPut: $'].
+		sourceStream nextPut: readStream next].
 		
 	aClass class
 		compile:
@@ -20,4 +21,4 @@ buildSourceFileClassMethodFor: aFileReference in: aClass
 					with: sourceSelector asString
 					with: pathString
 					with: sourceStream contents))
-		classified: 'xml source' asSymbol.
+		classified: #'xml source'.

@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Tests-Conformance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 4/8/2016 22:40",
+	"instvars" : [
+		"virtualFileClass" ],
+	"name" : "XMLConformanceVirtualFileExternalEntityResolver",
+	"pools" : [
+		 ],
+	"super" : "DTDExternalEntityResolver",
+	"type" : "normal" }

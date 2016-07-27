@@ -1,0 +1,3 @@
+accessing
+newVirtualFileExternalEntityResolver
+	^ XMLConformanceVirtualFileExternalEntityResolver virtualFileClass: self class

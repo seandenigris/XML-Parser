@@ -1,0 +1,3 @@
+accessing
+virtualFileClass
+	^ virtualFileClass

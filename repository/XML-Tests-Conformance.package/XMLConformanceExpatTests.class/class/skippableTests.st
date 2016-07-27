@@ -1,3 +1,3 @@
 accessing
 skippableTests
-	^ #( testinvalid002xml testinvalid005xml testinvalid006xml testinvalidnotsa022xml testnotwfnotsa009xml testnotwfnotsa010xml testnotwfnotsa011xml testnotwfsa074xml testnotwfsa104xml testnotwfsa110xml testnotwfsa116xml testnotwfsa117xml testnotwfsa119xml testnotwfsa140xml testnotwfsa141xml testnotwfsa175xml testnotwfsa181xml testnotwfsa182xml )
+	^ #( testnotwfsa074xml testnotwfsa104xml testnotwfsa110xml testnotwfsa140xml testnotwfsa141xml testnotwfsa175xml )
