@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"saxDriver",
+		"documentUri" ],
+	"name" : "DTDExternalSubsetDriver",
+	"pools" : [
+		 ],
+	"super" : "XMLParserDriver",
+	"type" : "normal" }

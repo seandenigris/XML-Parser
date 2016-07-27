@@ -1,19 +1,13 @@
 tokenizing
 nextToken
-	| whitespace |
+	context notInitialized 
+		ifTrue: [^ self nextStartDocument].
 
-	state == #atStart
-		ifTrue: [
-			driver handleStartDocument.
-			state := #started].
-
-	whitespace := self nextWhitespace.
 	self atEnd
 		ifTrue: [^ self].
+	context isInContent
+		ifTrue: [^ self nextContentToken].
+	context isInSubset
+		ifTrue: [^ self nextSubsetToken].
 
-	self checkAndExpandReference: (self isParsingMarkup ifTrue: [#dtd] ifFalse: [#content]).
-	^ (streamReader peek = $<)
-		ifTrue: [self nextMarkupToken]
-		ifFalse: [
-			whitespace ifNotEmpty: [streamReader pushBack: whitespace].
-			self nextPCData].
+	self nextPrologToken.

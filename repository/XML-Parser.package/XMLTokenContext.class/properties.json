@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"context" ],
+	"name" : "XMLTokenContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

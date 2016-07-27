@@ -1,0 +1,3 @@
+paths
+combineRelative: aRelativeResource withBase: aBaseResource
+	self subclassResponsibility

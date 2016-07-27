@@ -1,0 +1,2 @@
+handling tokens
+handleGeneralEntityDeclaration: aName replacement: aReplacement

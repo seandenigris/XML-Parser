@@ -1,0 +1,2 @@
+declaration
+generalEntityDeclaration: aName replacement: aReplacement

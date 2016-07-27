@@ -1,0 +1,1 @@
+This class is a driver for parsing the external subset of a DTD.

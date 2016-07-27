@@ -1,3 +1,0 @@
-private
-endParsingMarkup
-	state := #parsing.

@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Clients",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"timeout" ],
+	"name" : "XMLHTTPClient",
+	"pools" : [
+		 ],
+	"super" : "XMLIOClient",
+	"type" : "normal" }

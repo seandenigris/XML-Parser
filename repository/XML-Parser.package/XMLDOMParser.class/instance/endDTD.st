@@ -1,0 +1,3 @@
+declaration
+endDTD
+	self popNode

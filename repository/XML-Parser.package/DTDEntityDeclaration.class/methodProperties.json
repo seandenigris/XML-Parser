@@ -1,21 +1,15 @@
 {
 	"class" : {
-		"behaviorForContext:" : "mir 11/16/2000 20:14",
-		"contextBehavior" : "mir 11/16/2000 20:15",
-		"initialize" : "mir 1/15/2002 18:02",
-		"leadIn" : "mir 11/16/2000 20:27",
-		"name:value:" : "mir 11/16/2000 20:13" },
+		"initialize" : "monty 11/12/2013 16:46",
+		"name:replacement:" : "monty 11/16/2013 06:02",
+		"name:replacement:uri:" : "monty 11/16/2013 02:55" },
 	"instance" : {
-		"bypass" : "mir 1/15/2002 11:29",
-		"forbidden" : "mir 1/15/2002 11:29",
-		"include" : "JAAyer 11/20/2010 14:24",
-		"includedInLiteral" : "mir 1/15/2002 18:06",
-		"name" : "mir 1/4/2002 19:40",
-		"name:" : "JAAyer 3/8/2010 04:52",
-		"ndata" : "mir 12/8/2000 17:22",
-		"ndata:" : "mir 12/8/2000 17:22",
-		"reference" : "JAAyer 3/11/2010 09:50",
-		"registerIn:" : "mir 11/16/2000 21:23",
-		"value" : "mir 11/16/2000 10:54",
-		"value:" : "mir 11/16/2000 10:55",
-		"valueForContext:" : "mir 1/15/2002 15:08" } }
+		"asReference" : "monty 11/12/2013 20:16",
+		"isExternal" : "monty 11/16/2013 02:56",
+		"name" : "monty 11/13/2013 23:45",
+		"printOn:" : "monty 11/20/2013 01:23",
+		"referenceSymbol" : "monty 11/12/2013 20:09",
+		"replacement" : "monty 11/13/2013 19:15",
+		"replacementForLiteralContext" : "monty 11/14/2013 20:22",
+		"setName:replacement:uri:" : "monty 11/16/2013 02:55",
+		"uri" : "monty 11/16/2013 02:55" } }

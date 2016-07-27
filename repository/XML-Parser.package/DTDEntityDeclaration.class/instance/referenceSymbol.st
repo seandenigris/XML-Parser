@@ -1,0 +1,3 @@
+accessing
+referenceSymbol
+	self subclassResponsibility

@@ -4,17 +4,15 @@
 		 ],
 	"classvars" : [
 		"AdditionalNameChars",
-		"CharEscapes",
-		"LiteralChars",
-		"NameStartChars" ],
+		"NameStartChars",
+		"PredefinedEntities",
+		"PubidChars" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"driver",
-		"state",
+		"context",
 		"streamReader",
-		"streamWriter",
-		"entities",
-		"parameterEntities" ],
+		"streamWriter" ],
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],

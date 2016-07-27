@@ -8,7 +8,9 @@
 	"instvars" : [
 		"isValidating",
 		"usesNamespaces",
-		"parserClass" ],
+		"resolvesExternalEntities",
+		"externalEntityResolver",
+		"parserHandlerClass" ],
 	"name" : "XMLConfiguration",
 	"pools" : [
 		 ],

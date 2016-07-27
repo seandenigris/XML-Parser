@@ -1,5 +1,9 @@
 instance creation
 on: aStringOrStream withRootNode: aRootNode
-	^ (self on: aStringOrStream)
-		pushNode: aRootNode;
-		yourself
+	| parser |
+
+	(parser := self on: aStringOrStream)
+		pushNode: aRootNode.
+	aRootNode isElement
+		ifTrue: [parser elementNester rootElement: aRootNode name].
+	^ parser.

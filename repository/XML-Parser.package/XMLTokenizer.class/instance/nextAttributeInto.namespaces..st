@@ -1,7 +1,7 @@
 tokenizing
 nextAttributeInto: attributes namespaces: namespaces
-
 	| attrName attrValue |
+
 	attrName := self nextName.
 	streamReader skipSeparators.
 	self expectNext: $=.

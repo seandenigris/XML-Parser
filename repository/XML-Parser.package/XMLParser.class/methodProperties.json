@@ -3,8 +3,9 @@
 		"driver:on:" : "JAAyer 11/28/2010 07:09" },
 	"instance" : {
 		"atEnd" : "JAAyer 11/27/2010 07:17",
+		"currentLineNumber" : "monty 11/14/2013 23:34",
 		"driver" : "JAAyer 11/28/2010 07:07",
 		"parseDocument" : "JAAyer 11/27/2010 07:15",
-		"parseToken" : "JAAyer 11/27/2010 07:16",
+		"parseToken" : "monty 11/16/2013 22:08",
 		"setDriver:tokenizer:" : "JAAyer 11/28/2010 07:09",
 		"tokenizer" : "JAAyer 11/27/2010 07:16" } }

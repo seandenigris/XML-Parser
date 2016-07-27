@@ -1,0 +1,3 @@
+testing
+hasAttributeValidators
+	^ dtd hasAttributeValidators

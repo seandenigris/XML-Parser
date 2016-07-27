@@ -1,4 +1,6 @@
 private
 innerXMLParserOn: aStringOrStream
-	^ (self configuration parserClass on: aStringOrStream withRootNode: self)
+	^ (self configuration parserHandlerClass
+		on: aStringOrStream
+		withRootNode: self)
 		configuration: self configuration.

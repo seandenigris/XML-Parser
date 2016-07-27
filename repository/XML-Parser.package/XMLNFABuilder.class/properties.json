@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Validation-DFA",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"fragmentStack" ],
+	"name" : "XMLNFABuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+A base class for file IO clients. Messages expect and return paths as strings. See the FileSystem implementation for an example.

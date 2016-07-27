@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Validation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"dfa",
+		"currentState" ],
+	"name" : "XMLDFAElementValidator",
+	"pools" : [
+		 ],
+	"super" : "XMLElementValidator",
+	"type" : "normal" }

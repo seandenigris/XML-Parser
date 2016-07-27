@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-DTD",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"element" ],
+	"name" : "DTDElementMatcher",
+	"pools" : [
+		 ],
+	"super" : "XMLFAMatcher",
+	"type" : "normal" }

@@ -2,9 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
+		"externalEntityResolver" : "monty 11/18/2013 22:27",
+		"externalEntityResolver:" : "monty 11/18/2013 22:18",
+		"fileClient" : "monty 11/18/2013 22:21",
+		"fileClient:" : "monty 11/18/2013 22:21",
+		"httpClient" : "monty 11/18/2013 22:24",
+		"httpClient:" : "monty 11/18/2013 22:24",
 		"isValidating" : "JAAyer 11/23/2010 14:09",
 		"isValidating:" : "JAAyer 11/23/2010 14:05",
-		"parserClass" : "JAAyer 11/27/2010 06:33",
-		"parserClass:" : "JAAyer 11/27/2010 06:37",
+		"parserHandlerClass" : "monty 11/16/2013 03:10",
+		"parserHandlerClass:" : "monty 11/16/2013 03:10",
+		"resolvesExternalEntities" : "monty 11/13/2013 22:18",
+		"resolvesExternalEntities:" : "monty 11/13/2013 22:18",
 		"usesNamespaces" : "JAAyer 11/23/2010 14:07",
 		"usesNamespaces:" : "JAAyer 11/23/2010 14:06" } }

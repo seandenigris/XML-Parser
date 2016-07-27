@@ -1,0 +1,2 @@
+handling tokens
+handleElementDeclaration: aName contentModel: aContentModel

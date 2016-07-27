@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"atEnd" : "monty 11/12/2013 01:50",
+		"enterAtEnd" : "monty 11/12/2013 01:52",
+		"enterContent" : "monty 11/12/2013 01:51",
+		"enterExternalSubset" : "monty 11/12/2013 01:52",
+		"enterExternalSubsetTextDeclaration" : "monty 11/19/2013 05:13",
+		"enterInternalSubset" : "monty 11/12/2013 01:52",
+		"enterLiteralValue" : "monty 11/12/2013 07:18",
+		"enterProlog" : "monty 11/12/2013 02:25",
+		"enterTextDeclaration" : "monty 11/16/2013 05:31",
+		"isInContent" : "monty 11/12/2013 01:51",
+		"isInExternalSubset" : "monty 11/19/2013 05:11",
+		"isInExternalSubsetTextDeclaration" : "monty 11/19/2013 05:11",
+		"isInInternalSubset" : "monty 11/12/2013 01:50",
+		"isInLiteralValue" : "monty 11/12/2013 07:17",
+		"isInProlog" : "monty 11/12/2013 02:25",
+		"isInSubset" : "monty 11/12/2013 22:52",
+		"isInTextDeclaration" : "monty 11/19/2013 06:13",
+		"isInitialized" : "monty 11/12/2013 01:30",
+		"notInitialized" : "monty 11/12/2013 01:36",
+		"resetAfter:" : "monty 11/12/2013 18:25" } }

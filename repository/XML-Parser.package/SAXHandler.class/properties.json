@@ -7,6 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"input",
+		"documentUri",
 		"configuration",
 		"elementNester",
 		"scopeAllocator" ],

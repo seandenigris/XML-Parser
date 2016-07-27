@@ -1,9 +1,19 @@
 tokenizing
 nextAttributeValue
-	| delimiterChar |
+	| quote value |
 
-	delimiterChar := self expectQuote.
-	^ streamWriter writeWith: [:writeStream |
-		self nextPCDataDelimitedBy: delimiterChar putOn: writeStream.
-		self expectNext: delimiterChar.
-		writeStream contents]
+	streamReader peek == $&
+		ifTrue: [^ self nextUnparsedEntityReference].
+
+	quote := self expectQuote.
+	context resetAfter: [
+		context enterLiteralValue.
+		value := self
+			nextDelimitedBy: quote and: $<
+			entityChar: $&
+			entitySelector: #nextGeneralEntityReference
+			normalizeWhitespace: true
+			ignorableWhitespace: false].
+	self expectNext: quote.
+
+	^ value.

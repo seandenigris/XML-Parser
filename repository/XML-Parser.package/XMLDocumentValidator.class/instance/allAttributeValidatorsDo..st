@@ -1,0 +1,3 @@
+enumerating
+allAttributeValidatorsDo: aBlock
+	self subclassResponsibility

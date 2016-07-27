@@ -1,0 +1,3 @@
+handling tokens
+handleParseError: anErrorString
+	XMLParsingException signal: anErrorString

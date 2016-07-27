@@ -1,21 +1,19 @@
 tokenizing dtd
 nextDocTypeDecl
-	| nextChar |
-	streamReader skipSeparators.
-	self nextLiteral.
-	streamReader skipSeparators.
-	streamReader peek == $[
-		ifFalse: [[nextChar := streamReader peek.
-				nextChar == $> or: [nextChar == $[ ]] whileFalse: [streamReader next]].
-	streamReader peek == $[
-		ifTrue: [
-			streamReader next.
-			[streamReader skipSeparators.
-			streamReader peek == $]] whileFalse: [
-				self checkAndExpandReference: #dtd.
-				self nextMarkupToken].
-			self expectNext: $]].
-	streamReader skipSeparators.
-	self expectNext: $>.
+	|  root externalId |
 
-	self endParsingMarkup
+	self expectNextAll: 'DOCTYPE'.
+	streamReader skipSeparators.
+
+	root := self nextName.
+	streamReader skipSeparators.
+	externalId := self nextExternalIDSystemLiteralRequired: true.
+	driver
+		handleStartDTD: root
+		publicID: externalId key
+		systemID: externalId value.
+
+	streamReader skipSeparators.
+	streamReader peek == $[
+		ifTrue: [self nextInternalSubsetStart]
+		ifFalse: [self nextEndDocTypeDecl].

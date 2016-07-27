@@ -1,0 +1,3 @@
+changing context
+enterExternalSubsetTextDeclaration
+	context := #inExternalSubsetTextDeclaration

@@ -1,6 +1,9 @@
 tokenizing
 nextComment
+	| comment |
 	"Skip first -"
 	streamReader next.
 	self expectNext: $-.
-	driver handleComment: (streamReader upToAll: '-->')
+	comment := streamReader upToAll: '--'.
+	self expectNext: $>.
+	driver handleComment: comment.

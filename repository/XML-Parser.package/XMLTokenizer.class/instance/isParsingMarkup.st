@@ -1,3 +1,0 @@
-private
-isParsingMarkup
-	^ state == #isParsingMarkup

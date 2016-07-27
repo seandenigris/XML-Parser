@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"entityURIFromRelative:andBase:" : "monty 11/19/2013 06:36",
+		"fileClient" : "monty 11/18/2013 22:40",
+		"fileClient:" : "monty 11/18/2013 22:24",
+		"httpClient" : "monty 11/18/2013 22:40",
+		"httpClient:" : "monty 11/18/2013 22:22",
+		"resolveEntity:" : "monty 11/19/2013 06:36",
+		"resolveEntity:uri:from:class:" : "monty 11/19/2013 02:16",
+		"resolveGeneralEntity:uri:from:" : "monty 11/19/2013 02:07",
+		"resolveParameterEntity:uri:from:" : "monty 11/19/2013 02:08" } }

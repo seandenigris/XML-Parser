@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"firstState:" : "monty 11/17/2013 11:51",
+		"firstState:terminalState:" : "monty 11/17/2013 11:32" },
+	"instance" : {
+		"firstState" : "monty 11/17/2013 10:48",
+		"firstState:" : "monty 11/17/2013 11:51",
+		"hasTerminalFirstState" : "monty 11/17/2013 23:49",
+		"hasTerminalFirstState:" : "monty 11/17/2013 23:49",
+		"setFirstState:terminalState:" : "monty 11/17/2013 23:41",
+		"unconnectedTerminalState" : "monty 11/17/2013 23:43",
+		"unconnectedTerminalState:" : "monty 11/17/2013 23:43" } }

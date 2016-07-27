@@ -1,3 +1,0 @@
-private
-stream
-	^ streamReader stream

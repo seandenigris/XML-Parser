@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"openElements" ],
+		"openElements",
+		"rootElement",
+		"hasExternalRoot" ],
 	"name" : "XMLElementNester",
 	"pools" : [
 		 ],

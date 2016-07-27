@@ -1,0 +1,3 @@
+testing
+isInInternalSubset
+	^ context == #inInternalSubset

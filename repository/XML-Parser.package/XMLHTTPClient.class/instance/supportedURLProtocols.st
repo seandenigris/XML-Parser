@@ -1,0 +1,3 @@
+accessing
+supportedURLProtocols
+	^ #('http' 'file')

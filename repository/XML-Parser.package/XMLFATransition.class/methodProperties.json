@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"matcher:nextState:" : "monty 11/17/2013 08:02" },
+	"instance" : {
+		"matcher" : "monty 11/17/2013 08:04",
+		"nextState" : "monty 11/17/2013 08:04",
+		"nextState:" : "monty 11/17/2013 21:19",
+		"printOn:" : "monty 11/17/2013 22:14",
+		"setMatcher:nextState:" : "monty 11/17/2013 21:25" } }

@@ -1,0 +1,3 @@
+testing
+isInExternalSubsetTextDeclaration
+	^ context == #inExternalSubsetTextDeclaration

@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Validation-DFA",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XMLDFATransition",
+	"pools" : [
+		 ],
+	"super" : "XMLFATransition",
+	"type" : "normal" }

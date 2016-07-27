@@ -1,0 +1,1 @@
+The context a token occurs in.

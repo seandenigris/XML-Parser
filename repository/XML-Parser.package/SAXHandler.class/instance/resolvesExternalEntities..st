@@ -1,0 +1,3 @@
+accessing
+resolvesExternalEntities: aBoolean
+	self configuration resolvesExternalEntities: aBoolean

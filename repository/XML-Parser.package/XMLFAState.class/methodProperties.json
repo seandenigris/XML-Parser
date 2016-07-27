@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"transition:" : "monty 11/17/2013 10:52" },
+	"instance" : {
+		"addTransition:" : "monty 11/17/2013 22:40",
+		"addTransitionsTo:" : "monty 11/17/2013 22:17",
+		"detectNextStateMatching:" : "monty 11/18/2013 06:00",
+		"detectNextStateMatching:ifNone:" : "monty 11/18/2013 06:00",
+		"isAccepting" : "monty 11/17/2013 08:07",
+		"isAccepting:" : "monty 11/17/2013 08:07",
+		"printOn:" : "monty 11/17/2013 22:24",
+		"transitionCollectionClass" : "monty 11/17/2013 22:43",
+		"transitions" : "monty 11/17/2013 22:42",
+		"transitionsDo:" : "monty 11/17/2013 22:17" } }

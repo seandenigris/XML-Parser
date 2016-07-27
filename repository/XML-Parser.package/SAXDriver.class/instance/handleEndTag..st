@@ -7,8 +7,10 @@ handleEndTag: anElementName
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
 		localName := localPart].
-	self usesNamespaces
-		ifTrue: [namespaceUri := self scopeAllocator resolvePrefix: prefix].
+	namespaceUri :=
+		self usesNamespaces
+			ifTrue: [self scopeAllocator resolvePrefix: prefix]
+			ifFalse: [''].
 
 	self saxHandler 
 		endElement: anElementName
@@ -16,7 +18,4 @@ handleEndTag: anElementName
 		uri: namespaceUri
 		localName: localName.
 
-	self usesNamespaces
-		ifTrue: [
-			self undeclareNamespaces.
-			self scopeAllocator exitScope].
+	self validateEndTag: anElementName.

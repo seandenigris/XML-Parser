@@ -8,7 +8,8 @@
 	"instvars" : [
 		"stream",
 		"peekChar",
-		"source" ],
+		"source",
+		"onClose" ],
 	"name" : "XMLPeekableStreamAdapter",
 	"pools" : [
 		 ],

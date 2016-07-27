@@ -1,0 +1,3 @@
+replacement
+replacementForDTDContext
+	^ ' ', self replacement, ' '

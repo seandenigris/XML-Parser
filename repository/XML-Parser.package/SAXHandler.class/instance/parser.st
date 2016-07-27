@@ -1,6 +1,6 @@
 parsing
 parser
-	self configuration parserClass: self class.
+	self configuration parserHandlerClass: self class.
 
 	^ XMLParser
 		driver: (SAXDriver saxHandler: self)

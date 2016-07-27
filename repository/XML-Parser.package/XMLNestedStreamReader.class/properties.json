@@ -12,6 +12,7 @@
 		"stream",
 		"nestedStreams",
 		"hasNestedStreams",
+		"maxNestedStreams",
 		"peekChar",
 		"writeBuffer",
 		"normalizedLineEndingChar",

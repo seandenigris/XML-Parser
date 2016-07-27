@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-DTD",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"httpClient",
+		"fileClient" ],
+	"name" : "DTDExternalEntityResolver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

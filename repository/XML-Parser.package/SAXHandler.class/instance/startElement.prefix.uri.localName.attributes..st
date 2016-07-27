@@ -5,7 +5,7 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 		java.lang.String qName, Attributes atts)."
 
 	self
-		invokeDeprecated: #startElement:namespaceURI:namespace:attributeList:
-		withArguments: (Array with: aLocalName with: aUri with: aPrefix with: aDictionary)
-		orForwardTo: #startElement:prefix:uri:attributes:
-		withArguments: (Array with: aQualifiedName with: aPrefix with: aUri with: aDictionary).
+		startElement: aQualifiedName
+		prefix: aPrefix
+		uri: aUri
+		attributes: aDictionary

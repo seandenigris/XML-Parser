@@ -1,0 +1,1 @@
+A base class for IO clients used to retrieve external entities.

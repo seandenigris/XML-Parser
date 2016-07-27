@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"element:name:type:default:" : "monty 11/20/2013 22:25",
+		"initialize" : "monty 11/20/2013 22:26" },
+	"instance" : {
+		"isNotationEnumeration:" : "monty 11/19/2013 21:43",
+		"parse" : "monty 11/20/2013 22:49",
+		"parseDefaultPragma" : "monty 11/20/2013 22:30",
+		"parseDefaultValue" : "monty 11/20/2013 22:29",
+		"parseEnumerationType" : "monty 11/20/2013 22:31",
+		"setElement:name:type:default:" : "monty 11/20/2013 22:26",
+		"validatorClassForType" : "monty 11/20/2013 22:29" } }

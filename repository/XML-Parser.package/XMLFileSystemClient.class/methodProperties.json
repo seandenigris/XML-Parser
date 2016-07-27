@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"combineRelative:withBase:" : "monty 11/16/2013 00:42",
+		"currentWorkingDirectory" : "monty 11/16/2013 00:12",
+		"get:onError:" : "monty 11/16/2013 00:03",
+		"pathClass" : "monty 11/15/2013 22:16",
+		"systemPathFrom:" : "monty 11/16/2013 02:43",
+		"systemPathFromSegments:" : "monty 11/16/2013 02:42" } }

@@ -1,0 +1,3 @@
+testing
+shouldFurtherNormalizeValue
+	^ true

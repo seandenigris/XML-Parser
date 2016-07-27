@@ -1,0 +1,3 @@
+testing
+isParameter
+	self subclassResponsibility

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allAttributeValidatorsDo:" : "monty 11/19/2013 18:26",
+		"attributeValidatorsFor:" : "monty 11/19/2013 01:04",
+		"currentElementValidator" : "monty 11/18/2013 03:47",
+		"defaultElementValidatorFor:" : "monty 11/19/2013 01:07",
+		"elementValidatorFor:" : "monty 11/18/2013 03:57",
+		"elementValidatorStack" : "monty 11/18/2013 03:46",
+		"errorMissingContentFor:" : "monty 11/18/2013 04:41",
+		"hasAttributeValidators" : "monty 11/18/2013 03:31",
+		"hasElementValidators" : "monty 11/18/2013 03:32",
+		"validateEndTag:" : "monty 11/18/2013 04:41",
+		"validateIDsAndReferences" : "monty 11/19/2013 18:27",
+		"validatePCData:" : "monty 11/18/2013 03:44",
+		"validateStartTag:attributes:" : "monty 11/19/2013 22:08" } }

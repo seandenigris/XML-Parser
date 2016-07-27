@@ -1,0 +1,3 @@
+matching
+matchesPCData: aString
+	^ false

@@ -7,17 +7,17 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		ifTrue: [self languageEnvironment: (anAttributeDictionary at: 'xml:lang')].
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
-		localName := localPart.
-		namespaceUri := ''].
+		localName := localPart].
 
-	self usesNamespaces ifTrue: [
-		self scopeAllocator enterScope.
-		self declareNamespaces: aNamespaceDictionary.
-		namespaceUri := self scopeAllocator resolvePrefix: prefix.
-		self
-			validateStartTag: anElementName
-			prefix: prefix
-			attributes: anAttributeDictionary].
+	self
+		validateStartTag: anElementName
+		prefix: prefix
+		attributes: anAttributeDictionary
+		namespaces: aNamespaceDictionary.
+	namespaceUri :=
+		self usesNamespaces
+			ifTrue: [self scopeAllocator resolvePrefix: prefix]
+			ifFalse: [''].
 
 	self saxHandler 
 		startElement: anElementName

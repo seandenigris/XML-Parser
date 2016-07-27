@@ -1,3 +1,3 @@
 errors
-parseError: errorString
-	XMLParsingException signal: errorString
+parseError: anErrorString
+	driver handleParseError: anErrorString

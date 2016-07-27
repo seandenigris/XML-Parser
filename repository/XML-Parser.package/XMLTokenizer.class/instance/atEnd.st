@@ -1,10 +1,11 @@
 testing
 atEnd
-	state == #atEnd
+	context atEnd
 		ifTrue: [^ true].
-	(state ~~ #atStart and: [streamReader atEnd])
+	(context isInitialized and: [streamReader atEnd])
 		ifTrue: [
-			state := #atEnd.
-			driver handleEndDocument.
+			context isInInternalSubset
+				ifTrue: [self errorExpected: 'end of internal subset'].
+			self nextEndDocument.
 			^ true].
 	^ false.

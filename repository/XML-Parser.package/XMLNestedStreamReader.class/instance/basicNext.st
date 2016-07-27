@@ -1,14 +1,11 @@
 accessing
 basicNext
-	"Returns next character in the stream after performing line-ending normalization.
-	Normalization does not occur across nested streams."
+	"Returns next character in the stream after performing line-ending normalization."
 
 	| nextChar |
 
 	(nextChar := stream next)
 		ifNil: [
-			hasNestedStreams ifFalse: [^nil].
-			self popCurrentStream.
 			[hasNestedStreams and: [stream atEnd]]
 				whileTrue: [self popCurrentStream].
 			nextChar := stream next].
@@ -16,6 +13,8 @@ basicNext
 	nextChar == CarriageReturn
 		ifTrue: [
 			nextChar := normalizedLineEndingChar.
+			[hasNestedStreams and: [stream atEnd]]
+				whileTrue: [self popCurrentStream].
 			(stream peek == LineFeed)
 				ifTrue: [stream next]]
 		ifFalse: [

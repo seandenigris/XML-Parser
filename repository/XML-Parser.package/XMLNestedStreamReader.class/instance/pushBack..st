@@ -1,6 +1,5 @@
 streaming
 pushBack: aString
-	"Fixed to push the string before the peek char (if any)."
 	| pushBackString |
 
 	pushBackString := aString.
@@ -9,4 +8,4 @@ pushBack: aString
 			pushBackString := pushBackString copyWith: peekChar.
 			peekChar := nil].
 
-	self pushStream: (ReadStream on: pushBackString).
+	self pushStream: (ReadStream on: pushBackString) from: nil onClose: nil.

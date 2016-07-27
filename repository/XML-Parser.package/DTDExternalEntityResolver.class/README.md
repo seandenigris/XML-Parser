@@ -1,0 +1,1 @@
+This class resolves external entity references using HTTP and file clients.
