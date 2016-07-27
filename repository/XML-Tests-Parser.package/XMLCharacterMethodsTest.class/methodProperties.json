@@ -3,6 +3,5 @@
 		 },
 	"instance" : {
 		"testSplit" : "monty 4/5/2015 03:22",
-		"testXMLParserASCIIValue" : "monty 4/17/2015 14:25",
 		"testXMLParserIsSeparator" : "monty 4/7/2015 09:24",
 		"testXMLParserIsWhitespace" : "monty 4/7/2015 09:24" } }
