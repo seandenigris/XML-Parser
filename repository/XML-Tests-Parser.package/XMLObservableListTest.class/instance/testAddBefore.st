@@ -4,10 +4,10 @@ testAddBefore
 
 	super testAddBefore.
 
-	last := self listElements last.
+	last := self listItems last.
 	(list := self emptyList) add: last.
 	"allButLastDo: is not portable"
-	self listElements allButLast do: [:each |
+	self listItems allButLast do: [:each |
 		self
 			should: [list add: each before: last]
 			add: each

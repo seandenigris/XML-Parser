@@ -7,22 +7,22 @@ testIPv6Hosts
 	uri := uriString asXMLURI.
 	self
 		assert: uri scheme = 'http';
-		assert: uri host = ipv6Host asLowercase;
+		assert: uri host = ipv6Host;
 		assert: uri port = 80;
 		assert: uri path = self absolute;
 		assert: uri query isEmpty;
 		assert: uri fragment isEmpty.
 	uri uriString: nil.
-	self assert: uri printString = uriString asLowercase.
+	self assert: uri printString = uriString.
 
 	uriString := 'http://', ipv6Host, self absolute.
 	uri := uriString asXMLURI.
 	self
 		assert: uri scheme = 'http';
-		assert: uri host = ipv6Host asLowercase;
+		assert: uri host = ipv6Host;
 		assert: uri port isNil;
 		assert: uri path = self absolute;
 		assert: uri query isEmpty;
 		assert: uri fragment isEmpty.
 	uri uriString: nil.
-	self assert: uri printString = uriString asLowercase.
+	self assert: uri printString = uriString.

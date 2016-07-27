@@ -4,5 +4,5 @@ testCapacity
 		ifTrue: [
 			self
 				assert: self emptyList capacity >= 0;
-				assert: self listWithSingleElement capacity >= 1;
-				assert: self listWithElements capacity >= self listElements size]
+				assert: self listWithSingleItem capacity >= 1;
+				assert: self listWithItems capacity >= self listItems size]

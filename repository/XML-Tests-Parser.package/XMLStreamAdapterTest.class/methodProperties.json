@@ -4,6 +4,7 @@
 		"asciiToUTF16LE:" : "monty 2/12/2016 05:57",
 		"asciiToUTF32BE:" : "monty 2/12/2016 05:58",
 		"asciiToUTF32LE:" : "monty 2/12/2016 05:58",
+		"percentEncodeCharacter:" : "monty 3/28/2016 01:18",
 		"shouldInheritSelectors" : "monty 2/10/2016 22:57",
 		"stringFrom:" : "monty 2/14/2016 04:01" },
 	"instance" : {
@@ -23,7 +24,7 @@
 		"newStreamAdapter" : "monty 3/5/2016 12:39",
 		"newStreamAdapterOn:" : "monty 3/5/2016 12:39",
 		"newStreamOn:" : "monty 2/15/2016 09:17",
-		"percentEncodeCharacter:" : "monty 2/17/2016 11:58",
+		"percentEncodeCharacter:" : "monty 3/28/2016 01:19",
 		"percentEncodedUTF8String" : "monty 2/17/2016 11:58",
 		"streamAdapterClass" : "monty 3/5/2016 12:38",
 		"streamClass" : "monty 2/10/2016 22:58",
@@ -31,6 +32,6 @@
 		"stringFrom:" : "monty 2/14/2016 04:02",
 		"testClose" : "monty 3/5/2016 12:39",
 		"testIsBinary" : "monty 3/5/2016 12:39",
-		"testIsConvertingStreamAdapter" : "monty 3/5/2016 12:39",
 		"testIsStream" : "monty 3/5/2016 12:39",
+		"testIsXMLConvertingStreamAdapter" : "monty 4/1/2016 00:55",
 		"testOn" : "monty 3/6/2016 08:28" } }

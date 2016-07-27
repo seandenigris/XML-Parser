@@ -6,10 +6,10 @@ testAddAllFirst
 
 	list := self emptyList.
 	self
-		should: [list addAllFirst: self listElements]
-		addAll: self listElements reversed
+		should: [list addAllFirst: self listItems]
+		addAll: self listItems reversed
 		toAndNotify: list.
 	self
-		should: [list addAllFirst: self changedListElements]
-		addAll: self changedListElements reversed
+		should: [list addAllFirst: self changedListItems]
+		addAll: self changedListItems reversed
 		toAndNotify: list.

@@ -2,8 +2,13 @@ tests
 testRemoveIfAbsent
 	| list |
 
-	list := self listWithElements.
-	self
-		assert: (list remove: self singleElement ifAbsent: [nil]) = self singleElement;
-		deny: (list includes: self singleElement);
-		assert: (list remove: self absentElement ifAbsent: [nil]) isNil.
+	list := self listWithItems.
+	self assert:
+		(list
+			remove: self singleListItem
+			ifAbsent: [self absentListItem]) = self singleListItem.
+	self deny: (list includes: self singleListItem).
+	self assert:
+		(list
+			remove: self singleListItem
+			ifAbsent: [self absentListItem]) = self absentListItem.

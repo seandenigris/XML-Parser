@@ -1,18 +1,21 @@
 tests
 testReplaceFromToWithStartingAt
-	1 to: self listElements size do: [:start |
-		start to: self listElements size do: [:stop | | list |
-			list := self listWithElements.
+	1 to: self listItems size do: [:start |
+		start to: self listItems size do: [:stop | | list |
+			list := self listWithItems.
 			self assert:
 				(list
 					replaceFrom: start
 					to: stop
-					with: self changedListElements
+					with: self changedListItems
 					startingAt: start) == list.
 
-			1 to: start - 1 do: [:i | self assert: (list at: i) = (self listElements at: i)].
-			start to: stop do: [:i | self assert: (list at: i) = (self changedListElements at: i)].
-			stop + 1 to: list size do: [:i | self assert: (list at: i) = (self listElements at: i)].
+			self
+				assertList: list
+				replacedItems: self listItems
+				withItems: self changedListItems
+				from: start
+				to: stop.
 
 			start > 1
 				ifTrue: [
@@ -21,7 +24,7 @@ testReplaceFromToWithStartingAt
 							self emptyList
 								replaceFrom: start
 								to: stop
-								with: self listElements
+								with: self listItems
 								startingAt: start]
 						raise: Error]
 				ifFalse: [
@@ -29,7 +32,6 @@ testReplaceFromToWithStartingAt
 						(self emptyList
 							replaceFrom: start
 							to: stop
-							with: self listElements
+							with: self listItems
 							startingAt: start) =
-								(self listClass newFrom:
-									(self listElementsFirst: (stop - start) + 1))]]].
+								(self listClass newFrom: (self listItemsFirst: stop))]]]

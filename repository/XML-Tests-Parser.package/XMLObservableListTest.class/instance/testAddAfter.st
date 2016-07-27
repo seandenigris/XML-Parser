@@ -4,9 +4,9 @@ testAddAfter
 
 	super testAddAfter.
 
-	list := self listWithSingleElement.
-	self listElements allButFirst reverseDo: [:each |
+	list := self listWithSingleItem.
+	self listItems allButFirst reverseDo: [:each |
 		self
-			should: [list add: each after: self singleElement]
+			should: [list add: each after: self singleListItem]
 			add: each
 			toAndNotify: list].

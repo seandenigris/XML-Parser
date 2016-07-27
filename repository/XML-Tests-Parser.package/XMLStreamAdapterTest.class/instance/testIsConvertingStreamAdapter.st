@@ -1,3 +1,0 @@
-tests
-testIsConvertingStreamAdapter
-	self deny: self newStreamAdapter isConvertingStreamAdapter

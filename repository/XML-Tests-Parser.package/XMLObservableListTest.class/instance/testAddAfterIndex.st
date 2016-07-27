@@ -4,8 +4,8 @@ testAddAfterIndex
 
 	super testAddAfterIndex.
 
-	list := self listWithSingleElement.
-	self listElements allButFirst reverseDo: [:each |
+	list := self listWithSingleItem.
+	self listItems allButFirst reverseDo: [:each |
 		self
 			should: [list add: each afterIndex: 1]
 			add: each

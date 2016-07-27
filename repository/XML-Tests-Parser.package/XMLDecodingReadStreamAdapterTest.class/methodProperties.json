@@ -9,6 +9,6 @@
 		"testHasDefaultStreamConverter" : "monty 3/5/2016 16:09",
 		"testHasNullStreamConverter" : "monty 3/5/2016 16:09",
 		"testInvalidCharacters" : "monty 3/9/2016 10:35",
-		"testIsConvertingStreamAdapter" : "monty 3/5/2016 12:39",
+		"testIsXMLConvertingStreamAdapter" : "monty 4/1/2016 00:55",
 		"testOn" : "monty 3/6/2016 08:29",
 		"testStreamConverter" : "monty 3/5/2016 12:39" } }

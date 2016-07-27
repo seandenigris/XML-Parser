@@ -6,10 +6,10 @@ testAddAllLast
 
 	list := self emptyList.
 	self
-		should: [list addAllLast: self listElements]
-		addAll: self listElements
+		should: [list addAllLast: self listItems]
+		addAll: self listItems
 		toAndNotify: list.
 	self
-		should: [list addAllLast: self changedListElements]
-		addAll: self changedListElements
+		should: [list addAllLast: self changedListItems]
+		addAll: self changedListItems
 		toAndNotify: list.

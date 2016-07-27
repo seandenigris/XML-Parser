@@ -3,7 +3,7 @@ testWithIndexDo
 	| enumerated |
 
 	enumerated := OrderedCollection new.
-	self listWithElements withIndexDo: [:each :i | enumerated addLast: each -> i].
+	self listWithItems withIndexDo: [:each :i | enumerated addLast: each -> i].
 	self assert:
 		enumerated =
-			(self listElements withIndexCollect: [:each : i | each -> i ]) asOrderedCollection.
+			(self listItems withIndexCollect: [:each : i | each -> i ]) asOrderedCollection.

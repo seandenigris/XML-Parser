@@ -1,7 +1,11 @@
 tests
 testFragmentNonPercentEncodedCharacters
-	| fragment uri |
+	| fragment uriString uri |
 
 	fragment := self nonPercentEncodedPathCharacters , '/?'.
-	uri := ('#', fragment) asXMLURI.
+	uriString := '#', fragment.
+	uri := uriString asXMLURI.
 	self assert: uri fragment = fragment.
+	
+	uri uriString: nil.
+	self assert: uri printString = uriString.

@@ -4,7 +4,7 @@ testAddAllLast
 
 	list := self emptyList.
 	self
-		assert: (list addAllLast: self listElements) = self listElements;
-		assert: list = self listWithElements;
-		assert: (list addAllLast: self changedListElements) = self changedListElements;
-		assert: list = (self listClass newFrom: self listElements, self changedListElements).
+		assert: (list addAllLast: self listItems) = self listItems;
+		assert: list = self listWithItems;
+		assert: (list addAllLast: self changedListItems) = self changedListItems;
+		assert: list = (self listClass newFrom: self listItems, self changedListItems).

@@ -2,12 +2,12 @@ tests
 testAllButFirstFew
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	1 to: list size do: [:i |
 		self
 			assertList: (list allButFirst: i)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElements allButFirst: i)).
+			equals: (self listClass newFrom: (self listItems allButFirst: i)).
 		self
 			assertList: (list allButFirst: i + list size)
 			copiedFrom: list

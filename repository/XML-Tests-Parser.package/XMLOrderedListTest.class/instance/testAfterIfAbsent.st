@@ -2,9 +2,9 @@ tests
 testAfterIfAbsent
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self assert:
-		(self listElements allSatisfy: [:each |
-			(list after: each ifAbsent: [self newElement]) =
-				(self listElements after: each ifAbsent: [self newElement])]).
-	self assert: (list after: self absentElement ifAbsent: [self newElement]) = self newElement.
+		(self listItems allSatisfy: [:each |
+			(list after: each ifAbsent: [self newListItem]) =
+				(self listItems after: each ifAbsent: [self newListItem])]).
+	self assert: (list after: self absentListItem ifAbsent: [self newListItem]) = self newListItem.

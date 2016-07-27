@@ -4,12 +4,12 @@ testCopyWithout
 
 	list := self emptyList.
 	self
-		assertList: (list copyWithout: self singleElement)
+		assertList: (list copyWithout: self singleListItem)
 		copiedFrom: list
 		equals: self emptyList.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
-		assertList: (list copyWithout: self singleElement)
+		assertList: (list copyWithout: self singleListItem)
 		copiedFrom: list
-		equals: (self listClass newFrom: (self listElements copyWithout: self singleElement)).
+		equals: (self listClass newFrom: (self listItems copyWithout: self singleListItem)).

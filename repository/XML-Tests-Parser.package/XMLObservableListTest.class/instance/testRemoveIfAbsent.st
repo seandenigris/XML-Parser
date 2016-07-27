@@ -4,11 +4,16 @@ testRemoveIfAbsent
 
 	super testRemoveIfAbsent.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
-		should: [list remove: self singleElement ifAbsent: [nil]]
-		remove: self singleElement
+		should: [
+			list
+				remove: self singleListItem
+				ifAbsent: [self absentListItem]]
+		remove: self singleListItem
 		fromAndNotify: list.
-	self
-		assert: (list remove: self singleElement ifAbsent: [nil]) isNil;
-		deny: list observer hasNotifications.
+	self assert:
+		(list
+			remove: self singleListItem
+			ifAbsent: [self absentListItem]) = self absentListItem.
+	self deny: list observer hasNotifications.

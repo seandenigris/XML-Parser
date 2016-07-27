@@ -2,16 +2,16 @@ tests
 testLastFew
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	1 to: list size do: [:i |
 		self
 			assertList: (list last: i)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElementsLast: i)).
+			equals: (self listClass newFrom: (self listItemsLast: i)).
 		self
 			assertList: (list last: list size + i)
 			copiedFrom: list
-			equals: self listWithElements.
+			equals: self listWithItems.
 		self
 			assertList: (list last: (i * -1))
 			copiedFrom: list

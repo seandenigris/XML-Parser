@@ -2,12 +2,12 @@ tests
 testAllButLastFew
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	1 to: list size do: [:i |
 		self
 			assertList: (list allButLast: i)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElements allButLast: i)).
+			equals: (self listClass newFrom: (self listItems allButLast: i)).
 		self
 			assertList: (list allButLast: i + list size)
 			copiedFrom: list

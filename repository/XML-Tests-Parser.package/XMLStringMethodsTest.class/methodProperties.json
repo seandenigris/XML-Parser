@@ -18,11 +18,10 @@
 		"testAsXMLHTTPRequest" : "monty 3/6/2016 10:42",
 		"testAsXMLStreamConverter" : "monty 3/5/2016 16:20",
 		"testAsXMLString" : "monty 2/15/2016 23:38",
-		"testHasPrefixBeforeLocalName" : "monty 11/22/2014 20:00",
-		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
-		"testIsXMLNCName" : "monty 3/24/2016 21:44",
+		"testIsXMLNCName" : "monty 4/1/2016 07:15",
 		"testIsXMLName" : "monty 3/24/2016 21:44",
 		"testIsXMLNmtoken" : "monty 3/24/2016 21:44",
-		"testLocalNameAfterPrefix" : "monty 11/16/2014 20:22",
+		"testIsXMLQualifiedNameOrLocalName" : "monty 4/1/2016 01:02",
 		"testParseXML" : "monty 3/7/2016 20:11",
-		"testPrefixBeforeLocalName" : "monty 11/17/2014 06:36" } }
+		"testXMLLocalNameAfterPrefix" : "monty 4/1/2016 01:01",
+		"testXMLPrefixBeforeLocalName" : "monty 4/1/2016 01:02" } }

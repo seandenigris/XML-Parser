@@ -4,8 +4,8 @@ testAllButLast
 
 	self assert: self emptyList allButLast = self emptyList.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assertList: list allButLast
 		copiedFrom: list
-		equals: (self listClass newFrom: self listElements allButLast).
+		equals: (self listClass newFrom: self listItems allButLast).

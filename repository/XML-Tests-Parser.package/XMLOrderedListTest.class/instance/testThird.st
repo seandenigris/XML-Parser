@@ -2,4 +2,4 @@ tests
 testThird
 	self
 		assert: self emptyList third = self defaultValue;
-		assert: self listWithElements third = (self listElements at: 3).
+		assert: self listWithItems third = (self listItems at: 3).

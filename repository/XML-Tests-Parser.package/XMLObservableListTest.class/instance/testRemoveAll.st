@@ -4,8 +4,8 @@ testRemoveAll
 
 	super testRemoveAll.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		should: [list removeAll]
-		removeAll: self listElements reversed
+		removeAll: self listItems reversed
 		fromAndNotify: list.

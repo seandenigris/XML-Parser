@@ -2,8 +2,8 @@ tests
 testCollect
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
-		assertList: (list collect: [:each | self changeElement: each])
+		assertList: (list collect: [:each | self changeListItem: each])
 		collectedFrom: list
-		equals: (self listSpecies newFrom: self changedListElements).
+		equals: (self listSpecies newFrom: self changedListItems).

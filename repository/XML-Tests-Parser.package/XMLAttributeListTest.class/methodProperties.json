@@ -2,17 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"absentElement" : "monty 1/17/2015 11:09",
+		"absentListItem" : "monty 3/30/2016 01:19",
 		"afterAddingToNotifications" : "monty 1/17/2015 11:06",
 		"afterRemovingFromNotifications" : "monty 1/17/2015 11:06",
 		"allowsDuplicates" : "monty 1/18/2015 11:26",
 		"assertList:copiedFrom:equals:" : "monty 1/17/2015 14:57",
 		"assertList:isCopyOf:" : "monty 1/17/2015 14:57",
 		"beforeAddingToNotifications" : "monty 1/17/2015 11:06",
-		"changeElement:" : "monty 1/17/2015 11:24",
+		"changeListItem:" : "monty 3/30/2016 01:20",
 		"listClass" : "monty 1/17/2015 11:07",
-		"listElements" : "monty 1/18/2015 18:09",
-		"newElement" : "monty 1/17/2015 11:10",
+		"listItems" : "monty 3/30/2016 01:25",
+		"newListItem" : "monty 3/30/2016 01:30",
 		"observerClass" : "monty 1/17/2015 11:12",
 		"reverseSortBlock" : "monty 1/17/2015 11:25",
 		"sortBlock" : "monty 1/17/2015 11:25" } }

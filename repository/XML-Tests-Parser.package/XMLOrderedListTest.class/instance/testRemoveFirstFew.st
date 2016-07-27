@@ -1,10 +1,10 @@
 tests
 testRemoveFirstFew
-	1 to: self listElements size do: [:i | | list removedElements |
-		list := self listWithElements.
+	1 to: self listItems size do: [:i | | list removedElements |
+		list := self listWithItems.
 		removedElements := list removeFirst: i.
 		self
-			assert: removedElements asArray = (self listElementsFirst: i);
-			assert: list = (self listClass newFrom: (self listElements allButFirst: i));
+			assert: removedElements asArray = (self listItemsFirst: i);
+			assert: list = (self listClass newFrom: (self listItems allButFirst: i));
 			assert: (list removeFirst: 0) isEmpty;
 			should: [self emptyList removeFirst: i] raise: Error].

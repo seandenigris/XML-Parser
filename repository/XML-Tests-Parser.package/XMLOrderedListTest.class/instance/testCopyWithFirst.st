@@ -4,14 +4,14 @@ testCopyWithFirst
 
 	list := self emptyList.
 	self
-		assertList: (list copyWithFirst: self singleElement)
+		assertList: (list copyWithFirst: self singleListItem)
 		copiedFrom: list
-		equals: self listWithSingleElement.
+		equals: self listWithSingleItem.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
-		assertList: (list copyWithFirst: self newElement)
+		assertList: (list copyWithFirst: self newListItem)
 		copiedFrom: list
 		equals:
 			(self listClass newFrom:
-				(self listElements copyWithFirst: self newElement)).
+				(self listItems copyWithFirst: self newListItem)).

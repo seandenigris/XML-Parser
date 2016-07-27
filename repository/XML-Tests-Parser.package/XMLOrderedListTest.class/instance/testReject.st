@@ -2,10 +2,10 @@ tests
 testReject
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
-		assertList: (list reject: [:each | each = self singleElement])
+		assertList: (list reject: [:each | each = self singleListItem])
 		copiedFrom: list
 		equals:
 			(self listClass newFrom:
-				(self listWithElements copyWithout: self singleElement)).
+				(self listWithItems copyWithout: self singleListItem)).

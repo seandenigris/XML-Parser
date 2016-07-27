@@ -1,16 +1,19 @@
 tests
 testPathPercentEncodedCharacters
-	| uri |
+	| uri encodedURIString |
 
-	self asciiCharactersDo: [:each | | encodedURIString |
-		encodedURIString := XMLURI percentEncodeCharacter: each.
-		uri := encodedURIString asXMLURI.
-		self assert: uri path = each asString.
+	encodedURIString := self percentEncodedASCIICharacters.
+	uri := encodedURIString asXMLURI.
+	self
+		assert: uri path = self asciiCharacters;
+		assert: uri pathSegments = (OrderedCollection with: self asciiCharacters);
+		assert: uri rawPathSegments = (OrderedCollection with: self percentEncodedASCIICharacters).
 
-		uri uriString: nil.
-		(self isUnreservedCharacter: each)
-			ifTrue: [self assert: uri printString = each asString]
-			ifFalse: [self assert: uri printString = encodedURIString]].
+	uri uriString: nil.
+	self assert: uri printString = encodedURIString.
 
 	uri := '+' asXMLURI.
-	self assert: uri path = '+'.
+	self
+		assert: uri path = '+';
+		assert: uri pathSegments = (OrderedCollection with: '+');
+		assert: uri rawPathSegments = (OrderedCollection with: '+').

@@ -4,13 +4,13 @@ testAddLast
 
 	list := self emptyList.
 	self
-		assert: (self listElements allSatisfy: [:each | (list addLast: each) = each]);
-		assert: list = self listWithElements.
+		assert: (self listItems allSatisfy: [:each | (list addLast: each) = each]);
+		assert: list = self listWithItems.
 
-	self assert: (self listElements allSatisfy: [:each | (list addLast: each) = each]).
+	self assert: (self listItems allSatisfy: [:each | (list addLast: each) = each]).
 	self assert:
 		list =
 			(self listClass newFrom: 
 				(self allowsDuplicates
-					ifTrue: [self listElements, self listElements]
-					ifFalse: [self listElements])).
+					ifTrue: [self listItems, self listItems]
+					ifFalse: [self listItems])).

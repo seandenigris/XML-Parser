@@ -1,3 +1,0 @@
-tests
-testIsConvertingStreamAdapter
-	self assert: self newStreamAdapter isConvertingStreamAdapter

@@ -1,9 +1,15 @@
 tests
 testCopyWithQuery
-	self allURIStringsDo: [:each | | uri oldQuery newQuery copy |
+	self allURIStringsDo: [:each | | uri oldQuery oldRawQuery newQuery newRawQuery copy |
 		uri := each asXMLURI.
 		oldQuery := uri query.
-		(newQuery := oldQuery copy) add: 'new' -> 'new'.
+		oldRawQuery := uri rawQuery.
+		(newQuery := oldQuery copy)
+			at: 'newKey', self reservedCharacters
+			put: 'newValue', self reservedCharacters.
+		(newRawQuery := oldRawQuery copy)
+			at: 'newKey', self percentEncodedReservedCharacters
+			put: 'newValue', self percentEncodedReservedCharacters.
 		copy := uri copyWithQuery: newQuery.
 		self
 			assert: uri = each asXMLURI;
@@ -18,6 +24,9 @@ testCopyWithQuery
 			assert: uri port = copy port;
 			assert: uri pathSegments = copy pathSegments;
 			deny: uri query = copy query;
+			deny: uri rawQuery = copy rawQuery;
 			assert: uri query = oldQuery;
+			assert: uri rawQuery = oldRawQuery;
 			assert: copy query = newQuery;
+			assert: copy rawQuery = newRawQuery;
 			assert: uri fragment = copy fragment]

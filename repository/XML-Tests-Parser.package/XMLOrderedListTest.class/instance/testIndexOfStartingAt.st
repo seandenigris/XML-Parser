@@ -2,7 +2,7 @@ tests
 testIndexOfStartingAt
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	1 to: list size do: [:i |
 		self
 			assert: (list indexOf: (list at: i) startingAt: i) = i;

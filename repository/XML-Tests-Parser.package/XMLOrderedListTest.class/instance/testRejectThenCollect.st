@@ -2,13 +2,13 @@ tests
 testRejectThenCollect
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assertList:
 			(list
-				reject: [:each | each = self singleElement]
-				thenCollect: [:each | self changeElement: each])
+				reject: [:each | each = self singleListItem]
+				thenCollect: [:each | self changeListItem: each])
 		collectedFrom: list
 		equals:
 			(self listSpecies newFrom:
-				(self changedListElements copyWithout: self changedSingleElement)).
+				(self changedListItems copyWithout: self changedSingleListItem)).

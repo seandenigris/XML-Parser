@@ -2,12 +2,12 @@ tests
 testSorted
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assertList: list sorted
 		copiedFrom: list
-		equals: (self listClass newFrom: (self listElements copy sorted: self sortBlock)).
+		equals: (self listClass newFrom: (self listItems copy sorted: self sortBlock)).
 	self
 		assertList: (list sorted: self reverseSortBlock)
 		copiedFrom: list
-		equals: (self listClass newFrom: (self listElements copy sorted: self reverseSortBlock)).
+		equals: (self listClass newFrom: (self listItems copy sorted: self reverseSortBlock)).

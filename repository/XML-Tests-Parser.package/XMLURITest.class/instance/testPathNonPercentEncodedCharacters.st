@@ -1,10 +1,14 @@
 tests
 testPathNonPercentEncodedCharacters
-	| firstSegment secondSegment uri |
+	| firstSegment secondSegment uriString uri |
 
 	firstSegment := self nonPercentEncodedPathCharacters copyWithout: $:.
 	secondSegment := self nonPercentEncodedPathCharacters.
-	uri := (firstSegment, '/', secondSegment) asXMLURI.
+	uriString := firstSegment, '/', secondSegment.
+	uri := uriString asXMLURI.
 	self assert:
 		uri pathSegments =
 			(OrderedCollection with: firstSegment with: secondSegment).
+
+	uri uriString: nil.
+	self assert: uri printString = uriString.

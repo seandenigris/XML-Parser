@@ -4,11 +4,11 @@ testRemoveFirstFew
 
 	super testRemoveFirstFew.
 
-	1 to: self listElements size do: [:i |
-		list := self listWithElements.
+	1 to: self listItems size do: [:i |
+		list := self listWithItems.
 		self
 			should: [list removeFirst: i]
-			removeAll: (self listElementsFirst: i)
+			removeAll: (self listItemsFirst: i)
 			fromAndNotify: list].
 	list := self emptyList.
 	self

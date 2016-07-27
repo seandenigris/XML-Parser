@@ -4,8 +4,8 @@ testAddAll
 
 	list := self emptyList.
 	self
-		deny: list = self listWithElements;
-		assert: (list addAll: self listElements) = self listElements;
-		assert: list = self listWithElements;
-		assert: (list addAll: self changedListElements) = self changedListElements;
-		assert: list = (self listClass newFrom: (self listElements, self changedListElements)).
+		deny: list = self listWithItems;
+		assert: (list addAll: self listItems) = self listItems;
+		assert: list = self listWithItems;
+		assert: (list addAll: self changedListItems) = self changedListItems;
+		assert: list = (self listClass newFrom: (self listItems, self changedListItems)).

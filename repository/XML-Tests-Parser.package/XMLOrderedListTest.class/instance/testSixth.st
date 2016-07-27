@@ -2,4 +2,4 @@ tests
 testSixth
 	self
 		assert: self emptyList sixth = self defaultValue;
-		assert: self listWithElements sixth = (self listElements at: 6).
+		assert: self listWithItems sixth = (self listItems at: 6).

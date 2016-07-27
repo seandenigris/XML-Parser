@@ -4,7 +4,7 @@ testAddAllFirst
 
 	list := self emptyList.
 	self
-		assert: (list addAllFirst: self listElements) = self listElements;
-		assert: list = self listWithElements;
-		assert: (list addAllFirst: self changedListElements) = self changedListElements;
-		assert: list = (self listClass newFrom: self changedListElements, self listElements).
+		assert: (list addAllFirst: self listItems) = self listItems;
+		assert: list = self listWithItems;
+		assert: (list addAllFirst: self changedListItems) = self changedListItems;
+		assert: list = (self listClass newFrom: self changedListItems, self listItems).

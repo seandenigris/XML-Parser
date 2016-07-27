@@ -2,13 +2,13 @@ tests
 testDetectIfNone
 	| list |
 
-	list := self listWithElements.
-	self listElements do: [:element |
+	list := self listWithItems.
+	self listItems do: [:element |
 		self assert:
 			(list
 				detect: [:each | each = element]
-				ifNone: [self newElement]) = element].
+				ifNone: [self newListItem]) = element].
 	self assert:
 		(list
-			detect: [:each | each = self absentElement]
-			ifNone: [self newElement]) = self newElement.
+			detect: [:each | each = self absentListItem]
+			ifNone: [self newListItem]) = self newListItem.

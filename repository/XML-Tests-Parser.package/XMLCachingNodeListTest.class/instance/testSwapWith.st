@@ -4,7 +4,7 @@ testSwapWith
 
 	super testSwapWith.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	cachedElements := list elements.
 	start := 1.
 	end := list size.

@@ -2,8 +2,8 @@ tests
 testRemoveAt
 	super testRemoveAt.
 
-	self listElements withIndexDo: [:each :i | | list |
-		list := self listWithElements.
+	self listItems withIndexDo: [:each :i | | list |
+		list := self listWithItems.
 		self
 			should: [list removeAt: i]
 			remove: each

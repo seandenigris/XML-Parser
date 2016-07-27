@@ -6,3 +6,4 @@ SystemOrganization addCategory: 'XML-Tests-Parser-Namespaces'!
 SystemOrganization addCategory: 'XML-Tests-Parser-Streams'!
 SystemOrganization addCategory: 'XML-Tests-Parser-URI'!
 SystemOrganization addCategory: 'XML-Tests-Parser-Utils'!
+SystemOrganization addCategory: 'XML-Tests-Parser-Validation-DFA'!

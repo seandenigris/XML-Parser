@@ -6,7 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"reservedCharacters",
+		"unreservedCharacters",
+		"asciiCharacters",
+		"percentEncodedASCIICharacters",
+		"percentEncodedReservedCharacters" ],
 	"name" : "XMLURITest",
 	"pools" : [
 		 ],

@@ -5,7 +5,7 @@ testAdd
 	super testAdd.
 
 	list := self emptyList.
-	self listElements do: [:each |
+	self listItems do: [:each |
 		self
 			should: [list add: each]
 			add: each

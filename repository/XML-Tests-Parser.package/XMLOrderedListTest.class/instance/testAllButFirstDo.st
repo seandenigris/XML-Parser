@@ -4,5 +4,5 @@ testAllButFirstDo
 		should: [:block | self emptyList allButFirstDo: block]
 		enumerate: #().
 	self
-		should: [:block | self listWithElements allButFirstDo: block]
-		enumerate: self listElements allButFirst.
+		should: [:block | self listWithItems allButFirstDo: block]
+		enumerate: self listItems allButFirst.

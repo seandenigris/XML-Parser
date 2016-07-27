@@ -2,9 +2,9 @@ tests
 testSort
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assert: list sort == list;
-		assert: list = (self listClass newFrom: (self listElements copy sort: self sortBlock));
+		assert: list = (self listClass newFrom: (self listItems copy sort: self sortBlock));
 		assert: (list sort: self reverseSortBlock) == list;
-		assert: list = (self listClass newFrom: (self listElements copy sort: self reverseSortBlock)).
+		assert: list = (self listClass newFrom: (self listItems copy sort: self reverseSortBlock)).

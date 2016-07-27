@@ -4,8 +4,8 @@ testRemoveLast
 
 	super testRemoveLast.
 
-	list := self listWithElements.
-	self listElements reverseDo: [:each |
+	list := self listWithItems.
+	self listItems reverseDo: [:each |
 		self
 			should: [list removeLast]
 			remove: each

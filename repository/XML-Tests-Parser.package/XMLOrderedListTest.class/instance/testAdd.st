@@ -4,6 +4,6 @@ testAdd
 
 	list := self emptyList.
 	self
-		deny: list = self listWithElements;
-		assert: (self listElements allSatisfy: [:each | (list add: each) == each]);
-		assert: (list = self listWithElements).
+		deny: list = self listWithItems;
+		assert: (self listItems allSatisfy: [:each | (list add: each) == each]);
+		assert: (list = self listWithItems).

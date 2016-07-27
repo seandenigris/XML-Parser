@@ -1,16 +1,17 @@
 tests
 testFragmentPercentEncodedCharacters
-	| uri |
+	| encodedURIString uri |
 
-	self asciiCharactersDo: [:each | | encodedURIString |
-		encodedURIString := '#', (XMLURI percentEncodeCharacter: each).
-		uri := encodedURIString asXMLURI.
-		self assert: uri fragment = each asString.
+	encodedURIString := '#', self percentEncodedASCIICharacters.
+	uri := encodedURIString asXMLURI.
+	self
+		assert: uri fragment = self asciiCharacters;
+		assert: uri rawFragment = self percentEncodedASCIICharacters.
 
-		uri uriString: nil.
-		(self isUnreservedCharacter: each)
-			ifTrue: [self assert: uri printString = ('#' copyWith: each)]
-			ifFalse: [self assert: uri printString = encodedURIString]].
+	uri uriString: nil.
+	self assert: uri printString = encodedURIString.
 
 	uri := '#+' asXMLURI.
-	self assert: uri fragment = '+'.
+	self
+		assert: uri fragment = '+';
+		assert: uri rawFragment = '+'.

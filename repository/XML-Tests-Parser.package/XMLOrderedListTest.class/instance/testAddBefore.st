@@ -2,11 +2,11 @@ tests
 testAddBefore
 	| list last |
 
-	last := self listElements last.
+	last := self listItems last.
 	(list := self emptyList) add: last.
 	self
 		assert:
-			(self listElements allButLast
+			(self listItems allButLast
 				allSatisfy: [:each | (list add: each before: last) = each]);
-		assert: list = self listWithElements;
-		should: [list add: self newElement before: self absentElement] raise: Error.
+		assert: list = self listWithItems;
+		should: [list add: self newListItem before: self absentListItem] raise: Error.

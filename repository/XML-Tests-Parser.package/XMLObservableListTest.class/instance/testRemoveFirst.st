@@ -4,8 +4,8 @@ testRemoveFirst
 
 	super testRemoveFirst.
 
-	list := self listWithElements.
-	self listElements do: [:each |
+	list := self listWithItems.
+	self listItems do: [:each |
 		self
 			should: [list removeFirst]
 			remove: each

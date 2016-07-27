@@ -2,7 +2,7 @@ tests
 testRemoveAll
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assert: (list removeAll) == list;
 		assert: list isEmpty.

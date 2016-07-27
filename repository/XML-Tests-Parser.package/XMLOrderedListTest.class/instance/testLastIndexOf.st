@@ -2,11 +2,11 @@ tests
 testLastIndexOf
 	| list |
 
-	list := self listClass newFrom: self listElements, self listElements.
+	list := self listClass newFrom: self listItems, self listItems.
 	list do: [:each |
 		self assert:
 			(list lastIndexOf: each) =
 				(self allowsDuplicates
-					ifTrue: [self listElements, self listElements lastIndexOf: each]
-					ifFalse: [self listElements lastIndexOf: each])].
-	self assert: (list lastIndexOf: self newElement) isZero.
+					ifTrue: [self listItems, self listItems lastIndexOf: each]
+					ifFalse: [self listItems lastIndexOf: each])].
+	self assert: (list lastIndexOf: self newListItem) isZero.

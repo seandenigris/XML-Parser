@@ -2,16 +2,16 @@ tests
 testFirstFew
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	1 to: list size do: [:i |
 		self
 			assertList: (list first: i)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElementsFirst: i)).
+			equals: (self listClass newFrom: (self listItemsFirst: i)).
 		self
 			assertList: (list first: list size + i)
 			copiedFrom: list
-			equals: self listWithElements.
+			equals: self listWithItems.
 		self
 			assertList: (list first: (i * -1))
 			copiedFrom: list

@@ -1,10 +1,14 @@
 tests
 testQueryNonPercentOrPlusEncodedCharacters
-	| queryKey queryValue uri |
+	| queryKey queryValue uriString uri |
 
 	queryKey := (self nonPercentEncodedPathCharacters copyWithoutAll: '=&+'), '/?'.
 	queryValue :=  (self nonPercentEncodedPathCharacters copyWithoutAll: '&+'), '/?'.
-	uri := ('?', queryKey, '=', queryValue) asXMLURI.
+	uriString := '?', queryKey, '=', queryValue.
+	uri := uriString asXMLURI.
 	self assert:
 		uri query =
 			(OrderPreservingStringDictionary with: queryKey -> queryValue).
+
+	uri uriString: nil.
+	self assert: uri printString = uriString.

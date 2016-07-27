@@ -1,4 +1,4 @@
 accessing
 unprefixedAttributeAssociations
 	^ self attributeAssociations collect: [:each |
-		each key localNameAfterPrefix -> each value]
+		each key xmlLocalNameAfterPrefix -> each value]

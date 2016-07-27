@@ -5,8 +5,8 @@ testCopyEmpty
 	list := self emptyList.
 	self assertList: list copyEmpty copiedFrom: list equals: self emptyList.
 
-	list := self listWithSingleElement.
+	list := self listWithSingleItem.
 	self assertList: list copyEmpty copiedFrom: list equals: self emptyList.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self assertList: list copyEmpty copiedFrom: list equals: self emptyList.

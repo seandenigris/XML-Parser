@@ -5,7 +5,7 @@ testAddLast
 	super testAddLast.
 
 	list := self emptyList.
-	self listElements do: [:each |
+	self listItems do: [:each |
 		self
 			should: [list addLast: each]
 			add: each

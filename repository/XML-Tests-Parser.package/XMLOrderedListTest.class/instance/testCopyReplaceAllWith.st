@@ -2,32 +2,32 @@ tests
 testCopyReplaceAllWith
 	| list |
 
-	list := self listClass newFrom: self listElements, self listElements.
-	1 to: self listElements size do: [:i | | replacedElements |
-		replacedElements := self listElementsLast: i.
+	list := self listClass newFrom: self listItems, self listItems.
+	1 to: self listItems size do: [:i | | replacedElements |
+		replacedElements := self listItemsLast: i.
 		self
 			assertList:
 				(list
 					copyReplaceAll: replacedElements
-					with: (replacedElements collect: [:each | self changeElement: each]))
+					with: (replacedElements collect: [:each | self changeListItem: each]))
 			copiedFrom: list
 			equals: 
 				(self listClass newFrom:
-					((self listElements, self listElements) 
+					((self listItems, self listItems) 
 						copyReplaceAll: replacedElements
-						with: (replacedElements collect: [:each | self changeElement: each]))).
+						with: (replacedElements collect: [:each | self changeListItem: each]))).
 		self
 			assertList:
 				(list
-					copyReplaceAll: (Array with: self absentElement)
-					with: (Array with: self newElement))
+					copyReplaceAll: (Array with: self absentListItem)
+					with: (Array with: self newListItem))
 			copiedFrom: list
 			equals: list.	
 		self
-			assertList: (list copyReplaceAll: #() with: (Array with: self newElement))
+			assertList: (list copyReplaceAll: #() with: (Array with: self newListItem))
 			copiedFrom: list
 			equals: list.
 		self
-			assertList: (list copyReplaceAll: (self listElements copyWith: self absentElement) with: #())
+			assertList: (list copyReplaceAll: (self listItems copyWith: self absentListItem) with: #())
 			copiedFrom: list
 			equals: list].

@@ -2,4 +2,4 @@ tests
 testAnyOne
 	self
 		assert: self emptyList anyOne = self defaultValue;
-		assert: self listWithElements anyOne = self listElements first.
+		assert: self listWithItems anyOne = self listItems first.

@@ -2,11 +2,11 @@ tests
 testAddAfterIndex
 	| list |
 
-	list := self listWithSingleElement.
+	list := self listWithSingleItem.
 	self
 		assert:
-			(self listElements allButFirst reversed
+			(self listItems allButFirst reversed
 				allSatisfy: [:each | (list add: each afterIndex: 1) = each]);
-		assert: list = self listWithElements;
-		should: [list add: self newElement afterIndex: self listElements size + 1] raise: Error;
-		should: [list add: self newElement afterIndex: -1] raise: Error.
+		assert: list = self listWithItems;
+		should: [list add: self newListItem afterIndex: self listItems size + 1] raise: Error;
+		should: [list add: self newListItem afterIndex: -1] raise: Error.

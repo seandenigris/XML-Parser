@@ -16,7 +16,7 @@ testEquality
 		self
 			assert: uri = otherURI;
 			assert: otherURI = uri.
-		otherURI userInfo: uri userInfo, 'new'.
+		otherURI rawUserInfo: uri userInfo, 'new'.
 		self
 			deny: uri = otherURI;
 			deny: otherURI = uri.
@@ -25,7 +25,7 @@ testEquality
 		self
 			assert: uri = otherURI;
 			assert: otherURI = uri.
-		otherURI host: uri host, 'new'.
+		otherURI rawHost: uri host, 'new'.
 		self
 			deny: uri = otherURI;
 			deny: otherURI = uri.
@@ -34,7 +34,7 @@ testEquality
 		self
 			assert: uri = otherURI;
 			assert: otherURI = uri.
-		otherURI pathSegments: (uri pathSegments copyWith: 'new').
+		otherURI rawPathSegments: (uri pathSegments copyWith: 'new').
 		self
 			deny: uri = otherURI;
 			deny: otherURI = uri.
@@ -43,7 +43,7 @@ testEquality
 		self
 			assert: uri = otherURI;
 			assert: otherURI = uri.
-		otherURI query:
+		otherURI rawQuery:
 			(uri query copy
 				add: 'new' -> '';
 				yourself).
@@ -55,7 +55,7 @@ testEquality
 		self
 			assert: uri = otherURI;
 			assert: otherURI = uri.
-		otherURI fragment: uri fragment, 'new'.
+		otherURI rawFragment: uri fragment, 'new'.
 		self
 			deny: uri = otherURI;
 			deny: otherURI = uri]

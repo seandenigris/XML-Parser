@@ -2,10 +2,10 @@ tests
 testDoWithIndex
 	| list enumerated |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	enumerated := OrderedCollection new.
 	list withIndexDo: [:each :i | enumerated addLast: each -> i].
 	self assert:
 		enumerated =
-			(self listElements withIndexCollect: [:each : i | each -> i ])
+			(self listItems withIndexCollect: [:each : i | each -> i ])
 				asOrderedCollection.

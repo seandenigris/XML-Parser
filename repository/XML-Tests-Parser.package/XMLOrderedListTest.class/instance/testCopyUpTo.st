@@ -2,13 +2,13 @@ tests
 testCopyUpTo
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	list do: [:each |
 		self
 			assertList: (list copyUpTo: each)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElements copyUpTo: each))].
+			equals: (self listClass newFrom: (self listItems copyUpTo: each))].
 	self
-		assertList: (list copyUpTo: self absentElement)
+		assertList: (list copyUpTo: self absentListItem)
 		copiedFrom: list
-		equals: self listWithElements.
+		equals: self listWithItems.

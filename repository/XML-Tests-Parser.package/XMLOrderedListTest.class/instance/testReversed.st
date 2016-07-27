@@ -2,8 +2,8 @@ tests
 testReversed
 	| list |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		assertList: list reversed
 		copiedFrom: list
-		equals: (self listClass newFrom: self listElements reversed).
+		equals: (self listClass newFrom: self listItems reversed).

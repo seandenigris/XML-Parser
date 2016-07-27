@@ -2,7 +2,7 @@ tests
 testReset
 	| list oldCapacity |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self hasCapacity
 		ifTrue: [oldCapacity := list capacity].
 	list reset.

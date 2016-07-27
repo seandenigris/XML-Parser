@@ -4,5 +4,5 @@ testAllButLastDo
 		should: [:block | self emptyList allButLastDo: block]
 		enumerate: #().
 	self
-		should: [:block | self listWithElements allButLastDo: block]
-		enumerate: self listElements allButLast.
+		should: [:block | self listWithItems allButLastDo: block]
+		enumerate: self listItems allButLast.

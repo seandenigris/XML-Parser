@@ -2,7 +2,7 @@ tests
 testCopyUpToLast
 	| list |
 
-	list := self listClass newFrom: self listElements, self listElements.
+	list := self listClass newFrom: self listItems, self listItems.
 	list do: [:each |
 		self
 			assertList: (list copyUpToLast: each)
@@ -10,13 +10,13 @@ testCopyUpToLast
 			equals:
 				(self listClass newFrom:
 					(self allowsDuplicates
-						ifTrue: [self listElements, self listElements copyUpToLast: each]
-						ifFalse: [self listElements copyUpToLast: each]))].
+						ifTrue: [self listItems, self listItems copyUpToLast: each]
+						ifFalse: [self listItems copyUpToLast: each]))].
 	self
-		assertList: (list copyUpToLast: self absentElement)
+		assertList: (list copyUpToLast: self absentListItem)
 		copiedFrom: list
 		equals:
 			(self listClass newFrom:
 				(self allowsDuplicates
-					ifTrue: [self listElements, self listElements]
-					ifFalse: [self listElements])).
+					ifTrue: [self listItems, self listItems]
+					ifFalse: [self listItems])).

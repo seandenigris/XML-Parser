@@ -5,8 +5,8 @@ testCopy
 	list := self emptyList.
 	self assertList: list copy isCopyOf: list.
 
-	list := self listWithSingleElement.
+	list := self listWithSingleItem.
 	self assertList: list copy isCopyOf: list.
 
-	list := self listWithElements.
+	list := self listWithItems.
 	self assertList: list copy isCopyOf: list.

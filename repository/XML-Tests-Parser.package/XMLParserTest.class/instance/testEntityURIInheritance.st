@@ -16,20 +16,20 @@ testEntityURIInheritance
 					replacement: '<!ENTITY second "<!--comment-->">'
 					uri: 'test.ent').
 
-	self assert: driver currentURI = 'test.xml'.
+	self assert: driver baseURI = 'test.xml'.
 
 	3 timesRepeat: [parser parseToken].
-	self assert: driver currentURI = 'test.ent'.
+	self assert: driver baseURI = 'test.ent'.
 
 	2 timesRepeat: [parser parseToken].
-	self assert: driver currentURI = 'test.xml'.
+	self assert: driver baseURI = 'test.xml'.
 	
 	"internal entities (declared in the internal subset or in an external DTD)
 	can't change abase URI according to the xml:base spec"
 	2 timesRepeat: [parser parseToken].
-	self assert: driver currentURI = '/new/xml'.
+	self assert: driver baseURI = '/new/xml'.
 
 	3 timesRepeat: [parser parseToken].
 	self
-		assert: driver currentURI = 'test.xml';
+		assert: driver baseURI = 'test.xml';
 		assert: parser atEnd.

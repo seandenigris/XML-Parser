@@ -2,11 +2,11 @@ tests
 testReadStream
 	| list stream elements |
 
-	list := self listWithElements.
+	list := self listWithItems.
 	stream := list readStream.
 	self assert: (stream isKindOf: ReadStream).
 
-	elements := self listElements asOrderedCollection.
+	elements := self listItems asOrderedCollection.
 	[stream atEnd]
 		whileFalse: [self assert: stream next = elements removeFirst].
 	self assert: elements isEmpty.

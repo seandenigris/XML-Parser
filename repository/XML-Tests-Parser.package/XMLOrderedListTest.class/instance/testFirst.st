@@ -2,4 +2,4 @@ tests
 testFirst
 	self
 		assert: self emptyList first = self defaultValue;
-		assert: self listWithElements first = (self listElements at: 1).
+		assert: self listWithItems first = (self listItems at: 1).

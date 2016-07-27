@@ -3,8 +3,8 @@ testReset
 	| list |
 
 	super testReset.
-	list := self listWithElements.
+	list := self listWithItems.
 	self
 		should: [list reset]
-		removeAll: self listElements
+		removeAll: self listItems
 		fromAndNotify: list.

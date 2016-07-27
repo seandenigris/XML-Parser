@@ -5,7 +5,7 @@ testAddFirst
 	super testAddFirst.
 
 	list := self emptyList.
-	self listElements reverseDo: [:each |
+	self listItems reverseDo: [:each |
 		self
 			should: [list addFirst: each]
 			add: each

@@ -1,3 +1,4 @@
 accessing
 unreservedCharacters
-	^ self alphaNumericCharacters, '-._~'
+	^ unreservedCharacters
+		ifNil: [unreservedCharacters := self alphaNumericCharacters, '-._~']
