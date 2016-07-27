@@ -2,4 +2,4 @@
 	"class" : {
 		"isSupported" : "monty 4/10/2015 10:52" },
 	"instance" : {
-		"getResponseUpToLimit:withTimeout:onError:" : "monty 5/26/2015 01:27" } }
+		"getResponseUpToLimit:decoding:timeout:onError:" : "monty 11/29/2015 22:42" } }

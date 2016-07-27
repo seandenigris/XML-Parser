@@ -1,3 +1,5 @@
 retrieving
 get
-	^ self getUpToLimit: nil
+	^ self
+		getUpToLimit: nil
+		decoding: true

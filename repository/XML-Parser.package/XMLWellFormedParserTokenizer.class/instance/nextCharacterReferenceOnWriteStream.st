@@ -1,25 +1,28 @@
 tokenizing
 nextCharacterReferenceOnWriteStream
 	"returns true if writeStream is written to, false otherwise"
-	| codePoint character |
+	| codePoint |
 
 	"skip #"
 	streamReader next.
-	codePoint :=
-		(streamReader nextInteger
-			ifNil: [self errorExpected: 'integer']).
-	self expectNext: $;.
-
-	character :=
-		(self characterFromCodePoint: codePoint)
-			ifNil: [self errorInvalidCodePoint: codePoint].
 	(context isContentContext
 		and: [driver replacesContentEntityReferences not])
 		ifTrue: [
+			nameStream reset.
+			(codePoint := streamReader nextIntegerPrintedOn: nameStream)
+				ifNil: [self errorExpectedIntegerCharacterReference].
+			(self characterFromCodePoint: codePoint)
+				ifNil: [self errorInvalidCodePoint: codePoint].
+			self expectNext: $;.
 			writeStream
 				nextPutAll: '&#';
-				nextPutAll: codePoint asString;
-				nextPut: $;.
-			^ true].
-	writeStream nextPut: character.
+				nextPutAll: nameStream contents;
+				nextPut: $;]
+		ifFalse: [| character |
+			(codePoint := streamReader nextInteger)
+				ifNil: [self errorExpectedIntegerCharacterReference].
+			(character := self characterFromCodePoint: codePoint)
+				ifNil: [self errorInvalidCodePoint: codePoint].
+			self expectNext: $;.
+			writeStream nextPut: character].
 	^ true.

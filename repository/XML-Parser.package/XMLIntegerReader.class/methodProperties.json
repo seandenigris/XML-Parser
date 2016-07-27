@@ -9,12 +9,13 @@
 		"readFrom:withBase:startingWithAny:orBase:" : "monty 10/27/2014 08:43",
 		"readFrom:withBase:upTo:" : "monty 1/21/2014 17:42" },
 	"instance" : {
-		"atEnd" : "monty 10/27/2014 08:39",
-		"next" : "monty 10/27/2014 08:39",
+		"atEnd" : "monty 12/2/2015 20:03",
+		"next" : "monty 12/2/2015 20:11",
 		"nextDigitWithBase:" : "monty 10/27/2014 08:40",
 		"nextInteger" : "monty 10/27/2014 08:37",
 		"nextIntegerWithBase:" : "monty 10/27/2014 08:35",
 		"nextIntegerWithBase:startingWithAny:orBase:" : "monty 10/27/2014 08:44",
 		"nextIntegerWithBase:upTo:" : "monty 11/14/2014 20:15",
-		"on:" : "monty 11/16/2014 04:54",
-		"peek" : "monty 10/27/2014 08:39" } }
+		"on:" : "monty 12/2/2015 20:03",
+		"peek" : "monty 12/2/2015 20:03",
+		"printStream:" : "monty 12/2/2015 20:04" } }

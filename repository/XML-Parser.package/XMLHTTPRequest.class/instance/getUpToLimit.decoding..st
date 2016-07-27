@@ -1,8 +1,9 @@
 retrieving
-getUpToLimit: aMaxSize
+getUpToLimit: aMaxSize decoding: aBoolean
 	^ self
 		getResponseUpToLimit: aMaxSize
-		withTimeout: self defaultTimeout
+		decoding: aBoolean
+		timeout: self defaultTimeout
 		onError: [:error |
 			(self isMaxSizeException: error)
 				ifTrue: [XMLLimitException signal: 'HTTP reponse limit exceeded']

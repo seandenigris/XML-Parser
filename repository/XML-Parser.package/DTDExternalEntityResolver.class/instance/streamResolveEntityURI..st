@@ -1,4 +1,6 @@
 resolving
 streamResolveEntityURI: aURIOrURIString
 	^ self resolveEntityWith: [:maxSize |
-		aURIOrURIString asXMLURI streamGetUpToLimit: maxSize]
+		aURIOrURIString asXMLURI
+			streamGetUpToLimit: maxSize
+			decoding: false]

@@ -1,3 +1,3 @@
 accessing
 peek
-	^ stream peek
+	^ readStream peek

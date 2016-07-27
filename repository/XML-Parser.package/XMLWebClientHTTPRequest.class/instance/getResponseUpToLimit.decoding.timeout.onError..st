@@ -1,5 +1,5 @@
 private
-getResponseUpToLimit: aMaxSize withTimeout: aTimeout onError: aBlock
+getResponseUpToLimit: aMaxSize decoding: aBoolean timeout: aTimeout onError: aBlock
 	^ [| response |
 		response :=
 			(Smalltalk at: #WebClient) new

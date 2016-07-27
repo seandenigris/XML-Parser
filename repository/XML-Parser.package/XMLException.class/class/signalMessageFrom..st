@@ -1,3 +1,6 @@
 signalling
 signalMessageFrom: anException
-	^ self signal: anException messageText
+	^ self
+		formatSignal: '({1}) {2}'
+		with: anException class name
+		with: anException messageText

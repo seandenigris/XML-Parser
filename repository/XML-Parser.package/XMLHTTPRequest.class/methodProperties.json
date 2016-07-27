@@ -5,12 +5,12 @@
 		"url:" : "monty 3/21/2015 22:37" },
 	"instance" : {
 		"defaultTimeout" : "monty 10/26/2014 09:14",
-		"get" : "monty 1/9/2014 05:08",
-		"getResponseUpToLimit:withTimeout:onError:" : "monty 1/13/2014 19:42",
-		"getUpToLimit:" : "monty 12/16/2014 20:26",
+		"get" : "monty 11/29/2015 22:40",
+		"getResponseUpToLimit:decoding:timeout:onError:" : "monty 11/29/2015 22:41",
+		"getUpToLimit:decoding:" : "monty 11/29/2015 22:39",
 		"isMaxSizeException:" : "monty 4/10/2015 10:41",
 		"printOn:" : "monty 4/25/2015 09:17",
-		"streamGet" : "monty 5/18/2015 05:35",
-		"streamGetUpToLimit:" : "monty 5/17/2015 00:07",
+		"streamGet" : "monty 11/29/2015 22:40",
+		"streamGetUpToLimit:decoding:" : "monty 11/29/2015 22:38",
 		"url" : "monty 1/10/2014 00:10",
 		"url:" : "monty 3/21/2015 22:37" } }

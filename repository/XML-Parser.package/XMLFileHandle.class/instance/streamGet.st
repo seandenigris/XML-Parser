@@ -1,3 +1,5 @@
 retrieving
 streamGet
-	^ self streamGetUpToLimit: nil
+	^ self
+		streamGetUpToLimit: nil
+		decoding: true

@@ -1,0 +1,3 @@
+accessing
+lastOrNil
+	^ self last

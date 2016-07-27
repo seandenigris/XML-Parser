@@ -1,3 +1,3 @@
 retrieving
-streamGetUpToLimit: aMaxSize
+streamGetUpToLimit: aMaxSize decoding: aBoolean
 	^ self readStreamUpToLimit: aMaxSize

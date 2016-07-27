@@ -1,3 +1,3 @@
 initialization
 on: aStream
-	stream := aStream
+	readStream := aStream

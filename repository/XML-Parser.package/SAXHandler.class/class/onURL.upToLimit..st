@@ -6,5 +6,7 @@ onURL: aURLString upToLimit: aLimit
 	^ (self
 		on:
 			(XMLDecodingReadStreamAdapter onExternalStream:
-				(aURLString asXMLURI streamGetUpToLimit: aLimit))
+				(aURLString asXMLURI
+					streamGetUpToLimit: aLimit
+					decoding: false))
 		documentURI: aURLString) documentReadLimit: aLimit
