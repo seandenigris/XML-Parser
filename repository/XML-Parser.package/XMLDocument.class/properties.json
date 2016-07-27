@@ -8,8 +8,9 @@
 	"instvars" : [
 		"version",
 		"encoding",
+		"isStandalone",
 		"doctypeDeclaration",
-		"isStandalone" ],
+		"doctypeDefinition" ],
 	"name" : "XMLDocument",
 	"pools" : [
 		 ],

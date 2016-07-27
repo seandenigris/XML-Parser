@@ -2,6 +2,6 @@ accessing
 ancestorNodes
 	| ancestors |
 
-	ancestors := self newNodeListForSelect.
+	ancestors := self newListForSelect.
 	self ancestorNodesDo: [:each | ancestors addLast: each].
 	^ ancestors.

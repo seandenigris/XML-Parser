@@ -1,9 +1,11 @@
 handling tokens
 handleEndDTD
 	(self resolvesExternalEntities
-		and: [self doctypeDefinition hasExternalSubset])
-		ifTrue: [self parseExternalSubset: self doctypeDefinition externalSubsetURI].
+		and: [self externalSubsetURI notEmpty
+			and: [self isValidating or: [self isStandalone not]]])
+		ifTrue: [self parseExternalSubset: self externalSubsetURI].
 
 	self saxHandler
 		endInternalSubset;
+		doctypeDefinition: self doctypeDefinition;
 		endDTD.

@@ -7,8 +7,6 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"root",
-		"externalSubsetUri",
-		"isStandalone",
 		"elementValidators",
 		"attributeValidators",
 		"generalEntities",

@@ -2,6 +2,6 @@ accessing
 allNodes
 	| allNodes |
 
-	allNodes := self newNodeListForSelect.
+	allNodes := self newListForSelect.
 	self allNodesDo: [:each | allNodes addLast: each].
 	^ allNodes.

@@ -3,4 +3,4 @@ hasValidators
 	^ (attributeValidators notNil
 		and: [attributeValidators notEmpty])
 			or: [elementValidators notNil
-				and: [elementValidators isEmpty]]
+				and: [elementValidators notEmpty]]
