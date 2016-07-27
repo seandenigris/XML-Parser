@@ -2,5 +2,6 @@ validation
 validateXMLSpaceAttributeValidator
 	(self isEnumerationValidator
 		and: [self allowedValues size = 2
-			and: [#('preserve' 'default') allSatisfy: [:each | self allowedValues includes: each]]])
+			and: [(self allowedValues includes: 'preserve')
+				and: [self allowedValues includes: 'default']]])
 		ifFalse: [self errorInvalidXMLSpaceAttributeValidator]

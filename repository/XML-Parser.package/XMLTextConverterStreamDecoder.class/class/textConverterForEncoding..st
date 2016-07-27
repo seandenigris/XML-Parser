@@ -1,6 +1,6 @@
 private
 textConverterForEncoding: anEncoding
-	^ TextConverterCache
+	^ self textConverterCache
 		at: anEncoding
 		ifAbsentPut: [
 			(Smalltalk at: #TextConverter)

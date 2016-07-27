@@ -1,8 +1,8 @@
 {
 	"class" : {
 		"canDecodeEncoding:" : "monty 11/12/2014 04:36",
-		"initialize" : "monty 12/5/2014 03:33",
-		"textConverterForEncoding:" : "monty 11/15/2014 21:02" },
+		"textConverterCache" : "monty 1/12/2015 00:37",
+		"textConverterForEncoding:" : "monty 1/12/2015 00:34" },
 	"instance" : {
 		"nextFromStream:" : "monty 11/17/2014 21:14",
 		"setEncodingName:" : "monty 12/14/2014 15:05",

@@ -2,7 +2,7 @@
 	"class" : {
 		"for:" : "monty 11/28/2014 10:16",
 		"handlerForLeadByte:" : "monty 12/26/2014 23:06",
-		"initialize" : "monty 11/28/2014 03:01",
+		"initialize" : "monty 1/12/2015 00:35",
 		"initializeByteOrderMarks" : "monty 11/28/2014 03:00",
 		"initializeEncodingHandlerTable" : "monty 11/28/2014 03:00" },
 	"instance" : {

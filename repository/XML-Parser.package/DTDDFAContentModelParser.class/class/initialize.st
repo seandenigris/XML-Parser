@@ -3,5 +3,5 @@ initialize
 	"self initialize"
 
 	self
-		initializeOperatorApplicators;
-		initializeSpecialCharacterParsers
+		initializeSpecialCharacterParsers;
+		initializeOperatorApplicators

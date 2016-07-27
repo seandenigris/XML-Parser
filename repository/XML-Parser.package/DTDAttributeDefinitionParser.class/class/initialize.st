@@ -4,4 +4,4 @@ initialize
 
 	self
 		initializeDefaultValueValidators;
-		initializeNonEnumerationValidators.
+		initializeNonEnumerationValidators
