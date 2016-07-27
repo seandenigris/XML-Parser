@@ -1,3 +1,3 @@
 accessing
 fragment
-	^ '#fragmentID'
+	^ self fragmentURIString allButFirst

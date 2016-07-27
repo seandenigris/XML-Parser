@@ -8,13 +8,13 @@ testInvalidPort
 		assert: uri port isNil;
 		assert: uri path = self absolute.
 
-	uri := (self domainURIString, ':invalid', self queryString) asXMLURI.
+	uri := (self domainURIString, ':invalid', self queryURIString) asXMLURI.
 	self
 		assert: uri host = self host;
 		assert: uri port isNil;
 		assert: uri pathSegments isEmpty.
 
-	uri := (self domainURIString, ':invalid', self fragment) asXMLURI.
+	uri := (self domainURIString, ':invalid', self fragmentURIString) asXMLURI.
 	self
 		assert: uri host = self host;
 		assert: uri port isNil;

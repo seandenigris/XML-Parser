@@ -12,10 +12,10 @@ testHost
 		assert: self emailURIString asXMLURI host = self host;
 		assert: self fileURIWithHostString asXMLURI host = self host;
 		assert: self fileURIString asXMLURI host isEmpty;
-		assert: self fragment asXMLURI host isEmpty;
+		assert: self fragmentURIString asXMLURI host isEmpty;
 		assert: self fullURIString asXMLURI host = self host;
 		assert: self fullURIWithPortString asXMLURI host = self host;
-		assert: self queryString asXMLURI host isEmpty;
+		assert: self queryURIString asXMLURI host isEmpty;
 		assert: self relative asXMLURI host isEmpty;
 		assert: self relativeAbsoluteCombined asXMLURI host isEmpty;
 		assert: self schemelessURIString asXMLURI host = self host;

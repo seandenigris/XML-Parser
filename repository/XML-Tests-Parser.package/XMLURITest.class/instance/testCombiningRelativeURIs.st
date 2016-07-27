@@ -15,6 +15,6 @@ testCombiningRelativeURIs
 		assert: domainURIWithPort / self absoluteDir = (self domainURIWithPortString , self absoluteDir) asXMLURI;
 		assert: absolutePathURI / self relative = (self domainURIString , self absoluteRelativeCombined) asXMLURI;
 		assert: absoluteDirPathURI / self relative = (self domainURIString , self absoluteDirRelativeCombined) asXMLURI;
-		assert: absolutePathURI / self queryString = (self domainURIString , self absolute , self queryString) asXMLURI;
-		assert: absolutePathURI / self fragment = (self domainURIString , self absolute , self fragment) asXMLURI;
+		assert: absolutePathURI / self queryURIString = (self domainURIString , self absolute , self queryURIString) asXMLURI;
+		assert: absolutePathURI / self fragmentURIString = (self domainURIString , self absolute , self fragmentURIString) asXMLURI;
 		assert: domainURI / self schemelessURIString = self fullURIString asXMLURI.

@@ -12,10 +12,10 @@ testHasScheme
 		assert: self emailURIString asXMLURI hasScheme;
 		assert: self fileURIWithHostString asXMLURI hasScheme;
 		assert: self fileURIString asXMLURI hasScheme;
-		deny: self fragment asXMLURI hasScheme;
+		deny: self fragmentURIString asXMLURI hasScheme;
 		assert: self fullURIString asXMLURI hasScheme;
 		assert: self fullURIWithPortString asXMLURI hasScheme;
-		deny: self queryString asXMLURI hasScheme;
+		deny: self queryURIString asXMLURI hasScheme;
 		deny: self relative asXMLURI hasScheme;
 		deny: self relativeAbsoluteCombined asXMLURI hasScheme;
 		deny: self schemelessURIString asXMLURI hasScheme;

@@ -12,10 +12,10 @@ testHasAuthority
 		assert: self emailURIString asXMLURI hasAuthority;
 		assert: self fileURIWithHostString asXMLURI hasAuthority;
 		deny: self fileURIString asXMLURI hasAuthority;
-		deny: self fragment asXMLURI hasAuthority;
+		deny: self fragmentURIString asXMLURI hasAuthority;
 		assert: self fullURIString asXMLURI hasAuthority;
 		assert: self fullURIWithPortString asXMLURI hasAuthority;
-		deny: self queryString asXMLURI hasAuthority;
+		deny: self queryURIString asXMLURI hasAuthority;
 		deny: self relative asXMLURI hasAuthority;
 		deny: self relativeAbsoluteCombined asXMLURI hasAuthority;
 		assert: self schemelessURIString asXMLURI hasAuthority;

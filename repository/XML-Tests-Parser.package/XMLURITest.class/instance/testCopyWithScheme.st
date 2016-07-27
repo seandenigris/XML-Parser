@@ -1,8 +1,9 @@
 tests
 testCopyWithScheme
-	self allURIStringsDo: [:each | | uri oldScheme newScheme copy |
+	self allURIStringsDo: [:each | | uri oldScheme oldHasAuthorityPrefix newScheme copy |
 		uri := each asXMLURI.
 		oldScheme := uri scheme.
+		oldHasAuthorityPrefix := uri hasAuthorityPrefix.
 		newScheme := oldScheme, 'new'.
 		copy := uri copyWithScheme: newScheme.
 		self
@@ -14,7 +15,14 @@ testCopyWithScheme
 			deny: uri scheme = copy scheme;
 			assert: uri scheme = oldScheme;
 			assert: copy scheme = newScheme;
-			assert: uri hasAuthorityPrefix = copy hasAuthorityPrefix;
+			assert: uri hasAuthorityPrefix = oldHasAuthorityPrefix.
+		"If the original had no scheme and no // prefix, then the copy should
+		gain one. Otherwise it should only have one if the original did."
+		(oldScheme isEmpty
+			and: [oldHasAuthorityPrefix not])
+			ifTrue: [self assert: copy hasAuthorityPrefix]
+			ifFalse: [self assert: copy hasAuthorityPrefix = oldHasAuthorityPrefix].
+		self
 			assert: uri userInfo = copy userInfo;
 			assert: uri host = copy host;
 			assert: uri port = copy port;

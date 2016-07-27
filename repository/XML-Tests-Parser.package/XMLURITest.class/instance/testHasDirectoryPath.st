@@ -12,10 +12,10 @@ testHasDirectoryPath
 		deny: self emailURIString asXMLURI hasDirectoryPath;
 		deny: self fileURIWithHostString asXMLURI hasDirectoryPath;
 		deny: self fileURIString asXMLURI hasDirectoryPath;
-		deny: self fragment asXMLURI hasDirectoryPath;
+		deny: self fragmentURIString asXMLURI hasDirectoryPath;
 		deny: self fullURIString asXMLURI hasDirectoryPath;
 		deny: self fullURIWithPortString asXMLURI hasDirectoryPath;
-		deny: self queryString asXMLURI hasDirectoryPath;
+		deny: self queryURIString asXMLURI hasDirectoryPath;
 		deny: self relative asXMLURI hasDirectoryPath;
 		deny: self relativeAbsoluteCombined asXMLURI hasDirectoryPath;
 		deny: self schemelessURIString asXMLURI hasDirectoryPath;

@@ -12,10 +12,10 @@ testScheme
 		assert: self emailURIString asXMLURI scheme = 'mailto';
 		assert: self fileURIWithHostString asXMLURI scheme = 'file';
 		assert: self fileURIString asXMLURI scheme  = 'file';
-		assert: self fragment asXMLURI scheme isEmpty;
+		assert: self fragmentURIString asXMLURI scheme isEmpty;
 		assert: self fullURIString asXMLURI scheme = 'http';
 		assert: self fullURIWithPortString asXMLURI scheme = 'http';
-		assert: self queryString asXMLURI scheme isEmpty;
+		assert: self queryURIString asXMLURI scheme isEmpty;
 		assert: self relative asXMLURI scheme isEmpty;
 		assert: self relativeAbsoluteCombined asXMLURI scheme isEmpty;
 		assert: self schemelessURIString asXMLURI scheme isEmpty;

@@ -1,11 +1,5 @@
 tests
 testQuery
-	| query |
-
-	query :=
-		OrderPreservingStringDictionary
-			with: 'name1' -> 'value1'
-			with: 'name2' -> 'value2'.
 	self
 		assert: '' asXMLURI query isEmpty;
 		assert: '/' asXMLURI query isEmpty;
@@ -18,11 +12,11 @@ testQuery
 		assert: self emailURIString asXMLURI query isEmpty;
 		assert: self fileURIWithHostString asXMLURI query isEmpty;
 		assert: self fileURIString asXMLURI query isEmpty;
-		assert: self fragment asXMLURI query isEmpty;
-		assert: self fullURIString asXMLURI query = query;
-		assert: self fullURIWithPortString asXMLURI query = query;
-		assert: self queryString asXMLURI query = query;
+		assert: self fragmentURIString asXMLURI query isEmpty;
+		assert: self fullURIString asXMLURI query = self query;
+		assert: self fullURIWithPortString asXMLURI query = self query;
+		assert: self queryURIString asXMLURI query = self query;
 		assert: self relative asXMLURI query isEmpty;
 		assert: self relativeAbsoluteCombined asXMLURI query isEmpty;
-		assert: self schemelessURIString asXMLURI query = query;
-		assert: self schemelessURIWithPortString asXMLURI query = query.
+		assert: self schemelessURIString asXMLURI query = self query;
+		assert: self schemelessURIWithPortString asXMLURI query = self query

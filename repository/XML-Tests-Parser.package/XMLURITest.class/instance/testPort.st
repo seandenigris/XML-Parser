@@ -12,10 +12,10 @@ testPort
 		assert: self emailURIString asXMLURI port isNil;
 		assert: self fileURIWithHostString asXMLURI port isNil;
 		assert: self fileURIString asXMLURI port isNil;
-		assert: self fragment asXMLURI port isNil;
+		assert: self fragmentURIString asXMLURI port isNil;
 		assert: self fullURIString asXMLURI port isNil;
 		assert: self fullURIWithPortString asXMLURI port = 80;
-		assert: self queryString asXMLURI port isNil;
+		assert: self queryURIString asXMLURI port isNil;
 		assert: self relative asXMLURI port isNil;
 		assert: self relativeAbsoluteCombined asXMLURI port isNil;
 		assert: self schemelessURIString asXMLURI port isNil;

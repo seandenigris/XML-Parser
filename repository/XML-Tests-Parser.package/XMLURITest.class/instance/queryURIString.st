@@ -1,3 +1,3 @@
 accessing
-queryString
+queryURIString
 	^ '?name1=value1&name2=value2'

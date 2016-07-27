@@ -12,10 +12,10 @@ testHasAuthorityPrefix
 		deny: self emailURIString asXMLURI hasAuthorityPrefix;
 		assert: self fileURIWithHostString asXMLURI hasAuthorityPrefix;
 		assert: self fileURIString asXMLURI hasAuthorityPrefix;
-		deny: self fragment asXMLURI hasAuthorityPrefix;
+		deny: self fragmentURIString asXMLURI hasAuthorityPrefix;
 		assert: self fullURIString asXMLURI hasAuthorityPrefix;
 		assert: self fullURIWithPortString asXMLURI hasAuthorityPrefix;
-		deny: self queryString asXMLURI hasAuthorityPrefix;
+		deny: self queryURIString asXMLURI hasAuthorityPrefix;
 		deny: self relative asXMLURI hasAuthorityPrefix;
 		deny: self relativeAbsoluteCombined asXMLURI hasAuthorityPrefix;
 		assert: self schemelessURIString asXMLURI hasAuthorityPrefix;

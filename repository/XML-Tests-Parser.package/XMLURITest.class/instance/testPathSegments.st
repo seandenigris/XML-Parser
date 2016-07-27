@@ -12,10 +12,10 @@ testPathSegments
 		assert: self emailURIString asXMLURI pathSegments isEmpty;
 		assert: self fileURIWithHostString asXMLURI pathSegments = self absoluteSegments;
 		assert: self fileURIString asXMLURI pathSegments = self absoluteSegments;
-		assert: self fragment asXMLURI pathSegments isEmpty;
+		assert: self fragmentURIString asXMLURI pathSegments isEmpty;
 		assert: self fullURIString asXMLURI pathSegments = self absoluteSegments;
 		assert: self fullURIWithPortString asXMLURI pathSegments = self absoluteSegments;
-		assert: self queryString asXMLURI pathSegments isEmpty;
+		assert: self queryURIString asXMLURI pathSegments isEmpty;
 		assert: self relative asXMLURI pathSegments = self relativeSegments;
 		assert: self relativeAbsoluteCombined asXMLURI pathSegments = self relativeAbsoluteCombinedSegments;
 		assert: self schemelessURIString asXMLURI pathSegments = self absoluteSegments;

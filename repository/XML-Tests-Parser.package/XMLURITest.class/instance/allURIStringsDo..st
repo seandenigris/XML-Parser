@@ -12,10 +12,10 @@ allURIStringsDo: aBlock
 		value: self emailURIString;
 		value: self fileURIWithHostString;
 		value: self fileURIString;
-		value: self fragment;
+		value: self fragmentURIString;
 		value: self fullURIString;
 		value: self fullURIWithPortString;
-		value: self queryString;
+		value: self queryURIString;
 		value: self relative;
 		value: self relativeAbsoluteCombined;
 		value: self schemelessURIString;

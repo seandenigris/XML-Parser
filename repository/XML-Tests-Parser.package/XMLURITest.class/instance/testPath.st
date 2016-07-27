@@ -12,10 +12,10 @@ testPath
 		assert: self emailURIString asXMLURI path isEmpty;
 		assert: self fileURIWithHostString asXMLURI path = self absolute;
 		assert: self fileURIString asXMLURI path = self absolute;
-		assert: self fragment asXMLURI path isEmpty;
+		assert: self fragmentURIString asXMLURI path isEmpty;
 		assert: self fullURIString asXMLURI path = self absolute;
 		assert: self fullURIWithPortString asXMLURI path = self absolute;
-		assert: self queryString asXMLURI path isEmpty;
+		assert: self queryURIString asXMLURI path isEmpty;
 		assert: self relative asXMLURI path = self relative;
 		assert: self relativeAbsoluteCombined asXMLURI path = self relativeAbsoluteCombined;
 		assert: self schemelessURIString asXMLURI path = self absolute;

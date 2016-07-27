@@ -1,3 +1,3 @@
 accessing
 schemelessURIString
-	^ (self domainURIString copyAfter: $:), self absolute, self queryString, self fragment
+	^ (self domainURIString copyAfter: $:), self absolute, self queryURIString, self fragmentURIString

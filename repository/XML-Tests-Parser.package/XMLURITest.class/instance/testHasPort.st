@@ -12,10 +12,10 @@ testHasPort
 		deny: self emailURIString asXMLURI hasPort;
 		deny: self fileURIWithHostString asXMLURI hasPort;
 		deny: self fileURIString asXMLURI hasPort;
-		deny: self fragment asXMLURI hasPort;
+		deny: self fragmentURIString asXMLURI hasPort;
 		deny: self fullURIString asXMLURI hasPort;
 		assert: self fullURIWithPortString asXMLURI hasPort;
-		deny: self queryString asXMLURI hasPort;
+		deny: self queryURIString asXMLURI hasPort;
 		deny: self relative asXMLURI hasPort;
 		deny: self relativeAbsoluteCombined asXMLURI hasPort;
 		deny: self schemelessURIString asXMLURI hasPort;

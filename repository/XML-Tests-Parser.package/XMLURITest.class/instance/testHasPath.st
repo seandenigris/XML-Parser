@@ -12,10 +12,10 @@ testHasPath
 		deny: self emailURIString asXMLURI hasPath;
 		assert: self fileURIWithHostString asXMLURI hasPath;
 		assert: self fileURIString asXMLURI hasPath;
-		deny: self fragment asXMLURI hasPath;
+		deny: self fragmentURIString asXMLURI hasPath;
 		assert: self fullURIString asXMLURI hasPath;
 		assert: self fullURIWithPortString asXMLURI hasPath;
-		deny: self queryString asXMLURI hasPath;
+		deny: self queryURIString asXMLURI hasPath;
 		assert: self relative asXMLURI hasPath;
 		assert: self relativeAbsoluteCombined asXMLURI hasPath;
 		assert: self schemelessURIString asXMLURI hasPath;

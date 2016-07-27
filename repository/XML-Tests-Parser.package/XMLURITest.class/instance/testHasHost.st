@@ -12,10 +12,10 @@ testHasHost
 		assert: self emailURIString asXMLURI hasHost;
 		assert: self fileURIWithHostString asXMLURI hasHost;
 		deny: self fileURIString asXMLURI hasHost;
-		deny: self fragment asXMLURI hasHost;
+		deny: self fragmentURIString asXMLURI hasHost;
 		assert: self fullURIString asXMLURI hasHost;
 		assert: self fullURIWithPortString asXMLURI hasHost;
-		deny: self queryString asXMLURI hasHost;
+		deny: self queryURIString asXMLURI hasHost;
 		deny: self relative asXMLURI hasHost;
 		deny: self relativeAbsoluteCombined asXMLURI hasHost;
 		assert: self schemelessURIString asXMLURI hasHost;

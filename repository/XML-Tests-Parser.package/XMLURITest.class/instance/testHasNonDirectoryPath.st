@@ -12,10 +12,10 @@ testHasNonDirectoryPath
 		deny: self emailURIString asXMLURI hasNonDirectoryPath;
 		assert: self fileURIWithHostString asXMLURI hasNonDirectoryPath;
 		assert: self fileURIString asXMLURI hasNonDirectoryPath;
-		deny: self fragment asXMLURI hasNonDirectoryPath;
+		deny: self fragmentURIString asXMLURI hasNonDirectoryPath;
 		assert: self fullURIString asXMLURI hasNonDirectoryPath;
 		assert: self fullURIWithPortString asXMLURI hasNonDirectoryPath;
-		deny: self queryString asXMLURI hasNonDirectoryPath;
+		deny: self queryURIString asXMLURI hasNonDirectoryPath;
 		assert: self relative asXMLURI hasNonDirectoryPath;
 		assert: self relativeAbsoluteCombined asXMLURI hasNonDirectoryPath;
 		assert: self schemelessURIString asXMLURI hasNonDirectoryPath;

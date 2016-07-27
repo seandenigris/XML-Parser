@@ -12,10 +12,10 @@ testIsLocalURI
 		deny: self emailURIString asXMLURI isLocalURI;
 		assert: self fileURIWithHostString asXMLURI isLocalURI;
 		assert: self fileURIString asXMLURI isLocalURI;
-		assert: self fragment asXMLURI isLocalURI;
+		assert: self fragmentURIString asXMLURI isLocalURI;
 		deny: self fullURIString asXMLURI isLocalURI;
 		deny: self fullURIWithPortString asXMLURI isLocalURI;
-		assert: self queryString asXMLURI isLocalURI;
+		assert: self queryURIString asXMLURI isLocalURI;
 		assert: self relative asXMLURI isLocalURI;
 		assert: self relativeAbsoluteCombined asXMLURI isLocalURI;
 		deny: self schemelessURIString asXMLURI isLocalURI;

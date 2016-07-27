@@ -1,3 +1,3 @@
 accessing
 schemelessURIWithPortString
-	^ (self domainURIWithPortString copyAfter: $:), self absolute, self queryString, self fragment
+	^ (self domainURIWithPortString copyAfter: $:), self absolute, self queryURIString, self fragmentURIString
