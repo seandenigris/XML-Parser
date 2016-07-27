@@ -1,5 +1,5 @@
 tests
-testAcceptingInvalidPCData
+testParsingInvalidPCData
 	| document |
 
 	#('< one & two >' '& three < four >') do: [:each |

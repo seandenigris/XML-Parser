@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAcceptingInvalidPCData" : "monty 12/11/2013 22:58",
-		"testHTMLEntities" : "monty 1/17/2014 01:43",
-		"testHTMLHandler" : "monty 1/25/2014 04:46",
+		"testDecodingCharacters" : "monty 2/4/2014 02:50",
+		"testHTMLEntities" : "monty 2/3/2014 22:48",
+		"testParsingInvalidPCData" : "monty 2/4/2014 02:50",
 		"testParsingNonHTMLSections" : "monty 1/16/2014 05:09",
 		"testParsingText" : "monty 12/11/2013 22:00",
 		"testParsingVoidElements" : "monty 12/11/2013 22:03",
+		"testParsingXML" : "monty 2/3/2014 22:53",
 		"testReopeningHTML" : "monty 12/13/2013 20:11",
 		"testReopeningHeadSection" : "monty 1/16/2014 22:21" } }

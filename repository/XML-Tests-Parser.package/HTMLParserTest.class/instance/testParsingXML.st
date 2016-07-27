@@ -1,5 +1,5 @@
 tests
-testHTMLHandler
+testParsingXML
 	self
 		shouldnt: [
 			HTMLHandler

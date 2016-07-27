@@ -8,7 +8,6 @@ testHTMLEntities
 		assert: string size = 1;
 		assert: string first == (HTMLParserTokenizer predefinedEntities at: entity).
 		
-
 	self assert:
-		((HTMLParser parse: '<body>&undeclared;</body>') findElementNamed: 'body')
-			contentString isEmpty.
+		((HTMLParser parse: '<body>&undeclared; &undeclared &;')
+			findElementNamed: 'body') contentString = '&undeclared; &undeclared &;'.
