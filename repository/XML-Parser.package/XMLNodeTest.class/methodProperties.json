@@ -38,6 +38,7 @@
 		"test052elementContentString" : "JAAyer 3/12/2010 01:51",
 		"test053elementAttributes" : "JAAyer 3/8/2010 07:32",
 		"test054elementConstructors" : "NorbertHartl 8/5/2010 16:37",
+		"test055elementCDATASection" : "JAAyer 8/9/2010 17:29",
 		"test060addingElements" : "JAAyer 3/8/2010 07:22",
 		"test061accessingBeforeAfterElements" : "JAAyer 2/25/2010 14:39",
 		"test062elementPrinting" : "JAAyer 3/12/2010 01:44",

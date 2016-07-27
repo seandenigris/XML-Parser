@@ -8,7 +8,9 @@
 	"instvars" : [
 		"document",
 		"incremental",
-		"nodeStack" ],
+		"nodeStack",
+		"preservesCDataSections",
+		"isInCDataSection" ],
 	"name" : "XMLDOMParser",
 	"pools" : [
 		 ],

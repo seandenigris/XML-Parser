@@ -8,4 +8,4 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 		invokeDeprecated: #startElement:namespaceURI:namespace:attributeList:
 		withArguments: (Array with: aLocalName with: aUri with: aPrefix with: aDictionary)
 		orForwardTo: #startElement:prefix:uri:attributes:
-		withArguments: (Array with: aQualifiedName with: aUri with: aPrefix with: aDictionary).
+		withArguments: (Array with: aQualifiedName with: aPrefix with: aUri with: aDictionary).
