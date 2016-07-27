@@ -1,5 +1,5 @@
 validating
 validateAttributeValue: aValue
 	self
-		listValuesIn: aValue
+		spaceSeparatedListValuesIn: aValue
 		do: [:each | self validateNmtoken: each]

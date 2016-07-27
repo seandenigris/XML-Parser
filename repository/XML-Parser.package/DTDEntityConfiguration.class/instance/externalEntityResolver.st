@@ -1,3 +1,5 @@
 accessing
 externalEntityResolver
-	^ externalEntityResolver ifNil: [externalEntityResolver := DTDCachingExternalEntityResolver new]
+	"uses the caching resolver by default"
+	^ externalEntityResolver
+		ifNil: [externalEntityResolver := DTDExternalEntityResolver default]

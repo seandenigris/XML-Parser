@@ -1,6 +1,6 @@
 private
 peekFor: aCharacter
-	self peek == aCharacter
+	self peek = aCharacter
 		ifTrue: [
 			self next.
 			^ true]

@@ -1,7 +1,8 @@
 accessing
-attributeNodeAt: aLocalName namespaceURI: aURI ifAbsent: aBlock
-	^ self
-		detect: [:each |
-			each name = aLocalName
-				and: [each namespaceURI = aURI]]
-		ifNone: aBlock
+attributeNodeAt: aName namespaceURI: aURI ifAbsent: aBlock
+	| attributeNode |
+
+	((attributeNode := self attributeNodeAt: aName) notNil
+		and: [attributeNode namespaceURI = aURI])
+		ifTrue: [^ attributeNode]
+		ifFalse: [^ aBlock value]

@@ -1,6 +1,0 @@
-validating
-validateAttributeDefaultIn: anAttributeDictionary
-	self defaultValidator validateAttributeDefaultIn: anAttributeDictionary.
-
-	self shouldFurtherNormalizeAttributeValue
-		ifTrue: [self furtherNormalizeAttributeValueIn: anAttributeDictionary].

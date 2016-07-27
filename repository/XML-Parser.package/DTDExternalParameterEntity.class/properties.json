@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/7/2014 02:19",
+	"commentStamp" : "monty 4/8/2016 17:52",
 	"instvars" : [
 		 ],
 	"name" : "DTDExternalParameterEntity",
 	"pools" : [
 		 ],
-	"super" : "DTDParameterEntity",
+	"super" : "DTDExternalEntity",
 	"type" : "normal" }

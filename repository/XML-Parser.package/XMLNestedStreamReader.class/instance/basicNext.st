@@ -13,7 +13,8 @@ basicNext
 		ifTrue: [^ normalizedLineEndingChar].
 	nextChar == CRCharacter
 		ifTrue: [
-			self popNestedStreamWhileAtEnd.
+			stream atEnd
+				ifTrue: [self popNestedStreamWhileAtEnd].
 			stream atEnd
 				ifFalse: [
 					stream peek == LFCharacter

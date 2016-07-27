@@ -4,7 +4,7 @@ parseExternalSubset
 
 	externalSubsetURI :=
 		self externalEntityResolver
-			entityURIFromPublicID: self externalSubsetPublicID
+			externalEntityURIFromPublicID: self externalSubsetPublicID
 			systemID: self externalSubsetSystemID
 			baseURI: self baseURI.
 
@@ -12,7 +12,8 @@ parseExternalSubset
 	they aren't kept entirely in memory during parsing. HTTP entities will be
 	kept in memory regardless and this will just return a read stream on them."
 	externalSubsetStream :=
-		self externalEntityResolver streamResolveEntityURI: externalSubsetURI.
+		self externalEntityResolver streamResolveExternalEntityURI:
+			externalSubsetURI.
 
 	(self
 		externalSubsetParserOn:

@@ -1,4 +1,5 @@
 testing
 hasOpenIncludeSections
-	^ totalOpenIncludeSections notNil
-		and: [totalOpenIncludeSections > 0]
+	openIncludeSections == nil
+		ifTrue: [^ false].
+	^ openIncludeSections size > 0.

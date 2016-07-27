@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"validateAttributeValue:" : "monty 1/1/2015 21:30" } }
+		"validateAttributeDefaultValue:" : "monty 4/8/2016 17:31",
+		"validateAttributeValue:" : "monty 4/7/2016 03:31" } }

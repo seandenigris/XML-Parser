@@ -1,3 +1,0 @@
-accessing
-referencePrefix
-	self subclassResponsibility

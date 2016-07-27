@@ -1,6 +1,6 @@
 handling - dtd
 handleParameterEntityDeclaration: aName replacement: aReplacement
 	self doctypeDefinition
-		addParameterEntity: aName
+		addInternalParameterEntity: aName
 		replacement:aReplacement
-		from: self baseURI
+		baseURI: self baseURI

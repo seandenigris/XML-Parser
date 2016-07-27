@@ -22,5 +22,5 @@ nextGeneralEntityReferenceOnWriteStream
 		ifNotNil: [:entity |
 			driver replacesContentEntityReferences
 				ifFalse: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
-			entity constructReplacementOn: self].
+			self constructReplacementForGeneralEntity: entity].
 	^ false.

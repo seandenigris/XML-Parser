@@ -5,4 +5,4 @@ handleParameterEntityDeclaration: aName publicID: aPublicID systemID: aSystemID
 		resolver: self externalEntityResolver
 		publicID: aPublicID
 		systemID: aSystemID
-		from: self baseURI
+		baseURI: self baseURI

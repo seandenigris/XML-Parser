@@ -1,9 +1,9 @@
 handling - dtd
 handleGeneralEntityDeclaration: aName replacement: aReplacement
 	self doctypeDefinition
-		addGeneralEntity: aName
+		addInternalGeneralEntity: aName
 		replacement: aReplacement
-		from: self baseURI.
+		baseURI: self baseURI.
 
 	self saxHandler
 		generalEntityDeclaration: aName

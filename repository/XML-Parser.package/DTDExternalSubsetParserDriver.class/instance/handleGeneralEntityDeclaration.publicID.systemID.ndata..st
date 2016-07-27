@@ -7,7 +7,7 @@ handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID nd
 				resolver: self externalEntityResolver
 				publicID: aPublicID
 				systemID: aSystemID
-				from: self baseURI]
+				baseURI: self baseURI]
 		ifFalse: [
 			self doctypeDefinition
 				addUnparsedEntity: aName

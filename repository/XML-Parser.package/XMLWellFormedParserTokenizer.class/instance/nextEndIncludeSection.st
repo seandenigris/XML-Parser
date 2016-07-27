@@ -4,5 +4,5 @@ nextEndIncludeSection
 	streamReader next.
 	self
 		expectNext: $];
-		expectTerminator.
-	totalOpenIncludeSections := self totalOpenIncludeSections - 1.
+		expectTerminator;
+		checkNestingOfParameterEntity: self openIncludeSections removeLast.

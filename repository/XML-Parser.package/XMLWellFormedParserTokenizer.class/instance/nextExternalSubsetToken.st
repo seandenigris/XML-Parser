@@ -10,6 +10,6 @@ nextExternalSubsetToken
 	streamReader peek == $]
 		ifTrue: [
 			self hasOpenIncludeSections
-				ifFalse: [self errorUnexpectedEndOfIncludeSection].
+				ifFalse: [self errorUnexpectedEndConditionalSection].
 			^ self nextEndIncludeSection].
 	self nextSubsetMarkupToken.

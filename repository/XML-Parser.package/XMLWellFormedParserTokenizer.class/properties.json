@@ -10,8 +10,8 @@
 		"VersionDigitChars" ],
 	"commentStamp" : "monty 6/15/2015 23:55",
 	"instvars" : [
-		"totalOpenIncludeSections",
-		"pushedBackEntities" ],
+		"pushedBackEntities",
+		"openIncludeSections" ],
 	"name" : "XMLWellFormedParserTokenizer",
 	"pools" : [
 		 ],

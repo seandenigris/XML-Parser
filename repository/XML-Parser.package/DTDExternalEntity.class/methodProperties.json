@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"name:resolver:publicID:systemID:baseURI:" : "monty 4/8/2016 17:37" },
+	"instance" : {
+		"hasUnresolvedReplacement" : "monty 4/8/2016 17:37",
+		"isExternal" : "monty 4/8/2016 01:21",
+		"printNameOn:" : "monty 4/8/2016 07:30",
+		"replacement" : "monty 4/8/2016 06:52",
+		"replacementStream" : "monty 4/8/2016 01:23",
+		"resolveReplacement" : "monty 4/8/2016 17:38",
+		"setName:unresolvedReplacement:" : "monty 4/9/2016 04:08",
+		"unresolvedReplacement" : "monty 4/8/2016 17:37",
+		"unresolvedReplacement:" : "monty 4/9/2016 04:07" } }

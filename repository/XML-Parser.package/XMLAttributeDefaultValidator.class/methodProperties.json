@@ -5,6 +5,7 @@
 	"instance" : {
 		"attribute" : "monty 10/30/2014 12:48",
 		"defaultValue" : "monty 2/20/2016 09:04",
+		"hasDefaultValue" : "monty 4/7/2016 03:08",
 		"printOn:" : "monty 4/24/2015 14:16",
 		"setAttribute:defaultValue:" : "monty 2/20/2016 09:04",
 		"validateAttributeDefaultIn:" : "monty 12/28/2013 20:02" } }

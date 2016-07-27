@@ -4,6 +4,7 @@
 	"instance" : {
 		"allowedValues" : "monty 12/9/2013 02:17",
 		"allowedValues:" : "monty 2/20/2016 01:27",
-		"errorInvalidValue:" : "monty 10/31/2014 17:30",
+		"errorInvalidValue:" : "monty 4/8/2016 23:00",
+		"validateAttributeDefaultValue:" : "monty 4/8/2016 17:32",
 		"validateAttributeValue:" : "monty 10/31/2014 17:30",
 		"validateXMLSpaceAttributeValidator" : "monty 3/22/2015 05:56" } }

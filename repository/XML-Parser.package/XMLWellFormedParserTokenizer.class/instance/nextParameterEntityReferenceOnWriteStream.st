@@ -1,9 +1,13 @@
 tokenizing - dtd
 nextParameterEntityReferenceOnWriteStream
-	| name entity |
+	| parameterEntity name entity |
 
+	parameterEntity := self topPushedBackEntity.
 	name := self nextName.
-	self expectNext: $;.
+	self
+		expectNext: $;;
+		checkNestingOfParameterEntity: parameterEntity.
+	
 	(entity := driver handleParameterEntityReference: name)
 		ifNil: [
 			driver preservesUndeclaredEntityReferences
@@ -13,5 +17,5 @@ nextParameterEntityReferenceOnWriteStream
 						nextPutAll: name;
 						nextPut: $;].
 			^ true].
-	entity constructReplacementOn: self.
+	self constructReplacementForParameterEntity: entity.
 	^ false.

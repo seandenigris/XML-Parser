@@ -1,5 +1,6 @@
 entity replacing
-removePushedBackEntity: anEntity
-	self pushedBackEntities remove: anEntity.
-	anEntity isExternal
-		ifTrue: [driver popEntityURI: anEntity uri].
+removePushedBackEntity: aPushedBackEntity
+	self pushedBackEntities remove: aPushedBackEntity.
+	aPushedBackEntity isExternal
+		ifTrue: [driver popEntityURI: aPushedBackEntity uri].
+	^ aPushedBackEntity.

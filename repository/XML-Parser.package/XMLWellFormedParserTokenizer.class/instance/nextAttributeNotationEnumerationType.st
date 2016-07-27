@@ -15,6 +15,6 @@ nextAttributeNotationEnumerationType
 		skipSeparatorsInDeclaration;
 		nextNameOnWriteStream;
 		skipSeparatorsInDeclaration;
-		nextNameListValuesOnWriteStream.
+		nextNameListOnWriteStream.
 
 	^ writeStream contents.

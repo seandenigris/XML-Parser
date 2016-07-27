@@ -8,6 +8,7 @@ constructReplacementForLiteralContextEntity: anEntity
 		onClose: [streamReader isEscapingQuotes: wasEscapingQuotes].
 
 	"wait till after the text declaration was read to start escaping"
-	(self currentPushedBackEntity == anEntity
-		and: [wasEscapingQuotes not])
-		ifTrue: [streamReader isEscapingQuotes: true].
+	self topPushedBackEntity
+		ifNotNil: [:pushedBackEntity |
+			pushedBackEntity == anEntity
+				ifTrue: [streamReader isEscapingQuotes: true]].

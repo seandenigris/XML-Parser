@@ -4,4 +4,5 @@
 	"instance" : {
 		"initializeWithValidatorsFrom:" : "monty 11/14/2015 20:29",
 		"unparsedEntityValidator" : "monty 1/1/2015 20:35",
+		"validateAttributeDefaultValue:" : "monty 4/8/2016 17:31",
 		"validateAttributeValue:" : "monty 1/1/2015 21:30" } }

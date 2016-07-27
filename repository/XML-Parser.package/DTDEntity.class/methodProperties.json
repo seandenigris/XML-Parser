@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"name:replacement:" : "monty 3/20/2016 23:12",
+		"name:replacement:uri:" : "monty 5/23/2015 03:04",
+		"named:" : "monty 5/23/2015 03:05" },
+	"instance" : {
+		"asReference" : "monty 4/24/2015 14:25",
+		"hasReplacement" : "monty 4/5/2015 07:55",
+		"isExternal" : "monty 11/16/2013 02:56",
+		"isInternalTo:" : "monty 4/8/2016 01:22",
+		"isParameter" : "monty 4/3/2016 04:05",
+		"name" : "monty 11/13/2013 23:45",
+		"name:" : "monty 4/8/2016 02:54",
+		"printNameOn:" : "monty 4/8/2016 06:23",
+		"printOn:" : "monty 4/8/2016 06:23",
+		"printReferenceOn:" : "monty 4/8/2016 01:25",
+		"referencePrefix" : "monty 4/8/2016 01:21",
+		"replacement" : "monty 11/13/2013 19:15",
+		"replacement:" : "monty 4/9/2016 04:06",
+		"replacementStream" : "monty 4/8/2016 01:23",
+		"setName:replacement:uri:" : "monty 5/23/2015 03:04",
+		"uri" : "monty 11/16/2013 02:55",
+		"uri:" : "monty 4/8/2016 02:55" } }

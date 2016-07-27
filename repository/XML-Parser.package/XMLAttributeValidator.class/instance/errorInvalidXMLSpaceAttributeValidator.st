@@ -1,5 +1,7 @@
 private
 errorInvalidXMLSpaceAttributeValidator
-	XMLValidationException signal:
-		'Attribute "xml:space" must be declared as enumeration type
-		with only "default" and "preserver" as values'
+	XMLValidationException
+		formatSignal:
+			'Attribute "xml:space" of element <{1}> must be declared as ',
+			'an enumeration type with "default" and/or "preserve" values'
+		with: self element

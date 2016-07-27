@@ -1,4 +1,4 @@
-accessing
+private
 attributeValueAt: aName ifAbsent: aBlock
 	^ (self attributesByName
 		at: aName

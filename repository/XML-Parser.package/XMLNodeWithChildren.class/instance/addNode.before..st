@@ -1,3 +1,3 @@
 adding
-addNode: aNode before: aSubsequentNode
-	^ self nodes add: aNode before: aSubsequentNode
+addNode: aNode before: aNextNode
+	^ self nodes add: aNode before: aNextNode

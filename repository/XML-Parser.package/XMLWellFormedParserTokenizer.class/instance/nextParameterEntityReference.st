@@ -1,8 +1,12 @@
 tokenizing - dtd
 nextParameterEntityReference
-	| name |
+	| parameterEntity name |
 
+	parameterEntity := self topPushedBackEntity.
 	name := self nextName.
-	self expectNext: $;.
+	self
+		expectNext: $;;
+		checkNestingOfParameterEntity: parameterEntity.
+
 	(driver handleParameterEntityReference: name)
-		ifNotNil: [:entity | entity constructReplacementOn: self].
+		ifNotNil: [:entity | self constructReplacementForParameterEntity: entity].

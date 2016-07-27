@@ -23,7 +23,8 @@ nextEntityValue
 					nextChar == $%
 						ifTrue: [
 							self isInExternalSubsetOrExternallyDefinedEntity
-								ifFalse: [self errorInternalEntityValueParameterEntityReference].
+								ifFalse: [
+									self errorInternalDeclarationParameterEntityReference].
 							self nextParameterEntityReferenceOnWriteStream]
 						ifFalse: [writeStream nextPut: nextChar]]].
 	context exitLiteralValue.

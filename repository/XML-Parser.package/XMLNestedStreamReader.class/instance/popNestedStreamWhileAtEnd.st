@@ -1,5 +1,9 @@
 private
 popNestedStreamWhileAtEnd
-	[stream atEnd
-		and: [nestedStreams size > 0]]
-		whileTrue: [self popNestedStream]
+	[nestedStreams size > 0]
+		whileTrue: [
+			self
+				closeStream;
+				popNestedStream.
+			stream atEnd
+				ifFalse: [^ self]]

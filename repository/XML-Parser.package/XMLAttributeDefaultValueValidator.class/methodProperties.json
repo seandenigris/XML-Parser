@@ -3,5 +3,7 @@
 		 },
 	"instance" : {
 		"defaultValue" : "monty 2/20/2016 09:04",
+		"defaultValue:" : "monty 4/7/2016 20:18",
+		"hasDefaultValue" : "monty 4/7/2016 03:08",
 		"setAttribute:defaultValue:" : "monty 2/20/2016 09:04",
 		"validateAttributeDefaultIn:" : "monty 2/20/2016 11:32" } }

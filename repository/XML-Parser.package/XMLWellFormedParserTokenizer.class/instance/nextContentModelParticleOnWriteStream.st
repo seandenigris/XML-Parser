@@ -4,7 +4,8 @@ nextContentModelParticleOnWriteStream
 	streamReader peek == $(
 		ifTrue: [
 			writeStream nextPut: streamReader next.
-			self nextContentModelChoiceOrSequenceValuesOnWriteStream]
+			self nextContentModelChoiceOrSequenceOnWriteStreamFromEntity:
+				self topPushedBackEntity]
 		ifFalse: [
 			self
 				nextNameOnWriteStream;

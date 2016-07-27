@@ -1,3 +1,3 @@
 private
 newWriteStream
-	^ (String new: 128) writeStream
+	^ (self writeStreamCollectionClass new: 128) writeStream

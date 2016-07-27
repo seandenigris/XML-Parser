@@ -1,0 +1,3 @@
+handling - dtd
+handleImproperParameterEntityNesting
+	self saxDriver handleImproperParameterEntityNesting

@@ -1,12 +1,15 @@
 entity replacing
-addPushedBackEntity: anEntity
-	(self hasPushedBackEntityNamed: anEntity name)
-		ifTrue: [self errorSelfReferentialEntity: anEntity].
+addPushedBackEntity: aPushedBackEntity
+	(self hasPushedBackEntityNamed: aPushedBackEntity name)
+		ifTrue: [self errorSelfReferentialEntity: aPushedBackEntity].
+
 	self maxEntityReplacementDepth
 		ifNotNil: [:maxDepth |
 			self pushedBackEntities size >= maxDepth
 				ifTrue: [self errorEntityDepthLimitExceeded]].
 	
-	self pushedBackEntities addLast: anEntity.
-	anEntity isExternal
-		ifTrue: [driver pushEntityURI: anEntity uri].
+	self pushedBackEntities addLast: aPushedBackEntity.
+	aPushedBackEntity isExternal
+		ifTrue: [driver pushEntityURI: aPushedBackEntity uri].
+
+	^ aPushedBackEntity.

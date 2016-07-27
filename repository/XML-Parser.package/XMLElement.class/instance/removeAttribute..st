@@ -1,3 +1,3 @@
 removing
 removeAttribute: aName
-	^ (self attributeNodes removeAttributeNodeAt: aName) value.
+	^ (self attributeNodes removeAttribute: aName) value.

@@ -6,7 +6,7 @@ nextMatchAll: aString
 		ifFalse: [^ true].
 
 	"inlined peek"
-	(peekChar ifNil: [peekChar := self basicNext]) == (aString at: 1)
+	(peekChar ifNil: [peekChar := self basicNext]) = (aString at: 1)
 		ifFalse: [^ false].
 	oldCurrentLineNumber := currentLineNumber.
 	oldCurrentPosition := currentPosition.
@@ -15,7 +15,7 @@ nextMatchAll: aString
 	"the first iteration was unrolled with the above inlined peek/self next, so
 	the to:do: loop starts at 2"
 	2 to: aString size do: [:i |
-		self peek == (aString at: i)
+		self peek = (aString at: i)
 			ifFalse: [
 				self pushBack: (aString copyFrom: 1 to: i -1).
 				currentLineNumber := oldCurrentLineNumber.

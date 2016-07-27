@@ -1,4 +1,4 @@
-entity replacing
+tokenizing
 nextUnreplacedGeneralEntityOnWriteStreamNamed: aName
 	driver handleUnreplacedGeneralEntityReference: aName.
 	writeStream

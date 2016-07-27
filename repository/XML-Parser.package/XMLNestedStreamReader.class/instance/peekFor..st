@@ -1,6 +1,6 @@
 accessing
 peekFor: aCharacter
-	(peekChar ifNil: [peekChar := self basicNext]) == aCharacter
+	self peek = aCharacter
 		ifTrue: [
 			self next.
 			^ true]

@@ -1,3 +1,0 @@
-accessing
-currentPushedBackEntity
-	^ self pushedBackEntities xmlLastOrNil

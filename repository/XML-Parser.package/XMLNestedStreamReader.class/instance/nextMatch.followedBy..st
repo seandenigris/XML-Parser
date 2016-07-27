@@ -5,13 +5,13 @@ nextMatch: aFirstCharacter followedBy: aSecondCharacter
 	| oldCurrentLineNumber oldCurrentLineStartPosition |
 
 	"inlined peek"
-	(peekChar ifNil: [peekChar := self basicNext]) == aFirstCharacter
+	(peekChar ifNil: [peekChar := self basicNext]) = aFirstCharacter
 		ifFalse: [^ false].
 	oldCurrentLineNumber := currentLineNumber.
 	oldCurrentLineStartPosition := currentLineStartPosition.
 	self next.
 
-	self peek == aSecondCharacter
+	self peek = aSecondCharacter
 		ifFalse: [
 			self pushBackCharacter: aFirstCharacter.
 			currentPosition := currentPosition - 1.

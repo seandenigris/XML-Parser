@@ -6,7 +6,7 @@ cachingResolveEntityURI: anXMLURIOrURIString
 	^ self class
 		entityCacheAtURI: uri
 		ifAbsentPut: [
-			self resolveEntityWith: [:maxSize |
+			self resolveExternalEntityWith: [:maxSize |
 				uri
 					getUpToLimit: maxSize
 					decoding: false]]

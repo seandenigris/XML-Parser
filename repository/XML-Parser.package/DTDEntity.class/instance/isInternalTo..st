@@ -1,0 +1,3 @@
+testing
+isInternalTo: aURI
+	^ false

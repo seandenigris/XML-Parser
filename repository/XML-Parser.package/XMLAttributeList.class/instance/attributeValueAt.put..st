@@ -1,4 +1,4 @@
-accessing
+private
 attributeValueAt: aName put: aValue
 	(self includesAttribute: aName)
 		ifTrue: [(self attributeNodeAt: aName) value: aValue]

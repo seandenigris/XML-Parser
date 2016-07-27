@@ -1,3 +1,4 @@
 private
 errorInvalidXMLIDAttributeValidator
-	XMLValidationException signal: 'Attribute "xml:id" must have ID type'
+	XMLValidationException signal:
+		'All "xml:id" attributes must be declared to be of ID type'

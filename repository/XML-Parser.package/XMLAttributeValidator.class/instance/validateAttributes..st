@@ -1,8 +1,11 @@
 validating
 validateAttributes: anAttributeDictionary
-	self
-		validateAttributeDefaultIn: anAttributeDictionary;
-		validateAttributeValue:
-			(anAttributeDictionary
-				at: self attribute
-				ifAbsent: [^ self])
+	self shouldFurtherNormalizeAttributeValue
+		ifTrue: [self furtherNormalizeAttributeValueIn: anAttributeDictionary].
+
+	self defaultValidator validateAttributeDefaultIn: anAttributeDictionary.
+
+	self validateAttributeValue:
+		(anAttributeDictionary
+			at: self attribute
+			ifAbsent: [^ self]).
