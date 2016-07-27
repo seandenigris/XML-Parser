@@ -1,3 +1,3 @@
 accessing
-lineBreak: aLineBreak
-	lineBreak := aLineBreak asString
+lineBreak: aLineBreakCharOrString
+	lineBreak := aLineBreakCharOrString asString

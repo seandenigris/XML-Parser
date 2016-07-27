@@ -1,3 +1,3 @@
 accessing
 tableElementClass
-	^ self elementClassAt: #XMLTableTestElement
+	^ self elementClassAt: #XMLTESTTableNameElement

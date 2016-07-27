@@ -1,4 +1,5 @@
 accessing
 elementClassNames
-	^ #(XMLUserTestElement XMLOtherUsernameTestElement XMLDateTestElement
-		XMLOtherDateTestElement XMLTableTestElement XMLOtherTableTestElement)
+	^ #(XMLTESTDefaultElement
+		XMLTESTUserElement XMLTESTOtherUsernameElement XMLTESTDateRegisteredElement
+		XMLTESTOtherDateRegisteredElement XMLTESTTableNameElement XMLTESTOtherTableNameElement)

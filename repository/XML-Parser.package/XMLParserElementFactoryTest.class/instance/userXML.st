@@ -20,4 +20,5 @@ userXML
     <user:real-name>John Smith</user:real-name>
     <user:date-registered>2010-11-14T23:53:54-05:00</user:date-registered>
     <table-name>users</table-name>
+    <tableName>users</tableName>
 </user:user>'

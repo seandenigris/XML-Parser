@@ -1,4 +1,4 @@
-accessing
+private
 classForElement: aName uri: aUri
 	| classesForElement |
 

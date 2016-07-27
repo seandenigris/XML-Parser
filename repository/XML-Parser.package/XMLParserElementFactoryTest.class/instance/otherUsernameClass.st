@@ -1,3 +1,3 @@
 accessing
 otherUsernameClass
-	^ self elementClassAt: #XMLOtherUsernameTestElement
+	^ self elementClassAt: #XMLTESTOtherUsernameElement

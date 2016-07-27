@@ -1,3 +1,3 @@
 accessing
 userElementClass
-	^ self elementClassAt: #XMLUserTestElement
+	^ self elementClassAt: #XMLTESTUserElement

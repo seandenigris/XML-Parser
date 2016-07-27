@@ -1,3 +1,3 @@
 accessing
 dateElementClass
-	^ self elementClassAt: #XMLDateTestElement
+	^ self elementClassAt: #XMLTESTDateRegisteredElement
