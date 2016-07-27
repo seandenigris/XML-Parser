@@ -1,4 +1,4 @@
-tokenizing
+tokenizing - dtd
 nextParameterEntityReference
 	self
 		nextName;

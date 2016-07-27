@@ -9,8 +9,6 @@
 		"saxHandler",
 		"dtd",
 		"validator",
-		"elementNester",
-		"scopeAllocator",
 		"languageEnvironment" ],
 	"name" : "SAXDriver",
 	"pools" : [

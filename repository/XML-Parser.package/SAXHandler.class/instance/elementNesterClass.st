@@ -1,3 +1,3 @@
 private
 elementNesterClass
-	^ XMLElementNester
+	^ XMLWellFormedElementNester

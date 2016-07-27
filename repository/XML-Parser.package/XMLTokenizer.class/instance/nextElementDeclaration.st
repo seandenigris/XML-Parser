@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextElementDeclaration
 	| name nextChar contentModel |
 

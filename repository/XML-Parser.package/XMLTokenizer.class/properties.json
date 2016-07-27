@@ -12,5 +12,5 @@
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractTokenizer",
+	"super" : "XMLDriverTokenizer",
 	"type" : "normal" }

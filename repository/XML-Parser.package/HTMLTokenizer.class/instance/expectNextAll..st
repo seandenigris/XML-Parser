@@ -1,4 +1,4 @@
-tokenizing
+tokenizing - expecting
 expectNextAll: aString
 	aString doWithIndex: [:each :i |
 		each == streamReader peek

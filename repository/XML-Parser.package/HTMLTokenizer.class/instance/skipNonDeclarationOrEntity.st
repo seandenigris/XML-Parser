@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 skipNonDeclarationOrEntity
 	[streamReader atEnd
 		or: [(streamReader peek == $<)

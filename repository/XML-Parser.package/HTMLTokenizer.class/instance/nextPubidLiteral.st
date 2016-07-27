@@ -1,3 +1,3 @@
-tokenizing dtd
+tokenizing - dtd
 nextPubidLiteral
 	^ self nextQuotedValue

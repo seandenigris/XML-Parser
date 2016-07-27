@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextExternalEntityDeclaration: aName isParameterEntity: aBoolean
 	| externalId notation |
 

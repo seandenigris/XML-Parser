@@ -1,16 +1,10 @@
-handling tokens
+private
 parseExternalSubset: aUri
-	| absoluteUri parser |
+	| parser |
 
-	absoluteUri :=
-		self externalEntityResolver
-			entityURIFromRelative: aUri
-			andBase: self documentURI.
 	parser :=
-		XMLParser
-			driver:
-				(DTDExternalSubsetDriver
-					saxDriver: self
-					documentURI: absoluteUri)
-			on: (self externalEntityResolver resolveEntity: absoluteUri).
+		self externalSubsetParserOnURI:
+			(self externalEntityResolver
+				entityURIFromRelative: aUri
+				andBase: self documentURI).
 	parser parseDocument.

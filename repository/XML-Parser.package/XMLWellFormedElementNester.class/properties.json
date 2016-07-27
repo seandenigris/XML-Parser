@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "XMLWellFormedElementNester",
+	"pools" : [
+		 ],
+	"super" : "XMLElementNester",
+	"type" : "normal" }

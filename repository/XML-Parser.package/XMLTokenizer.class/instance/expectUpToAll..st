@@ -1,4 +1,4 @@
-tokenizing
+tokenizing - expecting
 expectUpToAll: aString
 	| value isTerminated |
 

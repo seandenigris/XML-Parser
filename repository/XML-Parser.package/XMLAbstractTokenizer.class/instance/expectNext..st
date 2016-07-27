@@ -1,3 +1,0 @@
-tokenizing
-expectNext: aCharacter
-	self subclassResponsibility

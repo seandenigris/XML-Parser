@@ -1,4 +1,4 @@
-tokenizing
+entity replacement
 checkTextDeclarationInReplacement: aReplacement forEntity: anEntity
 	(aReplacement beginsWith: '<?xml ')
 		ifTrue: [ 

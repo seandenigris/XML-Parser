@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 skipDeclaration
 	[streamReader atEnd
 		or: [streamReader peek == $>]]

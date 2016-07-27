@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextSubsetMarkupToken
 	self expectNext: $<.
 	streamReader peek == $?

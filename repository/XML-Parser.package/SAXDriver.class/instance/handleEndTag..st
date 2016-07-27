@@ -1,21 +1,15 @@
 handling tokens
 handleEndTag: anElementName
-	| prefix localName namespaceUri |
-
-	self elementNester endedElement: anElementName.
+	self endNestingElement: anElementName.
 
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
-		prefix := prefixPart.
-		localName := localPart].
-	namespaceUri :=
-		self usesNamespaces
-			ifTrue: [self scopeAllocator resolvePrefix: prefix]
-			ifFalse: [''].
+		self saxHandler 
+			endElement: anElementName
+			prefix: prefixPart
+			uri:
+				(self usesNamespaces
+					ifTrue: [self scopeAllocator resolvePrefix: prefixPart]
+					ifFalse: [''])
+			localName: localPart.
 
-	self saxHandler 
-		endElement: anElementName
-		prefix: prefix
-		uri: namespaceUri
-		localName: localName.
-
-	self validateEndTag: anElementName.
+		self validateEndTag: anElementName].

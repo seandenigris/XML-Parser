@@ -1,7 +1,12 @@
-private
+element nesting
 preStartElements: anElementCollection
 	anElementCollection do: [:each |
-		super
-			handleStartTag: each
-			attributes: Dictionary new
-			namespaces: nil].
+		self elementNester startElement: each.
+
+		each splitQualifiedNameInto: [:prefixPart :localPart |
+			self saxHandler 
+				startElement: each
+				prefix: prefixPart
+				uri: ''
+				localName: localPart
+				attributes: Dictionary new]].

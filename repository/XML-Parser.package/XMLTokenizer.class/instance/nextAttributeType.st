@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextAttributeType
 	| nextChar type |
 

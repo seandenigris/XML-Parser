@@ -1,3 +1,0 @@
-tokenizing
-expectTerminator: aCharacter
-	self subclassResponsibility

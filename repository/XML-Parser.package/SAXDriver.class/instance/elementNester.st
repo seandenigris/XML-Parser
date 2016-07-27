@@ -1,3 +1,3 @@
 accessing
 elementNester
-	^ elementNester
+	^ saxHandler elementNester

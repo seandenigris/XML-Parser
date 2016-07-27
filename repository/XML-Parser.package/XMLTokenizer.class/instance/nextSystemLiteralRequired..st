@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextSystemLiteralRequired: aBoolean	
 	| quote value |
 

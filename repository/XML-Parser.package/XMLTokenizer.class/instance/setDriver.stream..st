@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 setDriver: aDriver stream: aStream
 	super setDriver: aDriver stream: aStream.
 

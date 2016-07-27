@@ -2,8 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"endedElement:" : "monty 12/6/2013 17:51",
-		"ensureNoElementsRemainOpen" : "JAAyer 11/28/2010 07:03",
-		"errorImproperlyNestedElements:" : "JAAyer 11/28/2010 07:03",
-		"errorUnmatchedEndTag:" : "JAAyer 11/28/2010 07:03",
-		"startedElement:" : "monty 12/6/2013 17:50" } }
+		"currentElement" : "monty 12/6/2013 17:25",
+		"enclosedElementsAsString:" : "monty 12/6/2013 17:25",
+		"endElement:" : "monty 12/11/2013 21:43",
+		"ensureNoElementsRemainOpen" : "monty 12/6/2013 17:49",
+		"hasExternalRoot" : "monty 12/6/2013 17:30",
+		"hasOpenElement:" : "monty 12/6/2013 17:29",
+		"hasOpenElements" : "monty 12/6/2013 17:29",
+		"openElements" : "monty 12/6/2013 17:29",
+		"printLimit" : "monty 12/6/2013 17:29",
+		"printOn:" : "monty 12/6/2013 17:29",
+		"printOn:startingAt:" : "monty 12/6/2013 17:29",
+		"rootElement" : "monty 12/6/2013 17:28",
+		"rootElement:" : "monty 12/6/2013 17:28",
+		"startElement:" : "monty 12/11/2013 21:43",
+		"totalOpen" : "monty 12/6/2013 17:29" } }

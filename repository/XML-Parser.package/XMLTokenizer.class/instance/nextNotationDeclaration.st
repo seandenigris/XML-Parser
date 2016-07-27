@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextNotationDeclaration
 	| name externalId |
 
@@ -8,8 +8,8 @@ nextNotationDeclaration
 
 	name := self nextName.
 	self skipSeparatorsReplacingParameterEntities.
-	externalId := self nextExternalIDSystemLiteralRequired: false.
 
+	externalId := self nextExternalIDSystemLiteralRequired: false.
 	self
 		skipSeparatorsReplacingParameterEntities;
 		expectTerminator: $>.

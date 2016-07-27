@@ -1,1 +1,1 @@
-The class keeps track of elements as they start and end and ensures that they nest properly.
+This is a base class for element nesters.

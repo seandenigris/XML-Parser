@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextAttlistDeclaration
 	| element attribute attributeType defaultDeclaration  |
 

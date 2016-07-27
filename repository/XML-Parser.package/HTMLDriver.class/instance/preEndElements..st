@@ -1,7 +1,14 @@
-private
+element nesting
 preEndElements: anElementCollection
 	anElementCollection do: [:each |
 		(self elementNester hasOpenElements)
 			ifFalse: [^ self].
 
-		super handleEndTag: each].
+		self elementNester endElement: each.
+	
+		each splitQualifiedNameInto: [:prefixPart :localPart |
+			self saxHandler 
+				endElement: each
+				prefix: prefixPart
+				uri: ''
+				localName: localPart]].

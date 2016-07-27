@@ -1,0 +1,1 @@
+This is a base class for tokenizers. Be careful changing the code in this class or its subclases. It is heavily optimized.

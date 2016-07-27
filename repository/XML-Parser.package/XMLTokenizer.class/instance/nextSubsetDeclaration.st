@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextSubsetDeclaration
 	streamReader peek == $E
 		ifTrue: [

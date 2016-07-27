@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextInternalEntityDeclaration: aName isParameterEntity: aBoolean
 	| value |
 

@@ -1,4 +1,4 @@
-tokenizing
+tokenizing - expecting
 expectTerminator: aCharacter
 	| nextChar |
 

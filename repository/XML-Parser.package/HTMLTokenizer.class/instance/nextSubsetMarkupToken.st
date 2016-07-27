@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextSubsetMarkupToken
 	streamReader peek == $<
 		ifTrue: [streamReader next]

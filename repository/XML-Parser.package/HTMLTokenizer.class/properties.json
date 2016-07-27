@@ -11,5 +11,5 @@
 	"name" : "HTMLTokenizer",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractTokenizer",
+	"super" : "XMLDriverTokenizer",
 	"type" : "normal" }

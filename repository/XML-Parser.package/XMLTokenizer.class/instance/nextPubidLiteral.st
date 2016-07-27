@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextPubidLiteral
 	| quote fpi nextChar |
 

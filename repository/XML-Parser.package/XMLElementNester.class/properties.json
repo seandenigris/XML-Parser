@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"openElements",
+		"rootElement",
+		"hasExternalRoot" ],
 	"name" : "XMLElementNester",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractElementNester",
+	"super" : "Object",
 	"type" : "normal" }

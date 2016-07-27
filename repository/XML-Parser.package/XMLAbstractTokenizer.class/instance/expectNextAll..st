@@ -1,3 +1,0 @@
-tokenizing
-expectNextAll: aString
-	self subclassResponsibility

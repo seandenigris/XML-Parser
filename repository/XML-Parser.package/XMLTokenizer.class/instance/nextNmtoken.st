@@ -1,4 +1,4 @@
-tokenizing dtd
+tokenizing - dtd
 nextNmtoken
 	"matches the nmtoken production"
 	|  nextChar |

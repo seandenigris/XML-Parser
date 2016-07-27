@@ -17,5 +17,5 @@
 	"name" : "HTMLElementNester",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractElementNester",
+	"super" : "XMLElementNester",
 	"type" : "normal" }
