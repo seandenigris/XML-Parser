@@ -1,5 +1,5 @@
 tests
-testParsingChangingNamespaces
+testChangingNamespaces
 	| document people person |
 
 	document := XMLDOMParser parse: self addressBookNamespacesXML.

@@ -7,7 +7,7 @@ test2elementDeclarations
 	self
 		assertElementDecl:
 			(XMLElementDeclaration
-				name: 'testElement'
+				element: 'testElement'
 				contentModel: '(one,two)')
 		hasName: 'testElement'
 		contentModel: '(one,two)'.

@@ -1,4 +1,4 @@
-tests-xmltokenizer
+tests - tokenizer
 testConditionalSection
 	| tokenizer |
 

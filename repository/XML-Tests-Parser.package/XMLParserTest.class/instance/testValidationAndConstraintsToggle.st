@@ -1,12 +1,12 @@
 tests
-testValidationAndDTDDeclarationsToggle
+testValidationAndConstraintsToggle
 	self assert:
 		((SAXHandler on: '<root/>')
 			isValidating: false;
-			requiresDTDDeclarations: true;
+			requiresDocumentConstraints: true;
 			isValidating).
 	self deny:
 		((SAXHandler on: '<root/>')
-			requiresDTDDeclarations: true;
+			requiresDocumentConstraints: true;
 			isValidating: false;
-			requiresDTDDeclarations).
+			requiresDocumentConstraints).

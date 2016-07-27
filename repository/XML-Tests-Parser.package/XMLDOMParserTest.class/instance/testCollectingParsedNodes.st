@@ -1,5 +1,5 @@
 tests
-testParsingCollecting
+testCollectingParsedNodes
 	| document firstPerson allNames |
 	"self debug: #testParsing"
 

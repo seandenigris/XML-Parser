@@ -1,4 +1,4 @@
-tests-utf8
+tests - encoding
 testDecodingCharacters
 	| xml document  |
 

@@ -1,5 +1,4 @@
 source
 addressBookNamespacesXML
-	^ '<root xmlns="defaultNS" xmlns:ps="personNS">',
-		self addressBookXML,
-		'</root>'
+	^ '<addressbook xmlns="defaultNS" xmlns:book="bookNS" xmlns:ps="personNS">',
+		(self addressBookXML copyAfter:  $>)

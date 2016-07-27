@@ -3,8 +3,8 @@ assertAttributeDecl: anAttributeDeclaration hasElementName: anElementName attrib
 	| printString |
 
 	self
-		assert: anAttributeDeclaration elementName = anElementName;
-		assert: anAttributeDeclaration attributeName = anAttributeName;
+		assert: anAttributeDeclaration element = anElementName;
+		assert: anAttributeDeclaration attribute = anAttributeName;
 		assert: anAttributeDeclaration type = aType;
 		assert: anAttributeDeclaration defaultDeclaration = aDefaultDeclaration.
 

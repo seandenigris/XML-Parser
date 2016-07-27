@@ -1,4 +1,4 @@
-tests-xmltokenizer
+tests - tokenizer
 testTokenizerAddressBook
 	| tokenizer |
 	tokenizer := XMLTokenizer driver: nil on: self addressBookXML readStream.

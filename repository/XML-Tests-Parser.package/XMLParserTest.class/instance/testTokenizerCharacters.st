@@ -1,4 +1,4 @@
-tests-xmltokenizer
+tests - tokenizer
 testTokenizerCharacters
 	| tokenizer |
 	"This test is actually not that useful. This is not the proper way of using the parser.

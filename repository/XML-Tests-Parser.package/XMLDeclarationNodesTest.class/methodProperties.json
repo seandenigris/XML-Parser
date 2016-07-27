@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertAttributeDecl:hasElementName:attributeName:type:defaultDecl:" : "JAAyer 10/30/2010 20:39",
-		"assertElementDecl:hasName:contentModel:" : "JAAyer 10/30/2010 20:21",
+		"assertAttributeDecl:hasElementName:attributeName:type:defaultDecl:" : "monty 12/21/2013 02:54",
+		"assertElementDecl:hasName:contentModel:" : "monty 12/21/2013 03:24",
 		"assertEntityDecl:hasName:replacement:publicID:systemID:ndada:" : "JAAyer 10/30/2010 20:46",
 		"assertNotationDecl:hasName:publicID:systemID:" : "JAAyer 10/30/2010 20:51",
 		"printExternalIDFromPublicID:systemID:on:" : "JAAyer 10/30/2010 20:39",
-		"test1attributeDeclarations" : "JAAyer 11/26/2010 18:16",
-		"test2elementDeclarations" : "JAAyer 11/26/2010 18:16",
+		"test1attributeDeclarations" : "monty 12/21/2013 02:52",
+		"test2elementDeclarations" : "monty 12/21/2013 03:14",
 		"test3entityDeclarations" : "monty 11/13/2013 21:24",
 		"test4notationDeclarations" : "JAAyer 11/26/2010 18:17" } }

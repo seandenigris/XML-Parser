@@ -9,8 +9,8 @@ test1attributeDeclarations
 	self
 		assertAttributeDecl:
 			(XMLAttributeDeclaration
-				elementName: 'testElement'
-				attributeName: 'testAttribute'
+				element: 'testElement'
+				attribute: 'testAttribute'
 				type: 'CDATA'
 				defaultDeclaration: '')
 		hasElementName: 'testElement'
@@ -20,8 +20,8 @@ test1attributeDeclarations
 	self
 		assertAttributeDecl:
 			(XMLAttributeDeclaration
-				elementName: 'testElement'
-				attributeName: 'testAttribute'
+				element: 'testElement'
+				attribute: 'testAttribute'
 				type: 'CDATA'
 				defaultDeclaration: '(one|two|three)')
 		hasElementName: 'testElement'

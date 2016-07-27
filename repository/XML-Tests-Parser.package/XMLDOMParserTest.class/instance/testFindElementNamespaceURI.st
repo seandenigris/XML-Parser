@@ -1,5 +1,5 @@
 tests
-testParsingFindElementNamespaceURI
+testFindElementNamespaceURI
 	| document people |
 
 	document := XMLDOMParser parse: self addressBookNamespacesXML.

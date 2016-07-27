@@ -1,5 +1,5 @@
 tests
-testParsingNodeDetecting
+testNodeDetecting
 	| document people |
 
 	document := XMLDOMParser parse: self addressBookXML.

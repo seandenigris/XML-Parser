@@ -1,5 +1,5 @@
 tests
-testParsingAllElementsNamespaceURIs
+testAllElementsNamespaceURIs
 	| document people |
 
 	document := XMLDOMParser parse: self addressBookNamespacesXML.
