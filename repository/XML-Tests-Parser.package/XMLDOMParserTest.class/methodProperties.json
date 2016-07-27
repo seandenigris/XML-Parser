@@ -41,5 +41,8 @@
 		"testParseDocumentWhile" : "monty 1/31/2014 22:22",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingRoot" : "monty 12/12/2013 00:42",
+		"testUndeclaringAttributePrefixes" : "monty 10/9/2014 20:37",
+		"testUndeclaringElementPrefixes" : "monty 10/9/2014 20:18",
+		"testUndeclaringPrefixes" : "monty 10/9/2014 20:22",
 		"testXMLComment" : "monty 12/12/2013 01:09",
 		"testXMLDeclaration" : "monty 2/9/2014 00:22" } }
