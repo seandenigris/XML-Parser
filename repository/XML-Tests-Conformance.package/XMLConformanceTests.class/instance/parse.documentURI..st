@@ -9,7 +9,7 @@ parse: aString documentURI: aUri
 	parser externalEntityResolver fileClient:
 		(self fileClientClass testCaseClass: self class).
 	parser
-		usesNamespaces: true;
+		usesNamespaces: false;
 		isValidating: true;
 		resolvesExternalEntities: true;
 		parseDocument.

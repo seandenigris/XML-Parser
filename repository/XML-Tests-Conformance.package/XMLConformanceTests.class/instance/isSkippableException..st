@@ -1,3 +1,3 @@
 testing
 isSkippableException: anError
-	^ (XMLFileIOException, XMLHTTPException, XMLEntityDepthException) handles: anError
+	^ (XMLFileIOException, XMLHTTPException, XMLLimitException) handles: anError
