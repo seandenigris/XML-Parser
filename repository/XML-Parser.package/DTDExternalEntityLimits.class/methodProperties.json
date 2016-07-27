@@ -1,11 +1,12 @@
 {
 	"class" : {
 		"defaultExternalSubsetReadLimit" : "monty 1/27/2015 22:48",
+		"defaultMaxExternalEntities" : "monty 6/21/2015 02:02",
 		"defaultMaxExternalEntitySize" : "monty 12/9/2014 07:57" },
 	"instance" : {
 		"externalSubsetReadLimit" : "monty 1/27/2015 22:46",
 		"externalSubsetReadLimit:" : "monty 1/27/2015 22:46",
-		"initialize" : "monty 4/26/2015 15:06",
+		"initialize" : "monty 6/21/2015 02:02",
 		"maxExternalEntities" : "monty 1/16/2014 06:14",
 		"maxExternalEntities:" : "monty 1/16/2014 06:14",
 		"maxExternalEntitySize" : "monty 1/16/2014 06:14",

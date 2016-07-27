@@ -1,5 +1,5 @@
 private
 classForAttribute: anAttribute
 	anAttribute = 'xml:id'
-		ifTrue: [^ XMLXMLIDIDAttributeValidator]
+		ifTrue: [^ XMLIDAttributeXMLIDValidator]
 		ifFalse: [^ XMLIDAttributeValidator]

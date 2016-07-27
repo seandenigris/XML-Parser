@@ -5,8 +5,8 @@ validatePrefix: aPrefix beforeMappingTo: aURI
 			aURI = self class xmlNamespaceURI
 				ifFalse: [self errorCannotRemapXMLPrefix]]
 		ifFalse: [
-			aPrefix isEmpty "avoid ifEmpty: overhead"
-				ifFalse: [
+			aPrefix size > 0 "optimization"
+				ifTrue: [
 					aPrefix = 'xmlns'
 						ifTrue: [self errorCannotMapXMLNSPrefix].
 					(aPrefix indexOf: $:) > 0 

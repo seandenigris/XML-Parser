@@ -1,6 +1,6 @@
 validating
 validateAndResolvePrefix: aPrefix ofElement: aName
-	aPrefix isEmpty "avoid ifEmpty: closure overhead"
+	aPrefix size = 0 "optimization"
 		ifTrue: [
 			self validateUnprefixedName: aName.
 			^ self defaultNamespace]
