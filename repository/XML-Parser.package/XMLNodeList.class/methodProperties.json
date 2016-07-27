@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"afterAdding:" : "monty 10/28/2014 19:04",
+		"afterAdding:at:" : "monty 1/21/2015 11:54",
+		"afterAddingLast:" : "monty 1/21/2015 12:27",
 		"afterRemoving:" : "monty 10/28/2014 19:05",
 		"beforeAdding:" : "monty 10/28/2014 13:48",
 		"contentNodes" : "monty 10/25/2014 21:08",

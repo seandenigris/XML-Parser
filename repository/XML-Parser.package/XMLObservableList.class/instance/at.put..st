@@ -1,9 +1,20 @@
 accessing
 at: anIndex put: anObject
-	(self at: anIndex ifAbsent: nil)
-		ifNotNil: [:oldObject |
-			self
-				with: [super at: anIndex put: nil]
-				remove: oldObject].
+	| oldObject |
 
-	^ self with: [super at: anIndex put: anObject] add: anObject.
+	"gemstone behavior"
+	anIndex = (self size + 1)
+		ifTrue: [^ self addLast: anObject].
+
+	self beforeAdding: anObject.
+
+	oldObject := collection at: anIndex.
+	collection at: anIndex put: nil.
+	oldObject
+		ifNotNil: [self afterRemoving: oldObject].
+	
+	collection at: anIndex put: anObject.
+	self
+		afterAdding: anObject
+		at: anIndex.
+	^ anObject.

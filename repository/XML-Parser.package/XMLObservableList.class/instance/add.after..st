@@ -1,3 +1,8 @@
 adding
-add: anObject after: aPriorObject
-	^ self with: [super add: anObject after: aPriorObject] add: anObject
+add: anObject after: aPreviousObject
+	^ self
+		add: anObject
+		afterIndex:
+			(collection
+				indexOf: aPreviousObject
+				ifAbsent: [-1])

@@ -1,3 +1,10 @@
 adding
 add: anObject beforeIndex: anIndex
-	^ self with: [super add: anObject beforeIndex: anIndex] add: anObject
+	self beforeAdding: anObject.
+	collection
+		add: anObject
+		beforeIndex: anIndex.
+	self
+		afterAdding: anObject
+		at: anIndex - 1.
+	^ anObject.

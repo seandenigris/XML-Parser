@@ -1,3 +1,6 @@
 adding
 addFirst: anObject
-	^ self with: [super addFirst: anObject] add: anObject
+	self beforeAdding: anObject.
+	collection addFirst: anObject.
+	self afterAdding: anObject at: 1.
+	^ anObject.

@@ -1,4 +1,7 @@
 removing
 reset
-	collection do: [:each | self with: [] remove: each].
+	| removed |
+
+	removed := collection copy.
 	collection reset.
+	removed do: [:each | self afterRemoving: each].

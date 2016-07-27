@@ -1,3 +1,5 @@
 removing
 remove: anObject ifAbsent: aBlock
-	^ self with: [super remove: anObject ifAbsent: [^ aBlock value]] remove: anObject
+	collection remove: anObject ifAbsent: [^ aBlock value].
+	self afterRemoving: anObject.
+	^ anObject.

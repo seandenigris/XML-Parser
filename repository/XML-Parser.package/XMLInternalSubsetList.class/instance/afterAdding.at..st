@@ -1,3 +1,3 @@
 private
-afterAdding: aNode
+afterAdding: aNode at: anIndex
 	observer ifNotNil: [observer addedNode: aNode]

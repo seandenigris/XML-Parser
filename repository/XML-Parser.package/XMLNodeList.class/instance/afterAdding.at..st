@@ -1,5 +1,5 @@
 private
-afterAdding: aNode
+afterAdding: aNode at: anIndex
 	observer ifNotNil: [
 		aNode isElement
 			ifTrue: [observer addedElement: aNode]

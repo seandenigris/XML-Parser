@@ -1,10 +1,11 @@
 private
-afterAdding: aNode
+afterAdding: aNode at: anIndex
 	aNode isElement
 		ifTrue: [
-			((self last == aNode)
+			(anIndex = self size
 				or: [(self findElementAfter: aNode) isNil])
 				ifTrue: [self elementAddedAtEnd: aNode]
 				ifFalse: [self elementInsertedBeforeEnd: aNode]].
-	super afterAdding: aNode.
-			
+	super
+		afterAdding: aNode
+		at: anIndex.

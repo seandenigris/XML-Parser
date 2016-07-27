@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"afterAdding:" : "monty 1/17/2015 08:16",
+		"afterAdding:at:" : "monty 1/21/2015 11:55",
+		"afterAddingLast:" : "monty 1/21/2015 12:27",
 		"afterRemoving:" : "monty 1/17/2015 08:17",
 		"cachedElements" : "monty 1/16/2015 13:46",
 		"cachedElementsByName" : "monty 1/16/2015 13:50",
