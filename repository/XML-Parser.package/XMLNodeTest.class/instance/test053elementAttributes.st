@@ -18,7 +18,8 @@ test053elementAttributes
 		assertElement: element attribute: #bar is: 'test2';
 		assert: (element at: 'baz' put: 'test3') = 'test3';
 		assertElement: element attribute: #baz is: 'test3';
-		assert: element allAttributes asArray = #(#bar baz #foo).
+		assert: element allAttributes asArray =  #(#bar #baz #foo).
+
 	self
 		assert: element allAttributeAssociations asArray =
 			(Array with: #bar->'test2' with: #baz->'test3' with: #foo->'test').
