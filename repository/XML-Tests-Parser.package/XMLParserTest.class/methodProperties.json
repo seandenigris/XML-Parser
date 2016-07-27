@@ -35,6 +35,8 @@
 		"testHTTPClientPaths" : "monty 11/16/2013 06:06",
 		"testInvalidElementContentModels" : "monty 12/6/2013 20:35",
 		"testLineEndingsDoNotMatter" : "monty 12/7/2013 00:15",
+		"testParserLittleDocument" : "StephaneDucasse 12/27/2013 16:52",
+		"testParserLittleDocumentShowingProblemWithAscii" : "StephaneDucasse 12/27/2013 16:54",
 		"testPredefinedEntityReplacement" : "monty 12/8/2013 01:20",
 		"testPrefixedAttributeDeclarations" : "monty 12/18/2013 23:49",
 		"testPrefixedElementDeclarations" : "monty 12/18/2013 23:44",
