@@ -1,3 +1,3 @@
-accessing
+removing
 removeAttributes
 	^ self attributeNodes removeAll

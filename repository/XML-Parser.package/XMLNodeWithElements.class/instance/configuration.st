@@ -1,5 +1,5 @@
 accessing
 configuration
 	^ configuration ifNil: [
-		self configuration: XMLDOMConfiguration new.
+		self configuration: self configurationClass new.
 		configuration]

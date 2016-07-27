@@ -1,5 +1,5 @@
 accessing
 elementValidatorFor: aName
-	^ (dtd elementValidators
+	^ (self dtd elementValidators
 		at: aName
 		ifAbsent: [nil]) copy

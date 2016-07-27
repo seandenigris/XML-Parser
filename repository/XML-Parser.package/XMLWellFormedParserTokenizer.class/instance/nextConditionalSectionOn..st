@@ -4,6 +4,6 @@ nextConditionalSectionOn: aWriteStream
 		skipSeparatorsReplacingParameterEntities;
 		expectNext: $I.
 
-	^ streamReader peek == $N
+	streamReader peek == $N
 		ifTrue: [self nextIncludeSectionOn: aWriteStream]
 		ifFalse: [self nextIgnoreSection].

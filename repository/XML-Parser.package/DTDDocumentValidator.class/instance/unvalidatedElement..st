@@ -1,3 +1,5 @@
 validation
 unvalidatedElement: aName
-	XMLValidationException signal: 'Undeclared element <', aName, '>'
+	XMLValidationException
+		formatSignal: 'Undeclared element <{1}>'
+		with: aName

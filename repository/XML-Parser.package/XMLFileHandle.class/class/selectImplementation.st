@@ -5,4 +5,4 @@ selectImplementation
 	self allSubclassesDo: [:each |
 		each isSupported
 			ifTrue: [^ each]].
-	XMLFileException signal: 'File IO unsupported'.
+	self errorUnsupported.

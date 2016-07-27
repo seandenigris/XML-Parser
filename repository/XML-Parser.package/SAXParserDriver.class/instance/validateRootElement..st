@@ -2,6 +2,6 @@ private
 validateRootElement: aStartTag
 	(self saxHandler requiresDocumentConstraints
 		and: [self validator hasElementValidators not])
-		ifTrue: [XMLValidationException signal: 'Document validation constraints required'].
+		ifTrue: [self errorDocumentConstraintsRequired].
 
 	self validator validateRootElement: aStartTag.

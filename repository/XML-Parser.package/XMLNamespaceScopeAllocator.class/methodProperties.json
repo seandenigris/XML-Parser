@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentScope" : "monty 10/27/2014 08:09",
-		"currentScope:" : "monty 10/27/2014 08:09",
+		"currentScope" : "monty 10/30/2014 12:26",
+		"currentScope:" : "monty 10/30/2014 12:27",
 		"emptyScope" : "JAAyer 3/13/2010 13:44",
-		"enterScope" : "monty 10/27/2014 08:09",
-		"exitScope" : "monty 10/27/2014 08:09",
-		"initialize" : "monty 10/27/2014 09:21" } }
+		"enterScope" : "monty 10/30/2014 12:27",
+		"exitScope" : "monty 10/30/2014 12:27",
+		"initialize" : "monty 10/27/2014 09:21",
+		"scopes" : "monty 10/30/2014 12:26" } }

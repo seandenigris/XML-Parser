@@ -5,8 +5,7 @@ nextContentMarkupToken
 	streamReader peek == $!
 		ifTrue: [
 			streamReader next.
-			^ streamReader peek == $-
-				ifTrue: [self nextComment]
-				ifFalse: [self nextCDataSection]].
-
+			streamReader peek == $-
+				ifTrue: [^self nextComment].
+			^ self nextCDataSection].
 	self nextTag.

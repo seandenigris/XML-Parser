@@ -7,7 +7,7 @@ nextAttributeValue
 		ifFalse: [
 			quote == $&
 				ifTrue: [^ self nextUnparsedEntityReference]
-				ifFalse: [self errorExpected: 'start of quoted attribute value']].
+				ifFalse: [self errorExpectedAttributeValueStart]].
 	
 	context
 		saveCurrent;
@@ -31,6 +31,6 @@ nextAttributeValue
 	context resetPrevious.
 
 	(streamReader next == quote)
-		ifFalse: [self errorExpected: 'end of quoted attribute value'].
+		ifFalse: [self errorExpectedAttributeValueEnd].
 
 	^ writeStream contents.

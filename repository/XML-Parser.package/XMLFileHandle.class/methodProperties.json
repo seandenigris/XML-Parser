@@ -2,15 +2,18 @@
 	"class" : {
 		"currentWorkingDirectory" : "monty 1/23/2014 01:34",
 		"currentWorkingDirectoryPathString" : "monty 1/22/2014 18:50",
+		"errorUnsupported" : "monty 10/31/2014 20:54",
 		"implementation" : "monty 10/26/2014 14:44",
 		"isSupported" : "monty 10/25/2014 20:41",
 		"new" : "monty 10/25/2014 17:49",
 		"path:" : "monty 10/25/2014 17:49",
 		"preferredImplementation" : "monty 10/25/2014 18:56",
-		"selectImplementation" : "monty 10/26/2014 08:48" },
+		"selectImplementation" : "monty 10/31/2014 20:54" },
 	"instance" : {
 		"delete" : "monty 1/22/2014 22:49",
 		"deleteFileOrDo:" : "monty 1/21/2014 22:32",
+		"errorFileSize:exceedsMaxSize:" : "monty 11/6/2014 12:16",
+		"errorNotAFile" : "monty 10/31/2014 20:49",
 		"fileSize" : "monty 1/22/2014 19:07",
 		"get" : "monty 1/13/2014 18:14",
 		"getUpToLimit:" : "monty 1/13/2014 18:14",
@@ -19,6 +22,6 @@
 		"path:" : "monty 1/9/2014 04:23",
 		"readStream" : "monty 1/13/2014 18:13",
 		"readStreamOnFileOrDo:" : "monty 1/13/2014 20:12",
-		"readStreamUpToLimit:" : "monty 1/22/2014 22:49",
+		"readStreamUpToLimit:" : "monty 11/6/2014 12:16",
 		"writeStream" : "monty 1/22/2014 22:49",
 		"writeStreamOnFileOrDo:" : "monty 1/21/2014 22:27" } }

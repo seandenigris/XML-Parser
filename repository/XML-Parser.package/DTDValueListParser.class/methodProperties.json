@@ -1,11 +1,16 @@
 {
 	"class" : {
 		"initialize" : "monty 1/21/2014 23:44",
-		"on:" : "monty 12/9/2013 02:27" },
+		"on:" : "monty 10/30/2014 12:58" },
 	"instance" : {
+		"errorDuplicateListValue:" : "monty 10/31/2014 21:20",
+		"errorEmptyListValue" : "monty 10/31/2014 17:19",
+		"errorInvalidListValue:" : "monty 10/31/2014 17:19",
+		"errorMissingListEnd" : "monty 10/31/2014 17:25",
+		"errorMissingListStart" : "monty 10/31/2014 17:24",
 		"isValidListValue:" : "monty 12/31/2013 02:08",
-		"parse" : "monty 1/16/2014 09:13",
+		"on:" : "monty 11/6/2014 02:27",
+		"parse" : "monty 10/31/2014 17:24",
 		"parseAfterList" : "monty 12/31/2013 02:46",
-		"parseListTerminator" : "monty 12/31/2013 02:46",
-		"parseListValue" : "monty 2/2/2014 07:59",
-		"valueList:" : "monty 12/29/2013 04:07" } }
+		"parseListTerminator" : "monty 10/31/2014 17:25",
+		"parseListValue" : "monty 10/31/2014 17:20" } }

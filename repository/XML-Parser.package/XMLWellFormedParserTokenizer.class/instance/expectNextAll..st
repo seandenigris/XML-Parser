@@ -1,15 +1,10 @@
 tokenizing - expecting
 expectNextAll: anExpectedLiteral
-	| nextChar |
-
-	anExpectedLiteral doWithIndex: [:each :i |
-		(nextChar := streamReader next) == each
+	1 to: anExpectedLiteral size do: [:i | | nextChar |
+		(nextChar := streamReader next) == (anExpectedLiteral at: i)
 			ifFalse: [
 				self
-					errorExpected: anExpectedLiteral
-					butGot:
-						(anExpectedLiteral
-							copyReplaceFrom: i
-							to: anExpectedLiteral size
-							with: (nextChar ifNil: ['']) asString)]].
+					errorExpectedLiteral: anExpectedLiteral
+					butGot: nextChar
+					at: i]].
 	^ anExpectedLiteral.

@@ -1,4 +1,4 @@
-parsing
+private
 parseListValue
 	| value oldSize |
 
@@ -8,12 +8,12 @@ parseListValue
 		whileFalse: [valueStream nextPut: valueListStream next].
 
 	(value := valueStream contents)
-		ifEmpty: [XMLValidationException signal: 'Empty list value'].
+		ifEmpty: [self errorEmptyListValue].
 	(self isValidListValue: value)
-		ifFalse: [XMLValidationException signal: 'Invalid value "', value, '" in list value'].
+		ifFalse: [self errorInvalidListValue: value].
 
 	"checking the size avoids includes: hash lookup"
 	oldSize := listValues size.
 	listValues add: value.
 	(listValues size > oldSize)
-		ifFalse: [XMLValidationException signal: 'Duplicate "', value, '" in list'].
+		ifFalse: [self errorDuplicateListValue: value].

@@ -1,7 +1,7 @@
-parsing
+private
 parseListTerminator
 	(valueListStream atEnd not
 		and: [valueListStream next == $)])
-		ifFalse: [XMLValidationException signal: 'Missing list terminator ")"'].
+		ifFalse: [self errorMissingListEnd].
 
 	self parseAfterList.

@@ -5,7 +5,7 @@ handleGeneralEntityReference: aName
 	(entity := self dtd generalEntityAt: aName)
 		ifNil: [
 			self isValidating
-				ifTrue: [(XMLValidationException undeclaredGeneralEntity: aName) signal].
+				ifTrue: [self errorUndeclaredGeneralEntity: aName].
 			self preservesUndeclaredEntityReferences
 				ifTrue: [entity := DTDBypassedGeneralEntity named: aName].
 			self saxHandler skippedEntity: aName].

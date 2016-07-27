@@ -1,4 +1,4 @@
-accessing
+adding
 addContent: aStringOrStringNode
 	string :=
 		string

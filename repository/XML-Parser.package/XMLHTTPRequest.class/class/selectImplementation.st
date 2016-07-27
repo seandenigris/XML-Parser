@@ -5,4 +5,4 @@ selectImplementation
 	self allSubclassesDo: [:each |
 		each isSupported
 			ifTrue: [^ each]].
-	XMLHTTPException signal: 'HTTP unsupported'.
+	self errorUnsupported.

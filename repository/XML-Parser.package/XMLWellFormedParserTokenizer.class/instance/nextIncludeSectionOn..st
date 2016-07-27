@@ -17,4 +17,4 @@ nextIncludeSectionOn: aWriteStream
 						ifFalse: [aWriteStream nextPut: streamReader next]]].
 
 	isOpen
-		ifTrue: [self errorExpected: 'terminating ]]>'].
+		ifTrue: [self errorExpectedSectionTerminator].

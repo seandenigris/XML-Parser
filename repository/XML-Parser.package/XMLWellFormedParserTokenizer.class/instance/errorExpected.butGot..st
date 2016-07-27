@@ -1,9 +1,7 @@
 errors
 errorExpected: anExpectedCharacterOrString butGot: aReceivedCharacterOrString
-	| expectedString receivedString |
-
-	expectedString := anExpectedCharacterOrString asString.	
-	(receivedString := (aReceivedCharacterOrString ifNil: ['']) asString)
-		ifEmpty: [receivedString := 'nothing'].
-
-	self errorExpected: expectedString, ' but got ', receivedString.
+	self errorExpected:
+		('{1} but got "{2}"' format:
+			(Array
+				with: anExpectedCharacterOrString asString
+				with: (aReceivedCharacterOrString ifNil: ['']) asString))

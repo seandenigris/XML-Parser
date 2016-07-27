@@ -1,10 +1,10 @@
 private 
 validatorClassForType
-	type ifEmpty: [XMLValidationException signal: 'Missing attribute type'].
-
-	^ NonEnumerationValidators 
+	^ NonEnumerationValidators
 		at: type
 		ifAbsent: [
+			type isEmpty
+				ifTrue: [self errorMissingAttributeType].
 			(self hasNotationType)
 				ifTrue: [XMLNotationListAttributeValidator]
 				ifFalse: [XMLValueListAttributeValidator]]

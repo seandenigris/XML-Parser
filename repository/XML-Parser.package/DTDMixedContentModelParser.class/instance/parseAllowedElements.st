@@ -1,4 +1,4 @@
-parsing
+private
 parseAllowedElements
 	| allowedElements |
 
@@ -6,8 +6,6 @@ parseAllowedElements
 	allowedElements remove: '#PCDATA'.
 
 	(allowedElements isEmpty or: [contentModel last == $*])
-		ifFalse: [
-			XMLValidationException signal:
-				'Missing * after mixed content list with elements'].
+		ifFalse: [self errorInvalidMixedContentList].
 
 	^ allowedElements.

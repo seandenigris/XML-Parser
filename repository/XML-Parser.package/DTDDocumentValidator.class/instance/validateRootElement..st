@@ -1,7 +1,5 @@
 validation
 validateRootElement: anElementName
-	(dtd rootElement notEmpty
-		and: [dtd rootElement ~= anElementName])
-		ifTrue: [
-			XMLValidationException signal:
-				'Element <', anElementName, '> cannot be root']
+	(self dtd rootElement notEmpty
+		and: [self dtd rootElement ~= anElementName])
+		ifTrue: [self errorInvalidRoot: anElementName]

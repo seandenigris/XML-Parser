@@ -1,3 +1,3 @@
 accessing
 currentScope
-	^ scopes lastOrNil ifNil: [self emptyScope]
+	^ self scopes lastOrNil ifNil: [self emptyScope]

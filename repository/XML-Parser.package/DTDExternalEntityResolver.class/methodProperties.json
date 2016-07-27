@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"checkExternalEntityLimit" : "monty 1/23/2014 05:43",
-		"combineURI:with:" : "monty 1/24/2014 06:49",
+		"checkExternalEntityLimit" : "monty 10/31/2014 21:03",
+		"combineURI:with:" : "monty 10/31/2014 21:01",
 		"defaultDocumentURI" : "monty 1/22/2014 18:55",
+		"erorrExternalEntityLimitExceeded" : "monty 11/6/2014 12:21",
+		"errorLocalFromNonLocal" : "monty 10/31/2014 21:33",
 		"externalEntityLimits" : "monty 1/16/2014 06:15",
 		"incrementEntityTotal" : "monty 1/23/2014 05:45",
 		"maxExternalEntities" : "monty 1/16/2014 06:17",

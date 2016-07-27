@@ -1,7 +1,7 @@
 tokenizing
 nextTag
 	"performance critical method"
-	| tagName attributes reservedAttributes namespaces nextChar attributeName attributeValue |
+	| tagName attributes namespaces nextChar |
 
 	(streamReader peek == $/)
 		ifTrue: [^ self nextEndTag].
@@ -12,47 +12,36 @@ nextTag
 	((nextChar := streamReader peek) == $>
 		or: [nextChar == $/
 			or: [nextChar == nil]])]
-		whileFalse: [
+		whileFalse: [ | attributeName attributeValue |
 			attributeName := self nextName.
 			streamReader skipSeparators.
 			self expectNext: $=.
 			streamReader skipSeparators.
 			attributeValue := self nextAttributeValue.
 	
-			((attributeName at: 1) == $x "fast test to skip the others"
-				and: [(attributeName beginsWith: 'xml')
-					and: [attributeName size >= 5]])
+			(attributeName at: 1) == $x
 				ifTrue: [
-					(driver usesNamespaces
-						and: [(attributeName at: 4) == $n
-							and: [(attributeName at: 5) == $s]])
+					(attributeName isXmlnsAttributeName
+						and: [driver usesNamespaces])
 						ifTrue: [
 							"initialize only if needed"
-							namespaces
-								ifNil: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
-							attributeName size > 6
-								ifTrue: [
-									namespaces
-										at: (attributeName copyFrom: 7 to: attributeName size)
-										put: attributeValue]
-								ifFalse: [namespaces at: '' put: attributeValue]]
-						ifFalse: [
-							(attributeName at: 4) == $:
-								ifTrue: [
-									"the xml: attributes require special processing so are copied
-									to a separate dictionary to not be affected by changes to the
-									regular dictionary and quick nil test if any are present"
-									(reservedAttributes ifNil: [reservedAttributes := Dictionary new])
-										at: attributeName put: attributeValue].
-								attributes at: attributeName put: attributeValue]]
+							(namespaces
+								ifNil: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''])
+								at:
+									((attributeName size > 6)
+										ifTrue: [attributeName copyFrom: 7 to: attributeName size]
+										ifFalse: [''])
+								put: attributeValue]
+						ifFalse: [							
+							attributeName isReservedAttributeName
+								ifTrue: [driver haveUnhandledReservedAttributes].
+							attributes at: attributeName put: attributeValue]]
 				ifFalse: [attributes at: attributeName put: attributeValue]].
 
 	driver
 		handleStartTag: tagName
 		attributes: attributes
 		namespaces: namespaces.
-	reservedAttributes
-		ifNotNil: [driver handleReservedAttributes: reservedAttributes].
 
 	streamReader peek == $/
 		ifTrue: [

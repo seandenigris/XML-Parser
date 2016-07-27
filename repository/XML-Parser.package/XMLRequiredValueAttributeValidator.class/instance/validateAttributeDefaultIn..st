@@ -1,4 +1,4 @@
 validation
 validateAttributeDefaultIn: anAttributeDictionary
-	(anAttributeDictionary includesKey: attribute)
-		ifFalse: [XMLValidationException signal: 'Required attribute "', attribute, '" is missing']
+	(anAttributeDictionary includesKey: self attribute)
+		ifFalse: [self errorRequiredAttributeMissing]

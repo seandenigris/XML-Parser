@@ -1,4 +1,4 @@
-namespaces
+private
 undeclareNamespacesInScope: aScope
 	| currentScope |
 

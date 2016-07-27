@@ -1,3 +1,3 @@
 accessing
 attributeAssociations
-	^ self attributeNodes asNameValueAssociations
+	^ self attributeNodes attributeAssociations

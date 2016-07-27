@@ -1,3 +1,3 @@
 private
 nodeListClass
-	self subclassResponsibility
+	^ XMLNodeList

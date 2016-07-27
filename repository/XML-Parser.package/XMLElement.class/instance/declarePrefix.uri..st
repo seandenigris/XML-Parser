@@ -8,4 +8,5 @@ declarePrefix: aPrefix uri: aUri
 				updateEnclosedScopesWith: [:scope | scope mapPrefix: aPrefix to: aUri]
 				whileTrue: [:scope |
 					(scope includesPrefix: aPrefix) not
-						or: [scope includesPrefix: aPrefix mappedTo: oldMapping]]]
+						or: [scope includesPrefix: aPrefix mappedTo: oldMapping]]
+				validateAfter: false]

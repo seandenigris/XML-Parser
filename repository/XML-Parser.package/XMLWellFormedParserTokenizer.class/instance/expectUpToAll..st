@@ -10,6 +10,6 @@ expectUpToAll: aString
 		whileFalse: [writeStream nextPut: streamReader next].
 
 	isTerminated
-		ifFalse: [self errorExpected: 'terminating ', aString].
+		ifFalse: [self errorExpectedLiteral: aString].
 
 	^ writeStream contents.

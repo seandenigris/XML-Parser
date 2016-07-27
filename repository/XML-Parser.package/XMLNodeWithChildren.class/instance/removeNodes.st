@@ -1,3 +1,3 @@
-accessing
+removing
 removeNodes
 	self nodes removeAll

@@ -1,10 +1,13 @@
-handling tokens
+private
 handleReservedAttributes: anAttributeDictionary
-	(anAttributeDictionary at: 'xml:base' ifAbsent: [nil])
-		ifNotNil: [:uri | self currentURI: uri].
+	anAttributeDictionary
+		at: 'xml:base'
+		ifPresent: [:uri | self currentURI: uri].
 	self isValidating
 		ifTrue: [self validator validateXMLIDAttributeIn: anAttributeDictionary].
 
 	self elementNester
-		setScopedAttributesNamed: #('xml:space' 'xml:base' 'xml:lang')
+		setScopedAttributesNamed: self scopedAttributeNames
 		from: anAttributeDictionary.
+
+	hasUnhandledReservedAttributes := false.

@@ -8,6 +8,6 @@ combineURI: aBaseUri with: aRelativeUri
 		and: [baseUri isLocalURI not
 			and: [self resolvesLocalFromNonLocal notNil
 				and: [self resolvesLocalFromNonLocal not]]])
-		ifTrue: [XMLLimitException signal: 'Local URI referenced from non-local URI'].
+		ifTrue: [self errorLocalFromNonLocal].
 
 	^ combinedUri.

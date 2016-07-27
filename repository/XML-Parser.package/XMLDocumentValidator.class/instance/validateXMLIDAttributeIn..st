@@ -1,3 +1,3 @@
-validation
-validateXMLIDAttributeIn: aDictionary
-	self xmlIDValidator validateAttributes: aDictionary
+private
+validateXMLIDAttributeIn: anAttributeDictionary
+	self xmlIDValidator validateAttributes: anAttributeDictionary

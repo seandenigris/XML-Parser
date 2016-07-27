@@ -1,4 +1,4 @@
-parsing
+private
 parseBinaryOperator: aCharacter
 	self hasOperatorOnStack
 		ifTrue: [

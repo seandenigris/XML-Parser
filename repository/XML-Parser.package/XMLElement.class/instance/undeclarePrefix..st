@@ -1,6 +1,9 @@
 namespaces
 undeclarePrefix: aPrefix
-	self namespaceScope unmapPrefix: aPrefix.
+	| currentMapping |
+
+	currentMapping := self namespaceScope prefixMappingsAt: aPrefix ifAbsent: [^ self].
 	self
-		validateName;
-		validateAttributes.
+		updateEnclosedScopesWith: [:scope | scope unmapPrefix: aPrefix]
+		whileTrue: [:scope | scope includesPrefix: aPrefix mappedTo: currentMapping]
+		validateAfter: true.

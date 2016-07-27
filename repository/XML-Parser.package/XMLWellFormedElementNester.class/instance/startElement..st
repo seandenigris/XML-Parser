@@ -3,9 +3,8 @@ startElement: anElementName
 	rootElement
 		ifNil: [rootElement := anElementName]
 		ifNotNil: [
-			(self hasOpenElements or: [self hasExternalRoot])
-				ifFalse: [
-					XMLWellFormednessException signal:
-						'Document cannot have multiple root elements']].
+			(self openElements isEmpty
+				and: [self hasExternalRootElement not])
+				ifTrue: [self errorMultipleRoots]].
 
 	super startElement: anElementName.

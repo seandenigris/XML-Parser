@@ -17,6 +17,4 @@ nextIgnoreSection
 						ifFalse: [streamReader next]]].
 
 	openSections > 0
-		ifTrue: [self errorExpected: 'terminating ]]>'].
-
-	^ ''.
+		ifTrue: [self errorExpectedSectionTerminator].

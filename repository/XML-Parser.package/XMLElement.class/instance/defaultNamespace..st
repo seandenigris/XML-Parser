@@ -6,3 +6,4 @@ defaultNamespace: aUri
 	self
 		updateEnclosedScopesWith: [:scope | scope defaultNamespace: aUri]
 		whileTrue: [:scope | scope defaultNamespace = oldNamespace]
+		validateAfter: false.

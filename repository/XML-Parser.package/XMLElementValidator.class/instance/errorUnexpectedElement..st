@@ -1,4 +1,6 @@
 private
 errorUnexpectedElement: aName
-	XMLValidationException signal:
-		'Unexpected <', aName, '> element in <', self element, '> element'.
+	XMLValidationException
+		formatSignal: 'Unexpected <{1}> element in <{2}> element'
+		with: aName
+		with: self element

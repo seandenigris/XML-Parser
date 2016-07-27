@@ -1,4 +1,4 @@
-parsing
+private
 parseElementName
 	| matcher |
 
@@ -9,6 +9,6 @@ parseElementName
 
 	matcher := nameStream contents.
 	matcher = '#PCDATA'
-		ifTrue: [XMLValidationException signal: 'Unexpected #PCDATA in content model'].
+		ifTrue: [self errorUnexpectedPCDATA].
 
 	nfaBuilder pushMatcher: matcher.

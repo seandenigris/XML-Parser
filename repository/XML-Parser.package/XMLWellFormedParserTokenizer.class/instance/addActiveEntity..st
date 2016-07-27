@@ -1,11 +1,11 @@
 entity replacement
 addActiveEntity: anEntity
 	(self hasActiveEntityNamed: anEntity name)
-		ifTrue: [self parseError: 'Illegal self-referential entity ', anEntity asReference].
+		ifTrue: [self errorSelfReferentialEntity: anEntity].
 	self maxEntityReplacementDepth
 		ifNotNil: [:maxDepth |
 			(self activeEntities size + 1> maxDepth)
-				ifTrue: [self entityDepthError: 'Cannot further nest entity replacements']].
+				ifTrue: [self errorEntityDepthLimitExceeded]].
 	
 	self activeEntities addLast: anEntity.
 	anEntity isExternal

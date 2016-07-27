@@ -16,6 +16,6 @@ nextSubsetMarkupToken
 			(context isInExternalSubset
 				or: [self hasActiveExternalEntity])
 				ifTrue: [^ self nextConditionalSection].
-			self parseError: 'Cannot have INCLUDE/IGNORE sections in internal subset'].
+			self errorInternalSubsetIncludeOrIgnoreSection].
 
 	self nextSubsetDeclaration.

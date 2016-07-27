@@ -3,11 +3,11 @@ readStreamUpToLimit: aMaxSize
 	| fileSize |
 
 	self isFile
-		ifFalse: [XMLFileException signal: 'Not a file'].
+		ifFalse: [self errorNotAFile].
 	
 	(fileSize := self fileSize) > 0
 		ifFalse: [ ^ '' readStream].
 	(aMaxSize notNil and: [fileSize > aMaxSize])
-		ifTrue: [XMLLimitException signal: 'File size limit exceeded'].
+		ifTrue: [self errorFileSize: fileSize exceedsMaxSize: aMaxSize].
 
 	^ self readStreamOnFileOrDo: [:error | error resignalAs: XMLFileException]

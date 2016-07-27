@@ -1,5 +1,5 @@
 accessing
 attributeValidatorsFor: anElement
-	^ dtd attributeValidators
+	^ self dtd attributeValidators
 		at: anElement
 		ifAbsent: [nil]

@@ -1,3 +1,3 @@
 accessing
 idRefs
-	^ idrefs ifNil: [idrefs := Set new].
+	^ idRefs ifNil: [idRefs := Set new].

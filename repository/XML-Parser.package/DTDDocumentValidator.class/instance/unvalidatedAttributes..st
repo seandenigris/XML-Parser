@@ -1,3 +1,5 @@
 validation
 unvalidatedAttributes: anAttributeCollection
-	XMLValidationException signal: 'Undeclared attribute ', anAttributeCollection anyOne
+	XMLValidationException
+		formatSignal: 'Undeclared attribute "{1}"'
+		with: anAttributeCollection anyOne

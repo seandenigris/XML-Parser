@@ -10,7 +10,8 @@
 		"elementNester",
 		"scopeAllocator",
 		"dtd",
-		"validator" ],
+		"validator",
+		"hasUnhandledReservedAttributes" ],
 	"name" : "SAXParserDriver",
 	"pools" : [
 		 ],

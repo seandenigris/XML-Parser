@@ -2,5 +2,8 @@ content
 startDocument
 	self topNode ifNotNil: [^ self].
 
-	self document: self nodeFactory documentClass new.
-	self pushNode: self document 
+	self
+		document: self nodeFactory newDocument;
+		pushNode: self document.
+
+	self document configuration: self configuration.

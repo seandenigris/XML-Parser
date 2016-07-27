@@ -1,18 +1,23 @@
-normalization
+private
 furtherNormalizeAttributeValueIn: anAttributeDictionary
-	| readStream writeStream |
+	| attributeValue writeStream isInWhitespace |
 
-	readStream := (anAttributeDictionary at: attribute ifAbsent: [^ self]) readStream.
-	writeStream := (String new: readStream size) writeStream.
-	readStream skipSeparators.
-	[readStream atEnd]
-		whileFalse: [
-			readStream peek isSeparator
-				ifTrue: [
-					readStream skipSeparators.
-					readStream atEnd
-						ifFalse: [writeStream space]]
-				ifFalse: [writeStream nextPut: readStream next]].
+	attributeValue := anAttributeDictionary at: self attribute ifAbsent: [^ self].
+	writeStream := WriteStream on: (String new: attributeValue size).
+	isInWhitespace := false.
+	attributeValue do: [:each |
+		isInWhitespace
+			ifTrue: [
+				each isSeparator
+					ifFalse: [
+						writeStream position > 0
+							ifTrue: [writeStream space].
+						isInWhitespace := false.
+						writeStream nextPut: each]]
+			ifFalse: [
+				each isSeparator
+					ifTrue: [isInWhitespace := true]
+					ifFalse: [writeStream nextPut: each]]].
 	anAttributeDictionary
-		at: attribute
+		at: self attribute
 		put: writeStream contents.

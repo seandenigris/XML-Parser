@@ -1,4 +1,5 @@
 private
 errorUnexpectedPCData: aString
-	XMLValidationException signal:
-		'Unexpected PCDATA in <', self element, '> element'.
+	XMLValidationException
+		formatSignal: 'Unexpected PCDATA in <{1}> element'
+		with: self element

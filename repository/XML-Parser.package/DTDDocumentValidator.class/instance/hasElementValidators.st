@@ -1,3 +1,3 @@
 testing
 hasElementValidators
-	^ dtd hasElementValidators
+	^ self dtd hasElementValidators

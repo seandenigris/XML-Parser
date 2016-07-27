@@ -1,3 +1,3 @@
 testing
 hasOpenElements
-	^ self openElements notEmpty
+	^ self openElements size > 0

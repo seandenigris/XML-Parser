@@ -7,7 +7,7 @@ nextPCDataToken
 	[(nextChar := streamReader peek) == $<
 		or: [nextChar == nil]]
 		whileFalse: [
-			(streamReader next) == $&
+			streamReader next == $&
 				ifTrue: [
 					(nextChar :=
 						streamReader peek == $#

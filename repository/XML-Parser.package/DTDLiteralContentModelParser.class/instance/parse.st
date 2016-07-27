@@ -5,4 +5,4 @@ parse
 	contentModel = 'EMPTY'
 		ifTrue: [^ XMLEmptyElementValidator element: element].
 
-	XMLValidationException signal: 'Invalid content model "', contentModel, '"'.
+	self errorInvalidContentModel.

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"elementClass",
 		"elementClassesByName" ],
 	"name" : "XMLPluggableElementFactory",
 	"pools" : [
 		 ],
-	"super" : "XMLNodeFactory",
+	"super" : "XMLPluggableNodeFactory",
 	"type" : "normal" }

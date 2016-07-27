@@ -2,9 +2,7 @@ validation
 validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
 	anAttributeValidatorDictionary valuesDo: [:each |
 		each hasNotationValues
-			ifTrue: [
-				XMLValidationException signal:
-					'Element <', element, '> has multiple NOTATION list attributes']].
+			ifTrue: [self errorMultipleNotationAttributes]].
 
 	notations := aDeclarationDelegate notations.
 	super

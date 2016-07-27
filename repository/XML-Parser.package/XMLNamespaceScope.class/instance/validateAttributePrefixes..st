@@ -16,6 +16,4 @@ validateAttributePrefixes: aDictionary
 				oldSize := namespacedAttributes size.
 				namespacedAttributes add: namespace, (each qualifiedNameLocalPartFromPrefix: prefix).
 				namespacedAttributes size > oldSize
-					ifFalse: [
-						XMLNamespaceException signal:
-							'Attribute "', each, '" has alias for namespace "', namespace, '"']]].
+					ifFalse: [self errorAttribute: each aliasesNamespace: namespace]]]

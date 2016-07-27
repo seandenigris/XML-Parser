@@ -1,26 +1,31 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	"performance critical method"
-	| prefix namespaceUri currentScope |
+	| prefix totalAttributes namespaceUri currentScope |
 
 	self elementNester startElement: anElementName.
 
 	prefix := anElementName qualifiedNamePrefix.
+	totalAttributes := anAttributeDictionary size.
 	self usesNamespaces
 		ifTrue: [
 			currentScope := self scopeAllocator enterScope.
 			aNamespaceDictionary
 				ifNotNil: [self declareNamespaces: aNamespaceDictionary inScope: currentScope].
 			namespaceUri := currentScope validateAndResolvePrefix: prefix ofElement: anElementName.
-			anAttributeDictionary isEmpty "avoid ifNotEmpty: closure overhead"
-				ifFalse: [currentScope validateAttributePrefixes: anAttributeDictionary]].
+			totalAttributes > 0
+				ifTrue: [currentScope validateAttributePrefixes: anAttributeDictionary]].
 	self isValidating
 		ifTrue: [
 			self elementNester isCurrentElementRoot
 				ifTrue: [self validateRootElement: anElementName].
 			self validator
 				validateStartTag: anElementName
-				attributes: anAttributeDictionary].
+				attributes: anAttributeDictionary.
+			anAttributeDictionary size > totalAttributes
+				ifTrue: [self checkForReservedAttributesIn: anAttributeDictionary after: totalAttributes]].
+	self hasUnhandledReservedAttributes
+		ifTrue: [self handleReservedAttributes: anAttributeDictionary].
 
 	self saxHandler
 		startElement: anElementName

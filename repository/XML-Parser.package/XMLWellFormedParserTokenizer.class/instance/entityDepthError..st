@@ -1,3 +1,0 @@
-errors
-entityDepthError: anErrorString
-	XMLLimitException signal: anErrorString

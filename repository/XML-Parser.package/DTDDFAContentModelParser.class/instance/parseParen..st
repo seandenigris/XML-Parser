@@ -1,4 +1,4 @@
-parsing
+private
 parseParen: aCharacter
 	aCharacter == $)
 		ifTrue: [self popParenthesizedOperators]

@@ -1,3 +1,5 @@
 private
 errorMustBeEmpty
-	XMLValidationException signal: 'Element <', self element, '> must be empty'
+	XMLValidationException
+		formatSignal: 'Element <{1}> must be empty'
+		with: self element

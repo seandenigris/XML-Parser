@@ -1,3 +1,3 @@
 accessing
 document: aDocument
-	(document := aDocument) configuration: self configuration
+	document := aDocument

@@ -2,8 +2,6 @@ accessing
 defaultNamespace: aUri
 	(aUri = self class xmlNamespaceURI
 		or: [aUri = self class xmlnsNamespaceURI])
-		ifTrue: [
-			XMLNamespaceException signal:
-				'Cannot use "xml" or  "xmlns" namespace URI as default namespace'].
+		ifTrue: [self errorCannotUseXmlOrXmlnsURIAsDefault].
 
 	self prefixMappings at: '' put: aUri.

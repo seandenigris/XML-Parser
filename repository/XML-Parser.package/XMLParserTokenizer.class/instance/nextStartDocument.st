@@ -1,6 +1,4 @@
 tokenizing
 nextStartDocument
-	driver isParsingExternalSubset
-		ifTrue: [context enterExternalSubsetTextDeclaration]
-		ifFalse: [context enterProlog].
+	context setContext: (driver initialContext ifNil: [#inProlog]).
 	driver handleStartDocument.

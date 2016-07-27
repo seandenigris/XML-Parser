@@ -1,3 +1,5 @@
 private
 errorMissingContentFor: aName
-	XMLValidationException signal: 'Element <', aName, '> terminated prematurely'
+	XMLValidationException
+		formatSignal: 'Element <{1}> terminated prematurely'
+		with: aName

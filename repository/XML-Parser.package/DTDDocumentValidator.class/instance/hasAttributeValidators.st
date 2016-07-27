@@ -1,3 +1,3 @@
 testing
 hasAttributeValidators
-	^ dtd hasAttributeValidators
+	^ self dtd hasAttributeValidators

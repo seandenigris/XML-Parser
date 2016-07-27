@@ -2,10 +2,8 @@ validation
 validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
 	anAttributeValidatorDictionary valuesDo: [:each |
 		each isIDValidator
-			ifTrue: [
-				XMLValidationException signal:
-					'Element <', element, '> has multiple ID attributes']].
-	
+			ifTrue: [self errorElementWithMultipleIDAttributes]].
+
 	super
 		validateAndAddTo: anAttributeValidatorDictionary
 		usingDeclarationsFrom: aDeclarationDelegate

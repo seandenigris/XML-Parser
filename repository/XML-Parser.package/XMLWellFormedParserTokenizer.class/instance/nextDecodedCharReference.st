@@ -9,4 +9,4 @@ nextDecodedCharReference
 	self expectNext: $;.
 
 	^ (self characterFromCodePoint: codePoint)
-		ifNil: [self parseError: 'Invalid character code point ', codePoint printString].
+		ifNil: [self errorInvalidCodePoint: codePoint].

@@ -5,7 +5,7 @@ nextNameOn: aWriteStream
 	((nextChar := streamReader next) notNil
 		and: [(NameChars includes: nextChar)
 			and: [(AdditionalNameChars includes: nextChar) not]])
-		ifFalse: [self errorExpected: 'name'].
+		ifFalse: [self errorExpectedName].
 	aWriteStream nextPut: nextChar.
 
 	[(nextChar := streamReader peek) notNil

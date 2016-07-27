@@ -1,0 +1,19 @@
+{
+	"category" : "XML-Parser-DOM",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 11/1/2014 11:23",
+	"instvars" : [
+		"documentClass",
+		"elementClass",
+		"stringClass",
+		"cdataClass",
+		"commentClass",
+		"piClass" ],
+	"name" : "XMLPluggableNodeFactory",
+	"pools" : [
+		 ],
+	"super" : "XMLNodeFactory",
+	"type" : "normal" }

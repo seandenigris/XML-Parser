@@ -1,3 +1,3 @@
-testing
+private
 hasOperatorOnStack
-	^ operatorStack notEmpty and: [operatorStack last ~~ $(]
+	^ (operatorStack isEmpty or: [operatorStack last == $(]) not

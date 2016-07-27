@@ -2,7 +2,7 @@ parsing
 parse
 	(valueListStream atEnd not
 		and: [valueListStream next == $(])
-		ifFalse: [XMLValidationException signal: 'Expected value list'].
+		ifFalse: [self errorMissingListStart].
 
 	[valueListStream atEnd
 		or: [valueListStream peek == $)]]

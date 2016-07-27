@@ -1,5 +1,3 @@
 accessing
 document
-	^ self hasParent
-		ifTrue: [self parent document]
-		ifFalse: [nil]
+	^ self parent ifNotNil: [:node | node document]

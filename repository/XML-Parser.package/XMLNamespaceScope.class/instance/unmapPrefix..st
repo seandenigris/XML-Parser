@@ -3,5 +3,6 @@ unmapPrefix: aPrefix
 	self prefixMappings
 		removeKey: aPrefix
 		ifAbsent: [
-			XMLNamespaceException signal:
-				'Prefix "', aPrefix, '" was not mapped and cannot be unmapped']
+			XMLNamespaceException
+				formatSignal: 'Prefix "{1}" was not mapped and cannot be unmapped'
+				with: aPrefix]

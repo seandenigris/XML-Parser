@@ -5,7 +5,7 @@ handleParameterEntityReference: aName
 	(entity := self dtd parameterEntityAt: aName)
 		ifNil: [
 			self isValidating
-				ifTrue: [(XMLValidationException undeclaredParameterEntity: aName) signal].
+				ifTrue: [self errorUndeclaredParameterEntity: aName].
 			self preservesUndeclaredEntityReferences
 				ifTrue: [entity := DTDBypassedParameterEntity named: aName]].
 	^ entity.

@@ -4,10 +4,10 @@ nextPubidLiteral
 
 	quote := self expectQuote.
 	writeStream reset.
-	[(nextChar := streamReader peek) notNil
-		and: [(PubidChars includes: nextChar)
-			and: [nextChar ~~ quote]]]
-		whileTrue: [writeStream nextPut: streamReader next].
+	[(nextChar := streamReader peek) == nil
+		or: [nextChar == quote
+			or: [(PubidChars includes: nextChar) not]]]
+		whileFalse: [writeStream nextPut: streamReader next].
 	self expectNext: quote.
 
 	^ writeStream contents.

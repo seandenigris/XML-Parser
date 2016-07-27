@@ -1,4 +1,4 @@
-namespaces
+private
 declareNamespaces: aDictionary inScope: aScope
 	aDictionary keysAndValuesDo: [:prefix :uri |
 		aScope mapPrefix: prefix to: uri.

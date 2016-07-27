@@ -1,4 +1,4 @@
-parsing
+private
 parserForSpecialCharacter: aCharacter
 	| asciiValue |
 
