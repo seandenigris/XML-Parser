@@ -13,6 +13,6 @@ nextSubsetMarkupToken
 			(context isExternalSubsetContext
 				or: [self hasActiveExternalEntity])
 				ifTrue: [^ self nextConditionalSection].
-			self errorInternalSubsetIncludeOrIgnoreSection].
+			self errorInternalSubsetConditionalSection].
 
 	self nextSubsetDeclaration.

@@ -2,7 +2,9 @@ tokenizing - dtd
 nextConditionalSection
 	"skip ["
 	streamReader next.
-
-	writeStream reset.
-	self nextConditionalSectionOnWriteStream.
-	streamReader pushBack: writeStream contents.
+	self
+		skipSeparatorsInDeclaration;
+		expectNext: $I.
+	streamReader peek == $N
+		ifTrue: [self nextStartIncludeSection]
+		ifFalse: [self nextIgnoreSection].

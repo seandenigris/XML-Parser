@@ -2,8 +2,9 @@
 	"class" : {
 		"clearEntityCache" : "monty 11/15/2014 20:59",
 		"entityCache" : "monty 11/15/2014 20:56",
+		"entityCacheAt:ifAbsent:" : "monty 4/23/2015 20:15",
 		"entityCacheAt:ifAbsentPut:" : "monty 3/21/2015 22:36",
-		"entityCacheAt:put:" : "monty 3/21/2015 22:36",
+		"entityCacheAt:put:" : "monty 4/23/2015 20:15",
 		"maxCachedEntities" : "monty 11/15/2014 20:57",
 		"maxCachedEntities:" : "monty 11/15/2014 20:56" },
 	"instance" : {

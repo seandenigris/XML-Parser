@@ -1,5 +1,5 @@
 instance creation
 maxSize: anInteger
 	^ self
-		collection: (Dictionary new: anInteger)
+		collection: Dictionary new
 		maxSize: anInteger

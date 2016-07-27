@@ -10,7 +10,8 @@
 		"PubidChars" ],
 	"commentStamp" : "monty 4/12/2015 10:25",
 	"instvars" : [
-		"activeEntities" ],
+		"activeEntities",
+		"totalOpenIncludeSections" ],
 	"name" : "XMLWellFormedParserTokenizer",
 	"pools" : [
 		 ],
