@@ -1,8 +1,8 @@
 tests
 testReplaceFromToWithStartingAt
+	"self debug: #testReplaceFromToWithStartingAt"
 	| list |
-
-	list := self emptyList.
+	list := self listClass new: 5 withAll: 'zzz'.
 	self
 		assert: (list replaceFrom: 1 to: self listElements size with: self listElements startingAt: 1) = list;
 		assert: list = self listWithElements;

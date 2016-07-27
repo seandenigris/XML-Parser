@@ -52,7 +52,7 @@
 		"testRemoveIfAbsent" : "JAA 3/26/2011 17:40",
 		"testRemoveLast" : "JAA 3/26/2011 17:59",
 		"testRemoveLastElements" : "JAA 3/26/2011 18:01",
-		"testReplaceFromToWithStartingAt" : "JAA 3/26/2011 18:06",
+		"testReplaceFromToWithStartingAt" : "SD 3/3/2013 10:33",
 		"testReverseDo" : "JAA 3/26/2011 18:08",
 		"testSelect" : "JAA 3/26/2011 18:12",
 		"testSelectThenCollect" : "JAA 3/26/2011 18:11",
