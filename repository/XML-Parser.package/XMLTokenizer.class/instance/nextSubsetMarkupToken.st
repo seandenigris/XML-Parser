@@ -16,8 +16,9 @@ nextSubsetMarkupToken
 			(context isInExternalSubset
 				or: [self hasActiveExternalEntity])
 				ifTrue: [
-					streamReader next.
-					streamReader pushBack: self nextConditionalSection.
+					streamReader
+						next;
+						pushBack: self nextConditionalSection.
 					^ self]
 				ifFalse: [self parseError: 'Cannot have INCLUDE/IGNORE sections in internal subset']].
 

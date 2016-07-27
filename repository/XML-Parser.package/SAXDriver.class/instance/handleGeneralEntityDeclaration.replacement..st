@@ -1,12 +1,10 @@
 handling tokens
 handleGeneralEntityDeclaration: aName replacement: aReplacement
 	self dtd
-		generalEntityAt: aName
-		put:
-			(DTDGeneralEntity
-				name: aName
-				replacement: aReplacement).
+		addGeneralEntity: aName
+		replacement: aReplacement
+		from: self currentURI.
 
 	self saxHandler
 		generalEntityDeclaration: aName
-		replacement: aReplacement
+		replacement: aReplacement.

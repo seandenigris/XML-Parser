@@ -3,7 +3,11 @@
 		 },
 	"instance" : {
 		"addAttributeValidator:" : "monty 12/10/2013 06:39",
+		"addExternalGeneralEntity:resolver:uri:from:" : "monty 12/13/2013 18:45",
+		"addExternalParameterEntity:resolver:uri:from:" : "monty 12/13/2013 18:45",
+		"addGeneralEntity:replacement:from:" : "monty 12/13/2013 18:47",
 		"addNotation:" : "monty 11/14/2013 23:59",
+		"addParameterEntity:replacement:from:" : "monty 12/13/2013 18:46",
 		"addValidatorForAttributeIn:named:type:default:" : "monty 12/11/2013 02:38",
 		"addValidatorForElement:contentModel:" : "monty 12/10/2013 06:32",
 		"attributeValidators" : "monty 11/19/2013 01:01",

@@ -5,9 +5,7 @@ handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId nd
 		^ self].
 
 	self dtd
-		generalEntityAt: aName
-		put:
-			(self externalEntityResolver
-				resolveGeneralEntity: aName
-				uri: aSystemId
-				from: self documentURI).
+		addExternalGeneralEntity: aName
+		resolver: self externalEntityResolver
+		uri: aSystemId
+		from: self currentURI.

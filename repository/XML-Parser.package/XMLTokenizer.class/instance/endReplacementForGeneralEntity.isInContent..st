@@ -1,5 +1,5 @@
 entity replacement
 endReplacementForGeneralEntity: anEntity isInContent: aBoolean
-	activeEntities remove: anEntity.
+	self removeActiveEntity: anEntity.
 	aBoolean
 		ifTrue: [driver handleEndContentEntityReplacement: anEntity name].

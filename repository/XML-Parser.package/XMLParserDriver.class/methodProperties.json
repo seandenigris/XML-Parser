@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"activeEntityURI" : "monty 12/13/2013 18:19",
+		"activeEntityURI:" : "monty 12/13/2013 18:19",
+		"currentURI" : "monty 12/13/2013 18:19",
 		"documentURI" : "monty 11/16/2013 04:35",
 		"dtd" : "monty 11/30/2013 04:17",
 		"handleAttributeDeclaration:name:type:default:" : "monty 11/14/2013 18:33",

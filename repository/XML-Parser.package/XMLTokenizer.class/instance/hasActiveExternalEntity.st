@@ -1,3 +1,3 @@
 testing
 hasActiveExternalEntity
-	^ activeEntities anySatisfy: [:each | each isExternal]
+	^ self activeEntities anySatisfy: [:each | each isExternal]

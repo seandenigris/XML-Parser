@@ -3,13 +3,12 @@ handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
 	self resolvesExternalEntities
 		ifTrue: [
 			self dtd
-				parameterEntityAt: aName
-				put: (self externalEntityResolver
-					resolveParameterEntity: aName
-					uri: aSystemId
-					from: self documentURI)].
+				addExternalParameterEntity: aName
+				resolver: self externalEntityResolver
+				uri: aSystemId
+				from: self currentURI].
 
 	self saxHandler
 		parameterEntityDeclaration: aName
 		publicID: aPublicId
-		systemID: aSystemId
+		systemID: aSystemId.

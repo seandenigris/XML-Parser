@@ -1,12 +1,10 @@
 handling tokens
 handleParameterEntityDeclaration: aName replacement: aReplacement
 	self dtd
-		parameterEntityAt: aName
-		put:
-			(DTDParameterEntity
-				name: aName
-				replacement:aReplacement).
+		addParameterEntity: aName
+		replacement:aReplacement
+		from: self currentURI.
 
 	self saxHandler
 		parameterEntityDeclaration: aName
-		replacement: aReplacement
+		replacement: aReplacement.

@@ -1,3 +1,3 @@
 entity replacement
 endReplacementForParameterEntity: anEntity
-	activeEntities remove: anEntity
+	self removeActiveEntity: anEntity

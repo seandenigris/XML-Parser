@@ -1,3 +1,3 @@
 testing
 hasActiveEntities
-	^ activeEntities notEmpty
+	^ activeEntities notNil and: [activeEntities notEmpty]

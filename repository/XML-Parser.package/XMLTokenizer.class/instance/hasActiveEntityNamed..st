@@ -1,3 +1,3 @@
 testing
 hasActiveEntityNamed: aName
-	^ activeEntities anySatisfy: [:each | each name = aName]
+	^ self activeEntities anySatisfy: [:each | each name = aName]
