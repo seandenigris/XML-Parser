@@ -6,5 +6,5 @@ This class is a pluggable factory that can map elements to different XMLElement 
 				elementClass: GenericElement;
 				handleElement: 'user' withClass: UserElement;
 				handleElement: 'report' withClass: ReportElement;
-				handleElement: 'report' namespaceURI: 'http://specialreprot' withClass: SpecialReportElement)
+				handleElement: 'report' namespaceURI: 'urn:specialreprot' withClass: SpecialReportElement)
 		parseDocument.

@@ -1,3 +1,3 @@
 testing
 usesNamespaces
-	^ self driver usesNamespaces
+	^ self configuration usesNamespaces

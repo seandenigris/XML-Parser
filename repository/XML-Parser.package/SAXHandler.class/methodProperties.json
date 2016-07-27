@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"on:" : "JAAyer 11/13/2010 20:40",
+		"on:" : "JAAyer 11/24/2010 08:36",
 		"onFileNamed:" : "JAAyer 11/13/2010 20:40",
 		"parse:" : "JAAyer 11/10/2010 05:21",
 		"parse:usingNamespaces:" : "JAAyer 11/10/2010 05:30",
@@ -13,7 +13,11 @@
 	"instance" : {
 		"characters:" : "mir 1/8/2002 18:27",
 		"comment:" : "JAAyer 11/10/2010 19:23",
+		"configuration" : "JAAyer 11/23/2010 14:37",
+		"configuration:" : "JAAyer 11/23/2010 14:13",
+		"configurationClass" : "JAAyer 11/23/2010 15:35",
 		"currentScope" : "JAAyer 3/5/2010 22:56",
+		"currentScope:" : "JAAyer 11/23/2010 14:58",
 		"driver" : "JAAyer 3/23/2010 15:55",
 		"driver:" : "mir 12/7/2000 15:34",
 		"endCData" : "JAAyer 2/21/2010 15:13",
@@ -26,8 +30,9 @@
 		"eod" : "JAAyer 3/16/2010 09:27",
 		"ignorableWhitespace:" : "mir 8/11/2000 16:25",
 		"invokeDeprecated:withArguments:orForwardTo:withArguments:" : "JAAyer 3/24/2010 17:06",
-		"isValidating" : "JAAyer 3/11/2010 06:43",
-		"isValidating:" : "JAAyer 3/11/2010 06:45",
+		"isValidating" : "JAAyer 11/23/2010 14:20",
+		"isValidating:" : "JAAyer 11/23/2010 14:14",
+		"on:" : "JAAyer 11/24/2010 08:37",
 		"parseDocument" : "JAAyer 3/9/2010 01:32",
 		"processingInstruction:data:" : "mir 8/11/2000 16:26",
 		"resolveEntity:systemID:" : "mir 8/11/2000 17:33",
@@ -40,7 +45,7 @@
 		"startElement:prefix:uri:localName:attributes:" : "JAAyer 8/9/2010 17:20",
 		"startEntity:" : "JAAyer 11/10/2010 19:22",
 		"startPrefixMapping:uri:" : "JAAyer 11/10/2010 19:22",
-		"useNamespaces:" : "JAAyer 11/10/2010 05:28",
-		"usesNamespaces" : "JAAyer 3/8/2010 10:38",
-		"usesNamespaces:" : "JAAyer 11/10/2010 05:59",
+		"useNamespaces:" : "JAAyer 11/23/2010 14:20",
+		"usesNamespaces" : "JAAyer 11/23/2010 14:20",
+		"usesNamespaces:" : "JAAyer 11/23/2010 14:14",
 		"xmlVersion:encoding:standalone:" : "JAAyer 11/13/2010 21:09" } }

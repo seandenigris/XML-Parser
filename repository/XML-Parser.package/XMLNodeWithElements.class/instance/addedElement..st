@@ -1,3 +1,5 @@
 notifications
 addedElement: anElement
-	anElement document: self document
+	anElement
+		configuration: self configuration;
+		document: self document

@@ -1,0 +1,3 @@
+testing
+preservesCommentNodes
+	^ self configuration preservesCommentNodes

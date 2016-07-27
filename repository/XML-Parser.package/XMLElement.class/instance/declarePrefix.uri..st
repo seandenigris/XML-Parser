@@ -1,6 +1,13 @@
 namespaces
 declarePrefix: aPrefix uri: aUri
-	(self namespaceScope includesPrefix: aPrefix mappedTo: aUri)
+	| oldMapping |
+
+	oldMapping := self namespaceScope resolvePrefix: aPrefix.
+	oldMapping = aUri
 		ifTrue: [^ self].
 
-	self mapPrefix: aPrefix to: aUri.
+	self
+		updateEnclosedScopesWith: [:scope | scope mapPrefix: aPrefix to: aUri]
+		whileTrue: [:scope |
+			(scope includesPrefix: aPrefix) not
+				or: [scope includesPrefix: aPrefix mappedTo: oldMapping]].

@@ -6,10 +6,8 @@ printXMLOn: aWriter
 		name: self name.
 
 	self hasNamespaces
-		ifTrue: [
-			tagWriter
-				xmlns: self defaultNamespace;
-				xmlnsDeclarations: self namespaceScope prefixMappings].
+		ifTrue: [self printNamespaceDeclarationsOn: tagWriter].
+
 	tagWriter
 		attributes: self attributes;
-		with: [super printXMLOn: aWriter]
+		with: [super printXMLOn: aWriter].

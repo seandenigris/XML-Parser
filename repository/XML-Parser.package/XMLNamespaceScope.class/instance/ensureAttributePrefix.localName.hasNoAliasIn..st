@@ -1,4 +1,4 @@
-validation
+private
 ensureAttributePrefix: aPrefix localName: aLocalName hasNoAliasIn: aDictionary
 	| namespaceUri aliasingAttributeName |
 

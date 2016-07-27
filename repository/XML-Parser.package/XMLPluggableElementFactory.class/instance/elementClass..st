@@ -1,3 +1,3 @@
-element handling
+accessing
 elementClass: anElementClass
 	elementClass := anElementClass

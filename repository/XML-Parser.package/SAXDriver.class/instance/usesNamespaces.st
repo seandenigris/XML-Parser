@@ -1,3 +1,3 @@
 testing
 usesNamespaces
-	^ useNamespaces ifNil: [useNamespaces := true]
+	^ saxHandler configuration usesNamespaces

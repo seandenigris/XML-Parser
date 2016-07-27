@@ -1,8 +1,14 @@
 namespaces
-defaultNamespace: aNamespaceUri
-	| oldDefaultNamespace |
+defaultNamespace: aUri
+	| oldNamespace |
 
-	oldDefaultNamespace := self defaultNamespace.
+	oldNamespace := self defaultNamespace.
 	self
-		updateEnclosedScopesWith: [:each | each defaultNamespace: aNamespaceUri]
-		where: [:each | each defaultNamespace = oldDefaultNamespace].
+		updateEnclosedScopesWith: [:scope |
+			scope defaultNamespace:
+				(aUri
+					ifEmpty: [scope == self namespaceScope ifTrue: [''] ifFalse: [nil]]
+					ifNotEmpty: [aUri])]
+		whileTrue: [:scope |
+			scope hasDefaultNamespace not
+				or: [scope defaultNamespace = oldNamespace]]

@@ -1,12 +1,8 @@
 parsing
-innerXML: aString
-	| parsedDocument newNodes |
+innerXML: aStringOrStream
+	self removeNodes.
 
-	parsedDocument := XMLDOMParser
-		parse: aString
-		usingNamespaces: self usesNamespaces.
-	newNodes := parsedDocument nodes copy.
-	parsedDocument removeNodes.
-	self
-		removeNodes;
-		addNodes: newNodes.
+	(XMLDOMParser on: aStringOrStream withRootNode: self)
+		configuration: self configuration;
+		currentScope: self namespaceScope;
+		parseDocument.

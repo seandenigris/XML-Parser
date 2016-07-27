@@ -1,6 +1,6 @@
 handling tokens
 handleEndTag: anElementName
-	| prefix localName namespaceURI |
+	| prefix localName namespaceUri |
 
 	self wellFormednessChecker endedElement: anElementName.
 
@@ -8,12 +8,12 @@ handleEndTag: anElementName
 		prefix := prefixPart.
 		localName := localPart].
 	self usesNamespaces
-		ifTrue: [namespaceURI := self scopeManager resolvePrefix: prefix].
+		ifTrue: [namespaceUri := self scopeManager resolvePrefix: prefix].
 
 	self activeSaxHandler 
 		endElement: anElementName
 		prefix: prefix
-		uri: namespaceURI
+		uri: namespaceUri
 		localName: localName.
 
 	self usesNamespaces

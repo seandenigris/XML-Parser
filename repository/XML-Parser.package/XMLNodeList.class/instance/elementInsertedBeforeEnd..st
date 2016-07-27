@@ -1,10 +1,9 @@
 private
 elementInsertedBeforeEnd: anElement
-	| elementBefore |
+	| elementAfter |
 
-	(elementBefore := self findElementBefore: anElement)
-		ifNil: [self elements addFirst: anElement]
-		ifNotNil: [self elements add: anElement after: elementBefore].
+	elementAfter := self findElementAfter: anElement.
+	self elements add: anElement before: elementAfter.
 
 	self elementsByNameAt: anElement name insertElement: anElement.
 	anElement hasPrefix

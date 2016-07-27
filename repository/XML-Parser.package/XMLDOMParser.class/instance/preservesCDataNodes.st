@@ -1,0 +1,3 @@
+testing
+preservesCDataNodes
+	^ self configuration preservesCDataNodes

@@ -1,3 +1,3 @@
 testing
 isValidating
-	self driver isValidating
+	^ self configuration isValidating

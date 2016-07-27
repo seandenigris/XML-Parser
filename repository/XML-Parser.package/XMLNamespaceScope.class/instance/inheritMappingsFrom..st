@@ -3,8 +3,8 @@ inheritMappingsFrom: anEnclosingScope
 	anEnclosingScope hasNamespaces
 		ifFalse: [^ self].
 
-	self hasDefaultNamespace
-		ifFalse: [self defaultNamespace: anEnclosingScope defaultNamespace].
+	(anEnclosingScope defaultNamespace notEmpty and: [self hasDefaultNamespace not])
+		ifTrue: [self defaultNamespace: anEnclosingScope defaultNamespace].
 
 	anEnclosingScope hasPrefixMappings
 		ifTrue: [

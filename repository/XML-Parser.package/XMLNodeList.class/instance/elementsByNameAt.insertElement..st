@@ -1,14 +1,14 @@
 private
 elementsByNameAt: aName insertElement: anElement
-	| elementsWithName elementBefore |
+	| elementsWithName elementAfter |
 
-	(elementBefore := self findElementBefore: anElement withName: aName)
-		ifNil: [^ self elementsByNameAt: aName addElementFirst: anElement].
+	(elementAfter := self findElementAfter: anElement withName: aName)
+		ifNil: [^ self elementsByNameAt: aName addElement: anElement].
 
 	(elementsWithName := self elementsByName at: aName)
 		isCollection
-			ifTrue: [elementsWithName add: anElement after: elementBefore]
+			ifTrue: [elementsWithName add: anElement before: elementAfter]
 			ifFalse: [
 				self elementsByName
 					at: aName
-					put: (self species with: elementBefore with: anElement)]
+					put: (self species with: anElement with: elementAfter)]

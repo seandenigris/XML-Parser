@@ -1,0 +1,2 @@
+private
+beforeAdding: aNode

@@ -1,3 +1,3 @@
 accessing
 usesNamespaces: aBoolean
-	self driver usesNamespaces: aBoolean
+	self configuration usesNamespaces: aBoolean

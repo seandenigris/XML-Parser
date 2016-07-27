@@ -1,6 +1,6 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
-	| prefix localName namespaceURI |
+	| prefix localName namespaceUri |
 
 	self wellFormednessChecker startedElement: anElementName.
 	(anAttributeDictionary includesKey: 'xml:lang')
@@ -8,12 +8,12 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
 		localName := localPart.
-		namespaceURI := ''].
+		namespaceUri := ''].
 
 	self usesNamespaces ifTrue: [
 		self scopeManager enterScope.
 		self declareNamespaces: aNamespaceDictionary.
-		namespaceURI := self scopeManager resolvePrefix: prefix.
+		namespaceUri := self scopeManager resolvePrefix: prefix.
 		self
 			validateStartTag: anElementName
 			prefix: prefix
@@ -22,6 +22,6 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 	self activeSaxHandler 
 		startElement: anElementName
 		prefix: prefix
-		uri: namespaceURI
+		uri: namespaceUri
 		localName: localName
 		attributes: anAttributeDictionary

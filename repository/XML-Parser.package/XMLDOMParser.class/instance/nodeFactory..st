@@ -1,3 +1,3 @@
 accessing
 nodeFactory: aNodeFactory
-	nodeFactory := aNodeFactory
+	self configuration nodeFactory: aNodeFactory

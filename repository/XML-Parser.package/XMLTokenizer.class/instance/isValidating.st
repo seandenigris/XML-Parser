@@ -1,3 +1,3 @@
 testing
 isValidating
-	^ isValidating
+	self subclassResponsibility

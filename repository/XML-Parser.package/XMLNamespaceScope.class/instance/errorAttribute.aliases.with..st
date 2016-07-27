@@ -1,4 +1,4 @@
-errors
+private
 errorAttribute: anAttribute aliases: anAliasedAttribute with: aUri
 	XMLNamespaceException signal:
 		('Attribute "{1}" aliases attribute "{2}"; both prefixes map to {3}'

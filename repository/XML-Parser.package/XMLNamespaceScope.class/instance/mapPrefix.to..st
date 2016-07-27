@@ -2,6 +2,8 @@ accessing
 mapPrefix: aPrefix to: aUri
 	aPrefix isEmptyOrNil
 		ifTrue: [^ self defaultNamespace: aUri].
+	aUri isEmptyOrNil
+		ifTrue: [XMLNamespaceException signal: 'Cannot clear prefix by mapping it to nil or an empty string.'].
 
 	aPrefix = 'xml'
 		ifTrue: [
@@ -17,4 +19,4 @@ mapPrefix: aPrefix to: aUri
 	(aUri = self xmlNamespaceURI or: [aUri = self xmlnsNamespaceURI])
 		ifTrue: [XMLNamespaceException signal: 'Cannot alias the "xml" or "xmlns" prefixes'].
 
-	self prefixMappings at: aPrefix put: (aUri ifNil: [''])
+	self prefixMappings at: aPrefix put: aUri.

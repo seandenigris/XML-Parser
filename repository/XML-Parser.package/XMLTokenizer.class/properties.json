@@ -13,7 +13,6 @@
 		"entities",
 		"externalEntities",
 		"parameterEntities",
-		"isValidating",
 		"parsingMarkup" ],
 	"name" : "XMLTokenizer",
 	"pools" : [

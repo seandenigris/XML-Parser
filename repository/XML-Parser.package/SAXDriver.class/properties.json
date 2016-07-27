@@ -7,8 +7,6 @@
 	"commentStamp" : "JAAyer 3/23/2010 16:10",
 	"instvars" : [
 		"saxHandler",
-		"useNamespaces",
-		"validateAttributes",
 		"languageEnvironment",
 		"scopeManager",
 		"wellFormednessChecker" ],

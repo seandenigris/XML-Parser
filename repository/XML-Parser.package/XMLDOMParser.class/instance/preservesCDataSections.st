@@ -1,3 +1,5 @@
-accessing
+testing
 preservesCDataSections
-	^ preservesCDataSections ifNil: [preservesCDataSections := false]
+	self deprecated: 'use #preservesCDataNodes instead'.
+
+	^ self preservesCDataNodes.
