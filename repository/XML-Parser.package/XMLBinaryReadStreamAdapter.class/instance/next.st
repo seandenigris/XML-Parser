@@ -1,3 +1,3 @@
 accessing
 next
-	^ stream next asCharacter
+	^ Character value: stream next

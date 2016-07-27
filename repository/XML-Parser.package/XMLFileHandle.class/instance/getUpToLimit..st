@@ -1,3 +1,9 @@
-requesting
+retrieving
 getUpToLimit: aMaxSize
-	^ self readStreamUpToLimit: aMaxSize
+	| stream contents |
+
+	stream := self streamGetUpToLimit: aMaxSize.
+	contents := stream contents.
+	stream close.
+
+	^ contents.

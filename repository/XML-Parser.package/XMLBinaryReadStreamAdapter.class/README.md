@@ -1,1 +1,1 @@
-This adapter converts the byte contents of a binary stream to character objects. It is needed because most Pharo/Squeak streams don't support binary to text conversion.
+A read stream adapter for binary streams so that next and peek return characters instead of integers.

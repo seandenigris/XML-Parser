@@ -1,0 +1,3 @@
+instance creation
+onStreamIfBinary: aStream
+	self subclassResponsibility

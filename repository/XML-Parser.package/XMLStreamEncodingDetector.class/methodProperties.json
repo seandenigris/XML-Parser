@@ -10,7 +10,7 @@
 		"detectBOM:forDecoderClass:" : "monty 1/27/2015 23:32",
 		"detectBigEndianUTF16BOM" : "monty 1/27/2015 23:32",
 		"detectBigEndianUTF32BOMOrImplicitEncoding" : "monty 1/27/2015 23:32",
-		"detectCurrentEncoding" : "monty 11/28/2014 10:17",
+		"detectCurrentEncoding" : "monty 5/25/2015 08:08",
 		"detectLittleEndianImplicitEncoding" : "monty 12/26/2014 22:53",
 		"detectLittleEndianUTF16BOMOrUTF32BOM" : "monty 1/27/2015 23:32",
 		"detectUTF8BOM" : "monty 1/27/2015 23:32",

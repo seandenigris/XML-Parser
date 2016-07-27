@@ -1,0 +1,3 @@
+accessing
+replacementStream
+	^ XMLDecodingReadStreamAdapter onExternalStream: super replacementStream

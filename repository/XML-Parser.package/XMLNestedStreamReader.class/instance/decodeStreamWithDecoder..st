@@ -1,6 +1,6 @@
 encodings
 decodeStreamWithDecoder: aStreamDecoder
-	(stream respondsTo: #streamDecoder:)
+	stream isDecodingReadStreamAdapter
 		ifTrue: [stream streamDecoder: aStreamDecoder]
 		ifFalse: [
 			stream :=

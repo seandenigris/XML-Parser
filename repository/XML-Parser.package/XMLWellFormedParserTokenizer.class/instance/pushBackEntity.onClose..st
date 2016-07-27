@@ -7,7 +7,7 @@ pushBackEntity: anEntity onClose: aBlock
 
 	self addActiveEntity: anEntity.
 	streamReader
-		pushBackStream: anEntity replacement readStream
+		pushBackStream: anEntity replacementStream
 		onClose: [
 			self removeActiveEntity: anEntity.
 			aBlock ifNotNil: [aBlock value]].

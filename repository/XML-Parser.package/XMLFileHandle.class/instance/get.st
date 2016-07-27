@@ -1,3 +1,3 @@
-requesting
+retrieving
 get
-	^ self readStream
+	^ self getUpToLimit: nil

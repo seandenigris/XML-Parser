@@ -1,9 +1,4 @@
 resolving
-resolveEntityURI: aURI
-	| readStream |
-
-	self checkExternalEntityLimit.
-	readStream := aURI asXMLURI getUpToLimit: self maxExternalEntitySize.
-	self incrementEntityTotal.
-
-	^ readStream.
+resolveEntityURI: aURIOrURIString
+	^ self resolveEntityWith: [:maxSize |
+		aURIOrURIString asXMLURI getUpToLimit: maxSize]

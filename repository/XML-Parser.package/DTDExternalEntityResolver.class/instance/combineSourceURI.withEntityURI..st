@@ -1,13 +1,12 @@
 combining
-combineSourceURI: aSourceURI withEntityURI: anEntityURI
+combineSourceURI: aSourceURIOrURIString withEntityURI: anEntityURIOrURIString
 	| sourceURI combinedURI |
 
-	sourceURI := aSourceURI asXMLURI.
-	combinedURI := sourceURI / anEntityURI.
+	sourceURI := aSourceURIOrURIString asXMLURI.
+	combinedURI := sourceURI / anEntityURIOrURIString.
 	(combinedURI isLocalURI
 		and: [sourceURI isLocalURI not
-			and: [self resolvesLocalFromNonLocal notNil
-				and: [self resolvesLocalFromNonLocal not]]])
+			and: [self resolvesLocalFromNonLocal not]])
 		ifTrue: [self errorLocalFromNonLocal].
 
 	^ combinedURI.

@@ -1,8 +1,8 @@
 private
-externalSubsetParserOn: aStringOrStream documentURI: aURI
+externalSubsetParserOn: aStringOrStream documentURI: aURIString
 	^ self saxHandler parserClass
 		driver:
 			(DTDExternalSubsetParserDriver
 				saxDriver: self
-				documentURI: aURI)
+				documentURI: aURIString)
 		on: aStringOrStream

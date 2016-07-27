@@ -4,7 +4,7 @@ To instantiate a SAXHandler, send any of the #on: or #parse- messages to a subcl
 
 The class-side #parse- messages take some input source and parse it immediately, returning the result:
 	SAXHandlerSubclass parse: xml.
-	SAXHandlerSubclass parseURL: aUrl. 
+	SAXHandlerSubclass parseURL: url.
 	SAXHandlerSubclass parse: xml usingNamespaces: false
 
 The #on: messages create new parsers on the given input string, stream, URL, or file and return it; the instance can then be further configured and ultimately sent #parseDocument to parse the input:

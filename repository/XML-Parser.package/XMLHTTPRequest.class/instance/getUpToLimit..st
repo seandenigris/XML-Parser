@@ -1,4 +1,4 @@
-requesting
+retrieving
 getUpToLimit: aMaxSize
 	^ self
 		getResponseUpToLimit: aMaxSize

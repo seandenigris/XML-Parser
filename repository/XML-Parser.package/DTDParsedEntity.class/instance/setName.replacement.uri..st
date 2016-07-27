@@ -1,5 +1,5 @@
 initialization
-setName: aName replacement: aReplacement uri: aURI
+setName: aName replacement: aReplacementString uri: aURIString
 	name := aName.
-	replacement := aReplacement.
-	uri := aURI.
+	replacement := aReplacementString.
+	uri := aURIString.

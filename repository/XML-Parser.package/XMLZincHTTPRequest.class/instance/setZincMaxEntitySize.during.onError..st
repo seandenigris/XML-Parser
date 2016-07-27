@@ -1,9 +1,10 @@
 private
 setZincMaxEntitySize: aMaxSize during: aDuringBlock onError: anErrorBlock
-	^ [(Smalltalk at: #ZnMaximumEntitySize)
-		value: aMaxSize
-		during: [
-			"value:during: doesn't return during block on gemstone"
-			^ aDuringBlock value]]
+	^ [
+		(Smalltalk at: #ZnMaximumEntitySize)
+			value: aMaxSize
+			during: [
+				"^ is for GS value:during: which does not return block result"
+				^ aDuringBlock value]]
 		on: Error
 		do: anErrorBlock

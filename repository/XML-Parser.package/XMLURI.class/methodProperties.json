@@ -15,7 +15,7 @@
 		"combineWithRelativeURI:" : "monty 3/21/2015 23:05",
 		"fragment" : "monty 1/7/2014 02:02",
 		"fromString:" : "monty 2/9/2015 06:55",
-		"get" : "monty 1/10/2014 00:13",
+		"get" : "monty 5/17/2015 00:05",
 		"getUpToLimit:" : "monty 1/10/2014 00:13",
 		"hasAbsolutePath" : "monty 1/10/2014 06:51",
 		"hasAuthority" : "monty 2/9/2015 01:43",
@@ -55,5 +55,7 @@
 		"queryString" : "monty 1/7/2014 03:38",
 		"scheme" : "monty 1/7/2014 01:50",
 		"setPathSegmentsFromString:" : "monty 4/5/2015 08:01",
+		"streamGet" : "monty 5/17/2015 00:05",
+		"streamGetUpToLimit:" : "monty 5/17/2015 00:04",
 		"unescapedPath" : "monty 1/30/2015 20:34",
 		"userInfo" : "monty 2/7/2015 21:09" } }

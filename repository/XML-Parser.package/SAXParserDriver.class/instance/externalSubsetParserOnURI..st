@@ -1,13 +1,14 @@
 private
-externalSubsetParserOnURI: aURI
+externalSubsetParserOnURI: aURIString
 	| combinedURI |
 
 	combinedURI :=
 		self externalEntityResolver
 			combineSourceURI: self documentURI
-			withEntityURI: aURI.
+			withEntityURI: aURIString.
 
 	^ self
 		externalSubsetParserOn:
-			(self externalEntityResolver resolveEntityURI: combinedURI)
+			(XMLDecodingReadStreamAdapter onExternalStream:
+				(self externalEntityResolver streamResolveEntityURI: combinedURI))
 		documentURI: combinedURI asString.

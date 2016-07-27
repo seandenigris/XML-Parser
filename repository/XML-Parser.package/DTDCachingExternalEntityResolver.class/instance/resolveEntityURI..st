@@ -1,11 +1,7 @@
 resolving
-resolveEntityURI: aURI
+resolveEntityURI: aURIOrURIString
 	| uri |
 
-	^ (uri := aURI asXMLURI) isLocalURI
-		ifTrue: [super resolveEntityURI: uri]
-		ifFalse: [
-			(self class
-				entityCacheAt: uri
-				ifAbsentPut: [(super resolveEntityURI: uri) contents])
-					readStream]
+	(uri := aURIOrURIString asXMLURI) isLocalURI
+		ifTrue: [^ super resolveEntityURI: uri]
+		ifFalse: [^ self cachingResolveEntityURI: uri]

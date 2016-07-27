@@ -1,1 +1,1 @@
-This stream adapter decodes stream contents using a stream decoder.
+A read stream adapter that decodes stream contents using a stream decoder.

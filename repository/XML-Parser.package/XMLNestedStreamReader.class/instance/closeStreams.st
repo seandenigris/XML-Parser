@@ -1,4 +1,4 @@
-file open/close
+closing
 closeStreams
 	nestedStreams ifNotNil: [
 		[nestedStreams notEmpty]

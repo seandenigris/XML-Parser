@@ -16,6 +16,6 @@ getResponseUpToLimit: aMaxSize withTimeout: aTimeout onError: aBlock
 					ifNotNil: [
 						response contentLength > aMaxSize
 							ifTrue: [XMLLimitException signal]]].
-		response content readStream]
-			on: Error
-			do: aBlock
+		response content]
+		on: Error
+		do: aBlock

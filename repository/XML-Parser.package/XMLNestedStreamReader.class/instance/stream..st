@@ -1,7 +1,5 @@
 accessing
 stream: aStream
-	stream := 
-		(aStream atEnd
-			or: [aStream peek isCharacter])
-			ifTrue: [aStream]
-			ifFalse: [XMLBinaryReadStreamAdapter on: aStream]
+	aStream isDecodingReadStreamAdapter
+		ifTrue: [stream := aStream]
+		ifFalse: [stream := XMLDecodingReadStreamAdapter onStreamIfBinary: aStream]

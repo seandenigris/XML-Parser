@@ -2,6 +2,6 @@ removing
 removeAt: anIndex
 	| removed |
 
-	removed := collection removeAt: anIndex.
+	removed := super removeAt: anIndex.
 	self afterRemoving: removed.
 	^ removed.

@@ -1,3 +1,3 @@
-instance creation
+initialization
 on: aStream
 	stream := aStream

@@ -1,3 +1,3 @@
 accessing
-documentURI: aURI
-	documentURI := aURI
+documentURI: aURIString
+	documentURI := aURIString

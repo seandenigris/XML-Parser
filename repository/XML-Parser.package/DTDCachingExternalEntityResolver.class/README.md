@@ -1,1 +1,1 @@
-This resolver can cache entities so they don't have to be retrieved again (like over HTTP). (The default resolver)
+This resolver can cache non-local entities so they don't have to be retrieved again (like over HTTP). (The default resolver)

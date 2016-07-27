@@ -3,5 +3,7 @@ onFileNamed: aFilePathString
 	"Returns new parser on the specified file but doesn't parse"
 
 	^ self
-		on: (XMLFileHandle path: aFilePathString) readStream
+		on:
+			(XMLDecodingReadStreamAdapter onExternalStream:
+				(XMLFileHandle path: aFilePathString) readStream)
 		documentURI: aFilePathString

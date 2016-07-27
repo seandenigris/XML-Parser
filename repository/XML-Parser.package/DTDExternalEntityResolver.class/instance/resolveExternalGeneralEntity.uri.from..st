@@ -1,7 +1,7 @@
 resolving
-resolveExternalGeneralEntity: aName uri: anEntityURI from: aSourceURI
+resolveExternalGeneralEntity: aName uri: anEntityURIOrURIString from: aSourceURIOrURIString
 	^ self
 		resolveExternalEntity: aName
-		uri: anEntityURI
-		from: aSourceURI
+		uri: anEntityURIOrURIString
+		from: aSourceURIOrURIString
 		class: DTDExternalGeneralEntity

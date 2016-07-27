@@ -1,1 +1,1 @@
-An abstract class for read stream adapters for basic read streams that support peek, next, and atEnd.
+An abstract class for read stream adapters for basic streams that support next, peek, and atEnd.

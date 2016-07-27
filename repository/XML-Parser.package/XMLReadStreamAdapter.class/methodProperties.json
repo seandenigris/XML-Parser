@@ -1,12 +1,14 @@
 {
 	"class" : {
-		"on:" : "monty 12/8/2014 05:41" },
+		"on:" : "monty 5/24/2015 21:37",
+		"onStreamIfBinary:" : "monty 5/26/2015 01:17" },
 	"instance" : {
-		"atEnd" : "monty 12/8/2014 05:42",
-		"basicNext" : "monty 12/8/2014 08:42",
-		"close" : "monty 12/8/2014 05:41",
-		"isBinary" : "monty 12/8/2014 05:41",
-		"isStream" : "monty 12/8/2014 05:41",
-		"next" : "monty 12/8/2014 05:42",
-		"on:" : "monty 12/8/2014 05:41",
-		"peek" : "monty 12/8/2014 05:42" } }
+		"atEnd" : "monty 5/23/2015 22:05",
+		"basicNext" : "monty 5/24/2015 21:22",
+		"close" : "monty 5/23/2015 22:04",
+		"isBinary" : "monty 5/26/2015 01:33",
+		"isStream" : "monty 5/23/2015 22:05",
+		"next" : "monty 5/23/2015 22:05",
+		"on:" : "monty 5/23/2015 22:06",
+		"peek" : "monty 5/23/2015 22:05",
+		"stream" : "monty 5/23/2015 22:06" } }

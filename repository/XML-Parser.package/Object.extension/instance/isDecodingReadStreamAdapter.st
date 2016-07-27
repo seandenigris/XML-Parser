@@ -1,0 +1,3 @@
+*XML-Parser
+isDecodingReadStreamAdapter
+	^ false

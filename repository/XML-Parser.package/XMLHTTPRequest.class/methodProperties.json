@@ -10,5 +10,7 @@
 		"getUpToLimit:" : "monty 12/16/2014 20:26",
 		"isMaxSizeException:" : "monty 4/10/2015 10:41",
 		"printOn:" : "monty 4/25/2015 09:17",
+		"streamGet" : "monty 5/18/2015 05:35",
+		"streamGetUpToLimit:" : "monty 5/17/2015 00:07",
 		"url" : "monty 1/10/2014 00:10",
 		"url:" : "monty 3/21/2015 22:37" } }

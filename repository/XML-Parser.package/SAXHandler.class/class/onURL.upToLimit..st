@@ -4,6 +4,7 @@ onURL: aURLString upToLimit: aLimit
 	the input limit (use nil to disable) but doesn't parse"
 
 	^ (self
-		on: (aURLString asXMLURI getUpToLimit: aLimit)
-		documentURI: aURLString)
-			documentReadLimit: aLimit
+		on:
+			(XMLDecodingReadStreamAdapter onExternalStream:
+				(aURLString asXMLURI streamGetUpToLimit: aLimit))
+		documentURI: aURLString) documentReadLimit: aLimit

@@ -1,3 +1,3 @@
 accessing
 peek
-	^ stream peek asCharacter
+	^ Character value: stream peek
