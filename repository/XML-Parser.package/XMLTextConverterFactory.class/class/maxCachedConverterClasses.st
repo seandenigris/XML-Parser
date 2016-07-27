@@ -1,0 +1,3 @@
+accessing
+maxCachedConverterClasses
+	^ 32
