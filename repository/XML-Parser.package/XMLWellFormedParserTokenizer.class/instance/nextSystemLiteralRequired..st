@@ -1,10 +1,15 @@
 tokenizing - dtd
 nextSystemLiteralRequired: aBoolean	
-	| quote value |
+	| quote nextChar |
 
 	(aBoolean or: [streamReader atQuote])
-		ifTrue: [
-			quote := self expectQuote.
-			value := streamReader upTo: quote]
-		ifFalse: [value := ''].
-	^ value.
+		ifFalse: [^ ''].
+	
+	quote := self expectQuote.
+	writeStream reset.
+	[(nextChar := streamReader peek) == nil
+		or: [nextChar == quote]]
+		whileFalse: [writeStream nextPut: streamReader next].
+	self expectNext: quote.
+
+	^ writeStream contents.

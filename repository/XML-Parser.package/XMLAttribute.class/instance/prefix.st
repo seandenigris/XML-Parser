@@ -1,3 +1,3 @@
-accessing
+namespaces
 prefix
-	^ self name prefixBeforeLocalName: self localName
+	^ self name prefixBeforeLocalName

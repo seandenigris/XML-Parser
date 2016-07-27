@@ -1,4 +1,4 @@
-accessing
+namespaces
 namespaceURI
 	| prefix |
 
