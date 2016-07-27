@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addressBookXML" : "monty 1/12/2014 23:38",
+		"addressBookXMLWithDTD" : "monty 1/12/2014 23:38",
+		"testChangingNormalizedLineEnding" : "monty 1/12/2014 23:37",
+		"testConditionalSection" : "monty 1/12/2014 23:37",
+		"testTokenizerAddressBook" : "monty 1/12/2014 23:37",
+		"testTokenizerAddressBookWithDTD" : "monty 1/12/2014 23:37",
+		"testTokenizerCharacters" : "monty 1/12/2014 23:37" } }

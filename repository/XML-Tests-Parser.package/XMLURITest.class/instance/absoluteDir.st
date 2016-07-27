@@ -1,0 +1,3 @@
+strings
+absoluteDir
+	^ '/absolute/path/'

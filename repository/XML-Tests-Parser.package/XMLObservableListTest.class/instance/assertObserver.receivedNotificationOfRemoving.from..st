@@ -1,5 +1,8 @@
 assertions
 assertObserver: anObserver receivedNotificationOfRemoving: anElement from: aList
+	| notification |
+
+	notification := anObserver notifications removeFirst.
 	self
-		assert: anObserver notifications first selector = self afterRemovingFromNotification;
-		assert: anObserver notifications first arguments = (Array with: anElement with: aList)
+		assert: notification selector = self afterRemovingFromNotification;
+		assert: notification arguments = (Array with: anElement with: aList)

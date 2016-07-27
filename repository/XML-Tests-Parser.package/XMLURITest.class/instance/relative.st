@@ -1,0 +1,3 @@
+strings
+relative
+	^ 'relative/path'

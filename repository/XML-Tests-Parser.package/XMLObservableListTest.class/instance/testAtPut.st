@@ -12,7 +12,6 @@ testAtPut
 		assertObserver: observer
 		receivedNotificationOfRemoving: self singleElement
 		from: list.
-	observer notifications removeFirst.
 	self
 		assertObserver: observer
 		receivedNotificationOfAdding: self absentElement

@@ -4,5 +4,5 @@ testRemoveAll
 
 	list := self listWithElements.
 	self
-		assert: (list removeAll) = list;
+		assert: (list removeAll) == list;
 		assert: list isEmpty.

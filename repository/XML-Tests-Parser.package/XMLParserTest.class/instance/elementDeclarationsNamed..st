@@ -1,4 +1,4 @@
-private
+source
 elementDeclarationsNamed: aNameCollection
 	| stream |
 

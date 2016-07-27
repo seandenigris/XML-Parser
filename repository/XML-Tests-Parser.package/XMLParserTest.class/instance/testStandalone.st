@@ -3,7 +3,6 @@ testStandalone
 	| dtdXml standaloneDecl |
 
 	dtdXml := self addressBookXMLWithDTD.
-	self should: [SAXHandler parse: dtdXml] raise: XMLFileIOException.
 	self
 		shouldnt: [
 			SAXHandler
@@ -11,9 +10,9 @@ testStandalone
 				usingNamespaces: true
 				validation: true
 				externalEntities: false]
-		raise: XMLFileIOException.
+		raise: XMLFileException.
 
 	standaloneDecl := (dtdXml copyUpTo: $>) allButLast, ' standalone="yes" ?>'.
 	self
 		shouldnt: [SAXHandler parse: standaloneDecl, (dtdXml copyAfter: $>)]
-		raise: XMLFileIOException.
+		raise: XMLFileException.

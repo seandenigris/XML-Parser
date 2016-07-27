@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testClientSelectionFromURI" : "monty 12/28/2013 21:46",
-		"testClientSelectionFromURIs" : "monty 12/28/2013 21:47",
-		"testFileClientPaths" : "monty 12/28/2013 21:23",
-		"testHTTPClientPaths" : "monty 12/28/2013 21:23" } }

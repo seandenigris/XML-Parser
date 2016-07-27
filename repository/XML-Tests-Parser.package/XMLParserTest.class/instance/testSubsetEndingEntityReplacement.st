@@ -7,4 +7,4 @@ testSubsetEndingEntityReplacement
 					<!ENTITY % endOfSubset "]>">
 					%endOfSubset;
 					<root/>']
-		raise: XMLParserException
+		raise: XMLWellFormednessException

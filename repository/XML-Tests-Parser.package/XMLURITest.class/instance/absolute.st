@@ -1,0 +1,3 @@
+strings
+absolute
+	^ '/absolute/path'
