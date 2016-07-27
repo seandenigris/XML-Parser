@@ -9,4 +9,5 @@ gtDisplayOn: stream
 				attributeNodesDo: [ :each | 
 					stream space.
 					each gtDisplayOn: stream ] ].
-	stream nextPut: $>
+	stream nextPut: $>.
+	stream nextPutAll: self contentString
