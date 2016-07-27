@@ -13,4 +13,4 @@ testURIPrinting
 		assert: self fileHostURIString asXMLURI printString = self fileHostURIString;
 		assert: self emailURIString asXMLURI printString = self emailURIString;
 		assert: '/' asXMLURI printString = '/';
-		assert: '' asXMLURI printString isEmpty.
+		assert: '' asXMLURI printString isEmpty

@@ -1,6 +1,6 @@
 tests
 testAttributeNodeAtNamespaceURIIfAbsent
-	| element  |
+	| element |
 
 	element := self newElementWithAttributes.
 	self assert:

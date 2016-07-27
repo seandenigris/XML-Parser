@@ -1,24 +1,24 @@
 tests
 testCombiningDotPathURIs
-	| relativePathUri absolutePathUri fullUri |
+	| relativePathURI absolutePathURI fullURI |
 
-	relativePathUri := self relative asXMLURI.
+	relativePathURI := self relative asXMLURI.
 	self
-		assert: (relativePathUri / '.') = 'relative/' asXMLURI;
-		assert: (relativePathUri / './.') = 'relative/' asXMLURI;
-		assert: (relativePathUri / './path') = relativePathUri;
-		assert: (relativePathUri / ('.', self absolute)) = self relativeAbsoluteCombined asXMLURI.
+		assert: relativePathURI / '.' = 'relative/' asXMLURI;
+		assert: relativePathURI / './.' = 'relative/' asXMLURI;
+		assert: relativePathURI / './path' = relativePathURI;
+		assert: relativePathURI / ('.' , self absolute) = self relativeAbsoluteCombined asXMLURI.
 
-	absolutePathUri := self absolute asXMLURI.
+	absolutePathURI := self absolute asXMLURI.
 	self
-		assert: (absolutePathUri / '.') = '/absolute/' asXMLURI;
-		assert: (absolutePathUri / './.') = '/absolute/' asXMLURI;
-		assert: (absolutePathUri / './path') = absolutePathUri;
-		assert: (absolutePathUri / ('./', self relative)) = self absoluteRelativeCombined asXMLURI.
+		assert: absolutePathURI / '.' = '/absolute/' asXMLURI;
+		assert: absolutePathURI / './.' = '/absolute/' asXMLURI;
+		assert: absolutePathURI / './path' = absolutePathURI;
+		assert: absolutePathURI / ('./' , self relative) = self absoluteRelativeCombined asXMLURI.
 
-	fullUri := self fullURIString asXMLURI.
+	fullURI := self fullURIString asXMLURI.
 	self
-		assert: (fullUri / '.') = (self domain, '/absolute/') asXMLURI;
-		assert: (fullUri / './.') = (self domain, '/absolute/') asXMLURI;
-		assert: (fullUri / './path') = (self domain, self absolute) asXMLURI;
-		assert: (fullUri / ('./', self relative)) = (self domain, self absoluteRelativeCombined) asXMLURI.
+		assert: fullURI / '.' = (self domain , '/absolute/') asXMLURI;
+		assert: fullURI / './.' = (self domain , '/absolute/') asXMLURI;
+		assert: fullURI / './path' = (self domain , self absolute) asXMLURI;
+		assert: fullURI / ('./' , self relative) = (self domain , self absoluteRelativeCombined) asXMLURI.

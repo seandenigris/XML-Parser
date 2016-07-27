@@ -1,4 +1,4 @@
 source
-encodingDeclaration: anEncoding withUTF16XML: anXml littleEndian: aBoolean
+encodingDeclaration: anEncoding withUTF16XML: aSourceString littleEndian: aBoolean
 	^ ((self encodingDeclaration: anEncoding) allButLast: 2),
-		(self toUTF16: '?>', anXml littleEndian: aBoolean)
+		(self toUTF16: '?>', aSourceString littleEndian: aBoolean)

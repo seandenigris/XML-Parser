@@ -1,12 +1,12 @@
 tests
 testSchemeAndHostCaseSensitivity
-	| uri uppercaseUri |
+	| uri uppercaseURI |
 
 	uri := self fullURIString asXMLURI.
-	uppercaseUri := self fullURIString asUppercase asXMLURI.
+	uppercaseURI := self fullURIString asUppercase asXMLURI.
 	self
-		assert: uri scheme = uppercaseUri scheme;
-		assert: uri host = uppercaseUri host;
-		deny: uri path = uppercaseUri path;
-		deny: uri queryString = uppercaseUri queryString;
-		deny: uri fragment = uppercaseUri fragment.
+		assert: uri scheme = uppercaseURI scheme;
+		assert: uri host = uppercaseURI host;
+		deny: uri path = uppercaseURI path;
+		deny: uri queryString = uppercaseURI queryString;
+		deny: uri fragment = uppercaseURI fragment.

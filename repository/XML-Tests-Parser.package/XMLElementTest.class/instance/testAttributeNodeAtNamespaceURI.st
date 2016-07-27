@@ -1,6 +1,6 @@
 tests
 testAttributeNodeAtNamespaceURI
-	| element  |
+	| element |
 
 	element := self newElementWithAttributes.
 	self assert:

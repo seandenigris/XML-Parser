@@ -1,9 +1,8 @@
 tests
 testConverting
-	| fullUri |
+	| fullURI |
 
-	fullUri := XMLURI fromString: self fullURIString.
-
+	fullURI := XMLURI fromString: self fullURIString.
 	self
-		assert: self fullURIString asXMLURI = fullUri;
-		assert: fullUri asXMLURI == fullUri.
+		assert: self fullURIString asXMLURI = fullURI;
+		assert: fullURI asXMLURI == fullURI.

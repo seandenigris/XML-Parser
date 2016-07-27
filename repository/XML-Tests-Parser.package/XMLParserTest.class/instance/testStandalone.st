@@ -1,23 +1,23 @@
 tests
 testStandalone
-	| dtdXml standaloneDeclXml |
+	| dtdXML standaloneDeclXML |
 
-	dtdXml := self addressBookXMLWithDTD.
+	dtdXML := self addressBookXMLWithDTD.
 	self
 		shouldnt: [
 			SAXHandler
-				parse: dtdXml
+				parse: dtdXML
 				usingNamespaces: true
 				validation: true
 				externalEntities: false]
 		raise: XMLFileException.
 
-	standaloneDeclXml :=
-		(dtdXml copyUpTo: $>) allButLast, ' standalone="yes" ?>', (dtdXml copyAfter: $>).
+	standaloneDeclXML :=
+		(dtdXML copyUpTo: $>) allButLast, ' standalone="yes" ?>', (dtdXML copyAfter: $>).
 	self
 		shouldnt: [
 			SAXHandler
-				parse: standaloneDeclXml
+				parse: standaloneDeclXML
 				usingNamespaces: true
 				validation: false
 				externalEntities: true]
@@ -25,7 +25,7 @@ testStandalone
 	self
 		shouldnt: [
 			SAXHandler
-				parse: standaloneDeclXml
+				parse: standaloneDeclXML
 				usingNamespaces: true
 				validation: true
 				externalEntities: false]

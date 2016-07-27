@@ -1,6 +1,7 @@
 tests
 testUnparsedEntities
 	| dtd |
+
 	dtd := '
 		<!DOCTYPE root [
 			<!NOTATION note PUBLIC "-//ext//note//EN">

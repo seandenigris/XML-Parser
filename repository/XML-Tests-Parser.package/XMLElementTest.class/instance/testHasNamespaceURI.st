@@ -1,6 +1,6 @@
 tests
 testHasNamespaceURI
-	| element  |
+	| element |
 
 	element := self nodeClass named: 'test'.
 	self deny: element hasNamespaceURI.

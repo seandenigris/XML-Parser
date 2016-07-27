@@ -1,30 +1,30 @@
 tests
 testCombiningDoubleDotPathURIs
-	| relativePathUri absolutePathUri fullUri |
+	| relativePathURI absolutePathURI fullURI |
 
-	relativePathUri := self relative asXMLURI.
+	relativePathURI := self relative asXMLURI.
 	self
-		assert: (relativePathUri / '..') isEmpty;
-		assert: (relativePathUri / '../..') isEmpty;
-		assert: (relativePathUri / ('..', self absolute)) = 'absolute/path' asXMLURI;
-		assert: (relativePathUri / ('../..', self absolute)) = 'absolute/path' asXMLURI;
-		assert: (relativePathUri / ('../..', self absolute, '/..')) = 'absolute/' asXMLURI;
-		assert: (relativePathUri / ('../..', self absolute, '/../..')) isEmpty.
+		assert: (relativePathURI / '..') isEmpty;
+		assert: (relativePathURI / '../..') isEmpty;
+		assert: relativePathURI / ('..' , self absolute) = 'absolute/path' asXMLURI;
+		assert: relativePathURI / ('../..' , self absolute) = 'absolute/path' asXMLURI;
+		assert: relativePathURI / ('../..' , self absolute , '/..') = 'absolute/' asXMLURI;
+		assert: (relativePathURI / ('../..' , self absolute , '/../..')) isEmpty.
 
-	absolutePathUri := self absolute asXMLURI.
+	absolutePathURI := self absolute asXMLURI.
 	self
-		assert: (absolutePathUri / '..') hasRootPath;
-		assert: (absolutePathUri / '../..') isEmpty;
-		assert: (absolutePathUri / ('..', self absolute)) = absolutePathUri;
-		assert: (absolutePathUri / ('../..', self absolute)) = 'absolute/path' asXMLURI;
-		assert: (absolutePathUri / ('../..', self absolute, '/..')) = 'absolute/' asXMLURI;
-		assert: (absolutePathUri / ('../..', self absolute, '/../..')) isEmpty.
+		assert: (absolutePathURI / '..') hasRootPath;
+		assert: (absolutePathURI / '../..') isEmpty;
+		assert: absolutePathURI / ('..' , self absolute) = absolutePathURI;
+		assert: absolutePathURI / ('../..' , self absolute) = 'absolute/path' asXMLURI;
+		assert: absolutePathURI / ('../..' , self absolute , '/..') = 'absolute/' asXMLURI;
+		assert: (absolutePathURI / ('../..' , self absolute , '/../..')) isEmpty.
 
-	fullUri := self fullURIString asXMLURI.
+	fullURI := self fullURIString asXMLURI.
 	self
-		assert: (fullUri / '..') hasRootPath;
-		deny: (fullUri / '../..') hasPath;
-		assert: (fullUri / ('..', self absolute)) = (self domain, self absolute) asXMLURI;
-		assert: (fullUri / ('../..', self absolute)) = (self domain, self absolute) asXMLURI;
-		assert: (fullUri / ('../..', self absolute, '/..')) = (self domain, '/absolute/') asXMLURI;
-		assert: (fullUri / ('../..', self absolute, '/../')) = (self domain, '/absolute/') asXMLURI.
+		assert: (fullURI / '..') hasRootPath;
+		deny: (fullURI / '../..') hasPath;
+		assert: fullURI / ('..' , self absolute) = (self domain , self absolute) asXMLURI;
+		assert: fullURI / ('../..' , self absolute) = (self domain , self absolute) asXMLURI;
+		assert: fullURI / ('../..' , self absolute , '/..') = (self domain , '/absolute/') asXMLURI;
+		assert: fullURI / ('../..' , self absolute , '/../') = (self domain , '/absolute/') asXMLURI.

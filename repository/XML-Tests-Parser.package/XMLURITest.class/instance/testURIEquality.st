@@ -1,22 +1,22 @@
 tests
 testURIEquality
-	| fullUri string emailUri |
+	| fullURI string emailURI |
 
 	string := self fullURIString.
-	fullUri := string asXMLURI.
+	fullURI := string asXMLURI.
 	self
-		assert: fullUri = fullUri;
-		assert: fullUri = string asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self scheme with: 'new') asXMLURI;
-		deny: fullUri = (string copyReplaceAll: '://' with: ':') asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self host with: 'new') asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self absolute with: 'new') asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self queryString with: 'new') asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self fragment with: 'new') asXMLURI.
+		assert: fullURI = fullURI;
+		assert: fullURI = string asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self scheme with: 'new') asXMLURI;
+		deny: fullURI = (string copyReplaceAll: '://' with: ':') asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self host with: 'new') asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self absolute with: 'new') asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self queryString with: 'new') asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self fragment with: 'new') asXMLURI.
 
 	string := self emailURIString.
-	emailUri := string asXMLURI.
+	emailURI := string asXMLURI.
 	self
-		assert: emailUri = emailUri;
-		assert: emailUri = string asXMLURI;
-		deny: fullUri = (string copyReplaceAll: self userInfo with: 'new') asXMLURI.
+		assert: emailURI = emailURI;
+		assert: emailURI = string asXMLURI;
+		deny: fullURI = (string copyReplaceAll: self userInfo with: 'new') asXMLURI.

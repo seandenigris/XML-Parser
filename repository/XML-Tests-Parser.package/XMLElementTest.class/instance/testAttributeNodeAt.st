@@ -1,6 +1,6 @@
 tests
 testAttributeNodeAt
-	| element  |
+	| element |
 
 	element := self newElementWithAttributes.
 	element attributeNodes do: [:each |

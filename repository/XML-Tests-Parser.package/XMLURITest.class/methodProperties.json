@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"generateStandardURICombiningTest" : "monty 2/9/2015 07:06",
+		"generateStandardURICombiningTest" : "monty 3/22/2015 03:15",
 		"standardURICombiningTestBaseURI" : "monty 2/9/2015 07:06",
 		"standardURICombiningTestTemplate" : "monty 2/9/2015 07:06" },
 	"instance" : {
@@ -25,11 +25,11 @@
 		"scheme" : "monty 1/8/2014 18:17",
 		"schemelessURIString" : "monty 1/8/2014 18:17",
 		"schemelessURIWithPortString" : "monty 10/24/2014 06:17",
-		"testCombiningAbsoluteURIs" : "monty 2/7/2015 04:42",
-		"testCombiningDotPathURIs" : "monty 2/9/2015 01:20",
-		"testCombiningDoubleDotPathURIs" : "monty 2/9/2015 01:25",
-		"testCombiningRelativeURIs" : "monty 10/22/2014 07:49",
-		"testConverting" : "monty 1/10/2014 06:10",
+		"testCombiningAbsoluteURIs" : "monty 3/22/2015 03:18",
+		"testCombiningDotPathURIs" : "monty 3/22/2015 03:18",
+		"testCombiningDoubleDotPathURIs" : "monty 3/22/2015 03:19",
+		"testCombiningRelativeURIs" : "monty 3/22/2015 03:19",
+		"testConverting" : "monty 3/22/2015 03:19",
 		"testIsEmpty" : "monty 2/6/2015 23:07",
 		"testParsingAbsolutePathURI" : "monty 2/9/2015 06:45",
 		"testParsingDomainURI" : "monty 2/9/2015 06:45",
@@ -43,9 +43,9 @@
 		"testParsingSchemelessURI" : "monty 2/9/2015 06:46",
 		"testParsingSchemelessURIWithPort" : "monty 2/9/2015 06:46",
 		"testPathUnescaping" : "monty 1/21/2014 02:11",
-		"testSchemeAndHostCaseSensitivity" : "monty 1/10/2014 06:04",
-		"testStandardURICombining" : "monty 2/9/2015 07:07",
-		"testURIEquality" : "monty 2/9/2015 06:49",
-		"testURIPrinting" : "monty 2/7/2015 21:58",
+		"testSchemeAndHostCaseSensitivity" : "monty 3/22/2015 03:20",
+		"testStandardURICombining" : "monty 3/22/2015 03:15",
+		"testURIEquality" : "monty 3/22/2015 03:20",
+		"testURIPrinting" : "monty 3/22/2015 03:20",
 		"unescaped" : "monty 1/29/2015 16:20",
 		"userInfo" : "monty 2/7/2015 21:55" } }

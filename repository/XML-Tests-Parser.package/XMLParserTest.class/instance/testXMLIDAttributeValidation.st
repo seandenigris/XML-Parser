@@ -1,18 +1,18 @@
 tests
 testXMLIDAttributeValidation
-	| xml xmlWithDuplicateId |
+	| xml xmlWithDuplicateID |
 
 	xml := '<a xml:id="one"><b xml:id="two"/></a>'.
-	xmlWithDuplicateId := '<a xml:id="one"><b xml:id="one"/></a>'.
+	xmlWithDuplicateID := '<a xml:id="one"><b xml:id="one"/></a>'.
 	self
 		shouldnt: [SAXHandler parse: xml]
 		raise: XMLValidationException.
 	self
-		should: [SAXHandler parse: xmlWithDuplicateId]
+		should: [SAXHandler parse: xmlWithDuplicateID]
 		raise: XMLValidationException.
 	self
 		shouldnt: [
-			(SAXHandler on: xmlWithDuplicateId)
+			(SAXHandler on: xmlWithDuplicateID)
 				isValidating: false;
 				parseDocument]
 		raise: XMLValidationException.

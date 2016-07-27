@@ -1,12 +1,12 @@
 tests
 testDefaultDocumentURI
-	| cwd documentUri |
+	| cwd documentURI |
 
-	documentUri := (SAXHandler on: '' documentURI: 'test/test.xml') documentURI.
-	self assert: documentUri = 'test/test.xml'.
+	documentURI := (SAXHandler on: '' documentURI: 'test/test.xml') documentURI.
+	self assert: documentURI = 'test/test.xml'.
 
 	cwd := XMLFileHandle currentWorkingDirectory.
-	documentUri := (SAXHandler on: '') documentURI.
+	documentURI := (SAXHandler on: '') documentURI.
 	self
-		assert: documentUri size > (cwd size + 1);
-		assert: (documentUri copyUpToLast: $/) = cwd.
+		assert: documentURI size > (cwd size + 1);
+		assert: (documentURI copyUpToLast: $/) = cwd

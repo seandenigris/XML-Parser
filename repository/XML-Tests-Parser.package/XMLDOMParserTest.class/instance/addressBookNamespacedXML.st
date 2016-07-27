@@ -1,3 +1,4 @@
 source
 addressBookNamespacedXML
-	^ self class addressBookNamespacedXML
+	^ addressBookNamespacedXML
+		ifNil: [addressBookNamespacedXML := self class addressBookNamespacedXML]

@@ -8,9 +8,9 @@ generateStandardURICombiningTest
 	source :=
 		String streamContents: [:writeStream |
 			writeStream nextPutAll: 'testStandardURICombining
-	| baseUri |
+	| baseURI |
 
-	baseUri := ''', self standardURICombiningTestBaseURI, ''' asXMLURI.
+	baseURI := ''', self standardURICombiningTestBaseURI, ''' asXMLURI.
 	self'.
 			[readStream atEnd]
 				whileFalse: [| argument result |
@@ -24,7 +24,7 @@ generateStandardURICombiningTest
 								ifTrue: [isFirstTest := false]
 								ifFalse: [writeStream nextPut: $;].
 							writeStream nextPutAll: '
-		assert: (baseUri / ''', argument, ''' asXMLURI) = ''', result, ''' asXMLURI']]].
+		assert: (baseURI / ''', argument, ''' asXMLURI) = ''', result, ''' asXMLURI']]].
 
 	self
 		compile: source

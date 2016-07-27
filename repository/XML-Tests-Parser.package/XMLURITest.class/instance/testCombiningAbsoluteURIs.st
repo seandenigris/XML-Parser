@@ -1,17 +1,17 @@
 tests
 testCombiningAbsoluteURIs
-	| domainUri fullUri fileUri |
+	| domainURI fullURI fileURI |
 
-	domainUri := self domain asXMLURI.
-	fullUri := self fullURIString asXMLURI.
-	fileUri := self fileURIString asXMLURI.
+	domainURI := self domain asXMLURI.
+	fullURI := self fullURIString asXMLURI.
+	fileURI := self fileURIString asXMLURI.
 	self
-		assert: (domainUri / self fullURIString) = fullUri;
-		assert: (domainUri / self domain) = domainUri;
-		assert: (domainUri / self fileURIString) = fileUri;
-		assert: (fullUri / self fullURIString) = fullUri;
-		assert: (fullUri / self domain) = domainUri;
-		assert: (fullUri / self fileURIString) = fileUri;
-		assert: (fileUri / self fullURIString) = fullUri;
-		assert: (fileUri / self domain) = domainUri;
-		assert: (fileUri / self fileURIString) = fileUri.
+		assert: domainURI / self fullURIString = fullURI;
+		assert: domainURI / self domain = domainURI;
+		assert: domainURI / self fileURIString = fileURI;
+		assert: fullURI / self fullURIString = fullURI;
+		assert: fullURI / self domain = domainURI;
+		assert: fullURI / self fileURIString = fileURI;
+		assert: fileURI / self fullURIString = fullURI;
+		assert: fileURI / self domain = domainURI;
+		assert: fileURI / self fileURIString = fileURI.
