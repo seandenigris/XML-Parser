@@ -1,5 +1,5 @@
 private
-checkForReservedAttributesIn: anAttributeDictionary after: anIndex
+checkForReservedAttributesIn: anAttributeDictionary afterIndex: anIndex
 	"validation may add attributes"
 	self hasUnhandledReservedAttributes
 		ifFalse: [

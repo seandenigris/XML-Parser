@@ -9,7 +9,7 @@
 		"NormalizedSpace",
 		"PubidChars",
 		"UnaryOperatorChars" ],
-	"commentStamp" : "monty 1/17/2014 01:50",
+	"commentStamp" : "monty 4/12/2015 10:25",
 	"instvars" : [
 		"activeEntities" ],
 	"name" : "XMLWellFormedParserTokenizer",

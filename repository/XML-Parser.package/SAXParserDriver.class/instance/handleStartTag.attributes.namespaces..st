@@ -11,8 +11,14 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		ifTrue: [
 			currentScope := self scopeAllocator enterScope.
 			aNamespaceDictionary
-				ifNotNil: [self declareNamespaces: aNamespaceDictionary inScope: currentScope].
-			namespaceUri := currentScope validateAndResolvePrefix: prefix ofElement: anElementName.
+				ifNotNil: [
+					self
+						declareNamespaces: aNamespaceDictionary
+						inScope: currentScope].
+			namespaceUri :=
+				currentScope
+					validateAndResolvePrefix: prefix
+					ofElement: anElementName.
 			totalAttributes > 0
 				ifTrue: [currentScope validateAttributePrefixes: anAttributeDictionary]].
 	self isValidating
@@ -23,7 +29,10 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 				validateStartTag: anElementName
 				attributes: anAttributeDictionary.
 			anAttributeDictionary size > totalAttributes
-				ifTrue: [self checkForReservedAttributesIn: anAttributeDictionary after: totalAttributes]].
+				ifTrue: [
+					self
+						checkForReservedAttributesIn: anAttributeDictionary
+						afterIndex: totalAttributes]].
 	self hasUnhandledReservedAttributes
 		ifTrue: [self handleReservedAttributes: anAttributeDictionary].
 
@@ -33,5 +42,6 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		uri: (namespaceUri ifNil: [''])
 		localName: (anElementName localNameAfterPrefix: prefix)
 		attributes: anAttributeDictionary.
+
 	currentScope
 		ifNotNil: [self saxHandler currentScope: currentScope].

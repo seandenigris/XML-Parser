@@ -1,3 +1,3 @@
 accessing
 previousContext
-	^ previousContext
+	^ previousContext ifNil: [self externalSubsetContext]
