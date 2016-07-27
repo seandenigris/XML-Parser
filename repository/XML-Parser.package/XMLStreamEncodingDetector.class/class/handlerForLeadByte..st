@@ -1,13 +1,13 @@
 private
 handlerForLeadByte: aByte
 	aByte = 0
-		ifTrue: [^ #detectBigEndianUTF32OrImplicitEncdoing].
+		ifTrue: [^ #detectBigEndianUTF32BOMOrImplicitEncoding].
 	aByte = XMLUTF16BigEndianStreamDecoder byteOrderMarkBytes first
-		ifTrue: [^ #detectBigEndianUTF16ByteOrderMark].
+		ifTrue: [^ #detectBigEndianUTF16BOM].
 	aByte = XMLUTF8StreamDecoder byteOrderMarkBytes first
 		ifTrue: [^ #detectUTF8ByteOrderMark].
 	aByte = XMLUTF16LittleEndianStreamDecoder byteOrderMarkBytes first
-		ifTrue: [^ #detectLittleEndianUTF16OrUTF32ByteOrderMark].
+		ifTrue: [^ #detectLittleEndianUTF16BOMOrUTF32BOM].
 	aByte = $< asciiValue
 		ifTrue: [^ #detectLittleEndianImplicitEncoding].
 	^ nil.

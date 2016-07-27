@@ -8,4 +8,4 @@ dfaStateFor: aStateSet
 
 			cachedStates
 				at: aStateSet
-				put: (self newDFAStateFor: aStateSet)].
+				put: (self newDFAStateFor: aStateSet)]

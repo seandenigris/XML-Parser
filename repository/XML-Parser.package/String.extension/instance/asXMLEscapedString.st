@@ -3,14 +3,15 @@ asXMLEscapedString
 	| stream |
 
 	stream := (self class new: self size) writeStream.
-	self do: [:each |
-		each == $<
+	"to:do: for performance"
+	1 to: self size do: [:i | | nextChar |
+		(nextChar := self at: i) == $<
 			ifTrue: [stream nextPutAll: '&lt;']
 			ifFalse: [
-				each == $> "needed to escape ]]> in PCDATA"
+				nextChar == $> "needed to escape ]]> in PCDATA"
 					ifTrue: [stream nextPutAll: '&gt;']
 					ifFalse: [
-						each == $&
+						nextChar == $&
 							ifTrue: [stream nextPutAll: '&amp;']
-							ifFalse: [stream nextPut: each]]]].
+							ifFalse: [stream nextPut: nextChar]]]].
 	^ stream contents.

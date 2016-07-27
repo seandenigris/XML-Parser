@@ -1,5 +1,5 @@
 private
-detectBigEndianUTF16ByteOrderMark
+detectBigEndianUTF16BOM
 	(self
 		detectByteOrderMark: UTF16BigEndianByteOrderMark
 		forDecoderClass: XMLUTF16BigEndianStreamDecoder)

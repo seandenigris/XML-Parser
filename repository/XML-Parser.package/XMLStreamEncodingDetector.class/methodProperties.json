@@ -1,16 +1,16 @@
 {
 	"class" : {
 		"for:" : "monty 11/28/2014 10:16",
-		"handlerForLeadByte:" : "monty 11/28/2014 02:06",
+		"handlerForLeadByte:" : "monty 12/26/2014 23:06",
 		"initialize" : "monty 11/28/2014 03:01",
 		"initializeByteOrderMarks" : "monty 11/28/2014 03:00",
 		"initializeEncodingHandlerTable" : "monty 11/28/2014 03:00" },
 	"instance" : {
-		"detectBigEndianUTF16ByteOrderMark" : "monty 11/28/2014 01:58",
-		"detectBigEndianUTF32OrImplicitEncdoing" : "monty 11/28/2014 09:20",
+		"detectBigEndianUTF16BOM" : "monty 12/26/2014 23:01",
+		"detectBigEndianUTF32BOMOrImplicitEncoding" : "monty 12/26/2014 23:01",
 		"detectByteOrderMark:forDecoderClass:" : "monty 11/28/2014 01:56",
 		"detectCurrentEncoding" : "monty 11/28/2014 10:17",
-		"detectLittleEndianImplicitEncoding" : "monty 11/28/2014 02:08",
-		"detectLittleEndianUTF16OrUTF32ByteOrderMark" : "monty 11/28/2014 01:57",
-		"detectUTF8ByteOrderMark" : "monty 11/28/2014 01:58",
+		"detectLittleEndianImplicitEncoding" : "monty 12/26/2014 22:53",
+		"detectLittleEndianUTF16BOMOrUTF32BOM" : "monty 12/26/2014 23:05",
+		"detectUTF8ByteOrderMark" : "monty 12/26/2014 23:06",
 		"streamReader:" : "monty 11/28/2014 10:16" } }

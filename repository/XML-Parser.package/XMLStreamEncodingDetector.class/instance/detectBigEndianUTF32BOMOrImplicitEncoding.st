@@ -1,5 +1,5 @@
 private
-detectBigEndianUTF32OrImplicitEncdoing
+detectBigEndianUTF32BOMOrImplicitEncoding
 	| remainder |
 
 	(remainder :=

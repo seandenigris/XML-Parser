@@ -12,8 +12,9 @@ furtherNormalizeAttributeValueIn: anAttributeDictionary
 	semiNormalizedValue := attributeAssociation value.
 	writeStream := (String new: semiNormalizedValue size) writeStream.
 	isInWhitespace := false.
-	semiNormalizedValue do: [:each |
-		each == NormalizedSpace
+	"to:do: for speed"
+	1 to: semiNormalizedValue size do: [:i | | nextChar |
+		(nextChar := semiNormalizedValue at: i) == NormalizedSpace
 			ifTrue: [
 				isInWhitespace
 					ifFalse: [isInWhitespace := true]]
@@ -23,5 +24,5 @@ furtherNormalizeAttributeValueIn: anAttributeDictionary
 						writeStream xmlParserAtBeginning
 							ifFalse: [writeStream nextPut: NormalizedSpace].
 						isInWhitespace := false].
-				writeStream nextPut: each]].
+				writeStream nextPut: nextChar]].
 	attributeAssociation value: writeStream contents.

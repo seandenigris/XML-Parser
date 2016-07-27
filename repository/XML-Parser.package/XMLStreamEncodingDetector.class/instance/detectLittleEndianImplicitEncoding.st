@@ -1,7 +1,6 @@
 private
 detectLittleEndianImplicitEncoding
-	stream peek == $<
-		ifFalse: [^ self].
+	"skip <"
 	stream next.
 	(stream atEnd
 		or: [stream peek asciiValue > 0])

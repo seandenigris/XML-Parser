@@ -1,5 +1,6 @@
 *XML-Parser
 prefixBeforeLocalName: aLocalName
+	"optimized"
 	| prefixSize |
 
 	(prefixSize := self size - aLocalName size - 1) > 0

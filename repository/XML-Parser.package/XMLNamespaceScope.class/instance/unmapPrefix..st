@@ -1,6 +1,7 @@
 accessing
 unmapPrefix: aPrefix
-	self prefixMappings
+	"copy-on-write"
+	^ self copiedPrefixMappings 
 		removeKey: aPrefix
 		ifAbsent: [
 			XMLNamespaceException

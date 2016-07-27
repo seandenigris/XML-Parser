@@ -1,7 +1,16 @@
-initializing
+accessing
 inheritMappingsFrom: anEnclosingScope
 	anEnclosingScope hasNamespaces
-		ifTrue: [
+		ifFalse: [^ self].
+	self hasNamespaces
+		ifTrue: [| copiedPrefixMappings |
 			anEnclosingScope prefixesAndURIsDo: [:prefix :uri |
 				(self includesPrefix: prefix)
-					ifFalse: [self mapPrefix: prefix to: uri]]]
+					ifFalse: [
+						(copiedPrefixMappings "used so we only copy once"
+							ifNil: [copiedPrefixMappings := self copiedPrefixMappings])
+							at: prefix
+							put: uri]]]
+		ifFalse: [
+			"can reuse because of copy-on-write"
+			prefixMappings := anEnclosingScope prefixMappings].
