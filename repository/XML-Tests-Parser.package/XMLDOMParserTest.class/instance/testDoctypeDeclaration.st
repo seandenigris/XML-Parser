@@ -11,4 +11,6 @@ testDoctypeDeclaration
 	self
 		assert: doctype root = 'root';
 		assert: doctype publicID = 'pubid';
-		assert: doctype systemID = 'external.dtd'.
+		assert: doctype systemID = 'external.dtd';
+		assert: doctype nodes notEmpty;
+		assert: (doctype nodes allSatisfy: [:each | each isDeclaration]).

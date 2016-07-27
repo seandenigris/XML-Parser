@@ -1,6 +1,6 @@
 tests - internal subset
 testInternalElementDeclaration
-	| doctype |
+	| doctype elementDeclaration |
 
 	doctype :=
 		(XMLDOMParser
@@ -8,6 +8,7 @@ testInternalElementDeclaration
 			usingNamespaces: true
 			validation: true
 			externalEntities: false) doctypeDeclaration.
+	elementDeclaration := doctype nodes first.
 	self
-		assert: doctype nodes first element = 'root';
-		assert: doctype nodes first contentModel = '(#PCDATA|one|two)*'.
+		assert: elementDeclaration element = 'root';
+		assert: elementDeclaration contentModel = '(#PCDATA|one|two)*'.
