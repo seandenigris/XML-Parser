@@ -1,6 +1,6 @@
 private
 externalSubsetParserOnURI: aUri
-	^ XMLParser
+	^ self saxHandler parserClass
 		driver:
 			(DTDExternalSubsetParserDriver
 				saxDriver: self

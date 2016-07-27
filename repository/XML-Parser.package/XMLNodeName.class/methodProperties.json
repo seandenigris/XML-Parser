@@ -1,25 +1,24 @@
 {
 	"class" : {
 		"qualified:" : "monty 10/1/2014 15:20",
-		"qualified:prefix:localPart:" : "monty 10/1/2014 15:20" },
+		"qualified:localPart:" : "monty 10/3/2014 04:12" },
 	"instance" : {
 		"addObserver:" : "OttoBehrens 2/15/2011 08:18",
 		"changeWith:" : "JAAyer 11/1/2010 04:36",
 		"expandWith:" : "JAAyer 8/9/2010 15:01",
-		"isPrefixed" : "JAAyer 8/9/2010 14:46",
-		"isSameAs:" : "monty 2/2/2014 17:14",
-		"localPart" : "monty 1/28/2014 19:42",
+		"isPrefixed" : "monty 10/3/2014 04:19",
+		"isSameAs:" : "monty 10/3/2014 20:42",
+		"localPart" : "monty 10/3/2014 20:27",
 		"notifier" : "JAAyer 6/15/2010 15:18",
 		"notifyOf:with:" : "OttoBehrens 2/15/2011 08:18",
 		"notifyOf:with:with:" : "OttoBehrens 2/15/2011 08:18",
 		"notifyOf:with:with:with:" : "OttoBehrens 2/15/2011 08:18",
 		"notifyOf:withArguments:" : "OttoBehrens 2/15/2011 08:18",
-		"prefix" : "monty 1/28/2014 19:42",
-		"prefix:" : "monty 10/1/2014 15:29",
+		"prefix" : "monty 10/4/2014 00:08",
+		"prefix:" : "monty 10/3/2014 04:05",
 		"printOn:" : "JAAyer 6/27/2010 15:15",
 		"qualified" : "JAAyer 7/26/2010 14:23",
-		"qualified:" : "monty 1/28/2014 20:17",
+		"qualified:" : "monty 10/3/2014 20:48",
 		"removeObserver:" : "OttoBehrens 2/15/2011 08:18",
-		"setFromQualified" : "monty 2/2/2014 05:23",
 		"setQualified:" : "monty 1/28/2014 19:42",
-		"setQualified:prefix:localPart:" : "JAAyer 6/27/2010 15:20" } }
+		"setQualified:localPart:" : "monty 10/3/2014 04:12" } }

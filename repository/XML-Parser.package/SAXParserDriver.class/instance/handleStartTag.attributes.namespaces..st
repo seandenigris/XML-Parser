@@ -29,7 +29,7 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		startElement: anElementName
 		prefix: prefix
 		uri: (namespaceUri ifNil: [''])
-		localName: (anElementName qualifiedNameLocalPart: prefix)
+		localName: (anElementName qualifiedNameLocalPartFromPrefix: prefix)
 		attributes: anAttributeDictionary.
 	currentScope
 		ifNotNil: [self saxHandler currentScope: currentScope].

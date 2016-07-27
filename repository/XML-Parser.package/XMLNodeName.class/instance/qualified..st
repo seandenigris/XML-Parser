@@ -2,4 +2,4 @@ accessing
 qualified: aQualifiedName
 	self changeWith: [
 		qualified := aQualifiedName.
-		self setFromQualified]
+		localPart := aQualifiedName qualifiedNameLocalPart]

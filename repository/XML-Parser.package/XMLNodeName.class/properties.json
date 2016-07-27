@@ -4,10 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 10/3/2014 04:31",
 	"instvars" : [
 		"qualified",
-		"prefix",
 		"localPart",
 		"notifier" ],
 	"name" : "XMLNodeName",

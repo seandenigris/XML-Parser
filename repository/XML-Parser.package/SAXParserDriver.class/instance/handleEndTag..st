@@ -20,7 +20,7 @@ handleEndTag: anElementName
 					currentScope := self scopeAllocator exitScope.
 					currentScope resolvePrefix: prefix]
 				ifFalse: [''])
-		localName: (anElementName qualifiedNameLocalPart: prefix).
+		localName: (anElementName qualifiedNameLocalPartFromPrefix: prefix).
 
 	currentScope ifNotNil: [
 		currentScope hasNamespaces

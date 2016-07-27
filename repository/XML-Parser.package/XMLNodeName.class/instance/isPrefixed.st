@@ -1,3 +1,3 @@
 testing
 isPrefixed
-	^ self prefix notEmpty
+	^ self qualified size > self localPart size

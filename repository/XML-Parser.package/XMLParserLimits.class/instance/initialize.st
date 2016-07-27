@@ -3,5 +3,5 @@ initialize
 	super initialize.
 
 	documentReadLimit := self class defaultDocumentReadLimit.
-	externalSubsetReadLimit := (documentReadLimit / 4) asInteger.
+	externalSubsetReadLimit := self class defaultExternalSubsetReadLimit.
 	maxEntityReplacementDepth := 3.

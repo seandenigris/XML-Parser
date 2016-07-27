@@ -9,4 +9,4 @@ endElement: anElementName
 		endElement: anElementName
 		prefix: prefix
 		uri: ''
-		localName: (anElementName qualifiedNameLocalPart: prefix)
+		localName: (anElementName qualifiedNameLocalPartFromPrefix: prefix)

@@ -1,3 +1,3 @@
 accessing
 defaultDocumentReadLimit
-	^ 1000000
+	^ 10000000

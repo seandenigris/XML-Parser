@@ -9,5 +9,5 @@ startElement: anElementName attributes: anAttributeDictionary
 		startElement: anElementName
 		prefix: prefix
 		uri: ''
-		localName: (anElementName qualifiedNameLocalPart: prefix)
+		localName: (anElementName qualifiedNameLocalPartFromPrefix: prefix)
 		attributes: anAttributeDictionary
