@@ -1,5 +1,7 @@
 instance creation
-onFileNamed: aFileName
+onFileNamed: aFilePathString
+	"Returns new parser on the specified file but doesn't parse"
+
 	^ self
-		on: (XMLFileHandle path: aFileName) readStream
-		documentURI: aFileName
+		on: (XMLFileHandle path: aFilePathString) readStream
+		documentURI: aFilePathString

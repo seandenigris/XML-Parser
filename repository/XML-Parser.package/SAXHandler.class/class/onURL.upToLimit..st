@@ -1,9 +1,9 @@
 instance creation
 onURL: aURLString upToLimit: aLimit
-	"Fetches the URL and returns a new instance on the response up
-	to the input limit (use nil to disable)."
+	"Fetches URL and returns new parser on the response up to
+	the input limit (use nil to disable) but doesn't parse"
 
 	^ (self
 		on: (aURLString asXMLURI getUpToLimit: aLimit)
 		documentURI: aURLString)
-		documentReadLimit: aLimit
+			documentReadLimit: aLimit

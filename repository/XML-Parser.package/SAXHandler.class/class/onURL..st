@@ -1,6 +1,6 @@
 instance creation
 onURL: aURLString
-	"Fetches the URL and returns a new instance on the response"
+	"Fetches URL and returns new parser on the response but doesn't parse"
 
 	^ self
 		onURL: aURLString

@@ -1,3 +1,5 @@
 parsing
-parseFileNamed: aFileName
-	^ (self onFileNamed: aFileName) parseDocument
+parseFileNamed: aFilePathString
+	"Parses document in specified file"
+
+	^ (self onFileNamed: aFilePathString) parseDocument

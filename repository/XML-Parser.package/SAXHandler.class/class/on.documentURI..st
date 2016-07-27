@@ -1,7 +1,5 @@
 instance creation
 on: aStringOrStream documentURI: aURIString
-	"Returns a new instance with associated base URI"
+	"Returns new parser with associated base URI but doesn't parse"
 
-	^ self new
-		on: aStringOrStream
-		documentURI: aURIString
+	^ (self on: aStringOrStream) documentURI: aURIString
