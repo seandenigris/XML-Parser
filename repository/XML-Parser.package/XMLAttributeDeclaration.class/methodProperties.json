@@ -1,10 +1,11 @@
 {
 	"class" : {
-		"element:attribute:type:defaultDeclaration:" : "monty 12/21/2013 02:52" },
+		"element:attribute:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:59" },
 	"instance" : {
 		"attribute" : "monty 12/21/2013 02:53",
-		"defaultDeclaration" : "JAAyer 10/30/2010 19:42",
+		"defaultPragma" : "monty 12/31/2013 00:14",
+		"defaultValue" : "monty 12/31/2013 00:11",
 		"element" : "monty 12/21/2013 03:21",
-		"setElement:attribute:type:defaultDeclaration:" : "monty 12/21/2013 03:15",
+		"setElement:attribute:type:defaultPragma:defaultValue:" : "monty 12/31/2013 00:02",
 		"type" : "JAAyer 10/30/2010 19:42",
-		"writeXMLOn:" : "monty 12/21/2013 02:55" } }
+		"writeXMLOn:" : "monty 12/31/2013 00:16" } }

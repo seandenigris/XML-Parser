@@ -1,18 +1,21 @@
 {
 	"class" : {
-		"initialize" : "monty 12/28/2013 00:52" },
+		"initialize" : "monty 12/29/2013 02:35",
+		"initializeOperatorApplicators" : "monty 12/29/2013 05:08",
+		"initializeSpecialCharacterParsers" : "monty 12/29/2013 05:08",
+		"initializeSpecialCharacters" : "monty 12/29/2013 04:42" },
 	"instance" : {
-		"applyBinaryOperatorOnStack" : "monty 12/27/2013 22:01",
-		"applyUnaryOperator:" : "monty 12/18/2013 22:44",
+		"applyBinaryOperatorOnStack" : "monty 12/28/2013 19:46",
+		"applyOperator:" : "monty 12/30/2013 22:29",
 		"errorMismatchedParens" : "monty 12/18/2013 22:44",
 		"errorMissingOperand" : "monty 12/18/2013 22:44",
-		"hasOperatorOnStack" : "monty 12/18/2013 22:44",
-		"isBinaryOperator:" : "monty 12/18/2013 22:44",
+		"hasOperatorOnStack" : "monty 12/29/2013 02:37",
 		"isBinaryOperator:higherPrecedenceThan:" : "monty 12/18/2013 22:44",
-		"isOperatorOrParen:" : "monty 12/28/2013 00:50",
-		"parse" : "monty 12/29/2013 00:04",
-		"parseElementName" : "monty 12/29/2013 00:04",
-		"parseOperatorOrParen" : "monty 12/28/2013 23:01",
+		"parse" : "monty 12/30/2013 22:28",
+		"parseBinaryOperator:" : "monty 12/29/2013 02:23",
+		"parseElementName" : "monty 12/29/2013 03:49",
+		"parseParen:" : "monty 12/29/2013 02:24",
+		"parseUnaryOperator:" : "monty 12/29/2013 02:23",
+		"parserForSpecialCharacter:" : "monty 12/30/2013 22:29",
 		"popParenthesizedOperators" : "monty 12/28/2013 23:02",
-		"popRemainingOperators" : "monty 12/18/2013 22:44",
-		"startParenthesizedOperators" : "monty 12/28/2013 23:01" } }
+		"popRemainingOperators" : "monty 12/18/2013 22:44" } }

@@ -1,13 +1,11 @@
 parsing
 parseElementName
-	| matcher nextChar |
+	| matcher |
 
 	nameStream reset.
 	[contentModelStream atEnd
-		or: [(nextChar := contentModelStream peek) isSeparator
-			or: [self isOperatorOrParen: nextChar]]]
+		or: [SpecialCharacters includes: contentModelStream peek]]
 		whileFalse: [nameStream nextPut: contentModelStream next].
-	contentModelStream skipSeparators.
 
 	matcher := nameStream contents.
 	matcher = '#PCDATA'

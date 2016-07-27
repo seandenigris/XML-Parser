@@ -1,9 +1,8 @@
 tokenizing - dtd
 nextConditionalSection
-	self
-		skipSeparatorsReplacingParameterEntities;
-		expectNext: $I.
+	"skip ["
+	streamReader next.
 
-	^ streamReader peek == $N
-		ifTrue: [self nextIncludeSection]
-		ifFalse: [self nextIgnoreSection].
+	streamWriter writeWith: [:writeStream |
+		self nextConditionalSectionOn: writeStream.
+		streamReader pushBack: writeStream contents].

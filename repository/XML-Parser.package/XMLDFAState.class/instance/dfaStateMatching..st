@@ -6,12 +6,7 @@ dfaStateMatching: aMatcher
 	nfaStates do: [:state |
 		(state matches: aMatcher)
 			ifTrue: [state nextState addTo: matchingNfaStates]].
-	matchingNfaStates
-		ifEmpty: [ ^ nil].
 
-	^ cachedDfaStates
-		at: matchingNfaStates
-		ifAbsent: [
-			self class
-				nfaStates: matchingNfaStates
-				cachedDFAStates: cachedDfaStates].
+	^ matchingNfaStates
+		ifNotEmpty: [dfaStateCache dfaStateFor: matchingNfaStates]
+		ifEmpty: [nil].

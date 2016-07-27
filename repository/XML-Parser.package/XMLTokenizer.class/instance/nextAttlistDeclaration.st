@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextAttlistDeclaration
-	| element attribute attributeType defaultDeclaration  |
+	| element attribute attributeType defaultPragma defaultValue  |
 
 	self
 		expectNextAll: 'ATTLIST';
@@ -12,12 +12,14 @@ nextAttlistDeclaration
 		whileFalse: [
 			attribute := self nextName.
 			attributeType := self nextAttributeType.
-			defaultDeclaration := self nextAttributeDefaultDeclaration.
+			defaultPragma := self nextAttributeDefaultPragma.
+			defaultValue := self nextAttributeDefaultValueForPragma: defaultPragma.
 			driver
 				handleAttributeDeclaration: element
 				name: attribute
 				type: attributeType
-				default: defaultDeclaration].
+				defaultPragma: defaultPragma
+				defaultValue: defaultValue].
 
 	self
 		skipSeparatorsReplacingParameterEntities;

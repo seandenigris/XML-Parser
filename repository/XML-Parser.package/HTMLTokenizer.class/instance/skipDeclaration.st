@@ -4,7 +4,7 @@ skipDeclaration
 		or: [streamReader peek == $>]]
 		whileFalse: [
 			streamReader atQuote
-				ifTrue: [streamReader upTo: streamReader next]
+				ifTrue: [streamReader skipTo: streamReader next]
 				ifFalse: [streamReader next]].
 
 	streamReader atEnd

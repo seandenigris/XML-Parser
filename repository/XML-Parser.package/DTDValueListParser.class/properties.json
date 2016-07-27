@@ -3,10 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ListValueDelimiters" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"valueList" ],
+		"valueListStream",
+		"valueStream",
+		"listValues" ],
 	"name" : "DTDValueListParser",
 	"pools" : [
 		 ],

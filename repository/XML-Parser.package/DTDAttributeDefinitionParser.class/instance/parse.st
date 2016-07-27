@@ -4,10 +4,10 @@ parse
 
 	defaultValueValidator :=
 		(DefaultValueValidators
-			at: self parseDefaultPragma
+			at: defaultPragma
 			ifAbsent: [XMLDefaultValueAttributeValidator])
 				attribute: attribute
-				defaultValue: self parseDefaultValue.
+				defaultValue: defaultValue.
 
 	attributeValidator :=
 		self validatorClassForType
@@ -15,6 +15,6 @@ parse
 			attribute: attribute
 			defaultValueValidator: defaultValueValidator.
 	attributeValidator isValueListValidator
-		ifTrue: [attributeValidator allowedValues: (self parseEnumerationType)].
+		ifTrue: [attributeValidator allowedValues: (self parseValueListType)].
 
 	^ attributeValidator.

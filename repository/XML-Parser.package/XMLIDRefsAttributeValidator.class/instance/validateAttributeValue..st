@@ -4,4 +4,4 @@ validateAttributeValue: aValue
 		split: aValue
 		do: [:each |
 			self validateID: each.
-			self idrefs add: each].
+			self idRefs add: each].

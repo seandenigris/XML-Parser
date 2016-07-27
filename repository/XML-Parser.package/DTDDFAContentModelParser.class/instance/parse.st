@@ -2,14 +2,17 @@ parsing
 parse
 	contentModelStream := contentModel readStream.
 	nameStream := WriteStream on: (String new: 16).
-	nfaBuilder := XMLNFABuilder new.
 	operatorStack := OrderedCollection new.
+	nfaBuilder := XMLNFABuilder new.
 
 	[contentModelStream atEnd]
-		whileFalse: [
-			(self isOperatorOrParen: contentModelStream peek)
-				ifTrue: [self parseOperatorOrParen]
-				ifFalse: [self parseElementName]].
+		whileFalse: [ 
+			(self parserForSpecialCharacter: contentModelStream peek)
+				ifNotNil: [:selector |
+					self
+						perform: selector
+						with: contentModelStream next]
+				ifNil: [self parseElementName]].
 	self popRemainingOperators.
 
 	^ XMLDFAElementValidator

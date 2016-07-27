@@ -1,6 +1,8 @@
 adding
-addTo: aCollection
-	lastAddedTo == aCollection
+addTo: aStateSet
+	lastAddedTo == aStateSet
 		ifFalse: [
-			lastAddedTo := aCollection.
-			aCollection add: self]
+			"This avoids getting caught in a loop"
+			lastAddedTo := aStateSet.
+
+			aStateSet add: self]

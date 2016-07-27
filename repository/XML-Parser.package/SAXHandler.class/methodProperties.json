@@ -13,7 +13,7 @@
 		"parseFileNamed:" : "JAAyer 11/13/2010 20:43",
 		"parseURL:" : "monty 11/15/2013 23:35" },
 	"instance" : {
-		"attributeDeclaration:name:type:defaultDeclaration:" : "monty 11/14/2013 18:35",
+		"attributeDeclaration:name:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:57",
 		"characters:" : "mir 1/8/2002 18:27",
 		"comment:" : "JAAyer 11/10/2010 19:23",
 		"configuration" : "JAAyer 11/23/2010 14:37",
@@ -33,7 +33,7 @@
 		"endEntity:" : "JAAyer 11/10/2010 19:23",
 		"endPrefixMapping:" : "JAA 3/22/2011 11:32",
 		"externalEntityResolver" : "monty 12/8/2013 02:33",
-		"externalEntityResolver:" : "monty 12/29/2013 03:05",
+		"externalEntityResolver:" : "monty 12/29/2013 01:55",
 		"generalEntityDeclaration:publicID:systemID:ndata:" : "monty 11/14/2013 04:01",
 		"generalEntityDeclaration:replacement:" : "monty 11/14/2013 04:02",
 		"ignorableWhitespace:" : "mir 8/11/2000 16:25",

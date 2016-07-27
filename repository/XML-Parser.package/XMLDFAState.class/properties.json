@@ -7,8 +7,8 @@
 	"commentStamp" : "monty 12/28/2013 22:34",
 	"instvars" : [
 		"nfaStates",
-		"cachedDfaStates",
-		"transitions" ],
+		"transitions",
+		"dfaStateCache" ],
 	"name" : "XMLDFAState",
 	"pools" : [
 		 ],

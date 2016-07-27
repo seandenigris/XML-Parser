@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Validation-DFA",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 12/29/2013 03:32",
+	"instvars" : [
+		"firstState",
+		"cachedStates" ],
+	"name" : "XMLDFAStateCache",
+	"pools" : [
+		 ],
+	"super" : "XMLFAState",
+	"type" : "normal" }

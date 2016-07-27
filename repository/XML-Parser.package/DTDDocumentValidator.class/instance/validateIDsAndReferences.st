@@ -5,11 +5,11 @@ validateIDsAndReferences
 	ids := Set new.
 	references := Set new.
 	self allAttributeValidatorsDo: [:each |
-		(each respondsTo: #ids)
+		each hasIDs
 			ifTrue: [ids addAll: each ids]
 			ifFalse: [
-				(each respondsTo: #idrefs)
-					ifTrue: [references addAll: each idrefs]]].
+				each hasIDRefs
+					ifTrue: [references addAll: each idRefs]]].
 
 	references do: [:each |
 		(ids includes: each)

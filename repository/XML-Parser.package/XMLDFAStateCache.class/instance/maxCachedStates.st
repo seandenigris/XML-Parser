@@ -1,0 +1,3 @@
+private
+maxCachedStates
+	^ 32

@@ -4,7 +4,9 @@
 	"instance" : {
 		"attribute" : "monty 12/10/2013 06:17",
 		"element" : "monty 12/10/2013 06:17",
-		"furtherNormalizeAttributeValueIn:" : "monty 12/11/2013 02:14",
+		"furtherNormalizeAttributeValueIn:" : "monty 12/30/2013 22:41",
+		"hasIDRefs" : "monty 12/29/2013 02:57",
+		"hasIDs" : "monty 12/29/2013 02:57",
 		"isEntityValidator" : "monty 11/19/2013 21:59",
 		"isIDValidator" : "monty 12/10/2013 06:06",
 		"isValueListValidator" : "monty 12/9/2013 02:24",

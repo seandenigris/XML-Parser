@@ -4,7 +4,10 @@ replacementForLiteralContext
 
 	aReplacement := (String new: self replacement size) writeStream.
 	self replacement do: [:each |
-		(LiteralEscapes includesKey: each)
-			ifTrue: [aReplacement nextPutAll: (LiteralEscapes at: each)]
-			ifFalse: [aReplacement nextPut: each]].
+		each ==  $"
+			ifTrue: [aReplacement nextPutAll: '&#34;']
+			ifFalse: [
+				each == $'
+					ifTrue: [aReplacement nextPutAll: '&#39;']
+					ifFalse: [aReplacement nextPut: each]]].
 	^ aReplacement contents.

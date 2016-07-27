@@ -6,4 +6,7 @@ initialize
 	self
 		initializeNameStartChars;
 		initializeAdditionalNameChars;
-		initializePubidChars.
+		initializePubidChars;
+		initializeAttributeTypeDelimiters;
+		initializeValueListChars;
+		initializeUnaryOperatorChars.

@@ -13,7 +13,7 @@
 		"endNestingOfElement:" : "monty 12/13/2013 04:46",
 		"externalEntityResolver" : "monty 12/8/2013 02:33",
 		"externalSubsetParserOnURI:" : "monty 12/12/2013 01:58",
-		"handleAttributeDeclaration:name:type:default:" : "monty 12/10/2013 06:48",
+		"handleAttributeDeclaration:name:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:56",
 		"handleCData:" : "JAAyer 11/27/2010 07:22",
 		"handleComment:" : "monty 12/11/2013 22:26",
 		"handleElementDeclaration:contentModel:" : "monty 12/10/2013 06:32",

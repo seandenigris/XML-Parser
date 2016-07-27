@@ -11,7 +11,7 @@ furtherNormalizeAttributeValueIn: anAttributeDictionary
 				ifTrue: [
 					readStream skipSeparators.
 					readStream atEnd
-						ifFalse: [writeStream nextPut: Character space]]
+						ifFalse: [writeStream space]]
 				ifFalse: [writeStream nextPut: readStream next]].
 	anAttributeDictionary
 		at: attribute

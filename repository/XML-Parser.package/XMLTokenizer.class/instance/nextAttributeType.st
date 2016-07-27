@@ -1,18 +1,16 @@
 tokenizing - dtd
 nextAttributeType
-	| nextChar type |
+	| nextChar |
 
-	type := streamWriter writeWith: [:writeStream |
+	^ streamWriter writeWith: [:writeStream |
 		[self skipSeparatorsReplacingParameterEntities.
 		(nextChar := streamReader peek) isNil
-			or: [(String with: $# with: $> with: $' with:  $") includes: nextChar]]
+			or: [AttributeTypeDelimiters includes: nextChar]]
 			whileFalse: [
-				(')|(' includes: nextChar)
-					ifTrue: [writeStream nextPut: streamReader next]
-					ifFalse: [
-						writeStream
-							nextPutAll: self nextNmtoken;
-							nextPut: Character space]].
-		writeStream contents].
-
-	^ self removeTrailingSpacesFrom:  type.
+				(ValueListChars includes: nextChar)
+					ifTrue: [
+						writeStream position > 0
+							ifTrue: [writeStream space].
+						writeStream nextPut: streamReader next]
+					ifFalse: [self nextNmtokenOn: writeStream]].
+		writeStream contents]

@@ -1,12 +1,12 @@
 {
 	"class" : {
-		"nfaStates:" : "monty 12/28/2013 19:48",
-		"nfaStates:cachedDFAStates:" : "monty 12/28/2013 19:48" },
+		"nfaStates:" : "monty 12/29/2013 01:11",
+		"nfaStates:dfaStateCache:" : "monty 12/29/2013 01:09" },
 	"instance" : {
-		"addToCache" : "monty 12/28/2013 19:47",
 		"detectNextStateMatching:" : "monty 12/28/2013 00:21",
 		"detectNextStateMatching:ifNone:" : "monty 12/28/2013 19:54",
-		"dfaStateMatching:" : "monty 12/28/2013 22:23",
+		"dfaStateMatching:" : "monty 12/29/2013 03:33",
 		"isAccepting" : "monty 12/28/2013 18:54",
-		"setNFAStates:cachedDFAStates:" : "monty 12/28/2013 19:48",
+		"nfaStates" : "monty 12/29/2013 01:10",
+		"setNFAStates:dfaStateCache:" : "monty 12/29/2013 03:25",
 		"transitions" : "monty 12/28/2013 01:09" } }

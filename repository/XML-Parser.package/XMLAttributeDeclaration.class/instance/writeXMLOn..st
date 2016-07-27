@@ -4,4 +4,5 @@ writeXMLOn: aWriter
 		element: self element;
 		attribute: self attribute;
 		type: self type;
-		defaultDeclaration: self defaultDeclaration
+		defaultPragma: self defaultPragma;
+		defaultValue: self defaultValue

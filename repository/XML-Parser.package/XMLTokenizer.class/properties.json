@@ -4,8 +4,11 @@
 		 ],
 	"classvars" : [
 		"AdditionalNameChars",
+		"AttributeTypeDelimiters",
 		"NameStartChars",
-		"PubidChars" ],
+		"PubidChars",
+		"UnaryOperatorChars",
+		"ValueListChars" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"activeEntities" ],

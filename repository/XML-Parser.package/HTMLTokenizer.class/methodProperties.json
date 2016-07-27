@@ -5,7 +5,7 @@
 		"htmlEntityPage" : "monty 12/1/2013 13:17",
 		"initialize" : "monty 12/19/2013 07:23",
 		"initializeHTMLNameDelimiters" : "monty 12/1/2013 00:49",
-		"initializePredefinedEntities" : "monty 12/18/2013 23:17",
+		"initializePredefinedEntities" : "monty 12/29/2013 00:17",
 		"isNonHTMLCodeSectionTag:" : "monty 12/1/2013 01:02",
 		"isNonHTMLSectionTag:" : "monty 12/1/2013 01:02" },
 	"instance" : {
@@ -14,7 +14,7 @@
 		"characterFromCodePoint:" : "monty 12/18/2013 23:16",
 		"expectNext:" : "monty 11/22/2013 19:19",
 		"expectNextAll:" : "monty 11/22/2013 19:11",
-		"expectTerminator:" : "monty 11/22/2013 19:19",
+		"expectTerminator:" : "monty 12/29/2013 00:17",
 		"expectUpToAll:" : "monty 12/8/2013 04:38",
 		"nextAttributeValue" : "monty 12/9/2013 01:34",
 		"nextContentMarkupToken" : "monty 12/10/2013 07:27",
@@ -34,6 +34,6 @@
 		"nextTag" : "monty 12/1/2013 01:04",
 		"nextValue" : "monty 12/6/2013 08:37",
 		"nextXMLDeclAttributeValue" : "monty 12/9/2013 06:53",
-		"skipDeclaration" : "monty 12/7/2013 03:33",
+		"skipDeclaration" : "monty 12/29/2013 00:17",
 		"skipNonDeclarationOrEntity" : "monty 11/22/2013 20:13",
 		"tokenContextClass" : "monty 11/23/2013 04:58" } }

@@ -6,7 +6,7 @@ initializePredefinedEntities
 	entityPage := self htmlEntityPage readStream.
 	[entityPage atEnd]
 		whileFalse: [
-			entityPage upTo: $[.
+			entityPage skipTo: $[.
 			entityName := entityPage upTo: $=.
 			codePoint := entityPage upTo: $].
 			(entityName notEmpty and: [codePoint notEmpty])

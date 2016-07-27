@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"idrefs" : "monty 11/19/2013 17:33",
-		"validateAttributeValue:" : "monty 12/11/2013 02:12" } }
+		"hasIDRefs" : "monty 12/29/2013 02:58",
+		"idRefs" : "monty 12/29/2013 02:58",
+		"validateAttributeValue:" : "monty 12/29/2013 02:58" } }

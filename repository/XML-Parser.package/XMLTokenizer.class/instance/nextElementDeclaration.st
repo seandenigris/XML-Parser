@@ -14,10 +14,10 @@ nextElementDeclaration
 				nextChar == $#
 					ifTrue: [writeStream nextPutAll: (self expectNextAll: '#PCDATA')]
 					ifFalse: [
-						('|,)(' includes: nextChar)
+						(nextChar == $, or: [ValueListChars includes: nextChar])
 							ifTrue: [writeStream nextPut: streamReader next]
-							ifFalse: [writeStream nextPutAll: self nextName]].
-				('?*+' includes: streamReader peek)
+							ifFalse: [self nextNameOn: writeStream]].
+				(UnaryOperatorChars includes: streamReader peek)
 					ifTrue: [writeStream nextPut: streamReader next]].
 		writeStream contents].
 

@@ -1,3 +1,3 @@
 accessing
-idrefs
+idRefs
 	^ idrefs ifNil: [idrefs := Set new].

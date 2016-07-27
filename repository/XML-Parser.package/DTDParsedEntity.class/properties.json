@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"LiteralEscapes" ],
+		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"name",

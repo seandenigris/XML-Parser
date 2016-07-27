@@ -1,3 +1,6 @@
 instance creation
 on: aString
-	^ super on: (aString copyAfter: Character space)
+	^ super on:
+		(aString
+			copyFrom: (aString indexOf: $()
+			to: aString size)

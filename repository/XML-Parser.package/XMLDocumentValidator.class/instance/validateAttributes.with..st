@@ -3,11 +3,13 @@ validateAttributes: anAttributeDictionary with: aValidatorDictionary
 	| unvalidatedAttributes |
 
 	unvalidatedAttributes := anAttributeDictionary keys asSet.
-	aValidatorDictionary keysAndValuesDo: [:attribute :validator |
-		validator validateAttributes: anAttributeDictionary.
-		unvalidatedAttributes
-			remove: attribute
-			ifAbsent: []].
+	aValidatorDictionary
+		ifNotNil: [
+			aValidatorDictionary keysAndValuesDo: [:attribute :validator |
+				validator validateAttributes: anAttributeDictionary.
+				unvalidatedAttributes
+					remove: attribute
+				ifAbsent: []]].
 
 	unvalidatedAttributes
 		ifNotEmpty: [self unvalidatedAttributes: unvalidatedAttributes].
