@@ -10,9 +10,9 @@ nextDelimitedBy: aDelimiter and: aSecondDelimiter entityChar: anEntityStartChar 
 			or: [nextChar == aDelimiter
 				or: [nextChar == aSecondDelimiter]]]
 			whileFalse: [
+				streamReader next.
 				nextChar == $&
 					ifTrue: [
-						streamReader next.
 						streamReader peek == $#
 							ifTrue: [
 								writeStream nextPut: self nextDecodedCharReference.
@@ -28,7 +28,6 @@ nextDelimitedBy: aDelimiter and: aSecondDelimiter entityChar: anEntityStartChar 
 										writeStream nextPut: $&.
 										isIgnorableWhitespace := false]]]
 					ifFalse: [
-						streamReader next.
 						nextChar == anEntityStartChar
 							ifTrue: [self nextParameterEntityReference]
 							ifFalse: [
