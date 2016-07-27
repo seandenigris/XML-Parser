@@ -1,5 +1,3 @@
 sorting
 sort
-	self sort: [:a :b |
-		(a isElement & b isElement) not
-			or: [a name <= b name]]
+	self sort: [:a :b | a sortKey <= b sortKey]

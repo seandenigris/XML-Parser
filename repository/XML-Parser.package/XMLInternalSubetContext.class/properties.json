@@ -10,5 +10,5 @@
 	"name" : "XMLInternalSubetContext",
 	"pools" : [
 		 ],
-	"super" : "XMLSubsetContext",
+	"super" : "XMLDoctypeContext",
 	"type" : "normal" }

@@ -11,6 +11,7 @@
 		"ancestorNodesDo:" : "monty 11/6/2014 16:57",
 		"asString" : "monty 2/6/2014 20:06",
 		"canHaveChildren" : "monty 11/23/2014 20:53",
+		"canonicallyEquals:" : "monty 12/6/2014 12:58",
 		"canonicallyPrintOn:" : "monty 11/19/2014 23:49",
 		"canonicallyPrinted" : "monty 11/19/2014 23:49",
 		"configuration" : "monty 11/2/2014 19:15",
@@ -46,6 +47,7 @@
 		"printWithoutSelfClosingTagsOn:" : "monty 10/12/2014 21:26",
 		"printedWithoutSelfClosingTags" : "monty 10/12/2014 21:27",
 		"rawContentString" : "monty 11/19/2014 23:44",
+		"sortKey" : "monty 12/4/2014 14:00",
 		"withNewXMLWriterOn:do:" : "monty 10/31/2014 20:56",
 		"withNewXMLWriterOn:do:whenAbsent:" : "monty 10/31/2014 20:59",
-		"writeXMLOn:" : "JAA 3/22/2011 15:15" } }
+		"writeXMLOn:" : "monty 12/6/2014 13:02" } }

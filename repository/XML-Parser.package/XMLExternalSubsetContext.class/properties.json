@@ -10,5 +10,5 @@
 	"name" : "XMLExternalSubsetContext",
 	"pools" : [
 		 ],
-	"super" : "XMLSubsetContext",
+	"super" : "XMLTokenContext",
 	"type" : "normal" }

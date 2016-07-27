@@ -1,0 +1,3 @@
+testing
+nextTokenFrom: aTokenizer
+	aTokenizer nextSubsetToken

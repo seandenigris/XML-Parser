@@ -3,11 +3,10 @@ writeXMLOn: aWriter
 	| tagWriter |
 
 	tagWriter := aWriter tag: self name.
-
 	self hasNamespaces
-		ifTrue: [self writeNamespaceDeclarationsOn: tagWriter].
+		ifTrue: [tagWriter setXmlnsDeclarations: self namespaceScope prefixMappings].
 	self hasAttributes
-		ifTrue: [self writeAttributesOn: tagWriter].
+		ifTrue: [tagWriter setAttributes: self attributeNodes asDictionary].
 
 	tagWriter with: [
 		self hasChildren

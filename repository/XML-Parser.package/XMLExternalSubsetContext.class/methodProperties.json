@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"isExternalSubsetContext" : "monty 11/9/2014 16:14" } }
+		"isExternalSubsetContext" : "monty 11/9/2014 16:14",
+		"isSubsetContext" : "monty 12/3/2014 07:24",
+		"nextTokenFrom:" : "monty 12/3/2014 07:24" } }

@@ -1,3 +1,3 @@
 sorting
 sort
-	self sort: [:a :b | a name <= b name]
+	self sort: [:a :b | a sortKey <= b sortKey]
