@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Opax",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packages" ],
+	"name" : "OPOpaxTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

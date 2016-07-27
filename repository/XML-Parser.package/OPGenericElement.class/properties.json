@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser-Opax",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tag",
+		"attributes",
+		"children",
+		"characters" ],
+	"name" : "OPGenericElement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

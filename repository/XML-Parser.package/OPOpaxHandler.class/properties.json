@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Opax",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stack" ],
+	"name" : "OPOpaxHandler",
+	"pools" : [
+		 ],
+	"super" : "SAXHandler",
+	"type" : "normal" }

@@ -1,0 +1,20 @@
+{
+	"category" : "XML-Parser-Opax",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"cStackGet",
+		"cStackSet",
+		"cStartDocument",
+		"cEndDocument",
+		"cEndElement",
+		"cStartElement",
+		"cChar" ],
+	"name" : "OPOpaxHandlerTestClass",
+	"pools" : [
+		 ],
+	"super" : "OPOpaxHandler",
+	"type" : "normal" }

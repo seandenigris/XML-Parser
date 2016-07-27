@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Opax",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OPTest1Element",
+	"pools" : [
+		 ],
+	"super" : "OPGenericElement",
+	"type" : "normal" }
