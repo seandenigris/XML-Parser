@@ -6,7 +6,7 @@ testCDATASection
 		(XMLDOMParser on: self exampleCDATASectionXML readStream)
 			preservesCDataNodes: true;
 			parseDocument.
-	element := xmlDocument firstTagNamed: 'test-data'.
+	element := xmlDocument findElementNamed: 'test-data'.
 
 	self assert: element contentString = 'this is CDATA test content 1 < 2 & 5 > 3'.
 	

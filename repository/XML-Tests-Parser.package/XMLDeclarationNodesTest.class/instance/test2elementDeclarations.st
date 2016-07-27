@@ -1,12 +1,12 @@
 tests
 test2elementDeclarations
 	self
-		assertElementDecl: XMLElementDeclarationNode new
+		assertElementDecl: XMLElementDeclaration new
 		hasName: ''
 		contentModel: ''.
 	self
 		assertElementDecl:
-			(XMLElementDeclarationNode
+			(XMLElementDeclaration
 				name: 'testElement'
 				contentModel: '(one,two)')
 		hasName: 'testElement'

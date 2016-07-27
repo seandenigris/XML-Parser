@@ -3,7 +3,10 @@ testExampleAddressBook
 	| tokenizer |
 	"self debug: #testExampleAddressBook"
 
-	tokenizer := XMLTokenizer on: self addressBookXML readStream.
+	tokenizer :=
+		XMLTokenizer
+			driver: nil
+			on: self addressBookXML readStream.
 
 	"We enumerate the first characters of the addressbook example.
 	The file being parsed begins with <addressbook"

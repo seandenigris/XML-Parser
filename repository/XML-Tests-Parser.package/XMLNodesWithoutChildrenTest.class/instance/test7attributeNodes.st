@@ -4,7 +4,6 @@ test7attributeNodes
 
 	attribute := XMLAttribute new.
 	self
-		assertNode: attribute hasType: #isAttribute;
 		assertAttribute: attribute hasName: '' value: '';
 		assertNode: attribute hasName: '' namespaceURI: '';
 		assertAttribute: (attribute name: 'name') hasName: 'name' value: '';

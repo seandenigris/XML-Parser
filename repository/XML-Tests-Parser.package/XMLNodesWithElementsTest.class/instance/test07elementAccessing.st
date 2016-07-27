@@ -9,15 +9,11 @@ test07elementAccessing
 		assert: (node elementAt: 'absent') isNil;
 		assert: (node elementAt: 'absent' ifAbsent: ['absent']) = 'absent';
 		assert: (node elementsAt: 'absent') isEmpty;
-		assert: (node elementAtAny: #('absent')) isNil;
-		assert: (node elementAtAny: #('absent') ifAbsent: ['absent']) = 'absent';
 		assert: (node elementAt: 'testOne') == elements first;
 		assert: (node elementAt: 'testTwo') == elements second;
 		assert: (node elementsAt: 'testOne') = ((elements first: 3) copyWithout: elements second);
 		assert: (node elementAt: 'testPrefix:testOne') == elements third;
 		assert: (node elementsAt: 'testPrefix:testOne') = (XMLOrderedList with: elements third);
-		assert: (node elementAtAny: #('testTwo' 'testPrefix:testOne')) == elements second;
-		assert: (node elementAtAny: #('absent' 'testThree')) == elements fourth;
 		assert: (node elementAt: 'testOne' namespaceURI: 'absent') isNil;
 		assert: (node elementAt: 'absent' namespaceURI: 'http://testPrefix') isNil;
 		assert: (node elementAt: 'testOne' namespaceURI: 'absent' ifAbsent: ['absent']) = 'absent';

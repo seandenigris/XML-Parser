@@ -1,13 +1,13 @@
 tests
 test4notationDeclarations
 	self
-		assertNotationDecl: XMLNotationDeclarationNode new
+		assertNotationDecl: XMLNotationDeclaration new
 		hasName: ''
 		publicID: ''
 		systemID: ''.
 	self
 		assertNotationDecl:
-			(XMLNotationDeclarationNode
+			(XMLNotationDeclaration
 				name: 'testNotation'
 				publicID: '//test//'
 				systemID: '')
@@ -16,7 +16,7 @@ test4notationDeclarations
 		systemID: ''.
 	self
 		assertNotationDecl:
-			(XMLNotationDeclarationNode
+			(XMLNotationDeclaration
 				name: 'testNotation'
 				publicID: '//test//'
 				systemID: 'http://test/')
@@ -25,7 +25,7 @@ test4notationDeclarations
 		systemID: 'http://test/'.
 	self
 		assertNotationDecl:
-			(XMLNotationDeclarationNode
+			(XMLNotationDeclaration
 				name: 'testNotation'
 				publicID: ''
 				systemID: 'http://test/')

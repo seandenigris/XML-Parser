@@ -1,14 +1,14 @@
 tests
 test1attributeDeclarations
 	self
-		assertAttributeDecl: XMLAttributeDeclarationNode new
+		assertAttributeDecl: XMLAttributeDeclaration new
 		hasElementName: ''
 		attributeName: ''
 		type: ''
 		defaultDecl: ''.
 	self
 		assertAttributeDecl:
-			(XMLAttributeDeclarationNode
+			(XMLAttributeDeclaration
 				elementName: 'testElement'
 				attributeName: 'testAttribute'
 				type: 'CDATA'
@@ -19,7 +19,7 @@ test1attributeDeclarations
 		defaultDecl: ''.
 	self
 		assertAttributeDecl:
-			(XMLAttributeDeclarationNode
+			(XMLAttributeDeclaration
 				elementName: 'testElement'
 				attributeName: 'testAttribute'
 				type: 'CDATA'

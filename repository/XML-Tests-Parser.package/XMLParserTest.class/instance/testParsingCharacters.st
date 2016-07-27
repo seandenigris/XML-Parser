@@ -1,13 +1,14 @@
 tests
 testParsingCharacters
-	| parser |
-	"This test is actually not that useful. This is not the proper way of using the parser. This test is here just for specification purpose"
+	| tokenizer |
+	"This test is actually not that useful. This is not the proper way of using the parser.
+	This test is here just for specification purpose"
 	"self debug: #testParsingCharacters"
 
-	parser := SAXDriver on: self addressBookXML readStream.
+	tokenizer := XMLTokenizer driver: nil on: self addressBookXML readStream.
 
-	self assert: parser streamReader next = $<.
-	self assert: parser streamReader next = $a.
-	self assert: parser streamReader next = $d.
-	self assert: parser streamReader next = $d.
-	self assert: parser streamReader next = $r.
+	self assert: tokenizer streamReader next = $<.
+	self assert: tokenizer streamReader next = $a.
+	self assert: tokenizer streamReader next = $d.
+	self assert: tokenizer streamReader next = $d.
+	self assert: tokenizer streamReader next = $r.
