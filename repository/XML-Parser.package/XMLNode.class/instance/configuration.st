@@ -1,3 +1,3 @@
 accessing
 configuration
-	^ self document ifNotNil: [:node | node configuration]
+	^ self parent ifNotNil: [:node | node configuration]
