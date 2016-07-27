@@ -1,6 +1,6 @@
 validation
-validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationContainer
-	unparsedEntities := aDeclarationContainer unparsedEntities.
+validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
+	unparsedEntities := aDeclarationDelegate unparsedEntities.
 	super
 		validateAndAddTo: anAttributeValidatorDictionary
-		usingDeclarationsFrom: aDeclarationContainer.
+		usingDeclarationsFrom: aDeclarationDelegate.

@@ -2,11 +2,10 @@ tokenizing
 nextPITarget
 	| target |
 
-	target := self nextName.
-	target asLowercase = 'xml'
+	((target := self nextName) sameAs: 'xml')
 		ifTrue: [
-			(target ~= 'xml')
-				ifTrue: [self parseError: 'The "xml" target must be lowercase'].
+			target = 'xml'
+				ifFalse: [self parseError: 'The "xml" target must be lowercase'].
 			(context isInProlog or: [context isInTextDeclaration])
 				ifFalse: [
 					self parseError:

@@ -5,8 +5,7 @@ nextNmtokenOn: aWriteStream
 
 	oldPosition := aWriteStream position.
 	[(nextChar := streamReader peek) notNil
-		and: [(NameStartChars includes: nextChar)
-			or: [AdditionalNameChars includes: nextChar]]]
+		and: [self isNmtokenChar: nextChar]]
 		whileTrue: [aWriteStream nextPut: streamReader next].
 
 	(aWriteStream position > oldPosition)

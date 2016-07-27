@@ -18,7 +18,7 @@ nextTag
 			streamReader skipSeparators.
 			attributeValue := self nextAttributeValue.
 	
-			((attributeName at: 1) == $x "fast test to avoid the more expensive"
+			((attributeName at: 1) == $x "fast test to skip the others"
 				and: [driver usesNamespaces
 					and: [attributeName beginsWith: 'xmlns']])
 				ifTrue: [

@@ -1,5 +1,5 @@
 validation
-validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationContainer
+validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
 	anAttributeValidatorDictionary valuesDo: [:each |
 		each isIDValidator
 			ifTrue: [
@@ -8,4 +8,4 @@ validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclara
 	
 	super
 		validateAndAddTo: anAttributeValidatorDictionary
-		usingDeclarationsFrom: aDeclarationContainer
+		usingDeclarationsFrom: aDeclarationDelegate
