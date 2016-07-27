@@ -1,18 +1,18 @@
-testing
-cannotNestWithinSelf: anElementName
+private
+cannotSelfNestTag: anHtmlTagInfo
 	| tagGroup |
 
-	(NonNestableElements includes: anElementName)
+	(anHtmlTagInfo isNonNestable)
 		ifFalse: [^ false].
 		
 	"tags like <td> can nest in each other if there is a <table> between
 	them like <td><table><tr><td>...."
-	((tagGroup := NestableTagGroups at: anElementName ifAbsent: [#()])
+	((tagGroup := anHtmlTagInfo nestableTagGroup)
 		anySatisfy: [:each | self hasOpenElement: each])
 		ifFalse: [^ true].
 
 	self openElementsReverseDo: [:each |
-		each = anElementName
+		each = anHtmlTagInfo name
 			ifTrue: [^ true].
 		(tagGroup includes: each)
 			ifTrue: [^ false]].

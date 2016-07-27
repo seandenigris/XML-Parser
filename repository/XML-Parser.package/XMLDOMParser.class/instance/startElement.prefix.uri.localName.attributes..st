@@ -5,8 +5,8 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 			classForElement: aQualifiedName
 			prefix: aPrefix
 			uri: aUri
-			localName: aLocalName)
-				qualifiedName: aQualifiedName
+			localName: aLocalName) new
+				setQualifiedName: aQualifiedName
 				prefix: aPrefix
 				localName: aLocalName
 				attributes: aDictionary)

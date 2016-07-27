@@ -1,5 +1,5 @@
 checking
-elementsToEndBeforeEnding: anElementName do: aBlock
+beforeEnding: anElementName elementsToEndDo: aBlock
 	self openElementsReverseDo: [:each |
 		each = anElementName
 			ifTrue: [^ self].

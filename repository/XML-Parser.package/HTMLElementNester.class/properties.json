@@ -3,11 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"BodySectionElements",
-		"HeadSectionElements",
-		"MutuallyExcludingTags",
-		"NestableTagGroups",
-		"NonNestableElements",
+		"HtmlTagInformation",
+		"UniqueElements",
 		"VoidElements" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [

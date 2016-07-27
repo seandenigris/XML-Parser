@@ -1,3 +1,3 @@
 testing
 isVoidElement: anElementName
-	^ VoidElements includes: anElementName
+	^ (HtmlTagInformation at: anElementName ifAbsent: [^ false]) isSelfClosing

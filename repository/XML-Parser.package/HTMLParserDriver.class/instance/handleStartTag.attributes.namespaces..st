@@ -4,10 +4,9 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		ifTrue: [^ self].
 
 	self elementNester
-		elementsToEndBeforeStarting: anElementName
-		do: [:each | self endElement: each];
-		elementsToStartBeforeStarting: anElementName
-		do: [:each | self startElement: each].
+		beforeStarting: anElementName
+		elementsToEndDo: [:each | self endElement: each]
+		elementsToStartDo: [:each | self startElement: each].
 	self startElement: anElementName attributes: anAttributeDictionary.
 
 	(self elementNester isVoidElement: anElementName)

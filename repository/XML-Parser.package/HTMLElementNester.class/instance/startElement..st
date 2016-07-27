@@ -1,10 +1,11 @@
 checking
 startElement: anElementName
-	self openElementsByName
-		at: anElementName
-		put:
-			(self openElementsByName
-				at: anElementName
-				ifAbsent: [0]) + 1.
+	| association |
+
+	association :=
+		self openElementsByName
+			associationAt: anElementName
+			ifAbsent: [self openElementsByName add: (anElementName -> 0)].
+	association value: association value + 1.
 
 	super startElement: anElementName.

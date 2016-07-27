@@ -1,3 +1,3 @@
 accessing
 elementAfter: anElement
-	^ self elements after: anElement
+	^ self nodes elementAfter: anElement

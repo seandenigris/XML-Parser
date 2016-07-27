@@ -1,0 +1,1 @@
+This class is used by the HTMLElementNester to store information about specific tags and make it faster to lookup.

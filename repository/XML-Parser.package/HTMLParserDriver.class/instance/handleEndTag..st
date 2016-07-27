@@ -1,10 +1,11 @@
 handling tokens
 handleEndTag: anElementName 
-	((self elementNester isVoidElement: anElementName)
-		or: [(self elementNester hasOpenElement: anElementName) not])
+	(self elementNester isVoidElement: anElementName)
 		ifTrue: [^ self].
-
+	(self elementNester hasOpenElement: anElementName)
+		ifFalse: [self startElement: anElementName].
+		
 	self elementNester
-		elementsToEndBeforeEnding: anElementName
-		do: [:each | self endElement: each].
+		beforeEnding: anElementName
+		elementsToEndDo: [:each | self endElement: each].
 	self endElement: anElementName.

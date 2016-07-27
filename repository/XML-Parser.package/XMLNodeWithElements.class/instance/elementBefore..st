@@ -1,3 +1,3 @@
 accessing
 elementBefore: anElement
-	^ self elements before: anElement
+	^ self nodes elementBefore: anElement

@@ -1,10 +1,11 @@
 checking
 endElement: anElementName
-	self openElementsByName
-		at: anElementName
-		put:
-			((self openElementsByName
-				at: anElementName
-				ifAbsent: [1]) - 1 max: 0).
+	| association |
+
+	association :=
+		self openElementsByName
+			associationAt: anElementName
+			ifAbsent: [self openElementsByName add: (anElementName -> 1)].
+	association value: (association value - 1 max: 0).
 
 	super endElement: anElementName.

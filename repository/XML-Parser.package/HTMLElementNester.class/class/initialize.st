@@ -4,9 +4,6 @@ initialize
 
 	super initialize.
 	self
-		initializeHeadSectionElements;
-		initializeBodySectionElements;
-		initializeNestableTagGroups;
-		initializeNonNestableElements;
-		initializeMutuallyExcludingTags;
-		initializeVoidElements.
+		initializeUniqueElements;
+		initializeVoidElements;
+		initializeHTMLTagInformation.
