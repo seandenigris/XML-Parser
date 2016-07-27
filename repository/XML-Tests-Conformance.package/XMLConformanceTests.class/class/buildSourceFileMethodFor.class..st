@@ -2,8 +2,8 @@ building subclasses
 buildSourceFileMethodFor: aFileReference class: aClass
 	| sourceSelector pathString sourceStream |
 
-	sourceSelector := (self sourceSelectorFrom: aFileReference).
-	pathString := self pathStringFrom: aFileReference.
+	sourceSelector := (self sourceSelectorFor: aFileReference).
+	pathString := self relativePathStringFor: aFileReference.
 
 	sourceStream := (String new: aFileReference size) writeStream.
 	aFileReference readStreamDo: [:readStream |

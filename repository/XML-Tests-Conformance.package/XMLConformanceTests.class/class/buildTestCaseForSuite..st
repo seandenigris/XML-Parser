@@ -7,7 +7,7 @@ buildTestCaseForSuite: aSuite
 		XMLConformanceFileVisitor
 			suite: aSuite
 			skipFilesInBase: (self suitesWithSkippableBases includes: aSuite).
-	(PreorderGuide for: fileVisitor) show: (self directoryForSuite: aSuite).
+	(PreorderGuide for: fileVisitor) show: (self fileReferenceForSuite: aSuite).
 
 	badSourceFiles := OrderedCollection new.
 	(fileVisitor passingTestFiles,

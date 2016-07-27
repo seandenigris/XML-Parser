@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"virtualPath",
+		"sourceClass" ],
 	"name" : "XMLConformanceVirtualFileHandle",
 	"pools" : [
 		 ],
-	"super" : "XMLFileHandle",
+	"super" : "Object",
 	"type" : "normal" }

@@ -1,5 +1,6 @@
 {
 	"class" : {
-		 },
+		"virtualPath:sourceClass:" : "monty 10/27/2014 17:24" },
 	"instance" : {
-		"getFromClass:" : "monty 1/10/2014 01:39" } }
+		"get" : "monty 10/27/2014 17:22",
+		"setVirtualPath:sourceClass:" : "monty 10/27/2014 17:21" } }
