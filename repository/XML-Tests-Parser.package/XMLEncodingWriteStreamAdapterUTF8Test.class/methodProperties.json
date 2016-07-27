@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"decodedInvalidCharacters" : "monty 3/8/2016 16:59",
 		"inputCollection" : "monty 2/12/2016 00:03",
 		"outputCollection" : "monty 2/12/2016 00:03",
 		"streamConverterClass" : "monty 2/12/2016 00:04" } }

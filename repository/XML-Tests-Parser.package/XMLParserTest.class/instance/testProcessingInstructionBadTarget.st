@@ -1,10 +1,7 @@
 tests
 testProcessingInstructionBadTarget
-	#('<test><?xml version="1.0"?></test>'
-		'<test><?XML version="1.0"?></test>'
-		'<test><?XmL version="1.0"?></test>'
-		'<test><?xMl version="1.0"?></test>')
+	XMLStringMethodsTest badNames, #('xml' 'XML' 'XmL' 'xMl' 'xML' 'XMl')
 		do: [:each |
 			self
-				should: [SAXHandler parse: each]
+				should: [SAXHandler parse: '<?', each, ' value?><test/>']
 				raise: XMLWellFormednessException]

@@ -17,7 +17,7 @@
 		"sourceXMLWithEncoding:andASCIIContentAsUTF32LE:" : "monty 2/12/2016 00:20",
 		"stringFrom:" : "monty 2/14/2016 04:02",
 		"testDecodingBinary" : "monty 2/13/2016 04:15",
-		"testDecodingCharacterReferences" : "monty 2/11/2016 02:48",
+		"testDecodingCharacterReferences" : "monty 3/26/2016 01:14",
 		"testDecodingDisabledEncodingDeclaration" : "monty 2/12/2016 00:22",
 		"testDecodingDisabledEncodingDetection" : "monty 2/12/2016 00:23",
 		"testEncodingDeclarationLatin1" : "monty 2/10/2016 23:40",

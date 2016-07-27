@@ -2,14 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"decodedInvalidCharacters" : "monty 3/8/2016 16:58",
-		"decodedUnicodeInvalidCharacters" : "monty 3/14/2016 02:06",
 		"newStreamAdapterOn:" : "monty 3/5/2016 12:39",
 		"streamAdapterClass" : "monty 3/5/2016 12:38",
 		"streamConverterClass" : "monty 3/5/2016 12:26",
 		"testHasDefaultStreamConverter" : "monty 3/5/2016 16:09",
 		"testHasNullStreamConverter" : "monty 3/5/2016 16:09",
-		"testInvalidCharacters" : "monty 3/8/2016 16:54",
 		"testIsConvertingStreamAdapter" : "monty 3/5/2016 12:39",
 		"testNextPutByteOrderMark" : "monty 3/5/2016 12:39",
 		"testStreamConverter" : "monty 3/5/2016 12:39" } }

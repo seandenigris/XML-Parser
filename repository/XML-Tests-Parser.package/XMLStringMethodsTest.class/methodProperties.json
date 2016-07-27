@@ -1,7 +1,18 @@
 {
 	"class" : {
-		 },
+		"badNCNames" : "monty 3/24/2016 21:43",
+		"badNames" : "monty 3/24/2016 21:43",
+		"badNmtokenChars" : "monty 3/24/2016 21:43",
+		"badNmtokens" : "monty 3/24/2016 21:43",
+		"nonNCNameNames" : "monty 3/24/2016 21:43",
+		"nonNameNmtokens" : "monty 3/24/2016 21:43",
+		"nonNameStartCharNameChars" : "monty 3/24/2016 21:43" },
 	"instance" : {
+		"badNCNames" : "monty 3/24/2016 21:43",
+		"badNames" : "monty 3/24/2016 21:43",
+		"badNmtokens" : "monty 3/24/2016 21:43",
+		"nonNCNameNames" : "monty 3/24/2016 21:43",
+		"nonNameNmtokens" : "monty 3/24/2016 21:43",
 		"testAsXMLEscapedString" : "monty 2/15/2016 23:37",
 		"testAsXMLFileHandle" : "monty 3/4/2016 16:32",
 		"testAsXMLHTTPRequest" : "monty 3/6/2016 10:42",
@@ -9,6 +20,9 @@
 		"testAsXMLString" : "monty 2/15/2016 23:38",
 		"testHasPrefixBeforeLocalName" : "monty 11/22/2014 20:00",
 		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
+		"testIsXMLNCName" : "monty 3/24/2016 21:44",
+		"testIsXMLName" : "monty 3/24/2016 21:44",
+		"testIsXMLNmtoken" : "monty 3/24/2016 21:44",
 		"testLocalNameAfterPrefix" : "monty 11/16/2014 20:22",
 		"testParseXML" : "monty 3/7/2016 20:11",
 		"testPrefixBeforeLocalName" : "monty 11/17/2014 06:36" } }
