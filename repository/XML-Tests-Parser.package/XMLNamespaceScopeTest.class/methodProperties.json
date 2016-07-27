@@ -9,6 +9,6 @@
 		"testEquals" : "monty 12/28/2014 23:31",
 		"testInheritMappingsFrom" : "monty 12/28/2014 23:57",
 		"testMapPrefixTo" : "monty 12/28/2014 23:22",
-		"testSetFromDictionary" : "monty 12/29/2014 18:23",
+		"testMapPrefixesAndURIs" : "monty 1/5/2015 21:05",
 		"testSize" : "monty 12/28/2014 23:30",
 		"testUnmapPrefix" : "monty 12/28/2014 23:21" } }

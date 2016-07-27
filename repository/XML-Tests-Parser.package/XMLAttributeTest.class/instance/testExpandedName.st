@@ -12,4 +12,4 @@ testExpandedName
 
 	element declarePrefix: 'prefix' uri: 'prefixNS'.
 	attribute name: 'prefix:two'.
-	self assert: (attribute expandedName = '{prefixNS}two').
+	self assert: (attribute expandedName = 'Q{prefixNS}two').

@@ -6,10 +6,10 @@ testExpandedName
 	self assert: (element expandedName = 'test').
 
 	element defaultNamespace: 'defaultNS'.
-	self assert: (element expandedName = '{defaultNS}test').
+	self assert: (element expandedName = 'Q{defaultNS}test').
 
 	element name: 'prefix:test' namespaceURI: 'prefixNS'.
-	self assert: (element expandedName = '{prefixNS}test').
+	self assert: (element expandedName = 'Q{prefixNS}test').
 
 	element
 		defaultNamespace: '';

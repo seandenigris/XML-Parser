@@ -7,7 +7,7 @@
 		"testCanonicallyEquals" : "monty 12/6/2014 14:24",
 		"testCopy" : "monty 11/22/2014 20:14",
 		"testElement" : "monty 11/19/2014 21:06",
-		"testExpandedName" : "monty 11/24/2014 08:13",
+		"testExpandedName" : "monty 12/30/2014 02:39",
 		"testHasLanguage" : "monty 12/23/2014 16:18",
 		"testHasPrefix" : "monty 11/23/2014 20:28",
 		"testIsInLanguage" : "monty 12/23/2014 21:04",
@@ -17,9 +17,7 @@
 		"testName" : "monty 11/23/2014 20:23",
 		"testNameValue" : "monty 11/23/2014 04:55",
 		"testNamespaceURI" : "monty 11/23/2014 20:33",
-		"testNextNode" : "monty 11/24/2014 18:46",
 		"testPrefix" : "monty 11/23/2014 20:27",
-		"testPreviousNode" : "monty 11/24/2014 18:46",
 		"testSortKey" : "monty 12/3/2014 01:10",
 		"testValue" : "monty 11/23/2014 20:16",
 		"testWriteXMLOn" : "monty 11/23/2014 05:17" } }

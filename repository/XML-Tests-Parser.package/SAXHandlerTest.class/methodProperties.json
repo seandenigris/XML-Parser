@@ -11,7 +11,9 @@
 		"testSAXIgnorableWhitespace" : "monty 11/26/2014 06:30",
 		"testSAXParsingInterrupt" : "monty 11/26/2014 06:43",
 		"testSAXPrefixMappingHandlers" : "monty 11/26/2014 06:29",
-		"testSAXSkippedEntityHandler" : "monty 11/26/2014 06:29",
+		"testSAXSkippedEntityUndeclared" : "monty 1/6/2015 04:32",
+		"testSAXSkippedEntityUndeclaredPreserved" : "monty 1/6/2015 04:34",
+		"testSAXSkippedEntityUnreplaced" : "monty 1/6/2015 04:32",
 		"testSAXStartElemenNamespacesDisabled" : "monty 11/26/2014 06:29",
 		"testSAXStartElement" : "monty 11/26/2014 06:29",
 		"testSAXXMLDeclaration" : "monty 11/26/2014 06:29" } }

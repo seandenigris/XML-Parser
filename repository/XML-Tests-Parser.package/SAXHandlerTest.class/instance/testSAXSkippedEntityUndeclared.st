@@ -1,5 +1,5 @@
 tests
-testSAXSkippedEntityHandler
+testSAXSkippedEntityUndeclared
 	| xml parser |
 
 	xml := '<root>&undeclared;</root>'.
@@ -13,4 +13,4 @@ testSAXSkippedEntityHandler
 				skippedEntity:
 				endElement:prefix:uri:localName:
 				endDocument)).
-	self assert: (parser argumentsSentWith: #skippedEntity:) first =  'undeclared'.
+	self assert: (parser argumentsSentWith: #skippedEntity:) first = 'undeclared'.

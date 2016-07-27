@@ -3,6 +3,8 @@ testAttributeEntityDeclaration
 	| dtd |
 
 	dtd := '<!DOCTYPE root [
+		<!NOTATION first SYSTEM "first.txt">
+		<!NOTATION second SYSTEM "second.txt">
 		<!ENTITY firstEntity SYSTEM "first.txt" NDATA first>
 		<!ENTITY secondEntity SYSTEM "second.txt" NDATA second>
 		<!ELEMENT root EMPTY>

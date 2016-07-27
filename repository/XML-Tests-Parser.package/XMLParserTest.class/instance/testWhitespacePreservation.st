@@ -13,13 +13,12 @@ testWhitespacePreservation
 	self
 		assert: root nodes size = 3;
 		assert: root stringNodes size = 2.
-	root stringsDo: [:each |
-		self assert: (each notEmpty and: [each allSatisfy: [:c | c isSeparator ]])].
+	root stringNodesDo: [:each | self assert: each isWhitespace].
 
 	notPreserved := root nodes second.
 	self assert: notPreserved nodes size = 1.
 
-	preserved := notPreserved firstNode.
+	preserved := notPreserved firstElement.
 	self
-		assert: preserved contentString notEmpty;
-		assert: (preserved contentString allSatisfy: [:each | each isSeparator]).
+		assert: preserved firstNode isStringNode;
+		assert: preserved firstNode isWhitespace.
