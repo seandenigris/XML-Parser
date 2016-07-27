@@ -4,11 +4,13 @@ nextAttlistDeclaration
 
 	self
 		expectNextAll: 'ATTLIST';
-		skipSeparatorsReplacingParameterEntities.
+		expectSeparatorsInDeclaration.
 
 	element := self nextName.
-	[self skipSeparatorsReplacingParameterEntities.
-	(streamReader atEnd or: [streamReader peek == $>])]
+	[streamReader peek == $>
+		or: [
+			self expectSeparatorsInDeclaration.
+			streamReader peek == $>]]
 		whileFalse: [
 			driver
 				handleAttributeDeclaration: element
@@ -16,7 +18,4 @@ nextAttlistDeclaration
 				type: self nextAttributeType
 				defaultPragma: (defaultPragma := self nextAttributeDefaultPragma)
 				defaultValue: (self nextAttributeDefaultValueForPragma: defaultPragma)].
-
-	self
-		skipSeparatorsReplacingParameterEntities;
-		expectTerminator.
+	self expectTerminator.

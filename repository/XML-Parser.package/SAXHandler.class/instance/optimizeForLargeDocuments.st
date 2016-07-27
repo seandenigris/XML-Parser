@@ -1,7 +1,7 @@
 configuring
 optimizeForLargeDocuments
-	"faster parsing and less memory use for large documents"
+	"use this for faster parsing/less memory use with large documents"
 	self
 		isValidating: false;
 		usesNamespaces: false;
-		documentReadLimit: nil.
+		documentReadLimit: nil

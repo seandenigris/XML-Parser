@@ -5,5 +5,5 @@ nextContentModelChoiceValuesOnWriteStream
 			writeStream nextPut: (self expectNext: $|).
 			self
 				nextContentModelParticleOnWriteStream;
-				skipSeparatorsReplacingParameterEntities].
+				skipSeparatorsInDeclaration].
 	writeStream nextPut: streamReader next.

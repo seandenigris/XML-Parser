@@ -1,7 +1,15 @@
 handling - dtd
 handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotation
-	aNotation
-		ifNotEmpty: [
+	aNotation isEmpty
+		ifTrue: [
+			self resolvesExternalEntities
+				ifTrue: [
+					self doctypeDefinition
+						addExternalGeneralEntity: aName
+						resolver: self externalEntityResolver
+						uri: aSystemID
+						from: self currentURI]]
+		ifFalse: [
 			self isValidating
 				ifTrue: [
 					self doctypeDefinition unparsedEntityValidator
@@ -9,15 +17,7 @@ handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID nd
 						withNotation: aNotation].
 			self doctypeDefinition
 				addUnparsedEntity: aName
-				ndata: aNotation]
-		ifEmpty: [
-			self resolvesExternalEntities
-				ifTrue: [
-					self doctypeDefinition
-						addExternalGeneralEntity: aName
-						resolver: self externalEntityResolver
-						uri: aSystemID
-						from: self currentURI]].
+				ndata: aNotation].
 
 	self saxHandler
 		generalEntityDeclaration: aName

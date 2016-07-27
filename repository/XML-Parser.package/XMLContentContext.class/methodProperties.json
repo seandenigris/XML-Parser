@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"enterLiteralValue" : "monty 4/6/2015 02:51",
+		"exitLiteralValue" : "monty 4/6/2015 02:51",
 		"isContentContext" : "monty 1/4/2015 04:32",
+		"isLiteralValueContext" : "monty 4/6/2015 02:51",
 		"nextTokenFrom:" : "monty 11/9/2014 15:41" } }

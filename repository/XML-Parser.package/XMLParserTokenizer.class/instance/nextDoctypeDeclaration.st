@@ -1,18 +1,29 @@
 tokenizing - dtd
 nextDoctypeDeclaration
-	|  root externalId |
+	| root publicID systemID |
 
-	context := context doctypeContext.
-	self expectNextAll: 'DOCTYPE'.
-	streamReader skipSeparators.
+	context := context doctypeDeclarationContext.
+	self
+		expectNextAll: 'DOCTYPE';
+		expectSeparators.
 
 	root := self nextName.
-	streamReader skipSeparators.
-	externalId := self nextExternalIDSystemLiteralRequired: true.
+	(streamReader peek == $[
+		or: [streamReader peek == $>])
+		ifFalse: [
+			self expectSeparators.
+			streamReader peek == $P
+				ifTrue: [
+					publicID := self nextPublicID.
+					self expectSeparators.
+					systemID := self nextSystemIDLiteral]
+				ifFalse: [
+					streamReader peek == $S
+						ifTrue: [systemID := self nextSystemID]]].
 	driver
 		handleStartDTD: root
-		publicID: externalId key
-		systemID: externalId value.
+		publicID: (publicID ifNil: [''])
+		systemID: (systemID ifNil: ['']).
 
 	streamReader skipSeparators.
 	streamReader peek == $[

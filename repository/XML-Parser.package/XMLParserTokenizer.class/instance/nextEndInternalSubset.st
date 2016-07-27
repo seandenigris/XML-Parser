@@ -1,5 +1,7 @@
 tokenizing - dtd
 nextEndInternalSubset
 	"skip ]"
-	streamReader next.
+	streamReader
+		next;
+		skipSeparators.
 	self nextEndDoctypeDeclaration.

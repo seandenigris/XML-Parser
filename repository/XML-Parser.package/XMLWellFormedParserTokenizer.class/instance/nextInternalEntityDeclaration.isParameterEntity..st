@@ -4,7 +4,7 @@ nextInternalEntityDeclaration: aName isParameterEntity: aBoolean
 
 	value := self nextEntityValue.
 	self
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		expectTerminator.
 
 	aBoolean

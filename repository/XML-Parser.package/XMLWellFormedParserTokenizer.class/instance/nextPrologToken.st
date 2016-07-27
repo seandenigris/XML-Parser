@@ -8,11 +8,7 @@ nextPrologToken
 	streamReader peek == $?
 		ifTrue: [^ self nextPIOrXMLDeclaration].
 	streamReader peek == $!
-		ifTrue: [
-			streamReader next.
-			streamReader peek == $-
-				ifTrue: [^ self nextComment].
-			^ self nextDoctypeDeclaration].
+		ifTrue: [^ self nextDoctypeDeclarationOrComment].
 	self
 		nextStartContent;
 		nextTag.

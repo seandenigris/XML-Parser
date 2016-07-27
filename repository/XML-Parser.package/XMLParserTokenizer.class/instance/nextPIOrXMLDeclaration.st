@@ -1,14 +1,10 @@
 tokenizing
 nextPIOrXMLDeclaration
-	| piTarget piData |
+	| target |
 
-	"Skip ?"
 	streamReader next.
-	piTarget := self nextPITarget.
-	(piTarget = 'xml'
-		and: [context isPrologContext])
+	(target := self nextPITarget) = 'xml'
 		ifTrue: [^ self nextXMLDeclaration].
-	streamReader skipSeparators.
-	piData := self expectUpToAll: '?>'.
 
-	driver handlePI: piTarget data: piData.
+	context := context prologContext.
+	self nextPIWithTarget: target.

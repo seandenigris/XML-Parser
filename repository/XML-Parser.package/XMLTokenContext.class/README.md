@@ -1,1 +1,1 @@
-The context a token occurs in.
+Abstract class for token parsing contexts.

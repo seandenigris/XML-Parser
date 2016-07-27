@@ -1,7 +1,7 @@
 entity replacing
 pushBackEntity: anEntity onClose: aBlock
-	anEntity replacement
-		ifEmpty: [
+	anEntity hasReplacement
+		ifFalse: [
 			aBlock ifNotNil: [aBlock value].
 			^ self].
 

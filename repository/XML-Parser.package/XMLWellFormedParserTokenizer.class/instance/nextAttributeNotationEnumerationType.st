@@ -3,13 +3,13 @@ nextAttributeNotationEnumerationType
 	writeStream
 		reset;
 		nextPutAll: 'NOTATION '.
-	self skipSeparatorsReplacingParameterEntities.
+	self expectSeparatorsInDeclaration.
 	writeStream nextPut: (self expectNext: $().
 
 	self
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		nextNameOnWriteStream;
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		nextNameListValuesOnWriteStream.
 
 	^ writeStream contents.

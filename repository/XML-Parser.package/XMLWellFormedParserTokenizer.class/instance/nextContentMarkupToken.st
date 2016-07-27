@@ -1,7 +1,7 @@
 tokenizing
 nextContentMarkupToken
 	streamReader peek == $?
-		ifTrue: [^ self nextPIOrXMLDeclaration].
+		ifTrue: [^ self nextPI].
 	streamReader peek == $!
 		ifTrue: [
 			streamReader next.

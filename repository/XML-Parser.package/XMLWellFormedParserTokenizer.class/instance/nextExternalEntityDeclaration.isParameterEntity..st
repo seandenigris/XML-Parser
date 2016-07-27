@@ -1,28 +1,42 @@
 tokenizing - dtd
 nextExternalEntityDeclaration: aName isParameterEntity: aBoolean
-	| externalId notation |
+	| publicID systemID notation |
 
-	externalId := self nextExternalIDSystemLiteralRequired: true.
+	streamReader peek == $P
+		ifTrue: [
+			publicID := self nextPublicIDInDeclaration.
+			self expectSeparatorsInDeclaration.
+			systemID := self nextSystemIDLiteral]
+		ifFalse: [
+			publicID := ''.
+			systemID := self nextSystemIDInDeclaration].
 	aBoolean
 		ifTrue: [
+			self
+				skipSeparatorsInDeclaration;
+				expectTerminator.
 			driver
 				handleParameterEntityDeclaration: aName
-				publicID: externalId key
-				systemID: externalId value]
+				publicID: publicID
+				systemID: systemID]
 		ifFalse: [
-			self skipSeparatorsReplacingParameterEntities.
-			streamReader peek == $>
-				ifTrue: [notation := '']
+			(streamReader peek == $>
+				or: [
+					self expectSeparatorsInDeclaration.
+					streamReader peek == $>])
+				ifTrue: [	
+					streamReader next.
+					notation := '']
 				ifFalse: [
 					self
 						expectNextAll: 'NDATA';
-						skipSeparatorsReplacingParameterEntities.
-					notation := self nextName].
+						expectSeparatorsInDeclaration.
+					notation := self nextName.
+					self
+						skipSeparatorsInDeclaration;
+						expectTerminator].
 			driver
 				handleGeneralEntityDeclaration: aName
-				publicID: externalId key
-				systemID: externalId value
+				publicID: publicID
+				systemID: systemID
 				ndata: notation].
-	self
-		skipSeparatorsReplacingParameterEntities;
-		expectTerminator.

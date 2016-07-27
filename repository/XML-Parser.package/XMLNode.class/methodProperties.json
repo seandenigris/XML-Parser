@@ -10,7 +10,7 @@
 		"ancestorNodes" : "monty 3/8/2015 09:17",
 		"ancestorNodesDetect:ifNone:" : "monty 3/8/2015 13:21",
 		"ancestorNodesDo:" : "monty 3/8/2015 09:18",
-		"asString" : "monty 2/6/2014 20:06",
+		"asString" : "monty 4/6/2015 08:05",
 		"canHaveChildren" : "monty 11/23/2014 20:53",
 		"canonicallyEquals:" : "monty 12/6/2014 12:58",
 		"canonicallyPrintOn:" : "monty 2/2/2015 16:15",
@@ -52,6 +52,8 @@
 		"printedWithoutSelfClosingTags" : "monty 10/12/2014 21:27",
 		"rawContentString" : "monty 11/19/2014 23:44",
 		"sortKey" : "monty 12/4/2014 14:00",
+		"validate" : "monty 4/6/2015 07:04",
+		"validateWith:" : "monty 4/5/2015 21:03",
 		"withNewXMLWriterOn:do:" : "monty 10/31/2014 20:56",
 		"withNewXMLWriterOn:do:whenAbsent:" : "monty 1/5/2015 09:02",
 		"writeXMLOn:" : "monty 12/6/2014 13:02" } }

@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextEntityValue
-	| quote value nextChar |
+	| quote nextChar |
 
 	quote := streamReader next.
 	context enterLiteralValue.
@@ -17,8 +17,7 @@ nextEntityValue
 					nextChar == $%
 						ifTrue: [self nextParameterEntityReferenceOnWriteStream]
 						ifFalse: [writeStream nextPut: nextChar]]].
-	value := writeStream contents.
 	context exitLiteralValue.
 	self expectNext: quote.
 
-	^ value.
+	^ writeStream contents.

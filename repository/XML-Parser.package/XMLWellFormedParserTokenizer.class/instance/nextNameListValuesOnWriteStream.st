@@ -4,7 +4,7 @@ nextNameListValuesOnWriteStream
 		whileFalse: [
 			writeStream nextPut: (self expectNext: $|).
 			self
-				skipSeparatorsReplacingParameterEntities;
+				skipSeparatorsInDeclaration;
 				nextNameOnWriteStream;
-				skipSeparatorsReplacingParameterEntities].
+				skipSeparatorsInDeclaration].
 	writeStream nextPut: streamReader next.

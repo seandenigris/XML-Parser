@@ -4,16 +4,16 @@ nextAttributeEnumerationType
 		reset;
 		nextPut: (self expectNext: $().
 	self
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		nextNmtokenOnWriteStream;
-		skipSeparatorsReplacingParameterEntities.
+		skipSeparatorsInDeclaration.
 	[streamReader peek == $)]
 		whileFalse: [
 			writeStream nextPut: (self expectNext: $|).
 			self
-				skipSeparatorsReplacingParameterEntities;
+				skipSeparatorsInDeclaration;
 				nextNmtokenOnWriteStream;
-				skipSeparatorsReplacingParameterEntities].
+				skipSeparatorsInDeclaration].
 	writeStream nextPut: streamReader next.
 
 	^ writeStream contents.

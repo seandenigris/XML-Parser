@@ -8,14 +8,14 @@ nextTag
 	tagName := self nextName.
 
 	attributes := OrderPreservingStringDictionary new: 10.
-	[(nextChar := streamReader peek) notNil
-		and: [nextChar isSeparator
-			and: [
-				streamReader
-					next;
-					skipSeparators.
-				((nextChar := streamReader peek) == $>
-					or: [nextChar == $/]) not]]]
+	"nil understands xmlParserIsSeparator so is not tested for"
+	[(nextChar := streamReader peek) xmlParserIsSeparator
+		and: [
+			streamReader
+				next;
+				skipSeparators.
+			((nextChar := streamReader peek) == $>
+				or: [nextChar == $/]) not]]
 		whileTrue: [ | attributeName attributeValue |
 			attributeName := self nextName.
 			streamReader skipSeparators.

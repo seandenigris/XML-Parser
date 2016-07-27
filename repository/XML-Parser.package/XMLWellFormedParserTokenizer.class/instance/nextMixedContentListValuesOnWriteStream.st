@@ -4,7 +4,7 @@ nextMixedContentListValuesOnWriteStream
 
 	writeStream nextPutAll: (self expectNextAll: '#PCDATA').
 
-	self skipSeparatorsReplacingParameterEntities.
+	self skipSeparatorsInDeclaration.
 	hasElements := streamReader peek == $|.
 
 	self nextNameListValuesOnWriteStream.

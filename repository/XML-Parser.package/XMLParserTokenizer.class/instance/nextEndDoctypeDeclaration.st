@@ -1,7 +1,6 @@
 tokenizing - dtd
 nextEndDoctypeDeclaration
-	streamReader skipSeparators.
 	self expectTerminator.
-	context := context prologContext.
+	context := context postDoctypeDeclarationContext.
 
 	driver handleEndDTD.

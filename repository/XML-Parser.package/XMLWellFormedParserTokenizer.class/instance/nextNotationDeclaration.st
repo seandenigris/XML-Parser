@@ -1,20 +1,27 @@
 tokenizing - dtd
 nextNotationDeclaration
-	| name externalId |
+	| name publicID systemID |
 
 	self
 		expectNextAll: 'NOTATION';
-		skipSeparatorsReplacingParameterEntities.
+		expectSeparatorsInDeclaration.
 
 	name := self nextName.
-	self skipSeparatorsReplacingParameterEntities.
-
-	externalId := self nextExternalIDSystemLiteralRequired: false.
+	self expectSeparatorsInDeclaration.
+	streamReader peek == $P
+		ifTrue: [
+			publicID := self nextPublicIDInDeclaration.
+			(streamReader peek == $>
+				or: [
+					self expectSeparatorsInDeclaration.
+					streamReader peek == $>])
+				ifFalse: [systemID := self nextSystemIDLiteral]]
+		ifFalse: [systemID := self nextSystemIDInDeclaration].
 	self
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		expectTerminator.
 
 	driver
 		handleNotationDeclaration: name
-		publicID: externalId key
-		systemID: externalId value.
+		publicID: (publicID ifNil: [''])
+		systemID: (systemID ifNil: ['']).

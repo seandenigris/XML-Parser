@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"clearIDsAndIDReferences" : "monty 4/5/2015 21:15",
 		"elementsAndIDAttributes" : "monty 3/2/2015 12:53",
 		"errorDuplicateID:inAttribute:" : "monty 3/22/2015 03:50",
 		"errorInvalidID:inAttribute:" : "monty 3/22/2015 03:50",

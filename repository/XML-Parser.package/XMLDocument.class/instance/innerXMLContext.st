@@ -1,3 +1,3 @@
 private
 innerXMLContext
-	^ XMLPrologContext new
+	^ XMLXMLDeclarationContext new

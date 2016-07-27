@@ -3,8 +3,11 @@ nextPITarget
 	| target |
 
 	target := self nextName.
-	(target = 'xml'
-		and: [context isPrologContext not])
-		ifTrue: [self errorXMLDeclarationInContent].
+	context isXMLDeclarationContext
+		ifFalse: [
+			target = 'xml'
+				ifTrue: [self errorXMLDeclarationNotAtBeginning]].
+	target = 'XML'
+		ifTrue: [self errorXMLPITargetReserved].
 
 	^ target.

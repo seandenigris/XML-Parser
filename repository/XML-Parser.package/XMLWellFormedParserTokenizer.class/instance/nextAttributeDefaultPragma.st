@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextAttributeDefaultPragma
-	self skipSeparatorsReplacingParameterEntities.
+	self expectSeparatorsInDeclaration.
 	streamReader peek == $#
 		ifFalse: [^ ''].
 	streamReader next.

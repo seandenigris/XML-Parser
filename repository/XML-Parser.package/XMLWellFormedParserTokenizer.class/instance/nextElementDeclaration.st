@@ -1,16 +1,11 @@
 tokenizing - dtd
 nextElementDeclaration
-	| name contentModel |
-
 	self
 		expectNextAll: 'LEMENT';
-		skipSeparatorsReplacingParameterEntities.
-	name := self nextName.
-	contentModel := self nextContentModel.
-	self
-		skipSeparatorsReplacingParameterEntities;
-		expectTerminator.
-
+		expectSeparatorsInDeclaration.
 	driver
-		handleElementDeclaration: name
-		contentModel: contentModel.
+		handleElementDeclaration: self nextName
+		contentModel: self nextContentModel.
+	self
+		skipSeparatorsInDeclaration;
+		expectTerminator.

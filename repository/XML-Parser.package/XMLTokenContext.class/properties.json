@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 4/6/2015 09:21",
 	"instvars" : [
-		"isLiteralValueContext" ],
+		 ],
 	"name" : "XMLTokenContext",
 	"pools" : [
 		 ],

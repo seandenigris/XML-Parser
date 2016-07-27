@@ -1,9 +1,9 @@
 tokenizing
 nextXMLStandaloneAttribute
-	streamReader skipSeparators.
+	"always optional"
 	(streamReader peek == $s)
-		ifFalse: [^ ''].
-
-	^ self
-		nextXMLAttributeName: 'standalone';
-		nextXMLStandaloneAttributeValue.
+		ifTrue: [
+			^ self
+				nextXMLAttributeName: 'standalone';
+				nextXMLStandaloneAttributeValue]
+		ifFalse: [^ '']

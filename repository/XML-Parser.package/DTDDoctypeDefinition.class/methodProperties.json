@@ -11,6 +11,7 @@
 		"addValidatorForAttributeIn:named:type:defaultPragma:defaultValue:" : "monty 1/1/2015 20:54",
 		"addValidatorForElement:contentModel:" : "monty 12/21/2013 03:14",
 		"attributeValidators" : "monty 11/19/2013 01:01",
+		"clearIDsAndIDReferences" : "monty 4/5/2015 21:15",
 		"elementIDValidator" : "monty 3/21/2015 23:03",
 		"elementValidators" : "monty 11/18/2013 19:26",
 		"generalEntities" : "monty 11/14/2013 20:51",

@@ -1,7 +1,7 @@
 tokenizing - dtd
 nextConditionalSectionOnWriteStream
 	self
-		skipSeparatorsReplacingParameterEntities;
+		skipSeparatorsInDeclaration;
 		expectNext: $I.
 
 	streamReader peek == $N

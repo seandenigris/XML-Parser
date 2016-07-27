@@ -2,18 +2,18 @@ This class is an XML parser that uses event handling. The acronym "SAX" refers t
 
 To instantiate a SAXHandler, send any of the #on: or #parse- messages to a subclass.
 
-The class-side #parse- messages take some input source and parse it immediately, returning the result of #parseDocument:
+The class-side #parse- messages take some input source and parse it immediately, returning the result:
 	SAXHandlerSubclass parse: xml.
 	SAXHandlerSubclass parseURL: aUrl. 
 	SAXHandlerSubclass parse: xml usingNamespaces: false
 
-The #on: messages create new parsers on the given input string, stream, URL, or file and return it; the instance can then be further configured and ultimately sent #parseDocument to parse the given input:
+The #on: messages create new parsers on the given input string, stream, URL, or file and return it; the instance can then be further configured and ultimately sent #parseDocument to parse the input:
 	(SAXHandlerSubclass on: xml)
 		isValidating: true;
 		resolvesExternalEntities: true;
 		parseDocument.
 
-There is also #parseDocumentWhile: to stop parsing before the end.
+#interruptParsing can be sent from within a handler to stop parsing before end, and there is also #parseDocumentWhile: and #parseDocumentUntil: 
 	(SAXHandlerSubclass on: xml)
 		parseDocumentWhile: [self shouldKeepParsing].
 
@@ -32,3 +32,5 @@ There are security limits on input you can remove with #removeLimits or change w
 		documentReadLimit: newReadLimit;
 		maxEntityReplacementDepth: newMaxEntityDepth;
 		parseDocument.
+		
+#optimizeForLargeDocuments  should be used when parsing large documents if you don't care for validating or namespaces.

@@ -2,7 +2,7 @@ tokenizing - dtd
 nextSubsetMarkupToken
 	self expectNext: $<.
 	streamReader peek == $?
-		ifTrue: [^ self nextPIOrXMLDeclaration].
+		ifTrue: [^ self nextPI].
 
 	self expectNext: $!.
 	streamReader peek == $-

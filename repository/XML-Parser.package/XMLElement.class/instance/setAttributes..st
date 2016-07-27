@@ -1,6 +1,7 @@
 initialization
 setAttributes: aDictionaryOrArray
-	self attributeNodes removeAll.
+	self hasAttributes
+		ifTrue: [self attributeNodes removeAll].
 	aDictionaryOrArray associationsDo: [:each |
 		self attributeNodes
 			addName: each key

@@ -1,5 +1,3 @@
 accessing
 currentURI
-	^ self uris
-		ifEmpty: [self documentURI]
-		ifNotEmpty: [self uris last]
+	^ self uris lastOrNil ifNil: [self documentURI]

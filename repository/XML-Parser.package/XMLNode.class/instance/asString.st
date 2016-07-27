@@ -1,4 +1,4 @@
 converting
 asString
-	"for compatibility if Object>>asString isn't defined"
+	"for compatibility with GS where Object>>asString isn't defined"
 	^ self printString

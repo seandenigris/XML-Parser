@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextContentModel
-	self skipSeparatorsReplacingParameterEntities.
+	self expectSeparatorsInDeclaration.
 	streamReader peek == $A
 		ifTrue: [^ self expectNextAll: 'ANY'].
 	streamReader peek == $E
@@ -9,7 +9,7 @@ nextContentModel
 	writeStream
 		reset;
 		nextPut: (self expectNext: $().
-	self skipSeparatorsReplacingParameterEntities.
+	self skipSeparatorsInDeclaration.
 	streamReader peek == $#
 		ifTrue: [self nextMixedContentListValuesOnWriteStream]
 		ifFalse: [self nextContentModelChoiceOrSequenceValuesOnWriteStream].

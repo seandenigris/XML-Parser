@@ -2,7 +2,7 @@ tokenizing - dtd
 nextContentModelChoiceOrSequenceValuesOnWriteStream
 	self
 		nextContentModelParticleOnWriteStream;
-		skipSeparatorsReplacingParameterEntities.
+		skipSeparatorsInDeclaration.
 	streamReader peek == $|
 		ifTrue: [self nextContentModelChoiceValuesOnWriteStream]
 		ifFalse: [self nextContentModelSequenceValuesOnWriteStream].

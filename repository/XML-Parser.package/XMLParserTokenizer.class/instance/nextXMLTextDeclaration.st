@@ -1,10 +1,12 @@
 tokenizing
 nextXMLTextDeclaration
 	(streamReader nextMatchAll: '<?xml')
-		ifTrue: [
-			self nextXMLVersionAttributeRequired: false.
-			(self nextXMLEncodingAttributeRequired: true)
-				ifNotEmpty: [:encoding | streamReader convertFromEncoding: encoding].
+		ifTrue: [| encoding |
+			self expectSeparators.
+			(self nextXMLVersionAttributeRequired: false) isEmpty
+				ifFalse: [self expectSeparators].
+			(encoding := self nextXMLEncodingAttributeRequired: true) isEmpty
+				ifFalse: [streamReader convertFromEncoding: encoding].
 
 			streamReader skipSeparators.
 			self

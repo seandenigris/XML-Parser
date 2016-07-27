@@ -1,1 +1,1 @@
-A context for text declaration tokens.
+A context for <?xml ...?> text declaration tokens at the start of external entities.

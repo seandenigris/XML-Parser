@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextContentModelParticleOnWriteStream
-	self skipSeparatorsReplacingParameterEntities.
+	self skipSeparatorsInDeclaration.
 	streamReader peek == $(
 		ifTrue: [
 			writeStream nextPut: streamReader next.

@@ -19,7 +19,7 @@ nextAttributeValue
 						ifTrue: [self nextCharacterReferenceOnWriteStream]
 						ifFalse: [self nextGeneralEntityReferenceOnWriteStream]]
 				ifFalse: [
-					nextChar isSeparator
+					nextChar xmlParserIsSeparator
 						ifTrue: [nextChar := NormalizedSpace].
 					writeStream nextPut: nextChar]].
 	context exitLiteralValue.

@@ -2,7 +2,6 @@
 	"class" : {
 		"previousContext:" : "monty 11/9/2014 17:13" },
 	"instance" : {
-		"isTextDeclarationContext" : "monty 11/9/2014 17:18",
 		"nextTokenFrom:" : "monty 11/9/2014 17:15",
 		"previousContext" : "monty 11/9/2014 18:27",
 		"previousContext:" : "monty 11/9/2014 17:13" } }
