@@ -1,5 +1,5 @@
 printing
-printNamespaceDeclarationsOn: aTagWriter
+writeNamespaceDeclarationsOn: aTagWriter
 	(self declaresDefaultNamespace
 		or: [self defaultNamespace notEmpty
 			and: [aTagWriter isEmbedded not]])
