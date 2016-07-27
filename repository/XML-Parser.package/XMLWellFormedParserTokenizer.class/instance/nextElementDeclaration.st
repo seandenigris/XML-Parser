@@ -9,7 +9,7 @@ nextElementDeclaration
 	contentModel := self nextContentModel.
 	self
 		skipSeparatorsReplacingParameterEntities;
-		expectTerminator: $>.
+		expectTerminator.
 
 	driver
 		handleElementDeclaration: name

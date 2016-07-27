@@ -19,4 +19,4 @@ nextAttlistDeclaration
 
 	self
 		skipSeparatorsReplacingParameterEntities;
-		expectTerminator: $>.
+		expectTerminator.

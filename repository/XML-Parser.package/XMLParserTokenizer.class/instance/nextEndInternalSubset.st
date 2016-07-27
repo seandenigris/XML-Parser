@@ -1,5 +1,5 @@
 tokenizing - dtd
 nextEndInternalSubset
-	self
-		expectTerminator: $];
-		nextEndDoctypeDeclaration
+	"skip ]"
+	streamReader next.
+	self nextEndDoctypeDeclaration.

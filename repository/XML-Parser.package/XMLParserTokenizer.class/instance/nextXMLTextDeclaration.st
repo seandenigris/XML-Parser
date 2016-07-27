@@ -9,5 +9,5 @@ nextXMLTextDeclaration
 			streamReader skipSeparators.
 			self
 				expectNext: $?;
-				expectTerminator: $>].
+				expectTerminator].
 	context := context previousContext.

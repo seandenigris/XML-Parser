@@ -12,7 +12,7 @@ nextNotationDeclaration
 	externalId := self nextExternalIDSystemLiteralRequired: false.
 	self
 		skipSeparatorsReplacingParameterEntities;
-		expectTerminator: $>.
+		expectTerminator.
 
 	driver
 		handleNotationDeclaration: name

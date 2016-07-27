@@ -10,7 +10,7 @@ nextXMLDeclaration
 	streamReader skipSeparators.
 	self
 		expectNext: $?;
-		expectTerminator: $>.
+		expectTerminator.
 
 	driver
 		handleXMLVersion: version

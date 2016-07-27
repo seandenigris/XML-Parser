@@ -7,7 +7,6 @@ setQualifiedName: aQualifiedName localName: aLocalName attributes: anAttributeDi
 		ifFalse: [
 			"The setFrom method is used to avoid revalidating the
 			attributes when adding them to the list"
-			(attributes :=
-				(self attributeListClass new: anAttributeDictionary size)
+			(attributes := self attributeListClass new: anAttributeDictionary size)
 					observer: self;
-					setFromDictionary: anAttributeDictionary)].
+					setFromDictionary: anAttributeDictionary].

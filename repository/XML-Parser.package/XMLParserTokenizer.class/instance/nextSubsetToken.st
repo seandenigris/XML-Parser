@@ -8,7 +8,8 @@ nextSubsetToken
 		ifTrue: [
 			streamReader next.
 			^ self nextParameterEntityReference].
-	(context isInternalSubsetContext and: [streamReader peek == $]])
+	(context isInternalSubsetContext
+		and: [streamReader peek == $]])
 		ifTrue: [^ self nextEndInternalSubset].
 
 	self nextSubsetMarkupToken.

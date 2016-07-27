@@ -14,6 +14,6 @@ nextComment
 		whileFalse: [writeStream nextPut: nextChar].
 	self
 		expectNext: $-;
-		expectTerminator: $>.
+		expectTerminator.
 
 	driver handleComment: writeStream contents.

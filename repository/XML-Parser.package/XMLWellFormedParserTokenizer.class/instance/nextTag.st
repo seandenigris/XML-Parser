@@ -1,18 +1,22 @@
 tokenizing
 nextTag
 	"performance critical method"
-	| tagName attributes namespaces nextChar |
+	| tagName attributes nextChar namespaces |
 
 	(streamReader peek == $/)
 		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
 
 	attributes := OrderPreservingStringDictionary new: 10.
-	[streamReader skipSeparators.
-	((nextChar := streamReader peek) == $>
-		or: [nextChar == $/
-			or: [nextChar == nil]])]
-		whileFalse: [ | attributeName attributeValue |
+	[(nextChar := streamReader peek) notNil
+		and: [nextChar isSeparator
+			and: [
+				streamReader
+					next;
+					skipSeparators.
+				((nextChar := streamReader peek) == $>
+					or: [nextChar == $/]) not]]]
+		whileTrue: [ | attributeName attributeValue |
 			attributeName := self nextName.
 			streamReader skipSeparators.
 			streamReader next == $=
@@ -48,4 +52,4 @@ nextTag
 		ifTrue: [
 			streamReader next.
 			driver handleEndTag: tagName].
-	self expectTerminator: $>.
+	self expectTerminator.

@@ -25,4 +25,4 @@ nextExternalEntityDeclaration: aName isParameterEntity: aBoolean
 				ndata: notation].
 	self
 		skipSeparatorsReplacingParameterEntities;
-		expectTerminator: $>.
+		expectTerminator.
