@@ -1,3 +1,3 @@
 accessing
 allAttributes
-	^ self attributes asOrderedCollection
+	^ self attributes keys
