@@ -1,7 +1,7 @@
 tokenizing
 nextGeneralEntityReferenceOnWriteStream
 	"returns true if writeStream is written to, false otherwise"
-	| name entity |
+	| name |
 
 	name := self nextName.
 	self expectNext: $;.
@@ -13,14 +13,14 @@ nextGeneralEntityReferenceOnWriteStream
 			writeStream nextPut: character.
 			^ true].
 
-	(entity := driver handleGeneralEntityReference: name)
+	(driver handleGeneralEntityReference: name)
 		ifNil: [
 			(driver replacesContentEntityReferences not
 				or: [driver preservesUndeclaredEntityReferences])
 				ifTrue: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
-			driver handleUnreplacedGeneralEntityReference: name.
-			^ false].
-	driver replacesContentEntityReferences
-		ifFalse: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
-	entity constructReplacementOn: self.
+			driver handleUnreplacedGeneralEntityReference: name]
+		ifNotNil: [:entity |
+			driver replacesContentEntityReferences
+				ifFalse: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
+			entity constructReplacementOn: self].
 	^ false.
