@@ -1,3 +1,3 @@
 accessing
 nodes
-	^ nodes ifNil: [nodes := OrderedCollection new]
+	^ nodes ifNil: [nodes := XMLNodeList parent: self]

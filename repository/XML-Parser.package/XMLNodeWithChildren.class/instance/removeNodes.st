@@ -1,3 +1,3 @@
 accessing
 removeNodes
-	^ self removeNodes: self nodes copy
+	self nodes removeAll

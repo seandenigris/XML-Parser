@@ -1,3 +1,3 @@
 private
-changedChildNode: aNode
+renamedChildNode: aNode
 	aNode isTag ifTrue: [self rebuildElementCache]

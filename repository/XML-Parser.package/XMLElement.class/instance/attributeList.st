@@ -1,3 +1,3 @@
 accessing
 attributeList
-	^ attributeList ifNil: [attributeList := XMLAttributeList new]
+	^ attributeList ifNil: [attributeList := XMLAttributeList parent: self]

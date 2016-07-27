@@ -1,11 +1,9 @@
 initialization
 setAttributes: aDictionary
-	self attributeList removeNodes.
+	self attributeList removeAll.
 	aDictionary isEmptyOrNil ifTrue: [^ self].
 	aDictionary keysAndValuesDo: [:key :value |
 		self attributeList
-			addNode:
-				(XMLAttribute
-					name: key
-					value: value
-					scope: self scope)].
+			addName: key
+			value: value
+			scope: self scope].

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"attributesByName",
-		"scope" ],
+		"attributesByName" ],
 	"name" : "XMLAttributeList",
 	"pools" : [
 		 ],
-	"super" : "XMLNodeWithChildren",
+	"super" : "XMLNodeList",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 accessing
 attributeNodes
-	^ self attributeList nodes
+	^ self attributeList

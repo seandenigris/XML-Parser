@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"addElement:" : "JAAyer 2/25/2010 14:37",
-		"changedChildNode:" : "JAAyer 3/7/2010 04:07",
+		"addedNode:toList:" : "JAAyer 3/10/2010 22:44",
 		"elementAfter:" : "JAAyer 2/25/2010 14:37",
 		"elementAt:" : "JAAyer 3/8/2010 04:54",
 		"elementAt:ifAbsent:" : "JAAyer 3/8/2010 04:54",
@@ -33,6 +33,8 @@
 		"rebuildElementCache" : "JAAyer 2/27/2010 15:22",
 		"recurse:" : "JAAyer 2/27/2010 19:28",
 		"recurseUntilTrue:" : "JAAyer 2/27/2010 19:29",
+		"removedNode:fromList:" : "JAAyer 3/10/2010 22:44",
+		"renamedChildNode:" : "JAAyer 3/10/2010 08:44",
 		"tagsNamed:childrenDo:" : "JAAyer 3/8/2010 04:54",
 		"tagsNamed:childrenDoAndRecurse:" : "JAAyer 3/8/2010 04:54",
 		"tagsNamed:contentsDo:" : "JAAyer 3/8/2010 04:54",

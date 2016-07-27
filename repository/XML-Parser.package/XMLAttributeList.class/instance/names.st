@@ -1,3 +1,3 @@
 accessing
 names
-	^ self nodes collect: [:each | each name]
+	^ self collect: [:each | each name]

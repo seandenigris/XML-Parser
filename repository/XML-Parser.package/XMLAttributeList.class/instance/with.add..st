@@ -7,6 +7,6 @@ with: aBlock add: aNode
 
 	self attributesByName
 		at: aNode name
-		ifPresent: [self removeName: aNode name].
+		ifPresent: [self removeNodeNamed: aNode name].
 	self attributesByName at: aNode name put: aNode.
 	^ aNode.
