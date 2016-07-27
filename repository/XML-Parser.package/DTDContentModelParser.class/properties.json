@@ -7,10 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"name",
-		"contentModel",
-		"contentModelStream",
-		"operatorStack",
-		"nfaBuilder" ],
+		"contentModel" ],
 	"name" : "DTDContentModelParser",
 	"pools" : [
 		 ],

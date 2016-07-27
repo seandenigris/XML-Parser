@@ -1,5 +1,7 @@
 {
 	"class" : {
-		 },
+		"nfaStates:cachedDFAStates:isAccepting:" : "monty 12/18/2013 20:58" },
 	"instance" : {
-		"transitionCollectionClass" : "monty 11/17/2013 23:31" } }
+		"initializeDFAStateTransitions" : "monty 12/19/2013 02:00",
+		"setNFAStates:cachedDFAStates:isAccepting:" : "monty 12/18/2013 20:59",
+		"transitions" : "monty 12/18/2013 21:04" } }

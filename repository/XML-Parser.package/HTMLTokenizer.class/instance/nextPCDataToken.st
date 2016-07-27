@@ -22,7 +22,9 @@ nextPCDataToken
 										isIgnorableWhitespace := false]
 									ifFalse: [
 										(nextChar := self nextGeneralEntityReference)
-											ifNotNil: [writeStream nextPut: nextChar]]]]
+											ifNotNil: [
+												writeStream nextPut: nextChar.
+												isIgnorableWhitespace := false]]]]
 					ifFalse: [
 						nextChar isSeparator
 							ifFalse: [isIgnorableWhitespace := false].

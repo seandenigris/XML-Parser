@@ -13,4 +13,4 @@ initializePredefinedEntities
 				ifTrue: [
 					predefinedEntities
 						at: entityName
-						put: (Unicode value: codePoint asInteger)]].
+						put: (self encodingClass value: codePoint asInteger)]].

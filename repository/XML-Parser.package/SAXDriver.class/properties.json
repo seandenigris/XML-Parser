@@ -8,8 +8,7 @@
 	"instvars" : [
 		"saxHandler",
 		"dtd",
-		"validator",
-		"languageEnvironment" ],
+		"validator" ],
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],

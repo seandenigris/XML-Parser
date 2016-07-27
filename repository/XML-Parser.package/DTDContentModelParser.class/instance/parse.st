@@ -6,6 +6,6 @@ parse
 	(contentModel = 'EMPTY')
 		ifTrue: [^ XMLEmptyElementValidator element: name].
 
-	(contentModel beginsWith: '(#PCDATA')
-		ifTrue: [^ self parseMixedContentModel]
-		ifFalse: [^ self parseDFAContentModel].
+	^ (contentModel beginsWith: '(#PCDATA')
+		ifTrue: [self parseMixedContentModel]
+		ifFalse: [self parseDFAContentModel].

@@ -1,5 +1,5 @@
 parsing
-parseMixedContentModel
+parse
 	| mayContainElements mixedContentList allowedElements  |
 
 	mayContainElements := contentModel last == $*.

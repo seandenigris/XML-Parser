@@ -1,6 +1,7 @@
 {
 	"class" : {
 		"driver:on:" : "monty 12/7/2013 03:26",
+		"encodingClass" : "monty 12/18/2013 23:16",
 		"initialize" : "monty 12/7/2013 00:38",
 		"initializePredefinedEntities" : "monty 12/7/2013 00:38",
 		"predefinedEntities" : "monty 12/7/2013 00:37" },
@@ -9,7 +10,6 @@
 		"characterFromCodePoint:" : "monty 12/9/2013 07:53",
 		"currentLineNumber" : "monty 12/7/2013 00:35",
 		"driver" : "monty 12/7/2013 00:35",
-		"encodingClass" : "monty 12/13/2013 21:38",
 		"expectNext:" : "monty 12/8/2013 04:35",
 		"expectNextAll:" : "monty 12/8/2013 04:37",
 		"expectTerminator:" : "monty 12/8/2013 04:36",
@@ -41,6 +41,7 @@
 		"nextXMLDecl" : "monty 12/9/2013 01:21",
 		"nextXMLDeclAttribute:" : "monty 12/9/2013 07:40",
 		"nextXMLDeclAttributeValue" : "monty 12/9/2013 06:50",
+		"normalizedLineEndingChar:" : "monty 12/18/2013 17:26",
 		"replaceParameterEntityReference" : "monty 12/7/2013 04:31",
 		"setDriver:stream:" : "monty 12/13/2013 05:07",
 		"skipSeparatorsReplacingParameterEntities" : "monty 12/10/2013 07:36",

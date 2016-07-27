@@ -1,3 +1,3 @@
 accessing
 incomingTransitions
-	^ incomingTransitions ifNil: [incomingTransitions := self transitionCollectionClass new]
+	^ incomingTransitions ifNil: [incomingTransitions := OrderedCollection new]

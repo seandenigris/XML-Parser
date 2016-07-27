@@ -1,6 +1,6 @@
 parsing
-parseDFAContentModel
-	| nfa nextChar |
+parse
+	|  nextChar |
 
 	contentModelStream := contentModel readStream.
 	nfaBuilder := XMLNFABuilder new.
@@ -28,7 +28,6 @@ parseDFAContentModel
 				ifFalse: [self pushElementMatcher]].
 	self popRemainingOperators.
 
-	nfa := nfaBuilder buildNFAFromFragments.
 	^ XMLDFAElementValidator
 		element: name
-		dfa: (XMLDFABuilder nfa: nfa) buildDFA.
+		dfa: nfaBuilder buildNFAFromFragments asDFA.

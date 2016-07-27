@@ -1,15 +1,14 @@
 {
-	"category" : "XML-Parser-Validation-DFA",
+	"category" : "XML-Parser-DTD",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"nfa",
-		"cachedDfaStates" ],
-	"name" : "XMLDFABuilder",
+		"entityCache" ],
+	"name" : "DTDCachingEntityResolver",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "DTDExternalEntityResolver",
 	"type" : "normal" }

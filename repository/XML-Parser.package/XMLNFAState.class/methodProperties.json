@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"addTransition:" : "monty 11/17/2013 21:44",
+		"asDFA" : "monty 12/18/2013 21:39",
 		"copyAndRedirectIncomingTransitionsTo:" : "monty 11/17/2013 23:24",
 		"incomingTransition:" : "monty 11/17/2013 23:22",
-		"incomingTransitions" : "monty 11/17/2013 22:43",
+		"incomingTransitions" : "monty 12/18/2013 21:05",
 		"previousStatesDo:" : "monty 11/17/2013 22:55",
 		"redirectIncomingTransitionsTo:" : "monty 11/17/2013 16:45" } }

@@ -3,6 +3,6 @@ addValidatorForElement: anElement contentModel: aContentModel
 	self elementValidators
 		at: anElement
 		ifAbsentPut: [
-			(DTDContentModelParser
+			((DTDContentModelParser parserForContentModel: aContentModel)
 				name: anElement
 				contentModel: aContentModel) parse]
