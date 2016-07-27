@@ -1,3 +1,3 @@
 testing
 hasDefaultNamespace
-	^ defaultNamespace notNil
+	^ self includesPrefix: ''

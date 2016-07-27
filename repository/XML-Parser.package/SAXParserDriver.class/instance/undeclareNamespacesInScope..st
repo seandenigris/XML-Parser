@@ -6,6 +6,3 @@ undeclareNamespacesInScope: aScope
 	aScope prefixesAndURIsDo: [:prefix :uri |
 		(currentScope includesPrefix: prefix mappedTo: uri)
 			ifFalse: [self saxHandler endPrefixMapping: prefix]].
-
-	(aScope defaultNamespace ~= currentScope defaultNamespace)
-		ifTrue: [self saxHandler endPrefixMapping: ''].

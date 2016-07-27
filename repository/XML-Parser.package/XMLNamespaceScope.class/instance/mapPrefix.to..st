@@ -7,9 +7,11 @@ mapPrefix: aPrefix to: aUri
 			aPrefix = 'xml'
 				ifTrue: [
 					aUri = self class xmlNamespaceURI
-						ifTrue: [^ self].
-					XMLNamespaceException signal:
-						'Cannot rebind the "xml" prefix to a different namespace URI'].
+						ifFalse: [
+							XMLNamespaceException signal:
+								'Cannot map the "xml" prefix to a new namespace URI'].
+					self prefixMappings at: 'xml' put: aUri.
+					^ self].
 			aPrefix = 'xmlns'
 				ifTrue: [XMLNamespaceException signal: 'Cannot bind "xmlns" prefix at all']].
 	(aPrefix indexOf: $:) > 0 

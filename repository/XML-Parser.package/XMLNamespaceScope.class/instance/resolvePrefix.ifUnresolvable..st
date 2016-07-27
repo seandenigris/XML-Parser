@@ -1,10 +1,7 @@
-accessing
-resolvePrefix: aPrefix ifUnmapped: aBlock
-	aPrefix isEmpty
-		ifTrue: [^ self defaultNamespace].
-
-	^ self prefixMappings
-		at: aPrefix
+resolving
+resolvePrefix: aPrefix ifUnresolvable: aBlock
+	^ self
+		prefixMappingsAt: aPrefix
 		ifAbsent: [
 			aPrefix = 'xml'
 				ifTrue: [self class xmlNamespaceURI]

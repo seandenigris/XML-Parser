@@ -7,8 +7,6 @@ writeXMLOn: aWriter
 	self hasNamespaces
 		ifTrue: [self writeNamespaceDeclarationsOn: tagWriter].
 	self hasAttributes 
-		ifTrue: [
-			self attributeNodes do: [:each |
-				tagWriter attributeAt: each name put: each value]].
+		ifTrue: [self writeAttributesOn: tagWriter].
 
 	tagWriter with: [self writeInnerXMLOn: aWriter].

@@ -1,6 +1,7 @@
 accessing
 prefix: aPrefix
 	self changeWith: [
-		aPrefix isEmptyOrNil
-			ifTrue: [qualified := self localPart]
-			ifFalse: [qualified := aPrefix, ':', self localPart]]
+		qualified := 
+			aPrefix
+				ifEmpty: [self localPart]
+				ifNotEmpty: [aPrefix, ':', self localPart]]

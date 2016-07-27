@@ -1,3 +1,3 @@
 enumerating
 prefixesAndURIsDo: aTwoArgumentBlock
-	self prefixMappings keysAndValuesDo: aTwoArgumentBlock
+	prefixMappings ifNotNil: [prefixMappings keysAndValuesDo: aTwoArgumentBlock]

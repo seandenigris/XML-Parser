@@ -1,3 +1,4 @@
 testing
 includesPrefix: aPrefix
-	^ self prefixMappings includesKey: aPrefix
+	self prefixMappingsAt: aPrefix ifAbsent: [^ false].
+	^ true.

@@ -1,3 +1,3 @@
-accessing
+resolving
 resolvePrefix: aPrefix
-	^ self resolvePrefix: aPrefix ifUnmapped: ['']
+	^ self resolvePrefix: aPrefix ifUnresolvable: ['']

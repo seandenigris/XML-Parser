@@ -1,3 +1,3 @@
 testing
 hasNamespaces
-	^ defaultNamespace notNil or: [prefixMappings notNil and: [prefixMappings notEmpty]]
+	^ prefixMappings notNil and: [prefixMappings notEmpty]

@@ -1,6 +1,10 @@
 comparing
 = anObject
-	^ self == anObject
-		or: [self class == anObject class
-			and: [self defaultNamespace = anObject defaultNamespace
-				and: [self prefixMappings = anObject prefixMappings]]]
+	self == anObject
+		ifTrue: [^ true].
+	self class == anObject class
+		ifFalse: [^ false].
+
+	^ self hasNamespaces
+		ifTrue: [anObject hasNamespaces and: [prefixMappings = anObject prefixMappings]]
+		ifFalse: [anObject hasNamespaces not].

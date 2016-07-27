@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "monty 2/2/2014 06:17",
 	"instvars" : [
-		"defaultNamespace",
 		"prefixMappings" ],
 	"name" : "XMLNamespaceScope",
 	"pools" : [
