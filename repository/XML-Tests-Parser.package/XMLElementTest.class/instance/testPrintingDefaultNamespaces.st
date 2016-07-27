@@ -10,7 +10,7 @@ testPrintingDefaultNamespaces
 		((XMLElement
 			name: 'element'
 			namespaceURI: '')
-			addElement: 'empty';
+			addElementNamed: 'empty';
 			yourself).
 
 	self assert:

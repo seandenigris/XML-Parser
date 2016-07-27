@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "monty 11/1/2014 15:57" },
+	"instance" : {
+		"cdataClass" : "monty 11/1/2014 15:59",
+		"commentClass" : "monty 11/1/2014 15:59",
+		"documentClass" : "monty 11/1/2014 16:00",
+		"elementClass" : "monty 11/1/2014 16:01",
+		"factoryClass" : "monty 11/1/2014 15:56",
+		"newFactory" : "monty 11/1/2014 15:56",
+		"piClass" : "monty 11/1/2014 16:02",
+		"sampleUserXML" : "monty 11/1/2014 21:32",
+		"stringClass" : "monty 11/1/2014 15:59",
+		"testCDataCreation" : "monty 11/1/2014 22:55",
+		"testCommentCreation" : "monty 11/1/2014 22:55",
+		"testDocumentCreation" : "monty 11/3/2014 19:38",
+		"testElementCreation" : "monty 11/3/2014 19:38",
+		"testPICreation" : "monty 11/1/2014 22:55",
+		"testParsingSample" : "monty 11/4/2014 20:23",
+		"testStringCreation" : "monty 11/1/2014 22:55" } }

@@ -1,8 +1,8 @@
 tests
 test03removingElements
-	| node nodes elements |
+	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElementsNamed: #('testOne' 'testPrefix:testTwo' 'testTwo' 'testThree').
 	node addNodes: (self intersperseWithNodes: elements).
 	self

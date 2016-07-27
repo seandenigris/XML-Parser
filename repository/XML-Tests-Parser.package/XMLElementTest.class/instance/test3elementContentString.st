@@ -11,7 +11,7 @@ test3elementContentString
 		assert: element contentString = str.
 
 	"Intersperse between text"
-	element addNode: XMLMockNode new.
+	element addNode: self nodeClass new.
 	self
 		assertElement: (element addContent: str)
 		hasContentString: str, ' ', str
@@ -23,5 +23,5 @@ test3elementContentString
 		hasContentString: str, ' ', str, str
 		withStrings: (Array with: str with: str, str).
 
-	element addElement: ((XMLElement named: 'childElementWithContent') addContent: 'test content').
+	element addNode: ((XMLElement named: 'childElementWithContent') addContent: 'test content').
 	self assert: (element contentStringAt: 'childElementWithContent') = 'test content'.

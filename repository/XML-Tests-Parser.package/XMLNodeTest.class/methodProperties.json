@@ -1,16 +1,18 @@
 {
 	"class" : {
-		 },
+		"shouldInheritSelectors" : "monty 11/2/2014 10:56" },
 	"instance" : {
 		"assertNode:hasName:namespaceURI:" : "JAAyer 10/30/2010 21:51",
 		"assertNode:hasPrefix:uri:" : "JAAyer 10/20/2010 18:20",
 		"assertNode:hasType:" : "JAAyer 10/28/2010 14:56",
 		"assertNode:hasTypes:" : "JAAyer 11/24/2010 19:47",
 		"createNodes:with:" : "JAAyer 3/8/2010 07:21",
-		"escapedString" : "JAAyer 10/28/2010 21:21",
 		"intersperse:with:" : "JAAyer 10/20/2010 18:26",
-		"intersperseWithNodes:" : "JAAyer 7/28/2010 09:10",
-		"markupString" : "JAAyer 3/1/2010 01:10",
-		"newNodes:" : "JAAyer 6/11/2010 11:16",
+		"intersperseWithNodes:" : "monty 11/2/2014 11:31",
+		"markupString" : "monty 11/4/2014 17:18",
+		"newNodes:" : "monty 11/2/2014 10:58",
 		"newStrings:" : "JAAyer 11/15/2010 05:02",
-		"should:enumerate:" : "JAAyer 10/28/2010 21:25" } }
+		"nodeClass" : "monty 11/2/2014 10:59",
+		"nodeTypes" : "monty 11/4/2014 00:09",
+		"should:enumerate:" : "JAAyer 10/28/2010 21:25",
+		"test1basicNodeProtocol" : "monty 11/4/2014 00:16" } }

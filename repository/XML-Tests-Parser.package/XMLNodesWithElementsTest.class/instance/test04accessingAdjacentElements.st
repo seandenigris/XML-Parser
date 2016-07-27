@@ -2,7 +2,7 @@ tests
 test04accessingAdjacentElements
 	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElements: 3.
 	node addNodes: (self intersperseWithNodes: elements).
 	elements do: [:each | | next previous |

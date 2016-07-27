@@ -2,9 +2,9 @@ tests
 test02addingElements
 	| node nodes elements children |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElements: 6.
-	nodes := self newNodes: 6.
+	nodes := self newStrings: 6.
 	children := self intersperse: elements with: nodes.
 
 	self
@@ -28,7 +28,7 @@ test02addingElements
 		addNode: nodes first
 		to: node.
 	self
-		should: [node addElement: elements fourth. elements fourth]
+		should: [node nodes add: elements fourth]
 		addElement: elements fourth
 		to: node.
 	self
@@ -53,5 +53,5 @@ test02addingElements
 		assertNode: node hasElements: elements.
 
 	self
-		should: [node addNode: (XMLElement new parent: XMLMockNode new)] raise: Error;
+		should: [node addNode: (XMLElement new parent: self nodeClass new)] raise: Error;
 		should: [node addNode: elements first] raise: Error.

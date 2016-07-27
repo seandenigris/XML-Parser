@@ -2,7 +2,7 @@ tests
 test2addingNodes
 	| node children |
 
-	node := XMLMockNodeWithChildren new.
+	node := self nodeClass new.
 	children := self newNodes: 6.
 	self
 		should: [node addNode: children second] addNode: children second to: node;
@@ -22,5 +22,5 @@ test2addingNodes
 	self assertNode: node hasChildren: children.
 
 	self
-		should: [node addNode: (XMLMockNode new parent: XMLMockNode new)] raise: Error;
+		should: [node addNode: (self nodeClass new parent: self nodeClass new)] raise: Error;
 		should: [node addNode: children first] raise: Error.

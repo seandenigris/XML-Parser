@@ -1,8 +1,8 @@
 tests
 test07elementAccessing
-	| node nodes elements |
+	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElementsNamed: #('testOne' 'testTwo' 'testPrefix:testOne' 'testThree').
 	node addNodes: (self intersperseWithNodes: elements).
 	self

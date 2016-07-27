@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"createDummyClasses" : "monty 11/1/2014 16:34",
+		"createDummySubclassOf:named:" : "monty 11/1/2014 22:22",
+		"dummyClassNames" : "monty 11/1/2014 21:43",
+		"dummyClassPrefix" : "monty 11/1/2014 22:39",
+		"nodeClasses" : "monty 11/1/2014 16:26",
+		"removeDummyClasses" : "monty 11/1/2014 16:33",
+		"removeDummySubclassNamed:" : "monty 11/1/2014 16:32" },
+	"instance" : {
+		"cdataClass" : "monty 11/1/2014 22:36",
+		"commentClass" : "monty 11/1/2014 22:36",
+		"documentClass" : "monty 11/1/2014 22:37",
+		"elementClass" : "monty 11/1/2014 22:37",
+		"factoryClass" : "monty 11/1/2014 16:51",
+		"newFactory" : "monty 11/1/2014 21:44",
+		"piClass" : "monty 11/1/2014 22:38",
+		"stringClass" : "monty 11/1/2014 22:38" } }

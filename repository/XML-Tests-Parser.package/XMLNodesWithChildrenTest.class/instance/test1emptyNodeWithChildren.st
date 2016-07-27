@@ -1,3 +1,3 @@
 tests
 test1emptyNodeWithChildren
-	self assertNodeHasNoChildren: XMLMockNodeWithChildren new
+	self assertNodeHasNoChildren: self nodeClass new

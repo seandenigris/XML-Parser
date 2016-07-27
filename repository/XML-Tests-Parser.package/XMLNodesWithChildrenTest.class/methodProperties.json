@@ -1,17 +1,18 @@
 {
 	"class" : {
-		 },
+		"isAbstract" : "monty 11/2/2014 11:01" },
 	"instance" : {
 		"assertNode:hasChildren:" : "JAAyer 11/8/2010 19:19",
 		"assertNodeHasNoChildren:" : "JAAyer 10/28/2010 21:28",
+		"nodeClass" : "monty 11/4/2014 19:03",
 		"should:addNode:to:" : "JAAyer 11/1/2010 03:32",
 		"should:addNodes:to:" : "JAAyer 11/1/2010 03:36",
 		"should:removeNode:from:" : "JAAyer 10/28/2010 21:28",
 		"should:removeNodes:from:" : "JAAyer 10/28/2010 21:32",
-		"test1emptyNodeWithChildren" : "JAAyer 11/6/2010 00:02",
-		"test2addingNodes" : "JAAyer 11/8/2010 19:19",
-		"test3removingNodes" : "JAAyer 11/8/2010 19:20",
-		"test4accessingAdjacentNodes" : "OttoBehrens 2/22/2011 23:42",
-		"test5accessingFirstAndLastNodes" : "JAAyer 11/6/2010 00:02",
-		"test6replacingNodes" : "JAAyer 11/6/2010 00:02",
-		"test7childNodeEnumeration" : "JAAyer 11/6/2010 00:02" } }
+		"test1emptyNodeWithChildren" : "monty 11/2/2014 11:00",
+		"test2addingNodes" : "monty 11/2/2014 10:58",
+		"test3removingNodes" : "monty 11/2/2014 10:59",
+		"test4accessingAdjacentNodes" : "monty 11/2/2014 10:59",
+		"test5accessingFirstAndLastNodes" : "monty 11/2/2014 11:10",
+		"test6replacingNodes" : "monty 11/2/2014 11:00",
+		"test7childNodeEnumeration" : "monty 11/2/2014 11:12" } }

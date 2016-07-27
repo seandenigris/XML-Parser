@@ -1,12 +1,12 @@
 tests
 test7contentNodeEnumeration
-	| node nodes elements stringNodes contentNodes |
+	| node elements stringNodes contentNodes |
 
 	node := XMLElement new.
 	elements := self newElements: 3.
 	stringNodes := self newStrings: 3.
 	contentNodes := self intersperse: elements with: stringNodes.
-	node addNodes: (self intersperseWithNodes: contentNodes).
+	node addNodes: (self intersperse: contentNodes with: (Array with: XMLComment new with: XMLPI new)).
 
 	self
 		assert: node contentNodes = contentNodes;

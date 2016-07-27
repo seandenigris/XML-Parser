@@ -2,7 +2,7 @@ tests
 test7childNodeEnumeration
 	| node nodes |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new..
 	self should: [:block | node nodesDo: block] enumerate: #().
 
 	nodes := self newNodes: 5.

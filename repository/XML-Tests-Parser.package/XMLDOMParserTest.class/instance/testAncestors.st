@@ -15,7 +15,7 @@ testAncestors
 
 	nodesAndAncestors keysAndValuesDo: [:node :ancestors | | enumerated |
 		enumerated := OrderedCollection new.
-		node ancestorsDo: [:each | enumerated add: each].
+		node ancestorNodesDo: [:each | enumerated add: each].
 		self
 			assert: enumerated = ancestors;
-			assert: node ancestors asOrderedCollection = ancestors].
+			assert: node ancestorNodes asOrderedCollection = ancestors].

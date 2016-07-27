@@ -2,7 +2,7 @@ tests
 test09tagsNamedSearching
 	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElementsNamed: #('foo' 'bar' 'prefix:foo' 'bar' 'prefix:bar' 'baz').
 	node addNodes: (elements first: 2).
 	node nodes first addNodes: (elements copyFrom: 3 to: 4).

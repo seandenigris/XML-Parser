@@ -3,7 +3,7 @@ testCDATASection
 	| document element unescaped escaped xml |
 
 	unescaped := 'this is CDATA test content 1 < 2 & 5 > 3'.
-	escaped := 'this is CDATA test content 1 &lt; 2 &amp; 5 &gt; 3'.
+	escaped := 'this is CDATA test content 1 &lt; 2 &amp; 5 > 3'.
 	xml := 
 		'<?xml version="1.0" encoding="UTF-8"?>
 		<test-data>test<![CDATA[', unescaped, ']]>test</test-data>'.

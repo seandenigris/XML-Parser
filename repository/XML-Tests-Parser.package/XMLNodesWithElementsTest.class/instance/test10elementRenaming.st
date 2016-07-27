@@ -1,8 +1,8 @@
 tests
 test10elementRenaming
-	| node nodes elements |
+	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	elements := self newElementsNamed: #('foo' 'prefix:bar' 'bar' 'baz').
 	node addNodes: (self intersperseWithNodes: elements).
 

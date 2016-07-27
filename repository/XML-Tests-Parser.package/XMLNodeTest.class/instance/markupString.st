@@ -1,3 +1,3 @@
 accessing
 markupString
-	^ 'test<>&"'
+	^ '<test name="&value;"/>'

@@ -2,7 +2,7 @@ tests
 test6replacingNodes
 	| node children newChildren |
 
-	node := XMLMockNodeWithChildren new.
+	node := self nodeClass new.
 	children := self newNodes: 3.
 	newChildren := self newNodes: 3.
 	node addNodes: children.

@@ -1,0 +1,12 @@
+tests
+testBeginsWith
+	| node |
+
+	node := self nodeClass string: 'test'.
+	1 to: 4 do: [:i | | prefix |
+		prefix := 'test' first: i.
+		self
+			assert: (node beginsWith: prefix);
+			assert: (node beginsWith: (self nodeClass string: prefix));
+			deny: (node beginsWith: (prefix copyWith: $.));
+			deny: (node beginsWith: (self nodeClass string: (prefix copyWith: $.)))].

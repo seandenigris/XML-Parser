@@ -1,3 +1,3 @@
 accessing
 newNodes: aNumber
-	^ self createNodes: aNumber with: [XMLMockNode new]
+	^ self createNodes: aNumber with: [self nodeClass new]

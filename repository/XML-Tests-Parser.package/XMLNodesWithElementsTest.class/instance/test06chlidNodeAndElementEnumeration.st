@@ -2,7 +2,7 @@ tests
 test06chlidNodeAndElementEnumeration
 	| node nodes elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	self
 		should: [:block | node nodesDo: block] enumerate: #();
 		should: [:block | node elementsDo: block] enumerate: #().

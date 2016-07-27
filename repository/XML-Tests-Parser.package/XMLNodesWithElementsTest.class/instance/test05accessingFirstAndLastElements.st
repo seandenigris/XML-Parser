@@ -2,7 +2,7 @@ tests
 test05accessingFirstAndLastElements
 	| node elements |
 
-	node := XMLMockNodeWithElements new.
+	node := self nodeClass new.
 	self
 		assert: node firstElement isNil;
 		assert: node lastElement isNil.
