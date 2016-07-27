@@ -1,3 +1,3 @@
-configuration
+configuring
 resolvesExternalEntities
 	^ self configuration resolvesExternalEntities

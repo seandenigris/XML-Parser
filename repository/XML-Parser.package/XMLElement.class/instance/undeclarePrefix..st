@@ -1,4 +1,4 @@
-namespaces
+namespacing
 undeclarePrefix: aPrefix
 	| currentMapping |
 

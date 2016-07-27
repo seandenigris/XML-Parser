@@ -1,4 +1,4 @@
-notifications
+notifying
 renamedElement: anElement from: anOldName to: aNewName
 	| oldPrefix index |
 

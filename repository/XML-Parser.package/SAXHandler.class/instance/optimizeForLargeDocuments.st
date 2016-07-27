@@ -1,4 +1,4 @@
-configuration
+configuring
 optimizeForLargeDocuments
 	"faster parsing and less memory use for large documents"
 	self

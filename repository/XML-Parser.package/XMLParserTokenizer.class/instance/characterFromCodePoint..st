@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 characterFromCodePoint: anInteger
 	(anInteger notNil and: [anInteger > 0])
 		ifFalse: [^ nil].

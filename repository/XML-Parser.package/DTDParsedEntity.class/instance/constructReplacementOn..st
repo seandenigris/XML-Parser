@@ -1,3 +1,3 @@
-replacement
+replacing
 constructReplacementOn: aTokenizer
 	self subclassResponsibility

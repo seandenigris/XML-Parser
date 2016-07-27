@@ -1,3 +1,3 @@
-declaration
+handling - declarations
 endDTD
 	self popNode

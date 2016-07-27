@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 addActiveEntity: anEntity
 	(self hasActiveEntityNamed: anEntity name)
 		ifTrue: [self errorSelfReferentialEntity: anEntity].

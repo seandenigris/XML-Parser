@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 constructReplacementForGeneralEntity: anEntity
 	context isLiteralValueContext
 		ifTrue: [

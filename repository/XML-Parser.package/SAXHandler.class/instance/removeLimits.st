@@ -1,4 +1,4 @@
-configuration
+configuring
 removeLimits
 	"remove all input security limits (unsafe)"
 

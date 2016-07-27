@@ -1,3 +1,3 @@
-namespaces
+namespacing
 undeclareDefaultNamespace
 	self undeclarePrefix: ''

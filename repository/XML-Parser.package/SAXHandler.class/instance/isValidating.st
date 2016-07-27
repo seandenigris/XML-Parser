@@ -1,3 +1,3 @@
-configuration
+configuring
 isValidating
 	^ self configuration isValidating

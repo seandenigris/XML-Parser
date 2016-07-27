@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 constructReplacementForParameterEntity: anEntity
 	context isLiteralValueContext
 		ifTrue: [^ self constructReplacementForLiteralContextEntity: anEntity].

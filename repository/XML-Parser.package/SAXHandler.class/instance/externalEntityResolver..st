@@ -1,4 +1,4 @@
-configuration
+configuring
 externalEntityResolver: anExternalEntityResolver
 	"This can be used to set a different DTDExternalEntityResolver"
 

@@ -1,4 +1,4 @@
-declaration
+handling - declarations
 startDTD: aRootElementName publicID: aPublicId systemID: aSystemId
 	| doctypeDeclaration |
 

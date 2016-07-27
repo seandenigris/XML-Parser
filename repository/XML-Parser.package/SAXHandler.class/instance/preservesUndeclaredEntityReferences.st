@@ -1,3 +1,3 @@
-configuration
+configuring
 preservesUndeclaredEntityReferences
 	^ self configuration preservesUndeclaredEntityReferences

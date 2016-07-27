@@ -1,4 +1,4 @@
-notifications
+notifying
 addedElement: anElement
 	super addedElement: anElement.
 	(self hasNamespaces

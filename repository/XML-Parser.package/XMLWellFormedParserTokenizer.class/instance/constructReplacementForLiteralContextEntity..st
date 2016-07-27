@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 constructReplacementForLiteralContextEntity: anEntity
 	| previousEscaper |
 

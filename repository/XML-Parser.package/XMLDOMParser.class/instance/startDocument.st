@@ -1,4 +1,4 @@
-content
+handling - content
 startDocument
 	self topNode ifNotNil: [^ self].
 

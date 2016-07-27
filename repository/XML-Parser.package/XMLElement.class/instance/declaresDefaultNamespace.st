@@ -1,4 +1,4 @@
-namespaces
+testing
 declaresDefaultNamespace
 	"Did the receiver declare a new default namespace rather than inheriting one?"
 

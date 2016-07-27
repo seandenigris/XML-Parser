@@ -1,4 +1,4 @@
-namespaces
+namespacing
 declarePrefix: aPrefix uri: aUri
 	| oldMapping |
 

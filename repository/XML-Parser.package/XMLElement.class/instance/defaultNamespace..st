@@ -1,4 +1,4 @@
-namespaces
+namespacing
 defaultNamespace: aUri
 	| oldNamespace |
 

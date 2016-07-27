@@ -1,4 +1,4 @@
-notifications
+notifying
 renamedAttribute: anAttribute from: anOldName to: aNewName
 	self attributesByName
 		removeKey: anOldName;

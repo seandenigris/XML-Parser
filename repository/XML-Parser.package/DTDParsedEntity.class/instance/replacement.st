@@ -1,3 +1,3 @@
-replacement
+replacing
 replacement
 	^ replacement ifNil: [replacement := '']

@@ -1,4 +1,4 @@
-declaration
+handling - declarations
 parameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
 	self topNode addNode:
 		(self nodeFactory parameterEntityDeclarationClass

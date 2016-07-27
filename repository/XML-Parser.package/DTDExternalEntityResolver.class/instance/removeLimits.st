@@ -1,3 +1,3 @@
-configuration
+configuring
 removeLimits
 	self externalEntityLimits removeAll

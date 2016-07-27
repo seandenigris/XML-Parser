@@ -1,4 +1,4 @@
-namespaces
+namespacing
 declareNamespaces: aDictionaryOrArray
 	aDictionaryOrArray associationsDo: [:each |
 		self

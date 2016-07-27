@@ -1,4 +1,4 @@
-configuration
+configuring
 usesNamespaces: aBoolean
 	"Namespace checking when true (default)"
 

@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 pushBackEntity: anEntity onClose: aBlock
 	anEntity replacement
 		ifEmpty: [

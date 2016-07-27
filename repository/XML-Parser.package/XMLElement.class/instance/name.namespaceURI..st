@@ -1,4 +1,4 @@
-namespaces
+accessing
 name: aQualifiedName namespaceURI: aUri
 	self
 		declarePrefix: (aQualifiedName prefixBeforeLocalName) uri: aUri;

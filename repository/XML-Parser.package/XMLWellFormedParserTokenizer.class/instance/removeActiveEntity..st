@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 removeActiveEntity: anEntity
 	self activeEntities remove: anEntity.
 	anEntity isExternal

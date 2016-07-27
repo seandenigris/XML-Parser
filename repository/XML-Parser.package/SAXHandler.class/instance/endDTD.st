@@ -1,2 +1,2 @@
-declaration
+handling - declarations
 endDTD

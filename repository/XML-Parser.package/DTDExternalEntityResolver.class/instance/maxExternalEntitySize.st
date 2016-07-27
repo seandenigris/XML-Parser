@@ -1,3 +1,3 @@
-configuration
+configuring
 maxExternalEntitySize
 	^ self externalEntityLimits maxExternalEntitySize

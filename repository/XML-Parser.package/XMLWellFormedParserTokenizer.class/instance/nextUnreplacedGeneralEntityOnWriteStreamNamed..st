@@ -1,4 +1,4 @@
-entity replacement
+entity replacing
 nextUnreplacedGeneralEntityOnWriteStreamNamed: aName
 	driver handleUnreplacedGeneralEntityReference: aName.
 	writeStream

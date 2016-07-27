@@ -1,4 +1,4 @@
-content
+handling - content
 startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName attributes: aDictionary
 	"This call corresonds to the Java SAX call
 	startElement(java.lang.String namespaceURI, java.lang.String localName,
