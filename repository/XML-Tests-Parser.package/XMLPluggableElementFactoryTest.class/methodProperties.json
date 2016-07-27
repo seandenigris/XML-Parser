@@ -1,11 +1,6 @@
 {
 	"class" : {
-		"createDummyClasses" : "monty 11/1/2014 16:35",
-		"createDummyElementClasses" : "monty 11/1/2014 16:30",
-		"dummyElementClassNames" : "monty 11/1/2014 16:45",
-		"dummyElementNames" : "monty 11/2/2014 09:38",
-		"removeDummyClasses" : "monty 11/1/2014 16:44",
-		"removeDummyElementClasses" : "monty 11/1/2014 16:44" },
+		 },
 	"instance" : {
 		"dateElementClass" : "monty 11/1/2014 22:37",
 		"defaultElementClass" : "monty 11/2/2014 09:38",
@@ -13,6 +8,7 @@
 		"realNameElementClass" : "monty 11/1/2014 22:38",
 		"serializationFormatElementClass" : "monty 11/1/2014 22:38",
 		"tableElementClass" : "monty 11/1/2014 22:39",
+		"testAddElementNamed" : "monty 7/20/2015 21:34",
 		"testCopy" : "monty 7/15/2015 09:26",
 		"testElementClassAccessor" : "JAA 3/24/2011 18:25",
 		"testElementClassNameMatching" : "monty 11/1/2014 22:27",
