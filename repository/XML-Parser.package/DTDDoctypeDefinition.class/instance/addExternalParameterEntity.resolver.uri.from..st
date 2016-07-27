@@ -4,6 +4,6 @@ addExternalParameterEntity: aName resolver: aResolver uri: aSystemUri from: aDoc
 		at: aName
 		ifAbsentPut: [
 			aResolver
-				resolveParameterEntity: aName
+				resolveExternalParameterEntity: aName
 				uri: aSystemUri
 				from: aDocumentOrEntityUri]

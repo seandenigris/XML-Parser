@@ -1,0 +1,3 @@
+private
+writeStreamOnFileOrDo: aBlock
+	self subclassResponsibility

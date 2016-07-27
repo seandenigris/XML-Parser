@@ -1,12 +1,12 @@
 private
-addPathSegmentsFrom: aResource
-	aResource pathSegments
+addPathSegmentsFrom: aUri
+	aUri pathSegments
 		ifEmpty: [^ self].
 
-	aResource hasAbsolutePath
+	aUri hasAbsolutePath
 		ifTrue: [pathSegments removeAll]
 		ifFalse: [
 			pathSegments
 				ifNotEmpty: [pathSegments removeLast]].
 
-	pathSegments addAll: aResource pathSegments.
+	aUri pathSegments do: [:each | self addPathSegment: each].

@@ -1,0 +1,1 @@
+This class reads hex or decimal integers from a minimal stream supporting next, peek, and atEnd.

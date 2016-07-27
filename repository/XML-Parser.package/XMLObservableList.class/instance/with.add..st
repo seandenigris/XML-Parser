@@ -2,6 +2,6 @@ private
 with: aBlock add: anObject
 	self
 		beforeAdding: anObject;
-		with: [aBlock value] onError: [^ nil];
+		with: aBlock ifResumingAfterError: [^ nil];
 		afterAdding: anObject.
 	^ anObject.

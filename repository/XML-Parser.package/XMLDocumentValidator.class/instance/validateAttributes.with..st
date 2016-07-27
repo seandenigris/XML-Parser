@@ -9,7 +9,7 @@ validateAttributes: anAttributeDictionary with: aValidatorDictionary
 				validator validateAttributes: anAttributeDictionary.
 				unvalidatedAttributes
 					remove: attribute
-				ifAbsent: []]].
+					ifAbsent: []]].
 
 	unvalidatedAttributes
 		ifNotEmpty: [self unvalidatedAttributes: unvalidatedAttributes].

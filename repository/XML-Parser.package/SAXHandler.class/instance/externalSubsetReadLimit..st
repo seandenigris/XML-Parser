@@ -1,0 +1,3 @@
+configuration
+externalSubsetReadLimit: aLimit
+	self parserLimits externalSubsetReadLimit: aLimit

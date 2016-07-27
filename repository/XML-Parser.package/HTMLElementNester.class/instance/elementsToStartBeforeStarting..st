@@ -11,14 +11,10 @@ elementsToStartBeforeStarting: anElementName
 	(anElementName = 'body' or: [anElementName = 'head'])
 		ifTrue: [^ self elementsToStart]. 
 
-	((self isHeadSectionOnlyElement: anElementName)
-		and: [(self hasOpenElement: 'head') not])
-			ifTrue: [self elementsToStart addLast: 'head']
+	(self mustStartHeadSectionFor: anElementName)
+		ifTrue: [self elementsToStart addLast: 'head']
 		ifFalse: [
-			((self isBodySectionOnlyElement: anElementName)
-				or: [(self hasOpenElement: 'head') not])
-				ifTrue: [
-					(self hasOpenElement: 'body')
-						ifFalse: [self elementsToStart addLast: 'body']]].
+			(self mustStartBodySectionFor: anElementName)
+				ifTrue: [self elementsToStart addLast: 'body']].
 
 	^ self elementsToStart.

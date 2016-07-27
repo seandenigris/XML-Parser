@@ -4,7 +4,7 @@ parseElementName
 
 	nameStream reset.
 	[contentModelStream atEnd
-		or: [SpecialCharacters includes: contentModelStream peek]]
+		or: [self isSpecialCharacter: contentModelStream peek]]
 		whileFalse: [nameStream nextPut: contentModelStream next].
 
 	matcher := nameStream contents.

@@ -1,1 +1,1 @@
-This is an abstract class for file handles to read files from disk.
+This is an abstract class for file handles to read/write/delete files. Subclasses need to implement the abstract methods. The class defaultImplementation method should return the subclass to use for this platform.

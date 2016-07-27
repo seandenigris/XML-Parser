@@ -1,3 +1,6 @@
 handling tokens
 handleWhitespace: aString
-	self saxHandler ignorableWhitespace: aString
+	(self elementNester hasScopedAttributes
+		and: [(self elementNester scopedAttributeAt: 'xml:space') = 'preserve'])
+		ifTrue: [self saxHandler characters: aString]
+		ifFalse: [self saxHandler ignorableWhitespace: aString]

@@ -12,7 +12,8 @@
 		"resolvesExternalEntities",
 		"preservesUndeclaredEntityReferences",
 		"externalEntityResolver",
-		"parserHandlerClass" ],
+		"parserHandlerClass",
+		"parserLimits" ],
 	"name" : "XMLConfiguration",
 	"pools" : [
 		 ],

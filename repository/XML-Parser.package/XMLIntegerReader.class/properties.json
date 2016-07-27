@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Streams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"HexDigitCharacterMap" ],
+	"commentStamp" : "monty 1/21/2014 01:36",
+	"instvars" : [
+		"stream" ],
+	"name" : "XMLIntegerReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

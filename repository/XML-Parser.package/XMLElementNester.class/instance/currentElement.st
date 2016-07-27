@@ -1,5 +1,5 @@
 accessing
 currentElement
-	^ self openElements
-		at: self totalOpen
-		ifAbsent: ['']
+	^ self openElements isEmpty
+		ifTrue: ['']
+		ifFalse: [openElements at: openElements size]

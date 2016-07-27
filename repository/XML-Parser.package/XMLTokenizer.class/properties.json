@@ -10,11 +10,11 @@
 		"PubidChars",
 		"UnaryOperatorChars",
 		"ValueListChars" ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 1/17/2014 01:50",
 	"instvars" : [
 		"activeEntities" ],
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],
-	"super" : "XMLDriverTokenizer",
+	"super" : "XMLParserTokenizer",
 	"type" : "normal" }

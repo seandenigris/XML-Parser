@@ -1,0 +1,3 @@
+configuration
+maxExternalEntities: aLimit
+	self externalEntityLimits maxExternalEntities: aLimit

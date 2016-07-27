@@ -1,3 +1,0 @@
-testing
-isInNonHTMLComment
-	^ context == #inNonHTMLComment

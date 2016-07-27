@@ -1,5 +1,5 @@
 instance creation
 onFileNamed: aFileName
 	^ self
-		on: (XMLFileHandle defaultImplementation path: aFileName) readStream
+		on: (XMLFileHandle path: aFileName) readStream
 		documentURI: aFileName

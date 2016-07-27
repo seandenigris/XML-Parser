@@ -1,3 +1,3 @@
 class initialization
 initializeUnaryOperatorChars
-	UnaryOperatorChars := CharacterSet with: $? with: $* with: $+
+	UnaryOperatorChars := BitmapCharacterSet with: $? with: $* with: $+

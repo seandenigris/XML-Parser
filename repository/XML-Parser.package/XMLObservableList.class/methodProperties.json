@@ -21,6 +21,6 @@
 		"remove:ifAbsent:" : "JAAyer 7/22/2010 10:58",
 		"removeAt:" : "JAAyer 6/11/2010 09:03",
 		"removeObserver:" : "OttoBehrens 2/14/2011 17:32",
-		"with:add:" : "JAAyer 11/22/2010 15:42",
-		"with:onError:" : "JAA 3/26/2011 19:04",
-		"with:remove:" : "JAAyer 11/22/2010 15:42" } }
+		"with:add:" : "monty 1/16/2014 09:52",
+		"with:ifResumingAfterError:" : "monty 1/23/2014 17:56",
+		"with:remove:" : "monty 1/16/2014 09:52" } }

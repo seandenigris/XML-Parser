@@ -4,6 +4,6 @@ addExternalGeneralEntity: aName resolver: aResolver uri: aSystemUri from: aDocum
 		at: aName
 		ifAbsentPut: [
 			aResolver
-				resolveGeneralEntity: aName
+				resolveExternalGeneralEntity: aName
 				uri: aSystemUri
 				from: aDocumentOrEntityUri]

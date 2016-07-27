@@ -1,3 +1,3 @@
 class initialization
 initializeValueListChars
-	ValueListChars := CharacterSet with: $( with: $| with: $)
+	ValueListChars := BitmapCharacterSet with: $( with: $| with: $)

@@ -1,0 +1,4 @@
+tokenizing
+nextStartExternalSubset
+	context enterExternalSubsetTextDeclaration.
+	driver handleStartDocument.

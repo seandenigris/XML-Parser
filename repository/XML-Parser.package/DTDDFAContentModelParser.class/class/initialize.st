@@ -5,5 +5,4 @@ initialize
 	super initialize.
 	self
 		initializeOperatorApplicators;
-		initializeSpecialCharacterParsers;
-		initializeSpecialCharacters.
+		initializeSpecialCharacterParsers.

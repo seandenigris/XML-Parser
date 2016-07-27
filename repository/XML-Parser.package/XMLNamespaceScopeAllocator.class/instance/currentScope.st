@@ -1,5 +1,5 @@
 accessing
 currentScope
-	^ self scopes
-		at: self scopes size
-		ifAbsent: [self emptyScope]
+	^ self scopes isEmpty
+		ifTrue: [self emptyScope]
+		ifFalse: [scopes at: scopes size]

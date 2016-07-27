@@ -4,8 +4,7 @@
 		 ],
 	"classvars" : [
 		"OperatorApplicators",
-		"SpecialCharacterParsers",
-		"SpecialCharacters" ],
+		"SpecialCharacterParsers" ],
 	"commentStamp" : "monty 12/29/2013 04:00",
 	"instvars" : [
 		"contentModelStream",

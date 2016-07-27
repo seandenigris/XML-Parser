@@ -1,0 +1,3 @@
+validation
+validateXMLIDAttributeIn: aDictionary
+	self xmlIDValidator validateAttributes: aDictionary

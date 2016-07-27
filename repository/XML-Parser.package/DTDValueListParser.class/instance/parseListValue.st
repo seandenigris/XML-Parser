@@ -3,11 +3,9 @@ parseListValue
 	| value oldSize |
 
 	valueStream reset.
-	valueListStream skipSeparators.
 	[valueListStream atEnd
 		or: [ListValueDelimiters includes: valueListStream peek]]
 		whileFalse: [valueStream nextPut: valueListStream next].
-	valueListStream skipSeparators.
 
 	(value := valueStream contents)
 		ifEmpty: [XMLValidationException signal: 'Empty list value'].

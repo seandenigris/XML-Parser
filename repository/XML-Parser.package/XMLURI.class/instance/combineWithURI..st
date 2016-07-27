@@ -1,7 +1,7 @@
 private
 combineWithURI: aUri
-	aUri host
-		ifNotEmpty: [host := aUri host].
+	aUri hasHost
+		ifTrue: [host := aUri host].
 
 	self addPathSegmentsFrom: aUri.
 	queryString := aUri queryString.

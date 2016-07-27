@@ -1,0 +1,1 @@
+This class can place limits on parser input.

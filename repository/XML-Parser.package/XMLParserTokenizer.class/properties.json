@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		"predefinedEntities" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 1/17/2014 01:16",
+	"instvars" : [
+		"driver",
+		"context",
+		"streamReader",
+		"streamWriter" ],
+	"name" : "XMLParserTokenizer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -2,9 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"activeEntityURI" : "monty 12/13/2013 18:19",
-		"activeEntityURI:" : "monty 12/13/2013 18:19",
-		"currentURI" : "monty 12/13/2013 18:19",
+		"currentURI" : "monty 1/20/2014 21:45",
+		"currentURI:" : "monty 1/20/2014 02:25",
 		"documentURI" : "monty 11/16/2013 04:35",
 		"dtd" : "monty 11/30/2013 04:17",
 		"handleAttributeDeclaration:name:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:46",
@@ -33,6 +32,9 @@
 		"handleWhitespace:" : "JAAyer 11/27/2010 07:23",
 		"handleXMLVersion:encoding:standalone:" : "JAAyer 11/27/2010 07:23",
 		"isValidating" : "JAAyer 11/27/2010 07:24",
+		"readLimit" : "monty 1/16/2014 19:45",
+		"removeURI:" : "monty 1/20/2014 02:25",
 		"tokenizerClass" : "JAAyer 11/27/2010 07:42",
-		"tokenizerOn:" : "JAAyer 11/28/2010 07:16",
+		"tokenizerOn:" : "monty 1/17/2014 01:28",
+		"uris" : "monty 1/20/2014 02:25",
 		"usesNamespaces" : "JAAyer 11/27/2010 07:24" } }

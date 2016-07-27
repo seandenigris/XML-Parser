@@ -1,0 +1,3 @@
+accessing
+externalSubsetReadLimit
+	^ self saxHandler externalSubsetReadLimit

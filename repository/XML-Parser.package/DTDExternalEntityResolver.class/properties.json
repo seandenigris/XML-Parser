@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 1/23/2014 05:48",
 	"instvars" : [
-		 ],
+		"externalEntityLimits",
+		"totalResolvedEntities" ],
 	"name" : "DTDExternalEntityResolver",
 	"pools" : [
 		 ],

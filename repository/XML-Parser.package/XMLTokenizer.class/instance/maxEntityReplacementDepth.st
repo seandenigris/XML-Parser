@@ -1,3 +1,3 @@
 accessing
 maxEntityReplacementDepth
-	^ 3
+	^ driver maxEntityReplacementDepth

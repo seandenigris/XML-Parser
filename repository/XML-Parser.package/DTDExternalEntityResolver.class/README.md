@@ -1,1 +1,1 @@
-This class resolves external entity references using HTTP and file clients.
+This class resolves external entity references using XMLURI, XMLHTTPRequest, and XMLFileHandle.

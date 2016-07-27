@@ -1,5 +1,5 @@
 converting
 asRetrievableResource
 	^ self isLocalURI
-		ifTrue: [XMLFileHandle defaultImplementation path: self path]
-		ifFalse: [XMLHTTPRequest defaultImplementation url: self asString]
+		ifTrue: [XMLFileHandle path: self unescapedPath]
+		ifFalse: [XMLHTTPRequest url: self asString]

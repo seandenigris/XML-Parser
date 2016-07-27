@@ -1,5 +1,6 @@
 private
 topNode
+	"For performance"
 	^ self nodeStack isEmpty
 		ifTrue: [nil]
-		ifFalse: [self nodeStack last]
+		ifFalse: [nodeStack at: nodeStack size]

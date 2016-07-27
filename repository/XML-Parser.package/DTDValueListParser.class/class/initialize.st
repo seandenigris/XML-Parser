@@ -4,7 +4,7 @@ initialize
 
 	super initialize.
 
-	(ListValueDelimiters := CharacterSet new)
+	(ListValueDelimiters := BitmapCharacterSet new)
 		add: $|;
 		add: $);
 		addAll: Character separators

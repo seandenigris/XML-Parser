@@ -10,4 +10,6 @@ nextInteger
 			base := 16]
 		ifFalse: [base := 10].
 
-	^ self nextIntegerWithBase: base.
+	^ XMLIntegerReader
+		readFrom: self
+		withBase: base.

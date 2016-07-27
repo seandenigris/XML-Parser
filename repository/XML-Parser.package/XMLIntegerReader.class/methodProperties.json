@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"initialize" : "monty 1/21/2014 01:35",
+		"on:" : "monty 1/21/2014 01:27",
+		"readFrom:withBase:" : "monty 1/21/2014 02:02",
+		"readFrom:withBase:upTo:" : "monty 1/21/2014 17:42" },
+	"instance" : {
+		"maxIntegerValue" : "monty 1/21/2014 01:26",
+		"nextDigitWithBase:" : "monty 1/21/2014 17:51",
+		"nextIntegerWithBase:upTo:" : "monty 1/21/2014 02:14",
+		"stream:" : "monty 1/21/2014 01:28" } }

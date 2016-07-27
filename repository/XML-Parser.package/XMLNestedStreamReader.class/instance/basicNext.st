@@ -6,14 +6,14 @@ basicNext
 
 	(nextChar := stream next)
 		ifNil: [
-			[self hasNestedStreams and: [stream atEnd]]
+			[stream atEnd and: [self hasNestedStreams]]
 				whileTrue: [self popCurrentStream].
 			nextChar := stream next].
 
 	nextChar == CarriageReturn
 		ifTrue: [
 			nextChar := normalizedLineEndingChar.
-			[self hasNestedStreams and: [stream atEnd]]
+			[stream atEnd and: [self hasNestedStreams]]
 				whileTrue: [self popCurrentStream].
 			(stream peek == LineFeed)
 				ifTrue: [stream next]]

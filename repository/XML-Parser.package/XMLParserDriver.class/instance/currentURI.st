@@ -1,3 +1,5 @@
 accessing
 currentURI
-	^ self activeEntityURI ifNil: [self documentURI]
+	^ self uris
+		ifEmpty: [self documentURI]
+		ifNotEmpty: [self uris last]

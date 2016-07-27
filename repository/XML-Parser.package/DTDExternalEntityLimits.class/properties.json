@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-DTD",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"maxExternalEntities",
+		"maxExternalEntitySize" ],
+	"name" : "DTDExternalEntityLimits",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

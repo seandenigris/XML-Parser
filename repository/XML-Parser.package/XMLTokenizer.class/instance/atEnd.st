@@ -1,11 +1,11 @@
 testing
 atEnd
+	(streamReader atEnd and: [context isInitialized])
+		ifFalse: [^ false].
+
 	context atEnd
-		ifTrue: [^ true].
-	(context isInitialized and: [streamReader atEnd])
-		ifTrue: [
+		ifFalse: [
 			context isInInternalSubset
 				ifTrue: [self errorExpected: 'end of internal subset'].
-			self nextEndDocument.
-			^ true].
-	^ false.
+			self nextEndDocument].
+	^ true.

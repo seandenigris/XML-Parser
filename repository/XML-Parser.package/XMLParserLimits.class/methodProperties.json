@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"documentReadLimit" : "monty 1/16/2014 18:43",
+		"documentReadLimit:" : "monty 1/16/2014 18:44",
+		"externalSubsetReadLimit" : "monty 1/16/2014 18:44",
+		"externalSubsetReadLimit:" : "monty 1/16/2014 18:44",
+		"initialize" : "monty 1/19/2014 04:47",
+		"maxEntityReplacementDepth" : "monty 1/16/2014 18:45",
+		"maxEntityReplacementDepth:" : "monty 1/16/2014 18:45",
+		"removeAll" : "monty 1/16/2014 18:45" } }

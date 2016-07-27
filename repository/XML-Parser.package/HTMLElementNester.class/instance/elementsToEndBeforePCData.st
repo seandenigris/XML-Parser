@@ -1,8 +1,8 @@
 checking
 elementsToEndBeforePCData
-	(self hasOpenElement: 'head')
-		ifFalse: [^ #()].
-
-	^ (self elementsToEndBeforeEnding: 'head')
-		addLast: 'head';
-		yourself.
+	^ (self hasOpenElement: 'head')
+		ifTrue: [
+			(self elementsToEndBeforeEnding: 'head')
+				addLast: 'head';
+				yourself]
+		ifFalse: [#()]

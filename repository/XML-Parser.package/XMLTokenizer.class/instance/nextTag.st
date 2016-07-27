@@ -1,6 +1,6 @@
 tokenizing
 nextTag
-	| tagName attributes namespaces nextChar attributeName attributeValue |
+	| tagName attributes reservedAttributes namespaces nextChar attributeName attributeValue |
 
 	(streamReader peek = $/)
 		ifTrue: [^ self nextEndTag].
@@ -19,23 +19,35 @@ nextTag
 			attributeValue := self nextAttributeValue.
 	
 			((attributeName at: 1) == $x "fast test to skip the others"
-				and: [driver usesNamespaces
-					and: [attributeName beginsWith: 'xmlns']])
+				and: [(attributeName beginsWith: 'xml')
+					and: [attributeName size >= 5]])
 				ifTrue: [
-					namespaces
-						ifNil: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
-					attributeName size > 6
+					(driver usesNamespaces
+						and: [(attributeName at: 4) == $n
+							and: [(attributeName at: 5) == $s]])
 						ifTrue: [
 							namespaces
-								at: (attributeName copyFrom: 7 to: attributeName size)
-								put: attributeValue]
-						ifFalse: [namespaces at: '' put: attributeValue]]
+								ifNil: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
+							attributeName size > 6
+								ifTrue: [
+									namespaces
+										at: (attributeName copyFrom: 7 to: attributeName size)
+										put: attributeValue]
+								ifFalse: [namespaces at: '' put: attributeValue]]
+						ifFalse: [
+							(attributeName at: 4) == $:
+								ifTrue: [
+									(reservedAttributes ifNil: [reservedAttributes := Dictionary new])
+										at: attributeName put: attributeValue].
+								attributes at: attributeName put: attributeValue]]
 				ifFalse: [attributes at: attributeName put: attributeValue]].
 
 	driver
 		handleStartTag: tagName
 		attributes: attributes
 		namespaces: namespaces.
+	reservedAttributes
+		ifNotNil: [driver reservedAttributes: reservedAttributes].
 
 	streamReader peek == $/
 		ifTrue: [

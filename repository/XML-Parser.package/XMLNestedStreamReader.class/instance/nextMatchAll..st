@@ -1,6 +1,6 @@
 testing
 nextMatchAll: aString
-	| i nextChar pushBackString |
+	| i nextChar |
 
 	self peek == (aString at: 1)
 		ifFalse: [^ false].
@@ -14,9 +14,11 @@ nextMatchAll: aString
 	(i > aString size)
 		ifTrue: [^ true].
 
-	pushBackString := aString copyFrom: 1 to: i - 1.
 	self pushBack:
 		(nextChar
-			ifNotNil: [pushBackString copyWith: nextChar]
-			ifNil: [pushBackString]).
+			ifNotNil: [
+				(aString copyFrom: 1 to: i)
+					at: i put: nextChar;
+					yourself]
+			ifNil: [aString copyFrom: 1 to: i - 1]).
 	^ false.

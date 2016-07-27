@@ -1,0 +1,3 @@
+accessing
+currentWorkingDirectory
+	^ self implementation currentWorkingDirectoryPathString

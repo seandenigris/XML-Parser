@@ -5,5 +5,8 @@ getUpToLimit: aMaxSize
 		withTimeout: self defaultTimeout
 		onError: [:error |
 			(error isKindOf: XMLLimitException)
-				ifTrue: [XMLLimitException signal: 'HTTP reponse limit exceeded']
-				ifFalse: [XMLHTTPException signal: error messageText]]
+				ifTrue: [
+					error
+						messageText: 'HTTP reponse limit exceeded';
+						pass]
+				ifFalse: [error resignalAs: XMLHTTPException]]

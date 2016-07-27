@@ -1,11 +1,12 @@
 {
 	"class" : {
 		"defaultImplementation" : "monty 1/12/2014 01:37",
-		"url:" : "monty 1/10/2014 00:11" },
+		"implementation" : "monty 1/23/2014 02:28",
+		"url:" : "monty 1/23/2014 01:35" },
 	"instance" : {
 		"defaultTimeout" : "monty 1/13/2014 21:11",
 		"get" : "monty 1/9/2014 05:08",
 		"getResponseUpToLimit:withTimeout:onError:" : "monty 1/13/2014 19:42",
-		"getUpToLimit:" : "monty 1/13/2014 19:42",
+		"getUpToLimit:" : "monty 1/22/2014 22:50",
 		"url" : "monty 1/10/2014 00:10",
 		"url:" : "monty 1/10/2014 00:10" } }

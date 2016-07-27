@@ -1,1 +1,1 @@
-This class reads XML tokens from a stream using a nested stream reader. Sending it #nextToken causes a token to be read and one or more handler messages to be dispatched to a driver.
+This is tokenizer for well-formed XML that supports DTD subsets and entity replacement.

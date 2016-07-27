@@ -1,3 +1,3 @@
 accessing
 defaultDocumentURI
-	^ XMLFileHandle defaultImplementation currentWorkingDirectoryPath, '/default'
+	^ XMLFileHandle currentWorkingDirectory, '/default'

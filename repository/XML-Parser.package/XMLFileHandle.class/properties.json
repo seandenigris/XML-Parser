@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/9/2014 23:28",
+	"commentStamp" : "monty 1/23/2014 15:44",
 	"instvars" : [
 		"path" ],
 	"name" : "XMLFileHandle",

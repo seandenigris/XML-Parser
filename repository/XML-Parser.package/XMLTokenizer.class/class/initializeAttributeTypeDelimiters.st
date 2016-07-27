@@ -1,3 +1,3 @@
 class initialization
 initializeAttributeTypeDelimiters
-	AttributeTypeDelimiters := CharacterSet with: $# with: $' with: $" with: $>
+	AttributeTypeDelimiters := BitmapCharacterSet with: $# with: $' with: $" with: $>
