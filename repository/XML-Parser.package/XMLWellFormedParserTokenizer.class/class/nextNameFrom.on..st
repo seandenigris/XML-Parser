@@ -1,5 +1,7 @@
 streaming
 nextNameFrom: aReadStream on: aWriteStream
+	"atEnd test is used instead of xmlParserIncludes: because the argument
+	readStream may not return nil when atEnd on other platforms"
 	(aReadStream atEnd
 		or: [(NameChars includes: aReadStream peek) not
 			or: [AdditionalNameChars includes: aReadStream peek]])

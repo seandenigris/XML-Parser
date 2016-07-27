@@ -3,13 +3,11 @@ nextName
 	| nextChar |
 
 	nameStream reset.
-	((nextChar := streamReader next) notNil
-		and: [(NameChars includes: nextChar)
-			and: [(AdditionalNameChars includes: nextChar) not]])
+	((NameChars xmlParserIncludes: (nextChar := streamReader next))
+		and: [(AdditionalNameChars xmlParserIncludes: nextChar) not])
 		ifFalse: [self errorExpectedName].
 	nameStream nextPut: nextChar.
 
-	[(nextChar := streamReader peek) notNil
-		and: [NameChars includes: nextChar]]
+	[NameChars xmlParserIncludes: streamReader peek]
 		whileTrue: [nameStream nextPut: streamReader next].
 	^ nameStream contents.

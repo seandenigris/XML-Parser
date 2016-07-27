@@ -5,8 +5,8 @@
 	"instance" : {
 		"detectNextStateMatching:" : "monty 12/28/2013 00:21",
 		"detectNextStateMatching:ifNone:" : "monty 12/11/2014 05:07",
-		"dfaStateMatching:" : "monty 12/11/2014 05:07",
+		"dfaStateMatching:" : "monty 4/17/2015 16:05",
 		"isAccepting" : "monty 12/28/2013 18:54",
 		"nfaStates" : "monty 12/29/2013 01:10",
-		"setNFAStates:dfaStateCache:" : "monty 3/21/2015 23:17",
+		"setNFAStates:dfaStateCache:" : "monty 4/17/2015 15:57",
 		"transitions" : "monty 12/28/2013 01:09" } }

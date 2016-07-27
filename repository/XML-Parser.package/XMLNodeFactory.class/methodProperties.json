@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asPluggableNodeFactory" : "monty 4/17/2015 10:36",
 		"attributeDeclarationClass" : "monty 12/21/2013 02:58",
 		"cdataClass" : "JAAyer 11/10/2010 03:18",
 		"classForElement:" : "monty 11/1/2014 13:23",
@@ -21,6 +22,7 @@
 		"newElementNamed:namespaceURI:" : "monty 3/21/2015 22:37",
 		"newPI" : "monty 11/1/2014 22:55",
 		"newString:" : "monty 11/1/2014 22:58",
+		"nodeListClass" : "monty 4/17/2015 10:32",
 		"notationDeclarationClass" : "monty 12/21/2013 02:59",
 		"parameterEntityDeclarationClass" : "monty 12/21/2013 02:59",
 		"piClass" : "JAAyer 11/10/2010 03:18",

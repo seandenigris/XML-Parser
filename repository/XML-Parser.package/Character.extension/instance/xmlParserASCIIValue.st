@@ -1,0 +1,3 @@
+*XML-Parser
+xmlParserASCIIValue
+	^ value

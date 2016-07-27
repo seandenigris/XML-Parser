@@ -1,3 +1,3 @@
 accessing
 nodeListClass
-	^ nodeListClass
+	^ self nodeFactory nodeListClass

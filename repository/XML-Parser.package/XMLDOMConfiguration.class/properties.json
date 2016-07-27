@@ -6,11 +6,10 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
+		"nodeFactory",
 		"preservesCDataNodes",
 		"preservesCommentNodes",
-		"preservesIgnorableWhitespace",
-		"nodeFactory",
-		"nodeListClass" ],
+		"preservesIgnorableWhitespace" ],
 	"name" : "XMLDOMConfiguration",
 	"pools" : [
 		 ],

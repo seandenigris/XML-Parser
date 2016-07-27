@@ -23,4 +23,4 @@ parse
 
 	^ XMLDFAElementValidator
 		element: element
-		dfa: nfaBuilder firstStateOfAcceptingNFA asDFAState.
+		dfa: nfaBuilder acceptingNFAFirstState asDFAState.

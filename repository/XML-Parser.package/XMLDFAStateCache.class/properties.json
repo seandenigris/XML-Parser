@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "monty 12/27/2014 03:19",
 	"instvars" : [
-		"firstState",
-		"cachedStates" ],
+		"firstDFAState",
+		"cachedDFAStates" ],
 	"name" : "XMLDFAStateCache",
 	"pools" : [
 		 ],

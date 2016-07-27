@@ -1,5 +1,5 @@
 deprecated
 parseDocumentFrom: aStringOrStream
-	self deprecated: 'use #parse: instead'.
+	self deprecated: 'Use #parse: instead'.
 
 	^ self parse: aStringOrStream.

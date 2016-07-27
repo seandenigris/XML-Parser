@@ -11,4 +11,4 @@ skipSeparators
 			readLimit ifNotNil: [
 				(readLimit := readLimit - 1) >= 0
 					ifFalse: [self errorReadLimitExceeded]].
-			peekChar := nil].
+			peekChar := nil]

@@ -1,4 +1,5 @@
 adding
 addElement: anElement
-	self deprecated: 'use #addNode: or #addElementNamed: instead'.
+	self deprecated: 'Use #addNode: or #addElementNamed: instead'.
+
 	self addNode: anElement.

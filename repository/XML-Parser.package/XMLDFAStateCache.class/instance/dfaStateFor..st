@@ -1,5 +1,5 @@
 accessing
 dfaStateFor: aStateSet
-	^ cachedStates
+	^ cachedDFAStates
 		at: aStateSet
 		ifAbsent: [self addDFAState: (aStateSet asDFAStateWithStateCache: self)]

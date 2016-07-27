@@ -11,7 +11,8 @@
 		"stringClass",
 		"cdataClass",
 		"commentClass",
-		"piClass" ],
+		"piClass",
+		"nodeListClass" ],
 	"name" : "XMLPluggableNodeFactory",
 	"pools" : [
 		 ],

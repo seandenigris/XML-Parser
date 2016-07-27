@@ -1,9 +1,10 @@
 {
 	"class" : {
-		"firstState:" : "monty 12/29/2013 01:02" },
+		"firstDFAState:" : "monty 4/17/2015 16:00" },
 	"instance" : {
-		"addDFAState:" : "monty 4/16/2015 01:11",
-		"clear" : "monty 4/16/2015 01:10",
-		"dfaStateFor:" : "monty 4/16/2015 01:10",
-		"firstState:" : "monty 11/19/2014 19:28",
-		"maxCachedStates" : "monty 12/29/2013 01:07" } }
+		"addDFAState:" : "monty 4/17/2015 20:33",
+		"clearCachedDFAStates" : "monty 4/17/2015 20:32",
+		"dfaStateFor:" : "monty 4/17/2015 15:58",
+		"firstDFAState" : "monty 4/17/2015 15:57",
+		"maxCachedDFAStates" : "monty 4/17/2015 16:00",
+		"setFirstDFAState:" : "monty 4/17/2015 16:01" } }

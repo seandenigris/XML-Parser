@@ -7,5 +7,4 @@ initialize
 		initializeAdditionalNameChars;
 		initializeNameChars;
 		initializePubidChars;
-		initializeEncodingNameChars;
-		initializeUnaryOperatorChars
+		initializeEncodingNameChars

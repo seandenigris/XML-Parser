@@ -1,3 +1,3 @@
 private
 nodeListClass
-	^ self configuration nodeListClass
+	^ self configuration nodeFactory nodeListClass
