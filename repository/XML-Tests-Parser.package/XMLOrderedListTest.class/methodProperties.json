@@ -46,6 +46,8 @@
 		"testNewFrom" : "JAA 3/26/2011 18:21",
 		"testNewWithAll" : "JAA 3/26/2011 18:31",
 		"testOfSize" : "JAA 3/26/2011 18:32",
+		"testReject" : "monty 10/19/2014 06:33",
+		"testRejectThenCollect" : "monty 10/19/2014 06:33",
 		"testRemoveAll" : "monty 1/12/2014 21:16",
 		"testRemoveAt" : "JAA 3/26/2011 17:43",
 		"testRemoveFirst" : "JAA 3/26/2011 17:44",
@@ -58,6 +60,6 @@
 		"testSelect" : "JAA 3/26/2011 18:12",
 		"testSelectThenCollect" : "JAA 3/26/2011 18:11",
 		"testSize" : "JAA 3/26/2011 18:13",
-		"testSpecies" : "JAA 3/26/2011 18:47",
+		"testSpecies" : "monty 10/19/2014 06:27",
 		"testWithCollect" : "JAA 3/26/2011 18:50",
 		"testWithIndexCollect" : "JAA 3/26/2011 18:51" } }
