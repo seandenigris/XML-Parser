@@ -1,8 +1,12 @@
 content
 startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName attributes: aDictionary
-	(self topNode isElement
-		or: [aQualifiedName = 'html'])
-		ifFalse: [self startHTMLPreamble].
+	| element |
+
+	(element := self findUniqueElementFor: aQualifiedName)
+		ifNotNil: [
+			self pushNode: element.
+			^ self].
+
 	super
 		startElement: aQualifiedName
 		prefix: aPrefix

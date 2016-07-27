@@ -2,11 +2,10 @@ tokenizing
 nextContentToken
 	| pcData |
 
-	pcData :=
-		context isInNonHTMLSection
-			ifTrue: [self nextNonHTMLSectionToken]
-			ifFalse: [self nextPCDataToken].
-	pcData
+	context isInNonHTMLSection
+		ifTrue: [^ self nextNonHTMLSectionToken].
+
+	(pcData := self nextPCDataToken)
 		ifNotEmpty: [driver handlePCData: pcData]
 		ifEmpty: [
 			streamReader peek == $<

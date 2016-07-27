@@ -1,0 +1,1 @@
+This class can handle the nesting of HTML elements missing closing tags or with opening and closing tags in the wrong order.

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		"NonEnumerationValidators" ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"element",
 		"name",

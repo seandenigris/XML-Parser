@@ -1,21 +1,20 @@
 parsing
 parse
-	| values value |
-
-	values := Set new.
+	| listValues value |
 
 	(enumerationList notEmpty
 		and: [enumerationList first == $(
 			and: [enumerationList last == $)]])
 		ifFalse: [XMLValidationException signal: 'Expected enumeration list'].
 
+	listValues := Set new.
 	($| split: (enumerationList copyFrom: 2 to: enumerationList size - 1))
 		do: [:each |
 			value := each copyWithout: Character space.
 			(self isValidListValue: value)
 				ifFalse: [XMLValidationException signal: 'Invalid enumeration value "', value, '" in list'].
-			(values includes: value)
+			(listValues includes: value)
 				ifTrue: [XMLValidationException signal: 'Duplicate "', value, '" in list'].
-			values add: value].
+			listValues add: value].
 
-	^ values.
+	^ listValues.

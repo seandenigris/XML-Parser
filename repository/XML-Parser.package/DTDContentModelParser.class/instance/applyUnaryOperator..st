@@ -1,7 +1,7 @@
 parsing
 applyUnaryOperator: aCharacter
-	nfaBuilder fragmentStack size >= 1
-		ifFalse: [self errorMissingOperand].
+	nfaBuilder fragmentStack
+		ifEmpty: [self errorMissingOperand].
 
 	aCharacter == $+
 		ifTrue: [nfaBuilder applyPlus]

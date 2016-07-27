@@ -1,6 +1,6 @@
 class initialization
-initializeNameDelimiters
-	(NameDelimiters := CharacterSet new)
+initializeHTMLNameDelimiters
+	(HtmlNameDelimiters := CharacterSet new)
 		addAll: Character separators;
 		add: $>;
 		add: $/;

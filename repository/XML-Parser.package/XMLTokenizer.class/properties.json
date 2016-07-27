@@ -1,11 +1,10 @@
 {
 	"category" : "XML-Parser",
 	"classinstvars" : [
-		 ],
+		"predefinedEntities" ],
 	"classvars" : [
 		"AdditionalNameChars",
 		"NameStartChars",
-		"PredefinedEntities",
 		"PubidChars" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [

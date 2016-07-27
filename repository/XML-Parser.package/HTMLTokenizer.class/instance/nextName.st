@@ -4,7 +4,7 @@ nextName
 
 	^ streamWriter writeWith: [:writeStream |
 		 [(nextChar := streamReader peek) isNil
-			or: [(NameDelimiters includes: nextChar)
+			or: [(HtmlNameDelimiters includes: nextChar)
 				or: [(context isInDoctype and: [nextChar == $[])
 					or: [context isInInternalSubset and: [nextChar == $]]]]]]
 			whileFalse: [writeStream nextPut: streamReader next].

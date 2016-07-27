@@ -1,3 +1,3 @@
 testing
 canNestWithinSelf: anElementName
-	^ NestableTags includes: anElementName
+	^ (NonNestableElements includes: anElementName) not

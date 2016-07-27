@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"documentURI" : "monty 11/16/2013 04:35",
+		"dtd" : "monty 11/30/2013 04:17",
 		"handleAttributeDeclaration:name:type:default:" : "monty 11/14/2013 18:33",
 		"handleCData:" : "JAAyer 11/27/2010 07:23",
 		"handleComment:" : "JAAyer 11/27/2010 07:23",
@@ -29,6 +30,7 @@
 		"handleWhitespace:" : "JAAyer 11/27/2010 07:23",
 		"handleXMLVersion:encoding:standalone:" : "JAAyer 11/27/2010 07:23",
 		"isValidating" : "JAAyer 11/27/2010 07:24",
+		"resolvesExternalEntities" : "monty 11/30/2013 04:12",
 		"tokenizerClass" : "JAAyer 11/27/2010 07:42",
 		"tokenizerOn:" : "JAAyer 11/28/2010 07:16",
 		"usesNamespaces" : "JAAyer 11/27/2010 07:24" } }

@@ -1,7 +1,7 @@
 class initialization
 initializeMutuallyExcludingTags
 	MutuallyExcludingTags := Dictionary new.
-	#(#('dd' 'dt') #('thead' 'tbody') #('th' 'td'))
+	#(#('dd' 'dt') #('thead' 'tbody') #('th' 'td') #('rp' 'rt'))
 		do: [:tagList |
 			tagList do: [:tag |
 				tagList do: [:each |

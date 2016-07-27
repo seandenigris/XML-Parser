@@ -9,7 +9,7 @@
 		"name",
 		"replacement",
 		"uri" ],
-	"name" : "DTDEntityDeclaration",
+	"name" : "DTDParsedEntity",
 	"pools" : [
 		 ],
 	"super" : "Object",

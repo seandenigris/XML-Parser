@@ -6,7 +6,7 @@
 		"dtd" : "monty 11/19/2013 06:04",
 		"externalEntityResolver" : "monty 11/19/2013 06:04",
 		"handleAttributeDeclaration:name:type:default:" : "monty 11/19/2013 19:53",
-		"handleElementDeclaration:contentModel:" : "monty 11/19/2013 06:17",
+		"handleElementDeclaration:contentModel:" : "monty 12/1/2013 01:56",
 		"handleGeneralEntityDeclaration:publicID:systemID:ndata:" : "monty 11/19/2013 02:20",
 		"handleGeneralEntityDeclaration:replacement:" : "monty 11/19/2013 02:15",
 		"handleNotationDeclaration:publicID:systemID:" : "monty 11/19/2013 02:20",
@@ -14,6 +14,8 @@
 		"handleParameterEntityDeclaration:replacement:" : "monty 11/19/2013 02:14",
 		"handleParameterEntityReference:" : "monty 11/19/2013 06:41",
 		"isValidating" : "monty 11/19/2013 06:16",
+		"resolvesExternalEntities" : "monty 11/30/2013 21:55",
 		"saxDriver" : "monty 11/19/2013 06:04",
 		"setSAXDriver:documentURI:" : "monty 11/19/2013 06:10",
-		"tokenizerOn:" : "monty 11/19/2013 06:51" } }
+		"tokenizerOn:" : "monty 11/19/2013 06:51",
+		"usesNamespaces" : "monty 11/30/2013 21:55" } }

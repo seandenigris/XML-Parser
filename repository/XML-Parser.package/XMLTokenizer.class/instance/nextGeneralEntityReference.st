@@ -4,8 +4,8 @@ nextGeneralEntityReference
 
 	name := self nextName.
 	self expectNext: $;.
-	(self predefinedEntities includesKey: name)
-		ifTrue: [^ self predefinedEntities at: name].
+	(self class predefinedEntities includesKey: name)
+		ifTrue: [^ self class predefinedEntities at: name].
 
 	entity := driver handleGeneralEntityReference: name.
 	replacement := self replacementFromGeneralEntity: entity.

@@ -1,0 +1,1 @@
+This class parses an attribute definition in an ATTLIST declaration and creates a validator for it.

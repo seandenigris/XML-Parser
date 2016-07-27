@@ -10,5 +10,5 @@
 	"name" : "DTDParameterEntity",
 	"pools" : [
 		 ],
-	"super" : "DTDEntityDeclaration",
+	"super" : "DTDParsedEntity",
 	"type" : "normal" }

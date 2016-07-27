@@ -1,3 +1,3 @@
 testing
-isParameter
+usesNamespaces
 	^ false

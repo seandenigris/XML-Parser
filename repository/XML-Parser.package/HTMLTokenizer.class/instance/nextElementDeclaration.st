@@ -10,4 +10,4 @@ nextElementDeclaration
 
 	driver
 		handleElementDeclaration: name
-		contentModel: contentModel
+		contentModel: contentModel.

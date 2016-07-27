@@ -1,38 +1,18 @@
 tokenizing
 nextNonHTMLSectionToken
-	| nextChar quote |
+	| nonHtmlSection nextChar  |
 
-	^ streamWriter writeWith: [:writeStream |
+	streamWriter writeWith: [:writeStream |
 		[streamReader atEnd
 			or: [self atNonHTMLSectionEndTag]]
 			whileFalse: [
-				nextChar := streamReader next.
-				context isInNonHTMLComment
-					ifTrue: [
-						(nonHtmlCommentStarter = '//' and: [nextChar == Character lf])
-							ifTrue: [context enterNonHTMLSection].
-						(nonHtmlCommentStarter = '/*'
-							and: [nextChar == $*
-								and: [streamReader peek == $/]])
-							ifTrue: [
-								writeStream nextPut: nextChar.
-								nextChar := streamReader next.
-								context enterNonHTMLSection]]
+				(self class isNonHTMLCodeSectionTag: nonHtmlElement)
+					ifTrue: [self nextNonHTMLCodeSectionOn: writeStream]
 					ifFalse: [
-						(nextChar == $" or: [nextChar == $'])
-							ifTrue: [
-								writeStream
-									nextPut: (quote := nextChar);
-									nextPutAll: (streamReader upTo: quote)]
-							ifFalse: [
-								((nextChar == $/)
-									and: [streamReader peek == $*
-										or: [streamReader peek == $/]])
-									ifTrue: [
-										context enterNonHTMLComment.
-										writeStream nextPut: $/.
-										nextChar := streamReader next.
-										nonHtmlCommentStarter := '/'  copyWith: nextChar]]].
-				writeStream nextPut: nextChar].
-		writeStream contents].
-	
+						nextChar := streamReader next.			
+						writeStream nextPut: nextChar]].
+		nonHtmlSection := writeStream contents].
+	nonHtmlElement := nil.
+	context enterContent.
+
+	driver handleNonHTMLSection: nonHtmlSection.

@@ -4,6 +4,4 @@ initialize
 
 	super initialize.
 
-	self
-		initializeNameDelimiters;
-		initializeNonHTMLSectionTags
+	self initializeHTMLNameDelimiters.

@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"contentModel",
 		"name",
+		"contentModel",
 		"contentModelStream",
 		"operatorStack",
 		"nfaBuilder" ],

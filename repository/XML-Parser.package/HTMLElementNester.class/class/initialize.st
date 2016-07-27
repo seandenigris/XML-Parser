@@ -3,7 +3,9 @@ initialize
 	"self initialize"
 
 	self
-		initializeSelfClosingTags;
-		initializeNestableTags;
+		initializeHeadSectionElements;
+		initializeBodySectionElements;
+		initializeNonNestableElements;
 		initializeNestableTagGroups;
-		initializeMutuallyExcludingTags
+		initializeMutuallyExcludingTags;
+		initializeVoidElements

@@ -1,10 +1,10 @@
-accessing
+checking
 elementsToEndBeforeEnding: anElementName
-	| toClose |
+	self elementsToEnd reset.
 
-	toClose := OrderedCollection new.
 	self openElements reverseDo: [:each |
 		each = anElementName
-			ifTrue: [^ toClose]
-			ifFalse: [toClose addLast: each]].
-	^ toClose.
+			ifTrue: [^ self elementsToEnd]
+			ifFalse: [self elementsToEnd addLast: each]].
+
+	^ self elementsToEnd.

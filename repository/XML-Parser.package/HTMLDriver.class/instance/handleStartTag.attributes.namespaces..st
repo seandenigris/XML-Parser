@@ -1,9 +1,17 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
-	self elementNester hasOpenSelfClosingTag
-		ifTrue: [self handleEndTag: self elementNester currentElement].
+	(self elementNester isOpenUniqueElement: anElementName)
+		ifTrue: [^ self].
 
-	(self elementNester elementsToEndBeforeStarting: anElementName)
-		do: [:each | self handleEndTag: each].
+	self preEndElements:
+		(self elementNester elementsToEndBeforeStarting: anElementName).
+	self preStartElements:
+		(self elementNester elementsToStartBeforeStarting: anElementName).
 
-	super handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
+	super
+		handleStartTag: anElementName
+		attributes: anAttributeDictionary
+		namespaces: aNamespaceDictionary.
+
+	(self elementNester isVoidElement: anElementName)
+		ifTrue: [self preEndElements: (Array with: anElementName)].

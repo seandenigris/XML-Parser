@@ -3,13 +3,17 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"BodySectionElements",
+		"HeadSectionElements",
 		"MutuallyExcludingTags",
 		"NestableTagGroups",
-		"NestableTags",
-		"SelfClosingTags" ],
-	"commentStamp" : "",
+		"NonNestableElements",
+		"VoidElements" ],
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"openElementsByName" ],
+		"openElementsByName",
+		"elementsToStart",
+		"elementsToEnd" ],
 	"name" : "HTMLElementNester",
 	"pools" : [
 		 ],

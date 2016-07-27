@@ -27,7 +27,7 @@ nextTag
 			streamReader next.
 			driver handleEndTag: tagName]
 		ifFalse: [
-			(NonHtmlSectionTags includes: tagName)
+			(self class isNonHTMLSectionTag: tagName)
 				ifTrue: [
 					nonHtmlElement := tagName.
 					context enterNonHTMLSection]].

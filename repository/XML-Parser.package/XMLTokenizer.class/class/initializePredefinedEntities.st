@@ -1,6 +1,6 @@
 class initialization
 initializePredefinedEntities
-	(PredefinedEntities := Dictionary new)
+	(predefinedEntities := Dictionary new)
 		at: 'lt' put: $<;
 		at: 'gt' put: $>;
 		at: 'amp' put: $&;
