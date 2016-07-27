@@ -1,12 +1,12 @@
 tests
 testValidationAndConstraintsToggle
 	self assert:
-		((SAXHandler on: '<root/>')
+		((SAXHandler on: '')
 			isValidating: false;
 			requiresDocumentConstraints: true;
 			isValidating).
 	self deny:
-		((SAXHandler on: '<root/>')
+		((SAXHandler on: '')
 			requiresDocumentConstraints: true;
 			isValidating: false;
 			requiresDocumentConstraints).

@@ -62,5 +62,6 @@
 		"testUndeclaredEntities" : "monty 12/6/2013 19:04",
 		"testUndeclaredNamespaces" : "monty 12/6/2013 17:39",
 		"testUnparsedEntities" : "monty 11/20/2013 01:06",
-		"testValidationAndConstraintsToggle" : "monty 12/21/2013 23:04",
+		"testValidationAndConstraintsToggle" : "monty 12/29/2013 02:49",
+		"testValidationAndEntityReferenceToggle" : "monty 12/29/2013 03:24",
 		"testWellFormedness" : "monty 11/20/2013 00:00" } }
