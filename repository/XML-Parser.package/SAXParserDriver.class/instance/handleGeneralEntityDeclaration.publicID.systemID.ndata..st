@@ -10,11 +10,6 @@ handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID nd
 						uri: aSystemID
 						from: self currentURI]]
 		ifFalse: [
-			self isValidating
-				ifTrue: [
-					self doctypeDefinition unparsedEntityValidator
-						validateUnparsedEntity: aName
-						withNotation: aNotation].
 			self doctypeDefinition
 				addUnparsedEntity: aName
 				ndata: aNotation].

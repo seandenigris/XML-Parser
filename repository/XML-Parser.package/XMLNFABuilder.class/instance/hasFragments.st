@@ -1,3 +1,3 @@
 testing
 hasFragments
-	^ self fragmentStack notEmpty
+	^ self totalFragments > 0

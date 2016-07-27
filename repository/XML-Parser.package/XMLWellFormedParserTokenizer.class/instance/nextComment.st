@@ -6,7 +6,7 @@ nextComment
 	streamReader next.
 	self expectNext: $-.
 
-	"xml comments cannot contain -- sequences not followed by terminating >"
+	"xml comments can't have '--' unless followed by the terminating '>'"
 	writeStream reset.
 	[(nextChar := streamReader next) == nil
 		or: [nextChar == $-

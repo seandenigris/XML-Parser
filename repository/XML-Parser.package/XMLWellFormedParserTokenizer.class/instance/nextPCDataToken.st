@@ -14,7 +14,7 @@ nextPCDataToken
 						ifFalse: [self nextGeneralEntityReferenceOnWriteStream])
 							ifTrue: [isIgnorableWhitespace := false]]
 				ifFalse: [
-					"we do not check for illegal ]]> CDATA terminators in PCDATA
+					"we don't check for illegal ]]> CDATA terminators in PCDATA
 					for performance"
 					isIgnorableWhitespace
 						ifTrue: [isIgnorableWhitespace := nextChar xmlParserIsSeparator].
