@@ -8,7 +8,7 @@ testEntityURIInheritance
 			on: xml
 			documentURI: 'test.xml') parser.
 	(driver := parser driver)
-		dtd parameterEntities
+		doctypeDefinition parameterEntities
 			at: 'first'
 			put:
 				(DTDExternalParameterEntity
