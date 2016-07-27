@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addressBookXML" : "AlexandreBergel 1/29/2009 11:49",
+		"addressBookXMLWithDTD" : "AlexandreBergel 1/29/2009 11:49",
+		"testExampleAddressBook" : "AlexandreBergel 1/29/2009 11:52",
+		"testExampleAddressBookWithDTD" : "AlexandreBergel 1/29/2009 11:53",
+		"testParsing" : "AlexandreBergel 1/29/2009 14:38",
+		"testParsingCharacters" : "AlexandreBergel 1/29/2009 12:21" } }
