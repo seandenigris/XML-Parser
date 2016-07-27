@@ -2,6 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testXMLParserIsSeparator" : "monty 3/9/2016 17:14",
-		"testXMLParserIsWhitespace" : "monty 3/9/2016 17:15",
-		"testXMLParserSplit" : "monty 11/14/2015 19:47" } }
+		"testIsXMLSeparator" : "monty 3/12/2016 19:13",
+		"testIsXMLWhitespace" : "monty 3/12/2016 19:13",
+		"testXMLSplit" : "monty 3/14/2016 00:25" } }

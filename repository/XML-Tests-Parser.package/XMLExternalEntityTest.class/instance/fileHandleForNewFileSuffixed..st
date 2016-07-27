@@ -3,6 +3,6 @@ fileHandleForNewFileSuffixed: aFileSuffix
 	| fileHandle |
 	
 	fileHandle := (self class name asString, '-', aFileSuffix) asXMLFileHandle.
-	fileHandle isFile
+	fileHandle exists
 		ifTrue: [fileHandle delete].
 	^ fileHandle.

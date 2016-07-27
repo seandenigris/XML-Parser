@@ -23,4 +23,4 @@ testSAXIgnorableWhitespace
 	(parser allSentMessagesNamed: #ignorableWhitespace:) do: [:each |
 		self assert:
 			((each arguments first) notEmpty
-				and: [each arguments first allSatisfy: [:char | char xmlParserIsSeparator]])].
+				and: [each arguments first allSatisfy: [:char | char isXMLSeparator]])].

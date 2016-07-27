@@ -1,5 +1,5 @@
 tests
-testCDataSectionUnstarted
+testPCDataWithCDataTerminator
 	self
 		should: [SAXHandler parse: '<test>test]]>test</test>']
 		raise: XMLWellFormednessException.
