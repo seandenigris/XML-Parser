@@ -1,6 +1,7 @@
 tokenizing
 nextPIOrXMLDecl
 	| piTarget piData |
+
 	"Skip ?"
 	streamReader next.
 	piTarget := self nextName.
@@ -10,6 +11,7 @@ nextPIOrXMLDecl
 		ifFalse: [
 			context isInExternalSubsetTextDeclaration
 				ifTrue: [context enterExternalSubset]].
+
 	streamReader skipSeparators.
 	piData := self expectUpToAll: '?>'.
 

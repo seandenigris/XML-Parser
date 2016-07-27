@@ -3,7 +3,7 @@ handleElementDeclaration: aName contentModel: aContentModel
 	self isValidating
 		ifTrue: [
 			self dtd
-				parseElement: aName
+				addValidatorForElement: aName
 				contentModel: aContentModel].
 
 	self saxHandler

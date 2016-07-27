@@ -1,12 +1,12 @@
 {
 	"class" : {
-		"element:name:type:default:" : "monty 11/20/2013 22:25",
+		"element:attribute:type:default:" : "monty 12/10/2013 06:21",
 		"initialize" : "monty 12/1/2013 22:16" },
 	"instance" : {
 		"isNotationEnumeration:" : "monty 11/19/2013 21:43",
-		"parse" : "monty 12/9/2013 02:24",
+		"parse" : "monty 12/10/2013 06:21",
 		"parseDefaultPragma" : "monty 12/1/2013 22:17",
 		"parseDefaultValue" : "monty 11/20/2013 22:29",
 		"parseEnumerationType" : "monty 12/9/2013 01:57",
-		"setElement:name:type:default:" : "monty 11/20/2013 22:26",
+		"setElement:attribute:type:default:" : "monty 12/10/2013 06:21",
 		"validatorClassForType" : "monty 12/9/2013 02:25" } }

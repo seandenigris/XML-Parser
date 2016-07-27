@@ -8,9 +8,9 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"element",
-		"name",
 		"type",
-		"defaultDeclaration" ],
+		"defaultDeclaration",
+		"attribute" ],
 	"name" : "DTDAttributeDefinitionParser",
 	"pools" : [
 		 ],

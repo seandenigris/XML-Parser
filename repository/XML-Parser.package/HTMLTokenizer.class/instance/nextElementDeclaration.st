@@ -1,3 +1,0 @@
-tokenizing dtd
-nextElementDeclaration
-	self skipDeclaration

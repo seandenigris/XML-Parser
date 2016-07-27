@@ -1,11 +1,11 @@
 validators
-parseAttributeDefinition: anElement name: aName type: aType default: aDefaultDeclaration
-	| parser validator |
+addValidatorForAttributeIn: anElement named: aName type: aType default: aDefaultDeclaration
+	| parser validator  |
 
 	parser :=
 		DTDAttributeDefinitionParser
 			element:  anElement
-			name: aName
+			attribute: aName
 			type: aType
 			default: aDefaultDeclaration.
 	validator := parser parse.
@@ -17,8 +17,4 @@ parseAttributeDefinition: anElement name: aName type: aType default: aDefaultDec
 	validator isEntityValidator
 		ifTrue: [validator unparsedEntities: self unparsedEntities].
 
-	(self attributeValidators
-		at: anElement
-		ifAbsentPut: [Dictionary new]) 
-			at: aName
-			ifAbsentPut: [validator].
+	self addAttributeValidator: validator.

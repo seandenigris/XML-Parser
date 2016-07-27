@@ -1,3 +1,3 @@
 validation
 validateDefaultValueIn: anAttributeDictionary
-	anAttributeDictionary at: name ifAbsentPut: ['']
+	anAttributeDictionary at: attribute ifAbsentPut: ['']

@@ -1,3 +1,0 @@
-errors
-parseError: anErrorString
-	self subclassResponsibility

@@ -2,7 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addAttributeValidator:" : "monty 12/10/2013 06:39",
 		"addNotation:" : "monty 11/14/2013 23:59",
+		"addValidatorForAttributeIn:named:type:default:" : "monty 12/10/2013 06:48",
+		"addValidatorForElement:contentModel:" : "monty 12/10/2013 06:32",
 		"attributeValidators" : "monty 11/19/2013 01:01",
 		"elementValidators" : "monty 11/18/2013 19:26",
 		"generalEntities" : "monty 11/14/2013 20:51",
@@ -17,8 +20,6 @@
 		"parameterEntities" : "monty 11/14/2013 20:51",
 		"parameterEntityAt:" : "monty 11/14/2013 20:51",
 		"parameterEntityAt:put:" : "monty 11/14/2013 20:52",
-		"parseAttributeDefinition:name:type:default:" : "monty 12/9/2013 02:24",
-		"parseElement:contentModel:" : "monty 12/1/2013 01:56",
 		"rootElement" : "monty 11/19/2013 23:42",
 		"rootElement:" : "monty 11/19/2013 23:27",
 		"unparsedEntities" : "monty 11/14/2013 23:50",

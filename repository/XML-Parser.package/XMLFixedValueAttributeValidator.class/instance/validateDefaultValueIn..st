@@ -1,3 +1,3 @@
 validation
 validateDefaultValueIn: anAttributeDictionary
-	anAttributeDictionary at: name put: defaultValue
+	anAttributeDictionary at: attribute put: defaultValue

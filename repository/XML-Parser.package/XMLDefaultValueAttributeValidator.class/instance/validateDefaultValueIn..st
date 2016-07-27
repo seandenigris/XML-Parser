@@ -1,5 +1,5 @@
 validation
 validateDefaultValueIn: anAttributeDictionary
-	((anAttributeDictionary at: name ifAbsent: ['']) isEmpty 
+	((anAttributeDictionary at: attribute ifAbsent: ['']) isEmpty 
 		and: [defaultValue notEmpty])
-		ifTrue: [anAttributeDictionary at: name put: defaultValue]
+		ifTrue: [anAttributeDictionary at: attribute put: defaultValue]

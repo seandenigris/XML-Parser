@@ -6,13 +6,13 @@ parse
 		(DefaultValueValidators
 			at: self parseDefaultPragma
 			ifAbsent: [XMLDefaultValueAttributeValidator])
-				name: name
+				attribute: attribute
 				defaultValue: self parseDefaultValue.
 
 	attributeValidator :=
 		self validatorClassForType
 			element: element
-			name: name
+			attribute: attribute
 			defaultValueValidator: defaultValueValidator.
 
 	attributeValidator isValueListValidator

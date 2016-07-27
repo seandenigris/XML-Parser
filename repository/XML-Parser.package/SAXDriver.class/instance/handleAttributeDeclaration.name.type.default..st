@@ -3,8 +3,8 @@ handleAttributeDeclaration: anElement name: aName type: aType default: aDefaultD
 	self isValidating
 		ifTrue: [
 			self dtd
-				parseAttributeDefinition: anElement
-				name: aName
+				addValidatorForAttributeIn: anElement
+				named: aName
 				type: aType
 				default: aDefaultDeclaration].
 	self saxHandler

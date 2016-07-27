@@ -7,16 +7,16 @@ nextEntityDeclaration
 	"this is to distinguish a parameter reference from declaration"
 	isParameterEntity := false.
 	[streamReader skipSeparators.
-	streamReader peek == $%]
+	streamReader peek == $% and: [isParameterEntity not]]
 		whileTrue: [
 			streamReader next.
-			(streamReader atEnd not and: [streamReader peek isSeparator])
-				ifTrue: [
-					isParameterEntity
-						ifTrue: [self errorExpected: 'parameter entity reference'].
-					isParameterEntity := true]
-				ifFalse: [self nextParameterEntityReference]].
+			(context isInExternalSubset
+				and: [streamReader atEnd not
+					and: [streamReader peek isSeparator not]])
+				ifTrue: [self nextParameterEntityReference]
+				ifFalse: [isParameterEntity := true]].
 
+	self skipSeparatorsReplacingParameterEntities.
 	name := self nextName.
 	self skipSeparatorsReplacingParameterEntities.
 	streamReader atQuote

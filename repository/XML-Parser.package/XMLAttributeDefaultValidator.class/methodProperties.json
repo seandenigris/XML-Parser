@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"name:defaultValue:" : "monty 12/1/2013 21:55" },
+		"attribute:defaultValue:" : "monty 12/10/2013 06:16" },
 	"instance" : {
-		"setName:defaultValue:" : "monty 12/1/2013 22:15",
+		"setAttribute:defaultValue:" : "monty 12/10/2013 06:17",
 		"validateDefaultValueIn:" : "monty 12/1/2013 22:15" } }

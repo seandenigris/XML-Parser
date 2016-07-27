@@ -1,5 +1,5 @@
 validators
-parseElement: anElement contentModel: aContentModel
+addValidatorForElement: anElement contentModel: aContentModel
 	self elementValidators
 		at: anElement
 		ifAbsentPut: [
