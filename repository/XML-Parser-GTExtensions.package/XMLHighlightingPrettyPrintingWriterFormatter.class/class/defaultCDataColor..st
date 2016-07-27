@@ -1,3 +1,3 @@
 accessing
 defaultCDataColor: aTextColor
-	DefaultCDataColor := aTextColor
+	defaultCDataColor := aTextColor

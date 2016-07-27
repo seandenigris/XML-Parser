@@ -1,4 +1,4 @@
 accessing
 defaultCDataColor
-	^ DefaultCDataColor
-		ifNil: [DefaultCDataColor := self textColorForShoutProperty: #primitive]
+	^ defaultCDataColor
+		ifNil: [defaultCDataColor := self textColorForShoutProperty: #primitive]

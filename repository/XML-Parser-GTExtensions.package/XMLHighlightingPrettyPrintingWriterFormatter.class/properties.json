@@ -1,14 +1,14 @@
 {
 	"category" : "XML-Parser-GTExtensions",
 	"classinstvars" : [
-		 ],
+		"defaultCDataColor",
+		"defaultCommentColor",
+		"defaultEntityReferenceColor",
+		"defaultPrimaryMarkupColor",
+		"defaultQuotedStringValueColor",
+		"defaultSecondaryMarkupColor" ],
 	"classvars" : [
-		"DefaultCDataColor",
-		"DefaultCommentColor",
-		"DefaultEntityReferenceColor",
-		"DefaultPrimaryMarkupColor",
-		"DefaultQuotedStringValueColor",
-		"DefaultSecondaryMarkupColor" ],
+		 ],
 	"commentStamp" : "monty 9/21/2015 06:43",
 	"instvars" : [
 		"xmlDeclarationColor",

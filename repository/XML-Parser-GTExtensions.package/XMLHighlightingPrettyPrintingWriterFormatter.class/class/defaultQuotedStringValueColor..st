@@ -1,3 +1,3 @@
 accessing
 defaultQuotedStringValueColor: aTextColor
-	DefaultQuotedStringValueColor := aTextColor
+	defaultQuotedStringValueColor := aTextColor

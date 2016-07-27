@@ -1,3 +1,3 @@
 accessing
 defaultCommentColor: aTextColor
-	DefaultCommentColor := aTextColor
+	defaultCommentColor := aTextColor

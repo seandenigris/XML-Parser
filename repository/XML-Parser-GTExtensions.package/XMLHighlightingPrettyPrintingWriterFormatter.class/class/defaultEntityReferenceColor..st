@@ -1,3 +1,3 @@
 accessing
 defaultEntityReferenceColor: aTextColor
-	DefaultEntityReferenceColor := aTextColor
+	defaultEntityReferenceColor := aTextColor

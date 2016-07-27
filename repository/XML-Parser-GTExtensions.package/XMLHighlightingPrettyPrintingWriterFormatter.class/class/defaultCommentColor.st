@@ -1,4 +1,4 @@
 accessing
 defaultCommentColor
-	^ DefaultCommentColor
-		ifNil: [DefaultCommentColor :=  self textColorForShoutProperty: #comment]
+	^ defaultCommentColor
+		ifNil: [defaultCommentColor :=  self textColorForShoutProperty: #comment]

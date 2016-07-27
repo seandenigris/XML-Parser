@@ -1,4 +1,4 @@
 accessing
 defaultQuotedStringValueColor
-	^ DefaultQuotedStringValueColor
-		ifNil: [DefaultQuotedStringValueColor := self textColorForShoutProperty: #string]
+	^ defaultQuotedStringValueColor
+		ifNil: [defaultQuotedStringValueColor := self textColorForShoutProperty: #string]

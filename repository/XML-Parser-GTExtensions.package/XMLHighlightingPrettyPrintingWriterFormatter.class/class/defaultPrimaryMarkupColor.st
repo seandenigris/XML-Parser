@@ -1,4 +1,4 @@
 accessing
 defaultPrimaryMarkupColor
-	^ DefaultPrimaryMarkupColor
-		ifNil: [DefaultPrimaryMarkupColor := self textColorForShoutProperty: #argument]
+	^ defaultPrimaryMarkupColor
+		ifNil: [defaultPrimaryMarkupColor := self textColorForShoutProperty: #argument]

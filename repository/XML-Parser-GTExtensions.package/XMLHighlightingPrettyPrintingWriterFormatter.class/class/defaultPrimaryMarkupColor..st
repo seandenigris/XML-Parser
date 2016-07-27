@@ -1,3 +1,3 @@
 accessing
 defaultPrimaryMarkupColor: aTextColor
-	DefaultPrimaryMarkupColor := aTextColor
+	defaultPrimaryMarkupColor := aTextColor
