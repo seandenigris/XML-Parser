@@ -1,5 +1,3 @@
 copying
 copyWith: anElement 
-	^ self copy
-	 	add: anElement;
-		yourself
+	^ self speciesNewWithCollection: (collection copyWith: anElement)

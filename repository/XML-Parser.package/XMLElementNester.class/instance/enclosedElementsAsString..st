@@ -1,9 +1,6 @@
 printing
-enclosedElementsAsString: aTagName
-	| enclosedTags |
-
-	enclosedTags := String new writeStream.
-	self
-		printOn: enclosedTags
-		startingAt: (self openElements lastIndexOf: aTagName) + 1.
-	^ enclosedTags contents.
+enclosedElementsAsString: anElement
+	^ String streamContents: [:stream |
+		self
+			printFrom: (self openElements lastIndexOf: anElement) + 1
+			on: stream]

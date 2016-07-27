@@ -1,3 +1,5 @@
 instance creation
 on: aStringOrStream
-	^ self new input: aStringOrStream
+	^ self
+		on: aStringOrStream
+		documentURI: nil

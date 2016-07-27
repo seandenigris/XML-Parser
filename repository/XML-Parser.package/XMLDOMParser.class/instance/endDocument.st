@@ -1,3 +1,0 @@
-content
-endDocument
-	self popNode

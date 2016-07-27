@@ -1,6 +1,8 @@
 private
 currentWorkingDirectoryPathString
-	| fileSystemPath |
-
-	fileSystemPath := (Smalltalk at: #FileSystem) workingDirectory path.
-	^ ($/ join: fileSystemPath segments) copyWithFirst: $/.
+	^ String streamContents: [:stream |
+		(Smalltalk at: #FileSystem) workingDirectory
+			path segments do: [:each |
+				stream
+					nextPut: $/;
+					nextPutAll: each]].

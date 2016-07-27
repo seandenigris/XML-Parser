@@ -1,3 +1,5 @@
 accessing
 defaultImplementation
-	^ XMLFileSystemFileHandle
+	^ (Smalltalk includesKey: #FileSystem)
+		ifTrue: [XMLFileSystemFileHandle]
+		ifFalse: [XMLFileDirectoryFileHandle]

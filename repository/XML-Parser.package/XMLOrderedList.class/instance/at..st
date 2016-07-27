@@ -1,3 +1,3 @@
 accessing
 at: anIndex
-	^ collection at: anIndex ifAbsent: [self defaultValue]
+	^ self at: anIndex ifAbsent: [self defaultValue]

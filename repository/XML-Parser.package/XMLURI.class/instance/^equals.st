@@ -3,9 +3,12 @@ comparing
 	self == anObject
 		ifTrue: [^ true].
 
-	^ self class == anObject class
-		and: [scheme = anObject scheme
-			and: [host = anObject host
+	self class == anObject class
+		ifFalse: [^ false].
+
+	^ scheme = anObject scheme
+		and: [host = anObject host
+			and: [port = anObject port
 				and: [pathSegments = anObject pathSegments
 					and: [queryString = anObject queryString
 						and: [fragment = anObject fragment]]]]].

@@ -3,12 +3,14 @@
 		"firstState:terminalState:" : "monty 12/27/2013 23:50",
 		"firstState:terminalStates:" : "monty 12/27/2013 23:50" },
 	"instance" : {
-		"combinedTerminalStatesFrom:" : "monty 12/27/2013 23:14",
-		"connectToFragment:" : "monty 12/27/2013 23:46",
-		"connectToState:" : "monty 12/27/2013 23:46",
+		"combinedTerminalStatesFrom:" : "monty 10/24/2014 13:21",
+		"combinedTerminalStatesWith:" : "monty 10/24/2014 13:07",
+		"connectToFragment:" : "monty 10/24/2014 12:45",
+		"connectToState:" : "monty 10/24/2014 13:06",
 		"firstState" : "monty 11/17/2013 10:48",
 		"firstState:" : "monty 11/17/2013 11:51",
-		"terminalState:" : "monty 12/27/2013 23:50",
-		"terminalStates" : "monty 12/27/2013 21:46",
+		"terminalState:" : "monty 10/24/2014 12:35",
+		"terminalStateCollectionWith:and:" : "monty 10/24/2014 12:52",
+		"terminalStates" : "monty 10/24/2014 12:40",
 		"terminalStates:" : "monty 12/27/2013 23:50",
-		"terminalStatesWith:" : "monty 12/27/2013 23:40" } }
+		"terminalStatesAddedTo:" : "monty 10/24/2014 13:21" } }

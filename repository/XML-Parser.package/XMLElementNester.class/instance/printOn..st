@@ -1,3 +1,5 @@
 printing
 printOn: aStream
-	self printOn: aStream startingAt: 1
+	self
+		printFrom: 1
+		on: aStream

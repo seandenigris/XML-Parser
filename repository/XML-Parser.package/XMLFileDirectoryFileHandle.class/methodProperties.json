@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"currentWorkingDirectoryPathString" : "monty 10/22/2014 04:43" },
+	"instance" : {
+		"deleteFileOrDo:" : "monty 10/24/2014 15:28",
+		"directoryEntry" : "monty 10/23/2014 11:01",
+		"fileSize" : "monty 10/24/2014 15:29",
+		"isFile" : "monty 10/22/2014 05:27",
+		"readStreamOnFileOrDo:" : "monty 10/22/2014 05:32",
+		"writeStreamOnFileOrDo:" : "monty 10/22/2014 05:32" } }

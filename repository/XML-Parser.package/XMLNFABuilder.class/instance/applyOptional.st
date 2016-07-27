@@ -9,4 +9,4 @@ applyOptional
 	self pushFragment:
 		(XMLNFAFragment
 			firstState: branchingState
-			terminalStates: (optionalFragment terminalStatesWith: branchingState))
+			terminalStates: (optionalFragment combinedTerminalStatesWith: branchingState))

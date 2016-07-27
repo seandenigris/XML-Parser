@@ -1,3 +1,4 @@
 removing
 reset
-	self removeAll
+	collection do: [:each | self with: [] remove: each].
+	collection reset.

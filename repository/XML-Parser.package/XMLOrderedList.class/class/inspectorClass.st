@@ -1,0 +1,3 @@
+private
+inspectorClass
+	^ SequenceableCollection inspectorClass

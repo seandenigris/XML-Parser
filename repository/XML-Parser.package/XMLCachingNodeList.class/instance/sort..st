@@ -1,4 +1,4 @@
-as yet unclassified
+sorting
 sort: aSortBlock
 	super sort: aSortBlock.
 	self elements sort: aSortBlock.

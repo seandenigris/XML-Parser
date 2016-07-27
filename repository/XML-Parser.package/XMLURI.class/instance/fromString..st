@@ -3,9 +3,10 @@ fromString: aString
 	| parser  |
 
 	parser := XMLURIParser on: aString.
-	self
-		setScheme: parser parseScheme
-		host: parser parseHost
-		path: parser parsePath
-		queryString: parser parseQueryString
-		fragment: parser parseFragment.
+
+	scheme := parser parseScheme.
+	host := parser parseHost.
+	port := parser parsePort.
+	self setPathSegmentsFromString: parser parsePath.
+	queryString := parser parseQueryString.
+	fragment := parser parseFragment.

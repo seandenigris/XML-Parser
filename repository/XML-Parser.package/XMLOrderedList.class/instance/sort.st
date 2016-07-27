@@ -1,3 +1,3 @@
 sorting
 sort
-	collection sort
+	self sort: [:a :b | a <= b]

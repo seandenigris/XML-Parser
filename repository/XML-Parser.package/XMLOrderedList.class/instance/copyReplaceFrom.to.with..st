@@ -1,26 +1,21 @@
 copying
 copyReplaceFrom: aStart to: aStop with: aReplacementCollection
-	"adapted from OrderedCollection"
-	| newList delta startIndex stopIndex |
+	| newList startIndex stopIndex overlap |
 
-	delta := 0.
-	startIndex := aStart.
-	stopIndex := aStop.
+	overlap := 0.
 	aStart < 1
 		ifTrue: [startIndex := stopIndex := 0]
-		ifFalse: [startIndex > self size
+		ifFalse: [
+			aStart > self size
 				ifTrue: [startIndex := stopIndex := self size + 1]
-				ifFalse: 
-					[(stopIndex < (startIndex - 1) or: [stopIndex > self size])
-						ifTrue: [self errorOutOfBounds].
-					delta := stopIndex - startIndex + 1]].
+				ifFalse: [
+					startIndex := aStart.
+					stopIndex := (aStop max: aStart) min: self size.
+					overlap := stopIndex - startIndex + 1]].
 
-	newList := self species new: self size + aReplacementCollection size - delta.
-	1 to: startIndex - 1 do: [:index |
-		newList add: (self at: index)].
-	1 to: aReplacementCollection size do: [:index |
-		newList add: (aReplacementCollection at: index)].
-	stopIndex + 1 to: self size do: [:index |
-		newList add: (self at: index)].
+	newList := self species new: self size + aReplacementCollection size - overlap.
+	1 to: startIndex - 1 do: [:i | newList addLast: (self at: i)].
+	aReplacementCollection do: [:each | newList addLast: each].
+	stopIndex + 1 to: self size do: [:i | newList addLast: (self at: i)].
 
 	^ newList.

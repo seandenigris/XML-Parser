@@ -1,6 +1,7 @@
 printing
 printFragmentOn: aStream
-	fragment ifNotEmpty: [
-		aStream
-			nextPut: $#;
-			nextPutAll: fragment]
+	self hasFragment
+		ifTrue: [
+			aStream
+				nextPut: $#;
+				nextPutAll: fragment]

@@ -1,6 +1,7 @@
 printing
 printQueryStringOn: aStream
-	queryString ifNotEmpty: [
-		aStream
-			nextPut: $?;
-			nextPutAll: queryString]
+	self hasQueryString
+		ifTrue: [
+			aStream
+				nextPut: $?;
+				nextPutAll: queryString]

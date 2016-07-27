@@ -5,7 +5,7 @@ pathPrintStringUnescaped: aBoolean
 	pathSegments
 		ifEmpty: [^ ''].
 
-	pathStream := (String new: 16) writeStream.
+	pathStream := (String new: pathSegments size * 10) writeStream.
 	self
 		printPathSegmentsOn: pathStream
 		unescaped: aBoolean.

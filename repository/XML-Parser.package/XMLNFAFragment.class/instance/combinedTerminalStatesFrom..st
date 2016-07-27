@@ -1,11 +1,11 @@
 converting
 combinedTerminalStatesFrom: aFragment
-	^ terminalStates isArray
-		ifTrue: [
-			aFragment terminalStates asOrderedCollection
-				addAll: terminalStates;
-				yourself]
+	^ terminalStates isCollection
+		ifTrue: [aFragment terminalStatesAddedTo: terminalStates]
 		ifFalse: [
-			terminalStates
-				addAll: aFragment terminalStates;
-				yourself]
+			aFragment terminalStates isCollection
+				ifTrue: [self terminalStatesAddedTo: aFragment terminalStates]
+				ifFalse: [
+					self
+						terminalStateCollectionWith: terminalStates
+						and: aFragment terminalStates]]

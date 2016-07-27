@@ -1,5 +1,7 @@
 printing
 printHostOn: aStream
-	host ifNotEmpty: [
-		scheme ifEmpty: [aStream nextPutAll: '//'].
-		aStream nextPutAll: host]
+	self hasHost
+		ifTrue: [
+			self hasScheme
+				ifFalse: [aStream nextPutAll: '//'].
+			aStream nextPutAll: host]

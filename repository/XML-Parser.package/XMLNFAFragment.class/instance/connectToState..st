@@ -1,3 +1,5 @@
 connecting
 connectToState: aState
-	self terminalStates do: [:each | each connectToState: aState]
+	terminalStates isCollection
+		ifTrue: [terminalStates do: [:each | each connectToState: aState]]
+		ifFalse: [terminalStates connectToState: aState]

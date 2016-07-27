@@ -1,11 +1,11 @@
 accessing
-replaceFrom: aStartingIndex to: anEndingIndex with: aReplacementCollection startingAt: aReplacementIndex
+replaceFrom: aStart to: aStop with: aReplacementCollection startingAt: aReplacementStart
 	| offset |
 
 	offset := 0.
-	[aStartingIndex + offset <= anEndingIndex]
+	[aStart + offset <= aStop]
 		whileTrue: [
 			self
-				at: aStartingIndex + offset
-				put: (aReplacementCollection at: aReplacementIndex + offset).
+				at: aStart + offset
+				put: (aReplacementCollection at: aReplacementStart + offset).
 			offset := offset + 1].

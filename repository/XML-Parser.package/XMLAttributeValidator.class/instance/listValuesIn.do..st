@@ -1,5 +1,5 @@
 private
 listValuesIn: aSpaceSeparatedList do: aBlock
 	Character space
-		split: aSpaceSeparatedList
+		xmlSplit: aSpaceSeparatedList
 		do: aBlock

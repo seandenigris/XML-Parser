@@ -1,3 +1,3 @@
 sorting
 sorted
-	self copy sort
+	^ self sorted: [:a :b | a <= b]

@@ -1,6 +1,7 @@
 printing
 printSchemeOn: aStream
-	scheme ifNotEmpty: [
-		aStream
-			nextPutAll: scheme;
-			nextPutAll: '://']
+	self hasScheme
+		ifTrue: [
+			aStream
+				nextPutAll: scheme;
+				nextPutAll: '://']

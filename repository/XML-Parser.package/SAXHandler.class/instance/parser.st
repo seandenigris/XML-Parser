@@ -4,4 +4,4 @@ parser
 
 	^ self parserClass
 		driver: (self driverClass saxHandler: self)
-		on: input.
+		on: self input.
