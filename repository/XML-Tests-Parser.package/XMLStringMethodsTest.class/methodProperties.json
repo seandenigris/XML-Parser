@@ -2,6 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testAsXMLEscapedString" : "monty 2/15/2016 23:37",
+		"testAsXMLFileHandle" : "monty 2/15/2016 23:40",
+		"testAsXMLHTTPRequest" : "monty 2/15/2016 23:41",
+		"testAsXMLString" : "monty 2/15/2016 23:38",
 		"testHasPrefixBeforeLocalName" : "monty 11/22/2014 20:00",
 		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
 		"testLocalNameAfterPrefix" : "monty 11/16/2014 20:22",

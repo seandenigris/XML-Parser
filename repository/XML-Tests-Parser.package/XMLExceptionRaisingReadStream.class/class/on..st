@@ -1,3 +1,3 @@
 instance creation
-on: aString
-	^ self new stream: aString readStream
+on: aCollection
+	^ self new on: aCollection
