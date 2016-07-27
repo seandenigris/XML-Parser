@@ -3,8 +3,7 @@ testParsingExternalEntities
 	"This test uses HTTP so is skipped by default."
 	| entityCache entityCacheCopy |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	DTDCachingEntityResolver clearEntityCache.
 	entityCache := DTDCachingEntityResolver entityCache.

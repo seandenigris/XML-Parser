@@ -5,7 +5,7 @@ testPrintingNonRootNamespaces
 	element :=
 		XMLElement
 			name: 'element'.
-	element addElement:
+	element addNode:
 		(XMLElement
 			name: 'used:empty'
 			namespaces: (Array with: '' -> 'defaultNS' with: 'used' -> 'usedNS')).

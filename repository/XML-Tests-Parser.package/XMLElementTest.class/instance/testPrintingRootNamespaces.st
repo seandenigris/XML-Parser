@@ -6,7 +6,7 @@ testPrintingRootNamespaces
 		XMLElement
 			name: 'used:element'
 			namespaces: (Array with: '' -> 'defaultNS' with: 'used' -> 'usedNS').
-	element addElement: (XMLElement name: 'empty').
+	element addElement: 'empty'.
 
 	self assert:
 		element printString =

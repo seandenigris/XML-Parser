@@ -15,7 +15,18 @@ testCopyReplaceAllWith
 					((self listElements, self listElements) 
 						copyReplaceAll: (self listElements last: i)
 						with: ((self listElements last: i) collect: [:each | each asUppercase]))).
-		self assert:
-			(self emptyList
-				copyReplaceAll: (self listElements last: i)
-				with: (self listElements last: i)) = self emptyList].
+		self
+			assertList:
+				(list
+					copyReplaceAll: (Array with: self absentElement)
+					with: (Array with: self newElement))
+			copiedFrom: list
+			equals: list.	
+		self
+			assertList: (list copyReplaceAll: #() with: (Array with: self newElement))
+			copiedFrom: list
+			equals: list.
+		self
+			assertList: (list copyReplaceAll: (self listElements copyWith: self absentElement) with: #())
+			copiedFrom: list
+			equals: list].

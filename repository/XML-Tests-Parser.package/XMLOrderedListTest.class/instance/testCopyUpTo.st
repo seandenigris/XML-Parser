@@ -7,5 +7,8 @@ testCopyUpTo
 		self
 			assertList: (list copyUpTo: each)
 			copiedFrom: list
-			equals: (self listClass newFrom: (self listElements copyUpTo: each)).
-		self assert: (self emptyList copyUpTo: each) = self emptyList].
+			equals: (self listClass newFrom: (self listElements copyUpTo: each))].
+	self
+		assertList: (list copyUpTo: self absentElement)
+		copiedFrom: list
+		equals: self listWithElements.

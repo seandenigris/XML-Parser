@@ -3,8 +3,7 @@ testParsingFile
 	"This test creates/deletes a file so is skipped by default"
 	| fileName doc |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	fileName := 'testParsingFile.xml'.
 	self

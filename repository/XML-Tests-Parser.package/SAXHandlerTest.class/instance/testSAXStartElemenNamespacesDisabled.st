@@ -15,7 +15,7 @@ testSAXStartElemenNamespacesDisabled
 		assert: arguments fourth = 'test'.
 	self assert:
 		arguments fifth =
-			(Dictionary
+			(OrderPreservingDictionary
 				with: 'xmlns:prefix' -> 'prefixNS'
 				with: 'xmlns' -> 'defaultNS'
 				with: 'name' -> 'value').

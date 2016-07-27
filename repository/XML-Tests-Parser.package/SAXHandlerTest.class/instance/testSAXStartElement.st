@@ -12,4 +12,4 @@ testSAXStartElement
 		assert: arguments second = 'prefix';
 		assert: arguments third =  'prefixNS';
 		assert: arguments fourth = 'test';
-		assert: arguments fifth = (Dictionary with: 'name' -> 'value').
+		assert: arguments fifth = (OrderPreservingDictionary with: 'name' -> 'value').

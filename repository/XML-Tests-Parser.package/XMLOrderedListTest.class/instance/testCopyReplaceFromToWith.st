@@ -1,8 +1,9 @@
 tests
 testCopyReplaceFromToWith
-	| list |
+	| list emptyList |
 
 	list := self listWithElements.
+	emptyList := self emptyList.
 	-1 to: list size + 1 do: [:start |
 		start to: list size + 1 do: [:stop |
 			self
@@ -15,6 +16,7 @@ testCopyReplaceFromToWith
 						(start < 1
 							ifTrue: [self listElements]
 							ifFalse: [self listElements last: (list size - stop max: 0)])).
-			self assert:
-				(self emptyList copyReplaceFrom: start to: stop with: self listElements reversed) =
-					(self listClass newFrom: self listElements reversed)]].
+			self
+				assertList: (emptyList copyReplaceFrom: start to: stop with: self listElements)
+				copiedFrom: emptyList
+				equals: self listWithElements]].

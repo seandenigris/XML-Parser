@@ -2,8 +2,7 @@ tests
 testOnURLUpToLimit
 	| parser size |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	size := (self feedURL asXMLURI get) contents size.
 	self

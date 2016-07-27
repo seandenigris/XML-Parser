@@ -3,9 +3,9 @@ testElementSorting
 	| element |
 
 	(element := XMLElement name: 'sorted')
-		addElement: (XMLElement name: 'c');
-		addElement: (XMLElement name: 'b');
-		addElement: (XMLElement name: 'a').
+		addElement: 'c';
+		addElement: 'b';
+		addElement: 'a'.
 
 	self assert: (element nodes sorted collect: [:each | each name]) asArray = #('a' 'b' 'c').
 	self assert:

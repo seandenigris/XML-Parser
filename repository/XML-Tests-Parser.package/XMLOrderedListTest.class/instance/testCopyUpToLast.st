@@ -9,5 +9,8 @@ testCopyUpToLast
 			copiedFrom: list
 			equals:
 				(self listClass newFrom:
-					(self listElements, self listElements copyUpToLast: each)).
-		self assert: (self emptyList copyUpToLast: each) = self emptyList].
+					(self listElements, self listElements copyUpToLast: each))].
+	self
+		assertList: (list copyUpToLast: self absentElement)
+		copiedFrom: list
+		equals: (self listClass newFrom: self listElements, self listElements).

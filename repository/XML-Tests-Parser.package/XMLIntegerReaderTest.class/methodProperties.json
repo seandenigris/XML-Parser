@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"maxBase" : "monty 10/24/2014 20:31",
+		"testBases" : "monty 10/26/2014 10:24",
+		"testMaxValue" : "monty 10/24/2014 20:31",
+		"testNonDigit" : "monty 10/26/2014 10:42",
+		"testReadLimit" : "monty 10/24/2014 20:40" } }

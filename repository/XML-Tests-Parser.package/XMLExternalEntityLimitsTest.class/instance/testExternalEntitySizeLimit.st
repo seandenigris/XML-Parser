@@ -2,8 +2,7 @@ tests
 testExternalEntitySizeLimit
 	| parser url xml size |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	url := self externalEntityURLs first asXMLURI.
 	xml := self doctypeWithDeclarationsForEntityURIs: (Array with: url asString).

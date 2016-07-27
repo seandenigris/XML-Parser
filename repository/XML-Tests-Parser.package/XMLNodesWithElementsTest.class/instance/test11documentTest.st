@@ -8,7 +8,7 @@ test11documentTest
 	self
 		assert: doc isDocument;
 		assert: doc root isNil;
-		assert: (doc addElement: root) root = root;
+		assert: (doc addNode: root; root) = root;
 		assertDocument: doc hasDoctype: nil version: nil encoding: 'UTF-8'.
 
 	self

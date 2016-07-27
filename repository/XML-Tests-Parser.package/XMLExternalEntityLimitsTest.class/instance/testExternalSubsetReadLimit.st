@@ -2,8 +2,7 @@ tests
 testExternalSubsetReadLimit
 	| xml externalSubset fileName parser |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	fileName := 'externalSubset.dtd'.
 	externalSubset := '<?xml encoding="UTF-8"?><!ELEMENT test EMPTY>'.

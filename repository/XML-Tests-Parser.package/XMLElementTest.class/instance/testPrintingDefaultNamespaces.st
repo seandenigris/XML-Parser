@@ -6,11 +6,11 @@ testPrintingDefaultNamespaces
 		XMLElement
 			name: 'element'
 			namespaceURI: 'default'.
-	element addElement:
+	element addNode:
 		((XMLElement
 			name: 'element'
 			namespaceURI: '')
-			addElement: (XMLElement name: 'empty');
+			addElement: 'empty';
 			yourself).
 
 	self assert:

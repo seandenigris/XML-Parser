@@ -2,8 +2,7 @@ tests
 testOnFileNamed
 	| parser fileName |
 
-	self isSkipping
-		ifTrue: [self skip].
+	self skipOrReturnWith: [^ self].
 
 	fileName := 'testOnFileNamed.xml'.
 	self fileNamed: fileName write: ''.
