@@ -1,7 +1,6 @@
 notifying
 addedAttribute: anAttribute
-	self recordNotification:
-		(MessageSend
-			receiver: self
-			selector: #addedAttribute:
-			arguments: (Array with: anAttribute))
+	self messageRecorder
+		recordMessageReceiver: self
+		selector: #addedAttribute:
+		arguments: (Array with: anAttribute)

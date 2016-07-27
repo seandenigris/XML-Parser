@@ -1,3 +1,3 @@
 accessing
 allSentMessagesNamed: aName
-	^ self sentHandlerMessages select: [:each | each selector = aName asSymbol]
+	^ self messageRecorder messagesSelect: [:each | each selector = aName asSymbol]

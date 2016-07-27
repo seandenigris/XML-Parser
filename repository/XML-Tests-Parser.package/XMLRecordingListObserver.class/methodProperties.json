@@ -2,11 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"added:to:" : "monty 10/23/2014 09:26",
-		"adding:to:" : "monty 10/23/2014 09:26",
-		"clearNotifications" : "monty 1/18/2015 15:50",
-		"hasNotifications" : "monty 10/23/2014 09:23",
-		"nextNotification" : "monty 10/23/2014 09:23",
-		"notificationsQueue" : "monty 10/23/2014 09:22",
-		"recordNotification:" : "monty 10/23/2014 09:26",
-		"removed:from:" : "monty 10/23/2014 09:26" } }
+		"added:to:" : "monty 4/12/2015 08:00",
+		"adding:to:" : "monty 4/12/2015 08:01",
+		"clearNotifications" : "monty 4/12/2015 07:59",
+		"hasNotifications" : "monty 4/12/2015 08:01",
+		"messageRecorder" : "monty 4/12/2015 07:59",
+		"nextNotification" : "monty 4/12/2015 07:59",
+		"removed:from:" : "monty 4/12/2015 08:02" } }

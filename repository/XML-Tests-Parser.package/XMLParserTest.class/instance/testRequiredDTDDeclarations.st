@@ -12,3 +12,16 @@ testRequiredDTDDeclarations
 				requiresDocumentConstraints: true;
 				parseDocument]
 		raise: XMLValidationException.
+	self
+		should: [
+			(SAXHandler on: '
+				<!DOCTYPE root [
+					<!ENTITY one "two">
+					<!ENTITY % three "four">
+					<!NOTATION five PUBLIC "six">
+					<!--seven-->]>
+				<root/>')
+				requiresDocumentConstraints: true;
+				parseDocument]
+		raise: XMLValidationException.
+	

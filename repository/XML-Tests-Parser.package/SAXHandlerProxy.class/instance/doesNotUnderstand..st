@@ -4,7 +4,7 @@ doesNotUnderstand: aMessage
 
 	(self handlerCategories includes:
 		(saxHandler class whichCategoryIncludesSelector: aMessage selector))
-		ifTrue: [self sentHandlerMessages addLast: aMessage].
+		ifTrue: [self messageRecorder recordMessage: aMessage].
 
 	^ (result := aMessage sendTo: saxHandler) == saxHandler
 		ifTrue: [self]

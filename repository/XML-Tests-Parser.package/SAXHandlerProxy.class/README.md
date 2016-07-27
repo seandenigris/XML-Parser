@@ -1,1 +1,1 @@
-A SAXHandler that records events.
+A class that wraps a SAXHandler and records handler events messages using a message recorder. Non-handler messages are forwarded to the wrapped SAXHandler.

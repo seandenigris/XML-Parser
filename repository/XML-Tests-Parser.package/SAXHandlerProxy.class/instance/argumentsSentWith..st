@@ -1,5 +1,6 @@
 accessing
 argumentsSentWith: aSelector
-	^ (self sentHandlerMessages
-		detect: [:each | each selector = aSelector]
-		ifNone: [^ #()]) arguments
+	self messageRecorder messagesDo: [:each |
+		each selector = aSelector
+			ifTrue: [^ each arguments]].
+	^ #().

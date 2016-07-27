@@ -1,4 +1,4 @@
-tests
+accessing
 prefixedXMLSourceSelectors
 	^ #(startDocument
 		startPrefixMapping:uri: startPrefixMapping:uri:

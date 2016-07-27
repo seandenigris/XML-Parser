@@ -1,0 +1,1 @@
+This class records the last element events forwarded to a SAX handler if no others are defined, #startElement:attributes: and #endElement:, using an XMLMessageRecorder.

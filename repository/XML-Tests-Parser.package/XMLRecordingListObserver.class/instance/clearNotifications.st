@@ -1,3 +1,3 @@
 accesing
 clearNotifications
-	self notificationsQueue removeAll
+	self messageRecorder clearMessages

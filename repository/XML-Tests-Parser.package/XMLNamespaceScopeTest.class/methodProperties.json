@@ -10,5 +10,7 @@
 		"testInheritMappingsFrom" : "monty 12/28/2014 23:57",
 		"testMapPrefixTo" : "monty 12/28/2014 23:22",
 		"testMapPrefixesAndURIs" : "monty 1/5/2015 21:05",
+		"testResolvePrefix" : "monty 4/12/2015 11:50",
+		"testResolvePrefixIfUnresolvable" : "monty 4/12/2015 11:52",
 		"testSize" : "monty 12/28/2014 23:30",
 		"testUnmapPrefix" : "monty 12/28/2014 23:21" } }

@@ -1,3 +1,3 @@
 testing
 hasNotifications
-	^ self notificationsQueue notEmpty
+	^ self messageRecorder hasMessages

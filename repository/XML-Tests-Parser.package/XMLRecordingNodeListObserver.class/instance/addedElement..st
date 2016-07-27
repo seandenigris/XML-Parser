@@ -1,7 +1,6 @@
 notifying
 addedElement: anElement
-	self recordNotification:
-		(MessageSend
-			receiver: self
-			selector: #addedElement:
-			arguments: (Array with: anElement))
+	self messageRecorder
+		recordMessageReceiver: self
+		selector: #addedElement:
+		arguments: (Array with: anElement)

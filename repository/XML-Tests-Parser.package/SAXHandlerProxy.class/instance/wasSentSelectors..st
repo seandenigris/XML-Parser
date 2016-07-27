@@ -1,3 +1,4 @@
 testing
 wasSentSelectors: aSelectorArray
-	^ self sentHandlerSelectors asArray = aSelectorArray asArray
+	^ (self messageRecorder messagesCollect: [:each | each selector]) asArray =
+		aSelectorArray asArray

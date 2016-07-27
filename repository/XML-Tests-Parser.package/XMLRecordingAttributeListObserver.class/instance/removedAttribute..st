@@ -1,7 +1,6 @@
 notifying
 removedAttribute: anAttribute
-	self recordNotification:
-		(MessageSend
-			receiver: self
-			selector: #removedAttribute:
-			arguments: (Array with: anAttribute))
+	self messageRecorder
+		recordMessageReceiver: self
+		selector: #removedAttribute:
+		arguments: (Array with: anAttribute)

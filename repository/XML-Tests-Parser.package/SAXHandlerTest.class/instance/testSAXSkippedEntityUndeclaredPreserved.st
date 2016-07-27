@@ -16,5 +16,5 @@ testSAXSkippedEntityUndeclaredPreserved
 				endElement:prefix:uri:localName:
 				endDocument)).
 	self
-		assert: (parser argumentsSentWith: #skippedEntity:) first = 'undeclared';
-		assert: (parser argumentsSentWith: #characters:) first = '&undeclared;'.
+		assert: (parser argumentsSentWith: #skippedEntity:) = #('undeclared');
+		assert: (parser argumentsSentWith: #characters:) = #('&undeclared;').

@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/23/2014 09:28",
+	"commentStamp" : "monty 4/12/2015 10:23",
 	"instvars" : [
 		"saxHandler",
-		"sentHandlerMessages" ],
+		"messageRecorder" ],
 	"name" : "SAXHandlerProxy",
 	"pools" : [
 		 ],

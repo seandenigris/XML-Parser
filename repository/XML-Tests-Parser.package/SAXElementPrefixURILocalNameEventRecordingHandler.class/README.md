@@ -1,0 +1,1 @@
+This class records the first element events sent to a SAX handler, #startElement:prefix:uri:attributes:localName: and #endElement:prefix:uri:localName:. If these aren't defined, the default implemenatations in SAXHandler forward simpler forms with fewer arguments.

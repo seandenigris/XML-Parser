@@ -1,7 +1,6 @@
 notifying
 removedElement: anElement
-	self recordNotification:
-		(MessageSend
-			receiver: self
-			selector: #removedElement:
-			arguments: (Array with: anElement))
+	self messageRecorder
+		recordMessageReceiver: self
+		selector: #removedElement:
+		arguments: (Array with: anElement)

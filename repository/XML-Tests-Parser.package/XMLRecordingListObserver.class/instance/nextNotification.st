@@ -1,3 +1,3 @@
 accesing
 nextNotification
-	^ self notificationsQueue removeFirst
+	^ self messageRecorder nextMessage

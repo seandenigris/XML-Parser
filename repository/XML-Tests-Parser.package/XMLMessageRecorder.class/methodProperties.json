@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"clearMessages" : "monty 4/12/2015 07:56",
+		"hasMessages" : "monty 4/12/2015 07:56",
+		"messageQueue" : "monty 4/12/2015 07:53",
+		"messagesCollect:" : "monty 4/12/2015 08:24",
+		"messagesDo:" : "monty 4/12/2015 08:21",
+		"messagesSelect:" : "monty 4/12/2015 08:22",
+		"nextMessage" : "monty 4/12/2015 07:56",
+		"recordMessage:" : "monty 4/12/2015 08:05",
+		"recordMessageReceiver:selector:arguments:" : "monty 4/12/2015 08:05" } }

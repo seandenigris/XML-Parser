@@ -1,1 +1,1 @@
-This observer records notifications in a queue.
+This observer records notifications using an XMLMessageRecorder.
