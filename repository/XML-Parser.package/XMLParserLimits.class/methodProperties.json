@@ -2,9 +2,8 @@
 	"class" : {
 		"defaultDocumentReadLimit" : "monty 12/9/2014 07:41",
 		"defaultMaxEntityReplacementDepth" : "monty 7/13/2015 13:14",
-		"defaultReadLimit" : "monty 12/9/2014 07:52",
-		"defaultReadLimit:" : "monty 12/9/2014 07:41",
-		"initialize" : "monty 12/9/2014 07:41" },
+		"defaultReadLimit" : "monty 3/19/2016 18:38",
+		"defaultReadLimit:" : "monty 3/19/2016 18:38" },
 	"instance" : {
 		"documentReadLimit" : "monty 1/16/2014 18:43",
 		"documentReadLimit:" : "monty 1/16/2014 18:44",

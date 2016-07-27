@@ -1,6 +1,5 @@
 closing
 closeStreams
-	nestedStreams ifNotNil: [
-		[nestedStreams isEmpty]
-			whileFalse: [self popNestedStream]].
+	[nestedStreams size > 0]
+		whileTrue: [self popNestedStream].
 	self closeCurrentStream.

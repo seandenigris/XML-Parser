@@ -1,3 +1,3 @@
 testing
 hasColumnNumber
-	^ columnNumber notNil
+	^ self columnNumber notNil

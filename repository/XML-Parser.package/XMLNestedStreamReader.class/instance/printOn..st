@@ -5,10 +5,7 @@ printOn: aStream
 		nextPutAll: '(';
 		print: peekChar;
 		nextPutAll: '; ';
-		print: stream.
-	nestedStreams
-		ifNotNil: [
-			aStream
-				space;
-				print: nestedStreams].
-	aStream nextPut: $).
+		print: stream;
+		space;
+		print: nestedStreams;
+		nextPut: $).

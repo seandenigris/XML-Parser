@@ -1,3 +1,3 @@
 testing
 hasLineNumber
-	^ lineNumber notNil
+	^ self lineNumber notNil
