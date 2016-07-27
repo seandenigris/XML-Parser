@@ -1,7 +1,6 @@
 accessing
 innerXML
-	| writer |
-
-	writer := XMLWriter new.
-	self writeInnerXMLOn: writer.
-	^ writer contents.
+	^ self
+			withNewXMLWriterDo: [ :writer | self writeInnerXMLOn: writer.
+																writer contents ]
+			

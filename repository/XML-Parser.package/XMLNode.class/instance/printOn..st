@@ -1,3 +1,6 @@
 printing
 printOn: aStream
-	(XMLWriter on: aStream) writeWith: [:writer | self writeXMLOn: writer].
+	self
+		withNewXMLWriterOn: aStream
+		do: [ :writer | writer writeWith: [ :wr | self writeXMLOn: wr] ]
+		whenAbsent: [ super printOn: aStream ]

@@ -1,5 +1,7 @@
 printing
 canonicallyPrintOn: aStream
-	(XMLWriter on: aStream)
-		isCanonical: true;
-		writeWith: [:writer | self writeXMLOn: writer]
+	self
+		withNewXMLWriterOn: aStream
+		do: [ :writer | writer
+										isCanonical: true;
+										writeWith: [ :wr | self writeXMLOn: wr ] ]
