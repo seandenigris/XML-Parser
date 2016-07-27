@@ -45,6 +45,6 @@
 		"testParsedElementNames" : "monty 10/29/2014 13:54",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingRoot" : "monty 12/12/2013 00:42",
+		"testPreservingCommentNodes" : "monty 3/22/2015 17:36",
 		"testUnreplacedEntityRererencePrinting" : "monty 1/6/2015 05:00",
-		"testXMLComment" : "monty 12/12/2013 01:09",
 		"testXMLDeclaration" : "monty 11/12/2014 23:43" } }
