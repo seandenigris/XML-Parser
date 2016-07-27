@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Tests-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"notifications" ],
+	"name" : "XMLStubListObserver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

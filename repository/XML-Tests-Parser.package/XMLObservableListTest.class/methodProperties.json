@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "JAA 3/26/2011 19:00" },
+	"instance" : {
+		"afterAddingToNotification" : "JAA 3/26/2011 19:46",
+		"afterRemovingFromNotification" : "JAA 3/26/2011 19:46",
+		"assertObserver:receivedNotificationOfAdding:to:" : "JAA 3/26/2011 19:46",
+		"assertObserver:receivedNotificationOfRemoving:from:" : "JAA 3/26/2011 19:46",
+		"beforeAddingToNotification" : "JAA 3/26/2011 19:30",
+		"listClass" : "JAA 3/26/2011 19:01",
+		"should:add:toAndNotifyOf:" : "JAA 3/26/2011 19:42",
+		"should:remove:fromAndNotifyOf:" : "JAA 3/26/2011 19:48",
+		"testAdd" : "JAA 3/26/2011 19:55",
+		"testAddAfter" : "JAA 3/26/2011 19:37",
+		"testAddAfterIndex" : "JAA 3/26/2011 19:37",
+		"testAddBefore" : "JAA 3/26/2011 19:37",
+		"testAddBeforeIndex" : "JAA 3/26/2011 19:37",
+		"testAddFirst" : "JAA 3/26/2011 19:37",
+		"testAddLast" : "JAA 3/26/2011 19:37",
+		"testAtPut" : "JAA 3/26/2011 19:44",
+		"testRemoveAt" : "JAA 3/26/2011 19:52",
+		"testRemoveFirst" : "JAA 3/26/2011 19:53",
+		"testRemoveIfAbsent" : "JAA 3/26/2011 19:51",
+		"testRemoveLast" : "JAA 3/26/2011 19:53" } }
