@@ -4,7 +4,8 @@
 	"instance" : {
 		"newNodeWithElements" : "monty 11/22/2014 20:49",
 		"nodeClass" : "monty 11/2/2014 11:08",
-		"testDoctypeDeclaration" : "monty 11/22/2014 19:09",
+		"testDoctypeDeclaration" : "monty 3/8/2015 10:19",
+		"testDoctypeDefinition" : "monty 3/8/2015 10:18",
 		"testDocument" : "monty 11/24/2014 00:17",
 		"testEncoding" : "monty 11/22/2014 23:18",
 		"testIsDocument" : "monty 11/19/2014 21:45",

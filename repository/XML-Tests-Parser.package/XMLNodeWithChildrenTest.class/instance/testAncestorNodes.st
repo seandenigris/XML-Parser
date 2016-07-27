@@ -2,6 +2,8 @@ tests
 testAncestorNodes
 	| nodeWithNodes ancestorStack |
 
+	super testAncestorNodes.
+
 	nodeWithNodes := self newNodeWithNodes.
 	ancestorStack := OrderedCollection new.
 	nodeWithNodes allNodesDo: [:each |

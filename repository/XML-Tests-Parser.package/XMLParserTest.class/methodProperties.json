@@ -57,7 +57,7 @@
 		"testRequiredDTDDeclarations" : "monty 12/21/2013 20:07",
 		"testReusingParser" : "monty 11/18/2014 17:27",
 		"testSelfReferentialEntityReplacement" : "monty 1/4/2014 07:44",
-		"testStandalone" : "monty 1/13/2014 22:14",
+		"testStandalone" : "monty 3/8/2015 17:23",
 		"testSubsetEndingEntityReplacement" : "monty 1/12/2014 23:20",
 		"testUndeclaredAttributes" : "monty 12/18/2013 21:53",
 		"testUndeclaredElements" : "monty 12/18/2013 20:04",

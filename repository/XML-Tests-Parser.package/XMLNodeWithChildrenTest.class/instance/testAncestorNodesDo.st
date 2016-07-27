@@ -2,6 +2,8 @@ tests
 testAncestorNodesDo
 	| nodeWithNodes |
 
+	super testAncestorNodesDo.
+
 	nodeWithNodes := self newNodeWithNodes.
 	nodeWithNodes allNodesDo: [:each |
 		self

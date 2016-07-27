@@ -1,3 +1,3 @@
 accessing
-selectNodeListClass
+selectListClass
 	^ XMLNodeList
