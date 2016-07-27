@@ -4,7 +4,6 @@
 	"instance" : {
 		"acceptsContent" : "monty 2/11/2014 00:13",
 		"addContent:" : "JAAyer 7/20/2010 10:15",
-		"addObserver:" : "OttoBehrens 2/15/2011 08:33",
 		"allNodesDo:" : "JAAyer 11/25/2010 10:59",
 		"asString" : "monty 2/6/2014 20:06",
 		"canonicallyPrintOn:" : "monty 10/12/2014 21:50",
@@ -21,11 +20,6 @@
 		"isPI" : "JAAyer 4/13/2010 21:43",
 		"isStringNode" : "JAAyer 4/12/2010 22:33",
 		"nextNode" : "JAAyer 10/30/2010 19:56",
-		"notifier" : "monty 2/2/2014 22:18",
-		"notifyOf:with:" : "OttoBehrens 2/15/2011 08:33",
-		"notifyOf:with:with:" : "OttoBehrens 2/15/2011 08:34",
-		"notifyOf:with:with:with:" : "OttoBehrens 2/15/2011 08:34",
-		"notifyOf:withArguments:" : "OttoBehrens 2/15/2011 08:34",
 		"parent" : "JAAyer 2/25/2010 14:37",
 		"parent:" : "JAAyer 2/25/2010 14:37",
 		"prettyPrintOn:" : "DamienCassou 4/30/2013 17:07",
@@ -35,7 +29,6 @@
 		"printOn:" : "DamienCassou 4/30/2013 17:41",
 		"printWithoutSelfClosingTagsOn:" : "monty 10/12/2014 21:26",
 		"printedWithoutSelfClosingTags" : "monty 10/12/2014 21:27",
-		"removeObserver:" : "OttoBehrens 2/15/2011 08:34",
 		"withNewXMLWriterOn:do:" : "monty 10/12/2014 21:52",
 		"withNewXMLWriterOn:do:whenAbsent:" : "monty 10/12/2014 21:38",
 		"writeXMLOn:" : "JAA 3/22/2011 15:15" } }

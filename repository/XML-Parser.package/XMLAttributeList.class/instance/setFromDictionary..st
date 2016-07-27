@@ -1,5 +1,5 @@
 private
-setFromDictionary: anOrderPreservingDictionary andElement: anElement
+setFromDictionary: anOrderPreservingDictionary
 	| association |
 
 	"hack to reuse a dictionary for speed"
@@ -13,7 +13,6 @@ setFromDictionary: anOrderPreservingDictionary andElement: anElement
 			value:
 				(collection addLast: 
 					(XMLAttribute new
-						setName: each value: association value;
-						addObserver: self;
-						addObserver: anElement;
-						element: anElement))].
+						setName: each
+						value: association value
+						element: observer))].

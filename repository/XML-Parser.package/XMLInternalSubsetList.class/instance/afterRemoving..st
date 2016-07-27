@@ -1,3 +1,3 @@
 private
 afterRemoving: aNode
-	self notifyOf: #removedNode: with: aNode.
+	observer ifNotNil: [observer removedNode: aNode]

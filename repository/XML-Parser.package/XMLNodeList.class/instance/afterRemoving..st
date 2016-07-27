@@ -1,5 +1,7 @@
 private
 afterRemoving: aNode
+	observer ifNil: [^ self].
+
 	aNode isElement
-		ifTrue: [self notifyOf: #removedElement: with: aNode]
-		ifFalse: [self notifyOf: #removedNode: with: aNode].
+		ifTrue: [observer removedElement: aNode]
+		ifFalse: [observer removedNode: aNode].

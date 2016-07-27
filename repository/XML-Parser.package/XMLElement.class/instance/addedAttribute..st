@@ -1,6 +1,4 @@
 notifications
 addedAttribute: anAttribute
-	anAttribute
-		addObserver: self;
-		element: self.
+	anAttribute element: self.
 	self validateAttributes.

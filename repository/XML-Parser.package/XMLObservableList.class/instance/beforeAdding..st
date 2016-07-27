@@ -1,3 +1,3 @@
 private
 beforeAdding: anObject
-	self notifyOf: #adding:to: with: anObject with: self
+	observer ifNotNil: [observer adding: anObject to: self]

@@ -1,5 +1,3 @@
 notifications
 removedAttribute: anAttribute
-	anAttribute
-		removeObserver: self;
-		element: nil
+	anAttribute element: nil

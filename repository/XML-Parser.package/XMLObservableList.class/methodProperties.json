@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"observer:" : "monty 10/18/2014 01:02" },
 	"instance" : {
 		"add:after:" : "JAAyer 8/4/2010 14:46",
 		"add:afterIndex:" : "JAAyer 7/22/2010 10:56",
@@ -8,18 +8,13 @@
 		"add:beforeIndex:" : "JAAyer 7/22/2010 10:57",
 		"addFirst:" : "JAAyer 7/22/2010 10:57",
 		"addLast:" : "monty 2/6/2014 01:02",
-		"addObserver:" : "OttoBehrens 2/14/2011 17:32",
-		"afterAdding:" : "JAAyer 11/23/2010 05:41",
-		"afterRemoving:" : "JAAyer 11/22/2010 15:42",
+		"afterAdding:" : "monty 10/18/2014 00:51",
+		"afterRemoving:" : "monty 10/18/2014 00:51",
 		"at:put:" : "JAA 3/21/2011 20:08",
-		"beforeAdding:" : "JAAyer 11/22/2010 15:42",
-		"notifier" : "JAAyer 6/11/2010 10:50",
-		"notifyOf:with:" : "OttoBehrens 2/14/2011 17:32",
-		"notifyOf:with:with:" : "OttoBehrens 2/14/2011 17:32",
-		"notifyOf:with:with:with:" : "OttoBehrens 2/14/2011 17:32",
-		"notifyOf:withArguments:" : "OttoBehrens 2/14/2011 17:32",
+		"beforeAdding:" : "monty 10/18/2014 00:51",
+		"observer" : "monty 10/18/2014 00:50",
+		"observer:" : "monty 10/18/2014 00:50",
 		"remove:ifAbsent:" : "JAAyer 7/22/2010 10:58",
 		"removeAt:" : "JAAyer 6/11/2010 09:03",
-		"removeObserver:" : "OttoBehrens 2/14/2011 17:32",
 		"with:add:" : "monty 2/2/2014 21:19",
 		"with:remove:" : "monty 2/2/2014 21:20" } }

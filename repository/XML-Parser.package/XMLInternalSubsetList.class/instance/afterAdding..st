@@ -1,3 +1,3 @@
 private
 afterAdding: aNode
-	self notifyOf: #addedNode: with: aNode.
+	observer ifNotNil: [observer addedNode: aNode]

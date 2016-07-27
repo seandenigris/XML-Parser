@@ -1,3 +1,0 @@
-accessing
-observers
-	^ observers ifNil: [#()]

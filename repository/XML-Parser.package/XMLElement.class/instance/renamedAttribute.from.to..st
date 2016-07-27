@@ -1,3 +1,7 @@
 notifications
 renamedAttribute: anAttribute from: anOldName to: aNewName
-	self validateAttributes
+	self attributeNodes	
+		renamedAttribute: anAttribute
+		from: anOldName
+		to: aNewName.
+	self validateAttributes.

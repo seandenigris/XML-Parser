@@ -7,8 +7,7 @@
 	"commentStamp" : "monty 2/8/2014 02:27",
 	"instvars" : [
 		"name",
-		"value",
-		"notifier" ],
+		"value" ],
 	"name" : "XMLAttribute",
 	"pools" : [
 		 ],

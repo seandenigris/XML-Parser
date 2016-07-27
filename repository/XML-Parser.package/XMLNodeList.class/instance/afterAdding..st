@@ -1,5 +1,7 @@
 private
 afterAdding: aNode
+	observer ifNil: [^ self].
+
 	aNode isElement
-		ifTrue: [self notifyOf: #addedElement: with: aNode]
-		ifFalse: [self notifyOf: #addedNode: with: aNode].
+		ifTrue: [observer addedElement: aNode]
+		ifFalse: [observer addedNode: aNode].

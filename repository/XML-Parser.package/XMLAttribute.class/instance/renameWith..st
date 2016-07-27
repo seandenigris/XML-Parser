@@ -1,13 +1,13 @@
 private
 renameWith: aBlock
-	| oldName newName |
+	| oldName |
 
 	oldName := self name.
 	aBlock value.
-	(newName := self name) = oldName
-		ifFalse: [
-			self
-				notifyOf: #renamedAttribute:from:to:
-				with: self
-				with: oldName
-				with: newName].
+	(self name ~= oldName
+		and: [self hasParent])
+			ifTrue: [
+				self parent
+					renamedAttribute: self
+					from: oldName
+					to: self name].
