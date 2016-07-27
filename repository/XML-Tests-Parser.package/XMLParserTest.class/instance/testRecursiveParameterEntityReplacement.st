@@ -1,32 +1,23 @@
 tests
 testRecursiveParameterEntityReplacement
-	| limit entityDeclarations |
-
-	limit := XMLTokenizer new maxEntityReplacementDepth.
-	entityDeclarations :=
-		self
-			recursiveEntityDeclarationsNamed: 'entity'
-			depth: limit
-			isParameter: true.
 	self
 		shouldnt: [
 			SAXHandler parse:
-				'<!DOCTYPE root [',
-					entityDeclarations, '
-					%entity1;]>
+				'<!DOCTYPE root [
+					<!ENTITY % first "&#37;second;">
+					<!ENTITY % second "&#37;third;">
+					<!ENTITY % third "<!--last-->">
+					%first;]>
 				<root/>']
 		raise: XMLEntityDepthException.
-
-	entityDeclarations :=
-		self
-			recursiveEntityDeclarationsNamed: 'entity'
-			depth: limit + 1
-			isParameter: true.
 	self
 		should: [
 			SAXHandler parse:
-				'<!DOCTYPE root [',
-					entityDeclarations,'
-					%entity1;]>
+				'<!DOCTYPE root [
+					<!ENTITY % first "&#37;second;">
+					<!ENTITY % second "&#37;third;">
+					<!ENTITY % third "&#37;fourth;">
+					<!ENTITY % fourth "<!--last-->">
+					%first;]>
 				<root/>']
 		raise: XMLEntityDepthException.
