@@ -1,5 +1,5 @@
 formatting
 formatAfterCData: aCDataWriter
-	self endHighlight: cdataHighlight.
+	highlighter endCDataHighlightPosition: self endPosition.
 
 	super formatAfterCData: aCDataWriter.

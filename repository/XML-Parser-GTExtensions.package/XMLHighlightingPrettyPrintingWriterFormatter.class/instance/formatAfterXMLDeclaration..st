@@ -1,5 +1,5 @@
 formatting
 formatAfterXMLDeclaration: anXMLDeclarationWriter
-	self endHighlight: xmlDeclarationHighlight.
+	highlighter endXMLDeclarationHighlightPosition: self endPosition.
 
 	super formatAfterXMLDeclaration: anXMLDeclarationWriter.

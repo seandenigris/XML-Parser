@@ -2,4 +2,4 @@ formatting
 formatBeforeDoctypeDeclaration: aDoctypeDeclarationWriter
 	super formatBeforeDoctypeDeclaration: aDoctypeDeclarationWriter.
 
-	doctypeDeclarationHighlight := self newHighlightColored: self doctypeDeclarationColor.
+	highlighter startDoctypeDeclarationHighlightPosition: self startPosition.

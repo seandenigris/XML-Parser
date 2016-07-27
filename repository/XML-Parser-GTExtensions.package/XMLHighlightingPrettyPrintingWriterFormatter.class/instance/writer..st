@@ -2,4 +2,4 @@ accessing
 writer: aWriter
 	super writer: aWriter.
 
-	aWriter addHighlight: defaultHighlight.
+	highlighter := aWriter highlighter.

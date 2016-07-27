@@ -1,5 +1,5 @@
 formatting
 formatAfterDeclaration: aDeclarationWriter
-	self endHighlight: declarationHighlight.
+	highlighter endDeclarationHighlightPosition: self endPosition.
 
 	super formatAfterDeclaration: aDeclarationWriter.

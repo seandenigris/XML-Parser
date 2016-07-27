@@ -1,5 +1,5 @@
 formatting
 formatAfterComment: aCommentWriter
-	self endHighlight: commentHighlight.
+	highlighter endCommentHighlightPosition: self endPosition.
 
 	super formatAfterComment: aCommentWriter.

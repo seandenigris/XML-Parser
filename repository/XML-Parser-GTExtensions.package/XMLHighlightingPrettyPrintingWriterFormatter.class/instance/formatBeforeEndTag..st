@@ -2,4 +2,4 @@ formatting
 formatBeforeEndTag: aTagWriter
 	super formatBeforeEndTag: aTagWriter.
 
-	self startNewTagHighlight.
+	highlighter startTagHighlightPosition: self startPosition.

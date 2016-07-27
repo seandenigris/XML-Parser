@@ -1,5 +1,5 @@
 formatting
 formatAfterPI: aPIWriter
-	self endHighlight: piHighlight.
+	highlighter endPIHighlightPosition: self endPosition.
 
 	super formatAfterPI: aPIWriter.

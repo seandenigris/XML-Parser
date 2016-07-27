@@ -2,4 +2,4 @@ formatting
 formatBeforeCharacterEscape: aCharacterEscape
 	super formatBeforeCharacterEscape: aCharacterEscape.
 
-	entityReferenceHighlight := self newHighlightColored: self entityReferenceColor.
+	highlighter startEntityReferenceHighlightPosition: self startPosition.

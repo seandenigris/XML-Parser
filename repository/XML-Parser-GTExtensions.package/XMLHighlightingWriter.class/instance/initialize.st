@@ -2,4 +2,4 @@ initialization
 initialize
 	super initialize.
 
-	highlights := OrderedCollection new.
+	highlighter := XMLHighlighter new.

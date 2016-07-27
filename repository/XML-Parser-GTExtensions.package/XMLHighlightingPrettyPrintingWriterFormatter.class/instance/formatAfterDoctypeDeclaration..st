@@ -1,5 +1,5 @@
 formatting
 formatAfterDoctypeDeclaration: aDoctypeDeclarationWriter
-	self endHighlight: doctypeDeclarationHighlight.
+	highlighter endDoctypeDeclarationHighlightPosition: self endPosition.
 
 	super formatAfterDoctypeDeclaration: aDoctypeDeclarationWriter.

@@ -1,5 +1,5 @@
 formatting
 formatAfterEndTag: aTagWriter
-	self endHighlight: tagHighlight.
+	highlighter endTagHighlightPosition: self endPosition.
 
 	super formatAfterEndTag: aTagWriter.
