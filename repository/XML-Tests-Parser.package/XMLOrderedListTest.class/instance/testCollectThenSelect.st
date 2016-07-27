@@ -8,9 +8,9 @@ testCollectThenSelect
 			(list
 				collect: [:each | each asUppercase]
 				thenSelect: [:each | each ~= self singleElement asUppercase])
-		copiedFrom: list
+		collectedFrom: list
 		equals:
-			(self listClass newFrom:
+			(self listSpecies newFrom:
 				(self listElements
 					collect: [:each | each asUppercase]
 					thenSelect: [:each | each ~= self singleElement asUppercase])).

@@ -1,9 +1,12 @@
 tests
 testDocument
-	| document  |
+	| document |
 
 	document := XMLDOMParser parse: self addressBookXML.
-	document allElementsDo: [:each | self assert: each document == document].
+	document allNodesDo: [:each | self assert: each document == document].
 
 	document root innerXML: self addressBookXML.
-	document allElementsDo: [:each | self assert: each document == document].
+	document allNodesDo: [:each | self assert: each document == document].
+
+	(document removeNode: (document root))
+		allNodesDo: [:each | self assert: each document isNil].
