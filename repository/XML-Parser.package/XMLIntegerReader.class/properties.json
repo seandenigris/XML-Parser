@@ -3,8 +3,9 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"CharacterDigitValues" ],
-	"commentStamp" : "monty 1/21/2014 01:36",
+		"CharacterDigitValues",
+		"MaxIntegerValue" ],
+	"commentStamp" : "monty 1/8/2016 03:08",
 	"instvars" : [
 		"readStream",
 		"printStream" ],

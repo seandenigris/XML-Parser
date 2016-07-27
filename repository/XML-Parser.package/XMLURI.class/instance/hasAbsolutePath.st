@@ -1,4 +1,4 @@
 testing
 hasAbsolutePath
-	^ pathSegments notEmpty
-		and: [pathSegments first isEmpty]
+	^ self pathSegments notEmpty
+		and: [self pathSegments first isEmpty]

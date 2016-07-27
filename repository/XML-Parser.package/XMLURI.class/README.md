@@ -1,1 +1,3 @@
-A class for XML URIs. It uses the XMLURIParser to parse URIs and can combine URIs using /, can decode URI paths, and can retrieve contents of http:// and file:// URLs using XMLHTTPRequest and XMLFileHandle.
+A class for XML URIs. Instances are immutable and support combining with other XMLURIs or URI strings using / (to resolve relative URIs in the context of the receiver), accessing URI components, creating copies with replaced components, and retrieving the contents of http:// and file:// URLs using XMLHTTPRequest and XMLFileHandle.
+
+Uses XMLURIParser to parse URIs lazily (for example, when a URI compoenent is accessed with an "accessing" message) when created from a string and eagerly when created from a stream.

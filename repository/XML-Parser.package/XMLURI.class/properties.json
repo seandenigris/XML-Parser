@@ -3,16 +3,17 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "monty 1/27/2015 23:00",
+		"UnreservedCharacters" ],
+	"commentStamp" : "monty 1/8/2016 11:14",
 	"instvars" : [
+		"uriString",
 		"scheme",
 		"hasAuthorityPrefix",
 		"userInfo",
 		"host",
 		"port",
 		"pathSegments",
-		"queryString",
+		"query",
 		"fragment" ],
 	"name" : "XMLURI",
 	"pools" : [

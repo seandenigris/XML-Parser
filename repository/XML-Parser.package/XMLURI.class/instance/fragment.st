@@ -1,3 +1,4 @@
 accessing
 fragment
-	^ fragment
+	self parseURIStringIfUnparsed.
+	^ fragment.

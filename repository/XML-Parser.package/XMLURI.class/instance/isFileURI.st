@@ -1,3 +1,3 @@
 testing
 isFileURI
-	^ scheme = 'file'
+	^ self scheme = 'file'

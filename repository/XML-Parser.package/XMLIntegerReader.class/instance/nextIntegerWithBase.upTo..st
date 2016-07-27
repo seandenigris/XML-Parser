@@ -12,7 +12,8 @@ nextIntegerWithBase: aBase upTo: aReadLimit
 		or: [(readLimit notNil and: [readLimit <= 0])
 			or: [(digitValue := self nextDigitWithBase: aBase) isNil]]]
 		whileFalse: [
-			integer ifNil: [integer := 0].
+			integer
+				ifNil: [integer := 0].
 	
 			integer > maxBaseValue
 				ifTrue: [^ maxValue].
@@ -21,5 +22,6 @@ nextIntegerWithBase: aBase upTo: aReadLimit
 			integer > (maxValue - digitValue)
 				ifTrue: [^ maxValue].
 			integer := integer + digitValue.
-			readLimit ifNotNil: [readLimit := readLimit - 1]].
+			readLimit
+				ifNotNil: [readLimit := readLimit - 1]].
 	^ integer.

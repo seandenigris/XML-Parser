@@ -1,4 +1,4 @@
 testing
 hasDirectoryPath
-	^ pathSegments notEmpty
-		and: [pathSegments last isEmpty]
+	^ self pathSegments notEmpty
+		and: [self pathSegments last isEmpty]

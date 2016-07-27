@@ -2,6 +2,7 @@ printing
 printFragmentOn: aStream
 	self hasFragment
 		ifTrue: [
-			aStream
-				nextPut: $#;
-				nextPutAll: fragment]
+			aStream nextPut: $#.
+			self
+				print: self fragment
+				withPercentEncodingOn: aStream]

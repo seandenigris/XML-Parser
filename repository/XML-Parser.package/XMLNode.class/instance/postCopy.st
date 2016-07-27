@@ -1,3 +1,5 @@
 copying
 postCopy
-	parent := nil
+	super postCopy.
+
+	parent := nil.

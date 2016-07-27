@@ -4,14 +4,14 @@ addDoubleDotPathSegment
 		ifFalse: [^ self].
 
 	self hasRootPath
-		ifTrue: [pathSegments removeAll]
+		ifTrue: [self removePathSegments]
 		ifFalse: [| hadAbsolutePath |
 			hadAbsolutePath := self hasAbsolutePath.
 			self hasDirectoryPath
-				ifTrue: [pathSegments removeLast].
+				ifTrue: [self removeLastPathSegment].
 			self hasPath
 				ifTrue: [
-					pathSegments removeLast.
+					self removeLastPathSegment.
 					(self hasPath
 						or: [hadAbsolutePath])
 						ifTrue: [self haveDirectoryPath]]].

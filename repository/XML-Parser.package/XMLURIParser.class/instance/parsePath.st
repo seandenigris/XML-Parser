@@ -1,3 +1,0 @@
-parsing
-parsePath
-	^ self parseUpToAnyNotSkipping: '?#'

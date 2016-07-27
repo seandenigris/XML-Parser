@@ -1,3 +1,5 @@
 copying
 postCopy
-	pathSegments := pathSegments copy
+	self
+		parseURIStringIfUnparsed;
+		uriString: nil "clear to prepare for modification"

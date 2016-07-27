@@ -6,20 +6,18 @@ comparing
 	self class == anObject class
 		ifFalse: [^ false].
 
-	scheme = anObject scheme
+	self scheme = anObject scheme
 		ifFalse: [^ false].
-	hasAuthorityPrefix = anObject hasAuthorityPrefix
+	self userInfo = anObject userInfo
 		ifFalse: [^ false].
-	userInfo = anObject userInfo
+	self host = anObject host
 		ifFalse: [^ false].
-	host = anObject host
+	self port = anObject port
 		ifFalse: [^ false].
-	port = anObject port
+	self pathSegments = anObject pathSegments
 		ifFalse: [^ false].
-	pathSegments = anObject pathSegments
+	self query = anObject query
 		ifFalse: [^ false].
-	queryString = anObject queryString
-		ifFalse: [^ false].
-	fragment = anObject fragment
+	self fragment = anObject fragment
 		ifFalse: [^ false].
 	^ true.

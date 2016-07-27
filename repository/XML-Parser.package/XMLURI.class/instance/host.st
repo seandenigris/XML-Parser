@@ -1,3 +1,4 @@
 accessing
 host
-	^ host
+	self parseURIStringIfUnparsed.
+	^ host.

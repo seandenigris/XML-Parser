@@ -1,8 +1,14 @@
 parsing
 parsePort
-	(self parseNext: $:)
+	| port |
+
+	(self peekFor: $:)
 		ifTrue: [
-			^ XMLIntegerReader
-				readFrom: (self parseUpToAnyNotSkipping: '/?#') readStream
-				withBase: 10]
-		ifFalse: [^ nil]
+			port :=
+				self
+					nextIntegerWithBase: 10
+					upTo: nil.
+			[self atEnd
+				or: ['/?#' includes: self peek]]
+				whileFalse: [self next]].
+	^ port.

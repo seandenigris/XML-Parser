@@ -1,3 +1,3 @@
 comparing
 hash
-	^ host hash bitXor: pathSegments hash
+	^ self host hash bitXor: self pathSegments hash

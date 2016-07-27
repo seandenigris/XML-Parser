@@ -1,3 +1,3 @@
 testing
 hasFragment
-	^ fragment notEmpty
+	^ self fragment notEmpty

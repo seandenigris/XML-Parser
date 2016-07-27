@@ -1,17 +1,17 @@
 private
-addPathSegment: aSegment
-	aSegment = '.'
+addPathSegment: aString
+	aString = '.'
 		ifTrue: [^ self addDotPathSegment].
-	aSegment = '..'
+	aString = '..'
 		ifTrue: [^ self addDoubleDotPathSegment].
 
 	self hasPath
 		ifTrue: [
 			(self hasDirectoryPath
-				and: [pathSegments size > 1])
-				ifTrue: [pathSegments removeLast]]
+				and: [self pathSegments size > 1])
+				ifTrue: [self removeLastPathSegment]]
 		ifFalse: [
 			self hasHost
-				ifTrue: [pathSegments addLast: '']].
+				ifTrue: [self pathSegments addLast: '']].
 
-	pathSegments addLast: aSegment.
+	self pathSegments addLast: aString.

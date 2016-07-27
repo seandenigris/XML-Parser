@@ -1,1 +1,1 @@
-This is a basic URI parser that can split a URI into scheme, host (with port), path, query string, and fragment.
+This class is a parser that can extract the scheme, user info, host, port, path segments, query (as a dictionary), and fragment of a URI. It automatically handles percent decoding and raises no errors.

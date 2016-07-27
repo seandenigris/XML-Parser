@@ -1,3 +1,5 @@
 parsing
 parseFragment
-	^ self parseUpToEndAfterNext: $#
+	(self peekFor: $#)
+		ifTrue: [^ self nextPercentEncodedUpToEnd]
+		ifFalse: [^ '']

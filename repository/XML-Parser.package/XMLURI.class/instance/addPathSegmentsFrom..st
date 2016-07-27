@@ -4,11 +4,11 @@ addPathSegmentsFrom: aURI
 		ifFalse: [^ self].
 
 	aURI hasAbsolutePath
-		ifTrue: [pathSegments removeAll]
+		ifTrue: [self removePathSegments]
 		ifFalse: [
 			self hasNonDirectoryPath
 				ifTrue: [
-					pathSegments removeLast.
+					self removeLastPathSegment.
 					self hasPath
 						ifTrue: [self haveDirectoryPath]]].
 

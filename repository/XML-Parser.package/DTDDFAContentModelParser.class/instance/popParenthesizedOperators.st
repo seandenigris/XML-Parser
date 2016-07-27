@@ -1,4 +1,4 @@
-evaluation
+private
 popParenthesizedOperators
 	[operatorStack notEmpty]
 		whileTrue: [

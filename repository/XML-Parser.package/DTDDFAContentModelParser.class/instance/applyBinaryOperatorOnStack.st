@@ -1,4 +1,4 @@
-evaluation
+private
 applyBinaryOperatorOnStack
 	nfaBuilder totalFragments > 1
 		ifFalse: [self errorMissingOperand].

@@ -2,10 +2,10 @@ parsing
 parseUserInfo
 	| userInfo oldPosition |
 
-	oldPosition := readStream position.
-	userInfo := self parseUpToAnyNotSkipping: ':/@?#'.
-	(self parseNext: $@)
+	oldPosition := self position.
+	userInfo := self nextPercentEncodedDelimitedBy: ':/@?#'.
+	(self peekFor: $@)
 		ifTrue: [^ userInfo]
 		ifFalse: [
-			readStream position: oldPosition.
+			self position: oldPosition.
 			^ ''].

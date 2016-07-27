@@ -1,8 +1,10 @@
-accessing
+private
 next
-	^ printStream
-		ifNil: [readStream next]
-		ifNotNil: [| nextChar |
+	| nextChar |
+
+	self atEnd
+		ifFalse: [
 			nextChar := readStream next.
-			printStream nextPut: nextChar.
-			^ nextChar]
+			printStream
+				ifNotNil: [printStream nextPut: nextChar]].
+	^ nextChar.

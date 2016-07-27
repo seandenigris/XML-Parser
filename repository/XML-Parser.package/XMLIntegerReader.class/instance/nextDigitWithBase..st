@@ -1,12 +1,12 @@
 private
 nextDigitWithBase: aBase
-	| digit |
-	
-	digit :=
-		CharacterDigitValues
-			at: self peek asciiValue
-			ifAbsent: [^ nil].
-	(digit >= 0 and: [digit < aBase])
-		ifFalse: [^ nil].
-	self next.
-	^ digit.
+	| asciiValue digit |
+
+	((asciiValue := self peek asciiValue) > 0
+		and: [asciiValue <= CharacterDigitValues size
+			and: [(digit := CharacterDigitValues at: asciiValue) >= 0
+				and: [digit < aBase]]])
+				ifTrue: [
+					self next.
+					^ digit]
+				ifFalse: [^ nil]

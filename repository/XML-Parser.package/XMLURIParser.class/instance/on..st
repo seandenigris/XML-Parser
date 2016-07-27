@@ -1,4 +1,7 @@
 initialization
-on: aString
-	readStream := aString readStream.
-	writeStream := (String new: aString size) writeStream.
+on: aStringOrStream
+	readStream :=
+		aStringOrStream isStream
+			ifTrue: [aStringOrStream]
+			ifFalse: [aStringOrStream readStream].
+	writeStream := (String new: 64) writeStream.

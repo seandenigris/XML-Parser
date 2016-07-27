@@ -1,0 +1,3 @@
+enumerating
+queryKeysAndValuesDo: aTwoArgumentBlock
+	self query keysAndValuesDo: aTwoArgumentBlock

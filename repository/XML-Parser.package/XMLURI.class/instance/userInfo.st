@@ -1,3 +1,4 @@
 accessing
 userInfo
-	^ userInfo
+	self parseURIStringIfUnparsed.
+	^ userInfo.

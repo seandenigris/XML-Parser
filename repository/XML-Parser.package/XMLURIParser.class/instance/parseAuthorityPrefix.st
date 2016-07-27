@@ -2,10 +2,10 @@ parsing
 parseAuthorityPrefix
 	| oldPosition |
 
-	oldPosition := readStream position.
-	((self parseNext: $/)
-		and: [self parseNext: $/])
+	oldPosition := self position.
+	((self peekFor: $/)
+		and: [self peekFor: $/])
 		ifTrue: [^ true]
 		ifFalse: [
-			readStream position: oldPosition.
+			self position: oldPosition.
 			^ false].

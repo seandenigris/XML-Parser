@@ -1,3 +1,4 @@
 accessing
 scheme
-	^ scheme
+	self parseURIStringIfUnparsed.
+	^ scheme.
