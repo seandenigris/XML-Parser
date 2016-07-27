@@ -1,5 +1,5 @@
 accessing
-elementValidatorFor: aName
+elementValidatorFor: anElement
 	^ (self doctypeDefinition elementValidators
-		at: aName
+		at: anElement
 		ifAbsent: [nil]) copy

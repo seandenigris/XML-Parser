@@ -1,3 +1,3 @@
 accessing
-documentReadLimit: aLimit
-	self parserLimits documentReadLimit: aLimit
+documentReadLimit: anInteger
+	self parserLimits documentReadLimit: anInteger

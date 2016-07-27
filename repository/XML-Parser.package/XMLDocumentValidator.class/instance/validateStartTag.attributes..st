@@ -1,9 +1,9 @@
 validating
-validateStartTag: aName attributes: anAttributeDictionary
+validateStartTag: anElement attributes: anAttributeDictionary
 	(self hasElementValidators
 		or: [self hasAttributeValidators])
 		ifTrue: [
-			self validateStartTag: aName.
+			self validateStartTag: anElement.
 			self
 				validateAttributes: anAttributeDictionary
-				with: (self attributeValidatorsFor: aName)]
+				with: (self attributeValidatorsFor: anElement)]

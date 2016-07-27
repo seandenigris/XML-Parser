@@ -1,3 +1,3 @@
 accessing
-maxExternalEntitySize: aLimit
-	maxExternalEntitySize := aLimit
+maxExternalEntitySize: anInteger
+	maxExternalEntitySize := anInteger

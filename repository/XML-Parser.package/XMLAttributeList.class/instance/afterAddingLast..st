@@ -1,11 +1,10 @@
 private
-afterAddingLast: anAttribute
-	self attributesByName
-		at: anAttribute name
-		ifPresent: [:oldAttribute |
+afterAddingLast: aNode
+	self attributeNodesByName
+		at: aNode name ifPresent: [:oldNode |
 			self
-				replacedAttribute: oldAttribute
-				withAttributeAt: self size];
-		at: anAttribute name
-		put: anAttribute.
-	observer ifNotNil: [observer addedAttribute: anAttribute].
+				replaced: oldNode
+				with: aNode 
+				at: self size];
+		at: aNode name put: aNode.
+	observer ifNotNil: [observer addedAttribute: aNode].

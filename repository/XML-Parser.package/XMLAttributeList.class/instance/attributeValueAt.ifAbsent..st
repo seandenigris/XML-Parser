@@ -1,5 +1,5 @@
 private
 attributeValueAt: aName ifAbsent: aBlock
-	^ (self attributesByName
+	^ (self attributeNodesByName
 		at: aName
 		ifAbsent: [^ aBlock value]) value

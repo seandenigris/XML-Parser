@@ -1,11 +1,12 @@
 validating
-validateStartTag: aName
+validateStartTag: anElement
 	self currentElementValidator
-		ifNotNil: [:currentValidator | currentValidator validateStartTag: aName].
+		ifNotNil: [:elementValidator |
+			elementValidator validateStartTag: anElement].
 
 	self elementValidatorStack addLast:
-		((self elementValidatorFor: aName)
+		((self elementValidatorFor: anElement)
 			ifNil: [
 				self
-					unvalidatedElement: aName;
-					defaultElementValidatorFor: aName]).
+					unvalidatedElement: anElement;
+					defaultElementValidatorFor: anElement]).

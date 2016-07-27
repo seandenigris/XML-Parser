@@ -1,5 +1,6 @@
 accessing
 descendantElements
+	"returns a node list of all descendant elements"
 	| descendentElements |
 
 	descendentElements := self newListForSelect.

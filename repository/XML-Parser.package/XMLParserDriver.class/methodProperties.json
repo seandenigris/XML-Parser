@@ -28,7 +28,7 @@
 		"handleStartContentEntityReplacement:" : "monty 11/16/2013 05:10",
 		"handleStartDTD:publicID:systemID:" : "monty 3/21/2015 22:37",
 		"handleStartDocument" : "JAAyer 11/27/2010 07:23",
-		"handleStartTag:attributes:namespaces:" : "JAAyer 11/27/2010 07:23",
+		"handleStartTag:attributes:" : "monty 4/13/2016 03:38",
 		"handleUnreplacedGeneralEntityReference:" : "monty 1/4/2015 00:01",
 		"handleWhitespace:" : "JAAyer 11/27/2010 07:23",
 		"handleXMLVersion:encoding:standalone:" : "JAAyer 11/27/2010 07:23",

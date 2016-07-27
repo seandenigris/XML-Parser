@@ -1,2 +1,0 @@
-handling
-handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary

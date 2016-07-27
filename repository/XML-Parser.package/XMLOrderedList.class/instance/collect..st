@@ -2,6 +2,8 @@ enumerating
 collect: aBlock
 	| collected |
 
-	collected := self species new: self size.
-	self do: [:each | collected addLast: (aBlock value: each)].
+	collected := self copyEmptyForCollect.
+	"use to:do: for speed"
+	1 to: collection size do: [:i |
+		collected addLast: (aBlock value: (collection at: i))].
 	^ collected.

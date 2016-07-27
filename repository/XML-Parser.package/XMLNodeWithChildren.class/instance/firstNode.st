@@ -1,4 +1,5 @@
 accessing
 firstNode
-	"returns nil when empty"
+	"returns the first child node of the receiver if it has one, nil otherwise"
+
 	^ self nodes first

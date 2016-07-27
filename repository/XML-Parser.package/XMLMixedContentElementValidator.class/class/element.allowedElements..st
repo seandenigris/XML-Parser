@@ -1,5 +1,5 @@
 instance creation
-element: aName allowedElements: aNameCollection
+element: anElement allowedElements: anAllowedElementsCollection
 	^ self new
-		setElement: aName
-		allowedElements: aNameCollection
+		setElement: anElement
+		allowedElements: anAllowedElementsCollection

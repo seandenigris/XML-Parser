@@ -8,6 +8,7 @@ copyReplaceFrom: aStart to: aStop with: aReplacementCollection
 			^ self copy
 				addAll: aReplacementCollection;
 				yourself].
+
 	copy := self copyEmpty.
 	start := aStart max: 1.
 	stop := aStop min: self size.

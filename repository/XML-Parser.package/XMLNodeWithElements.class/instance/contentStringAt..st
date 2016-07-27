@@ -1,4 +1,7 @@
 accessing
 contentStringAt: aName
-	"returns the content string of the element named aName or empty if absent"
+	"returns the content string of the first element child of the receiver
+	whose qualified or local name matches aName or an empty string if there
+	isn't one"
+
 	^ self nodes contentStringAt: aName

@@ -1,4 +1,5 @@
 testing
 isDeclaredPrefix: aPrefix
-	"is namespace prefix in scope for use by receiver and descendants"
+	"is the namespace prefix aPrefix declared for the receiver and its descendants?"
+
 	^ self namespaceScope includesPrefix: aPrefix

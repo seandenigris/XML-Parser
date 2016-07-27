@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"element:allowedElements:" : "monty 12/7/2013 19:50" },
+		"element:allowedElements:" : "monty 4/13/2016 06:02" },
 	"instance" : {
 		"allowedElements" : "monty 12/7/2013 19:51",
 		"atEnd" : "monty 11/19/2013 01:14",
-		"setElement:allowedElements:" : "monty 12/7/2013 19:50",
-		"validateStartTag:" : "monty 12/7/2013 19:51" } }
+		"setElement:allowedElements:" : "monty 4/13/2016 06:02",
+		"type" : "monty 4/13/2016 06:21",
+		"validateStartTag:" : "monty 4/13/2016 06:02" } }

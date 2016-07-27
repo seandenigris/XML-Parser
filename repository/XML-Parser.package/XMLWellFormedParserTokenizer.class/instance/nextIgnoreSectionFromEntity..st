@@ -10,6 +10,12 @@ nextIgnoreSectionFromEntity: aParameterEntity
 	self topPushedBackEntity == aParameterEntity
 		ifFalse: [driver handleImproperParameterEntityNesting].
 
+	"From the spec:
+	The contents of an ignored conditional section MUST be parsed by
+	ignoring all characters after the '[' following the keyword, except
+	conditional section starts '<![' and ends ']]>', until the matching
+	conditional section end is found. Parameter entity references MUST
+	NOT be recognized in this process."
 	openSections := 1.
 	[openSections > 0
 		and: [streamReader atEnd not]]

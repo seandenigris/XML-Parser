@@ -3,4 +3,4 @@ validateAttributes
 	self usesNamespaces
 		ifTrue: [
 			self namespaceScope validateAttributePrefixes:
-				self attributeNodes attributesByName]
+				self attributeNodes attributeNodesByName]

@@ -1,2 +1,3 @@
 closing
 close
+	character := nil

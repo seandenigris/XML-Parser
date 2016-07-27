@@ -1,5 +1,8 @@
 printing
 printInnerXMLOn: aStream
-	self
-		printInnerXMLOn: aStream
-		beforeWritingDo: [:writer | ]
+	self hasChildren
+		ifTrue: [
+			self
+				withNewXMLWriterOn: aStream
+				do: [:writer |
+					self writeInnerXMLOn: writer]]

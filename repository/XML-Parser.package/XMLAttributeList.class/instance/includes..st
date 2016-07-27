@@ -2,6 +2,6 @@ testing
 includes: aNode
 	^ aNode isAttribute
 		and: [
-			(self attributesByName
+			(self attributeNodesByName
 				at: aNode name
 				ifAbsent: [^ false]) = aNode]

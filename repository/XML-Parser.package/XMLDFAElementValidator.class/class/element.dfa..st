@@ -1,5 +1,5 @@
 instance creation
-element: aName dfa: aDFA
+element: anElement dfa: aDFA
 	^ self new
-		setElement: aName
+		setElement: anElement
 		dfa: aDFA

@@ -1,9 +1,9 @@
 validating
-validateEndTag: aName
+validateEndTag: anElement
 	self hasElementValidators
 		ifTrue: [
-			(self currentElementValidator element = aName)
-				ifTrue: [
-					self currentElementValidator atEnd
-						ifFalse: [self errorMissingContentFor: aName]].
-			self elementValidatorStack removeLast]
+			self currentElementValidator
+				ifNotNil: [:elementValidator |
+					elementValidator atEnd
+						ifFalse: [self errorUnexpectEndOfElement: anElement].
+					self elementValidatorStack removeLast]]

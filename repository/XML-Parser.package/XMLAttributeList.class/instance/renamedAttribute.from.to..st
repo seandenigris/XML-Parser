@@ -1,6 +1,6 @@
 notifying
-renamedAttribute: anAttribute from: anOldName to: aNewName
-	self attributesByName
+renamedAttribute: anAttributeNode from: anOldName to: aNewName
+	self attributeNodesByName
 		removeKey: anOldName;
 		at: aNewName ifPresent: [:attribute | self remove: attribute];
-		at: aNewName put: anAttribute
+		at: aNewName put: anAttributeNode

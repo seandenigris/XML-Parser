@@ -14,9 +14,10 @@
 		"afterRemoving:" : "monty 10/18/2014 00:51",
 		"at:put:" : "monty 1/21/2015 12:35",
 		"beforeAdding:" : "monty 10/18/2014 00:51",
-		"indexOf:otherThan:" : "monty 2/9/2015 01:31",
+		"indexOf:notAt:" : "monty 4/20/2016 09:20",
 		"observer" : "monty 10/18/2014 00:50",
 		"observer:" : "monty 10/18/2014 00:50",
 		"remove:ifAbsent:" : "monty 1/21/2015 10:00",
 		"removeAt:" : "monty 5/25/2015 20:50",
+		"replaced:with:at:" : "monty 4/20/2016 09:20",
 		"reset" : "monty 1/21/2015 09:55" } }

@@ -1,4 +1,4 @@
 private
-afterRemoving: anAttribute
-	self attributesByName removeKey: anAttribute name.
-	observer ifNotNil: [observer removedAttribute: anAttribute].
+afterRemoving: aNode
+	self attributeNodesByName removeKey: aNode name.
+	observer ifNotNil: [observer removedAttribute: aNode].

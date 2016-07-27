@@ -1,0 +1,3 @@
+accessing
+type
+	^ 'mixed content'

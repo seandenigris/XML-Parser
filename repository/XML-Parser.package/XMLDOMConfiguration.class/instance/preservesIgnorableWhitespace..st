@@ -1,3 +1,4 @@
 accessing
 preservesIgnorableWhitespace: aBoolean
-	preservesIgnorableWhitespace := aBoolean
+	(preservesIgnorableWhitespace := aBoolean)
+		ifTrue: [self isValidating: true]

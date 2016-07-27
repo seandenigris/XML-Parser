@@ -1,5 +1,7 @@
 enumerating
 descendantNodesSelect: aBlock
+	"returns a node list of all descendant nodes of the receiver that aBlock
+	evaluates true for"
 	| selectedNodes |
 
 	selectedNodes := self newListForSelect.

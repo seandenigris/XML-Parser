@@ -1,3 +1,7 @@
 handling
 handleComment: aString
-	self saxHandler comment: aString
+	(self elementNester isInElement
+		and: [self isValidating])
+		ifTrue: [self validator validateComment: aString].
+
+	self saxHandler comment: aString.

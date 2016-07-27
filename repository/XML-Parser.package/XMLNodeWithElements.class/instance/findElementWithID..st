@@ -1,6 +1,7 @@
 searching
 findElementWithID: anID
-	"implements getElementByID()"
+	"Works like XML DOM Level 2's getElementByID(). Unlike HTML, it requires
+	a DTD with ID declarations to identify ID attributes."
 
 	| document doctypeDefinition elementsAndIDAttributes |
 	

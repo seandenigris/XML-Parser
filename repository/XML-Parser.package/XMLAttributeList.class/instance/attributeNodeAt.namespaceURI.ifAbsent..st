@@ -1,8 +1,7 @@
 accessing
 attributeNodeAt: aName namespaceURI: aURI ifAbsent: aBlock
-	| attributeNode |
-
-	((attributeNode := self attributeNodeAt: aName) notNil
-		and: [attributeNode namespaceURI = aURI])
-		ifTrue: [^ attributeNode]
-		ifFalse: [^ aBlock value]
+	self do: [:each |
+		((each isNamed: aName)
+			and: [each namespaceURI = aURI])
+			ifTrue: [^ each]].
+	^ aBlock value.

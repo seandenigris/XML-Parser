@@ -1,3 +1,3 @@
 accessing
-externalSubsetReadLimit: aLimit
-	externalSubsetReadLimit := aLimit
+externalSubsetReadLimit: anInteger
+	externalSubsetReadLimit := anInteger

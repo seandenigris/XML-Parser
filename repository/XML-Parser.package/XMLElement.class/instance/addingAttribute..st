@@ -1,4 +1,6 @@
 notifying
 addingAttribute: anAttribute
 	anAttribute element
-		ifNotNil: [self errorAddingAttributeWithElement]
+		ifNotNil: [:element |
+			element == self
+				ifFalse: [self errorAddingAttributeFromOtherElement]]

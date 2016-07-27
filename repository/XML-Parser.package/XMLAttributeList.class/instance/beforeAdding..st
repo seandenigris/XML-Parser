@@ -1,3 +1,3 @@
 private
-beforeAdding: anAttribute
-	observer ifNotNil: [observer addingAttribute: anAttribute]
+beforeAdding: aNode
+	observer ifNotNil: [observer addingAttribute: aNode]

@@ -1,8 +1,5 @@
 positioning
 pushBackStream: aStream onClose: aBlock
-	(nestedStreams size >= self maxNestedStreams)
-		ifTrue: [self errorNestingLimitExceeded].
-
 	self
 		pushNestedStream: stream
 		onClose: onClose.

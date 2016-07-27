@@ -16,6 +16,7 @@
 		"elementAt:ifAbsent:" : "monty 1/17/2015 08:18",
 		"elements" : "monty 1/16/2015 13:43",
 		"elementsAt:" : "monty 1/16/2015 13:53",
+		"elementsAt:do:" : "monty 4/18/2016 02:51",
 		"elementsDetect:ifNone:" : "monty 1/17/2015 08:16",
 		"elementsDo:" : "monty 1/16/2015 13:44",
 		"elementsSelect:" : "monty 1/17/2015 08:24",

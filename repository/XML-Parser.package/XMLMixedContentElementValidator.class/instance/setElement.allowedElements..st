@@ -1,4 +1,4 @@
 initialization
-setElement: aName allowedElements: aNameCollection
-	element := aName.
-	allowedElements := aNameCollection.
+setElement: anElement allowedElements: anAllowedElementsCollection
+	element := anElement.
+	allowedElements := anAllowedElementsCollection asSet.

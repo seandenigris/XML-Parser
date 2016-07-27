@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 4/21/2016 08:08",
 	"instvars" : [
 		"element" ],
 	"name" : "XMLElementValidator",

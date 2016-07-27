@@ -1,5 +1,6 @@
 removing
 removeAttribute: aName ifAbsent: aBlock
-	^ (self
-		removeAttributeNodeAt: aName
-		ifAbsent: [^ aBlock value]) value
+	^ (self remove:
+		(self attributeNodesByName
+			at: aName
+			ifAbsent: [^ aBlock value])) value

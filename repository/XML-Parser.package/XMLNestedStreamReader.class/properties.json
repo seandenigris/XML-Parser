@@ -13,10 +13,10 @@
 		"peekChar",
 		"normalizedLineEndingChar",
 		"currentLineNumber",
-		"readLimit",
-		"isEscapingQuotes",
 		"currentPosition",
-		"currentLineStartPosition" ],
+		"currentLineStartPosition",
+		"readLimit",
+		"isEscapingQuotes" ],
 	"name" : "XMLNestedStreamReader",
 	"pools" : [
 		 ],

@@ -1,3 +1,3 @@
 testing
 includesAttribute: aName
-	^ self attributesByName includesKey: aName
+	^ self attributeNodesByName includesKey: aName

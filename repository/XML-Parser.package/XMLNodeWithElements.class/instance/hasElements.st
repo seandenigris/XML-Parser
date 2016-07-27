@@ -1,5 +1,8 @@
 testing
 hasElements
-	"Faster version used when traversing to avoid initializing the node list
-	in leaf elements"
-	^ nodes notNil and: [nodes hasElements]
+	"returns true if the receiver has element children"
+
+	"optimized with a nil test to avoid lazy initializing nodes"
+	nodes == nil
+		ifTrue: [^ false].
+	^ nodes hasElements.

@@ -1,7 +1,7 @@
 tokenizing
 nextTag
 	"performance critical method"
-	| tagName attributes nextChar namespaces |
+	| tagName attributes nextChar |
 
 	(streamReader peek == $/)
 		ifTrue: [^ self nextEndTag].
@@ -16,45 +16,26 @@ nextTag
 				skipSeparators.
 			((nextChar := streamReader peek) == $>
 				or: [nextChar == $/]) not]]
-		whileTrue: [ | attributeName attributeValue |
+		whileTrue: [| attributeName |
 			attributeName := self nextName.
 			streamReader skipSeparators.
 			streamReader next == $=
 				ifFalse: [self errorExpectedAttributeNameValueSeparator].
 			streamReader skipSeparators.
-			attributeValue := self nextAttributeValue.
-	
+			(attributes
+				xmlAt: attributeName
+				newPut: self nextAttributeValue)
+				ifFalse: [self errorDuplicateAttribute: attributeName].
+			"the ordering of these tests is optimized"
 			(attributeName at: 1) == $x
 				ifTrue: [
-					(attributeName isXMLNSAttributeName
-						and: [driver usesNamespaces])
-						ifTrue: [
-							"initialize only if needed"
-							((namespaces
-								ifNil: [namespaces := OrderPreservingStringDictionary new: 5])
-								xmlAt:
-									((attributeName size > 6)
-										ifTrue: [attributeName copyFrom: 7 to: attributeName size]
-										ifFalse: [''])
-								newPut: attributeValue)
-								ifFalse: [self errorDuplicateNamespace: attributeName]]
-						ifFalse: [							
+					driver hasUnhandledReservedAttributes
+						ifFalse: [
 							attributeName isXMLReservedAttributeName
-								ifTrue: [driver haveUnhandledReservedAttributes].
-							(attributes
-								xmlAt: attributeName
-								newPut: attributeValue)
-								ifFalse: [self errorDuplicateAttribute: attributeName]]]
-				ifFalse: [
-					(attributes
-						xmlAt: attributeName
-						newPut: attributeValue)
-						ifFalse: [self errorDuplicateAttribute: attributeName]]].
-
+								ifTrue: [driver haveUnhandledReservedAttributes]]]].
 	driver
 		handleStartTag: tagName
-		attributes: attributes
-		namespaces: namespaces.
+		attributes: attributes.
 
 	nextChar == $/
 		ifTrue: [

@@ -1,3 +1,3 @@
 accessing
-elementValidatorFor: aName
+elementValidatorFor: anElement
 	self subclassResponsibility
