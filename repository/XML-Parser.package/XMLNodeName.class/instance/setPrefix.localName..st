@@ -1,10 +1,13 @@
 private
 setPrefix: aPrefix localName: aLocalName
-	localName := aLocalName.
 	aPrefix isEmptyOrNil
 		ifTrue: [
-			prefix := nil.
-			qualifiedName := localName]
+			self
+				setQualifiedName: aLocalName
+				prefix: nil
+				localName: aLocalName]
 		ifFalse: [
-			prefix := aPrefix.
-			qualifiedName := prefix, ':', localName].
+			self
+				setQualifiedName: aPrefix, ':', aLocalName
+				prefix: aPrefix
+				localName: aLocalName]

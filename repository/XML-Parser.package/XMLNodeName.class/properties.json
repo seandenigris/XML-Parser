@@ -7,8 +7,8 @@
 	"commentStamp" : "JAAyer 3/23/2010 14:10",
 	"instvars" : [
 		"qualifiedName",
-		"localName",
-		"prefix" ],
+		"prefix",
+		"localName" ],
 	"name" : "XMLNodeName",
 	"pools" : [
 		 ],

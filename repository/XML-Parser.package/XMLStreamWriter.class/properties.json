@@ -3,11 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"CarriageReturn",
-		"DigitTable",
-		"LineFeed",
-		"SeparatorTable" ],
-	"commentStamp" : "",
+		 ],
+	"commentStamp" : "JAAyer 3/24/2010 12:33",
 	"instvars" : [
 		"streams",
 		"nextStream" ],

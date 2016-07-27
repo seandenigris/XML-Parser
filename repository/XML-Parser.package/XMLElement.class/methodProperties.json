@@ -1,12 +1,12 @@
 {
 	"class" : {
-		"localName:prefix:attributes:scope:" : "JAAyer 3/22/2010 16:29",
 		"named:" : "JAAyer 3/11/2010 23:10",
 		"named:attributes:" : "JAAyer 3/11/2010 23:09",
 		"named:namespaceURI:" : "JAAyer 3/11/2010 23:12",
 		"named:namespaceURI:attributes:" : "JAAyer 3/11/2010 10:07",
 		"named:namespaces:" : "JAAyer 3/11/2010 23:08",
-		"named:namespaces:attributes:" : "JAAyer 3/11/2010 10:22" },
+		"named:namespaces:attributes:" : "JAAyer 3/11/2010 10:22",
+		"qualifiedName:prefix:localName:attributes:" : "JAAyer 3/24/2010 17:02" },
 	"instance" : {
 		"@" : "JAAyer 3/8/2010 05:09",
 		"addContent:" : "JAAyer 3/12/2010 11:50",
@@ -57,7 +57,6 @@
 		"nextElement" : "JAAyer 2/25/2010 14:37",
 		"nodeAdded:" : "JAAyer 3/22/2010 20:08",
 		"nodeName" : "JAAyer 3/22/2010 20:11",
-		"nodeRemoved:" : "JAAyer 3/22/2010 20:08",
 		"nodeRenamed:from:to:" : "JAAyer 3/22/2010 22:45",
 		"prefix" : "JAAyer 3/17/2010 03:48",
 		"prefix:" : "JAAyer 3/22/2010 21:32",

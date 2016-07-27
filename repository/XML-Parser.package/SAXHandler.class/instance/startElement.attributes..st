@@ -1,6 +1,7 @@
 content
-startElement: elementName attributes: attributes
+startElement: aQualifiedName attributes: aDictionary
 	self
-		forwardToDeprecatedHandler: #startElement:attributeList:
-		withArgumentOrder: #(1 2)
-		orTo: nil
+		invokeDeprecated: #startElement:attributeList:
+		withArguments: (Array with: aQualifiedName with: aDictionary)
+		orForwardTo: nil
+		withArguments: nil.

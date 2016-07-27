@@ -6,6 +6,6 @@ nextName
 		[(nextChar := streamReader peek) isNil
 			or: [NameDelimiters includes: nextChar]]
 				whileFalse: [writeStream nextPut: streamReader next].
-		(writeStream position isZero)
-			ifTrue: [self errorExpected: 'name'].
+		writeStream position > 0
+			ifFalse: [self errorExpected: 'name'].
 		writeStream stringContents]

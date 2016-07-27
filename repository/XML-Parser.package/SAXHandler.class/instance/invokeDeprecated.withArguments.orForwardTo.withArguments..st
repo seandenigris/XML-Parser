@@ -1,5 +1,5 @@
 error handling
-forwardToDeprecatedHandler: aDeprecatedSelector withArgumentOrder: aPositionArray orTo: aNewSelector
+invokeDeprecated: aDeprecatedSelector withArguments: anOldArgumentArray orForwardTo: aNewSelector withArguments: aNewArgumentArray
 	| parentContext |
 
 	parentContext := thisContext sender.
@@ -8,14 +8,13 @@ forwardToDeprecatedHandler: aDeprecatedSelector withArgumentOrder: aPositionArra
 			aNewSelector ifNil: [^ self].
 			^ self
 				perform: aNewSelector
-				withEnoughArguments: parentContext arguments].
+				withArguments: aNewArgumentArray].
 
 	(Deprecation
 		method: (self class lookupSelector: aDeprecatedSelector)
 		explanation: 'use ', parentContext selector, ' instead'
 		on: nil
 		in: nil) signal.
-
 	self
 		perform: aDeprecatedSelector
-		withArguments: (aPositionArray collect: [:pos | parentContext arguments at: pos]).
+		withArguments: anOldArgumentArray.

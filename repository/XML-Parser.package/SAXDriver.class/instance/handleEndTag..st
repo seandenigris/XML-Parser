@@ -8,16 +8,15 @@ handleEndTag: anElementName
 		prefix := prefixPart.
 		localName := localPart].
 	self usesNamespaces
-		ifTrue: [namespaceURI := self nestedScopes resolvePrefix: prefix]
-		ifFalse: [namespaceURI := nil].
+		ifTrue: [namespaceURI := self nestedScopes resolvePrefix: prefix].
 
 	self activeSaxHandler 
-		endElement: localName
-		qualifiedName: anElementName
+		endElement: anElementName
 		prefix: prefix
-		uri: namespaceURI.
+		uri: namespaceURI
+		localName: localName.
 
 	self usesNamespaces
 		ifTrue: [
 			self undeclareNamespaces.
-			self nestedScopes leaveScope.].
+			self nestedScopes leaveScope].

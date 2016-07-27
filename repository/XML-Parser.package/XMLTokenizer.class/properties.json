@@ -10,7 +10,6 @@
 	"instvars" : [
 		"streamReader",
 		"streamWriter",
-		"buffer",
 		"entities",
 		"externalEntities",
 		"parameterEntities",
