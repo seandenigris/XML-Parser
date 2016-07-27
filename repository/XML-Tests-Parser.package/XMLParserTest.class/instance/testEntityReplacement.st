@@ -4,8 +4,7 @@ testEntityReplacement
 
 	document := XMLDOMParser parse: '
 		<!DOCTYPE root [
-			<!ENTITY % partialDeclaration "name1 &#39;replacement1&#x27;">
-			<!ENTITY % name1Declaration "<!ENTITY %partialDeclaration;>">
+			<!ENTITY % name1Declaration "<!ENTITY name1 &#39;replacement1&#x27;>">
 			%name1Declaration;
 			<!ENTITY name2 "replacement2 &name1;" >
 			<!ENTITY name3 "replacement3 &name2;" >

@@ -4,12 +4,12 @@ testEntityLiteralContextNesting
 
 	xml := '<?xml version="1.0"?>
 	<!DOCTYPE entities [
-		<!ENTITY % inner " '' inner &#34; ">
-		<!ENTITY % outer '' "%inner;&#39; ''>
-		<!ENTITY inner  "%outer;"> 
-		<!ENTITY outer '' &#39; " &inner; &#39; " ''>]>
+		<!ENTITY % inner " <!ENTITY inner  &#34; '' inner &#39; &#34;>">
+		%inner;
+		<!ENTITY outer '' &#39; " &inner; &#39; " ''>
+	]>
 	<entities one="&outer;" two="&inner;" three=''&outer;'' four=''&inner;''>&outer;&inner;</entities>'.
-	inner := ' " '' inner " '' '.
+	inner := ' '' inner '' '.
 	outer := ' '' " ', inner, ' '' " '.
 
 	self

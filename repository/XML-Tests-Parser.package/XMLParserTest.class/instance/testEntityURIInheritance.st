@@ -23,7 +23,9 @@ testEntityURIInheritance
 
 	2 timesRepeat: [parser parseToken].
 	self assert: driver currentURI = 'test.xml'.
-
+	
+	"internal entities (declared in the internal subset or in an external DTD)
+	can't change abase URI according to the xml:base spec"
 	2 timesRepeat: [parser parseToken].
 	self assert: driver currentURI = '/new/xml'.
 

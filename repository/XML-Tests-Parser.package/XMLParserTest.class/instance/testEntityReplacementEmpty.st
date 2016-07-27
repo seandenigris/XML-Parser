@@ -6,9 +6,7 @@ testEntityReplacementEmpty
 	<!DOCTYPE entities [
 		<!ENTITY % inner "">
 		%inner;
-		<!ENTITY % outer ''%inner;''>
-		%outer;
-		<!ENTITY inner  "%outer;"> 
+		<!ENTITY inner  ""> 
 		<!ENTITY outer ''&inner;''>]>
 	<entities one="&outer;" two="&inner;" three=''&outer;'' four=''&inner;''>&outer;&inner;</entities>'.
 

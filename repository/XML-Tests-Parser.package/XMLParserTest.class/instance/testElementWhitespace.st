@@ -10,5 +10,14 @@ testElementWhitespace
 		shouldnt: [SAXHandler parse: '<root name1="value1" name2="value2"/>']
 		raise: XMLWellFormednessException.
 	self
-		shouldnt: [SAXHandler parse: '<root name1   =   "value1"    name2   =   "value2"    />']
+		shouldnt: [
+			SAXHandler parse: '
+				<root
+					name1
+					   =
+					"value1"
+					name2
+					   =
+					"value2"
+				/>']
 		raise: XMLWellFormednessException.

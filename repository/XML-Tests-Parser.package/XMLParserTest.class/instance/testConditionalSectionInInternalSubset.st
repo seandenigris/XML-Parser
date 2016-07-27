@@ -6,5 +6,5 @@ testConditionalSectionInInternalSubset
 		'<!ENTITY % ignore "IGNORE"> <![%ignore;[ <!-- comment --> ]]>'
 		) do: [:each |
 			self
-				should: [SAXHandler parse:'<!DOCTYPE test [', each, ']>']
+				should: [SAXHandler parse:'<!DOCTYPE test [', each, ']><test/>']
 				raise: XMLWellFormednessException]
