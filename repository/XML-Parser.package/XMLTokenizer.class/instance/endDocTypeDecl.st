@@ -1,5 +1,7 @@
 tokenizing dtd
 endDocTypeDecl
 	"Skip ]>"
-	self next; next.
+	streamReader
+		next;
+		next.
 	^nil

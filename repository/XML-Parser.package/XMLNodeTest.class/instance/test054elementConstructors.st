@@ -18,15 +18,15 @@ test054elementConstructors
 
 	str := self markupString.
 	self
-		assertElement: (XMLElement named: 'foo' content: str)
+		assertElement: (XMLElement named: 'foo')
 		name: 'foo'
 		attributes: noAttributes
-		contentString: str.
+		contentString: ''.
 	self
-		assertElement: (XMLElement named: 'foo' attributes: attributes content: str)
+		assertElement: (XMLElement named: 'foo' attributes: attributes)
 		name: 'foo'
 		attributes: attributes
-		contentString: str.
+		contentString: ''.
 
 	element := XMLElement
 		named: 'prefix:foo'

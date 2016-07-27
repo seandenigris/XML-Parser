@@ -7,4 +7,4 @@ on: aStream
 			ifFalse: [aStream readStream]).
 	^ self new
 		driver: driver;
-		validating: true.
+		isValidating: true.

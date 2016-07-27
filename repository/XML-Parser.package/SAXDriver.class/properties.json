@@ -7,10 +7,10 @@
 	"commentStamp" : "JAAyer 2/21/2010 17:57",
 	"instvars" : [
 		"saxHandler",
+		"nestedScopes",
 		"useNamespaces",
 		"validateAttributes",
-		"languageEnvironment",
-		"nestedScopes" ],
+		"languageEnvironment" ],
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],

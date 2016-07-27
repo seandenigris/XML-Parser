@@ -1,23 +1,23 @@
 tokenizing dtd
 nextDocTypeDecl
 	| nextChar |
-	self skipSeparators.
+	streamReader skipSeparators.
 	self nextLiteral.
-	self skipSeparators.
-	self peek == $[
-		ifFalse: [[nextChar := self peek.
-				nextChar == $> or: [nextChar == $[ ]] whileFalse: [self next]].
-	self peek == $[
+	streamReader skipSeparators.
+	streamReader peek == $[
+		ifFalse: [[nextChar := streamReader peek.
+				nextChar == $> or: [nextChar == $[ ]] whileFalse: [streamReader next]].
+	streamReader peek == $[
 		ifTrue: [
-			self next.
-			[self skipSeparators.
-			self peek == $]] whileFalse: [
+			streamReader next.
+			[streamReader skipSeparators.
+			streamReader peek == $]] whileFalse: [
 				self checkAndExpandReference: #dtd.
 				self nextNode].
-			self next == $] 
+			streamReader next == $] 
 				ifFalse: [self errorExpected: ']' ]].
-	self skipSeparators.
-	self next == $>
+	streamReader skipSeparators.
+	streamReader next == $>
 		ifFalse: [self errorExpected: '>' ].
 
 	self endParsingMarkup

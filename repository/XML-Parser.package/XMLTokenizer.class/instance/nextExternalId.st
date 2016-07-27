@@ -4,25 +4,25 @@ nextExternalId
 	extDefType := self nextLiteral.
 	extDefType = 'PUBLIC'
 		ifTrue: [
-			self skipSeparators.
+			streamReader skipSeparators.
 			self nextPubidLiteral.
-			self skipSeparators.
-			self peek == $>
+			streamReader skipSeparators.
+			streamReader peek == $>
 				ifFalse: [
 					systemId := self nextSystemLiteral]].
 
 	extDefType = 'SYSTEM'
 		ifTrue: [
-			self skipSeparators.
+			streamReader skipSeparators.
 			systemId := self nextSystemLiteral].
 
 	systemId
 		ifNil: [^nil].
 
 	"The rest of this method only applies if we're reading aFileStream"
-	(self topStream isKindOf: FileStream)
+	(streamReader topStream isKindOf: FileStream)
 		ifFalse: [^''].
-	dir := self topStream directory.
+	dir := streamReader topStream directory.
 	^(dir fileExists: systemId)
 		ifTrue: [(dir readOnlyFileNamed: systemId) contentsOfEntireFile]
 		ifFalse: ['']

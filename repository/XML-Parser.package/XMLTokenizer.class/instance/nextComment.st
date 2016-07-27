@@ -2,8 +2,8 @@ tokenizing
 nextComment
 	| string |
 	"Skip first -"
-	self next.
-	self next == $-
+	streamReader next.
+	streamReader next == $-
 		ifFalse: [self errorExpected: 'second comment $-'].
-	string := self nextUpToAll: '-->'.
+	string := streamReader nextUpToAll: '-->'.
 	self handleComment: string

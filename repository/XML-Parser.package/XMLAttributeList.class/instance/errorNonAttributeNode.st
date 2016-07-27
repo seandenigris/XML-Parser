@@ -1,3 +1,3 @@
-errors
+private
 errorNonAttributeNode
-	self error: 'cannot contain non-attribute nodes'. ^ nil.
+	^ self domError: 'cannot contain non-attribute nodes'.

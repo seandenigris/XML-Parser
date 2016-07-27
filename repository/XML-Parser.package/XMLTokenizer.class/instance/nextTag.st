@@ -1,19 +1,18 @@
 tokenizing
 nextTag
 	| tagName attributes nextChar namespaces |
-	(self peek = $/)
-		ifTrue: [^self nextEndTag].
+	(streamReader peek = $/)
+		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
-	self skipSeparators.
+	streamReader skipSeparators.
 	attributes := XMLOrderPreservingDictionary new: 10.
 	namespaces := XMLOrderPreservingDictionary new: 5.
-	[(nextChar := self peek) == $> or: [nextChar == $/]] whileFalse: [
+	[(nextChar := streamReader peek) == $> or: [nextChar == $/]] whileFalse: [
 		self checkAndExpandReference: #content.
 		self nextAttributeInto: attributes namespaces: namespaces.
-		self skipSeparators.].
+		streamReader skipSeparators.].
 	self handleStartTag: tagName attributes: attributes namespaces: namespaces.
-	self next == $/
+	streamReader next == $/
 		ifTrue: [
 			self handleEndTag: tagName.
-			self next].
-	
+			streamReader next].

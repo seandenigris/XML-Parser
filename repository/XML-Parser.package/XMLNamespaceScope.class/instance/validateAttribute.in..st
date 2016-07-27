@@ -1,16 +1,17 @@
 validation
-validateAttribute: attrName in: attributeList
-	| qualifiedAlias |
+validateAttribute: anAttributeName in: aDictionary
+	| namespaceUri aliasingAttributeName |
 	
-	attrName splitQualifiedNameInto: [:prefix :localName |
+	anAttributeName splitQualifiedNameInto: [:prefix :localName |
 		prefix ifNil: [^ self].
-
 		self validatePrefix: prefix.
-		(self aliasesOf: prefix) do: [:alias |
-			qualifiedAlias := alias qualifyName: localName.
-			(attributeList includesKey: qualifiedAlias)
+		namespaceUri := self resolvePrefix: prefix.
+
+		(self aliasesOf: prefix) do: [:aliasingPrefix |
+			aliasingAttributeName := aliasingPrefix qualifyName: localName.
+			(aDictionary includesKey: aliasingAttributeName)
 				ifTrue: [
 					self
-						errorAttribute: attrName
-						aliases: qualifiedAlias
-						with: (self resolvePrefix: prefix)]]].
+						errorAttribute: aliasingAttributeName
+						aliases: anAttributeName
+						with: namespaceUri]]].

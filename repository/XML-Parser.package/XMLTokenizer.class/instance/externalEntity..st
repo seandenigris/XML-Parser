@@ -1,5 +1,3 @@
 entities
-externalEntity: refName
-	^self entities
-		at: refName
-		ifAbsentPut: ['']
+externalEntity: aReference
+	^ self entities at: aReference ifAbsentPut: ['']

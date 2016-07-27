@@ -1,8 +1,8 @@
 content
-startElement: localName prefix: prefix uri: namespaceUri attributes: attributeList
+startElement: localName prefix: prefix uri: namespaceUri attributes: attributes
 	self pushElement:
 		(XMLElement
 			localName: localName
 			prefix: prefix
-			attributes: attributeList
+			attributes: attributes
 			scope: self currentScope)

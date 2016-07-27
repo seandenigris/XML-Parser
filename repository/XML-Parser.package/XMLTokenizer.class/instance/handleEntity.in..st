@@ -6,4 +6,4 @@ handleEntity: referenceString in: parsingContext
 	entityValue := entity valueForContext: parsingContext.
 	(self class isCharEscape: entityValue)
 		ifTrue: [entityValue := entity reference].
-	self pushStream: (ReadStream on: entityValue asString)
+	streamReader pushStream: (ReadStream on: entityValue asString)

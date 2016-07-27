@@ -3,10 +3,10 @@ nextAttributeInto: attributes namespaces: namespaces
 
 	| attrName attrValue |
 	attrName := self nextName.
-	self skipSeparators.
-	self next == $=
+	streamReader skipSeparators.
+	streamReader next == $=
 		ifFalse: [self errorExpected: '='].
-	self skipSeparators.
+	streamReader skipSeparators.
 	attrValue := self nextAttributeValue.
 
 	(self usesNamespaces
@@ -14,4 +14,4 @@ nextAttributeInto: attributes namespaces: namespaces
 		ifTrue: [attrName size > 6
 			ifTrue: [namespaces at: (attrName copyFrom: 7 to: attrName size) put: attrValue]
 			ifFalse: [namespaces at: attrName put: attrValue]]
-		ifFalse: [attributes at: attrName put: attrValue]
+		ifFalse: [attributes at: attrName put: attrValue].

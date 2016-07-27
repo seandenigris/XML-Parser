@@ -3,6 +3,7 @@ validateAttributes: attributeList
 	"check all attribute namespaces are defined and not duplicated by aliasing"
 	| prefix localName qualifiedAlias |
 
+	self isValidating ifFalse: [^ self].
 	attributeList keysDo: [:attrName |
 		self
 			validateAttribute: attrName

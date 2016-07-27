@@ -2,9 +2,9 @@ tokenizing
 nextEndTag
 	| tagName |
 	"Skip /"
-	self next.
+	streamReader next.
 	tagName := self nextName.
-	self skipSeparators.
-	(self nextTrimmedBlanksUpTo: $>)
+	streamReader skipSeparators.
+	(streamReader nextTrimmedBlanksUpTo: $>)
 		ifNotEmpty: [self parseError: 'XML invalid end tag ' , tagName].
 	self handleEndTag: tagName

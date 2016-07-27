@@ -2,15 +2,15 @@ handling tokens
 handleEndTag: elementName
 	| prefix localName namespaceURI |
 
+	elementName splitQualifiedNameInto: [:prefixPart :localPart |
+		prefix := prefixPart.
+		localName := localPart].
 	self usesNamespaces
 		ifTrue: [
-			elementName splitQualifiedNameInto: [:prefixPart :localPart |
-				prefix := prefixPart.
-				localName := localPart.
-				namespaceURI := self nestedScopes resolvePrefix: prefix].
+			namespaceURI := self nestedScopes resolvePrefix: prefix.
 			self validateEndTag: localName prefix: prefix]
-		ifFalse: [localName := elementName].
-		
+		ifFalse: [namespaceURI := nil].
+
 	self activeSaxHandler 
 		endElement: localName
 		qualifiedName: elementName
@@ -19,5 +19,5 @@ handleEndTag: elementName
 
 	self usesNamespaces
 		ifTrue: [
-			self nestedScopes leaveScope.
-			self activeSaxHandler endPrefixMapping: prefix].
+			self undeclareNamespaces: self currentScope prefixMappings.
+			self nestedScopes leaveScope.].

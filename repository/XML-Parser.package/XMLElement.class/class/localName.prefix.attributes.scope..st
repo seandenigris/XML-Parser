@@ -1,6 +1,9 @@
-instance creation
+private
 localName: aString prefix: ns attributes: attributeList scope: namespaceScope
-	^ self new
+	| element |
+	element := self new
 		setScope: namespaceScope;
-		setPrefix: ns localName: aString;
-		setAttributes: attributeList
+		setPrefix: ns localName: aString.
+	attributeList keysAndValuesDo: [:key :value |
+		element attributeList addName: key value: value scope: namespaceScope].
+	^ element.

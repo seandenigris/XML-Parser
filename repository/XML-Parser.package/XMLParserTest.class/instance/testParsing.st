@@ -10,6 +10,7 @@ testParsing
 
 	self assert: (root firstTagNamed: 'person') notNil.
 	self assert: (root firstTagNamed: 'addressbook') notNil.
+
 	self assert: (root firstTagNamed: 'addressbook') == root.
 
 	numberOfPersons := 0.

@@ -1,7 +1,8 @@
 entities
-entity: refName
-	^self validating
-		ifTrue: [self entities
-			at: refName
-			ifAbsentPut: [self parseError: 'XML undefined entity ' , refName printString]]
-		ifFalse: [DTDEntityDeclaration name: refName value: '']
+entity: aReference
+	self isValidating
+		ifFalse: [^ DTDEntityDeclaration name: aReference value: ''].
+
+	^ self entities
+		at: aReference
+		ifAbsentPut: [self parseError: 'XML undefined entity ', aReference printString]

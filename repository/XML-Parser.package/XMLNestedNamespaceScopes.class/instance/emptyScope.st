@@ -1,3 +1,3 @@
 private
 emptyScope
-	^ XMLNamespaceScope new
+	^ XMLNamespaceScope isValidating: self isValidating

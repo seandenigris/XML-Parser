@@ -22,5 +22,5 @@ test052elementContentString
 		contentString: str
 		contents: (Array with: str with: str, str).
 
-	element addElement: (XMLElement named: 'foo' content: 'test').
+	element addElement: ((XMLElement named: 'foo') addContent: 'test').
 	self assert: (element contentStringAt: 'foo') = 'test'.

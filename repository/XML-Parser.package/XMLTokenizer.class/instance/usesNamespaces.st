@@ -1,3 +1,3 @@
 testing
 usesNamespaces
-	^false
+	^ false

@@ -2,10 +2,10 @@ tokenizing
 nextName
 	| nextChar |
 	nameBuffer reset.
-	self peek == $.
+	streamReader peek == $.
 		ifTrue: [self malformedError: 'Character expected.'].
-	[(nextChar := self peek)
+	[(nextChar := streamReader peek)
 		ifNil: [self errorExpected: 'Character expected.'].
 	NameDelimiters includes: nextChar] whileFalse: [
-			nameBuffer nextPut: self next].
+			nameBuffer nextPut: streamReader next].
 	^ self fastStreamStringContents: nameBuffer.

@@ -1,3 +1,3 @@
 accessing
 languageEnvironment
-	^languageEnvironment
+	^ languageEnvironment

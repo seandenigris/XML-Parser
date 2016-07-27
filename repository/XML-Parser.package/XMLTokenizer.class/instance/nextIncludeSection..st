@@ -4,7 +4,6 @@ nextIncludeSection: parseSection
 	"Read the file up to the next include section delimiter and parse it if parseSection is true"
 
 	
-	section := self nextUpToAll: ']]>'.
+	section := streamReader nextUpToAll: ']]>'.
 	parseSection
-		ifTrue: [
-			self pushStream: (ReadStream on: section)]
+		ifTrue: [streamReader pushStream: (ReadStream on: section)]

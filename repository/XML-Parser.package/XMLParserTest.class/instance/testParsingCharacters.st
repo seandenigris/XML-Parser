@@ -6,8 +6,8 @@ testParsingCharacters
 
 	parser := XMLParser on: self addressBookXML readStream.
 
-	self assert: parser next = $<.
-	self assert: parser next = $a.	
-	self assert: parser next = $d.
-	self assert: parser next = $d.
-	self assert: parser next = $r.
+	self assert: parser streamReader next = $<.
+	self assert: parser streamReader next = $a.
+	self assert: parser streamReader next = $d.
+	self assert: parser streamReader next = $d.
+	self assert: parser streamReader next = $r.

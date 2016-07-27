@@ -1,3 +1,3 @@
 tokenizing
 nextSystemLiteral
-	^self nextAttributeValue
+	^ self nextAttributeValue

@@ -1,4 +1,4 @@
-handling tokens
+namespaces
 declareNamespaces: namespaces
 	namespaces keysAndValuesDo: [:ns :uri |
 		self nestedScopes declareNamespace: ns uri: uri.

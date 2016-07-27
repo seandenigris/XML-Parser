@@ -1,3 +1,3 @@
 tokenizing
 nextPubidLiteral
-	^self nextAttributeValue
+	^ self nextAttributeValue

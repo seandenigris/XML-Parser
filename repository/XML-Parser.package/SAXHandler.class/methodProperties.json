@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"on:" : "JAAyer 3/9/2010 01:29",
+		"on:" : "JAAyer 3/11/2010 06:45",
 		"parse:" : "JAAyer 3/8/2010 10:14",
-		"parseDTDFrom:" : "JAAyer 3/8/2010 20:17",
+		"parseDTDFrom:" : "JAAyer 3/11/2010 02:03",
 		"parseDocumentFrom:" : "JAAyer 3/9/2010 01:29",
 		"parseDocumentFrom:useNamespaces:" : "JAAyer 3/9/2010 00:07",
 		"parseDocumentFromFileNamed:" : "mir 1/8/2002 15:55",
@@ -27,6 +27,8 @@
 		"forwardToDeprecatedHandler:withArgumentOrder:orTo:" : "JAAyer 3/6/2010 01:50",
 		"ignorableWhitespace:" : "mir 8/11/2000 16:25",
 		"initialize" : "mir 1/8/2002 18:18",
+		"isValidating" : "JAAyer 3/11/2010 06:43",
+		"isValidating:" : "JAAyer 3/11/2010 06:45",
 		"parseDocument" : "JAAyer 3/9/2010 01:32",
 		"processingInstruction:data:" : "mir 8/11/2000 16:26",
 		"resolveEntity:systemID:" : "mir 8/11/2000 17:33",
@@ -40,6 +42,4 @@
 		"startEntity:" : "mir 8/11/2000 18:54",
 		"startPrefixMapping:uri:" : "mir 8/11/2000 16:47",
 		"useNamespaces:" : "mir 6/5/2003 19:28",
-		"usesNamespaces" : "JAAyer 3/8/2010 10:38",
-		"validating" : "JAAyer 3/8/2010 10:39",
-		"validating:" : "JAAyer 3/8/2010 10:37" } }
+		"usesNamespaces" : "JAAyer 3/8/2010 10:38" } }

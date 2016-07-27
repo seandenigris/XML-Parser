@@ -1,16 +1,16 @@
 tokenizing
 checkAndExpandReference: parsingContext
 	| referenceString nextChar |
-	nextChar := self peek.
-	self validating
+	nextChar := streamReader peek.
+	self isValidating
 		ifFalse: [^nil].
 	nextChar == $&
 		ifTrue: [
-			self next.
-			self peek == $#
-				ifTrue: [^self pushStream: (ReadStream on: self nextCharReference asString)].
+			streamReader next.
+			streamReader peek == $#
+				ifTrue: [^ streamReader pushStream: (ReadStream on: self nextCharReference asString)].
 			referenceString := self nextLiteral.
-			self next == $;
+			streamReader next == $;
 				ifFalse: [self errorExpected: ';'].
 			self handleEntity: referenceString in: parsingContext ]
 		ifFalse: [
@@ -18,9 +18,9 @@ checkAndExpandReference: parsingContext
 				and: [self parsingMarkup])
 				and: [parsingContext == #entityValue])
 				ifTrue: [
-					self skipSeparators.
+					streamReader skipSeparators.
 					referenceString := self nextLiteral.
 					self handleEntity: referenceString in: parsingContext]].
 
-	self atEnd ifTrue: [self errorExpected: 'Character expected.'].
+	streamReader atEnd ifTrue: [self errorExpected: 'Character expected.'].
 	^nextChar

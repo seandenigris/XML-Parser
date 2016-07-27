@@ -1,0 +1,19 @@
+{
+	"category" : "XML-Parser-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CarriageReturn",
+		"DigitTable",
+		"LineFeed",
+		"SeparatorTable" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stream",
+		"nestedStreams",
+		"peekChar" ],
+	"name" : "XMLStreamReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -2,21 +2,21 @@ tokenizing
 nextLiteral
 	| resultStream nextChar resultString |
 	resultStream := (String new: 10) writeStream.
-	((nextChar := self peek) isLetter
+	((nextChar := streamReader peek) isLetter
 		or: [nextChar == $_])
 		ifFalse: [self errorExpected: 'Name literal.'].
-	[nextChar := self peek.
+	[nextChar := streamReader peek.
 	(LiteralChars includes: nextChar)
 		ifTrue: [
 			nextChar == $&
 				ifTrue: [
-					nextChar := self next.
-					resultStream nextPut: (self peek == $#
+					nextChar := streamReader next.
+					resultStream nextPut: (streamReader peek == $#
 						ifTrue: [self nextCharReference]
-						ifFalse: [^resultStream contents])]
+						ifFalse: [^ resultStream contents])]
 				ifFalse: [
-					resultStream nextPut: self next]]
+					resultStream nextPut: streamReader next]]
 		ifFalse: [resultString := resultStream contents.
 			resultString isEmpty
 				ifTrue: [self errorExpected: 'Name literal']
-				ifFalse: [^resultString]]] repeat
+				ifFalse: [^ resultString]]] repeat

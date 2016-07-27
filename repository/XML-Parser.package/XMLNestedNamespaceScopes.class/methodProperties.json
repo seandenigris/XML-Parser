@@ -1,21 +1,23 @@
 {
 	"class" : {
-		 },
+		"isValidating:" : "JAAyer 3/11/2010 06:45" },
 	"instance" : {
 		"currentLevel" : "JAAyer 3/3/2010 22:33",
 		"currentScope" : "JAAyer 3/3/2010 22:34",
 		"declareNamespace:uri:" : "JAAyer 3/5/2010 09:50",
 		"defaultNamespace" : "JAAyer 3/3/2010 22:37",
-		"emptyScope" : "JAAyer 3/2/2010 22:14",
+		"emptyScope" : "JAAyer 3/11/2010 06:45",
 		"enclosingScope" : "JAAyer 3/2/2010 22:14",
 		"enterScope" : "JAAyer 3/4/2010 00:12",
 		"isMappedPrefix:" : "JAAyer 3/5/2010 09:50",
 		"isPrefix:mappedTo:" : "JAAyer 3/5/2010 09:50",
+		"isValidating" : "JAAyer 3/11/2010 06:46",
+		"isValidating:" : "JAAyer 3/11/2010 06:46",
 		"leaveScope" : "JAAyer 3/4/2010 00:12",
 		"popScope" : "JAAyer 3/4/2010 00:12",
-		"pushScope:" : "JAAyer 3/4/2010 00:11",
+		"pushScope:" : "JAAyer 3/11/2010 06:45",
 		"resolvePrefix:" : "JAAyer 3/5/2010 06:00",
 		"resolvePrefix:ifUnmapped:" : "JAAyer 3/5/2010 09:50",
 		"scopes" : "JAAyer 3/2/2010 21:35",
 		"validateAttributes:" : "JAAyer 3/4/2010 00:31",
-		"validatePrefix:" : "JAAyer 3/6/2010 08:12" } }
+		"validatePrefix:" : "JAAyer 3/11/2010 03:41" } }

@@ -2,25 +2,25 @@ tokenizing
 nextPCData
 	| resultStream nextChar referenceString entity entityValue nextPeek |
 	resultStream := (String new: 10) writeStream.
-	self validating
+	self isValidating
 		ifFalse: [
-			[self peek == $<]
-				whileFalse: [resultStream nextPut: self next].
+			[streamReader peek == $<]
+				whileFalse: [resultStream nextPut: streamReader next].
 			^self handlePCData: resultStream contents].
 
 	[
-	nextPeek := nextChar := self peek.
+	nextPeek := nextChar := streamReader peek.
 	nextChar ifNil: [self errorExpected: 'Character expected.'].
 	nextChar == $&
 		ifTrue: [
-			self next.
-			self peek == $#
+			streamReader next.
+			streamReader peek == $#
 				ifTrue: [
 					nextPeek := nil.
 					nextChar := self nextCharReference]
 				ifFalse: [
 					referenceString := self nextLiteral.
-					self next == $;
+					streamReader next == $;
 						ifFalse: [self errorExpected: ';'].
 					entity := self entity: referenceString.
 					entityValue := entity valueForContext: #content.
@@ -33,9 +33,9 @@ nextPCData
 							entityValue isEmpty
 								ifTrue: [nextPeek := nextChar := nil]
 								ifFalse: [
-									self pushStream: (ReadStream on: entityValue asString).
-									nextPeek := nextChar := self peek]]]]
-		ifFalse: [nextPeek == $< ifFalse: [self next]].
+									streamReader pushStream: (ReadStream on: entityValue asString).
+									nextPeek := nextChar := streamReader peek]]]]
+		ifFalse: [nextPeek == $< ifFalse: [streamReader next]].
 	nextPeek == $<]
 		whileFalse: [
 			nextChar ifNotNil: [resultStream nextPut: nextChar]].

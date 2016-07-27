@@ -1,15 +1,17 @@
 tokenizing
 nextCharReference
 	| base charValue |
-	self next == $#
+	streamReader next == $#
 		ifFalse: [self errorExpected: 'character reference'].
-	base := self peek == $x
+	streamReader peek == $x
 		ifTrue: [
-			self next.
-			16]
-		ifFalse: [10].
+			streamReader next.
+			base := 16]
+		ifFalse: [base := 10].
 
-	charValue := [self readNumberBase: base] on: Error do: [:ex | self errorExpected: 'Number.'].
-	(self next) == $;
+	charValue := [streamReader readNumberBase: base]
+		on: Error
+		do: [:ex | self errorExpected: 'Number.'].
+	(streamReader next) == $;
 		ifFalse: [self errorExpected: '";"'].
-	^Unicode value: charValue
+	^ Unicode value: charValue.

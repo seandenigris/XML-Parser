@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "JAAyer 3/11/2010 00:00",
 	"instvars" : [
-		"scopes" ],
+		"scopes",
+		"isValidating" ],
 	"name" : "XMLNestedNamespaceScopes",
 	"pools" : [
 		 ],

@@ -1,14 +1,15 @@
 tokenizing
 nextXMLDecl
 	| attributes nextChar namespaces |
-	self skipSeparators.
+	streamReader skipSeparators.
 	attributes := Dictionary new.
 	namespaces := Dictionary new.
-	[(nextChar := self peek) == $?] whileFalse: [
+	[(nextChar := streamReader peek) == $?] whileFalse: [
 		self nextAttributeInto: attributes namespaces: namespaces.
-		self skipSeparators.].
-	self next.
-	self next == $>
+		streamReader skipSeparators.].
+	streamReader next.
+	streamReader next == $>
 		ifFalse: [self errorExpected: '> expected.'].
-	(attributes includesKey: 'encoding') ifTrue: [self streamEncoding: (attributes at: 'encoding')].
+	(attributes includesKey: 'encoding')
+		ifTrue: [streamReader streamEncoding: (attributes at: 'encoding')].
 	self handleXMLDecl: attributes.

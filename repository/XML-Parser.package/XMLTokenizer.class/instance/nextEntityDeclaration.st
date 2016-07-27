@@ -1,19 +1,19 @@
 tokenizing dtd
 nextEntityDeclaration
 	| entityName entityDef referenceClass reference |
-	self skipSeparators.
-	referenceClass := self peek == $%
+	streamReader skipSeparators.
+	referenceClass := streamReader peek == $%
 		ifTrue: [
-			self next.
-			self skipSeparators.
+			streamReader next.
+			streamReader skipSeparators.
 			DTDParameterEntityDeclaration]
 		ifFalse: [DTDEntityDeclaration].
 	entityName := self nextLiteral.
-	self skipSeparators.
-	entityDef := (self peek == $" or: [self peek == $'])
+	streamReader skipSeparators.
+	entityDef := (streamReader peek == $" or: [streamReader peek == $'])
 		ifTrue: [self nextEntityValue]
 		ifFalse: [self nextExternalId].
-	self skipUpTo: $>.
+	streamReader skipUpTo: $>.
 	reference := referenceClass name: entityName value: entityDef.
 	reference registerIn: self.
 	^reference

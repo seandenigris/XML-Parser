@@ -15,5 +15,3 @@ test010node
 	self
 		assert: node hasParent;
 		assert: node parent = parent.
-
-	self should: [node addContent: ''] raise: SAXParseException.

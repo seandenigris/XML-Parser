@@ -4,4 +4,6 @@ testExampleAddressBookWithDTD
 	"XMLTokenizer exampleAddressBookWithDTD"
 
 	tokenizer := XMLTokenizer on: self addressBookXMLWithDTD readStream.
-	self shouldnt: ([tokenizer next notNil] whileTrue: []) raise: Error
+	self
+		shouldnt: [tokenizer streamReader next notNil] whileTrue
+		raise: Error
