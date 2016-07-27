@@ -10,5 +10,5 @@
 	"name" : "XMLParserTest",
 	"pools" : [
 		 ],
-	"super" : "ClassTestCase",
+	"super" : "TestCase",
 	"type" : "normal" }
