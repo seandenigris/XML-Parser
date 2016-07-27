@@ -1,7 +1,7 @@
 writing markup
 entityRef: aName
 	self
-		flushMarkup;
+		write;
 		nextPut: $&;
 		writeName: aName;
 		nextPut: $;

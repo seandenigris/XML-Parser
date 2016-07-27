@@ -1,3 +1,3 @@
 accessing
 contentModel
-	^ contentModel
+	^ contentModel ifNil: [contentModel := '']

@@ -4,4 +4,4 @@ with: aStringOrCollectionOrBlock
 		writePrologue;
 		writeBody: aStringOrCollectionOrBlock;
 		writeEpilogue;
-		flushed
+		beWritten

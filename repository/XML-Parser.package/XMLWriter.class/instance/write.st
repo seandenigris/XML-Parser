@@ -1,3 +1,4 @@
 writing markup
 write
-	self flushMarkup
+	self activeMarkupWriter
+		ifNotNil: [self activeMarkupWriter write].

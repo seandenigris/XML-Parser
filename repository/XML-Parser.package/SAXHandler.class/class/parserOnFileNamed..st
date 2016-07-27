@@ -1,3 +1,5 @@
 instance creation
-parserOnFileNamed: fileName
-	^self parserOnFileNamed: fileName readIntoMemory: false
+parserOnFileNamed: aFileName
+	self deprecated: 'use #onFileNamed: instead'.
+
+	^ self onFileNamed: aFileName.

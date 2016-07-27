@@ -13,4 +13,4 @@ undeclareNamespaces
 
 	(currentScope defaultNamespace notNil
 		and: [currentScope defaultNamespace ~= enclosingScope defaultNamespace])
-		ifTrue: [self activeSaxHandler endPrefixMapping: 'xmlns']
+		ifTrue: [self activeSaxHandler endPrefixMapping: '']

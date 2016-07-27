@@ -1,3 +1,6 @@
 instance creation
-on: aStream
-	^self new stream: aStream
+on: aStringOrStream
+	^self new stream:
+		(aStringOrStream isStream
+			ifTrue: [aStringOrStream]
+			ifFalse: [aStringOrStream readStream])

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 8/6/2010 17:29",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"openElements" ],
 	"name" : "XMLWellFormednessChecker",

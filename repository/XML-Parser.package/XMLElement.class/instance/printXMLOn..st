@@ -4,6 +4,7 @@ printXMLOn: aWriter
 
 	(tagWriter := aWriter tag)
 		name: self name.
+
 	self hasNamespaces
 		ifTrue: [
 			tagWriter
@@ -11,4 +12,4 @@ printXMLOn: aWriter
 				xmlnsDeclarations: self namespaceScope prefixMappings].
 	tagWriter
 		attributes: self attributes;
-		content: [super printXMLOn: aWriter]
+		with: [super printXMLOn: aWriter]

@@ -1,3 +1,3 @@
 accessing
 nextElement
-	^ self hasParent ifTrue: [self parent elementAfter: self]
+	^ self parent ifNotNil: [self parent elementAfter: self]

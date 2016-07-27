@@ -8,4 +8,6 @@ writeBody
 				ifNotEmpty: [
 					self writer
 						space;
+						nextPutAll: 'NDATA';
+						space;
 						writeName: self ndata]]

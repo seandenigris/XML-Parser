@@ -1,6 +1,3 @@
 instance creation
-parseDocumentFrom: aStream useNamespaces: aBoolean
-	|  parser |
-	parser := self on: aStream.
-	parser useNamespaces: aBoolean.
-	^ parser parseDocument.
+parseDocumentFrom: aStringOrStream useNamespaces: aBoolean
+	^ self parse: aStringOrStream usingNamespaces: aBoolean.

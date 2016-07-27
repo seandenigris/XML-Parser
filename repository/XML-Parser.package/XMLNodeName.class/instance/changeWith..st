@@ -5,4 +5,5 @@ changeWith: aBlock
 	oldName := self qualified.
 	aBlock value.
 	newName := self qualified.
-	self notifyOf: #nodeNameChangedFrom:to: with: oldName with: newName.
+	newName = oldName
+		ifFalse: [self notifyOf: #nodeNameChangedFrom:to: with: oldName with: newName].

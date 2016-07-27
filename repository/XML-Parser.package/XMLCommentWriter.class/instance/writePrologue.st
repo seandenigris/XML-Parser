@@ -1,3 +1,5 @@
 private
 writePrologue	
-	self writer nextPutAll: '<!--'
+	self writer
+		cr;
+		nextPutAll: '<!--'

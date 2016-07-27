@@ -9,4 +9,4 @@ validatePrefixedAttributeName: anAttributeName in: aDictionary
 		self
 			ensureAttributePrefix: prefix
 			localName: localName
-			hasNoAliasesIn: aDictionary]
+			hasNoAliasIn: aDictionary]

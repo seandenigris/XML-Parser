@@ -3,7 +3,7 @@ elementsByNameAt: aName insertElement: anElement
 	| elementsWithName elementBefore |
 
 	(elementBefore := self findElementBefore: anElement withName: aName)
-		ifNil: [^ self elementsByNameAt: aName addElement: anElement].
+		ifNil: [^ self elementsByNameAt: aName addElementFirst: anElement].
 
 	(elementsWithName := self elementsByName at: aName)
 		isCollection

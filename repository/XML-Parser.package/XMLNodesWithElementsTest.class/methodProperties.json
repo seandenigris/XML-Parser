@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assertDocument:hasDoctype:version:encoding:" : "JAAyer 10/28/2010 21:58",
+		"assertNode:hasElements:" : "JAAyer 11/8/2010 19:21",
+		"assertNodeHasNoChildren:" : "JAAyer 10/30/2010 19:48",
+		"assertNodeHasNoContentNodes:" : "JAAyer 10/30/2010 19:51",
+		"assertNodeHasNoElements:" : "JAAyer 10/28/2010 23:38",
+		"newElements:" : "JAAyer 11/1/2010 03:39",
+		"newElementsNamed:" : "JAAyer 10/28/2010 21:58",
+		"should:addElement:to:" : "JAAyer 11/1/2010 03:54",
+		"should:addElements:to:" : "JAAyer 11/5/2010 22:47",
+		"should:removeElement:from:" : "JAAyer 11/1/2010 03:54",
+		"should:removeElements:from:" : "JAAyer 11/5/2010 22:48",
+		"test01emptyNodeWithElements" : "JAAyer 11/10/2010 05:01",
+		"test02addingElements" : "JAAyer 11/10/2010 05:01",
+		"test03removingElements" : "JAAyer 11/10/2010 05:01",
+		"test04accessingAdjacentElements" : "JAAyer 11/10/2010 05:01",
+		"test05accessingFirstAndLastElements" : "JAAyer 11/10/2010 05:01",
+		"test06chlidNodeAndElementEnumeration" : "JAAyer 11/10/2010 05:01",
+		"test07elementAccessing" : "JAAyer 11/10/2010 05:01",
+		"test08firstTagSearching" : "JAAyer 11/10/2010 05:01",
+		"test09tagsNamedSearching" : "JAAyer 11/10/2010 05:01",
+		"test10elementRenaming" : "JAAyer 11/10/2010 05:01",
+		"test11documentTest" : "JAAyer 11/10/2010 05:01" } }

@@ -12,5 +12,5 @@ nextAttributeInto: attributes namespaces: namespaces
 		and: [attrName beginsWith: 'xmlns'])
 		ifTrue: [attrName size > 6
 			ifTrue: [namespaces at: (attrName copyFrom: 7 to: attrName size) put: attrValue]
-			ifFalse: [namespaces at: attrName put: attrValue]]
+			ifFalse: [namespaces at: '' put: attrValue]]
 		ifFalse: [attributes at: attrName put: attrValue].

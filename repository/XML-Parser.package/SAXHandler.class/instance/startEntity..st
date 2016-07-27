@@ -1,4 +1,4 @@
 lexical
-startEntity: entityName
+startEntity: anEntityName
 	"This call corresponds to the Java SAX ext call
 	startEntity(java.lang.String name)."

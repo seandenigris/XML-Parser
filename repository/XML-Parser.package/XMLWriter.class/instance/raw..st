@@ -1,5 +1,5 @@
 writing markup
 raw: aString
 	self
-		flushMarkup;
+		write;
 		nextPutAll: aString

@@ -1,4 +1,4 @@
 actions
 close
-	self flushMarkup.
+	self write.
 	self stream close.

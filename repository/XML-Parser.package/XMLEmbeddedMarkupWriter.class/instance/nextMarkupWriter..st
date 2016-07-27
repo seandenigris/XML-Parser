@@ -6,4 +6,4 @@ nextMarkupWriter: aMarkupWriter
 				ifFalse: [self startWritingEmbeddedMarkup].
 			aMarkupWriter parent: self.
 			hasEmbeddedMarkupWriters := true]
-		ifFalse: [self flushMarkup]
+		ifFalse: [self write]

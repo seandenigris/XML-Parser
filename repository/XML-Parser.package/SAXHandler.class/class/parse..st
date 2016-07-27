@@ -1,3 +1,3 @@
 instance creation
-parse: aStream
-	^ self parseDocumentFrom: aStream
+parse: aStringOrStream
+	^ (self on: aStringOrStream) parseDocument

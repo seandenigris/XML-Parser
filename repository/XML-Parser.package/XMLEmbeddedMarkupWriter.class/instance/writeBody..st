@@ -4,6 +4,6 @@ writeBody: aStringOrCollectionOrBlock
 
 	self embedValue: aStringOrCollectionOrBlock.
 	self isActiveMarkupWriter
-		ifFalse: [self writer flushMarkup].
+		ifFalse: [self writer write].
 
 	isWritingBody := false.

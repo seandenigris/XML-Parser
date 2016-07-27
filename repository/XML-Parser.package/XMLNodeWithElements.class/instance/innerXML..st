@@ -3,8 +3,8 @@ innerXML: aString
 	| parsedDocument newNodes |
 
 	parsedDocument := XMLDOMParser
-		parseDocumentFrom: aString
-		useNamespaces: self usesNamespaces.
+		parse: aString
+		usingNamespaces: self usesNamespaces.
 	newNodes := parsedDocument nodes copy.
 	parsedDocument removeNodes.
 	self

@@ -1,6 +1,6 @@
 private
 writeXmlEncodedString: aString
 	self
-		quote;
+		nextPut: $";
 		writeXmlEncoded: aString;
-		quote
+		nextPut: $"

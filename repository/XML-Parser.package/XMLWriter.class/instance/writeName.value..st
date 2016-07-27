@@ -1,9 +1,9 @@
 private
 writeName: aName value: aValue
-	self hasTrailingWhitespace
-		ifFalse: [self space].
+	(self atStart or: [self hasTrailingWhitespace])
+		ifFalse: [self stream space].
 
 	self
 		writeName: aName;
-		eq;
+		nextPut: $=;
 		writeXmlEncodedString: aValue.

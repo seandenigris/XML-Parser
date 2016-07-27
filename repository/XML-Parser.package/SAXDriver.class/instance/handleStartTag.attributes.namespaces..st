@@ -7,7 +7,8 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		ifTrue: [self languageEnvironment: (anAttributeDictionary at: 'xml:lang')].
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
-		localName := localPart].
+		localName := localPart.
+		namespaceURI := ''].
 
 	self usesNamespaces ifTrue: [
 		self scopeManager enterScope.

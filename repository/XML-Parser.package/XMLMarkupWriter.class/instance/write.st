@@ -1,4 +1,7 @@
 writing markup
 write
-	self flushMarkup.
-	^ self writer.
+	self
+		writePrologue;
+		writeBody;
+		writeEpilogue;
+		beWritten

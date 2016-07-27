@@ -1,2 +1,2 @@
 content
-endElement: elementName
+endElement: aQualifiedName

@@ -1,9 +1,13 @@
 content
 startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName attributes: aDictionary
 	self pushElement:
-		(XMLElement
-			qualifiedName: aQualifiedName
+		((self nodeFactory
+			classForElement: aQualifiedName
 			prefix: aPrefix
-			localName: aLocalName
-			attributes: aDictionary
-			namespaceScope: self currentScope)
+			uri: aUri
+			localName: aLocalName)
+				qualifiedName: aQualifiedName
+				prefix: aPrefix
+				localName: aLocalName
+				attributes: aDictionary
+				namespaceScope: self currentScope)

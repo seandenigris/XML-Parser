@@ -1,3 +1,0 @@
-private
-eq
-	self nextPut: $=

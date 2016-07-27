@@ -7,8 +7,8 @@
 	"commentStamp" : "JAAyer 3/23/2010 14:08",
 	"instvars" : [
 		"document",
-		"incremental",
 		"nodeStack",
+		"nodeFactory",
 		"preservesCDataSections",
 		"isInCDataSection" ],
 	"name" : "XMLDOMParser",

@@ -1,0 +1,1 @@
+This class represents comments preserved as nodes. 

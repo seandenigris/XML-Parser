@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"elementClassesByName" ],
+	"name" : "XMLPluggableElementFactory",
+	"pools" : [
+		 ],
+	"super" : "XMLNodeFactory",
+	"type" : "normal" }

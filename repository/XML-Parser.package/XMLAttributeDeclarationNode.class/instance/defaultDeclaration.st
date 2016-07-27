@@ -1,3 +1,3 @@
 accessing
 defaultDeclaration
-	^ defaultDeclaration
+	^ defaultDeclaration ifNil: [defaultDeclaration := '']

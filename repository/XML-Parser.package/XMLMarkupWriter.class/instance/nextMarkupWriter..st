@@ -1,3 +1,3 @@
 private
 nextMarkupWriter: aMarkupWriter
-	self flushMarkup
+	self write

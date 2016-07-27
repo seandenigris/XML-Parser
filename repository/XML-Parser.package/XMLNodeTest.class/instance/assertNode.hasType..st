@@ -1,3 +1,3 @@
 assertions
 assertNode: aNode hasType: aType
-	self assertNode: aNode hasTypes: (Array with: aType)
+	self assertNode: aNode hasTypes: (aType ifNotNil: [Array with: aType] ifNil: [#()])

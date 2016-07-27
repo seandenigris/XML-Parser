@@ -1,3 +1,3 @@
 accessing
 attributeName
-	^ attributeName
+	^ attributeName ifNil: [attributeName := '']

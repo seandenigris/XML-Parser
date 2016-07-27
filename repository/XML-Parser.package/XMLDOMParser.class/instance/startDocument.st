@@ -1,4 +1,4 @@
 content
 startDocument
-	self document: XMLDocument new.
+	self document: self nodeFactory documentClass new.
 	self pushNode: self document 

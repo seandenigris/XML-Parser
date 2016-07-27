@@ -1,5 +1,5 @@
 private
 toString: aStringOrStringNode
-	^ (aStringOrStringNode isKindOf: self class)
+	^ (aStringOrStringNode isKindOf: XMLString)
 		ifTrue: [aStringOrStringNode string]
 		ifFalse: [aStringOrStringNode]

@@ -1,4 +1,4 @@
-accessing
+utility
 notifications
 	| notifications parser parsedMethods methodNode firstArgument |
 

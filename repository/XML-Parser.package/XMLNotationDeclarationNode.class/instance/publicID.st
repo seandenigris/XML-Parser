@@ -1,3 +1,3 @@
 accessing
 publicID
-	^ publicId
+	^ publicId ifNil: [publicId := '']

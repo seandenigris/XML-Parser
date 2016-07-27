@@ -1,7 +1,7 @@
 writing markup
 paramEntityRef: aName
 	self
-		flushMarkup;
+		write;
 		nextPut: $%;
 		writeName: aName;
 		nextPut: $;

@@ -1,3 +1,3 @@
 testing
 usesNamespaces
-	^ useNamespaces ifNil: [useNamespaces := false]
+	^ useNamespaces ifNil: [useNamespaces := true]

@@ -1,4 +1,4 @@
 accessing
 contents
-	self flushMarkup.
+	self write.
 	^ self stream contents.

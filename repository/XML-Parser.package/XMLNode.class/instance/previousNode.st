@@ -1,3 +1,3 @@
 accessing
 previousNode
-	^ self hasParent ifTrue: [self parent nodeBefore: self]
+	^ self parent ifNotNil: [self parent nodeBefore: self]

@@ -1,5 +1,5 @@
 writing markup
 string: aString
 	self
-		flushMarkup;
+		write;
 		writeXmlEncoded: aString.

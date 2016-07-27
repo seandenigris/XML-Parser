@@ -6,7 +6,7 @@
 		"CharEscapes",
 		"LiteralChars",
 		"NameDelimiters" ],
-	"commentStamp" : "JAAyer 3/23/2010 16:01",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"streamReader",
 		"streamWriter",

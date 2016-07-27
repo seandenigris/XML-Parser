@@ -1,3 +1,3 @@
 accessing
 ndata
-	^ ndata
+	^ ndata ifNil: [ndata := '']

@@ -1,4 +1,3 @@
 validation
 validatePrefix: aPrefix ofElementName: anElementName
-	aPrefix ifNil: [^ self].
-	self validatePrefix: aPrefix of: anElementName, ' element'
+	self validatePrefix: aPrefix of: 'element' named: anElementName

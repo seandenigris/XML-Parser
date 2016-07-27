@@ -2,7 +2,7 @@ private
 writeXmlEncoded: aString
 	| lastIndex nextIndex |
 	
-	"Unroll the first search to avoid copying"
+	"Unroll the first search"
 	lastIndex := 1.
 	nextIndex := String
 		findFirstInString: aString
@@ -24,4 +24,5 @@ writeXmlEncoded: aString
 				findFirstInString: aString
 				inSet: SpecialCharacters byteArrayMap
 				startingAt: lastIndex].
+
 	self nextPutAll: (aString copyFrom: lastIndex to: aString size).
