@@ -2,11 +2,13 @@
 	"class" : {
 		"driver:on:" : "monty 1/17/2014 01:27",
 		"driver:on:readLimit:" : "monty 1/17/2014 01:26",
-		"initialize" : "monty 11/18/2014 07:11",
+		"initialize" : "monty 3/9/2016 10:53",
+		"initializeCharacterConverter" : "monty 3/9/2016 10:53",
+		"initializePredefinedEntities" : "monty 3/8/2016 16:37",
 		"predefinedEntities" : "monty 11/18/2014 07:11" },
 	"instance" : {
 		"atEnd" : "monty 11/17/2014 02:03",
-		"characterFromCodePoint:" : "monty 1/4/2015 23:02",
+		"characterFromCodePoint:" : "monty 3/9/2016 10:53",
 		"closeStreams" : "monty 11/24/2014 19:27",
 		"constructReplacementForGeneralEntity:" : "monty 11/10/2014 00:46",
 		"constructReplacementForParameterEntity:" : "monty 11/10/2014 00:37",

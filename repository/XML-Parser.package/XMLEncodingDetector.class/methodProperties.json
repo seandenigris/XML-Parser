@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"for:" : "monty 2/9/2016 06:36",
 		"handlerForByteValue:" : "monty 2/9/2016 05:54",
 		"initialize" : "monty 2/9/2016 03:51",
 		"initializeByteOrderMarks" : "monty 2/9/2016 03:52",
 		"initializeEncodingHandlerTable" : "monty 2/9/2016 03:52",
-		"initializeNullCharacter" : "monty 2/9/2016 03:52" },
+		"initializeNullCharacter" : "monty 2/9/2016 03:52",
+		"on:" : "monty 3/8/2016 13:11" },
 	"instance" : {
 		"atEnd" : "monty 2/9/2016 06:20",
 		"canSkipDetection" : "monty 2/14/2016 02:03",
@@ -20,8 +20,8 @@
 		"handleUTF8BOM" : "monty 2/9/2016 05:51",
 		"next" : "monty 2/9/2016 05:56",
 		"nextASCII" : "monty 2/9/2016 06:18",
+		"on:" : "monty 3/9/2016 18:41",
 		"peek" : "monty 2/9/2016 05:56",
 		"peekForNull" : "monty 2/9/2016 23:14",
 		"pushBack:" : "monty 2/9/2016 05:53",
-		"pushBackCharacter:" : "monty 2/9/2016 05:53",
-		"stream:" : "monty 2/9/2016 03:55" } }
+		"pushBackCharacter:" : "monty 2/9/2016 05:53" } }

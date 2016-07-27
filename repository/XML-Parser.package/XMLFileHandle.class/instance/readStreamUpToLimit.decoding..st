@@ -19,7 +19,7 @@ readStreamUpToLimit: aMaxSize decoding: aBoolean
 	aBoolean
 		ifTrue: [| decodingReadStreamAdapter |
 			decodingReadStreamAdapter := XMLDecodingReadStreamAdapter on: readStream.
-			(XMLFileStreamEncodingDetector for: decodingReadStreamAdapter)
+			(XMLFileStreamEncodingDetector on: decodingReadStreamAdapter)
 				detectCurrentEncoding.
 			^ decodingReadStreamAdapter]
 		ifFalse: [^ readStream].

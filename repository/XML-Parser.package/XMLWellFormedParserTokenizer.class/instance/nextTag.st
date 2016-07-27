@@ -32,7 +32,7 @@ nextTag
 							"initialize only if needed"
 							(namespaces
 								ifNil: [namespaces := OrderPreservingStringDictionary new: 5])
-								at:
+								xmlNamespaceAt:
 									((attributeName size > 6)
 										ifTrue: [attributeName copyFrom: 7 to: attributeName size]
 										ifFalse: [''])
@@ -40,8 +40,13 @@ nextTag
 						ifFalse: [							
 							attributeName isReservedAttributeName
 								ifTrue: [driver haveUnhandledReservedAttributes].
-							attributes at: attributeName put: attributeValue]]
-				ifFalse: [attributes at: attributeName put: attributeValue]].
+							attributes
+								xmlAttributeAt: attributeName
+								put: attributeValue]]
+				ifFalse: [
+					attributes
+						xmlAttributeAt: attributeName
+						put: attributeValue]].
 
 	driver
 		handleStartTag: tagName

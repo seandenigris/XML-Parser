@@ -5,12 +5,14 @@ nextFromStream: aStream
 	codePoint :=
 		self
 			codePointFromFirstByte:
-				(aStream basicNext ifNil: [^ nil]) asciiValue
+				(aStream basicNext
+					ifNil: [^ nil]) asciiValue
 			secondByte:
-				(aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
+				(aStream basicNext
+					ifNil: [self errorBadCharacterEncoding]) asciiValue.
 
 	(codePoint < 16rD800 or: [codePoint > 16rDBFF])
-		ifTrue: [^ self characterForValue: codePoint]
+		ifTrue: [^ self characterFromCodePoint: codePoint]
 		ifFalse: [
 			^ self
 				surrogatePairFromStream: aStream

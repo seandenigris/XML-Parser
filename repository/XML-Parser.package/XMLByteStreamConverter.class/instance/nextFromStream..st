@@ -4,6 +4,6 @@ nextFromStream: aStream
 
 	((character := aStream basicNext) notNil
 		and: [character asciiValue > 255])
-		ifTrue: [self errorInvalidCharacter].
+		ifTrue: [self errorBadCharacterValue: character asciiValue].
 
 	^ character.

@@ -2,7 +2,7 @@ encoding
 nextPut: aCharacter toStream: aStream
 	| codePoint |
 
-	codePoint := self valueOfCharacter: aCharacter.
+	codePoint := self codePointFromCharacter: aCharacter.
 	self
 		nextPutFirstByte: ((codePoint bitShift: -24) bitAnd: 16rFF)
 		secondByte: ((codePoint bitShift: -16) bitAnd: 16rFF)

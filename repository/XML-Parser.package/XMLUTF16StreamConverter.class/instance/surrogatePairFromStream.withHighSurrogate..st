@@ -5,11 +5,13 @@ surrogatePairFromStream: aStream withHighSurrogate: aHighSurrogate
 	lowSurrogate :=
 		self
 			codePointFromFirstByte:
-				(aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue
+				(aStream basicNext
+					ifNil: [self errorBadCharacterEncoding]) asciiValue
 			secondByte:
-				(aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
+				(aStream basicNext
+					ifNil: [self errorBadCharacterEncoding]) asciiValue.
 
-	^ self characterForValue:
+	^ self characterFromCodePoint:
 		((aHighSurrogate bitAnd: 16r3FF) bitShift: 10) +
 		(lowSurrogate bitAnd: 16r3FF) +
 		16r10000.

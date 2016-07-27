@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"canTerminateDocument" : "monty 3/7/2016 20:03",
 		"isPrologContext" : "monty 11/9/2014 16:12",
 		"nextTokenFrom:" : "monty 11/9/2014 15:41" } }

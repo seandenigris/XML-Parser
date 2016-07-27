@@ -1,7 +1,9 @@
-entity replacing
-characterFromCodePoint: anInteger
-	(anInteger notNil and: [anInteger > 0])
+decoding
+characterFromCodePoint: aCodePoint
+	(aCodePoint notNil
+		and: [aCodePoint > 0])
+		ifTrue: [
+			^ [CharacterConverter characterFromCodePoint: aCodePoint]
+				on: Error
+				do: [:error | nil]]
 		ifFalse: [^ nil].
-	^ [anInteger asCharacter]
-		on: Error
-		do: [:error | nil].
