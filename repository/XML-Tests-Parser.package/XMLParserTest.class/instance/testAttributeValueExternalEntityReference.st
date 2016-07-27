@@ -19,7 +19,7 @@ testAttributeValueExternalEntityReference
 			xml := xmlTemplate format: (Array with: 'internal').
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities: entities);
+					(DTDStaticExternalEntityResolver externalEntities: entities);
 				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLWellFormednessException.
@@ -32,7 +32,7 @@ testAttributeValueExternalEntityReference
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities: entities);
+							(DTDStaticExternalEntityResolver externalEntities: entities);
 						resolvesExternalEntities: true;
 						parseDocument]
 				raise: XMLWellFormednessException].

@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"shouldInheritSelectors" : "monty 6/24/2016 04:25" },
 	"instance" : {
 		"cdataClass" : "monty 11/1/2014 15:59",
 		"commentClass" : "monty 11/1/2014 15:59",

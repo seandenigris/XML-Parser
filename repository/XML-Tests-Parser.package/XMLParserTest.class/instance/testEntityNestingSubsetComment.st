@@ -16,7 +16,7 @@ testEntityNestingSubsetComment
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						resolvesExternalEntities: true;
 						parseDocument]
@@ -29,7 +29,7 @@ testEntityNestingSubsetComment
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						resolvesExternalEntities: true;
 						parseDocument]
@@ -38,7 +38,7 @@ testEntityNestingSubsetComment
 				shouldnt: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						isValidating: false;
 						resolvesExternalEntities: true;
@@ -51,7 +51,7 @@ testEntityNestingSubsetComment
 				%total;'.
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]

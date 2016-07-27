@@ -21,7 +21,7 @@ testConditionalSectionMixedIncludeIgnore
 		shouldnt: [
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]

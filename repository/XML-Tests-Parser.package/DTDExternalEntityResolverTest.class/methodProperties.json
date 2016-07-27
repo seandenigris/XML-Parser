@@ -8,8 +8,9 @@
 		"resolverClass" : "monty 3/22/2016 03:51",
 		"testCopy" : "monty 4/3/2016 00:45",
 		"testExternalEntityLimits" : "monty 3/22/2016 04:41",
-		"testExternalSubsetReadLimit" : "monty 3/23/2016 01:19",
-		"testMaxExternalEntities" : "monty 3/22/2016 04:43",
-		"testMaxExternalEntitySize" : "monty 3/23/2016 01:19",
-		"testResolvesLocalFromNonLocal" : "monty 3/22/2016 04:46",
+		"testExternalSubsetReadLimit" : "monty 6/26/2016 22:57",
+		"testMaxExternalEntities" : "monty 6/26/2016 22:56",
+		"testMaxExternalEntitySize" : "monty 6/26/2016 22:57",
+		"testRemoveLimits" : "monty 6/26/2016 22:54",
+		"testResolvesLocalFromNonLocal" : "monty 6/26/2016 22:55",
 		"testTotalResolvedExternalEntities" : "monty 4/3/2016 00:46" } }

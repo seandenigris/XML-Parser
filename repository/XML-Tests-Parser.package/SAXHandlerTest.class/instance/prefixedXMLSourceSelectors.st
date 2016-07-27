@@ -2,8 +2,8 @@ accessing
 prefixedXMLSourceSelectors
 	^ #(startDocument
 		startPrefixMapping:uri: startPrefixMapping:uri:
-		startElement:prefix:uri:localName:attributes:
+		startElement:attributes:
 		characters:
-		endElement:prefix:uri:localName:
+		endElement:
 		endPrefixMapping: endPrefixMapping:
 		endDocument)

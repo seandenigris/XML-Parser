@@ -10,5 +10,5 @@
 	"name" : "SAXHandlerTest",
 	"pools" : [
 		 ],
-	"super" : "XMLParserTest",
+	"super" : "TestCase",
 	"type" : "normal" }

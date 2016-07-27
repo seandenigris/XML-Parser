@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"addressBookNamespacePrefixedXML",
-		"addressBookNamespacedXML" ],
+		 ],
 	"name" : "XMLDOMParserTest",
 	"pools" : [
 		 ],
-	"super" : "XMLParserTest",
+	"super" : "TestCase",
 	"type" : "normal" }

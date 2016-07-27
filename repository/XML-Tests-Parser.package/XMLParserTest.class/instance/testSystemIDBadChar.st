@@ -1,6 +1,6 @@
 tests
 testSystemIDBadChar
-	XMLCharacterMethodsTest nonChars do: [:each |
+	self nonChars do: [:each |
 		self
 			should: [
 				SAXHandler parse:

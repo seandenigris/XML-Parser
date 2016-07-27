@@ -11,7 +11,8 @@ testIsXMLQualifiedOrLocalName
 		deny: ('prefix:name' isXMLQualifiedOrLocalName: 'prefix:different');
 		deny: ('prefix:name' isXMLQualifiedOrLocalName: 'different:name').
 
-	"test wide char equality for pre-Spur images"
+	"test wide char equality (redundant on Spur, but should remain as long
+	as Cog and older VMs are supported)"
 	self assert:
 		((String with: 256 asCharacter)
 			isXMLQualifiedOrLocalName:

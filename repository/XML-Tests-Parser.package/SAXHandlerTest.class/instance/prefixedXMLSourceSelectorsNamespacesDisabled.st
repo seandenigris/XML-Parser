@@ -1,4 +1,3 @@
 accessing
 prefixedXMLSourceSelectorsNamespacesDisabled
-	^ self prefixedXMLSourceSelectors reject: [:each |
-		#(startPrefixMapping:uri: endPrefixMapping:) includes: each].
+	^ self removeNamespaceSelectorsFrom: self prefixedXMLSourceSelectors

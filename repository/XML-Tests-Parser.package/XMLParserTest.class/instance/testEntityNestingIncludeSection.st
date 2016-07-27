@@ -20,7 +20,7 @@ testEntityNestingIncludeSection
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						resolvesExternalEntities: true;
 						parseDocument]
@@ -40,7 +40,7 @@ testEntityNestingIncludeSection
 				should: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						resolvesExternalEntities: true;
 						parseDocument]
@@ -49,7 +49,7 @@ testEntityNestingIncludeSection
 				shouldnt: [
 					(SAXHandler on: xml)
 						externalEntityResolver:
-							(DTDPluggableExternalEntityResolver externalEntities:
+							(DTDStaticExternalEntityResolver externalEntities:
 								(Array with: 'extern.dtd' -> each));
 						isValidating: false;
 						resolvesExternalEntities: true;
@@ -64,7 +64,7 @@ testEntityNestingIncludeSection
 				%total;'.
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> dtd));
 				resolvesExternalEntities: true;
 				parseDocument]

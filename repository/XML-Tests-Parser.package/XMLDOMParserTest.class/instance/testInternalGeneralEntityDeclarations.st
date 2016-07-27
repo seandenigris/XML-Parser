@@ -1,4 +1,4 @@
-tests - internal subset
+tests
 testInternalGeneralEntityDeclarations
 	| doctype firstEntity secondEntity |
 

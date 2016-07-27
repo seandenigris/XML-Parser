@@ -3,12 +3,11 @@
 		 },
 	"instance" : {
 		"recursiveEntitiesNamed:depth:isParameter:" : "monty 1/19/2014 04:10",
-		"testDefaultLimits" : "monty 1/27/2015 22:49",
 		"testDocumentReadLimit" : "monty 11/16/2014 00:24",
 		"testRecursiveGeneralEntityReplacement" : "monty 1/19/2014 03:54",
 		"testRecursiveGeneralEntityReplacementPastLimit" : "monty 1/19/2014 22:50",
 		"testRecursiveParameterEntityReplacement" : "monty 1/19/2014 03:56",
 		"testRecursiveParameterEntityReplacementPastLimit" : "monty 1/19/2014 22:49",
-		"testRemoveLimits" : "monty 1/27/2015 23:08",
+		"testResolvingLocalFromNonLocal" : "monty 6/26/2016 22:59",
 		"testStreamReaderMaxPushBack" : "monty 3/20/2016 18:45",
 		"xmlWithRecursiveEntitiesNamed:depth:isParameter:" : "monty 3/7/2016 20:08" } }

@@ -1,4 +1,4 @@
-tests - internal subset
+tests
 testInternalAttributeDeclarations
 	| doctype firstAttribute secondAttribute |
 

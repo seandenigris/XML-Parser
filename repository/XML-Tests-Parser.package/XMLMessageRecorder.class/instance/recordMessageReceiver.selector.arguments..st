@@ -1,7 +1,7 @@
 recording
-recordMessageReceiver: anObject selector: aSelector arguments: anArgumentCollection
+recordMessageReceiver: anObject selector: aSelector arguments: aSequenceableCollection
 	self recordMessage:
 		(MessageSend
 			receiver: anObject
 			selector: aSelector
-			arguments: anArgumentCollection)
+			arguments: aSequenceableCollection asArray)

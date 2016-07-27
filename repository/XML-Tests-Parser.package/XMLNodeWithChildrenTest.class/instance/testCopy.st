@@ -23,7 +23,9 @@ testCopy
 		do: [:node :nodeCopy | unvisitedPairs add: node -> nodeCopy].
 
 	visitedPairs := Set new.
-	copiedClasses := self copiedClasses collect: [:each | Smalltalk at: each].
+	copiedClasses :=
+		self copiedClasses collect: [:each |
+			XMLClassFinder classNamed: each].
 	[unvisitedPairs isEmpty]
 		whileFalse: [ | pair originalObject copyObject |
 			pair := unvisitedPairs remove: unvisitedPairs anyOne.

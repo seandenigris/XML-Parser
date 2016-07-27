@@ -17,7 +17,7 @@ testConditionalSectionInInternalSubsetExternallyDefined
 				]>
 				<test name="value">test</test>')
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.ent' -> conditionalSections));
 				resolvesExternalEntities: true;
 				parseDocument]
@@ -38,7 +38,7 @@ testConditionalSectionInInternalSubsetExternallyDefined
 				]>
 				<test name="value">test</test>')
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.ent' -> entityReplacementMixedSections));
 				resolvesExternalEntities: true;
 				parseDocument]

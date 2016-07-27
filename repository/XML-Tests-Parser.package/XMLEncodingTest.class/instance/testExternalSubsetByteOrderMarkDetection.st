@@ -9,7 +9,7 @@ testExternalSubsetByteOrderMarkDetection
 			encodedDTDWithBOM := self utf16BigEndianBOM, (self asciiToUTF16BE: dtd).
 			(SAXHandler on: document)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> encodedDTDWithBOM));
 				resolvesExternalEntities: true;
 				parseDocument]
@@ -19,7 +19,7 @@ testExternalSubsetByteOrderMarkDetection
 			encodedDTDWithBOM := self utf16LittleEndianBOM, (self asciiToUTF16LE: dtd).
 			(SAXHandler on: document)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.dtd' -> encodedDTDWithBOM));
 				resolvesExternalEntities: true;
 				parseDocument]

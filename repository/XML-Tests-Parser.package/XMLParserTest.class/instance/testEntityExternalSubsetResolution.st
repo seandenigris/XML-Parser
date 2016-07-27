@@ -17,7 +17,7 @@ testEntityExternalSubsetResolution
 			should: [
 				(SAXHandler on: xml)
 					externalEntityResolver:
-						(DTDPluggableExternalEntityResolver externalEntities:
+						(DTDStaticExternalEntityResolver externalEntities:
 							(entities copyFrom: 1 to: i));
 					resolvesExternalEntities: true;
 					parseDocument]
@@ -26,7 +26,7 @@ testEntityExternalSubsetResolution
 		should: [
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities: entities);
+					(DTDStaticExternalEntityResolver externalEntities: entities);
 				resolvesExternalEntities: false;
 				parseDocument]
 		raise: XMLParserException.
@@ -34,7 +34,7 @@ testEntityExternalSubsetResolution
 		shouldnt: [
 			(SAXHandler on: xml)
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities: entities);
+					(DTDStaticExternalEntityResolver externalEntities: entities);
 				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLParserException.

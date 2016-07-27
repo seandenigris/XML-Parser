@@ -4,7 +4,7 @@ testResolvesLocalFromNonLocal
 
 	resolver := self newResolver.
 	self
-		assert: resolver resolvesLocalFromNonLocal = self newEntityLimits resolvesLocalFromNonLocal;
+		deny: resolver resolvesLocalFromNonLocal;
 		assert: (resolver resolvesLocalFromNonLocal: false) == resolver;
 		deny: resolver resolvesLocalFromNonLocal;
 		assert: (resolver resolvesLocalFromNonLocal: true) == resolver;

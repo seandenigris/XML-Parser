@@ -19,7 +19,7 @@ testEntityReferenceInternalDeclarationExternallyDefined
 				]>
 				<test name="value">test</test>')
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.ent' -> declarations));
 				resolvesExternalEntities: true;
 				parseDocument]
@@ -44,7 +44,7 @@ testEntityReferenceInternalDeclarationExternallyDefined
 				]>
 				<test name="value">test</test>')
 				externalEntityResolver:
-					(DTDPluggableExternalEntityResolver externalEntities:
+					(DTDStaticExternalEntityResolver externalEntities:
 						(Array with: 'extern.ent' -> declarations));
 				resolvesExternalEntities: true;
 				parseDocument]

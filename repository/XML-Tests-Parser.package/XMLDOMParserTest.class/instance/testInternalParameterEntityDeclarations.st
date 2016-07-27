@@ -1,4 +1,4 @@
-tests - internal subset
+tests
 testInternalParameterEntityDeclarations
 	| doctype firstEntity secondEntity |
 

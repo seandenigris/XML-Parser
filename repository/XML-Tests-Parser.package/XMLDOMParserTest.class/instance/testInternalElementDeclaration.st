@@ -1,4 +1,4 @@
-tests - internal subset
+tests
 testInternalElementDeclaration
 	| doctype elementDeclaration |
 
