@@ -8,5 +8,8 @@ nextExternalSubsetToken
 			streamReader next.
 			^ self nextParameterEntityReference].
 	streamReader peek == $]
-		ifTrue: [^ self nextEndIncludeSection].
+		ifTrue: [
+			self hasOpenIncludeSections
+				ifFalse: [self errorUnexpectedEndOfIncludeSection].
+			^ self nextEndIncludeSection].
 	self nextSubsetMarkupToken.

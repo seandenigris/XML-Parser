@@ -1,10 +1,10 @@
 private
-cachingResolveEntityURI: aURIOrURIString
+cachingResolveEntityURI: anXMLURIOrURIString
 	| uri |
 
-	uri := aURIOrURIString asXMLURI.
+	uri := anXMLURIOrURIString asXMLURI.
 	^ self class
-		entityCacheAt: uri
+		entityCacheAtURI: uri
 		ifAbsentPut: [
 			self resolveEntityWith: [:maxSize |
 				uri

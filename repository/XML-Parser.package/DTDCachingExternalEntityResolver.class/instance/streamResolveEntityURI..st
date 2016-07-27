@@ -1,7 +1,7 @@
 resolving
-streamResolveEntityURI: aURIOrURIString
+streamResolveEntityURI: anXMLURIOrURIString
 	| uri |
 
-	(uri := aURIOrURIString asXMLURI) isLocalURI
+	(uri := anXMLURIOrURIString asXMLURI) isLocalURI
 		ifTrue: [^ super streamResolveEntityURI: uri]
 		ifFalse: [^ self cachingStreamResolveEntityURI: uri]

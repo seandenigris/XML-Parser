@@ -1,3 +1,3 @@
 accessing
-currentURI: aURI
-	self uris addLast: aURI
+currentURI: aURIString
+	self uris addLast: aURIString

@@ -1,3 +1,3 @@
 private
-incrementEntityTotal
+incrementTotalResolvedEntities
 	totalResolvedEntities := (totalResolvedEntities ifNil: [0]) + 1

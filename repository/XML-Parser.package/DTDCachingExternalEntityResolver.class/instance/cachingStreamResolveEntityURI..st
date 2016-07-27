@@ -1,3 +1,3 @@
 private
-cachingStreamResolveEntityURI: aURIOrURIString
-	^ (self cachingResolveEntityURI: aURIOrURIString) readStream
+cachingStreamResolveEntityURI: anXMLURIOrURIString
+	^ (self cachingResolveEntityURI: anXMLURIOrURIString) readStream

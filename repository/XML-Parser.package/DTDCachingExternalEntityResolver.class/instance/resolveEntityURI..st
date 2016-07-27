@@ -1,7 +1,7 @@
 resolving
-resolveEntityURI: aURIOrURIString
+resolveEntityURI: anXMLURIOrURIString
 	| uri |
 
-	(uri := aURIOrURIString asXMLURI) isLocalURI
+	(uri := anXMLURIOrURIString asXMLURI) isLocalURI
 		ifTrue: [^ super resolveEntityURI: uri]
 		ifFalse: [^ self cachingResolveEntityURI: uri]

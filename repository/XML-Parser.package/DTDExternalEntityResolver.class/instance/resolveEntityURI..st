@@ -1,6 +1,6 @@
 resolving
-resolveEntityURI: aURIOrURIString
+resolveEntityURI: anXMLURIOrURIString
 	^ self resolveEntityWith: [:maxSize |
-		aURIOrURIString asXMLURI
+		anXMLURIOrURIString asXMLURI
 			getUpToLimit: maxSize
 			decoding: false]

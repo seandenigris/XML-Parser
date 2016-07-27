@@ -4,6 +4,6 @@ resolveEntityWith: aBlock
 
 	self checkExternalEntityLimit.
 	result := aBlock value: self maxExternalEntitySize.
-	self incrementEntityTotal.
+	self incrementTotalResolvedEntities.
 
 	^ result.

@@ -27,5 +27,5 @@ nextDoctypeDeclaration
 
 	streamReader skipSeparators.
 	streamReader peek == $[
-		ifTrue: [self nextInternalSubsetStart]
+		ifTrue: [self nextStartInternalSubset]
 		ifFalse: [self nextEndDoctypeDeclaration].

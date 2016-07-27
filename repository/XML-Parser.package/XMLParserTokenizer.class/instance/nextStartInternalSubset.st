@@ -1,5 +1,5 @@
 tokenizing - dtd
-nextInternalSubsetStart
+nextStartInternalSubset
 	"skip ["
 	streamReader next.
 	context := context internalSubsetContext.

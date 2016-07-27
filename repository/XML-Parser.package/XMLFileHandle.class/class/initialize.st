@@ -1,7 +1,8 @@
-initialization
+class initialization
 initialize
 	"self initialize"
 
+	"a class variable so it's shared by all subclasses"
 	XMLDocumentFileExtensions :=
 		Set withAll: "avoid newFrom: for GS portability"
 			#('dbk' "DocBook XML"
