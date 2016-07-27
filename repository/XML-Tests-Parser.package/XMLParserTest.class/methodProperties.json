@@ -84,7 +84,7 @@
 		"testProcessingInstructionsReservedTargets" : "monty 4/6/2015 05:21",
 		"testProcessingInstructionsWhitespace" : "monty 4/4/2015 06:57",
 		"testRequiredDTDDeclarations" : "monty 4/13/2015 00:17",
-		"testReusingParser" : "monty 4/7/2015 05:16",
+		"testReusingParser" : "monty 6/21/2015 03:04",
 		"testSelfReferentialEntityReplacement" : "monty 4/13/2015 03:21",
 		"testStandalone" : "monty 3/22/2015 03:35",
 		"testSubsetEndingEntityReplacement" : "monty 1/12/2014 23:20",

@@ -6,7 +6,12 @@ testCopy
 	| nodeWithNodes nodeWithNodesCopy unvisitedPairs visitedPairs copiedClasses |
 
 	super testCopy.
+
 	nodeWithNodes := self newNodeWithNodes.
+	"initialize the configuration (if it can have one)"
+	nodeWithNodes configuration
+		ifNotNil: [:config | config nodeFactory: XMLPluggableNodeFactory new].
+
 	nodeWithNodesCopy := nodeWithNodes copy.
 	self
 		assert: nodeWithNodes printString = nodeWithNodesCopy printString;
