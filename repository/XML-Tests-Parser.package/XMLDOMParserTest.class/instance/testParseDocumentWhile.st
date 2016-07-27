@@ -1,18 +1,13 @@
 tests
 testParseDocumentWhile
-	| i document continue |
+	| i document |
 
-	continue := true.
 	self
 		shouldnt: [
 			i := 0.
 			document :=
 				(XMLDOMParser on: '<root><one>two<#malformed')
-					parseDocumentWhile: [
-						i + 1 > 4
-							ifTrue: [continue := false].
-						i := i + 1.
-						continue]]
+					parseDocumentWhile: [(i := i + 1) <= 4]]
 		raise: XMLWellFormednessException.
 
 	self

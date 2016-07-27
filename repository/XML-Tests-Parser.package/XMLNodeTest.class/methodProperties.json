@@ -1,8 +1,6 @@
 {
 	"class" : {
-		"reorderTests" : "JAAyer 11/20/2010 14:20",
-		"reorderTests:in:" : "JAAyer 11/24/2010 08:18",
-		"reorderTestsIn:" : "JAAyer 11/21/2010 05:05" },
+		 },
 	"instance" : {
 		"assertNode:hasName:namespaceURI:" : "JAAyer 10/30/2010 21:51",
 		"assertNode:hasPrefix:uri:" : "JAAyer 10/20/2010 18:20",

@@ -3,11 +3,11 @@ testSAXIgnorableWhitespace
 	| xml parser whitespace |
 
 	xml := '
-	<root>
-		<child>
+	<one>
+		<two>
 			test
-		</child>
-	</root>
+		</two>
+	</one>
 	'.
 	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: xml)) parseDocument.
 	self assert:

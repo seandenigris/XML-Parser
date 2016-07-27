@@ -27,7 +27,7 @@ testEntityURIInheritance
 	2 timesRepeat: [parser parseToken].
 	self assert: driver currentURI = '/new/xml'.
 
-	2 timesRepeat: [parser parseToken].
+	3 timesRepeat: [parser parseToken].
 	self
 		assert: driver currentURI = 'test.xml';
 		assert: parser atEnd.

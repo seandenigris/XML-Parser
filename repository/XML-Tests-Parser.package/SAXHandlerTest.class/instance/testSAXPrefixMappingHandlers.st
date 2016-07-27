@@ -1,13 +1,14 @@
 tests
 testSAXPrefixMappingHandlers
-	| xml parser |
+	| parser |
 
-	xml := '<prefix:root xmlns:prefix="prefixNS" xmlns="defaultNS"></prefix:root>'.
-	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: xml)) parseDocument.
+	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: self prefixedXMLSource)) parseDocument.
 	self assert:
 		#(startDocument
 			startPrefixMapping:uri: startPrefixMapping:uri:
-			startElement:prefix:uri:localName:attributes: endElement:prefix:uri:localName:
+			startElement:prefix:uri:localName:attributes:
+			characters:
+			endElement:prefix:uri:localName:
 			endPrefixMapping: endPrefixMapping:
 			endDocument) = parser sentHandlerSelectors.
 	self assert:
