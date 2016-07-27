@@ -48,6 +48,7 @@
 		"testIncompleteStartTagTokens" : "monty 1/22/2014 23:19",
 		"testIncompleteXMLDeclarationTokens" : "monty 1/22/2014 23:17",
 		"testInvalidElementContentModels" : "monty 12/8/2014 12:35",
+		"testIsInContent" : "monty 3/24/2015 20:33",
 		"testLineEndingsDoNotMatter" : "monty 3/22/2015 03:34",
 		"testNamespacePrefixAliasing" : "monty 1/31/2014 00:15",
 		"testNamespacePrefixInheritance" : "monty 12/28/2014 19:50",
