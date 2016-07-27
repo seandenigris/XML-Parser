@@ -2,22 +2,16 @@ tests
 testUndeclarePrefix
 	| element |
 
-	element :=
-		XMLElement
-			name: 'outer'
-			namespaces: (Array with: '' -> 'defaultNS' with: 'unused' -> 'unusedNS' with: 'used' -> 'usedNS').
-	element addElementNamed: 'used:inner'.
+	element := self newElementWithAttributes.
+	element addElementNamed: 'prefix:inner'.
 
 	self
-		shouldnt: [element undeclarePrefix: '']
-		raise: XMLNamespaceException.
-	self
-		shouldnt: [element undeclarePrefix: 'unused']
-		raise: XMLNamespaceException.
+		assert: (element undeclarePrefix: '') == element;
+		assert: (element undeclarePrefix: 'prefixTwo') == element.
 	element allElementsDo: [:each |
 		self
 			deny: (each isDeclaredPrefix: '');
-			deny: (each isDeclaredPrefix: 'unused')].
+			deny: (each isDeclaredPrefix: 'prefixTwo')].
 	self
-		should: [element undeclarePrefix: 'used']
+		should: [element undeclarePrefix: 'prefix']
 		raise: XMLNamespaceException.

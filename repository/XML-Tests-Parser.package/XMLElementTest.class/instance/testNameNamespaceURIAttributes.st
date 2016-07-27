@@ -8,7 +8,7 @@ testNameNamespaceURIAttributes
 		self nodeClass
 			name: 'prefix:one'
 			namespaceURI: 'prefixNS'
-			attributes: attributes.
+			attributes: self attributeAssociations.
 	self
 		assert: element name = 'prefix:one';
 		assert: element namespaceURI = 'prefixNS';

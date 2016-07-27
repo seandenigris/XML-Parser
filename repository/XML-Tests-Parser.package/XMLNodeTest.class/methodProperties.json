@@ -4,10 +4,14 @@
 	"instance" : {
 		"assertList:collects:" : "monty 11/7/2014 14:19",
 		"assertList:selects:" : "monty 3/9/2015 19:06",
+		"attributeAssociations" : "monty 2/24/2016 15:26",
+		"attributes" : "monty 2/24/2016 15:26",
 		"collectListClass" : "monty 11/7/2014 14:19",
 		"escapedString" : "monty 12/1/2014 09:31",
 		"markupString" : "monty 11/7/2014 13:56",
-		"newElementWithAttributes" : "monty 11/24/2014 18:37",
+		"namespaceAssociations" : "monty 2/24/2016 16:31",
+		"namespaces" : "monty 2/24/2016 15:23",
+		"newElementWithAttributes" : "monty 2/24/2016 16:23",
 		"nodeClass" : "monty 11/2/2014 10:59",
 		"selectListClass" : "monty 3/9/2015 19:06",
 		"should:enumerate:" : "JAAyer 10/28/2010 21:25",
@@ -41,4 +45,6 @@
 		"testPreviousNode" : "monty 11/19/2014 20:58",
 		"testRawContentString" : "monty 11/19/2014 23:47",
 		"testSortKey" : "monty 12/2/2014 22:58",
-		"testValidate" : "monty 4/6/2015 06:41" } }
+		"testValidate" : "monty 4/6/2015 06:41",
+		"unprefixedAttributeAssociations" : "monty 2/24/2016 15:31",
+		"unprefixedAttributes" : "monty 2/24/2016 15:24" } }

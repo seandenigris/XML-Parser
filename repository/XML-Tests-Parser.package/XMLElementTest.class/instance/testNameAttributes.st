@@ -4,7 +4,10 @@ testNameAttributes
 
 	attributes := self attributes.
 	unprefixedAttributes := self unprefixedAttributes.
-	element := self nodeClass name: 'one' attributes: unprefixedAttributes.
+	element :=
+		self nodeClass
+			name: 'one'
+			attributes: self unprefixedAttributeAssociations.
 	self
 		assert: element name = 'one';
 		assertElement: element hasAttributes: unprefixedAttributes.

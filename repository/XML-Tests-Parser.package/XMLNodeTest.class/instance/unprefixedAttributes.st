@@ -1,0 +1,3 @@
+accessing
+unprefixedAttributes
+	^ OrderPreservingStringDictionary newFrom: self unprefixedAttributeAssociations

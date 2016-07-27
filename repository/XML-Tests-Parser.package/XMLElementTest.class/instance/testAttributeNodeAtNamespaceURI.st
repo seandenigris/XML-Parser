@@ -6,5 +6,5 @@ testAttributeNodeAtNamespaceURI
 	self assert:
 		(element attributeNodeAt: 'prefix:three' namespaceURI: 'absent') isNil.
 	self assert:
-		(element attributeNodeAt: 'prefix:three' namespaceURI: 'testNS') ==
+		(element attributeNodeAt: 'prefix:three' namespaceURI: 'prefixNS') ==
 			(element attributeNodes third).

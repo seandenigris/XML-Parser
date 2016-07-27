@@ -1,0 +1,3 @@
+accessing
+namespaces
+	^ OrderPreservingStringDictionary newFrom: self namespaceAssociations

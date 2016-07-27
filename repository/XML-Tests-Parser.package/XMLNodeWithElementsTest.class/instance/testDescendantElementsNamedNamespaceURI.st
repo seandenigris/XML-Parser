@@ -1,22 +1,22 @@
 tests
-testDescendentElementsNamedNamespaceURI
-	| nodeWithElements descendentElements namedElements |
+testDescendantElementsNamedNamespaceURI
+	| nodeWithElements descendantElements namedElements |
 
 	nodeWithElements := self newNodeWithElements.
 	self assert:
 		(nodeWithElements
-			descendentElementsNamed: 'four'
+			descendantElementsNamed: 'four'
 			namespaceURI: 'absent') isEmpty.
 
-	descendentElements := nodeWithElements descendentElements.
+	descendantElements := nodeWithElements descendantElements.
 	namedElements :=
 		nodeWithElements
-			descendentElementsNamed: 'four'
+			descendantElementsNamed: 'four'
 			namespaceURI: 'testNS'. 
 	self
 		assert: namedElements size = 2;
 		assertList: namedElements
 		selects:
-			(descendentElements select: [:each |
+			(descendantElements select: [:each |
 				(each isNamed: 'four')
 					and: [each namespaceURI = 'testNS']]).

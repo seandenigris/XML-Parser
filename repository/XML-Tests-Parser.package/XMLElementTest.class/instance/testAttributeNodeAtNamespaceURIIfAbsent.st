@@ -11,6 +11,6 @@ testAttributeNodeAtNamespaceURIIfAbsent
 	self assert:
 		(element
 			attributeNodeAt: 'prefix:three'
-			namespaceURI: 'testNS'
+			namespaceURI: 'prefixNS'
 			ifAbsent: [#absent]) ==
 				(element attributeNodes third).

@@ -2,18 +2,13 @@ tests
 testUndeclaringAttributePrefixes
 	| element |
 
-	element :=
-		XMLElement
-			name: 'element'
-			namespaces: (Array with: '' -> 'defaultNS' with: 'unused' -> 'unusedNS' with: 'used' -> 'usedNS')
-			attributes: (Array with: 'name' -> 'value' with: 'used:name' -> 'value').
-
+	element := self newElementWithAttributes.
 	self
 		shouldnt: [element undeclarePrefix: '']
 		raise: XMLNamespaceException.
 	self
-		shouldnt: [element undeclarePrefix: 'unused']
+		shouldnt: [element undeclarePrefix: 'prefixTwo']
 		raise: XMLNamespaceException.
 	self
-		should: [element undeclarePrefix: 'used']
+		should: [element undeclarePrefix: 'prefix']
 		raise: XMLNamespaceException.

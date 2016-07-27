@@ -1,22 +1,22 @@
 tests
-testDescendentElementsDetectIfNone
-	| nodeWithElements descendentElements detectedElement |
+testDescendantElementsDetectIfNone
+	| nodeWithElements descendantElements detectedElement |
 
 	nodeWithElements := self newNodeWithElements.
-	descendentElements := nodeWithElements descendentElements.
+	descendantElements := nodeWithElements descendantElements.
 	detectedElement :=
 		nodeWithElements
-			descendentElementsDetect: [:each | each isNamed: 'prefix:four']
+			descendantElementsDetect: [:each | each isNamed: 'prefix:four']
 			ifNone: [#absent].
 	self
 		deny: detectedElement = #absent;
 		assert: (detectedElement isNamed: 'prefix:four').
 	self assert:	
 		detectedElement ==
-			(descendentElements
+			(descendantElements
 				detect: [:each | each isNamed: 'prefix:four'] 
 				ifNone: [#absent]).
 	self assert:
 		(detectedElement
-			descendentElementsDetect: [:each | each isNamed: 'prefix:four']
+			descendantElementsDetect: [:each | each isNamed: 'prefix:four']
 			ifNone: [#absent]) = #absent.
