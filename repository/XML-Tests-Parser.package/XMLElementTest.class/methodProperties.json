@@ -14,4 +14,11 @@
 		"test4elementAttributes" : "JAAyer 11/20/2010 08:03",
 		"test5elementConstructors" : "JAAyer 11/20/2010 08:03",
 		"test6elementPrinting" : "JAAyer 11/20/2010 08:03",
-		"test7contentNodeEnumeration" : "JAAyer 11/10/2010 04:58" } }
+		"test7contentNodeEnumeration" : "JAAyer 11/10/2010 04:58",
+		"testCanonicalPrinting" : "monty 10/12/2014 01:06",
+		"testPrintingDefaultNamespaces" : "monty 10/13/2014 01:49",
+		"testPrintingNonRootNamespaces" : "monty 10/13/2014 01:46",
+		"testPrintingRootNamespaces" : "monty 10/13/2014 01:47",
+		"testUndeclaringAttributePrefixes" : "monty 10/12/2014 01:13",
+		"testUndeclaringElementPrefixes" : "monty 10/12/2014 01:13",
+		"testUndeclaringReservedPrefixes" : "monty 10/12/2014 01:39" } }

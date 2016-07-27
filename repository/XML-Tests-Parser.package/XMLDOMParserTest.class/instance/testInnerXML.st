@@ -4,6 +4,9 @@ testInnerXML
 
 	document := XMLDOMParser parse: self addressBookXML.
 	document allElementsNamed: 'person' do: [:person |
+		#('address' 'job-info' 'manager') do: [:each |
+			self assert: (person elementAt: each) innerXML isEmpty].
+
 		address1 := (person attributeAt: 'first-name'), '@example.com'.
 		address2 := (person attributeAt: 'first-name'), '@users.example.com'.
 		innerXml := '<email>', address1, '</email><email2>', address2, '</email2>'.
