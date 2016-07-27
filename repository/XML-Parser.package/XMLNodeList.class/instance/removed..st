@@ -1,6 +1,6 @@
 private
 removed: aNode
-	self stopObserving: aNode.
+	aNode removeObserver: self.
 	aNode isElement
 		ifTrue: [
 			self elements remove: aNode.

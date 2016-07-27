@@ -15,4 +15,4 @@ test043removingNodes
 		from: node.
 	self
 		assert: node removeNodes = node;
-		assert: node isEmpty.
+		deny: node hasChildren.

@@ -1,3 +1,5 @@
 testing
 notEmpty
-	^ self isEmpty not
+	self deprecated: 'use #hasChildren instead'.
+
+	^ self hasChildren.

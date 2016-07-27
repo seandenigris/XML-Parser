@@ -5,7 +5,7 @@ test052elementContentString
 	str := self markupString.
 	(element := XMLElement new) contentString: str.
 	self
-		deny: element isEmpty;
+		assert: element hasChildren;
 		assert: element hasContentNodes;
 		assert: element hasStringNodes;
 		assert: element contentString = str.

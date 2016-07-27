@@ -11,7 +11,9 @@ setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attribute
 			re-validating the attributes, which the parser should have already done"
 			attributes := XMLAttributeList new: anAttributeDictionary size.
 			anAttributeDictionary keysAndValuesDo: [:key :value |
-				self beParentOf: (attributes addName: key value: value)].
-			self startObserving: attributes].
+				(attributes addName: key value: value)
+					addObserver: self;
+					element: self].
+			attributes addObserver: self].
 
 	namespaceScope := aNamespaceScope.

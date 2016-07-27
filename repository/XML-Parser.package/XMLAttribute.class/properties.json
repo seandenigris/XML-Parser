@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "JAAyer 7/21/2010 12:32",
 	"instvars" : [
+		"element",
 		"name",
 		"value" ],
 	"name" : "XMLAttribute",

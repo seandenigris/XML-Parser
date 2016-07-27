@@ -1,3 +1,3 @@
 testing
-isNamed: aString
-	^ self nodeName isSameAs: aString
+isNamed: aName
+	^ self nodeName isSameAs: aName

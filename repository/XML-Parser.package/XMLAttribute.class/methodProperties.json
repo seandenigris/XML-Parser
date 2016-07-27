@@ -1,7 +1,9 @@
 {
 	"class" : {
-		"name:value:" : "JAAyer 3/23/2010 13:37" },
+		"name:value:" : "JAAyer 10/24/2010 18:05" },
 	"instance" : {
+		"element" : "JAAyer 10/24/2010 18:04",
+		"element:" : "JAAyer 10/24/2010 18:04",
 		"expandedName" : "JAAyer 4/12/2010 00:37",
 		"hasPrefix" : "JAAyer 6/26/2010 07:31",
 		"isAttribute" : "JAAyer 3/7/2010 04:38",
@@ -9,12 +11,11 @@
 		"localName" : "JAAyer 6/27/2010 15:16",
 		"name" : "JAAyer 7/12/2010 00:14",
 		"name:" : "JAAyer 6/27/2010 15:19",
-		"namespaceURI" : "JAAyer 8/9/2010 15:05",
+		"namespaceURI" : "JAAyer 10/24/2010 18:15",
 		"nodeName" : "JAAyer 7/27/2010 12:52",
 		"nodeNameChangedFrom:to:" : "JAAyer 7/11/2010 02:25",
 		"prefix" : "JAAyer 3/17/2010 03:48",
 		"prefix:" : "JAAyer 6/15/2010 15:15",
 		"printXMLOn:" : "JAAyer 8/9/2010 15:03",
-		"setName:value:" : "JAAyer 6/27/2010 15:19",
 		"value" : "JAAyer 7/22/2010 03:02",
 		"value:" : "JAAyer 3/5/2010 08:18" } }

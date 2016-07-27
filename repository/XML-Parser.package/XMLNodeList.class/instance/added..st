@@ -1,6 +1,6 @@
 private
 added: aNode
-	self startObserving: aNode.
+	aNode addObserver: self.
 	aNode isElement
 		ifTrue: [
 			self last == aNode

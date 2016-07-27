@@ -1,3 +1,5 @@
 notifications
 removedAttribute: anAttribute
-	self stopBeingParentOf: anAttribute
+	anAttribute
+		removeObserver: self;
+		element: nil

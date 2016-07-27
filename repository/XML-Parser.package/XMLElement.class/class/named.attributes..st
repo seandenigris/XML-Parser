@@ -1,5 +1,5 @@
 instance creation
-named: aString attributes: aDictionary
+named: aName attributes: aDictionary
 	self deprecated: 'use #name:attributes: instead'.
 
-	^ self name: aString attributes: aDictionary.
+	^ self name: aName attributes: aDictionary.

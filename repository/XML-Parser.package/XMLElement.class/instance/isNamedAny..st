@@ -1,3 +1,3 @@
 testing
-isNamedAny: aStringArray
-	^ aStringArray anySatisfy: [:each | self isNamed: each]
+isNamedAny: aNameArray
+	^ aNameArray anySatisfy: [:each | self isNamed: each]

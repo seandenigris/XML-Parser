@@ -1,3 +1,3 @@
 accessing
-localPart: aString
-	localPart := aString
+localPart: aLocalPart
+	localPart := aLocalPart

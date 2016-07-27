@@ -4,10 +4,10 @@ test010node
 
 	node := XMLMockNode new.
 	self
-		assert: node isEmpty;
+		deny: node hasChildren;
 		assert:
 			(#(isAttribute isCData isComment isContentNode isDocument
-				isElement isPI isStringNode hasParent notEmpty)
+				isElement isPI isStringNode hasParent)
 					noneSatisfy: [:each | node perform: each]);
 		assert:
 			(#(nextNode previousNode parent)

@@ -1,3 +1,5 @@
 notifications
 addedNode: aNode
-	self beParentOf: aNode
+	aNode
+		addObserver: self;
+		parent: self

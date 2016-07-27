@@ -1,3 +1,5 @@
 notifications
 removedNode: aNode
-	self stopBeingParentOf: aNode
+	aNode
+		removeObserver: self;
+		parent: nil.

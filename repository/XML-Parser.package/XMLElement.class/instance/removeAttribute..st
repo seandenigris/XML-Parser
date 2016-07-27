@@ -1,3 +1,3 @@
 accessing
-removeAttribute: aString
-	^ (self attributeNodes removeAttributeNamed: aString) value
+removeAttribute: aName
+	^ (self attributeNodes removeAttributeNamed: aName) value

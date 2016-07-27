@@ -4,8 +4,7 @@ test040emptyNodeWithElements
 
 	node := XMLMockNodeWithElements new.
 	self
-		assert: node isEmpty;
-		deny: node notEmpty;
+		deny: node hasChildren;
 		deny: node hasElements;
 		assert: node nodes isEmpty;
 		assert: node elements isEmpty;

@@ -1,3 +1,3 @@
 testing
-includesElement: aString
-	^ self nodes includesElementNamed: aString
+includesElement: aName
+	^ self nodes includesElementNamed: aName

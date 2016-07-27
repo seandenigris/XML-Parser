@@ -1,7 +1,7 @@
 searching
-tagsNamed: aString do: aOneArgumentBlock
-	"Search for nodes with tag aString. When encountered evaluate aOneArgumentBlock"
+tagsNamed: aName do: aOneArgumentBlock
+	"Search for nodes with tag aName. When encountered evaluate aOneArgumentBlock"
 
 	self recurse: [:each |
-		(each isNamed: aString)
+		(each isNamed: aName)
 			ifTrue: [aOneArgumentBlock valueWithPossibleArgument: each]]

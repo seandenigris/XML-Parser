@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"added:" : "JAAyer 6/25/2010 13:53",
+		"added:" : "JAAyer 10/24/2010 18:18",
 		"adding:" : "JAAyer 7/22/2010 11:04",
 		"elementAddedAtEnd:" : "JAAyer 10/19/2010 10:57",
 		"elementInsertedBeforeEnd:" : "JAAyer 10/19/2010 10:57",
@@ -22,5 +22,5 @@
 		"findElementBefore:withName:" : "JAAyer 6/9/2010 08:22",
 		"hasElements" : "JAAyer 7/20/2010 12:20",
 		"includesElementNamed:" : "JAAyer 6/10/2010 11:43",
-		"removed:" : "JAAyer 10/19/2010 10:56",
+		"removed:" : "JAAyer 10/24/2010 18:26",
 		"renamedElement:from:to:" : "JAAyer 10/19/2010 10:55" } }

@@ -1,6 +1,6 @@
 private
 added: anObject
-	self startObserving: anObject.
+	anObject addObserver: self.
 	self attributesByName
 		at: anObject name ifPresent: [self removeAttributeNamed: anObject name];
 		at: anObject name put: anObject..

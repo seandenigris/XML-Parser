@@ -1,3 +1,3 @@
 accessing
-elementsAt: aString
-	^ self nodes elementsNamed: aString
+elementsAt: aName
+	^ self nodes elementsNamed: aName

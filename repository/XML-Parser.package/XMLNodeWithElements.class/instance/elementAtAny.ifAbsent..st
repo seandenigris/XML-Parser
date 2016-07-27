@@ -1,8 +1,8 @@
 accessing
-elementAtAny: aStringArray ifAbsent: aBlock
+elementAtAny: aNameArray ifAbsent: aBlock
 	| answer |
 
-	aStringArray do: [:each |
+	aNameArray do: [:each |
 		(answer := self elementAt: each)
 			ifNotNil: [^ answer]].
 	^ aBlock value.

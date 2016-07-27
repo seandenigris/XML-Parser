@@ -1,3 +1,3 @@
 enumerating
-elementsAt: aString do: aBlock
-	(self nodes elementsNamed: aString) do: aBlock
+elementsAt: aName do: aBlock
+	(self nodes elementsNamed: aName) do: aBlock

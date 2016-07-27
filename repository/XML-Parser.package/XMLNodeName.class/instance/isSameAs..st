@@ -1,3 +1,3 @@
 testing
-isSameAs: aString
-	^ self qualified = aString or: [self localPart = aString]
+isSameAs: aNameString
+	^ self qualified = aNameString or: [self localPart = aNameString]

@@ -2,7 +2,7 @@
 	"category" : "XML-Parser-Nodes",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TXMLObservable classTrait + TXMLObserver classTrait",
+	"classtraitcomposition" : "TXMLObservable classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "JAAyer 7/10/2010 05:48",
@@ -13,5 +13,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TXMLObservable + TXMLObserver",
+	"traitcomposition" : "TXMLObservable",
 	"type" : "normal" }

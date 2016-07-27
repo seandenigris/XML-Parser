@@ -1,3 +1,3 @@
 accessing
-contentStringAt: aString
-	^ (self elementAt: aString ifAbsent: [^ '']) contentString
+contentStringAt: aName
+	^ (self elementAt: aName ifAbsent: [^ '']) contentString
