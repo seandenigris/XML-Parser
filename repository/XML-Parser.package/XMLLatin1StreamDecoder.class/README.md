@@ -1,1 +1,0 @@
-A stream decoder for ISO Latin-1 streams.

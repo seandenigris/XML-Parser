@@ -1,3 +1,3 @@
 accessing
 fileSize
-	^ (self directoryEntry ifNil: [^ 0]) size
+	^ (self directoryEntry ifNil: [^ 0]) fileSize

@@ -1,5 +1,7 @@
 private
 deleteFileOrDo: aBlock
-	[(self directoryEntry ifNil: [^ aBlock value]) delete]
+	[self fileDirectory
+		deleteFileNamed: path
+		ifAbsent: [^ aBlock value]]
 		on: Error
 		do: aBlock

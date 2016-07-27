@@ -4,7 +4,7 @@
 		"entityCache" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/10/2014 08:16",
+	"commentStamp" : "monty 12/18/2014 19:25",
 	"instvars" : [
 		 ],
 	"name" : "DTDCachingEntityResolver",
