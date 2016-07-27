@@ -1,5 +1,5 @@
 *XML-Parser-GTExtensions
-treeLabelText
+treeNodeLabelText
 	| writer |
 
 	writer := XMLHighlightingWriter new.

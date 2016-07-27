@@ -2,14 +2,14 @@ initialization
 initialize
 	super initialize.
 
-	xmlDeclarationColor := DefaultSecondaryMarkupColor.
-	doctypeDeclarationColor := DefaultSecondaryMarkupColor.
-	piColor := DefaultSecondaryMarkupColor.
+	xmlDeclarationColor := self class defaultSecondaryMarkupColor.
+	doctypeDeclarationColor := self class defaultSecondaryMarkupColor.
+	piColor := self class defaultSecondaryMarkupColor.
 
-	declarationColor := DefaultPrimaryMarkupColor.
-	tagColor := DefaultPrimaryMarkupColor.
+	declarationColor := self class defaultPrimaryMarkupColor.
+	tagColor := self class defaultPrimaryMarkupColor.
 
-	quotedStringValueColor := DefaultQuotedStringValueColor.
-	entityReferenceColor := DefaultEntityReferenceColor.
-	commentColor := DefaultCommentColor.
-	cdataColor := DefaultCDataColor.
+	quotedStringValueColor := self class defaultQuotedStringValueColor.
+	entityReferenceColor := self class defaultEntityReferenceColor.
+	commentColor := self class defaultCommentColor.
+	cdataColor := self class defaultCDataColor.

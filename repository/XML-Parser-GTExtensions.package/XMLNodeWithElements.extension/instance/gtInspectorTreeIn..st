@@ -1,10 +1,10 @@
 *XML-Parser-GTExtensions
 gtInspectorTreeIn: composite
 	<gtInspectorPresentationOrder: 40>
-	^ composite tree 
+	^ composite tree
 		title: 'Tree';
-		display: [ { self } ];
+		display: [ {self} ];
 		children: #elements;
-		format: #treeLabelText;
-		when: [self hasElements];
+		format: #treeNodeLabelText;
+		when: [ self hasElements ];
 		rootsExpanded

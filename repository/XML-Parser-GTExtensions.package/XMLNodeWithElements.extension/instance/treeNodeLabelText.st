@@ -1,3 +1,3 @@
 *XML-Parser-GTExtensions
-treeLabelText
+treeNodeLabelText
 	self subclassResponsibility
