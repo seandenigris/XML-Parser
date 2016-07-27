@@ -36,6 +36,7 @@
 		"testElementEmptyDeclarations" : "monty 11/3/2014 16:23",
 		"testElementMixedContentDeclaration" : "monty 12/8/2014 13:15",
 		"testElementWellFormedness" : "monty 1/13/2014 00:16",
+		"testElementWhitespaceWellFormedness" : "monty 4/3/2015 04:39",
 		"testEntityEmptyReplacements" : "monty 11/28/2014 09:41",
 		"testEntityLiteralContextNesting" : "monty 11/28/2014 09:35",
 		"testEntityReplacement" : "monty 12/8/2013 01:54",
