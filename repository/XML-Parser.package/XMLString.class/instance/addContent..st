@@ -1,3 +1,6 @@
 accessing
 addContent: aStringOrStringNode
-	self string: self string, (self toString: aStringOrStringNode)
+	string :=
+		string
+			ifNil: [aStringOrStringNode asString]
+			ifNotNil: [string, aStringOrStringNode asString]

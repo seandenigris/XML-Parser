@@ -1,0 +1,3 @@
+private
+asString
+	^ self string

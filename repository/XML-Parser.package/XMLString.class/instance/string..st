@@ -1,3 +1,3 @@
 accessing
 string: aString
-	string := self toString: aString
+	string := aString asString
