@@ -8,7 +8,7 @@ getResponseUpToLimit: aMaxSize decoding: aBoolean timeout: aTimeout onError: aBl
 			own decoding that relies on byte-order marks and <?xml?>
 			encoding attributes."
 			((Smalltalk at: #ZnClient) new
-				streaming: aBoolean not;
+				streaming: aBoolean not; "use streaming if not decoding"
 				timeout: aTimeout;
 				url: url;
 				get;

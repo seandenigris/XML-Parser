@@ -3,5 +3,5 @@ initialize
 	"self initialize"
 
 	self
-		initializeDefaultValueValidators;
-		initializeNonEnumerationValidators
+		initializeAttributeDefaultValidatorClasses;
+		initializeNonEnumerationAttributeValidatorClasses

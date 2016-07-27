@@ -4,9 +4,8 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 2/20/2016 11:10",
 	"instvars" : [
-		"defaultValue",
 		"attribute" ],
 	"name" : "XMLAttributeDefaultValidator",
 	"pools" : [

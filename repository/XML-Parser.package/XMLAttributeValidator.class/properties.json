@@ -8,7 +8,7 @@
 	"instvars" : [
 		"element",
 		"attribute",
-		"defaultValueValidator" ],
+		"defaultValidator" ],
 	"name" : "XMLAttributeValidator",
 	"pools" : [
 		 ],

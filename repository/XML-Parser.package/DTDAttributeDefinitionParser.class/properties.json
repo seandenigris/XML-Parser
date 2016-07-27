@@ -3,14 +3,14 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"DefaultValueValidators",
-		"NonEnumerationValidators" ],
+		"AttributeDefaultValidatorClasses",
+		"NonEnumerationAttributeValidatorClasses" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"element",
 		"attribute",
 		"type",
-		"defaultValueValidator" ],
+		"defaultValidator" ],
 	"name" : "DTDAttributeDefinitionParser",
 	"pools" : [
 		 ],

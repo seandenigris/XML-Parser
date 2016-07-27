@@ -15,10 +15,11 @@ addDFAStateTransitionMatching: aMatcher
 
 	matchingNFAStates size > 0
 		ifTrue: [
-			matchingDFAState := dfaStateCache dfaStateForNFAStates: matchingNFAStates.
+			matchingDFAState :=
+				dfaStateCache dfaStateForNFAStates: matchingNFAStates.
 			totalMatched > 1
 				ifTrue: [matchingDFAState hasNonDeterminism: true]].
 
 	^ self dfaStateTransitions
 		at: aMatcher
-		put: matchingDFAState.
+		put: matchingDFAState. "nil if no match"

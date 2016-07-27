@@ -1,6 +1,6 @@
 validating
 validateDeclaration
-	(self attribute at: 1) == $x
+	(self attribute at: 1) == $x "optimization"
 		ifTrue: [
 			(self attribute = 'xml:id')
 				ifTrue: [^ self validateXMLIDAttributeValidator].

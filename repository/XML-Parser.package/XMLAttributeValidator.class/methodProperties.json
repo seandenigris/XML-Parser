@@ -1,22 +1,22 @@
 {
 	"class" : {
-		"element:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
+		"element:attribute:defaultValidator:" : "monty 2/19/2016 14:47",
 		"initialize" : "monty 12/10/2014 11:36" },
 	"instance" : {
 		"attribute" : "monty 12/10/2013 06:17",
+		"defaultValidator" : "monty 2/19/2016 14:46",
 		"element" : "monty 12/10/2013 06:17",
 		"errorInvalidXMLIDAttributeValidator" : "monty 12/23/2014 21:14",
 		"errorInvalidXMLSpaceAttributeValidator" : "monty 3/22/2015 05:53",
 		"furtherNormalizeAttributeValueIn:" : "monty 2/18/2016 04:38",
 		"initializeWithValidatorsFrom:" : "monty 11/14/2015 20:32",
-		"isEnumerationValidator" : "monty 12/11/2014 09:40",
 		"listValuesIn:do:" : "monty 12/14/2014 12:25",
 		"printOn:" : "monty 4/24/2015 08:54",
-		"setElement:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
+		"setElement:attribute:defaultValidator:" : "monty 2/19/2016 14:48",
 		"shouldFurtherNormalizeAttributeValue" : "monty 12/11/2013 02:14",
-		"validateAttributeDefaultIn:" : "monty 2/10/2014 19:58",
+		"validateAttributeDefaultIn:" : "monty 2/19/2016 14:46",
 		"validateAttributeValue:" : "monty 12/28/2013 20:03",
 		"validateAttributes:" : "monty 11/19/2014 18:35",
-		"validateDeclaration" : "monty 11/14/2015 20:31",
+		"validateDeclaration" : "monty 2/20/2016 10:04",
 		"validateXMLIDAttributeValidator" : "monty 3/22/2015 03:58",
 		"validateXMLSpaceAttributeValidator" : "monty 3/22/2015 03:55" } }

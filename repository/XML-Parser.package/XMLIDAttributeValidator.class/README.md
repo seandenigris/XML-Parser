@@ -1,1 +1,1 @@
-This class validates ID attributes that must have unique values.
+This class validates ID attributes that must have unique (not repeated in the same document) values.

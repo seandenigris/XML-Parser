@@ -1,6 +1,6 @@
 class initialization
-initializeNonEnumerationValidators
-	(NonEnumerationValidators := Dictionary new)
+initializeNonEnumerationAttributeValidatorClasses
+	(NonEnumerationAttributeValidatorClasses := Dictionary new)
 		at: 'CDATA' put: XMLCDataAttributeValidator;
 		at: 'ID' put: XMLIDAttributeValidator;
 		at: 'IDREF' put: XMLIDRefAttributeValidator;

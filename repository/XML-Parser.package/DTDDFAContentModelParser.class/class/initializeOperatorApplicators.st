@@ -1,7 +1,7 @@
 class initialization
 initializeOperatorApplicators
 	"use Array for faster lookup"
-	(OperatorApplicators := Array new: 256)
+	(OperatorApplicators := Array new: 255)
 		at: $, asciiValue put: #applyConcatenation;
 		at: $| asciiValue put: #applyBranch;
 		at: $? asciiValue put: #applyOptional;

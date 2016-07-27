@@ -1,3 +1,4 @@
 testing
 isInElement
-	^ self openElements size > 0 or: [self hasExternalRootElement]
+	^ self openElements size > 0
+		or: [self hasExternalRootElement]

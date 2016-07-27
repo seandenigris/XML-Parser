@@ -1,3 +1,0 @@
-testing
-isEnumerationValidator
-	^ false

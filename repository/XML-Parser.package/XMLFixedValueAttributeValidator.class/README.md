@@ -1,1 +1,0 @@
-This class fixes the value of an attribute to a default.

@@ -1,6 +1,6 @@
 private
 errorNonDefaultValue
 	XMLValidationException
-		formatSignal: '#FIXED attribute "{1}" can only have "{2}" as value'
+		formatSignal: 'Fixed attribute "{1}" can only have "{2}" as its value'
 		with: self attribute
 		with: self defaultValue

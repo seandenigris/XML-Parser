@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 2/2/2014 06:07",
+	"commentStamp" : "monty 2/20/2016 05:34",
 	"instvars" : [
 		 ],
-	"name" : "XMLImpliedValueAttributeValidator",
+	"name" : "XMLAttributeDefaultImpliedValidator",
 	"pools" : [
 		 ],
 	"super" : "XMLAttributeDefaultValidator",
