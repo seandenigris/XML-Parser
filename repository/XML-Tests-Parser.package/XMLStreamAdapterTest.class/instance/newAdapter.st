@@ -1,3 +1,3 @@
 instance creation
 newAdapter
-	^ self adapterClass on: self newStream
+	^ self newAdapterOn: self newStream

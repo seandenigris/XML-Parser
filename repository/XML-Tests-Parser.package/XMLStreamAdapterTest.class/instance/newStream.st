@@ -1,3 +1,3 @@
 instance creation
 newStream
-	^ self streamClass on: self streamCollection
+	^ self newStreamOn: self streamCollection

@@ -3,9 +3,9 @@
 		 },
 	"instance" : {
 		"adapterClass" : "monty 2/11/2016 23:33",
-		"newAdapter" : "monty 2/11/2016 23:32",
+		"newAdapterOn:" : "monty 2/15/2016 23:22",
 		"streamConverterClass" : "monty 2/11/2016 23:33",
-		"testHasDefaultStreamConverter" : "monty 2/11/2016 23:34",
+		"testHasDefaultStreamConverter" : "monty 2/15/2016 23:24",
 		"testIsConvertingStreamAdapter" : "monty 2/11/2016 23:34",
 		"testNextPutByteOrderMark" : "monty 2/11/2016 23:57",
 		"testStreamConverter" : "monty 2/14/2016 03:08" } }
