@@ -1,3 +1,4 @@
 accessing
 at: aSymbol
-    ^ self attributeAt: aSymbol ifAbsent: ['']
+
+    ^ self at: aSymbol ifAbsent: ['']

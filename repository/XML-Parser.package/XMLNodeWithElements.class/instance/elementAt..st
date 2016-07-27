@@ -1,3 +1,3 @@
 accessing
 elementAt: aSymbol
-	^self elementAt: aSymbol ifAbsent: [nil]
+	^ self elementAt: aSymbol ifAbsent: [nil]

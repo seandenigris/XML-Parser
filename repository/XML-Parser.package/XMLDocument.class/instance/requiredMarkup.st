@@ -1,3 +1,3 @@
 accessing
 requiredMarkup	
-	^requiredMarkup
+	^ requiredMarkup

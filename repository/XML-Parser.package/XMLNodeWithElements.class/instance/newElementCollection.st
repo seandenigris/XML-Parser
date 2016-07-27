@@ -1,4 +1,0 @@
-factory
-newElementCollection
-
-	^ OrderedCollection new

@@ -1,3 +1,5 @@
 accessing
-valueFor: aSymbol 
-	^self valueFor: aSymbol ifAbsent: ['']
+valueFor: aSymbol
+	self deprecated: 'use #at: as a shortcut instead'.
+
+	^ self at: aSymbol.

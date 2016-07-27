@@ -1,6 +1,3 @@
 accessing
 removeNode: aNode
-
-	^ aNode isTag
-		ifTrue: [self removeElement: aNode]
-		ifFalse: [self removeChildNode: aNode]
+	^ self with: [self remove: aNode from: self nodes] remove: aNode

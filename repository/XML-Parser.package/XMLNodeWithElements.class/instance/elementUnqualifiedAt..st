@@ -1,3 +1,5 @@
 accessing
 elementUnqualifiedAt: aSymbol
-	^self elementUnqualifiedAt: aSymbol ifAbsent: [nil]
+	self deprecated: 'use #elementAt: with an unqualified name instead'.
+
+	^ self elementAt: aSymbol.

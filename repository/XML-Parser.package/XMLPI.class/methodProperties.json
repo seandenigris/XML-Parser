@@ -1,12 +1,10 @@
 {
 	"class" : {
-		"target:data:" : "mir 1/17/2002 13:03" },
+		"target:data:" : "JAAyer 2/25/2010 01:48" },
 	"instance" : {
-		"=" : "JAAyer 2/11/2010 06:27",
-		"data" : "mir 1/17/2002 13:02",
+		"data" : "JAAyer 2/23/2010 22:40",
 		"data:" : "mir 1/17/2002 13:02",
-		"hash" : "JAAyer 2/10/2010 16:50",
-		"isProcessingInstruction" : "mir 1/17/2002 15:28",
+		"isProcessingInstruction" : "JAAyer 2/25/2010 01:48",
 		"printXMLOn:" : "mir 1/17/2002 15:53",
-		"target" : "mir 1/17/2002 13:02",
+		"target" : "JAAyer 2/23/2010 22:40",
 		"target:" : "mir 1/17/2002 13:02" } }

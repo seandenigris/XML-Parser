@@ -1,3 +1,3 @@
 testing
 isText
-	^true
+	^ true

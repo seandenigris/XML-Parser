@@ -1,4 +1,3 @@
 testing
 includesElement: aSymbol
-
-	^ self elementsDictionary includesKey: aSymbol asSymbol
+	^ self elementsByName includesKey: aSymbol asSymbol

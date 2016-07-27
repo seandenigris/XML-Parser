@@ -2,16 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"=" : "JAAyer 2/11/2010 06:27",
-		"dtd" : "mir 11/30/2000 17:48",
+		"dtd" : "JAAyer 2/25/2010 01:48",
 		"dtd:" : "mir 11/30/2000 17:48",
-		"encoding" : "mir 5/16/2003 14:09",
+		"encoding" : "JAAyer 2/25/2010 01:48",
 		"encoding:" : "mir 1/17/2002 12:57",
-		"hash" : "JAAyer 2/10/2010 16:42",
-		"printCanonicalOn:" : "mir 1/17/2002 16:44",
+		"isDocument" : "JAAyer 2/19/2010 23:51",
+		"printCanonicalOn:" : "JAAyer 2/25/2010 14:37",
 		"printXMLOn:" : "mir 5/16/2003 14:08",
-		"requiredMarkup" : "mir 1/17/2002 12:57",
+		"requiredMarkup" : "JAAyer 2/25/2010 01:48",
 		"requiredMarkup:" : "mir 1/17/2002 12:57",
 		"root" : "mir 11/29/2007 14:42",
-		"version" : "mir 1/17/2002 12:57",
+		"version" : "JAAyer 2/25/2010 01:48",
 		"version:" : "mir 1/17/2002 12:57" } }

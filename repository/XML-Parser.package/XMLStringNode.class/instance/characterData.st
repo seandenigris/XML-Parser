@@ -1,3 +1,3 @@
 accessing
 characterData
-	^self string
+	^ self string

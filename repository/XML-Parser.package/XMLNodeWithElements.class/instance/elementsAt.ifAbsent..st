@@ -1,6 +1,3 @@
 accessing
 elementsAt: aSymbol ifAbsent: aBlock
-
-	^ self elementsDictionary
-		at: aSymbol asSymbol
-		ifAbsent: aBlock.
+	^ self elementsByName at: aSymbol asSymbol ifAbsent: aBlock.

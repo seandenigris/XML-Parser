@@ -1,3 +1,3 @@
 testing
 isTag
-	^false
+	^ false

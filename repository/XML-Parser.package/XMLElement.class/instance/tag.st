@@ -1,3 +1,3 @@
 accessing
 tag
-	^ self name asSymbol
+	^ self name

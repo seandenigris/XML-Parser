@@ -1,5 +1,7 @@
 handling tokens
 handleCData: aString
 	self saxHandler
-		checkEOD; 
-		characters: aString
+		checkEOD;
+		startCData;
+		characters: aString;
+		endCData

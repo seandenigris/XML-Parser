@@ -1,3 +1,6 @@
-initialize
-name: aString
-	name := aString asSymbol
+accessing
+name: aSymbol
+	self
+		name: aSymbol
+		namespace: self namespace
+		uri: self namespaceURI

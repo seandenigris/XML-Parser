@@ -1,3 +1,3 @@
-name space
+namespace
 namespace
 	^ namespace

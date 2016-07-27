@@ -1,0 +1,1 @@
+A SAXHandler is an XML parser that parses XML using event handling. The acronym "SAX" refers to Java's "Simple API for XML," on which SAXHandler's API is based. To use this class, create a subclass and override handlers in "content" and "lexical" as needed.

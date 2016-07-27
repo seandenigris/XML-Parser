@@ -1,4 +1,3 @@
 testing
 includesAttribute: aSymbol
-
-	^ self attributes includesKey: aSymbol
+	^ self attributes includesKey: aSymbol asSymbol

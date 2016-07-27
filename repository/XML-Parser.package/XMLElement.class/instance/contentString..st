@@ -1,6 +1,5 @@
 accessing
 contentString: aString
-
 	self
-		removeAll;
+		removeNodes;
 		addContent: aString

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		"CanonicalTable" ],
-	"commentStamp" : "",
+	"commentStamp" : "JAAyer 2/19/2010 03:30",
 	"instvars" : [
 		"parent" ],
 	"name" : "XMLNode",

@@ -1,0 +1,3 @@
+private
+changedChildElement: anElement
+	self rebuildElementCache

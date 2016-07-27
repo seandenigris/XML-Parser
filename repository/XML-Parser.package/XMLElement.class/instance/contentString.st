@@ -1,8 +1,8 @@
 accessing
 contentString
-	| contentElements |
-	contentElements := self elementsAndContents.
-	^(contentElements size > 0
-		and: [contentElements first isText])
-		ifTrue: [contentElements first string]
+	| firstContentNode |
+
+	firstContentNode := self elementsAndContents at: 1 ifAbsent: [^ ''].
+	^ firstContentNode isText
+		ifTrue: [firstContentNode string]
 		ifFalse: ['']

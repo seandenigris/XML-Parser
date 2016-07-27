@@ -1,5 +1,5 @@
 instance creation
 target: targetName data: aString
-	^self new
+	^ self new
 		target: targetName;
 		data: aString

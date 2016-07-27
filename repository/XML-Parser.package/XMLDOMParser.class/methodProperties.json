@@ -1,10 +1,12 @@
 {
 	"class" : {
 		"addressBookXMLWithDTD" : "mir 7/12/2006 16:26",
+		"parse:" : "JAAyer 2/21/2010 00:17",
 		"parseDocumentFrom:" : "mir 7/12/2006 16:25",
-		"parseDocumentFrom:useNamespaces:" : "JAAyer 2/13/2010 10:44" },
+		"parseDocumentFrom:useNamespaces:" : "JAAyer 2/13/2010 10:44",
+		"parseWithNamespaces:" : "JAAyer 2/21/2010 00:17" },
 	"instance" : {
-		"characters:" : "mir 10/25/2000 11:30",
+		"characters:" : "JAAyer 2/18/2010 11:54",
 		"defaultNamespace" : "mir 6/16/2003 17:20",
 		"documentAttributes:" : "thf 9/2/2005 14:09",
 		"domDocument" : "mir 6/5/2003 19:29",

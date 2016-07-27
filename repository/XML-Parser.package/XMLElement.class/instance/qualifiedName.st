@@ -1,5 +1,3 @@
-name space
+namespace
 qualifiedName
-	^self namespace
-		ifNil: [self localName]
-		ifNotNil: [self namespace , ':' , self localName]
+	^ name ifNil: [#'']

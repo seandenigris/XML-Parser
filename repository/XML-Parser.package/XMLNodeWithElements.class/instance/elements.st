@@ -1,3 +1,3 @@
 accessing
 elements
-	^ elements ifNil: [elements := self newElementCollection]
+	^ elements ifNil: [elements := self newElements]

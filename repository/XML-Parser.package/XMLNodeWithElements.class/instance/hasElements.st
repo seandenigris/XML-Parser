@@ -1,3 +1,3 @@
 testing
 hasElements
-	^self elements notEmpty
+	^ self elements notEmpty

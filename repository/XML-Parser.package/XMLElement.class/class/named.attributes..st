@@ -1,5 +1,5 @@
 instance creation
 named: aString attributes: attributeList
-	^self new
+	^ self new
 		name: aString;
 		setAttributes: attributeList

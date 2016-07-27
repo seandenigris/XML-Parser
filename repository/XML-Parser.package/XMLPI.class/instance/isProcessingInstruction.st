@@ -1,3 +1,3 @@
 testing
 isProcessingInstruction
-	^true
+	^ true

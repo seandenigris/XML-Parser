@@ -1,5 +1,3 @@
 accessing
 addNode: aNode
-	^ aNode isTag
-		ifTrue: [self addElement: aNode]
-		ifFalse: [self addChildNode: aNode]
+	^ self with: [self nodes add: aNode] add: aNode.

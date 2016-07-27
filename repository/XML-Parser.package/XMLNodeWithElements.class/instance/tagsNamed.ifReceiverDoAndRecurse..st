@@ -1,5 +1,5 @@
 searching
 tagsNamed: aSymbol ifReceiverDoAndRecurse: aOneArgumentBlock
-	"Recurse all children"
+	self deprecated: 'use #tagsNamed:do: instead'.
 
-	self tagsNamed: aSymbol do: aOneArgumentBlock
+	self tagsNamed: aSymbol do: aOneArgumentBlock.

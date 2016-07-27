@@ -1,3 +1,3 @@
-name space
+namespace
 localName
-	^ name
+	^ localName ifNil: [#'']

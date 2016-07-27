@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"string:" : "mir 10/25/2000 11:30" },
+		"string:" : "JAAyer 2/25/2010 01:48" },
 	"instance" : {
-		"=" : "JAAyer 2/11/2010 06:28",
-		"characterData" : "",
-		"hash" : "JAAyer 2/10/2010 16:11",
-		"isText" : "mir 1/17/2002 15:27",
+		"addContent:" : "JAAyer 2/23/2010 02:55",
+		"characterData" : "JAAyer 2/25/2010 01:48",
+		"isText" : "JAAyer 2/25/2010 01:48",
 		"printXMLOn:" : "mir 1/17/2002 15:53",
-		"string" : "mir 10/25/2000 11:28",
-		"string:" : "JAAyer 2/13/2010 10:21" } }
+		"string" : "JAAyer 2/25/2010 01:48",
+		"string:" : "JAAyer 2/23/2010 02:55",
+		"toString:" : "JAAyer 2/23/2010 03:03" } }

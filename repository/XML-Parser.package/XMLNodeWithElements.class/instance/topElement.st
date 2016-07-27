@@ -1,3 +1,3 @@
 accessing
 topElement
-	^self elements first
+	^ self elements at: 1 ifAbsent: [nil]

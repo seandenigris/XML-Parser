@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "JAAyer 2/21/2010 22:27",
 	"instvars" : [
 		"nodes",
 		"elements",
-		"elementsDictionary",
+		"elementsByName",
 		"uri",
 		"namespace" ],
 	"name" : "XMLNodeWithElements",
