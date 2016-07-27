@@ -19,7 +19,7 @@
 		"testIsEmpty" : "monty 11/4/2014 12:23",
 		"testIsString" : "monty 11/6/2014 02:20",
 		"testIsStringNode" : "monty 11/20/2014 02:48",
-		"testIsWhitespace" : "monty 12/14/2014 07:50",
+		"testIsWhitespace" : "monty 4/7/2015 09:29",
 		"testMergeAdjacent" : "monty 11/4/2014 20:59",
 		"testPrepend" : "monty 11/4/2014 12:46",
 		"testReplaceAllWith" : "monty 11/4/2014 12:46",
@@ -28,5 +28,4 @@
 		"testSortKey" : "monty 12/2/2014 22:59",
 		"testSplitAt" : "monty 11/4/2014 17:16",
 		"testString" : "monty 11/4/2014 17:13",
-		"testWriteXMLOn" : "monty 11/22/2014 19:29",
-		"whitespaceCharacters" : "monty 4/4/2015 23:29" } }
+		"testWriteXMLOn" : "monty 11/22/2014 19:29" } }
