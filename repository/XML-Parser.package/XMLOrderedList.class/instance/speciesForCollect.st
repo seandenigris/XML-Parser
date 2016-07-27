@@ -1,0 +1,3 @@
+private
+speciesForCollect
+	^ self species

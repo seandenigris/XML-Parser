@@ -6,4 +6,4 @@ nextWhitespace
 	[(nextChar := self peek) notNil
 		and: [SeparatorCharacters includes: nextChar]]
 		whileTrue: [writeBuffer nextPut: self next].
-	^ writeBuffer stringContents.
+	^ writeBuffer contents.

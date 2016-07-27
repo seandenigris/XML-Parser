@@ -1,10 +1,11 @@
 {
 	"class" : {
-		 },
+		"notifications" : "OttoBehrens 2/15/2011 08:33" },
 	"instance" : {
 		"addContent:" : "JAAyer 7/20/2010 10:15",
+		"addObserver:" : "OttoBehrens 2/15/2011 08:33",
 		"allNodesDo:" : "JAAyer 11/25/2010 10:59",
-		"canonicallyPrintOn:" : "JAAyer 11/26/2010 18:53",
+		"canonicallyPrintOn:" : "JAA 3/22/2011 15:15",
 		"canonicallyPrinted" : "JAAyer 11/6/2010 01:19",
 		"characterData" : "JAAyer 7/20/2010 10:15",
 		"contentString" : "JAAyer 11/26/2010 12:16",
@@ -25,13 +26,18 @@
 		"nextNode" : "JAAyer 10/30/2010 19:56",
 		"notEmpty" : "JAAyer 10/24/2010 18:49",
 		"notifier" : "JAAyer 6/11/2010 10:17",
+		"notifyOf:with:" : "OttoBehrens 2/15/2011 08:33",
+		"notifyOf:with:with:" : "OttoBehrens 2/15/2011 08:34",
+		"notifyOf:with:with:with:" : "OttoBehrens 2/15/2011 08:34",
+		"notifyOf:withArguments:" : "OttoBehrens 2/15/2011 08:34",
 		"parent" : "JAAyer 2/25/2010 14:37",
 		"parent:" : "JAAyer 2/25/2010 14:37",
-		"prettyPrintOn:" : "JAAyer 11/26/2010 18:53",
+		"prettyPrintOn:" : "JAA 3/22/2011 15:15",
 		"prettyPrinted" : "JAAyer 11/6/2010 01:18",
 		"previousNode" : "JAAyer 10/30/2010 19:56",
 		"printCanonicalOn:" : "JAAyer 11/6/2010 01:25",
 		"printContentOn:" : "JAAyer 10/20/2010 19:11",
-		"printOn:" : "JAAyer 11/26/2010 18:53",
-		"printXMLOn:" : "JAAyer 11/26/2010 18:54",
-		"writeXMLWith:" : "JAAyer 11/26/2010 18:53" } }
+		"printOn:" : "JAA 3/22/2011 15:15",
+		"printXMLOn:" : "JAA 3/22/2011 15:15",
+		"removeObserver:" : "OttoBehrens 2/15/2011 08:34",
+		"writeXMLOn:" : "JAA 3/22/2011 15:15" } }

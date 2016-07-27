@@ -1,5 +1,8 @@
 class initialization
 initializeNameStartChars
+	"This creates a character set that coveres the entire range of characters speicified for
+	the NameStartChar production rule in the XML spec."
+
 	(NameStartChars := BitmapCharacterSet new: 16rF0000)
 		add: $:;
 		addAll: ($A to: $Z);

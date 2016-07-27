@@ -1,3 +1,3 @@
 accessing
 firstNode
-	^ self nodes first
+	^ self nodes ifNotEmpty: [ self nodes first ] ifEmpty: [ nil ]

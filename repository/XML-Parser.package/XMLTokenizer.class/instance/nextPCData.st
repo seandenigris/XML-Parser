@@ -8,4 +8,4 @@ nextPCData
 				[streamReader peek == $<]
 					whileFalse: [writeStream nextPut: streamReader next]].
 
-		driver handlePCData: writeStream stringContents]
+		driver handlePCData: writeStream contents]

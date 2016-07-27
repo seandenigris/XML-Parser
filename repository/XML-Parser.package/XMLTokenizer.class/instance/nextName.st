@@ -11,4 +11,4 @@ nextName
 			and: [(NameStartChars includes: (nextChar := streamReader peek))
 				or: [AdditionalNameChars includes: nextChar]]]
 			whileTrue: [writeStream nextPut: streamReader next].
-		writeStream stringContents]
+		writeStream contents]

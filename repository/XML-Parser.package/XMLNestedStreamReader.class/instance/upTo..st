@@ -6,4 +6,4 @@ upTo: aDelimiter
 	[self atEnd or: [(nextChar := self next) == aDelimiter]]
 		whileFalse: [writeBuffer nextPut: nextChar].
 
-	^ writeBuffer stringContents.
+	^ writeBuffer contents.

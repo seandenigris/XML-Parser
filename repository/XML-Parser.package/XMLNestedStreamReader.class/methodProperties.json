@@ -12,7 +12,7 @@
 		"nextHexInteger" : "JAAyer 12/4/2010 12:19",
 		"nextIntegerWithBase:" : "JAAyer 8/31/2010 14:26",
 		"nextMatchAll:" : "JAAyer 12/6/2010 21:40",
-		"nextWhitespace" : "JAAyer 12/5/2010 22:23",
+		"nextWhitespace" : "JAA 3/22/2011 11:49",
 		"peek" : "JAAyer 10/18/2010 16:17",
 		"popCurrentStream" : "JAAyer 10/18/2010 16:08",
 		"pushBack:" : "JAAyer 12/14/2010 02:25",
@@ -21,6 +21,6 @@
 		"skipUpTo:" : "JAAyer 7/12/2010 01:12",
 		"stream" : "JAAyer 3/11/2010 08:01",
 		"stream:" : "JAAyer 12/14/2010 02:23",
-		"upTo:" : "JAAyer 12/5/2010 22:23",
-		"upToAll:" : "JAAyer 12/5/2010 22:23",
+		"upTo:" : "JAA 3/22/2011 11:49",
+		"upToAll:" : "JAA 3/22/2011 11:49",
 		"useConverterForEncoding:" : "JAAyer 12/14/2010 02:39" } }

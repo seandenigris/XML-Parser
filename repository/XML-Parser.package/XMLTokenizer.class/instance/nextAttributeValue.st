@@ -6,4 +6,4 @@ nextAttributeValue
 	^ streamWriter writeWith: [:writeStream |
 		self nextPCDataDelimitedBy: delimiterChar putOn: writeStream.
 		self expectNext: delimiterChar.
-		writeStream stringContents]
+		writeStream contents]

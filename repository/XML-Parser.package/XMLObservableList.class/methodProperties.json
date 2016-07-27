@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"notifications" : "OttoBehrens 2/14/2011 17:32" },
 	"instance" : {
 		"add:after:" : "JAAyer 8/4/2010 14:46",
 		"add:afterIndex:" : "JAAyer 7/22/2010 10:56",
@@ -8,15 +8,21 @@
 		"add:beforeIndex:" : "JAAyer 7/22/2010 10:57",
 		"addFirst:" : "JAAyer 7/22/2010 10:57",
 		"addLast:" : "JAAyer 7/22/2010 10:57",
+		"addObserver:" : "OttoBehrens 2/14/2011 17:32",
 		"afterAdding:" : "JAAyer 11/23/2010 05:41",
 		"afterRemoving:" : "JAAyer 11/22/2010 15:42",
-		"at:put:" : "JAAyer 7/22/2010 11:06",
+		"at:put:" : "JAA 3/21/2011 20:08",
 		"beforeAdding:" : "JAAyer 11/22/2010 15:42",
 		"notifier" : "JAAyer 6/11/2010 10:50",
+		"notifyOf:with:" : "OttoBehrens 2/14/2011 17:32",
+		"notifyOf:with:with:" : "OttoBehrens 2/14/2011 17:32",
+		"notifyOf:with:with:with:" : "OttoBehrens 2/14/2011 17:32",
+		"notifyOf:withArguments:" : "OttoBehrens 2/14/2011 17:32",
 		"remove:ifAbsent:" : "JAAyer 7/22/2010 10:58",
 		"removeAt:" : "JAAyer 6/11/2010 09:03",
 		"removeFirst" : "JAAyer 6/11/2010 09:03",
 		"removeLast" : "JAAyer 6/11/2010 09:03",
+		"removeObserver:" : "OttoBehrens 2/14/2011 17:32",
 		"with:add:" : "JAAyer 11/22/2010 15:42",
 		"with:onError:" : "JAAyer 6/11/2010 09:03",
 		"with:remove:" : "JAAyer 11/22/2010 15:42" } }

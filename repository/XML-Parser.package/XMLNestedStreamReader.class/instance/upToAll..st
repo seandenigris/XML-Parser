@@ -7,4 +7,4 @@ upToAll: aDelimitingString
 	writeBuffer reset.
 	[self atEnd or: [self nextMatchAll: aDelimitingString]]
 		whileFalse: [writeBuffer nextPut: self next].
-	^ writeBuffer stringContents.
+	^ writeBuffer contents.

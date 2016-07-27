@@ -1,4 +1,4 @@
-accessing
+removing
 at: anIndex put: anObject
 	| presentObject |
 

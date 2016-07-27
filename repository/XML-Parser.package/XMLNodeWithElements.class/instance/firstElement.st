@@ -1,3 +1,3 @@
 accessing
 firstElement
-	^ self elements first
+	^ self elements ifNotEmpty: [:elements | elements first] ifEmpty: [nil]

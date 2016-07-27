@@ -24,5 +24,5 @@ nextExternalId
 		ifFalse: [^''].
 	dir := streamReader stream directory.
 	^(dir fileExists: systemId)
-		ifTrue: [(dir readOnlyFileNamed: systemId) stringContents]
+		ifTrue: [(dir readOnlyFileNamed: systemId) contents]
 		ifFalse: ['']

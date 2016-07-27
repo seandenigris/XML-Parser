@@ -14,9 +14,9 @@ nextLiteral
 						nextChar := streamReader next.
 						writeStream nextPut: (streamReader peek == $#
 							ifTrue: [self nextCharReference]
-							ifFalse: [^ writeStream stringContents])]
+							ifFalse: [^ writeStream contents])]
 					ifFalse: [writeStream nextPut: streamReader next].
 				nextChar := streamReader peek].
 		writeStream position > 0
 			ifFalse: [self errorExpected: 'name literal'].
-		writeStream stringContents]
+		writeStream contents]

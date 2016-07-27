@@ -1,5 +1,9 @@
 class initialization
 initializeAdditionalNameChars
+	"This creates a character set that contains all those defined in the XML spec for the
+	NameChar production rule minus those also defined for NameStartChar
+	(NameChar - NameStartChar)"
+
 	(AdditionalNameChars := BitmapCharacterSet new: 16r2041)
 		add: $-;
 		add: $.;

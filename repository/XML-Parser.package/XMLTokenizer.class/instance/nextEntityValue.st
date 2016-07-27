@@ -31,4 +31,4 @@ nextEntityValue
 	nextPeek == delimiterChar]
 		whileFalse: [
 			nextChar ifNotNil: [entityValueStream nextPut: nextChar]].
-	^ entityValueStream stringContents.
+	^ entityValueStream contents.
