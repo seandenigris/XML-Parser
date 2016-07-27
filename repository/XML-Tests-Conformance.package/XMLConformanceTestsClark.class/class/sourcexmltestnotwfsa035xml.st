@@ -1,0 +1,4 @@
+source
+sourcexmltestnotwfsa035xml
+	^ '<doc>1 < 2 but not in XML</doc>
+'

@@ -1,0 +1,8 @@
+source
+sourcexmltestvalidsa026xml
+	^ '<!DOCTYPE doc [
+<!ELEMENT doc (foo*)>
+<!ELEMENT foo EMPTY>
+]>
+<doc><foo/><foo></foo></doc>
+'

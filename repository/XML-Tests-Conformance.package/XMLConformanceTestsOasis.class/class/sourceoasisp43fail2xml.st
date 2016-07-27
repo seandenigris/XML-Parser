@@ -1,0 +1,11 @@
+source
+sourceoasisp43fail2xml
+	^ '<!DOCTYPE elem
+[
+<!ELEMENT elem (#PCDATA|elem)*>
+<!ENTITY ent "<elem>CharData</elem>">
+]>
+<elem>
+<![IGNORE[This was valid in SGML, but not XML]]>
+</elem>
+'

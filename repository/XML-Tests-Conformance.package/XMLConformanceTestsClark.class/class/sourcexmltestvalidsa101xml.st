@@ -1,0 +1,8 @@
+source
+sourcexmltestvalidsa101xml
+	^ '<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ENTITY e "&#34;">
+]>
+<doc></doc>
+'

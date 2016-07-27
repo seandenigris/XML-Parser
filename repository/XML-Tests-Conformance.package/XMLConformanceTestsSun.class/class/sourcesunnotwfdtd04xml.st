@@ -1,0 +1,10 @@
+source
+sourcesunnotwfdtd04xml
+	^ '<!DOCTYPE root [
+    <!ELEMENT root EMPTY>
+    <!-- PUBLIC id must be quoted -->
+    <!ENTITY foo PUBLIC -//BadCorp//DTD-foo-1.0//EN "elvis.ent">
+]>
+
+<root/>
+'

@@ -1,0 +1,9 @@
+as yet unclassified
+sourcesunnotwflang04xml
+	^'<!DOCTYPE root [
+<!ELEMENT root EMPTY>
+<!ATTLIST root xml:lang CDATA #IMPLIED>
+]>
+<root xml:lang="x-dialect-valleygirl"/>
+
+'

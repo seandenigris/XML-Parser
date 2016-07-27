@@ -1,0 +1,1 @@
+This class contains tests with source methods generated from the OASIS test suite, which can be obtained from this URL: http://www.oasis-open.org/committees/xml-conformance/xml-test-suite.shtml

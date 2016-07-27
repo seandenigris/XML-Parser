@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"addMethod:classified:" : "David R Suarez U 11/23/2010 09:58",
+		"baseTestDirectory" : "David R Suarez U 11/23/2010 09:58",
+		"filenameAt:" : "David R Suarez U 11/23/2010 16:21",
+		"generateTestFrom:category:" : "David R Suarez U 11/23/2010 09:58",
+		"generateTests" : "David R Suarez U 11/23/2010 09:58",
+		"generateTestsFrom:category:" : "David R Suarez U 11/23/2010 09:58",
+		"haveParserValidate" : "David R Suarez U 11/23/2010 09:58",
+		"invalidTestTemplate" : "David R Suarez U 11/23/2010 09:59",
+		"notWellFormedTestTemplate" : "David R Suarez U 11/23/2010 09:59",
+		"remove:from:" : "David R Suarez U 11/23/2010 09:59",
+		"removeTests:" : "David R Suarez U 11/23/2010 09:59",
+		"shouldSkipTests" : "David R Suarez U 11/23/2010 09:59",
+		"validTestTemplate" : "JAAyer 12/14/2010 17:21",
+		"xmlTestDriverIn:" : "David R Suarez U 11/23/2010 09:59" },
+	"instance" : {
+		"canonicalVersion:" : "David Suarez 11/25/2010 21:08",
+		"exceptionSet" : "David Suarez 12/13/2010 20:26",
+		"exceptionSet2" : "David Suarez 12/13/2010 20:26",
+		"initialize" : "David R Suarez U 11/23/2010 09:57",
+		"parserClass" : "David R Suarez U 11/23/2010 09:57",
+		"parserClassName" : "David R Suarez U 11/23/2010 09:57",
+		"runTest:" : "JAAyer 12/14/2010 17:10",
+		"warningSignal" : "David R Suarez U 11/23/2010 09:57" } }

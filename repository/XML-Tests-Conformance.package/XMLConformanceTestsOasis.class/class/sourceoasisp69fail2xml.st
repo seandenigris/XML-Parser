@@ -1,0 +1,10 @@
+source
+sourceoasisp69fail2xml
+	^ '<!DOCTYPE doc
+[
+<!ELEMENT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+% pe;
+]>
+<doc/>
+'

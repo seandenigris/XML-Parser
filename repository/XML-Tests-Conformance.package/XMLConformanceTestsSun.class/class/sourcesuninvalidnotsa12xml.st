@@ -1,0 +1,11 @@
+as yet unclassified
+sourcesuninvalidnotsa12xml
+	^'<!DOCTYPE doc [
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc a1 CDATA "v1">
+
+%e;
+]>
+<doc></doc>
+'

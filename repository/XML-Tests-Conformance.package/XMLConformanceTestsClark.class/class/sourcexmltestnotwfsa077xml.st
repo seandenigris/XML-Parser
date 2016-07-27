@@ -1,0 +1,7 @@
+source
+sourcexmltestnotwfsa077xml
+	^ '<!DOCTYPE doc [
+<!ENTITY foo "&bar;">
+]>
+<doc a="&foo;"></doc>
+'

@@ -1,0 +1,8 @@
+as yet unclassified
+sourcesunvalidoutnotation01xml
+
+
+	^'<!DOCTYPE test [
+<!NOTATION GIF PUBLIC "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION CompuServe Graphic Interchange Format//EN">
+]>
+<test>test</test>'

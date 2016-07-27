@@ -1,0 +1,16 @@
+tests
+testclarkvalidsa038
+	"
+    Test demonstrates a valid comment and that it may appear anywhere in the document including the beginning. 
+	 See XML Spec. 1.0 section: 2.6 [15]"
+	|  correctAnswer  result |
+
+	(self class shouldSkipTests and: [testsToSkip includes: 'valid-sa-038'])
+		ifTrue:[^nil].
+	correctAnswer := (self class  sourcexmltestvalidsaout038xml)  .
+
+	[result := self runTest: self  class  sourcexmltestvalidsa038xml ]
+		on: self warningSignal
+		do: [:warn | warn resume].
+
+	self assert: correctAnswer = result.

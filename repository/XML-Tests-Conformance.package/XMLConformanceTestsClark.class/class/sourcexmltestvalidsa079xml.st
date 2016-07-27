@@ -1,0 +1,8 @@
+source
+sourcexmltestvalidsa079xml
+	^ '<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc a CDATA #FIXED "v">
+]>
+<doc a="v"></doc>
+'

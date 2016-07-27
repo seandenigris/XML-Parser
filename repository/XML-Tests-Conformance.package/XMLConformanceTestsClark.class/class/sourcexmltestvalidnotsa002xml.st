@@ -1,0 +1,7 @@
+source
+sourcexmltestvalidnotsa002xml
+	^ '<!DOCTYPE doc SYSTEM "002.ent" [
+<!ELEMENT doc EMPTY>
+]>
+<doc></doc>
+'

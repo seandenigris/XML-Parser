@@ -1,0 +1,8 @@
+source
+sourcexmltestvalidsa015xml
+	^ '<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc ABCDEFGHIJKLMNOPQRSTUVWXYZ CDATA #IMPLIED>
+]>
+<doc ABCDEFGHIJKLMNOPQRSTUVWXYZ="v1"></doc>
+'
