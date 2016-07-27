@@ -3,7 +3,6 @@
 		 },
 	"instance" : {
 		"recursiveEntitiesNamed:depth:isParameter:" : "monty 1/19/2014 04:10",
-		"testLocalURIFromNonLocalURI" : "monty 1/12/2014 23:30",
 		"testParserReadLimitTest" : "monty 1/22/2014 00:09",
 		"testRecursiveGeneralEntityReplacement" : "monty 1/19/2014 03:54",
 		"testRecursiveGeneralEntityReplacementPastLimit" : "monty 1/19/2014 22:50",

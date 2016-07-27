@@ -7,12 +7,15 @@ testRemoveLimits
 	entitySizeLimit := 100.
 	(resolver := parser externalEntityResolver)
 		maxExternalEntities: entityLimit;
-		maxExternalEntitySize: entitySizeLimit.
+		maxExternalEntitySize: entitySizeLimit;
+		resolvesLocalFromNonLocal: true.
 	self
 		assert: resolver maxExternalEntities = entityLimit;
-		assert: resolver maxExternalEntitySize = entitySizeLimit.
+		assert: resolver maxExternalEntitySize = entitySizeLimit;
+		assert: resolver resolvesLocalFromNonLocal.
 
 	parser removeLimits.
 	self
 		assert: resolver maxExternalEntities isNil;
-		assert: resolver maxExternalEntitySize isNil.
+		assert: resolver maxExternalEntitySize isNil;
+		assert: resolver resolvesLocalFromNonLocal isNil.

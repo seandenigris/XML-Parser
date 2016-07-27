@@ -10,10 +10,9 @@ testOnFileNamed
 
 	fileName := 'testOnFileNamed.xml'.
 	self fileNamed: fileName write: ''.
-
 	self
 		shouldnt: [parser := SAXHandler onFileNamed: fileName]
-		raise: XMLHTTPException.
+		raise: XMLFileException.
 	self
 		assert: parser documentURI = fileName;
 		assert: parser documentURI asXMLURI isLocalURI.

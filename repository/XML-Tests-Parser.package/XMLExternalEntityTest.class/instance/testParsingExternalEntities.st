@@ -10,18 +10,23 @@ testParsingExternalEntities
 
 	DTDCachingEntityResolver clearEntityCache.
 	entityCache := DTDCachingEntityResolver entityCache.
-	self deny:
-		(self externalEntityURLs anySatisfy: [:each |
-			entityCache includesKey: each asXMLURI]).
+	self externalEntityURLs do: [:each |
+		self deny: (entityCache includesKey: each asXMLURI)].
 
-	SAXHandler parse: self sourceXML.
-	self assert:
-		(self externalEntityURLs allSatisfy: [:each |
-			(entityCache at: each asXMLURI ifAbsent: ['']) notEmpty]).
+	SAXHandler
+		parse: self sourceXML
+		usingNamespaces: true
+		validation: true
+		externalEntities: true.
+	self externalEntityURLs do: [:each |
+		self assert: (entityCache at: each asXMLURI ifAbsent: ['']) notEmpty].
 
 	"check for re-requesting"
 	entityCacheCopy := entityCache copy.
-	SAXHandler parse: self sourceXML.
-	self assert:
-		(self externalEntityURLs allSatisfy: [:each |
-			(entityCache at: each asXMLURI) == (entityCacheCopy at: each asXMLURI)]).
+	SAXHandler
+		parse: self sourceXML
+		usingNamespaces: true
+		validation: true
+		externalEntities: true.
+	self externalEntityURLs do: [:each |
+		self assert: (entityCache at: each asXMLURI) == (entityCacheCopy at: each asXMLURI)].
