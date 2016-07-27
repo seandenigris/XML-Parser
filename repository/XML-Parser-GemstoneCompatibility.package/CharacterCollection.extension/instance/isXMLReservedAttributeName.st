@@ -1,4 +1,4 @@
 *XML-Parser-GemstoneCompatibility
-isReservedAttributeName
+isXMLReservedAttributeName
 	^ self size > 4
 		and: [self beginsWith: 'xml:']
