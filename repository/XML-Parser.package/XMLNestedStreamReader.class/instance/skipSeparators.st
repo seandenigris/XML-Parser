@@ -5,10 +5,14 @@ skipSeparators
 	[(peekChar ifNil: [peekChar := self basicNext]) "inlined #peek"
 		isXMLSeparator]
 		whileTrue: [
-			"inlined #next"
-			peekChar == normalizedLineEndingChar
-				ifTrue: [currentLineNumber := currentLineNumber + 1].
+			"inlined from #next"
+			currentPosition := currentPosition + 1.
 			readLimit ifNotNil: [
-				(readLimit := readLimit - 1) >= 0
-					ifFalse: [self errorReadLimitExceeded]].
+				currentPosition > readLimit
+					ifTrue: [self errorReadLimitExceeded]].
+			peekChar == normalizedLineEndingChar
+				ifTrue: [
+					currentLineNumber := currentLineNumber + 1.
+					currentLineStartPosition := currentPosition].
+
 			peekChar := nil]

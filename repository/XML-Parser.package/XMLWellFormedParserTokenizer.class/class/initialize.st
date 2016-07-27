@@ -4,7 +4,7 @@ initialize
 
 	self
 		initializeNormalizedSpace;
-		initializeAdditionalNameChars;
+		initializeNonNameStartCharNameChars;
 		initializeNameChars;
-		initializePubidChars;
+		initializePublicIDChars;
 		initializeEncodingNameChars

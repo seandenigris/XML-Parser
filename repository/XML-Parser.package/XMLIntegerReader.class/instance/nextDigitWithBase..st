@@ -4,7 +4,7 @@ nextDigitWithBase: aBase
 
 	((asciiValue := self peek asciiValue) > 0
 		and: [asciiValue <= CharacterDigitValues size
-			and: [(digit := CharacterDigitValues at: asciiValue) >= 0
+			and: [(digit := CharacterDigitValues at: asciiValue) notNil
 				and: [digit < aBase]]])
 				ifTrue: [
 					self next.

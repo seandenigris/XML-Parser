@@ -3,7 +3,7 @@ initialize
 	"self initialize"
 
 	(UnreservedCharacters := BitmapCharacterSet new)
-		addAll: ($a to: $z);
-		addAll: ($A to: $Z);
-		addAll: ($0 to: $9);
+		addRangeFrom: $a to: $z;
+		addRangeFrom: $A to: $Z;
+		addRangeFrom: $0 to: $9;
 		addAll: '-._~'

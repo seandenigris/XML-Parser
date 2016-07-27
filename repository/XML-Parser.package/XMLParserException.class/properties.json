@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "monty 3/11/2016 23:36",
 	"instvars" : [
-		"lineNumber" ],
+		"lineNumber",
+		"columnNumber" ],
 	"name" : "XMLParserException",
 	"pools" : [
 		 ],

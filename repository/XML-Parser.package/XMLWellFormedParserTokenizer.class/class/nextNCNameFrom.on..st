@@ -5,7 +5,7 @@ nextNCNameFrom: aReadStream on: aWriteStream
 	(aReadStream atEnd
 		or: [(NameChars includes: (nextChar := aReadStream peek)) not
 			or: [nextChar == $:
-				or: [AdditionalNameChars includes: nextChar]]])
+				or: [NonNameStartCharNameChars includes: nextChar]]])
 		ifTrue: [^ false].
 	aWriteStream nextPut: aReadStream next.
 

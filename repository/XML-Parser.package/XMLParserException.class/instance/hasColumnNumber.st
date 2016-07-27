@@ -1,0 +1,3 @@
+testing
+hasColumnNumber
+	^ columnNumber notNil

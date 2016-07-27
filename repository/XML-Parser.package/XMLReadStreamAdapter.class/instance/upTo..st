@@ -1,9 +1,9 @@
 accessing
 upTo: anObject
-	| writeStream |
+	| writeStream next |
 
 	writeStream := self newWriteStream.
 	[self atEnd
-		or: [self peek = anObject]]
-		whileFalse: [writeStream nextPut: self next].
+		or: [(next := self next) = anObject]]
+		whileFalse: [writeStream nextPut: next].
 	^ writeStream contents.

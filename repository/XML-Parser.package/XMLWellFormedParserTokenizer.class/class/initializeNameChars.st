@@ -1,24 +1,32 @@
 class initialization
 initializeNameChars
-	"This creates a character set that coveres the entire range of characters speicified for
-	the NameChar production rule in the XML spec."
+	"This character set is built from the range below for 'NameStartChars' plus
+	the characters from NonNameStartCharNameChars. 
+	
+	NameStartChar ::=
+		':' | [A-Z] | '_' | [a-z] | [#xC0-#xD6] | [#xD8-#xF6] | [#xF8-#x2FF] |
+		[#x370-#x37D] | [#x37F-#x1FFF] | [#x200C-#x200D] | [#x2070-#x218F] |
+		[#x2C00-#x2FEF] | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD] |
+		[#x10000-#xEFFFF]
+	NameChar ::=
+		NameStartChar | '-' | '.' | [0-9] | #xB7 | [#x0300-#x036F] |
+		[#x203F-#x2040]"
 
 	(NameChars := BitmapCharacterSet new: 16rF0000)
 		add: $:;
-		addAll: ($A to: $Z);
+		addRangeFrom: $A to: $Z;
 		add: $_;
-		addAll: ($a to: $z).
-	16rC0 to: 16rD6 do: [:each | NameChars add: (Character value: each)].
-	16rD8 to: 16rF6 do: [:each | NameChars add: (Character value: each)].
-	16rF8 to: 16r2FF do: [:each | NameChars add: (Character value: each)].
-	16r370 to: 16r37D do: [:each | NameChars add: (Character value: each)].
-	16r37F to: 16r1FFF do: [:each | NameChars add: (Character value: each)].
-	16r200C to: 16r200D do: [:each | NameChars add: (Character value: each)].
-	16r2070 to: 16r218F do: [:each | NameChars add: (Character value: each)].
-	16r2C00 to: 16r2FEF do: [:each | NameChars add: (Character value: each)].
-	16r3001 to: 16rD7FF do: [:each | NameChars add: (Character value: each)].
-	16rF900 to: 16rFDCF do: [:each | NameChars add: (Character value: each)].
-	16rFDF0 to: 16rFFFD do: [:each | NameChars add: (Character value: each)].
-	16r10000 to: 16rEFFFF do: [:each | NameChars add: (Character value: each)].
-
-	AdditionalNameChars do: [:each | NameChars add: each].
+		addRangeFrom: $a to: $z;
+		addRangeFrom: 16rC0 asCharacter to: 16rD6 asCharacter;
+		addRangeFrom: 16rD8 asCharacter to: 16rF6 asCharacter;
+		addRangeFrom: 16rF8 asCharacter to: 16r2FF asCharacter;
+		addRangeFrom: 16r370 asCharacter to: 16r37D asCharacter;
+		addRangeFrom: 16r37F asCharacter to: 16r1FFF asCharacter;
+		addRangeFrom: 16r200C asCharacter to: 16r200D asCharacter;
+		addRangeFrom: 16r2070 asCharacter to: 16r218F asCharacter;
+		addRangeFrom: 16r2C00 asCharacter to: 16r2FEF asCharacter;
+		addRangeFrom: 16r3001 asCharacter to: 16rD7FF asCharacter;
+		addRangeFrom: 16rF900 asCharacter to: 16rFDCF asCharacter;
+		addRangeFrom: 16rFDF0 asCharacter to: 16rFFFD asCharacter;
+		addRangeFrom: 16r10000 asCharacter to: 16rEFFFF asCharacter;
+		addAll: NonNameStartCharNameChars

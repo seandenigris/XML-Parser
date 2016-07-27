@@ -8,10 +8,14 @@ next
 			nextChar := peekChar.
 			peekChar := nil].
 
-	nextChar == normalizedLineEndingChar
-		ifTrue: [currentLineNumber := currentLineNumber + 1].
+	"this is inlined in skipSeparators"
+	currentPosition := currentPosition + 1.
 	readLimit ifNotNil: [
-		(readLimit := readLimit - 1) >= 0
-			ifFalse: [self errorReadLimitExceeded]].
+		currentPosition > readLimit
+			ifTrue: [self errorReadLimitExceeded]].
+	nextChar == normalizedLineEndingChar
+		ifTrue: [
+			currentLineNumber := currentLineNumber + 1.
+			currentLineStartPosition := currentPosition].
 
 	^ nextChar.

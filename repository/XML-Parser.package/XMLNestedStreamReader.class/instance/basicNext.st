@@ -1,6 +1,7 @@
 private
 basicNext
-	"Returns next character in the stream after performing line-ending normalization."
+	"Returns the next character in the stream for #next and #peek with CR/LF/CRLF
+	line endings normalized (to LF by default) and quotes escaped when needed."
 	| nextChar |
 
 	stream atEnd
@@ -8,17 +9,16 @@ basicNext
 			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifTrue: [^ nil]].
-	(nextChar := stream next) == CRCharacter
+	(nextChar := stream next) == LFCharacter
+		ifTrue: [^ normalizedLineEndingChar].
+	nextChar == CRCharacter
 		ifTrue: [
 			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifFalse: [
 					stream peek == LFCharacter
 						ifTrue: [stream next]].
-			nextChar := normalizedLineEndingChar]
-		ifFalse: [
-			nextChar == LFCharacter
-				ifTrue: [nextChar := normalizedLineEndingChar]].
+			^ normalizedLineEndingChar].
 	isEscapingQuotes
-		ifTrue: [^ self escapeNextQuoteCharacter: nextChar]
-		ifFalse: [^ nextChar].
+		ifTrue: [^ self asEscapedCharacterIfQuote: nextChar].
+	^ nextChar.

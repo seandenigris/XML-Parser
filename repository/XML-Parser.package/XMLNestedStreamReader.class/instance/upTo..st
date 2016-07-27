@@ -1,9 +1,9 @@
 accessing
 upTo: aCharacter
-	| writeStream |
+	| writeStream nextChar |
 
 	writeStream := self newWriteStream.
 	[self atEnd
-		or: [self peek == aCharacter]]
-		whileFalse: [writeStream nextPut: self next].
+		or: [(nextChar := self next) == aCharacter]]
+		whileFalse: [writeStream nextPut: nextChar].
 	^ writeStream contents.

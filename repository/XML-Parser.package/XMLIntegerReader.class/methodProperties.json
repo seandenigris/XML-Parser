@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"initialize" : "monty 1/7/2016 05:47",
-		"initializeCharacterDigitValues" : "monty 2/20/2016 02:49",
+		"initializeCharacterDigitValues" : "monty 3/16/2016 21:21",
 		"initializeMaxIntegerValue" : "monty 1/7/2016 05:48",
 		"maxBase" : "monty 10/24/2014 20:28",
 		"maxIntegerValue" : "monty 1/7/2016 05:48",
@@ -13,7 +13,7 @@
 	"instance" : {
 		"atEnd" : "monty 12/2/2015 20:03",
 		"next" : "monty 1/3/2016 21:13",
-		"nextDigitWithBase:" : "monty 1/8/2016 08:19",
+		"nextDigitWithBase:" : "monty 3/16/2016 21:21",
 		"nextInteger" : "monty 10/27/2014 08:37",
 		"nextIntegerWithBase:" : "monty 10/27/2014 08:35",
 		"nextIntegerWithBase:startingWithAny:orBase:" : "monty 10/27/2014 08:44",

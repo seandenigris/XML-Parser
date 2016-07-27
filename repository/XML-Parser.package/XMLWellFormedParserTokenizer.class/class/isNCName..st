@@ -6,6 +6,6 @@ isNCName: aString
 			ifTrue: [^ false].
 		((NameChars includes: nextChar)
 			and: [i > 1
-				or: [(AdditionalNameChars includes: nextChar) not]])
+				or: [(NonNameStartCharNameChars includes: nextChar) not]])
 			ifFalse: [^ false]].
 	^ aString size > 0.
