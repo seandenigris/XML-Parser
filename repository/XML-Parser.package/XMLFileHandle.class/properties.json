@@ -10,5 +10,5 @@
 	"name" : "XMLFileHandle",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractImplementation",
+	"super" : "XMLAbstractFactory",
 	"type" : "normal" }

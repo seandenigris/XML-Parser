@@ -8,4 +8,7 @@ defaultXMLIDValidator
 					element: ''
 					attribute: 'xml:id'
 					defaultValueValidator:
-						(XMLImpliedValueAttributeValidator attribute: 'xml:id')]
+						(XMLImpliedValueAttributeValidator attribute: 'xml:id').
+			defaultXmlIdValidator
+				elementIDValidator: XMLElementIDValidator new;
+				yourself]

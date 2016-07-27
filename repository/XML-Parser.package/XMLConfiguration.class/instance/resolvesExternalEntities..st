@@ -1,3 +1,3 @@
 accessing
 resolvesExternalEntities: aBoolean
-	resolvesExternalEntities := aBoolean
+	self entityConfiguration resolvesExternalEntities: aBoolean

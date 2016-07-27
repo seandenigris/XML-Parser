@@ -1,3 +1,0 @@
-replacement
-replacement
-	^ self asEscapedReference

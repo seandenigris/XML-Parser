@@ -9,13 +9,10 @@ nextPCDataToken
 		whileFalse: [
 			streamReader next == $&
 				ifTrue: [
-					(nextChar :=
-						streamReader peek == $#
-							ifTrue: [self nextDecodedCharReference]
-							ifFalse: [self nextGeneralEntityReference])
-						ifNotNil: [
-							writeStream nextPut: nextChar.
-							isIgnorableWhitespace := false]]
+					(streamReader peek == $#
+						ifTrue: [self nextCharacterReferenceOnWriteStream]
+						ifFalse: [self nextGeneralEntityReferenceOnWriteStream])
+							ifTrue: [isIgnorableWhitespace := false]]
 				ifFalse: [
 					isIgnorableWhitespace
 						ifTrue: [isIgnorableWhitespace := nextChar isSeparator].

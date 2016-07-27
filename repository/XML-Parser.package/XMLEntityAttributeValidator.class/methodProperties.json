@@ -2,9 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"errorInvalidUnparsedEntityReference:" : "monty 10/31/2014 17:16",
+		"initializeWithValidatorsFrom:" : "monty 1/1/2015 20:55",
 		"isEntityValidator" : "monty 11/19/2013 22:00",
-		"unparsedEntities" : "monty 10/27/2014 15:06",
-		"validateAttributeValue:" : "monty 12/11/2013 02:12",
-		"validateBeforeAddingTo:usingDeclarationsFrom:" : "monty 12/23/2014 19:57",
-		"validateEntityReference:" : "monty 12/11/2014 04:40" } }
+		"unparsedEntityValidator" : "monty 1/1/2015 20:35",
+		"validateAttributeValue:" : "monty 1/1/2015 21:30" } }

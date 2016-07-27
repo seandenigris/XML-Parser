@@ -19,6 +19,7 @@
 		"descendentNodesDo:" : "monty 11/6/2014 21:30",
 		"document" : "monty 10/30/2014 22:39",
 		"errorXMLWritingUnsupported" : "monty 10/31/2014 20:56",
+		"escapesContentEntitiesWhenWriting" : "monty 1/7/2015 02:16",
 		"hasChildren" : "JAAyer 10/24/2010 18:49",
 		"hasParent" : "monty 10/29/2014 09:00",
 		"isCData" : "JAAyer 8/11/2010 22:16",
@@ -50,5 +51,5 @@
 		"rawContentString" : "monty 11/19/2014 23:44",
 		"sortKey" : "monty 12/4/2014 14:00",
 		"withNewXMLWriterOn:do:" : "monty 10/31/2014 20:56",
-		"withNewXMLWriterOn:do:whenAbsent:" : "monty 10/31/2014 20:59",
+		"withNewXMLWriterOn:do:whenAbsent:" : "monty 1/5/2015 09:02",
 		"writeXMLOn:" : "monty 12/6/2014 13:02" } }

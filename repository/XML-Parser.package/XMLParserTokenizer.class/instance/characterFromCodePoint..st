@@ -1,7 +1,7 @@
 entity replacement
-characterFromCodePoint: aCodePoint
-	(aCodePoint notNil and: [aCodePoint > 0])
+characterFromCodePoint: anInteger
+	(anInteger notNil and: [anInteger > 0])
 		ifFalse: [^ nil].
-	^ [aCodePoint asCharacter]
+	^ [anInteger asCharacter]
 		on: Error
 		do: [:error | nil].

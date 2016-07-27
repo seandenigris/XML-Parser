@@ -1,0 +1,3 @@
+configuring
+preservesIgnorableWhitespace: aBoolean
+	self configuration preservesIgnorableWhitespace: aBoolean

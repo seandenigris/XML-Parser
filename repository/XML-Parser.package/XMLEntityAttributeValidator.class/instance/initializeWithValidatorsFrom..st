@@ -1,0 +1,4 @@
+initialization
+initializeWithValidatorsFrom: aValidatorContainer
+	unparsedEntityValidator := aValidatorContainer unparsedEntityValidator.
+	self validateReservedAttributeValidator.

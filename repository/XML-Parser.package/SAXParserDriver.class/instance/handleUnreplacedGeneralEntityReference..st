@@ -1,0 +1,3 @@
+handling tokens
+handleUnreplacedGeneralEntityReference: aName
+	self saxHandler skippedEntity: aName

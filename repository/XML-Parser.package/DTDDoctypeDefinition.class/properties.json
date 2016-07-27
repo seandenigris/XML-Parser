@@ -15,7 +15,8 @@
 		"parameterEntities",
 		"unparsedEntities",
 		"notations",
-		"elementIds" ],
+		"elementIdValidator",
+		"unparsedEntityValidator" ],
 	"name" : "DTDDoctypeDefinition",
 	"pools" : [
 		 ],

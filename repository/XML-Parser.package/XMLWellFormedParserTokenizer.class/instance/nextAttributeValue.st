@@ -14,11 +14,10 @@ nextAttributeValue
 		whileFalse: [
 			nextChar == $&
 				ifTrue: [
+					"char refs should be ignored by whitespace normalization"
 					streamReader peek == $#
-						ifTrue: [writeStream nextPut: self nextDecodedCharReference]
-						ifFalse: [
-							(nextChar := self nextGeneralEntityReference)
-								ifNotNil: [writeStream nextPut: nextChar]]]
+						ifTrue: [self nextCharacterReferenceOnWriteStream]
+						ifFalse: [self nextGeneralEntityReferenceOnWriteStream]]
 				ifFalse: [
 					nextChar isSeparator
 						ifTrue: [nextChar := NormalizedSpace].

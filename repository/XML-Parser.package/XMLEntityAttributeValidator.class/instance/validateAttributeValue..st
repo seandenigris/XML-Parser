@@ -1,3 +1,5 @@
 validation
 validateAttributeValue: aValue
-	self validateEntityReference: aValue
+	self unparsedEntityValidator
+		validateEntityReference: aValue
+		inAttribute: self attribute

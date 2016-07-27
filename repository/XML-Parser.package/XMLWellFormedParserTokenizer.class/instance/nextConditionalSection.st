@@ -4,5 +4,5 @@ nextConditionalSection
 	streamReader next.
 
 	writeStream reset.
-	self nextConditionalSectionOn: writeStream.
+	self nextConditionalSectionOnWriteStream.
 	streamReader pushBack: writeStream contents.

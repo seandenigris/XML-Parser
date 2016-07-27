@@ -1,6 +1,11 @@
 private
 withNewXMLWriterOn: aStream do: aOneArgBlock whenAbsent: aZeroArgBlock
-	^ aOneArgBlock value:
-		((Smalltalk
+	| writer |
+
+	writer :=
+		(Smalltalk
 			at: #XMLWriter
-			ifAbsent: [^ aZeroArgBlock value]) on: aStream)
+			ifAbsent: [^ aZeroArgBlock value]) on: aStream.
+	self escapesContentEntitiesWhenWriting
+		ifFalse: [writer escapesContentEntityReferences: false].
+	^ aOneArgBlock value: writer.

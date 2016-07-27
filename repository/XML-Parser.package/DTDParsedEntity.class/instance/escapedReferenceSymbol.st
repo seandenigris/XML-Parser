@@ -1,3 +1,0 @@
-accessing
-escapedReferenceSymbol
-	self subclassResponsibility

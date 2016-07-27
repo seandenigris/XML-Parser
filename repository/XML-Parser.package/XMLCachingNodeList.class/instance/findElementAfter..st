@@ -6,7 +6,7 @@ findElementAfter: anElement
 	self do: [:each |
 		each isElement
 			ifTrue: [
-				previousElement == anElement
+				previousElement = anElement
 					ifTrue: [^ each].
 				previousElement := each]].
 	^ nil.

@@ -1,4 +1,6 @@
 printing
 printOn: aStream
-	self asReference printOn: aStream
-	
+	aStream
+		nextPutAll: self referencePrefix;
+		nextPutAll: self name;
+		nextPut: $;

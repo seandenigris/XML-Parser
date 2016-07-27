@@ -1,3 +1,5 @@
 accessing
 generalEntityAt: aName
-	^ self generalEntities at: aName ifAbsent: [nil]
+	^ self
+		generalEntityAt: aName
+		ifAbsent: [nil]

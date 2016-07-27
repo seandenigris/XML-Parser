@@ -8,8 +8,8 @@ nextAttributeNotationEnumerationType
 
 	self
 		skipSeparatorsReplacingParameterEntities;
-		nextNameOn: writeStream;
+		nextNameOnWriteStream;
 		skipSeparatorsReplacingParameterEntities;
-		nextNameListValuesOn: writeStream.
+		nextNameListValuesOnWriteStream.
 
 	^ writeStream contents.

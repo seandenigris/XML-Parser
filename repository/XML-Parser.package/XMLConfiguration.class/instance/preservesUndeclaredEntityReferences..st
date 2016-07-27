@@ -1,4 +1,5 @@
 accessing
 preservesUndeclaredEntityReferences: aBoolean
-	(preservesUndeclaredEntityReferences := aBoolean)
-		ifTrue: [self isValidating: false]
+	self entityConfiguration preservesUndeclaredEntityReferences: aBoolean.
+	aBoolean
+		ifTrue: [self isValidating: false].

@@ -1,0 +1,3 @@
+configuration
+replacesContentEntityReferences
+	^ self configuration replacesContentEntityReferences

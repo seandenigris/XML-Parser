@@ -1,3 +1,3 @@
 accessing
 externalEntityResolver: anExternalEntityResolver
-	externalEntityResolver := anExternalEntityResolver
+	self entityConfiguration externalEntityResolver: anExternalEntityResolver

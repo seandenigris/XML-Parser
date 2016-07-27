@@ -1,0 +1,3 @@
+accessing
+elementIDValidator: anElementIdValidator
+	elementIdValidator := anElementIdValidator

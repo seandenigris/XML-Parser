@@ -1,3 +1,3 @@
 accessing
 externalEntityResolver
-	^ externalEntityResolver ifNil: [externalEntityResolver := DTDCachingEntityResolver new]
+	^ self entityConfiguration externalEntityResolver

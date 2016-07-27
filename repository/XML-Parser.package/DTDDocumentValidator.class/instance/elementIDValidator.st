@@ -1,0 +1,3 @@
+accessing
+elementIDValidator
+	self dtd elementIDValidator

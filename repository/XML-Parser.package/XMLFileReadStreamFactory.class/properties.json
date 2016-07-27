@@ -10,5 +10,5 @@
 	"name" : "XMLFileReadStreamFactory",
 	"pools" : [
 		 ],
-	"super" : "XMLAbstractImplementation",
+	"super" : "XMLAbstractFactory",
 	"type" : "normal" }

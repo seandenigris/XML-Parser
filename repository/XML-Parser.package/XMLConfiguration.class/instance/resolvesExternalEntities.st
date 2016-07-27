@@ -1,3 +1,3 @@
 accessing
 resolvesExternalEntities
-	^ resolvesExternalEntities ifNil: [resolvesExternalEntities := false]
+	^ self entityConfiguration resolvesExternalEntities

@@ -29,4 +29,6 @@
 		"resetDictionaryFromCollection" : "monty 10/28/2014 18:52",
 		"setFromDictionary:" : "monty 10/28/2014 18:35",
 		"sort" : "monty 12/2/2014 23:05",
-		"sorted" : "monty 12/2/2014 23:00" } }
+		"sorted" : "monty 12/2/2014 23:00",
+		"writeAttributesOn:" : "monty 1/6/2015 20:11",
+		"writeSortedAttributesOn:" : "monty 1/6/2015 20:11" } }

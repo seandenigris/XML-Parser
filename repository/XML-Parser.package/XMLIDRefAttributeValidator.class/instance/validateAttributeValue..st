@@ -1,4 +1,5 @@
 validation
 validateAttributeValue: aValue
-	self validateID: aValue.
-	self idRefs add: aValue.
+	self elementIDValidator
+		validateIDReference: aValue
+		inAttribute: self attribute

@@ -48,6 +48,7 @@
 		"elementsDetect:ifNone:" : "JAAyer 11/26/2010 12:35",
 		"elementsDo:" : "JAAyer 6/26/2010 00:55",
 		"elementsSelect:" : "JAAyer 11/26/2010 12:36",
+		"escapesContentEntitiesWhenWriting" : "monty 1/5/2015 09:12",
 		"findElementNamed:" : "JAAyer 11/25/2010 17:24",
 		"findElementNamed:namespaceURI:" : "monty 10/18/2014 04:39",
 		"findElementNamed:namespaceURI:with:" : "monty 10/18/2014 04:39",

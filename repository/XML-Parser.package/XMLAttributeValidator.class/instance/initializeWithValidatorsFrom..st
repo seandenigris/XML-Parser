@@ -1,0 +1,3 @@
+initialization
+initializeWithValidatorsFrom: aValidatorContainer
+	self validateReservedAttributeValidator

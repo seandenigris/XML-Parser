@@ -1,4 +1,0 @@
-entity replacement
-constructReplacementForBypassedParameterEntity: anEntity
-	context isLiteralValueContext
-		ifTrue: [self constructReplacementForBypassedEntity: anEntity]

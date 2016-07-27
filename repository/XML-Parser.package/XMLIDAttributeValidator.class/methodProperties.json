@@ -3,10 +3,8 @@
 		"classForAttribute:" : "monty 12/23/2014 18:32",
 		"element:attribute:defaultValueValidator:" : "monty 12/23/2014 18:33" },
 	"instance" : {
-		"errorDuplicateID:" : "monty 10/31/2014 17:26",
-		"errorElementWithMultipleIDAttributes" : "monty 10/31/2014 17:26",
-		"hasIDs" : "monty 12/29/2013 02:57",
-		"ids" : "monty 11/19/2013 08:18",
+		"elementIDValidator" : "monty 1/1/2015 19:49",
+		"elementIDValidator:" : "monty 1/1/2015 19:56",
+		"initializeWithValidatorsFrom:" : "monty 1/1/2015 23:27",
 		"isIDValidator" : "monty 12/10/2013 06:07",
-		"validateAttributeValue:" : "monty 10/31/2014 17:26",
-		"validateBeforeAddingTo:usingDeclarationsFrom:" : "monty 12/23/2014 20:27" } }
+		"validateAttributeValue:" : "monty 1/1/2015 21:32" } }

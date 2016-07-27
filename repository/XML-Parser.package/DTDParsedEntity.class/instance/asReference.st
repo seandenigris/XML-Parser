@@ -1,3 +1,3 @@
 converting
 asReference
-	^ self asReferenceStartingWith: self referenceSymbol asString
+	^ self printString

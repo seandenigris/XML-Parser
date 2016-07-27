@@ -1,2 +1,0 @@
-entity replacement
-constructReplacementForBypassedGeneralEntity: anEntity

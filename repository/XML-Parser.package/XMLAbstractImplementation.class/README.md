@@ -1,1 +1,0 @@
-An abstract class for dynamically choosing supported concrete implementations.

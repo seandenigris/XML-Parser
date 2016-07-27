@@ -1,3 +1,3 @@
 accessing
 preservesUndeclaredEntityReferences
-	^ preservesUndeclaredEntityReferences ifNil: [preservesUndeclaredEntityReferences := false]
+	^ self entityConfiguration preservesUndeclaredEntityReferences

@@ -3,7 +3,6 @@ nextName
 	| nextChar |
 
 	nameStream reset.
-	"inlined from nextNameOn:"
 	((nextChar := streamReader next) notNil
 		and: [(NameChars includes: nextChar)
 			and: [(AdditionalNameChars includes: nextChar) not]])

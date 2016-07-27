@@ -11,7 +11,7 @@ nextContentModel
 		nextPut: (self expectNext: $().
 	self skipSeparatorsReplacingParameterEntities.
 	streamReader peek == $#
-		ifTrue: [self nextMixedContentListValuesOn: writeStream]
-		ifFalse: [self nextContentModelChoiceOrSequenceListValuesOn: writeStream].
+		ifTrue: [self nextMixedContentListValuesOnWriteStream]
+		ifFalse: [self nextContentModelChoiceOrSequenceValuesOnWriteStream].
 
 	^ writeStream contents.

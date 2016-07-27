@@ -2,18 +2,15 @@
 	"class" : {
 		"dtd:" : "monty 11/18/2013 05:13" },
 	"instance" : {
-		"allAttributeValidatorsDo:" : "monty 12/9/2013 02:29",
 		"attributeValidatorsFor:" : "monty 10/30/2014 19:43",
 		"dtd" : "monty 11/18/2013 05:13",
 		"dtd:" : "monty 11/18/2013 05:13",
+		"elementIDValidator" : "monty 1/1/2015 20:05",
 		"elementValidatorFor:" : "monty 10/30/2014 19:43",
-		"errorInvalidIDReference:" : "monty 10/31/2014 17:14",
 		"errorInvalidRoot:" : "monty 10/31/2014 17:14",
 		"hasAttributeValidators" : "monty 10/30/2014 19:43",
 		"hasElementValidators" : "monty 10/30/2014 19:43",
-		"hasValidators" : "monty 11/2/2014 22:18",
 		"unvalidatedAttributes:" : "monty 10/30/2014 19:33",
 		"unvalidatedElement:" : "monty 10/30/2014 19:33",
-		"validateEndDocument" : "monty 12/21/2013 02:38",
-		"validateIDsAndReferences" : "monty 10/31/2014 17:14",
+		"validateIDReferences" : "monty 1/1/2015 21:27",
 		"validateRootElement:" : "monty 10/31/2014 17:13" } }

@@ -10,13 +10,12 @@ nextEntityValue
 		whileFalse: [
 			streamReader next == $&
 				ifTrue: [
-					writeStream nextPut: 
-						(streamReader peek == $#
-							ifTrue: [self nextDecodedCharReference]
-							ifFalse: [$&])]
+					streamReader peek == $#
+						ifTrue: [self nextCharacterReferenceOnWriteStream]
+						ifFalse: [writeStream nextPut: $&]]
 				ifFalse: [
 					nextChar == $%
-						ifTrue: [self nextParameterEntityReference]
+						ifTrue: [self nextParameterEntityReferenceOnWriteStream]
 						ifFalse: [writeStream nextPut: nextChar]]].
 	value := writeStream contents.
 	context exitLiteralValue.

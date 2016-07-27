@@ -1,4 +1,4 @@
 validation
 validateXMLIDAttributeIn: anAttributeDictionary
-	self hasValidators
+	self hasAttributeValidators
 		ifFalse: [self defaultXMLIDValidator validateAttributes: anAttributeDictionary]

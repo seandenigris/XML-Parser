@@ -6,7 +6,7 @@ writeXMLOn: aWriter
 	self hasNamespaces
 		ifTrue: [tagWriter setXmlnsDeclarations: self namespaceScope prefixMappings].
 	self hasAttributes
-		ifTrue: [tagWriter setAttributes: self attributeNodes asDictionary].
+		ifTrue: [tagWriter setAttributes: self attributeNodes].
 
 	tagWriter with: [
 		self hasChildren

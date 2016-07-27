@@ -1,3 +1,5 @@
 accessing
 parameterEntityAt: aName
-	^ self parameterEntities at: aName ifAbsent: [nil]
+	^ self
+		parameterEntityAt: aName
+		ifAbsent: [nil]

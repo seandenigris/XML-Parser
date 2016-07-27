@@ -1,1 +1,0 @@
-A bypassed general entity is replaced by an escaped reference to itself.

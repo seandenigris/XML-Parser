@@ -4,6 +4,5 @@ nextParameterEntityReference
 
 	name := self nextName.
 	self expectNext: $;.
-
 	(driver handleParameterEntityReference: name)
-		ifNotNil: [:entity | entity constructReplacementOn: self]
+		ifNotNil: [:entity | entity constructReplacementOn: self].
