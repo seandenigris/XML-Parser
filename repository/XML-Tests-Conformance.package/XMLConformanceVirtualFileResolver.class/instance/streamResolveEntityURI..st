@@ -1,6 +1,6 @@
 resolving
-streamResolveEntityURI: aURIOrURIString
+streamResolveEntityURI: anXMLURIOrURIString
 	^ self resolveEntityWith: [:maxSize |
 		(XMLConformanceVirtualFileHandle
-			virtualPath: aURIOrURIString asXMLURI path
+			virtualPath: anXMLURIOrURIString asXMLURI path
 			sourceClass: virtualFileClass) streamGet]

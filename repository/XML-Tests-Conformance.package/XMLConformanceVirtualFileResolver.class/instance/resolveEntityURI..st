@@ -1,6 +1,6 @@
 resolving
-resolveEntityURI: aURIOrURIString
+resolveEntityURI: anXMLURIOrURIString
 	^ self resolveEntityWith: [:maxSize |
 		(XMLConformanceVirtualFileHandle
-			virtualPath: aURIOrURIString asXMLURI path
+			virtualPath: anXMLURIOrURIString asXMLURI path
 			sourceClass: virtualFileClass) get]

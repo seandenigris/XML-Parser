@@ -19,8 +19,6 @@ visitReference: aDirectoryEntry
 
 	(basename endsWith: '.xml')
 		ifFalse: [^ self].
-	(pathSegments anySatisfy: [:segment |
-		self failingNamePatterns anySatisfy: [:pattern |
-			segment includesSubstring: pattern]])
+	(self isFailingTestFilePathSegments: pathSegments)
 		ifTrue: [self failingTestFiles add: fileReference]
 		ifFalse: [self passingTestFiles add: fileReference].
