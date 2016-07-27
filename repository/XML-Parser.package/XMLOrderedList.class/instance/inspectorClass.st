@@ -1,3 +1,3 @@
 inspecting
 inspectorClass
-	^ OrderedCollectionInspector
+	^ Smalltalk tools inspector
