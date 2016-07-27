@@ -10,12 +10,9 @@ testAtPut
 				(list at: i put: replacement) == replacement]);
 		assert: list = (self listClass newFrom: self listElements reversed);
 		should: [list at: 0 put: self absentElement] raise: Error.
-	self supportsAtPutOnePastEnd
-		ifTrue: [
-			self
-				shouldnt: [list at: list size + 1 put: self absentElement]
-				raise: Error]
-		ifFalse: [
-			self
-				should: [list at: list size + 1 put: self absentElement]
-				raise: Error].
+	self
+		assert: (list at: list size + 1 put: self newElement) = self newElement;
+		assert: (list at: list size) = self newElement.
+	self
+		should: [list at: list size + 2 put: self absentElement]
+		raise: Error.
