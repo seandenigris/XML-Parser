@@ -1,4 +1,4 @@
 examples
 addressBookXMLWithDTD
 	"XMLDOMParser addressBookXMLWithDTD"
-	^self parseDocumentFrom: XMLTokenizer addressBookXMLWithDTD readStream
+	^self parseDocumentFrom: XMLTokenizer addressBookXMLWithDTD readStream useNamespaces: true

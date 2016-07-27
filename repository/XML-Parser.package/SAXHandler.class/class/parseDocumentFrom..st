@@ -1,7 +1,3 @@
 instance creation
 parseDocumentFrom: aStream
-	|  parser |
-	parser _ self on: aStream.
-	parser startDocument.
-	parser parseDocument.
-	^parser
+	^self parseDocumentFrom: aStream useNamespaces: false

@@ -1,6 +1,8 @@
 streaming
 streamEncoding: encodingString
 
+	| converterClass |
 	Smalltalk at: #TextConverter ifPresent: [:tc | 
 		(stream respondsTo: #converter:) ifTrue: [
-			stream converter: (tc defaultConverterClassForEncoding: encodingString)]]
+			converterClass := tc defaultConverterClassForEncoding: encodingString asLowercase.
+			converterClass ifNotNil: [stream converter: converterClass new]]]

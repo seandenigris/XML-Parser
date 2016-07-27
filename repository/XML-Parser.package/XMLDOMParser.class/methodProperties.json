@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"addressBookXMLWithDTD" : "mir 8/14/2000 18:36",
-		"parseDocumentFrom:" : "mir 12/7/2000 16:29" },
+		"addressBookXMLWithDTD" : "mir 7/12/2006 16:26",
+		"parseDocumentFrom:" : "mir 7/12/2006 16:25",
+		"parseDocumentFrom:useNamespaces:" : "mir 7/12/2006 16:25" },
 	"instance" : {
 		"characters:" : "mir 10/25/2000 11:30",
 		"defaultNamespace" : "mir 6/16/2003 17:20",

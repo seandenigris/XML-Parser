@@ -1,3 +1,3 @@
 instance creation
 parseDocumentFrom: aStream
-	^(super parseDocumentFrom: aStream) document
+	^self parseDocumentFrom: aStream useNamespaces: false

@@ -1,3 +1,3 @@
 accessing
 attributes
-	^attributes
+	^attributes ifNil: [attributes _ Dictionary new]

@@ -11,7 +11,9 @@
 		"stack",
 		"scope",
 		"scanner",
-		"canonical" ],
+		"canonical",
+		"currentIndent",
+		"indentString" ],
 	"name" : "XMLWriter",
 	"pools" : [
 		 ],
