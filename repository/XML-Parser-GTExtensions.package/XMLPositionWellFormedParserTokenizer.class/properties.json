@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-GTExtensions-Highlighting-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 10/2/2015 06:17",
+	"instvars" : [
+		"initialReadLimit" ],
+	"name" : "XMLPositionWellFormedParserTokenizer",
+	"pools" : [
+		 ],
+	"super" : "XMLWellFormedParserTokenizer",
+	"type" : "normal" }

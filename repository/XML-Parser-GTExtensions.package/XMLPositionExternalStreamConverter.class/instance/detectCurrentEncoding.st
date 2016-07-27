@@ -1,0 +1,3 @@
+private 
+detectCurrentEncoding
+	streamReader detectCurrentEncoding

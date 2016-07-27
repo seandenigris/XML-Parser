@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"decodesCharacters" : "monty 9/30/2015 03:50",
+		"handleEndCDataPosition:" : "monty 10/1/2015 04:44",
+		"handleEndCommentPosition:" : "monty 10/1/2015 02:30",
+		"handleEndDeclaration:" : "monty 10/1/2015 04:45",
+		"handleEndDoctypeDeclarationPosition:" : "monty 10/1/2015 02:33",
+		"handleEndEntityReferencePosition:" : "monty 10/1/2015 02:32",
+		"handleEndPIPosition:" : "monty 10/1/2015 02:31",
+		"handleEndQuotedStringValuePosition:" : "monty 10/1/2015 02:31",
+		"handleEndTagPosition:" : "monty 10/1/2015 02:28",
+		"handleEndXMLDeclarationPosition:" : "monty 10/1/2015 02:28",
+		"handleStartCDataPosition:" : "monty 10/1/2015 04:43",
+		"handleStartCommentPosition:" : "monty 10/1/2015 02:30",
+		"handleStartDeclaration:" : "monty 10/1/2015 04:45",
+		"handleStartDoctypeDeclarationPosition:" : "monty 10/1/2015 02:33",
+		"handleStartEntityReferencePosition:" : "monty 10/1/2015 02:32",
+		"handleStartPIPosition:" : "monty 10/1/2015 02:31",
+		"handleStartQuotedStringValuePosition:" : "monty 10/1/2015 02:30",
+		"handleStartTagPosition:" : "monty 10/1/2015 02:26",
+		"handleStartXMLDeclarationPosition:" : "monty 10/1/2015 02:25",
+		"isValidating" : "monty 9/30/2015 20:45",
+		"tokenizerClass" : "monty 10/1/2015 04:35" } }

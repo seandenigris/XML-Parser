@@ -1,9 +1,9 @@
 *XML-Parser-GTExtensions
-gtSpotterAllElementsFor: aStep
+spotterForDirectElementsFor: aStep
 	<spotterOrder: 40>
 	aStep listProcessor
-		title: 'All elements';
-		allCandidates: [self allElements];
+		title: 'Direct elements';
+		allCandidates: [self elements];
 		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true

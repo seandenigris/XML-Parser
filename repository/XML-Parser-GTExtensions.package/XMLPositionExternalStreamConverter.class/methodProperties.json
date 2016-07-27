@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"convert:" : "monty 10/2/2015 00:11",
+		"on:" : "monty 10/2/2015 00:11",
+		"on:readLimit:" : "monty 10/1/2015 05:57" },
+	"instance" : {
+		"convert" : "monty 10/2/2015 00:09",
+		"detectCurrentEncoding" : "monty 9/30/2015 19:28",
+		"expectNextAll:" : "monty 10/2/2015 04:51",
+		"next" : "monty 9/30/2015 18:50",
+		"nextXMLAttributeNamed:" : "monty 10/2/2015 00:05",
+		"nextXMLDeclaration" : "monty 10/2/2015 06:10",
+		"peek" : "monty 9/30/2015 19:21",
+		"setStream:readLimit:" : "monty 10/2/2015 06:11",
+		"skipSeparators" : "monty 9/30/2015 19:43",
+		"upToEnd" : "monty 10/2/2015 00:09" } }

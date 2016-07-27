@@ -1,0 +1,1 @@
+This class is a non-validating SAX driver that forwards token start/end positions to a SAXHandler.

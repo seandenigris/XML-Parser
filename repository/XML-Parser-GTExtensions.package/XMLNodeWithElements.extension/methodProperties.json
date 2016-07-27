@@ -2,6 +2,6 @@
 	"class" : {
 		"gtExampleXmlNode" : "monty 9/20/2015 22:19" },
 	"instance" : {
-		"gtSpotterAllElementsFor:" : "monty 9/29/2015 19:25",
-		"gtSpotterDirectElementsFor:" : "monty 9/29/2015 19:25",
+		"spotterForAllElementsFor:" : "monty 10/1/2015 06:03",
+		"spotterForDirectElementsFor:" : "monty 10/1/2015 06:03",
 		"spotterPreviewSourceIn:" : "monty 9/29/2015 23:16" } }

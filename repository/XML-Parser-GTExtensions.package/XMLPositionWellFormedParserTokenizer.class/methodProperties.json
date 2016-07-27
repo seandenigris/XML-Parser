@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"currentPosition" : "monty 10/2/2015 04:50",
+		"nextAttributeValue" : "monty 10/2/2015 02:25",
+		"nextCDataSection" : "monty 10/1/2015 04:43",
+		"nextCharacterReferenceOnWriteStream" : "monty 10/1/2015 05:10",
+		"nextComment" : "monty 9/30/2015 06:56",
+		"nextDoctypeDeclaration" : "monty 10/1/2015 04:57",
+		"nextEndDoctypeDeclaration" : "monty 9/30/2015 07:10",
+		"nextEntityValue" : "monty 10/2/2015 02:26",
+		"nextGeneralEntityReferenceOnWriteStream" : "monty 10/1/2015 05:10",
+		"nextPIWithTarget:" : "monty 10/1/2015 05:16",
+		"nextParameterEntityReference" : "monty 10/1/2015 05:11",
+		"nextParameterEntityReferenceInDeclaration" : "monty 10/1/2015 05:11",
+		"nextParameterEntityReferenceOnWriteStream" : "monty 10/1/2015 05:11",
+		"nextSubsetDeclaration" : "monty 9/30/2015 03:58",
+		"nextTag" : "monty 9/30/2015 06:52",
+		"nextXMLDeclaration" : "monty 9/30/2015 07:10",
+		"setDriver:stream:readLimit:" : "monty 9/30/2015 03:41" } }
