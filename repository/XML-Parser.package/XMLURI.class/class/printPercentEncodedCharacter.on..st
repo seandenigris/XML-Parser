@@ -2,6 +2,7 @@ accessing
 printPercentEncodedCharacter: aCharacter on: aStream
 	| asciiValue |
 
+	"only the ASCII range contains reserved chars"
 	(asciiValue := aCharacter asciiValue) < 128
 		ifTrue: [
 			aStream nextPut: $%.

@@ -1,16 +1,16 @@
 detecting
 detectCurrentEncoding
-	| characterCode handlerSelector |
+	| handlerTableIndex handlerSelector |
 
-	(stream := streamReader stream) atEnd
+	((stream := streamReader stream) atEnd
+		or: [stream isDecodingReadStreamAdapter
+			and: [stream streamDecoder isDefaultStreamDecoder not]])
 		ifTrue: [^ self].
 
 	stream isDecodingReadStreamAdapter
-		ifTrue: [
-			stream streamDecoder isDefaultStreamDecoder
-				ifFalse: [^ self].
-			stream := stream stream].
+		ifTrue: [stream := stream stream].
 
-	((characterCode := stream peek asciiValue) < 256
-		and: [(handlerSelector := EncodingHandlerTable at: characterCode + 1) notNil])
+	"the index is asciiValue + 1 for null"
+	((handlerTableIndex := stream peek asciiValue + 1) <= EncodingHandlerTable size
+		and: [(handlerSelector := EncodingHandlerTable at: handlerTableIndex) notNil])
 		ifTrue: [self perform: handlerSelector].

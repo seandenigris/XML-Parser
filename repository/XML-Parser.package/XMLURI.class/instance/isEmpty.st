@@ -1,10 +1,5 @@
 testing
 isEmpty
-	"optimization to avoid parsing"
-	(self uriString notNil
-		and: [self uriString isEmpty])
-		ifTrue: [^ true].
-
 	self hasScheme
 		ifTrue: [^ false].
 	self hasAuthority

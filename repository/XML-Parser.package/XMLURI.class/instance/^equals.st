@@ -20,4 +20,5 @@ comparing
 		ifFalse: [^ false].
 	self fragment = anObject fragment
 		ifFalse: [^ false].
+
 	^ true.
