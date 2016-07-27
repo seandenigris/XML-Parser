@@ -1,3 +1,3 @@
 enumerating
 elementsAndContentsDo: aBlock
-	super elementsDo: aBlock
+	self elementsAndContents do: aBlock
