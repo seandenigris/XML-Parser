@@ -1,3 +1,3 @@
 accessing
 root
-	^ root ifNil: ['']
+	^ root ifNil: [root := '']

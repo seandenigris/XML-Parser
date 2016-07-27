@@ -25,6 +25,6 @@ nextAttributeValue
 	context exitLiteralValue.
 
 	nextChar == quote
-		ifFalse: [self errorExpectedAttributeValueEnd].
+		ifFalse: [self errorExpectedAttributeValueEndButGot: nextChar].
 
 	^ writeStream contents.

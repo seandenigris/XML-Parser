@@ -1,3 +1,3 @@
 accessing
 externalSubsetURI
-	^ externalSubsetUri ifNil: [externalSubsetUri := '']
+	^ externalSubsetUri
