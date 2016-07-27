@@ -1,0 +1,1 @@
+This class validates attributes with lists of name values separated by spaces.

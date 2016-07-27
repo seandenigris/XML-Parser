@@ -1,13 +1,13 @@
 tokenizing - dtd
 nextNmtokenOn: aWriteStream
 	"matches the nmtoken production"
-	|  nextChar oldPosition |
+	| nextChar |
 
-	oldPosition := aWriteStream position.
-	[(nextChar := streamReader peek) notNil
-		and: [(NameStartChars includes: nextChar)
-			or: [AdditionalNameChars includes: nextChar]]]
-		whileTrue: [aWriteStream nextPut: streamReader next].
-
-	(aWriteStream position > oldPosition)
+	((nextChar := streamReader peek) notNil
+		and: [(NameChars includes: nextChar)])
 		ifFalse: [self errorExpected: 'name token'].
+	aWriteStream nextPut: streamReader next.
+		
+	[(nextChar := streamReader peek) notNil
+		and: [NameChars includes: nextChar]]
+		whileTrue: [aWriteStream nextPut: streamReader next].

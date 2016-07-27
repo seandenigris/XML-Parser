@@ -1,3 +1,0 @@
-element nesting
-startNestingOfElement: anElementName
-	self elementNester startElement: anElementName

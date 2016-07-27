@@ -1,9 +1,10 @@
 {
 	"class" : {
-		"new" : "JAAyer 8/4/2010 14:44",
-		"new:" : "JAAyer 8/4/2010 16:33",
-		"new:withAll:" : "JAAyer 8/4/2010 14:41",
-		"newFrom:" : "JAAyer 8/4/2010 14:42",
+		"collectionClass" : "monty 1/29/2014 01:12",
+		"new" : "monty 1/28/2014 05:54",
+		"new:" : "monty 1/29/2014 01:13",
+		"new:withAll:" : "monty 1/29/2014 01:13",
+		"newFrom:" : "monty 1/29/2014 01:13",
 		"ofSize:" : "JAAyer 8/4/2010 14:43" },
 	"instance" : {
 		"add:" : "JAAyer 8/4/2010 15:01",

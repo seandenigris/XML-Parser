@@ -1,5 +1,6 @@
 notifications
 addedElement: anElement
 	super addedElement: anElement.
-	self hasNamespaces
+	(self hasNamespaces
+		and: [self namespaceScope ~= anElement namespaceScope])
 		ifTrue: [anElement inheritNamespacesFrom: self]

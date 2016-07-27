@@ -1,3 +1,5 @@
 accessing
 prefix
-	^ prefix ifNil: [prefix := '']
+	^ prefix ifNil: [
+		self setFromQualified.
+		prefix]

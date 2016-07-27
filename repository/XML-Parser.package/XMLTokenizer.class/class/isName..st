@@ -3,8 +3,8 @@ isName: aString
 	aString ifEmpty: [^ false].
 
 	aString doWithIndex: [:each :i | 
-		((NameStartChars includes: each)
-			or: [i > 1 and: [AdditionalNameChars includes: each]])
+		((NameChars includes: each)
+			and: [i > 1 or: [(AdditionalNameChars includes: each) not]])
 			ifFalse: [^ false]].
 
 	^ true.

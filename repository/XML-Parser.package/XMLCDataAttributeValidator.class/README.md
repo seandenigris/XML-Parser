@@ -1,0 +1,1 @@
+CDATA attribute values are left alone (whitespace is not normalized further).

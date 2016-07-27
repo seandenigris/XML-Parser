@@ -1,1 +1,1 @@
-A base class for XML URIs. It uses the XMLURIParser to parse URIs.
+A class for XML URIs. It uses the XMLURIParser to parse URIs and can combine URIs using /, can decode URI paths, and can retrieve contents using XMLHTTPRequest and XMLFileHandle.

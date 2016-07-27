@@ -2,7 +2,8 @@ testing
 nextMatchAll: aString
 	| i nextChar |
 
-	self peek == (aString at: 1)
+	"inlined peek"
+	(peekChar ifNil: [peekChar := self basicNext]) == (aString at: 1)
 		ifFalse: [^ false].
 
 	"we unrolled the first iteration with the above #peek"

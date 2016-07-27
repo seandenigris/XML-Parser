@@ -1,15 +1,13 @@
 tokenizing - dtd
 nextPubidLiteral
-	| quote fpi nextChar |
+	| quote nextChar |
 
 	quote := self expectQuote.
-	fpi := streamWriter writeWith: [:writeStream |
-		[(nextChar := streamReader peek) notNil
-			and: [(PubidChars includes: nextChar)
-				and: [nextChar ~~ quote]]]
-			whileTrue: [writeStream nextPut: streamReader next].
-
-		writeStream contents].
+	writeStream reset.
+	[(nextChar := streamReader peek) notNil
+		and: [(PubidChars includes: nextChar)
+			and: [nextChar ~~ quote]]]
+		whileTrue: [writeStream nextPut: streamReader next].
 	self expectNext: quote.
 
-	^ fpi.
+	^ writeStream contents.

@@ -1,3 +1,8 @@
 entity replacement
 characterFromCodePoint: aCodePoint
-	self subclassResponsibility
+	^ (aCodePoint notNil and: [aCodePoint > 0])
+		ifTrue: [
+			[aCodePoint asCharacter]
+				on: Error
+				do: [:error | self invalidCodePoint: aCodePoint]]
+		ifFalse: [self invalidCodePoint: aCodePoint]

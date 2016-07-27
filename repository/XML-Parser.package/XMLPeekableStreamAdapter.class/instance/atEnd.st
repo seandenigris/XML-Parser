@@ -1,3 +1,3 @@
 testing
 atEnd
-	^ peekChar isNil and: [stream atEnd]
+	^ peekChar == nil and: [stream atEnd]

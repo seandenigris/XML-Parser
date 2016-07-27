@@ -9,7 +9,9 @@
 		"driver",
 		"context",
 		"streamReader",
-		"streamWriter" ],
+		"writeStream",
+		"nameStream",
+		"normalizedSpaceChar" ],
 	"name" : "XMLParserTokenizer",
 	"pools" : [
 		 ],

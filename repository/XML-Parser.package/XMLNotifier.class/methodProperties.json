@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addObserver:" : "JAAyer 7/20/2010 10:05",
-		"notifyOf:with:" : "JAAyer 7/20/2010 10:04",
-		"notifyOf:with:with:" : "JAAyer 7/20/2010 10:04",
-		"notifyOf:with:with:with:" : "JAAyer 7/20/2010 10:04",
-		"notifyOf:withArguments:" : "JAAyer 7/20/2010 10:05",
+		"addObserver:" : "monty 2/2/2014 07:11",
+		"notifyOf:with:" : "monty 2/2/2014 02:36",
+		"notifyOf:with:with:" : "monty 2/2/2014 02:23",
+		"notifyOf:with:with:with:" : "monty 2/2/2014 02:24",
+		"notifyOf:withArguments:" : "monty 2/2/2014 02:37",
 		"observers" : "JAAyer 7/20/2010 10:02",
-		"removeObserver:" : "JAAyer 7/20/2010 10:03" } }
+		"removeObserver:" : "monty 2/2/2014 02:37" } }

@@ -2,17 +2,19 @@ tokenizing
 nextAttributeValue
 	| quote value |
 
-	streamReader peek == $&
-		ifTrue: [^ self nextUnparsedEntityReference].
-
-	quote := self expectQuote.
-	context resetAfter: [
-		context enterLiteralValue.
-		value := self
-			nextDelimitedBy: quote and: $<
-			entityChar: $&
-			normalizeWhitespace: true
-			ignorableWhitespace: false].
-	self expectNext: quote.
+	((quote := streamReader next) == $"
+		or: [quote == $'])
+		ifFalse: [
+			quote == $&
+				ifTrue: [^ self nextUnparsedEntityReference]
+				ifFalse: [self errorExpected: 'start of quoted attribute value']].
+	
+	context
+		saveCurrent;
+		enterLiteralValue.
+	value := self nextAttributeValueDelimitedBy: quote.
+	context resetPrevious.
+	(streamReader next == quote)
+		ifFalse: [self errorExpected: 'end of quoted attribute value'].
 
 	^ value.

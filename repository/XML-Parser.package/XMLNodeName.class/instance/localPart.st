@@ -1,3 +1,5 @@
 accessing
 localPart
-	^ localPart ifNil: [localPart := '']
+	^ localPart ifNil: [
+		self setFromQualified.
+		localPart]

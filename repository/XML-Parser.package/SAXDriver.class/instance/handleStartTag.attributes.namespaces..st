@@ -1,23 +1,30 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
-	self startNestingOfElement: anElementName.
+	"performance critical method"
+	| prefix namespaceUri |
 
-	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
-		self
-			validateStartTag: anElementName
-			prefix: prefixPart
-			attributes: anAttributeDictionary
-			namespaces: aNamespaceDictionary.
+	self elementNester startElement: anElementName.
 
-		self saxHandler 
-			startElement: anElementName
-			prefix: prefixPart
-			uri:
-				(self usesNamespaces
-					ifTrue: [self scopeAllocator resolvePrefix: prefixPart]
-					ifFalse: [''])
-			localName: localPart
-			attributes: anAttributeDictionary].
-
+	prefix := anElementName qualifiedNamePrefix.
 	self usesNamespaces
-		ifTrue: [self saxHandler currentScope: self scopeAllocator currentScope].
+		ifTrue: [
+			self scopeAllocator enterScope.
+			aNamespaceDictionary
+				ifNotNil: [self declareNamespaces: aNamespaceDictionary].
+			namespaceUri :=
+				self scopeAllocator
+					validateAndResolvePrefix: prefix
+					ofName: anElementName.
+			anAttributeDictionary isEmpty
+				ifFalse: [self scopeAllocator validateAttributePrefixes: anAttributeDictionary]].
+	self isValidating
+		ifTrue: [self validateStartTag: anElementName attributes: anAttributeDictionary].
+
+	saxHandler
+		startElement: anElementName
+		prefix: prefix
+		uri: (namespaceUri ifNil: [''])
+		localName: (anElementName qualifiedNameLocalPart: prefix)
+		attributes: anAttributeDictionary.
+	self usesNamespaces
+		ifTrue: [saxHandler currentScope: self scopeAllocator currentScope].

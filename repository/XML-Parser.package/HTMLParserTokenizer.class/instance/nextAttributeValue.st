@@ -2,14 +2,15 @@ tokenizing
 nextAttributeValue
 	| quote value |
 
+	streamReader atQuote
+		ifFalse: [^ self nextName].
 	quote := streamReader next.
-	context resetAfter: [
-		context enterLiteralValue.
-		value := self
-			nextDelimitedBy: quote and: nil
-			entityChar: $&
-			normalizeWhitespace: false
-			ignorableWhitespace: false].
+	context
+		saveCurrent;
+		enterLiteralValue.
+	value := self nextAttributeValueDelimitedBy: quote.
+	context resetPrevious.
+
 	self expectNext: quote.
 
 	^ value.

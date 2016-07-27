@@ -1,21 +1,19 @@
 private
 setFromDictionary: anOrderPreservingDictionary andElement: anElement
-	| attributeAssoc attributeNode |
+	| association |
 
-	"Hack to reuse a dictionary for speed"
+	"hack to reuse a dictionary for speed"
 	attributesByName := anOrderPreservingDictionary dictionary.
 
+	"add the XMLAttributes in order directly to the collection
+	to avoid sending notifications and also replace the value in
+	the attributesByName association with the XMLAttribute"
 	anOrderPreservingDictionary keysDo: [:each |
-		attributeAssoc :=
-			attributesByName
-				associationAt: each
-				ifAbsent: [nil].
-		(attributeNode :=
-			XMLAttribute
-				name: each
-				value: attributeAssoc value)
-			addObserver: self;
-			addObserver: anElement;
-			element: anElement.
-		attributeAssoc value: attributeNode.
-		collection add: attributeNode].
+		(association := attributesByName associationAt: each ifAbsent: nil)
+			value:
+				(collection addLast: 
+					(XMLAttribute new
+						setName: each value: association value;
+						addObserver: self;
+						addObserver: anElement;
+						element: anElement))].

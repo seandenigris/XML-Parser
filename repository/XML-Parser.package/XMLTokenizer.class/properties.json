@@ -6,7 +6,7 @@
 		"AdditionalNameChars",
 		"AttributeTypeDelimiters",
 		"EncodingNameChars",
-		"NameStartChars",
+		"NameChars",
 		"PubidChars",
 		"UnaryOperatorChars",
 		"ValueListChars" ],

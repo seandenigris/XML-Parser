@@ -5,6 +5,8 @@ nextTextDeclaration
 		skipSeparators;
 		next.
 
-	context resetAfter: [
-		context enterTextDeclaration.
-		self nextPIOrXMLDecl].
+	context
+		saveCurrent;
+		enterTextDeclaration.
+	self nextPIOrXMLDecl.
+	context resetPrevious.	

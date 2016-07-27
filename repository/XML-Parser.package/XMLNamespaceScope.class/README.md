@@ -1,1 +1,1 @@
-A namespace scope is a possibly empty set of mappings from namespace prefixes to URIs and an optional default namespace URI to be used for unprefixed elements. Scopes can be created from other scopes by sending #enclosingScope: to the class with the other scope as the argument; the new scope will inherit the mappings from the parent.
+A namespace scope is a possibly empty set of mappings from namespace prefixes to URIs and an optional default namespace URI to be used for unprefixed elements. Scopes can be created from other scopes by copying.

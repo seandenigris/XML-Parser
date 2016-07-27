@@ -1,7 +1,7 @@
 handling tokens
 handlePCData: aString
 	self
-		preEndElements: self elementNester elementsToEndBeforePCData;
-		preStartElements: self elementNester elementsToStartBeforePCData.
+		endElements: self elementNester elementsToEndBeforePCData;
+		startElements: self elementNester elementsToStartBeforePCData.
 
-	super handlePCData: aString.
+	self saxHandler characters: aString.

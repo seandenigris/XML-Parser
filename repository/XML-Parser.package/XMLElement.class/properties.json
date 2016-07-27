@@ -9,7 +9,8 @@
 		"name",
 		"attributes",
 		"namespaceScope",
-		"document" ],
+		"document",
+		"notifier" ],
 	"name" : "XMLElement",
 	"pools" : [
 		 ],

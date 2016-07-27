@@ -1,3 +1,3 @@
 testing
 hasNamespaces
-	^ self hasDefaultNamespace or: [self hasPrefixMappings]
+	^ defaultNamespace notNil or: [prefixMappings notNil and: [prefixMappings notEmpty]]

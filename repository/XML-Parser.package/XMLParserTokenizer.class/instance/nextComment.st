@@ -6,12 +6,13 @@ nextComment
 	streamReader next.
 	self expectNext: $-.
 
-	comment := streamWriter writeWith: [:writeStream |
-		[streamReader atEnd
-			or: [(nextChar := streamReader next) == $-
-				and: [(streamReader peek) == $-]]]
-			whileFalse: [writeStream nextPut: nextChar].
-		writeStream contents].
+	writeStream reset.
+	[(nextChar := streamReader next) == nil
+		or: [nextChar == $-
+			and: [(streamReader peek) == $-]]]
+		whileFalse: [writeStream nextPut: nextChar].
+	comment := writeStream contents.
+
 	self
 		expectNext: $-;
 		expectTerminator: $>.

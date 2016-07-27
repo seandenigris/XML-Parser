@@ -1,3 +1,3 @@
 scope
 exitScope
-	self popScope
+	self scopes removeLast

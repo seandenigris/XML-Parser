@@ -1,5 +1,6 @@
 accessing
 currentScope
-	^ self scopes isEmpty
-		ifTrue: [self emptyScope]
-		ifFalse: [scopes at: scopes size]
+	"for speed"
+	^ self scopes size > 0
+		ifTrue: [scopes at: scopes size]
+		ifFalse: [self emptyScope]

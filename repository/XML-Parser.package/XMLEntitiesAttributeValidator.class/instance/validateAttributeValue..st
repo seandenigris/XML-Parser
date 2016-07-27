@@ -1,5 +1,5 @@
 validation
 validateAttributeValue: aValue
-	Character space
-		split: aValue
+	self
+		spaceSeparatedValuesIn: aValue
 		do: [:each | self validateEntityReference: each]

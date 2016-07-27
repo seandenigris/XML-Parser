@@ -1,3 +1,7 @@
 adding
 addLast: anObject
-	^ self with: [super addLast: anObject] add: anObject
+	"inlined for speed"
+	self beforeAdding: anObject.
+	collection addLast: anObject.
+	self afterAdding: anObject.
+	^ anObject

@@ -1,6 +1,7 @@
 handling tokens
 handleEndDocument
-	self elementNester openElements
-		reverseDo: [:each | self handleEndTag: each].
+	self elementNester
+		openElementsReverseDo: [:each | self endElement: each];
+		endNesting.
 
-	super handleEndDocument.
+	self saxHandler endDocument.

@@ -1,4 +1,6 @@
 tokenizing
 nextEndDocument
-	context enterAtEnd.
-	driver handleEndDocument.
+	context atEnd
+		ifFalse: [
+			context enterAtEnd.
+			driver handleEndDocument]

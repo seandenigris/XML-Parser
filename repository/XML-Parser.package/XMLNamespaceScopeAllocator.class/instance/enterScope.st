@@ -1,3 +1,3 @@
 scope
 enterScope
-	self pushScope: (XMLNamespaceScope enclosingScope: self currentScope)
+	self scopes addLast: self currentScope copy

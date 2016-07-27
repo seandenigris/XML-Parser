@@ -4,11 +4,10 @@ nextAttributeDefaultPragma
 	streamReader peek == $#
 		ifFalse: [^ ''].
 	streamReader next.
-	^ streamWriter writeWith: [:writeStream |
-		streamReader peek == $R
-			ifTrue: [writeStream nextPutAll: (self expectNextAll: 'REQUIRED')]
-			ifFalse: [
-				streamReader peek == $I
-					ifTrue: [writeStream nextPutAll: (self expectNextAll: 'IMPLIED')]
-					ifFalse: [writeStream nextPutAll: (self expectNextAll: 'FIXED')]].
-		writeStream contents].
+
+	^ streamReader peek == $R
+		ifTrue: [self expectNextAll: 'REQUIRED']
+		ifFalse: [
+			streamReader peek == $I
+				ifTrue: [self expectNextAll: 'IMPLIED']
+				ifFalse: [self expectNextAll: 'FIXED']].

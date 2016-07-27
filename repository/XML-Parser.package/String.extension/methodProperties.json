@@ -4,4 +4,5 @@
 	"instance" : {
 		"asXMLString" : "JAAyer 4/14/2010 21:26",
 		"asXMLURI" : "monty 1/10/2014 00:56",
-		"splitQualifiedNameInto:" : "monty 12/9/2013 05:06" } }
+		"qualifiedNameLocalPart:" : "monty 2/1/2014 07:07",
+		"qualifiedNamePrefix" : "monty 2/1/2014 07:18" } }

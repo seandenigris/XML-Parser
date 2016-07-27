@@ -1,3 +1,3 @@
 private
 nodeStack
-	^ nodeStack ifNil: [nodeStack := OrderedCollection new: 15]
+	^ nodeStack ifNil: [nodeStack := OrderedCollection new: 10]

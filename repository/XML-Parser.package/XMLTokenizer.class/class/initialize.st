@@ -4,8 +4,8 @@ initialize
 
 	super initialize.
 	self
-		initializeNameStartChars;
 		initializeAdditionalNameChars;
+		initializeNameChars;
 		initializePubidChars;
 		initializeAttributeTypeDelimiters;
 		initializeValueListChars;

@@ -1,0 +1,3 @@
+tokenizing
+nextAttributeValueDelimitedBy: aQuote
+	self subclassResponsibility

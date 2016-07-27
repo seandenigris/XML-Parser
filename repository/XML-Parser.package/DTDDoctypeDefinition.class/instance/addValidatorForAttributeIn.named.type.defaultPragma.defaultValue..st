@@ -7,7 +7,7 @@ addValidatorForAttributeIn: anElement named: aName type: aType defaultPragma: aD
 			at: anElement
 			ifAbsentPut: [Dictionary new].
 	(attributeValidatorsForElement includesKey: aName)
-		ifTrue: [^ nil].
+		ifTrue: [^ self].
 
 	validator :=
 		(DTDAttributeDefinitionParser

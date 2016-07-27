@@ -6,10 +6,10 @@ setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attribute
 		setQualified: aQualifiedName prefix: aPrefix localPart: aLocalName;
 		addObserver: self.
 
-	anAttributeDictionary
-		ifNotEmpty: [
-			"By not observing 'attributes' until after it is filled, we avoid
-			re-validating the attributes, which the parser should have already done"
+	anAttributeDictionary isEmpty
+		ifFalse: [
+			"The setFrom method is used to avoid revalidating the
+			attributes when adding them to the list"
 			(attributes := XMLAttributeList new: anAttributeDictionary size)
 				setFromDictionary: anAttributeDictionary andElement: self;
 				addObserver: self].

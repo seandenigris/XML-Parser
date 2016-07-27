@@ -2,5 +2,8 @@ observing
 addObserver: anObject
 	observers :=
 		observers
-			ifNil: [Array with: anObject]
-			ifNotNil: [observers copyWith: anObject]
+			ifNil: [anObject]
+			ifNotNil: [
+				observers isArray
+					ifTrue: [observers copyWith: anObject]
+					ifFalse: [Array with: observers with: anObject]]

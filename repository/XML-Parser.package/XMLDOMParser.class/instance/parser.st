@@ -3,8 +3,8 @@ parser
 	| parser |
 
 	parser := super parser.
-	(self nodeStack notEmpty and: [self topNode isElement])
-		ifTrue: [
+	(self nodeStack isEmpty or: [self topNode isElement not])
+		ifFalse: [
 			self
 				configuration: self topNode configuration;
 				document: self topNode document.

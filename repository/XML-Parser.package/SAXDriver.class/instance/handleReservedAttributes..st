@@ -1,4 +1,4 @@
-private
+handling tokens
 handleReservedAttributes: anAttributeDictionary
 	(anAttributeDictionary at: 'xml:base' ifAbsent: [nil])
 		ifNotNil: [:uri | self currentURI: uri].

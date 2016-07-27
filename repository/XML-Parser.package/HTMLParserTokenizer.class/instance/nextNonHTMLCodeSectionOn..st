@@ -10,8 +10,9 @@ nextNonHTMLCodeSectionOn: aWriteStream
 					nextChar := streamReader next.
 					((commentStartChar == $/
 						and: [nextChar == streamReader normalizedLineEndingChar])
-							or: [(commentStartChar == $* and: [nextChar == $*])
-								and: [streamReader peek == $/]])
+							or: [commentStartChar == $*
+								and: [nextChar == $*
+									and: [streamReader peek == $/]]])
 						ifTrue: [
 							commentStartChar == $*
 								ifTrue: [

@@ -1,6 +1,6 @@
 handling tokens
 handleEndDocument
-	self elementNester ensureNoElementsRemainOpen.
+	self elementNester endNesting.
 	self isValidating
 		ifTrue: [self validator validateEndDocument].
 

@@ -1,7 +1,6 @@
 streaming
 skipSeparators
-	| nextChar |
-
-	[(nextChar := self peek) notNil
-		and: [SeparatorCharacters includes: nextChar]]
+	"inlined peek"
+	[(peekChar ifNil: [peekChar := self basicNext]) notNil
+		and: [SeparatorCharacters includes: peekChar]]
 		whileTrue: [self next].

@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"afterAdding:" : "monty 11/26/2013 21:59",
-		"afterRemoving:" : "monty 11/26/2013 22:01",
+		"afterAdding:" : "monty 2/2/2014 02:37",
+		"afterRemoving:" : "monty 2/2/2014 02:37",
 		"beforeAdding:" : "JAAyer 11/22/2010 15:42",
 		"elementAt:" : "JAAyer 11/26/2010 12:32",
 		"elementAt:ifAbsent:" : "monty 11/26/2013 22:13",
@@ -18,5 +18,4 @@
 		"elementsDo:" : "monty 11/26/2013 22:11",
 		"elementsSelect:" : "monty 11/26/2013 22:08",
 		"hasElements" : "monty 11/26/2013 22:03",
-		"includesElementAt:" : "monty 11/26/2013 22:04",
-		"renamedElement:from:to:" : "monty 11/26/2013 22:03" } }
+		"includesElementAt:" : "monty 11/26/2013 22:04" } }

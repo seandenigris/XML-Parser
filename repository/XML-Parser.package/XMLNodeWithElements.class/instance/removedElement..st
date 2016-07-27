@@ -1,3 +1,4 @@
 notifications
 removedElement: anElement
-	anElement document: nil
+	self removedNode: anElement.
+	anElement document: nil.

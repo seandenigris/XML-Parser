@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"context" ],
+		"context",
+		"previousContext" ],
 	"name" : "XMLTokenContext",
 	"pools" : [
 		 ],

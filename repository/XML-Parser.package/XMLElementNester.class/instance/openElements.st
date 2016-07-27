@@ -1,3 +1,3 @@
 accessing
 openElements
-	^ openElements ifNil: [openElements := OrderedCollection new: 15]
+	^ openElements ifNil: [openElements := OrderedCollection new: 10]
