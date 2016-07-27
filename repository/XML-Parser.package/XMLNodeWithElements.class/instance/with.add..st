@@ -14,6 +14,9 @@ with: aBlock add: aNode
 	self with: aBlock onError: [^ nil].
 	aNode parent: self.
 	aNode isTag ifTrue: [
+		self isTag
+			ifTrue: [aNode inheritBindingsFromScope: self namespaceScope].
+
 		(self nodes last = aNode)
 			ifTrue: [self elementCacheAdd: aNode]
 			ifFalse: [self rebuildElementCache]].

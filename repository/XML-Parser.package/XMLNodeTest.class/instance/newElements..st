@@ -1,3 +1,5 @@
 accessing
 newElements: aNumber
-	^ self newElementsNamed: ((1 to: aNumber) collect: [:i | 'test', i asString])
+	^ self
+		createNodes: aNumber
+		with: [:i | XMLElement named: 'test', i asString]

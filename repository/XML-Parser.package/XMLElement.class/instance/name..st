@@ -1,6 +1,9 @@
 accessing
-name: aSymbol
-	self
-		name: aSymbol
-		namespace: self namespace
-		uri: self namespaceURI
+name: aLocalName
+	name :=
+		(self namespace
+			ifNil: [aLocalName]
+			ifNotNil: [self namespace asString, ':', aLocalName asString]) asSymbol.
+	localName := aLocalName asSymbol.
+
+	self notifyParentOfChange.

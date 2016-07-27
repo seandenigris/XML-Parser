@@ -7,7 +7,7 @@
 	"commentStamp" : "JAAyer 2/21/2010 17:57",
 	"instvars" : [
 		"saxHandler",
-		"scope",
+		"scoping",
 		"useNamespaces",
 		"validateAttributes",
 		"languageEnvironment" ],

@@ -2,7 +2,7 @@ tests
 test052elementContentString
 	| element str |
 
-	str := 'test<>&"'.
+	str := self markupString.
 	(element := XMLElement new) contentString: str.
 	self
 		deny: element isEmpty;
@@ -21,3 +21,6 @@ test052elementContentString
 		assertElement: (element addContent: (XMLStringNode string: str))
 		contentString: str
 		contents: (Array with: str with: str, str).
+
+	element addElement: (XMLElement named: 'foo' contentString: 'test').
+	self assert: (element contentStringAt: #foo) = 'test'.

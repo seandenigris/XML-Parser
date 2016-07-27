@@ -1,3 +1,3 @@
 accessing
-attributeAt: attributeNameAsSymbolOrString
-	^self attributeAt: attributeNameAsSymbolOrString ifAbsent: [nil]
+attributeAt: aSymbolOrString
+	^self attributeAt: aSymbolOrString ifAbsent: [nil]

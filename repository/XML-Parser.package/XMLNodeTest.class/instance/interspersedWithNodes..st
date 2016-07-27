@@ -1,9 +1,5 @@
 accessing
-interspersedWithNodes: anElementCollection
-	| mixedNodes |
-
-	mixedNodes := OrderedCollection new.
-	anElementCollection
-		do: [:each | mixedNodes add: each]
-		separatedBy: [mixedNodes add: XMLNode new].
-	^ mixedNodes.
+interspersedWithNodes: aNodeCollection
+	^ self
+		intersperse: aNodeCollection
+		with: (self newNodes: aNodeCollection size)

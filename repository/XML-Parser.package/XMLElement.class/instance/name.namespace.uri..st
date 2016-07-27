@@ -1,10 +1,15 @@
-accessing
+namespace
 name: aLocalName namespace: aPrefix uri: aUri
-	name :=
-		(aPrefix isEmptyOrNil
-			ifTrue: [aLocalName]
-			ifFalse: [aPrefix asString, ':', aLocalName asString]) asSymbol.
-	localName := aLocalName asSymbol.
-	super namespace: aPrefix uri: aUri.
+	(aPrefix isEmptyOrNil or: [aPrefix = 'xmlns'])
+		ifTrue: [
+			aUri ifNotNil: [self defaultNamespace: aUri].
+			namespace := nil]
+		ifFalse: [
+			aUri
+				ifNotNil: [self bindNamespace: aPrefix to: aUri]
+				ifNil: [
+					(self namespaceScope isBoundNamespace: aPrefix)
+						ifFalse: [self errorUnboundNamespace: aPrefix]].
+			namespace := aPrefix].
 
-	self notifyParentOfChange.
+	self name: aLocalName.

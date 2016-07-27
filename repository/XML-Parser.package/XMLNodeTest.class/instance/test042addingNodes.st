@@ -19,10 +19,9 @@ test042addingNodes
 		should: [node addNode: children fifth before: children sixth]
 		addNode: children fifth
 		to: node.
-	self
-		should: [node addNode: (self newNode parent: self newNode)] raise: Error;
-		should: [node addNode: children first] raise: Error.
 
 	self
+		should: [node addNode: (XMLNode new parent: XMLNode new)] raise: Error;
+		should: [node addNode: children first] raise: Error;
 		assert: node nodes = children;
 		assert: node topNode = children first.

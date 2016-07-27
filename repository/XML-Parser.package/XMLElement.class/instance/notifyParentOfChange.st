@@ -1,5 +1,3 @@
 private
 notifyParentOfChange
-	self hasParent ifFalse: [^ self].
-
-	self parent changedChildElement: self.
+	self hasParent ifTrue: [self parent changedChildElement: self]

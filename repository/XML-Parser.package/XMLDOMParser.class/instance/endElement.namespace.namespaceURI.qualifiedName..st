@@ -2,11 +2,16 @@ content
 endElement: localName namespace: namespace namespaceURI: uri qualifiedName: qualifiedName
 	| currentElement |
 	currentElement := self pop.
-	(currentElement namespace isNil
-		or: [currentElement namespace = self defaultNamespace])
+	(currentElement namespace isNil)
 		ifTrue: [
-			currentElement localName = localName
-				ifFalse: [self driver errorExpected: 'End tag "', localName , '" doesn''t match "' , currentElement localName  , '".']]
+			currentElement localName = localName asSymbol
+				ifFalse: [
+					self
+						errorExpectedEndTag: currentElement
+						localName butGot: localName]]
 		ifFalse: [
-			currentElement qualifiedName = qualifiedName
-				ifFalse: [self driver errorExpected: 'End tag "', qualifiedName , '" doesn''t match "' , currentElement qualifiedName  , '".']]
+			currentElement qualifiedName = qualifiedName asSymbol
+				ifFalse: [
+					self
+						errorExpectedEndTag: currentElement qualifiedName
+						butGot: qualifiedName]]

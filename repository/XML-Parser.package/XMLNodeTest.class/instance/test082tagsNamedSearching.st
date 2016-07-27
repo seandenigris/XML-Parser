@@ -7,29 +7,29 @@ test082tagsNamedSearching
 	node addNodes: (elements first: 2).
 	node nodes first addNodes: (elements copyFrom: 3 to: 4).
 	node nodes second addNodes: (elements copyFrom: 5 to: 6).
+	self
+		should: [:block | node tagsNamed: #absent do: block] enumerate: #();
+		should: [:block | node elementsAt: #absent do: block] enumerate: #();
+		should: [:block | node tagsNamed: #absent childrenDoAndRecurse: block] enumerate: #();
+		should: [:block | node tagsNamed: #absent contentsDo: block] enumerate: #();
+		should: [:block | node tagsNamed: #foo contentsDo: block] enumerate: #().
 
 	self
-		should: [:block |node tagsNamed: #absent do: block] enumerate: #();
-		should: [:block |node tagsNamed: #absent childrenDo: block] enumerate: #();
-		should: [:block |node tagsNamed: #absent childrenDoAndRecurse: block] enumerate: #();
-		should: [:block |node tagsNamed: #absent contentsDo: block] enumerate: #();
-		should: [:block |node tagsNamed: #foo contentsDo: block] enumerate: #().
-	self
-		should: [:block |node tagsNamed: #foo do: block]
+		should: [:block | node tagsNamed: #foo do: block]
 		enumerate: (Array with: elements first with: elements third).
 	self
-		should: [:block |node tagsNamed: #prefix:foo do: block]
+		should: [:block | node tagsNamed: 'prefix:foo' do: block]
 		enumerate: (Array with: elements third).
 	self
-		should: [:block | node topElement tagsNamed: #foo childrenDo: block]
+		should: [:block | node topElement elementsAt: #foo do: block]
 		enumerate: (Array with: elements third).
 	self
-		should: [:block |node tagsNamed: #bar childrenDoAndRecurse: block]
+		should: [:block | node tagsNamed: #bar childrenDoAndRecurse: block]
 		enumerate: (Array with: elements fourth with: elements second with: elements fifth).
 
 	elements first
 		addContent: 'testing 1';
-		addNode: XMLNode new;
+		addNode: XMLNode new; "Intersperse between string nodes"
 		addContent: 'testing 2'.
 	elements third addContent: 'testing'.
 	self

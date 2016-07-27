@@ -18,4 +18,7 @@ test083elementRemoving
 		assert: node elements = (elements last: 1);
 		assert: (node elementAt: #bar) isNil;
 		assert: (node elementsAt: #bar) isEmpty;
-		assert: node topElement = elements last.
+		assert: node topElement = elements last;
+		assert: (node removeNode: elements last) = elements last;
+		deny: node hasElements;
+		assert: node topElement isNil.

@@ -1,0 +1,3 @@
+private
+scoping
+	^ scoping

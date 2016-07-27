@@ -1,17 +1,22 @@
 tests
-test030StringNode
-	| string raw escaped |
+test030stringNode
+	| node raw escaped |
 
-	string := XMLStringNode new.
-	raw := 'test&<>"'.
-	escaped := 'test&amp;&lt;&gt;&quot;'.
+	node := XMLStringNode new.
+	raw := self markupString.
+	escaped := self escapedString.
 	self
-		assert: (string isText & string isTagOrText);
-		assertString: string is: '' printed: '';
-		assertString: (string string: raw) is: raw printed: escaped;
-		assertString: (XMLStringNode string: string) is: raw printed: escaped;
-		assertString: (string addContent: raw) is: raw, raw printed: escaped, escaped.
+		assert: node isText & node isTagOrText;
+		assertString: node is: '' printed: '';
+		assertString: (node string: raw) is: raw printed: escaped;
+		assertString: (node addContent: raw) is: raw, raw printed: escaped, escaped.
 	self
-		assertString: (string addContent: (XMLStringNode string: raw))
+		assertString: (node addContent: (XMLStringNode string: raw))
 		is: raw, raw, raw
 		printed: escaped, escaped, escaped.
+
+	self assertString: (XMLStringNode string: raw) is: raw printed: escaped.
+	self
+		assertString: (XMLStringNode string: (XMLStringNode string: raw))
+		is: raw
+		printed: escaped.

@@ -2,5 +2,5 @@ initialize
 initialize
 	stack := OrderedCollection new.
 	canonical := false.
-	scope := XMLNamespaceScope new.
+	scoping := XMLNamespaceScopeStack new.
 	newLinesAllowed := false

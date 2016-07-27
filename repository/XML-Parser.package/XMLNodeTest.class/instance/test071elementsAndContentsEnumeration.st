@@ -4,10 +4,8 @@ test071elementsAndContentsEnumeration
 
 	node := XMLElement new.
 	elements := self newElements: 3.
-	contents := Array with: (XMLStringNode string: 'test') with: (XMLStringNode string: 'test2').
-	(elementsAndContents := elements copy)
-		addFirst: contents first;
-		add: contents second after: elements second.
+	contents := self newStrings: 3.
+	elementsAndContents := self intersperse: elements with: contents.
 	node addNodes: (self interspersedWithNodes: elementsAndContents).
 
 	self

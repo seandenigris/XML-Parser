@@ -18,4 +18,4 @@ test080elementAccessing
 		assert: (node elementAt: 'prefix:foo') = elements third;
 		assert: (node elementsAt: 'prefix:foo') = (OrderedCollection with: elements third);
 		assert: (node elementAtAny: #(bar prefix:foo)) = elements second;
-		assert: (node elementAtAny: #(absent baz)) = elements last.
+		assert: (node elementAtAny: #(absent 'baz')) = elements last.

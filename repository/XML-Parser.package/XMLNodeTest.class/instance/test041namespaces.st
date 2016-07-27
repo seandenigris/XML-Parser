@@ -1,10 +1,10 @@
 tests
 test041namespaces
-	| node ns nsUri |
+	| node ns uri |
 
-	node := XMLNodeWithElements new.
+	node := XMLElement new.
 	ns := 'foo'.
-	nsUri := 'http://www.example.com/foo'.
+	uri := 'http://foo'.
 	self
 		assertNode: node namespace: nil uri: nil;
-		assertNode: (node namespace: ns uri: nsUri) namespace: ns uri: nsUri.
+		assertNode: (node namespace: ns uri: uri) namespace: ns uri: uri.

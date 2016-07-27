@@ -16,7 +16,6 @@
 		"externalEntities",
 		"parameterEntities",
 		"parsingMarkup",
-		"markedPosition",
 		"peekChar",
 		"validating",
 		"nameBuffer",

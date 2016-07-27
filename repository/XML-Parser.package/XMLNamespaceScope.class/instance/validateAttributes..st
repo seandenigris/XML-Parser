@@ -1,12 +1,18 @@
 validation
 validateAttributes: attributeList
 	"check all attribute namespaces are defined and not duplicated by aliasing"
-	| namespace localName |
+	| namespace localName qualifiedAlias |
+
 	attributeList keysDo: [:attrName |
-		self splitName: attrName into: [:ns :ln |
+		attrName splitQualifiedNameInto: [:ns :ln |
 			namespace := ns.
 			localName := ln].
 		namespace ifNotNil: [
-			(self namespaceAliases: namespace) do: [:alias |
-				(attributeList includesKey: alias , ':' , localName)
-					ifTrue: [self parseError: 'Attributes ' , attrName , ' and ' , alias , ':' , localName , ' are aliased to namespace ' , (self namespaceURIOf: namespace) ]]]]
+			(self currentScope aliasesFor: namespace) do: [:alias |
+				qualifiedAlias := alias , ':' , localName.
+				(attributeList includesKey: qualifiedAlias)
+					ifTrue: [
+						self
+							errorAttribute: attrName
+							isAliasFor: qualifiedAlias
+							withURI: (self resolveNamespace: namespace)]]]]

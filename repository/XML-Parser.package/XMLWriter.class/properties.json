@@ -9,8 +9,7 @@
 	"instvars" : [
 		"stream",
 		"stack",
-		"scope",
-		"scanner",
+		"scoping",
 		"canonical",
 		"currentIndent",
 		"indentString",

@@ -1,4 +1,5 @@
 initialize
 setAttributes: aDictionary
 	self attributes removeAll.
-	aDictionary keysAndValuesDo: [:attrName :attrValue | self at: attrName put: attrValue].
+	aDictionary ifNil: [^ self].
+	aDictionary keysAndValuesDo: [:key :value | self at: key put: value].

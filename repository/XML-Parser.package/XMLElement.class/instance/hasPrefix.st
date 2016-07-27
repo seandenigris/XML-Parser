@@ -1,3 +1,3 @@
 testing
 hasPrefix
-	^ self localName ~~ self tag
+	^ self localName ~~ self qualifiedName

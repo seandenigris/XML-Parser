@@ -1,3 +1,3 @@
 accessing
 removeAttribute: aSymbol
-	^ self attributes removeKey: aSymbol
+	^ self attributes removeKey: aSymbol asSymbol

@@ -1,4 +1,8 @@
 writing xml
 endTag: tagName
 	self outdent.
-	self endTag: tagName xmlns: nil.
+	self popTag: tagName.
+	self stream
+		nextPutAll: '</';
+		nextPutAll: tagName.
+	self endTag.

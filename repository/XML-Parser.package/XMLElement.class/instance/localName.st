@@ -1,3 +1,3 @@
-namespace
+accessing
 localName
 	^ localName ifNil: [#'']

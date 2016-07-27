@@ -4,4 +4,4 @@ elementCacheAdd: anElement
 
 	self elementCacheAt: anElement localName add: anElement.
 	anElement hasPrefix
-		ifTrue: [self elementCacheAt: anElement tag add: anElement].
+		ifTrue: [self elementCacheAt: anElement qualifiedName add: anElement].

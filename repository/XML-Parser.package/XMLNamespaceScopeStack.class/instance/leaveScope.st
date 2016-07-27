@@ -1,0 +1,3 @@
+scope
+leaveScope
+	self popScope

@@ -1,3 +1,1 @@
-This class represents a node with child nodes. You will likely use its API through either XMLDocument or XMLElement.
-
-To retrieve child elements by name, you can send any of the #element- messages under "accessing." To search a node and its descendants using depth-first traversal, you can send any of the #firstTag: or #tagsNamed: messages under "searching."
+This class represents a node with child nodes. You will likely use its API through either XMLDocument or XMLElement. To retrieve child elements by name, you can send any of the #element- messages in "accessing." The #firstTag- messages search the receiver and its descendants using depth-first traversal for specific elements, and the #tagsNamed- messages perform some sort of iteration over descendent elements also using depth-first traversal.

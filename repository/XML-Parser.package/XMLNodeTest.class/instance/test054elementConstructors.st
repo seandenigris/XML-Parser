@@ -1,30 +1,32 @@
 tests
 test054elementConstructors
-	| noAttributes attributes element |
+	| noAttributes attributes str element |
 
 	noAttributes := Dictionary new.
-	attributes := Dictionary with: #attr1->'value1' with: 'attr2'->'value2'.
-
 	self
 		assertElement: (XMLElement named: #foo)
 		name: #foo
 		attributes: noAttributes
 		contentString: ''.
+
+	attributes := Dictionary with: #foo->'test1' with: 'bar'->'test2'.
 	self
 		assertElement: (XMLElement named: #foo attributes: attributes)
 		name: #foo
 		attributes: attributes
 		contentString: ''.
+
+	str := self markupString.
 	self
-		assertElement: (XMLElement named: #foo contentString: 'test<>&"')
+		assertElement: (XMLElement named: #foo contentString: str)
 		name: #foo
 		attributes: noAttributes
-		contentString: 'test<>&"'.
+		contentString: str.
 	self
-		assertElement: (XMLElement named: #foo attributes: attributes contentString: 'test<>&"')
+		assertElement: (XMLElement named: #foo attributes: attributes contentString: str)
 		name: #foo
 		attributes: attributes
-		contentString: 'test<>&"'.
+		contentString: str.
 
 	element := XMLElement named: #foo namespace: 'prefix' uri: 'http://foo' attributes: attributes.
 	self

@@ -1,37 +1,38 @@
 handling tokens
 handleStartTag: elementName attributes: attributeList namespaces: namespaces
-
 	| localName namespace namespaceURI |
 
 	(attributeList includesKey: 'xml:lang')
-		ifTrue: [languageEnvironment := LanguageEnvironment localeID: (LocaleID isoString: (attributeList at: 'xml:lang'))].
+		ifTrue: [self languageEnvironment: (attributeList at: 'xml:lang')].
 	self usesNamespaces
 		ifTrue: [
-			self scope enterScope.
+			self scoping enterScope.
 				"declare any namespaces"	
 				namespaces keysAndValuesDo: [:ns :uri |
-					self scope declareNamespace: ns uri: uri].
+					self scoping declareNamespace: ns uri: uri].
 
-			self splitName: elementName into: [:ns :ln |
+			elementName splitQualifiedNameInto: [:ns :ln |
 				namespace := ns.
 				localName := ln].
 
 			"ensure our namespace is defined"
-			namespace
-				ifNil: [namespace := self scope defaultNamespace]
-				ifNotNil: [
-					namespaceURI := self scope namespaceURIOf: namespace.
-					namespaceURI
-						ifNil: [self parseError: 'Start tag ' , elementName , ' refers to undefined namespace ' , namespace asString]].
-
+			(namespace isNil or: [self scoping isBoundNamespace: namespace])
+				ifFalse: [self errorBadNamespace: namespace inStartTag: elementName].
 			self validatesAttributes
-				ifTrue: [self scope validateAttributes: attributeList].
+				ifTrue: [self scoping validateAttributes: attributeList].
+
 			"call the handler"
 			self saxHandler
 				checkEOD; 
-				startElement: localName namespaceURI: namespaceURI namespace: namespace attributeList: attributeList]
+				startElement: localName
+				namespace: namespace
+				attributeList: attributeList
+				scope: self scoping currentScope]
 		ifFalse: [
 			"call the handler"
 			self saxHandler
 				checkEOD; 
-				startElement: elementName namespaceURI: nil namespace: nil attributeList: attributeList]
+				startElement: elementName
+				namespace: nil
+				namespaceURI: nil
+				attributeList: attributeList]

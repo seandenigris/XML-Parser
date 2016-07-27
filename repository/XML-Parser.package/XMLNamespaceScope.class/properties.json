@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "JAAyer 3/4/2010 00:10",
 	"instvars" : [
-		"scope",
 		"currentBindings",
-		"useNamespaces",
-		"validateAttributes" ],
+		"defaultNamespace" ],
 	"name" : "XMLNamespaceScope",
 	"pools" : [
 		 ],

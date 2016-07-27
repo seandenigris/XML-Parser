@@ -1,29 +1,24 @@
 handling tokens
 handleEndTag: elementName
-	| namespace localName namespaceURI qualifiedName |
+	| namespace localName namespaceURI |
 
 	self usesNamespaces
 		ifTrue: [
-			self splitName: elementName into: [:ns :ln |
+			elementName splitQualifiedNameInto: [:ns :ln |
 				namespace := ns.
 				localName := ln].
 
-			"ensure our namespace is defined"
-			namespace
-				ifNil: [
-					namespace := self scope defaultNamespace.
-					qualifiedName := namespace , ':' , elementName]
-				ifNotNil: [
-					namespaceURI := self scope namespaceURIOf: namespace.
-					namespaceURI
-						ifNil: [self parseError: 'Start tag ' , elementName , ' refers to undefined namespace ' , namespace asString].
-					qualifiedName := elementName].
+			(namespace isNil or: [self scoping isBoundNamespace: namespace])
+				ifFalse: [self errorBadNamespace: namespace inEndTag: elementName].
 
 			"call the handler"
 			self saxHandler
 				checkEOD; 
-				endElement: localName namespace: namespace namespaceURI: namespaceURI qualifiedName: qualifiedName.
-			self scope leaveScope]
+				endElement: localName
+				namespace: namespace
+				qualifiedName: elementName
+				scope: self scoping currentScope.
+			self scoping leaveScope]
 		ifFalse: [
 			"call the handler"
 			self saxHandler

@@ -4,17 +4,30 @@ test053elementAttributes
 
 	element := XMLElement new.
 	self
-		assert: (element attributeAt: #absent ifAbsent: ['absent']) = 'absent';
-		assertElement: element attribute: #absent is: ''.
-	self
-		assert: (element attributeAt: 'foo' put: 'bar') = 'bar';
-		assert: element hasAttributes;
-		assertElement: element attribute: #foo is: 'bar';
-		assert: (element at: 'bar' put: 'foo') = 'foo';
-		assertElement: element attribute: 'bar' is: 'foo'.
-	self assert:
-		element allAttributes asSortedCollection =
-			#('bar' 'foo') asSortedCollection.
-	self
-		assert: (element removeAttribute: #foo) = 'bar';
+		assert: (element at: #foo) isEmpty;
+		assert: (element attributeAt: #foo) isNil;
+		assert: (element at: #foo ifAbsent: ['absent']) = 'absent';
+		assert: (element attributeAt: #foo ifAbsent: ['absent']) = 'absent';
 		deny: (element includesAttribute: #foo).
+
+	self
+		assert: (element attributeAt: #foo put: 'test') = 'test';
+		assert: element hasAttributes;
+		assertElement: element attribute: 'foo' is: 'test';
+		assert: (element attributeAt: 'bar' put: 'test2') = 'test2';
+		assertElement: element attribute: #bar is: 'test2';
+		assert: (element at: 'baz' put: 'test3') = 'test3';
+		assertElement: element attribute: #baz is: 'test3';
+		assert: element allAttributes asArray = #(#bar baz #foo).
+	self
+		assert: element allAttributeAssociations asArray =
+			(Array with: #bar->'test2' with: #baz->'test3' with: #foo->'test').
+	self
+		assertElement: element
+		attributes: (Dictionary with: #foo->'test' with: #bar->'test2' with: #baz->'test3').
+
+	self
+		assert: (element removeAttribute: #foo) = 'test';
+		assert: (element removeAttribute: 'bar') = 'test2';
+		assert: (element removeAttribute: #baz) = 'test3';
+		deny: element hasAttributes.

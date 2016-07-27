@@ -1,3 +1,3 @@
 accessing
 removeNode: aNode
-	^ self with: [self remove: aNode from: self nodes] remove: aNode
+	^ self with: [self nodes remove: aNode] remove: aNode

@@ -7,7 +7,7 @@ test090documentTest
 	self
 		assert: doc isDocument;
 		assert: doc root isNil;
-		assert: (doc addElement: root; root) = root;
+		assert: (doc addElement: root) root = root;
 		assertDocument: doc dtd: nil version: nil encoding: 'UTF-8' required: nil.
 
 	self

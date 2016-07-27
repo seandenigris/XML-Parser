@@ -1,3 +1,3 @@
 namespaces
 enterScope
-	self scope enterScope
+	self scoping enterScope

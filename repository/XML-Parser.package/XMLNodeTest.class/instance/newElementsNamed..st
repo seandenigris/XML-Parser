@@ -1,6 +1,6 @@
 accessing
 newElementsNamed: aNameArray
-	| names fullName localName |
+	| names fullName localName namespace |
 
 	names := aNameArray asOrderedCollection.
 	^ self
@@ -9,9 +9,10 @@ newElementsNamed: aNameArray
 			fullName := names removeFirst asString.
 			(localName := fullName copyAfter: $:)
 				ifNotEmpty: [
+					namespace := (fullName copyUpTo: $:).
 					XMLElement
 						named: localName
-						namespace: (fullName copyUpTo: $:)
-						uri: nil
+						namespace: namespace
+						uri: 'http://', namespace
 						attributes: Dictionary new]
 				ifEmpty: [XMLElement named: fullName]].

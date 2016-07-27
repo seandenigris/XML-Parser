@@ -1,8 +1,6 @@
 private
 elementCacheAt: aSymbol remove: anElement
-	self
-		remove: anElement
-		from: (self elementsAt: aSymbol ifAbsent: [^ self]).
+	(self elementsByName at: aSymbol asSymbol) remove: anElement.
 
 	(self elementsAt: aSymbol)
-		ifEmpty: [self elementsByName removeKey: aSymbol].
+		ifEmpty: [self elementsByName removeKey: aSymbol asSymbol].

@@ -1,3 +1,3 @@
 testing
 includesElement: aSymbol
-	^ self elementsByName includesKey: aSymbol asSymbol
+	^ (self elementAt: aSymbol) notNil
