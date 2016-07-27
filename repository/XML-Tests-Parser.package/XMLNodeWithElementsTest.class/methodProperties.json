@@ -74,6 +74,8 @@
 		"testNewPI" : "monty 11/22/2014 23:11",
 		"testNewString" : "monty 11/22/2014 23:06",
 		"testNodeFactory" : "monty 11/23/2014 00:44",
+		"testOuterXMLForNode" : "monty 5/8/2015 05:38",
+		"testOuterXMLForNodeResetting" : "monty 5/8/2015 05:34",
 		"testPrintedWithoutSelfClosingTags" : "monty 2/3/2015 00:49",
 		"testRawContentString" : "monty 2/2/2015 16:35",
 		"testStringNodes" : "monty 11/24/2014 05:24",
