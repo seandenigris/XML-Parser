@@ -1,3 +1,4 @@
 private tags
 endPI
-	self stream nextPutAll: ' ?>'
+	self stream nextPutAll: ' ?>'.
+	self cr.

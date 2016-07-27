@@ -1,5 +1,5 @@
 private
 putAsXMLString: aValue
 	self stream nextPut: $".
-	self pcData: aValue.
+	self writeXmlEncoded: aValue.
 	self stream nextPut: $"

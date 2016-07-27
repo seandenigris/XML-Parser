@@ -13,7 +13,8 @@
 		"scanner",
 		"canonical",
 		"currentIndent",
-		"indentString" ],
+		"indentString",
+		"newLinesAllowed" ],
 	"name" : "XMLWriter",
 	"pools" : [
 		 ],

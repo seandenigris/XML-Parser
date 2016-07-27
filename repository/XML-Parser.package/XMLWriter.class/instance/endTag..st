@@ -1,4 +1,4 @@
 writing xml
 endTag: tagName
 	self outdent.
-	self endTag: tagName xmlns: nil
+	self endTag: tagName xmlns: nil.
