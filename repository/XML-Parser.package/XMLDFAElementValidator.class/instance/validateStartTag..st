@@ -2,5 +2,7 @@ validating
 validateStartTag: aName
 	currentState :=
 		currentState
-			detectNextStateMatching: aName
-			ifNone: [self errorUnexpectedElement: aName]
+			nextDFAStateMatching: aName
+			ifNone: [self errorUnexpectedElement: aName].
+	currentState hasNonDeterminism
+		ifTrue: [self errorNonDeterminismInContentModelAfter: aName].

@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializeWithValidatorsFrom:" : "monty 1/1/2015 20:55",
-		"isEntityValidator" : "monty 11/19/2013 22:00",
+		"initializeWithValidatorsFrom:" : "monty 11/14/2015 20:29",
 		"unparsedEntityValidator" : "monty 1/1/2015 20:35",
 		"validateAttributeValue:" : "monty 1/1/2015 21:30" } }

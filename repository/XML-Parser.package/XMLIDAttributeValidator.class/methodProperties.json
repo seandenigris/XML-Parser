@@ -5,6 +5,6 @@
 	"instance" : {
 		"elementIDValidator" : "monty 1/1/2015 19:49",
 		"elementIDValidator:" : "monty 3/21/2015 22:37",
-		"initializeWithValidatorsFrom:" : "monty 1/1/2015 23:27",
-		"isIDValidator" : "monty 12/10/2013 06:07",
-		"validateAttributeValue:" : "monty 1/1/2015 21:32" } }
+		"initializeWithValidatorsFrom:" : "monty 11/14/2015 20:29",
+		"validateAttributeValue:" : "monty 1/1/2015 21:32",
+		"validateDeclaration" : "monty 11/14/2015 20:33" } }

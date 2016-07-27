@@ -1,5 +1,5 @@
 building
-acceptingNFAFirstState
+buildAcceptingNFAFromFragments
 	[self totalFragments > 1]
 		whileTrue: [self applyConcatenation].
 	^ self popFragment

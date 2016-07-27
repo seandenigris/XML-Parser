@@ -18,4 +18,5 @@ addValidatorForAttributeIn: anElement named: anAttribute type: aType defaultPrag
 				type: aType
 				defaultPragma: aDefaultPragma
 				defaultValue: aDefaultValue) parse
-					initializeWithValidatorsFrom: self).
+					initializeWithValidatorsFrom: self;
+					validateDeclaration).

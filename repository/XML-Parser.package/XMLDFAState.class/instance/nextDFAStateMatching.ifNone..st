@@ -1,5 +1,5 @@
-enumerating
-detectNextStateMatching: aMatcher ifNone: aBlock
+matching
+nextDFAStateMatching: aMatcher ifNone: aBlock
 	^ (self dfaStateTransitions
 		at: aMatcher
 		ifAbsent: [self addDFAStateTransitionMatching: aMatcher])

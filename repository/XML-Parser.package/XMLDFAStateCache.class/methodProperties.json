@@ -3,8 +3,8 @@
 		"firstDFAState:" : "monty 4/17/2015 16:00" },
 	"instance" : {
 		"addDFAState:" : "monty 4/22/2015 10:36",
-		"cachedDFAStateFor:" : "monty 4/22/2015 10:42",
 		"cachedDFAStates" : "monty 4/22/2015 09:27",
+		"dfaStateForNFAStates:" : "monty 11/13/2015 15:25",
 		"firstDFAState" : "monty 4/17/2015 15:57",
 		"maxCachedDFAStates" : "monty 4/22/2015 10:43",
 		"removeDFAStates" : "monty 4/22/2015 14:51",

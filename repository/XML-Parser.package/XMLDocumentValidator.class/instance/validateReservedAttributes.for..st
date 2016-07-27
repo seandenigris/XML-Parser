@@ -1,2 +1,0 @@
-validating
-validateReservedAttributes: aDictionary for: aStartTag

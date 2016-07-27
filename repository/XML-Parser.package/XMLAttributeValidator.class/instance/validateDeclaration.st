@@ -1,5 +1,5 @@
 validating
-validateReservedAttributeValidator
+validateDeclaration
 	(self attribute at: 1) == $x
 		ifTrue: [
 			(self attribute = 'xml:id')

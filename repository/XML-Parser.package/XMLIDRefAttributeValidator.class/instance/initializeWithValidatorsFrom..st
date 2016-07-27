@@ -1,4 +1,3 @@
 initialization
 initializeWithValidatorsFrom: aValidatorContainer
-	elementIdValidator := aValidatorContainer elementIDValidator.
-	self validateReservedAttributeValidator.
+	elementIdValidator := aValidatorContainer elementIDValidator
