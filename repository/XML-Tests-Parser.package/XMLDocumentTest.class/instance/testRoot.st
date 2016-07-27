@@ -1,11 +1,22 @@
 tests
 testRoot
-	| nodeWithElements |
+	| nodeWithElements firstNode newRoot |
 
 	self assert: self nodeClass new root isNil.
+
 	nodeWithElements := self newNodeWithElements.
+	firstNode := XMLComment string: 'first'.
+	nodeWithElements addNodeFirst: firstNode.
 	self assert: (nodeWithElements root isElementNamed: 'root').
+
+	newRoot := XMLElement named: 'new-root'.
+	nodeWithElements root: newRoot.
+	self
+		assert: nodeWithElements firstNode == firstNode;
+		assert: nodeWithElements root == newRoot.
+
 	nodeWithElements removeNodes.
 	self assert: nodeWithElements root isNil.
-	nodeWithElements addNode: (XMLElement named: 'new-root').
-	self assert: (nodeWithElements root isElementNamed: 'new-root').
+
+	newRoot := XMLElement named: 'root'.
+	self assert: (self nodeClass root: newRoot) root == newRoot.
