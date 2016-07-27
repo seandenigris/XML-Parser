@@ -1,3 +1,3 @@
 configuring
 documentReadLimit
-	^ self parserLimits documentReadLimit
+	^ self configuration documentReadLimit

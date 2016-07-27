@@ -1,3 +1,3 @@
 accessing
 parserHandlerClass
-	^ parserHandlerClass ifNil: [parserHandlerClass := SAXHandler]
+	^ parserHandlerClass ifNil: [parserHandlerClass := self defaultParserHandlerClass]

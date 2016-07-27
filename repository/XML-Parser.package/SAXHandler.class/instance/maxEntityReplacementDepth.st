@@ -1,3 +1,3 @@
 configuring
 maxEntityReplacementDepth
-	^ self parserLimits maxEntityReplacementDepth
+	^ self configuration maxEntityReplacementDepth
