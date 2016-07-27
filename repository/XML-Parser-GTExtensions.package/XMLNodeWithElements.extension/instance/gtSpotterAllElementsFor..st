@@ -1,5 +1,5 @@
 *XML-Parser-GTExtensions
-gtSpotterElementsFor: aStep
+gtSpotterAllElementsFor: aStep
 	<spotterOrder: 40>
 	aStep listProcessor
 		title: 'All elements';
