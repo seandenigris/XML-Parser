@@ -7,7 +7,7 @@
 		"testChangingNormalizedLineEnding" : "monty 1/16/2014 09:08",
 		"testNextMatchAll" : "monty 4/3/2015 04:37",
 		"testSkipSeparators" : "monty 4/3/2015 03:37",
-		"testStreamReadingPortability" : "monty 10/13/2014 23:51",
+		"testStreamReadingPortability" : "monty 1/8/2016 10:57",
 		"testTokenizerAddressBook" : "monty 10/13/2014 22:06",
 		"testTokenizerAddressBookWithDTD" : "monty 10/13/2014 22:06",
 		"testTokenizerCharacters" : "monty 2/10/2014 02:43" } }

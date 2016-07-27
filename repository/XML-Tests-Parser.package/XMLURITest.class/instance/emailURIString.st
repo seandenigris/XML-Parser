@@ -1,3 +1,3 @@
 accessing
 emailURIString
-	^ 'mailto:', self userInfo, '@', self host
+	^ 'mailto:userName@', self host

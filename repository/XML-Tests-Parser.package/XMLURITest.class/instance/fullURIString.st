@@ -1,3 +1,3 @@
 accessing
 fullURIString
-	^ self domain, self absolute, self queryString, self fragment
+	^ self domainURIString, self absolute, self queryString, self fragment

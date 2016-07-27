@@ -1,3 +1,3 @@
 accessing
 host
-	^ self domain copyAfterLast: $/
+	^ self domainURIString copyAfterLast: $/

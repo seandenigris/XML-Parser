@@ -1,3 +1,3 @@
 accessing
 fullURIWithPortString
-	^ self domainWithPort, self absolute, self queryString, self fragment
+	^ self domainURIWithPortString, self absolute, self queryString, self fragment

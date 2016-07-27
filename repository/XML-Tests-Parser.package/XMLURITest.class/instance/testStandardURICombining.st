@@ -1,5 +1,7 @@
 tests
 testStandardURICombining
+	"Generated from RFC 3986, page 34-36"
+
 	| baseURI |
 
 	baseURI := 'http://a/b/c/d;p?q' asXMLURI.

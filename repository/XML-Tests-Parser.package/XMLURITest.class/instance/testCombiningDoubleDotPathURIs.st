@@ -24,7 +24,7 @@ testCombiningDoubleDotPathURIs
 	self
 		assert: (fullURI / '..') hasRootPath;
 		deny: (fullURI / '../..') hasPath;
-		assert: fullURI / ('..' , self absolute) = (self domain , self absolute) asXMLURI;
-		assert: fullURI / ('../..' , self absolute) = (self domain , self absolute) asXMLURI;
-		assert: fullURI / ('../..' , self absolute , '/..') = (self domain , '/absolute/') asXMLURI;
-		assert: fullURI / ('../..' , self absolute , '/../') = (self domain , '/absolute/') asXMLURI.
+		assert: fullURI / ('..' , self absolute) = (self domainURIString , self absolute) asXMLURI;
+		assert: fullURI / ('../..' , self absolute) = (self domainURIString , self absolute) asXMLURI;
+		assert: fullURI / ('../..' , self absolute , '/..') = (self domainURIString , '/absolute/') asXMLURI;
+		assert: fullURI / ('../..' , self absolute , '/../') = (self domainURIString , '/absolute/') asXMLURI.

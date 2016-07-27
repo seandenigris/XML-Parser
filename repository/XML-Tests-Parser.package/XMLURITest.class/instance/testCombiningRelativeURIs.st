@@ -2,19 +2,19 @@ tests
 testCombiningRelativeURIs
 	| domainURI domainURIWithPort absolutePathURI absoluteDirPathURI |
 
-	domainURI := self domain asXMLURI.
-	domainURIWithPort := self domainWithPort asXMLURI.
-	absolutePathURI := (self domain , self absolute) asXMLURI.
-	absoluteDirPathURI := (self domain , self absoluteDir) asXMLURI.
+	domainURI := self domainURIString asXMLURI.
+	domainURIWithPort := self domainURIWithPortString asXMLURI.
+	absolutePathURI := (self domainURIString , self absolute) asXMLURI.
+	absoluteDirPathURI := (self domainURIString , self absoluteDir) asXMLURI.
 	self
-		assert: domainURI / self relative = (self domain , '/' , self relative) asXMLURI;
-		assert: domainURI / self absolute = (self domain , self absolute) asXMLURI;
-		assert: domainURI / self absoluteDir = (self domain , self absoluteDir) asXMLURI;
-		assert: domainURIWithPort / self relative = (self domainWithPort , '/' , self relative) asXMLURI;
-		assert: domainURIWithPort / self absolute = (self domainWithPort , self absolute) asXMLURI;
-		assert: domainURIWithPort / self absoluteDir = (self domainWithPort , self absoluteDir) asXMLURI;
-		assert: absolutePathURI / self relative = (self domain , self absoluteRelativeCombined) asXMLURI;
-		assert: absoluteDirPathURI / self relative = (self domain , self absoluteDirRelativeCombined) asXMLURI;
-		assert: absolutePathURI / self queryString = (self domain , self absolute , self queryString) asXMLURI;
-		assert: absolutePathURI / self fragment = (self domain , self absolute , self fragment) asXMLURI;
+		assert: domainURI / self relative = (self domainURIString , '/' , self relative) asXMLURI;
+		assert: domainURI / self absolute = (self domainURIString , self absolute) asXMLURI;
+		assert: domainURI / self absoluteDir = (self domainURIString , self absoluteDir) asXMLURI;
+		assert: domainURIWithPort / self relative = (self domainURIWithPortString , '/' , self relative) asXMLURI;
+		assert: domainURIWithPort / self absolute = (self domainURIWithPortString , self absolute) asXMLURI;
+		assert: domainURIWithPort / self absoluteDir = (self domainURIWithPortString , self absoluteDir) asXMLURI;
+		assert: absolutePathURI / self relative = (self domainURIString , self absoluteRelativeCombined) asXMLURI;
+		assert: absoluteDirPathURI / self relative = (self domainURIString , self absoluteDirRelativeCombined) asXMLURI;
+		assert: absolutePathURI / self queryString = (self domainURIString , self absolute , self queryString) asXMLURI;
+		assert: absolutePathURI / self fragment = (self domainURIString , self absolute , self fragment) asXMLURI;
 		assert: domainURI / self schemelessURIString = self fullURIString asXMLURI.

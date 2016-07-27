@@ -18,7 +18,7 @@ testCombiningDotPathURIs
 
 	fullURI := self fullURIString asXMLURI.
 	self
-		assert: fullURI / '.' = (self domain , '/absolute/') asXMLURI;
-		assert: fullURI / './.' = (self domain , '/absolute/') asXMLURI;
-		assert: fullURI / './path' = (self domain , self absolute) asXMLURI;
-		assert: fullURI / ('./' , self relative) = (self domain , self absoluteRelativeCombined) asXMLURI.
+		assert: fullURI / '.' = (self domainURIString , '/absolute/') asXMLURI;
+		assert: fullURI / './.' = (self domainURIString , '/absolute/') asXMLURI;
+		assert: fullURI / './path' = (self domainURIString , self absolute) asXMLURI;
+		assert: fullURI / ('./' , self relative) = (self domainURIString , self absoluteRelativeCombined) asXMLURI.

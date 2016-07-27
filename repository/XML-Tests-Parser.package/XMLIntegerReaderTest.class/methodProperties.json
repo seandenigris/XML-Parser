@@ -5,8 +5,9 @@
 		"maxBase" : "monty 10/24/2014 20:31",
 		"testBaseMarker" : "monty 10/27/2014 13:32",
 		"testBases" : "monty 10/26/2014 10:24",
-		"testMaxValue" : "monty 10/24/2014 20:31",
-		"testNonDigit" : "monty 10/26/2014 10:42",
+		"testMaxIntegerValue" : "monty 1/7/2016 05:49",
+		"testNonDigit" : "monty 1/8/2016 08:47",
 		"testPositioning" : "monty 10/27/2014 08:50",
 		"testPrintStream" : "monty 12/4/2015 03:49",
-		"testReadLimit" : "monty 10/24/2014 20:40" } }
+		"testReadLimit" : "monty 10/24/2014 20:40",
+		"testStreamReadingPortability" : "monty 1/8/2016 10:56" } }
