@@ -1,7 +1,7 @@
 handling
 handleStartTag: anElementName attributes: anAttributeDictionary
 	"performance critical method"
-	| prefix totalAttributes namespaceURI currentScope namespaces |
+	| prefix totalAttributes namespaceURI currentScope |
 
 	self elementNester startElement: anElementName.
 
@@ -19,25 +19,24 @@ handleStartTag: anElementName attributes: anAttributeDictionary
 					self
 						checkForReservedAttributesIn: anAttributeDictionary
 						afterIndex: totalAttributes]].
-	self hasUnhandledReservedAttributes
-		ifTrue: [
-			self handleReservedAttributes: anAttributeDictionary.
-			self usesNamespaces
-				ifTrue: [namespaces := self extractNamespacesFromAttributes: anAttributeDictionary]].
 	self usesNamespaces
 		ifTrue: [
 			currentScope := self scopeAllocator enterScope.
-			namespaces
-				ifNotNil: [
-					self
-						declareNamespaces: namespaces
-						inScope: currentScope].
+			self hasUnhandledReservedAttributes
+				ifTrue: [
+					(self extractNamespacesFromAttributes: anAttributeDictionary)
+						ifNotNil: [:namespaces |
+							self
+								declareNamespaces: namespaces
+								inScope: currentScope]].
 			namespaceURI :=
 				currentScope
 					validateAndResolvePrefix: prefix
 					ofElement: anElementName.
 			totalAttributes > 0
 				ifTrue: [currentScope validateAttributePrefixes: anAttributeDictionary]].
+	self hasUnhandledReservedAttributes
+		ifTrue: [self handleReservedAttributes: anAttributeDictionary].
 
 	self saxHandler
 		startElement: anElementName

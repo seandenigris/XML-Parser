@@ -1,0 +1,3 @@
+private
+haveNoUnhandledReservedAttributes
+	hasUnhandledReservedAttributes := false

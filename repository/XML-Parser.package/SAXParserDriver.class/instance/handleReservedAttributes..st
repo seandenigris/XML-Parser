@@ -14,4 +14,4 @@ handleReservedAttributes: anAttributeDictionary
 		setScopedAttributesNamed: self scopedAttributeNames
 		from: anAttributeDictionary.
 
-	hasUnhandledReservedAttributes := false.
+	self haveNoUnhandledReservedAttributes.
