@@ -7,6 +7,7 @@ newNodeWithElements
 				addNode: (XMLComment string: 'before');
 				addNode:
 					((XMLElement named: 'one')
+						attributeAt: 'one' put: '1';
 						addNode: (XMLString string: 'testing one');
 						addNode: (XMLElement named: 'two');
 						addNode: (XMLPI target: 'target' data: 'data');
@@ -19,6 +20,7 @@ newNodeWithElements
 						yourself);
 				addNode:
 					((XMLElement name: 'prefix:four' namespaceURI: 'testNS')
+						attributeAt: 'four' put: '4';
 						addNode: (XMLElement name: 'prefix:five' namespaceURI: 'testNS');
 						yourself);
 				addNode: (XMLElement name: 'four');
