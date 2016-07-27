@@ -1,3 +1,3 @@
 private
-nodesClass
+nodeListClass
 	^ XMLInternalSubsetList

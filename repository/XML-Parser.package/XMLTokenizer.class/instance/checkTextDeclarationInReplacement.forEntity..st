@@ -1,8 +1,5 @@
-tokenizing dtd
-checkForTextDeclarationInEntity: anEntity replacement: aReplacement
-	(anEntity isExternal and: [aReplacement notEmpty])
-		ifFalse: [^ self].
-
+tokenizing
+checkTextDeclarationInReplacement: aReplacement forEntity: anEntity
 	(aReplacement beginsWith: '<?xml ')
 		ifTrue: [ 
 			streamReader next.

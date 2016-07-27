@@ -1,3 +1,3 @@
 accessing
 elements
-	^ elements ifNil: [elements := self species new]
+	^ self select: [:each | each isElement]

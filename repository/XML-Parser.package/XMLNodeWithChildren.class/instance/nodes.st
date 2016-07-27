@@ -1,6 +1,6 @@
 accessing
 nodes
 	^ nodes ifNil: [
-		(nodes := self nodesClass new)
+		(nodes := self nodeListClass new)
 			addObserver: self;
 			yourself]

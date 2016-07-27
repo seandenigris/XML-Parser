@@ -1,3 +1,3 @@
 testing
 hasElements
-	^ elements notNil and: [elements notEmpty]
+	^ self anySatisfy: [:each | each isElement]

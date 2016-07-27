@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "XMLNodeList",
+		"elements",
+		"elementsByName" ],
+	"name" : "XMLCachingNodeList",
 	"pools" : [
 		 ],
-	"super" : "XMLObservableList",
+	"super" : "XMLNodeList",
 	"type" : "normal" }

@@ -1,9 +1,5 @@
 accessing
 elementAt: aName ifAbsent: aBlock
-	| elementsWithName |
-
-	elementsWithName := self elementsByName at: aName ifAbsent: [^ aBlock value].
-
-	^ elementsWithName isCollection
-		ifTrue: [elementsWithName first]
-		ifFalse: [elementsWithName]
+	^ self
+		detect: [:each | each isElement and: [each isNamed: aName]]
+		ifNone: aBlock

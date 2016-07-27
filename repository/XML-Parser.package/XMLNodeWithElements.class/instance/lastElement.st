@@ -1,3 +1,3 @@
 accessing
 lastElement
-	^ self elements ifNotEmpty: [:elements | elements last] ifEmpty: [nil]
+	^ self elements last

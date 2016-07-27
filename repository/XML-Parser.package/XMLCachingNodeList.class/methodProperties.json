@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"afterAdding:" : "monty 11/26/2013 21:58",
+		"afterRemoving:" : "monty 11/26/2013 22:01",
+		"elementAddedAtEnd:" : "monty 11/26/2013 21:56",
+		"elementAt:ifAbsent:" : "monty 11/26/2013 22:01",
+		"elementInsertedBeforeEnd:" : "monty 11/26/2013 21:56",
+		"elements" : "monty 11/26/2013 22:01",
+		"elementsAt:" : "monty 11/26/2013 22:01",
+		"elementsByName" : "monty 11/26/2013 21:56",
+		"elementsByNameAt:addElement:" : "monty 11/26/2013 21:56",
+		"elementsByNameAt:insertElement:" : "monty 11/26/2013 21:56",
+		"elementsByNameAt:removeElement:" : "monty 11/26/2013 21:56",
+		"elementsDetect:ifNone:" : "monty 11/26/2013 22:02",
+		"elementsDo:" : "monty 11/26/2013 22:02",
+		"elementsSelect:" : "monty 11/26/2013 22:02",
+		"findElementAfter:" : "monty 11/26/2013 21:56",
+		"findElementAfter:withName:" : "monty 11/26/2013 21:56",
+		"hasElements" : "monty 11/26/2013 22:01",
+		"includesElementAt:" : "monty 11/26/2013 22:01",
+		"renamedElement:from:to:" : "monty 11/26/2013 22:03" } }

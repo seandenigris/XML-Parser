@@ -1,6 +1,6 @@
 tokenizing
 nextGeneralEntityReference
-	| name entity replacement |
+	| name entity replacement onClose |
 
 	name := self nextName.
 	self expectNext: $;.
@@ -15,17 +15,13 @@ nextGeneralEntityReference
 					ifTrue: [entity replacementForLiteralContext]
 					ifFalse: [entity replacementForContentContext])].
 	replacement
-		ifEmpty: [^ nil].
-
-	context isInContent
-		ifTrue: [driver handleStartContentEntityReplacement: name].
-	streamReader
-		pushStream: replacement readStream
-		from: entity uri
-		onClose:
-			(context isInContent
-				ifTrue: [driver handleEndContentEntityReplacement: name]
-				ifFalse: [nil]).
-	self checkForTextDeclarationInEntity: entity replacement: replacement.
-
+		ifNotEmpty: [
+			context isInContent
+				ifTrue: [
+					driver handleStartContentEntityReplacement: name.
+					onClose := [driver handleEndContentEntityReplacement: name]].
+			self
+				pushBackReplacement: replacement
+				forEntity: entity
+				onClose: onClose].
 	^ nil.

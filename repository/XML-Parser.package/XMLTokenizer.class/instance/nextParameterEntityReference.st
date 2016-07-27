@@ -13,9 +13,8 @@ nextParameterEntityReference
 					ifTrue: [entity replacementForLiteralContext]
 					ifFalse: [entity replacementForDTDContext])].
 	replacement
-		ifEmpty: [^ self].
-	streamReader
-		pushStream: replacement readStream
-		from: entity uri
-		onClose: nil.
-	self checkForTextDeclarationInEntity: entity replacement: replacement.
+		ifNotEmpty: [
+			self
+				pushBackReplacement: replacement
+				forEntity: entity
+				onClose: nil].

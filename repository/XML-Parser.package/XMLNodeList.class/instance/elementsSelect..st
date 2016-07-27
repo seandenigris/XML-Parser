@@ -1,3 +1,3 @@
 enumerating
 elementsSelect: aBlock
-	^ self elements select: aBlock
+	^ self select: [:each | each isElement and: [aBlock value: each]]

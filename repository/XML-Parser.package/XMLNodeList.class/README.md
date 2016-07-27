@@ -1,3 +1,1 @@
-This class represents an ordered list of child nodes for some kind of node with elements, probably either an XML document or element object. It treats element nodes specially, keeping both an ordered list of child elements and a dictionary that allows for faster retrieval of element(s) by qualified name or local name only.
-
-Uniquely named elements are stored directly in the dictionary, while multiple elements sharing a common local or qualified name are stored together as an ordered list in the dictionary.
+This class represents an ordered list of child nodes for some kind of node with elements, probably either an XML document or element object. Non-modifying accessing messages like #first and #last will never raise exceptions and return nil instead.
