@@ -1,3 +1,5 @@
 configuration
 externalEntityResolver: anExternalEntityResolver
+	"See DTDExternalEntityResolver and subclasses"
+
 	self configuration externalEntityResolver: anExternalEntityResolver

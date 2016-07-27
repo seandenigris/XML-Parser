@@ -1,7 +1,7 @@
 configuration
 requiresDocumentConstraints: aBoolean
-	"If true, a DTD with element and attribute declarations will be
-	required (not default).
-	Enabling also enables isValidating."
+	"If true, constraints on elements and attributes (in a DTD)
+	will be required (not default).
+	Enables validation."
 
 	self configuration requiresDocumentConstraints: aBoolean

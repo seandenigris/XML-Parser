@@ -1,7 +1,9 @@
 configuration
 isValidating: aBoolean
-	"If true and a DTD is present, the document will
-	be validated against it (default).
-	Disabling also disables requiresDTDDeclarations."
+	"If true and document contstraints are present (in a DTD),
+	the document will be checked against them (default).
+
+	Enabling disables preservesUndeclaredEntityReferences.
+	Disabling disables requiresDocumentConstraints."
 
 	self configuration isValidating: aBoolean
