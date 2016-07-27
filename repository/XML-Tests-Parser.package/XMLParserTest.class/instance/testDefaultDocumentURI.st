@@ -9,4 +9,4 @@ testDefaultDocumentURI
 	documentURI := (SAXHandler on: '') documentURI.
 	self
 		assert: documentURI size > (cwd size + 1);
-		assert: (documentURI copyUpToLast: $/) = cwd
+		assert: (documentURI copyUpToLast: $/) = cwd.
