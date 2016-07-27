@@ -6,7 +6,7 @@ nextXMLTextDeclaration
 			(self nextXMLVersionAttributeRequired: false) isEmpty
 				ifFalse: [self expectSeparators].
 			(encoding := self nextXMLEncodingAttributeRequired: true) isEmpty
-				ifFalse: [streamReader convertFromEncoding: encoding].
+				ifFalse: [self convertFromEncoding: encoding].
 
 			streamReader skipSeparators.
 			self

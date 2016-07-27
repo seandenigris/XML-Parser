@@ -8,6 +8,7 @@
 	"instvars" : [
 		"isValidating",
 		"usesNamespaces",
+		"decodesCharacters",
 		"requiresDocumentConstraints",
 		"parserHandlerClass",
 		"parserLimits",

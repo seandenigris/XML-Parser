@@ -8,17 +8,16 @@ nextXMLDeclaration
 		ifFalse: [self expectSeparators].
 	(encoding := self nextXMLEncodingAttributeRequired: false) isEmpty
 		ifFalse: [
-			streamReader convertFromEncoding: encoding.
+			self convertFromEncoding: encoding.
 			streamReader peek == $?
 				ifFalse: [self expectSeparators]].
-	
 	driver
 		handleXMLVersion: version
 		encoding: encoding
 		standalone: self nextXMLStandaloneAttribute.
-	context := context prologContext.
-
 	streamReader skipSeparators.
 	self
 		expectNext: $?;
 		expectTerminator.
+
+	context := context prologContext.

@@ -2,6 +2,7 @@
 	"class" : {
 		"saxDriver:documentURI:" : "monty 3/21/2015 23:54" },
 	"instance" : {
+		"decodesCharacters" : "monty 5/8/2015 19:05",
 		"doctypeDefinition" : "monty 3/2/2015 11:14",
 		"documentURI" : "monty 3/21/2015 23:23",
 		"externalEntityResolver" : "monty 11/19/2013 06:04",
