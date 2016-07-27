@@ -1,7 +1,7 @@
 content
 endElement: localName namespace: namespace namespaceURI: uri qualifiedName: qualifiedName
 	| currentElement |
-	currentElement _ self pop.
+	currentElement := self pop.
 	(currentElement namespace isNil
 		or: [currentElement namespace = self defaultNamespace])
 		ifTrue: [

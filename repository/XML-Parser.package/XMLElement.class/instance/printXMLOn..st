@@ -6,6 +6,5 @@ printXMLOn: writer
 		ifTrue: [writer endEmptyTag: self name]
 		ifFalse: [
 			writer endTag.
-			self contentsDo: [:content | content printXMLOn: writer].
-			super printXMLOn: writer.
+			self elementsAndContentsDo: [:content | content printXMLOn: writer].
 			writer endTag: self name]

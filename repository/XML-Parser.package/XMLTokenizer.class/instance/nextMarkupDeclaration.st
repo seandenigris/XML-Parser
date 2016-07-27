@@ -1,7 +1,7 @@
 tokenizing dtd
 nextMarkupDeclaration
 	| declType |
-	declType _ self nextLiteral.
+	declType := self nextLiteral.
 	self validating
 		ifFalse: [^self skipMarkupDeclaration].
 	declType = 'ENTITY'

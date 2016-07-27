@@ -1,7 +1,7 @@
 private
 popTag: tagName
 	| stackTop |
-	stackTop _ self stack isEmpty
+	stackTop := self stack isEmpty
 		ifTrue: ['<empty>']
 		ifFalse: [self stack last].
 	^stackTop = tagName

@@ -1,3 +1,3 @@
 initialize
 name: aString
-	name _ aString asSymbol
+	name := aString asSymbol

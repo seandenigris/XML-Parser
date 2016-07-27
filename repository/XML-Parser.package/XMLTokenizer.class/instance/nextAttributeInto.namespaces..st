@@ -2,12 +2,12 @@ tokenizing
 nextAttributeInto: attributes namespaces: namespaces
 
 	| attrName attrValue |
-	attrName _ self nextName.
+	attrName := self nextName.
 	self skipSeparators.
 	self next == $=
 		ifFalse: [self errorExpected: '='].
 	self skipSeparators.
-	attrValue _ self nextAttributeValue.
+	attrValue := self nextAttributeValue.
 
 	(self usesNamespaces
 		and: [(attrName findString: 'xmlns') = 1])

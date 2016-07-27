@@ -1,6 +1,8 @@
 accessing
 contentString
-	^(self contents size == 1
-		and: [self contents first isKindOf: XMLStringNode])
-		ifTrue: [self contents first string]
+	| contentElements |
+	contentElements := self elementsAndContents.
+	^(contentElements size == 1
+		and: [contentElements first isText])
+		ifTrue: [contentElements first string]
 		ifFalse: ['']

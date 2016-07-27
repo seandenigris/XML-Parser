@@ -3,5 +3,5 @@ nextCDataContent
 	| cdata |
 	"Skip $[ "
 	self next.
-	cdata _ self nextUpToAll: ']]>'.
+	cdata := self nextUpToAll: ']]>'.
 	self handleCData: cdata

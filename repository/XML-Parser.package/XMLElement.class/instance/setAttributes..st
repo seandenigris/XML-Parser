@@ -1,3 +1,3 @@
 initialize
 setAttributes: newAttributes
-	attributes _ newAttributes
+	attributes := newAttributes

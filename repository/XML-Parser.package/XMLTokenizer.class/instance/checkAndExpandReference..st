@@ -1,7 +1,7 @@
 tokenizing
 checkAndExpandReference: parsingContext
 	| referenceString nextChar |
-	nextChar _ self peek.
+	nextChar := self peek.
 	self validating
 		ifFalse: [^nil].
 	nextChar == $&
@@ -9,7 +9,7 @@ checkAndExpandReference: parsingContext
 			self next.
 			self peek == $#
 				ifTrue: [^self pushStream: (ReadStream on: self nextCharReference asString)].
-			referenceString _ self nextLiteral.
+			referenceString := self nextLiteral.
 			self next == $;
 				ifFalse: [self errorExpected: ';'].
 			self handleEntity: referenceString in: parsingContext ]
@@ -19,7 +19,7 @@ checkAndExpandReference: parsingContext
 				and: [parsingContext == #entityValue])
 				ifTrue: [
 					self skipSeparators.
-					referenceString _ self nextLiteral.
+					referenceString := self nextLiteral.
 					self handleEntity: referenceString in: parsingContext]].
 
 	self atEnd ifTrue: [self errorExpected: 'Character expected.'].

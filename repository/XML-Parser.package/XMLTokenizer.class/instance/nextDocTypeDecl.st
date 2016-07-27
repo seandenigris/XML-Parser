@@ -5,7 +5,7 @@ nextDocTypeDecl
 	self nextLiteral.
 	self skipSeparators.
 	self peek == $[
-		ifFalse: [[nextChar _ self peek.
+		ifFalse: [[nextChar := self peek.
 				nextChar == $> or: [nextChar == $[ ]] whileFalse: [self next]].
 	self peek == $[
 		ifTrue: [

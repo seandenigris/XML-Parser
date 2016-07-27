@@ -1,4 +1,4 @@
 private
 nestedStreams
-	nestedStreams ifNil: [nestedStreams _ OrderedCollection new].
+	nestedStreams ifNil: [nestedStreams := OrderedCollection new].
 	^nestedStreams

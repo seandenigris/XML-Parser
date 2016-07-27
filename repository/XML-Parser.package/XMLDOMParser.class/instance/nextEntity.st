@@ -1,7 +1,7 @@
 parsing
 nextEntity
 	| currentTop |
-	currentTop _ self top.
+	currentTop := self top.
 	[self driver nextEntity isNil
 		or: [self top ~~ currentTop]] whileTrue.
 	^entity

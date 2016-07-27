@@ -5,8 +5,8 @@ handleEndTag: elementName
 	self usesNamespaces
 		ifTrue: [
 			self splitName: elementName into: [:ns :ln |
-				namespace _ ns.
-				localName _ ln].
+				namespace := ns.
+				localName := ln].
 
 			"ensure our namespace is defined"
 			namespace

@@ -4,8 +4,8 @@ validateAttributes: attributeList
 	| namespace localName |
 	attributeList keysDo: [:attrName |
 		self splitName: attrName into: [:ns :ln |
-			namespace _ ns.
-			localName _ ln].
+			namespace := ns.
+			localName := ln].
 		namespace ifNotNil: [
 			(self namespaceAliases: namespace) do: [:alias |
 				(attributeList includesKey: alias , ':' , localName)

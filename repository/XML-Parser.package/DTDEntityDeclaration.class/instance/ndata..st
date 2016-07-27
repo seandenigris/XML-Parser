@@ -1,3 +1,3 @@
 accessing
 ndata: aString
-	ndata _ aString
+	ndata := aString

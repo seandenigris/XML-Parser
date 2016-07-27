@@ -5,11 +5,11 @@ nextCDataOrConditional
 	"Skip ["
 	self next.
 	self skipSeparators.
-	nextChar _ self peek.
+	nextChar := self peek.
 	nextChar == $%
 		ifTrue: [
 			self checkAndExpandReference: (self parsingMarkup ifTrue: [#dtd] ifFalse: [#content]).
-			conditionalKeyword _ self nextLiteral.
+			conditionalKeyword := self nextLiteral.
 			self skipSeparators.
 			^self next == $[
 				ifTrue: [

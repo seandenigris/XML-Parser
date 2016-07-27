@@ -1,5 +1,5 @@
 initialize
 initialize
 	super initialize.
-	stack _ OrderedCollection new.
-	incremental _ false
+	stack := OrderedCollection new.
+	incremental := false

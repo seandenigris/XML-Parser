@@ -1,3 +1,3 @@
 accessing
 target: aString
-	target _ aString
+	target := aString

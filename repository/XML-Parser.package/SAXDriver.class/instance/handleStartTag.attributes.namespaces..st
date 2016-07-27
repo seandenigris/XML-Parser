@@ -13,8 +13,8 @@ handleStartTag: elementName attributes: attributeList namespaces: namespaces
 					self scope declareNamespace: ns uri: uri].
 
 			self splitName: elementName into: [:ns :ln |
-				namespace _ ns.
-				localName _ ln].
+				namespace := ns.
+				localName := ln].
 
 			"ensure our namespace is defined"
 			namespace

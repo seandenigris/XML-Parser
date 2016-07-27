@@ -1,3 +1,3 @@
 accessing
 data: aString
-	data _ aString
+	data := aString

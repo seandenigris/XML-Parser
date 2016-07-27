@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"elements",
+		"elementsAndContents",
 		"uri",
-		"namespace" ],
+		"namespace",
+		"parent" ],
 	"name" : "XMLNodeWithElements",
 	"pools" : [
 		 ],

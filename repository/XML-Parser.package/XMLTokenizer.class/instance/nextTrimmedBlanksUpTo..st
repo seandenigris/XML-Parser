@@ -1,9 +1,9 @@
 streaming
 nextTrimmedBlanksUpTo: delimiter
 	| resultStream nextChar |
-	resultStream _ WriteStream on: (String new: 10).
-	nextChar _ nil.
-	[(nextChar _ self next) == delimiter]
+	resultStream := WriteStream on: (String new: 10).
+	nextChar := nil.
+	[(nextChar := self next) == delimiter]
 		whileFalse: [
 			nextChar == $  ifFalse: [
 				resultStream nextPut: nextChar]].

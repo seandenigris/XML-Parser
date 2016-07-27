@@ -1,3 +1,3 @@
 accessing
 saxHandler: aHandler
-	saxHandler _ aHandler
+	saxHandler := aHandler

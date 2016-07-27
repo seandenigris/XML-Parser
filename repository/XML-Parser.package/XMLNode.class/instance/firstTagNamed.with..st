@@ -6,5 +6,5 @@ firstTagNamed: aSymbol with: aBlock
 	| answer |
 
 	self elementsDo: [:node |
-		(answer _ node firstTagNamed: aSymbol with: aBlock) ifNotNil: [^answer]].
+		(answer := node firstTagNamed: aSymbol with: aBlock) ifNotNil: [^answer]].
 	^nil

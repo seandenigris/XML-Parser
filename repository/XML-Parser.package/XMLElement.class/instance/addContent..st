@@ -1,3 +1,3 @@
 initialize
 addContent: contentString
-	self contents add: contentString
+	self addElement: contentString

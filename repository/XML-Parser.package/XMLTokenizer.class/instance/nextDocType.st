@@ -1,7 +1,7 @@
 tokenizing dtd
 nextDocType
 	| declType |
-	declType _ self nextLiteral.
+	declType := self nextLiteral.
 	declType = 'DOCTYPE'
 		ifTrue: [
 			self startParsingMarkup.

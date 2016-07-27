@@ -5,5 +5,5 @@ nextComment
 	self next.
 	self next == $-
 		ifFalse: [self errorExpected: 'second comment $-'].
-	string _ self nextUpToAll: '-->'.
+	string := self nextUpToAll: '-->'.
 	self handleComment: string

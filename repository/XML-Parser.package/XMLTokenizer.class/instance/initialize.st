@@ -1,6 +1,6 @@
 initialize
 initialize
-	parsingMarkup _ false.
-	validating _ false.
-	attributeBuffer _ WriteStream on: (String new: 128).
-	nameBuffer _ WriteStream on: (String new: 128)
+	parsingMarkup := false.
+	validating := false.
+	attributeBuffer := WriteStream on: (String new: 128).
+	nameBuffer := WriteStream on: (String new: 128)

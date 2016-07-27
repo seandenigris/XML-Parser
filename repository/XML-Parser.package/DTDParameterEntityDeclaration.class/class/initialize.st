@@ -2,7 +2,7 @@ class initialization
 initialize
 	"DTDParameterEntityDeclaration initialize"
 
-	contextBehavior _ Dictionary new.
+	contextBehavior := Dictionary new.
 	contextBehavior
 		at: #content put: #notRecognized: ;
 		at: #attributeValueContent put: #notRecognized: ;

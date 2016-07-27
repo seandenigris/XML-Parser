@@ -1,4 +1,3 @@
 accessing
 contents
-	contents ifNil: [contents _ OrderedCollection new].
-	^contents
+	^self elementsAndContents select: [:each | each isText]

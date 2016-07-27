@@ -4,7 +4,7 @@ splitName: aName into: twoArgsBlock
 	Handle both qualified and unqualified names using the default name space"
 
 	| i ns ln |
-	i _ aName lastIndexOf: $:.
+	i := aName lastIndexOf: $:.
 	i = 0
 		ifTrue: [
 			ns := nil.

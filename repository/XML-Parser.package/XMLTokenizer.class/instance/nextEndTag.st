@@ -1,7 +1,10 @@
 tokenizing
 nextEndTag
-	| string |
+	| tagName |
 	"Skip /"
 	self next.
-	string _ self nextTrimmedBlanksUpTo: $>.
-	self handleEndTag: string
+	tagName := self nextName.
+	self skipSeparators.
+	(self nextTrimmedBlanksUpTo: $>)
+		ifNotEmpty: [self parseError: 'XML invalid end tag ' , tagName].
+	self handleEndTag: tagName

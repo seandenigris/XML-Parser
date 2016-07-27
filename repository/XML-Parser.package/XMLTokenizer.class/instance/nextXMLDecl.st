@@ -2,9 +2,9 @@ tokenizing
 nextXMLDecl
 	| attributes nextChar namespaces |
 	self skipSeparators.
-	attributes _ Dictionary new.
-	namespaces _ Dictionary new.
-	[(nextChar _ self peek) == $?] whileFalse: [
+	attributes := Dictionary new.
+	namespaces := Dictionary new.
+	[(nextChar := self peek) == $?] whileFalse: [
 		self nextAttributeInto: attributes namespaces: namespaces.
 		self skipSeparators.].
 	self next.

@@ -1,4 +1,4 @@
 accessing
 driver: aDriver
-	driver _ aDriver.
+	driver := aDriver.
 	driver saxHandler: self

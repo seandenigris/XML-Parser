@@ -1,3 +1,3 @@
 initialize
 initialize
-	eod _ false
+	eod := false

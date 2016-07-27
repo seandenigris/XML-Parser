@@ -1,4 +1,4 @@
 entities
 entities
-	entities ifNil: [entities _ self initEntities].
+	entities ifNil: [entities := self initEntities].
 	^entities

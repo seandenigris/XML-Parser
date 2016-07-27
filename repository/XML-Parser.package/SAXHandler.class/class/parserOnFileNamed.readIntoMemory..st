@@ -1,7 +1,7 @@
 instance creation
 parserOnFileNamed: fileName readIntoMemory: readIntoMemory
 	| stream  |
-	stream _ FileDirectory default readOnlyFileNamed: fileName.
+	stream := FileDirectory default readOnlyFileNamed: fileName.
 	readIntoMemory
-		ifTrue: [stream _ stream contentsOfEntireFile readStream].
+		ifTrue: [stream := stream contentsOfEntireFile readStream].
 	^self on: stream

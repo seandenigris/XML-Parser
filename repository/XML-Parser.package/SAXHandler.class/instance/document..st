@@ -1,3 +1,3 @@
 accessing
 document: aDocument
-	document _ aDocument
+	document := aDocument

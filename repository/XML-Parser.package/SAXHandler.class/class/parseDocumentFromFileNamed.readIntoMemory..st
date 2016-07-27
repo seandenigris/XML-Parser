@@ -1,9 +1,9 @@
 instance creation
 parseDocumentFromFileNamed: fileName readIntoMemory: readIntoMemory
 	| stream xmlDoc |
-	stream _ FileDirectory default readOnlyFileNamed: fileName.
+	stream := FileDirectory default readOnlyFileNamed: fileName.
 	readIntoMemory
-		ifTrue: [stream _ stream contentsOfEntireFile readStream].
-	[xmlDoc _ self parseDocumentFrom: stream]
+		ifTrue: [stream := stream contentsOfEntireFile readStream].
+	[xmlDoc := self parseDocumentFrom: stream]
 		ensure: [stream close].
 	^xmlDoc

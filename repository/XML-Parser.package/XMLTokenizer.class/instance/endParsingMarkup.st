@@ -1,3 +1,3 @@
 private
 endParsingMarkup
-	parsingMarkup _ false
+	parsingMarkup := false

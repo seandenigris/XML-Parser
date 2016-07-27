@@ -2,7 +2,7 @@ class initialization
 initialize
 	"DTDEntityDeclaration initialize"
 
-	contextBehavior _ Dictionary new.
+	contextBehavior := Dictionary new.
 	contextBehavior
 		at: #content put: #include ;
 		at: #attributeValueContent put: #includedInLiteral ;

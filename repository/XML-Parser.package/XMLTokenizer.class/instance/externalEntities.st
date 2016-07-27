@@ -1,4 +1,4 @@
 entities
 externalEntities
-	externalEntities ifNil: [externalEntities _ Dictionary new].
+	externalEntities ifNil: [externalEntities := Dictionary new].
 	^externalEntities

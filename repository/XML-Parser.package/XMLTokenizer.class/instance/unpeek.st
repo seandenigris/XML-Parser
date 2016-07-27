@@ -1,6 +1,7 @@
 streaming
 unpeek
-	peekChar
-		ifNotNil: [
-			self stream pushBack: (String with: peekChar).
-			peekChar _ nil]
+	"Fixed to use nested stream since multi-byte streams
+	do not properly override pushBack: to deal with multi-byte
+	characters."
+	
+	peekChar ifNotNil: [self pushBack: '']

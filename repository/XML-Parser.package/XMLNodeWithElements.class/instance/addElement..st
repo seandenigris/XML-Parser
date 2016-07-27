@@ -1,3 +1,3 @@
 accessing
 addElement: element
-	self elements add: element
+	self elementsAndContents add: element

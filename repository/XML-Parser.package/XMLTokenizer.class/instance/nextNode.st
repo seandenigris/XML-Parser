@@ -3,11 +3,11 @@ nextNode
 	| nextChar |
 	"Skip < "
 	self next.
-	nextChar _ self peek.
+	nextChar := self peek.
 	nextChar == $! ifTrue: [
 		"Skip !"
 		self next.
-		nextChar _ self peek.
+		nextChar := self peek.
 		nextChar == $- ifTrue: [^self nextComment].
 		nextChar == $[ ifTrue: [^self nextCDataOrConditional].
 		^self parsingMarkup

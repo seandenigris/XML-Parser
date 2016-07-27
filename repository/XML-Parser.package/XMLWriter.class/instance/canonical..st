@@ -1,3 +1,3 @@
 accessing
 canonical: aBoolean
-	canonical _ aBoolean
+	canonical := aBoolean
