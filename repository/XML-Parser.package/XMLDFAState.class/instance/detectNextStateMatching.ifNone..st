@@ -1,6 +1,6 @@
 enumerating
 detectNextStateMatching: aMatcher ifNone: aBlock
-	^ (self transitions
+	^ (self dfaStateTransitions
 		at: aMatcher
-		ifAbsentPut: [self dfaStateMatching: aMatcher])
-			ifNil: [aBlock value]
+		ifAbsent: [self addDFAStateTransitionMatching: aMatcher])
+		ifNil: [aBlock value]

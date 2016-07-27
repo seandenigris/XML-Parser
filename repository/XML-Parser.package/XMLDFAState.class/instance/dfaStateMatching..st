@@ -8,4 +8,4 @@ dfaStateMatching: aMatcher
 			ifTrue: [state nextState addTo: matchingNFAStates]].
 	matchingNFAStates isEmpty
 		ifTrue: [^ nil]
-		ifFalse: [^ dfaStateCache dfaStateFor: matchingNFAStates].
+		ifFalse: [^ dfaStateCache cachedDFAStateFor: matchingNFAStates].

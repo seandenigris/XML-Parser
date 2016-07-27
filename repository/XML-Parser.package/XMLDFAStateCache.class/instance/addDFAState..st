@@ -1,7 +1,7 @@
-adding
+private
 addDFAState: aDFAState
 	cachedDFAStates size >= self maxCachedDFAStates
-		ifTrue: [self clearCachedDFAStates].
+		ifTrue: [self removeDFAStates].
 	^ cachedDFAStates
 		at: aDFAState nfaStates
 		put: aDFAState.

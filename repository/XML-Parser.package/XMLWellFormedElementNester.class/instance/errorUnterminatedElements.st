@@ -1,3 +1,3 @@
 private
 errorUnterminatedElements
-	XMLWellFormednessException signal: 'Unterminated elements: ', self printString
+	XMLWellFormednessException signal: 'Unterminated elements: ', self printedElements

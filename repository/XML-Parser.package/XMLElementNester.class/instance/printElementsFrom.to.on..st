@@ -1,5 +1,5 @@
 printing
-printFrom: aStart to: aStop on: aStream
+printElementsFrom: aStart to: aStop on: aStream
 	aStart to: aStop do: [:i |
 		i > self openElements size
 			ifTrue: [^ self].

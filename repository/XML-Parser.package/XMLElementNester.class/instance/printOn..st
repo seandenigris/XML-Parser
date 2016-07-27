@@ -1,5 +1,8 @@
 printing
 printOn: aStream
+	super printOn: aStream.
+	aStream nextPut: $(.
 	self
-		printFrom: 1
-		on: aStream
+		printElementsFrom: 1
+		on: aStream.
+	aStream nextPut: $).

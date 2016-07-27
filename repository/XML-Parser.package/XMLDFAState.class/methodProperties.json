@@ -3,10 +3,15 @@
 		"nfaStates:" : "monty 3/21/2015 23:18",
 		"nfaStates:dfaStateCache:" : "monty 3/21/2015 23:18" },
 	"instance" : {
-		"detectNextStateMatching:" : "monty 12/28/2013 00:21",
-		"detectNextStateMatching:ifNone:" : "monty 12/11/2014 05:07",
-		"dfaStateMatching:" : "monty 4/17/2015 16:05",
+		"addDFAStateTransitionMatching:" : "monty 4/22/2015 14:51",
+		"detectNextStateMatching:" : "monty 4/22/2015 10:41",
+		"detectNextStateMatching:ifNone:" : "monty 4/22/2015 14:51",
+		"dfaStateCache" : "monty 4/22/2015 09:27",
+		"dfaStateMatching:" : "monty 4/22/2015 10:42",
+		"dfaStateTransitions" : "monty 4/22/2015 14:52",
 		"isAccepting" : "monty 12/28/2013 18:54",
+		"maxDFAStateTransitions" : "monty 4/22/2015 14:51",
 		"nfaStates" : "monty 12/29/2013 01:10",
-		"setNFAStates:dfaStateCache:" : "monty 4/17/2015 15:57",
-		"transitions" : "monty 12/28/2013 01:09" } }
+		"printOn:" : "monty 4/22/2015 11:17",
+		"removeDFAStateTransitions" : "monty 4/22/2015 14:52",
+		"setNFAStates:dfaStateCache:" : "monty 4/17/2015 15:57" } }
