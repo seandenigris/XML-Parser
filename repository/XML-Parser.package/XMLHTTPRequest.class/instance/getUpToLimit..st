@@ -9,4 +9,4 @@ getUpToLimit: aMaxSize
 					error
 						messageText: 'HTTP reponse limit exceeded';
 						pass]
-				ifFalse: [error resignalAs: XMLHTTPException]]
+				ifFalse: [XMLHTTPException signalMessageFrom: error]]

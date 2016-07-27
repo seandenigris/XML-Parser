@@ -10,7 +10,7 @@ handleEndTag: anElementName
 				withScopedAttributes: self elementNester currentScopedAttributes]
 		ifFalse: [self elementNester endElement: anElementName].
 
-	prefix := anElementName qualifiedNamePrefix.
+	prefix := anElementName prefixBeforeLocalName.
 	self saxHandler 
 		endElement: anElementName
 		prefix: prefix
@@ -20,7 +20,7 @@ handleEndTag: anElementName
 					currentScope := self scopeAllocator exitScope.
 					currentScope resolvePrefix: prefix]
 				ifFalse: [''])
-		localName: (anElementName qualifiedNameLocalPartFromPrefix: prefix).
+		localName: (anElementName localNameAfterPrefix: prefix).
 
 	currentScope ifNotNil: [
 		currentScope hasNamespaces

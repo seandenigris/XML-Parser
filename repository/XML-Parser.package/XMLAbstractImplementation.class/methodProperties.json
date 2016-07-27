@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"errorUnsupported" : "monty 11/12/2014 18:22",
+		"implementation" : "monty 11/18/2014 07:03",
+		"isSupported" : "monty 11/12/2014 18:21",
+		"new" : "monty 11/12/2014 18:24",
+		"preferredImplementation" : "monty 11/12/2014 18:22",
+		"selectImplementation" : "monty 11/12/2014 18:25" },
+	"instance" : {
+		 } }

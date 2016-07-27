@@ -1,4 +1,5 @@
 file open/close
 close
-	stream close.
-	nestedStreams ifNotNil: [nestedStreams reverseDo: [:each | each close]].
+	[self hasNestedStreams]
+		whileTrue: [self popCurrentStream].
+	self closeCurrentStream.

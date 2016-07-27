@@ -1,0 +1,2 @@
+entity replacement
+constructReplacementForBypassedGeneralEntity: anEntity

@@ -1,3 +1,3 @@
 writing
 writeStream
-	^ self writeStreamOnFileOrDo: [:error | error resignalAs: XMLFileException]
+	^ self writeStreamOnFileOrDo: [:error | XMLFileException signalMessageFrom: error]

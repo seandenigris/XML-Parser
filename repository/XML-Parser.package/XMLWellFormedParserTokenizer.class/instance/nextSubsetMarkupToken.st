@@ -2,10 +2,7 @@ tokenizing - dtd
 nextSubsetMarkupToken
 	self expectNext: $<.
 	streamReader peek == $?
-		ifTrue: [^ self nextPIOrXMLDecl]
-		ifFalse: [
-			context isInExternalSubsetTextDeclaration
-				ifTrue: [context enterExternalSubset]].
+		ifTrue: [^ self nextPIOrXMLDeclaration].
 
 	self expectNext: $!.
 	streamReader peek == $-
@@ -13,7 +10,7 @@ nextSubsetMarkupToken
 
 	(streamReader peek == $[)
 		ifTrue: [
-			(context isInExternalSubset
+			(context isExternalSubsetContext
 				or: [self hasActiveExternalEntity])
 				ifTrue: [^ self nextConditionalSection].
 			self errorInternalSubsetIncludeOrIgnoreSection].

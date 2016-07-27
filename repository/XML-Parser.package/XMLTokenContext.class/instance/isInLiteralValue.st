@@ -1,3 +1,0 @@
-testing
-isInLiteralValue
-	^ context == #inLiteralValue

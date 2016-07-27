@@ -7,6 +7,5 @@ startElement: aQualifiedName prefix: aPrefix uri: aUri localName: aLocalName att
 			uri: aUri
 			localName: aLocalName) new
 				setQualifiedName: aQualifiedName
-				prefix: aPrefix
 				localName: aLocalName
 				attributes: aDictionary)

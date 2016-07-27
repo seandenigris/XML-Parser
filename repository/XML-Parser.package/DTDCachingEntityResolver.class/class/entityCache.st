@@ -1,3 +1,3 @@
 private
 entityCache
-	^ entityCache ifNil: [entityCache := Dictionary new: self maxCachedEntities]
+	^ entityCache ifNil: [entityCache := XMLKeyValueCache maxSize: 64]

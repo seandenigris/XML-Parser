@@ -1,3 +1,0 @@
-replacement
-replacementForContentContext
-	^ self replacement

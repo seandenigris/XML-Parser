@@ -4,7 +4,7 @@ validateAttributePrefixes: aDictionary
 	| namespacedAttributes |
 
 	aDictionary keysDo: [:each | | prefix |
-		(prefix := each qualifiedNamePrefix) isEmpty "avoid ifNotEmpty: closure overhead"
+		(prefix := each prefixBeforeLocalName) isEmpty "avoid ifNotEmpty: closure overhead"
 			ifTrue: [self validateUnprefixedName: each]
 			ifFalse: [ | namespace oldSize |
 				"not initialized unless needed"
@@ -14,6 +14,6 @@ validateAttributePrefixes: aDictionary
 
 				"checking size after is faster than includes:"
 				oldSize := namespacedAttributes size.
-				namespacedAttributes add: namespace, (each qualifiedNameLocalPartFromPrefix: prefix).
+				namespacedAttributes add: namespace, (each localNameAfterPrefix: prefix).
 				namespacedAttributes size > oldSize
 					ifFalse: [self errorAttribute: each aliasesNamespace: namespace]]]

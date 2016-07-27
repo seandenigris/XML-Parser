@@ -1,3 +1,5 @@
 private
 writeStreamOnFileOrDo: aBlock
-	self subclassResponsibility
+	^ [XMLFileWriteStreamFactory on: path]
+		on: Error
+		do: aBlock

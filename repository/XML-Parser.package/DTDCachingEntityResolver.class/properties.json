@@ -1,8 +1,7 @@
 {
 	"category" : "XML-Parser-DTD",
 	"classinstvars" : [
-		"entityCache",
-		"maxCachedEntities" ],
+		"entityCache" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "monty 1/10/2014 08:16",

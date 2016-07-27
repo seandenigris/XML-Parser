@@ -21,7 +21,7 @@ nextTag
 	
 			(attributeName at: 1) == $x
 				ifTrue: [
-					(attributeName isXmlnsAttributeName
+					(attributeName isNamespaceAttributeName
 						and: [driver usesNamespaces])
 						ifTrue: [
 							"initialize only if needed"

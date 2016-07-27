@@ -1,3 +1,0 @@
-testing
-isInExternalSubsetTextDeclaration
-	^ context == #inExternalSubsetTextDeclaration

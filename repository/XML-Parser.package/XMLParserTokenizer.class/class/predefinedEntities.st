@@ -1,3 +1,3 @@
 accessing
 predefinedEntities
-	^ predefinedEntities
+	^ PredefinedEntities

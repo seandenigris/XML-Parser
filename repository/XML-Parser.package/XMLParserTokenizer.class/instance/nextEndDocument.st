@@ -1,7 +1,7 @@
 tokenizing
 nextEndDocument
-	context atEnd
+	context isTerminatedContext
 		ifFalse: [
 			streamReader close.
-			context enterAtEnd.
+			context := context terminatedContext.
 			driver handleEndDocument]

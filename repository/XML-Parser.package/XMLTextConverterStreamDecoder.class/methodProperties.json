@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"canDecodeEncoding:" : "monty 11/12/2014 04:36",
+		"initialize" : "monty 11/18/2014 06:29",
+		"newForEncoding:" : "monty 11/12/2014 04:36",
+		"textConverterForEncoding:" : "monty 11/15/2014 21:02" },
+	"instance" : {
+		"nextFromStream:" : "monty 11/17/2014 21:14",
+		"textConverter" : "monty 11/12/2014 01:55",
+		"textConverter:" : "monty 11/12/2014 01:54" } }

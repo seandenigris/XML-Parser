@@ -1,4 +1,8 @@
 private
 popCurrentStream
-	stream close.
-	stream := nestedStreams removeLast.
+	| nextStreamAndCallback |
+
+	self closeCurrentStream.
+	nextStreamAndCallback := nestedStreams removeLast.
+	stream := nextStreamAndCallback key.
+	onClose := nextStreamAndCallback value.

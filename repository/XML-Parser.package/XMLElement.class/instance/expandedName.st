@@ -1,3 +1,3 @@
 namespaces
 expandedName
-	^ self nodeName expandWith: self namespaceURI
+	^ self localName expandWithNamespaceURI: self namespaceURI

@@ -1,3 +1,3 @@
 accessing
 localName
-	^ self nodeName localPart
+	^ localName ifNil: [localName := self name localNameAfterPrefix]

@@ -1,0 +1,11 @@
+class initialization
+initialize
+	"self initialize"
+
+	NullCharacter := Character value: 0.
+
+	UTF8ByteOrderMark := XMLUTF8StreamDecoder byteOrderMark.
+	UTF16BigEndianByteOrderMark := XMLUTF16BigEndianStreamDecoder byteOrderMark.
+	UTF16LittleEndianByteOrderMark := XMLUTF16LittleEndianStreamDecoder byteOrderMark.
+	UTF32BigEndianByteOrderMark := XMLUTF32BigEndianStreamDecoder byteOrderMark.
+	UTF32LittleEndianByteOrderMark := XMLUTF32LittleEndianStreamDecoder byteOrderMark.

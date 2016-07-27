@@ -1,3 +1,0 @@
-testing
-notInitialized
-	^ context isNil

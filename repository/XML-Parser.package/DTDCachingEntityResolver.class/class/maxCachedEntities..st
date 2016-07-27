@@ -1,3 +1,3 @@
 accessing
 maxCachedEntities: anInteger
-	maxCachedEntities := anInteger
+	self entityCache maxSize: anInteger

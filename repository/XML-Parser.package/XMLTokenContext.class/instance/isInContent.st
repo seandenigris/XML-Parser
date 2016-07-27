@@ -1,3 +1,0 @@
-testing
-isInContent
-	^ context == #inContent

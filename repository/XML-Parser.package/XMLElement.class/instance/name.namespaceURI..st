@@ -1,5 +1,5 @@
 namespaces
 name: aQualifiedName namespaceURI: aUri
 	self
-		declarePrefix: (aQualifiedName qualifiedNamePrefix) uri: aUri;
+		declarePrefix: (aQualifiedName prefixBeforeLocalName) uri: aUri;
 		name: aQualifiedName.

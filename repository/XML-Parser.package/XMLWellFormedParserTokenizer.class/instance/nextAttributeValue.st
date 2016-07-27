@@ -4,14 +4,9 @@ nextAttributeValue
 
 	((quote := streamReader next) == $"
 		or: [quote == $'])
-		ifFalse: [
-			quote == $&
-				ifTrue: [^ self nextUnparsedEntityReference]
-				ifFalse: [self errorExpectedAttributeValueStart]].
+		ifFalse: [self errorExpectedAttributeValueStart].
 	
-	context
-		saveCurrent;
-		enterLiteralValue.
+	context enterLiteralValue.
 	writeStream reset.
 	[(nextChar := streamReader peek) == quote
 		or: [nextChar == $<
@@ -28,7 +23,7 @@ nextAttributeValue
 					nextChar isSeparator
 						ifTrue: [nextChar := NormalizedSpace].
 					writeStream nextPut: nextChar]].
-	context resetPrevious.
+	context exitLiteralValue.
 
 	(streamReader next == quote)
 		ifFalse: [self errorExpectedAttributeValueEnd].

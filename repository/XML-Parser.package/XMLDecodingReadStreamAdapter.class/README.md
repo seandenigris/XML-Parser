@@ -1,0 +1,1 @@
+This is a stream adapter for basic read streams that support peek, next, and atEnd that can also decode them using stream decoder classes.

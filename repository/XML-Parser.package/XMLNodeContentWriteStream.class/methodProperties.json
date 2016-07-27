@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"on:" : "monty 11/19/2014 23:29" },
+	"instance" : {
+		"addSpaceFor:" : "monty 11/19/2014 23:21",
+		"contents" : "monty 11/19/2014 23:14",
+		"isStream" : "monty 11/20/2014 01:57",
+		"nextPut:" : "monty 11/19/2014 23:20",
+		"nextPutAll:" : "monty 11/19/2014 23:21",
+		"on:" : "monty 11/19/2014 23:14" } }

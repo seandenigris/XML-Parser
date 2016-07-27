@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Streams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 11/20/2014 03:56",
+	"instvars" : [
+		"stream",
+		"lastChar" ],
+	"name" : "XMLNodeContentWriteStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

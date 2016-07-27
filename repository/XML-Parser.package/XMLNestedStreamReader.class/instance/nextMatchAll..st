@@ -1,25 +1,17 @@
-testing
+accessing
 nextMatchAll: aString
-	| i nextChar |
+	| nextChar  |
 
 	"inlined peek"
 	(peekChar ifNil: [peekChar := self basicNext]) == (aString at: 1)
 		ifFalse: [^ false].
+	self next.
 
 	"we unrolled the first iteration with the above #peek"
-	i := 2.
-	self next.
-	[(i <= aString size)
-		and: [(aString at: i) == (nextChar := self next)]]
-		whileTrue: [i := i + 1].
-	(i > aString size)
-		ifTrue: [^ true].
-
-	self pushBack:
-		(nextChar
-			ifNotNil: [
-				(aString copyFrom: 1 to: i)
-					at: i put: nextChar;
-					yourself]
-			ifNil: [aString copyFrom: 1 to: i - 1]).
-	^ false.
+	2 to: aString size do: [:i |
+		(nextChar := self peek) == (aString at: i)
+			ifFalse: [
+				self pushBack: (aString copyFrom: 1 to: i -1).
+				^ false].
+			self next].
+	^ true.

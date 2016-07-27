@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 11/9/2014 16:28",
+	"instvars" : [
+		 ],
+	"name" : "XMLTerminatedContext",
+	"pools" : [
+		 ],
+	"super" : "XMLTokenContext",
+	"type" : "normal" }

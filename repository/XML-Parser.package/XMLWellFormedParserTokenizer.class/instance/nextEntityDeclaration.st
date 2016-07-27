@@ -10,7 +10,7 @@ nextEntityDeclaration
 	streamReader peek == $% and: [isParameterEntity not]]
 		whileTrue: [
 			streamReader next.
-			(context isInExternalSubset
+			(context isExternalSubsetContext
 				and: [streamReader atEnd not
 					and: [streamReader peek isSeparator not]])
 				ifTrue: [self nextParameterEntityReference]

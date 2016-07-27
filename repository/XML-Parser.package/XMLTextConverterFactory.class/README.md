@@ -1,1 +1,0 @@
-A factory for text converter classes.

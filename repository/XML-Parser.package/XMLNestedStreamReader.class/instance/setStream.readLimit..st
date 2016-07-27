@@ -1,10 +1,8 @@
 initialization
 setStream: anInitialStream readLimit: aReadLimit
-	writeBuffer := WriteStream on: (String new: 128).
+	writeBuffer := WriteStream on: (String new: 64).
 	currentLineNumber := 1.
 	normalizedLineEndingChar := LineFeed.
-
-	self
-		setStream: anInitialStream
-		onClose: nil.
+	stream := anInitialStream.
 	readLimit := aReadLimit.
+	isEscapingQuotes := false.

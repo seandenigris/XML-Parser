@@ -1,3 +1,0 @@
-accessing
-clearCachedConverterClasses
-	converterClassesByEncodingName removeAll

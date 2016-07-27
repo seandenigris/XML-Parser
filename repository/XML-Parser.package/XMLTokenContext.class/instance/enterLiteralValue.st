@@ -1,3 +1,3 @@
-changing context
+changing
 enterLiteralValue
-	context := #inLiteralValue
+	isLiteralValueContext := true

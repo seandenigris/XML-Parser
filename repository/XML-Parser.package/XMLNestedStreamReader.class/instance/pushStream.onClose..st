@@ -1,13 +1,15 @@
 positioning
 pushStream: aStream onClose: aBlock
-	peekChar
-		ifNotNil: [self pushBackPeekChar].
-
 	nestedStreams
-		ifNil: [nestedStreams := OrderedCollection with: stream]
-		ifNotNil: [
-			(nestedStreams size >= self maxNestedStreams)
-				ifTrue: [self errorNestingLimitExceeded].
-			nestedStreams addLast: stream].
+		ifNil: [(nestedStreams := OrderedCollection new: self maxNestedStreams)].
+	(nestedStreams size >= self maxNestedStreams)
+		ifTrue: [self errorNestingLimitExceeded].
 
-	self setStream: aStream onClose: aBlock
+	nestedStreams addLast: stream -> onClose.
+	peekChar
+		ifNotNil: [
+			nestedStreams addLast: (XMLSingleCharacterReadStream on: peekChar) -> nil.
+			peekChar := nil].
+
+	stream := aStream.
+	onClose := aBlock.

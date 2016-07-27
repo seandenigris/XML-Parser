@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"initialize" : "monty 10/25/2014 17:33",
+		"initialize" : "monty 11/18/2014 07:04",
 		"maxBase" : "monty 10/24/2014 20:28",
 		"maxIntegerValue" : "monty 10/24/2014 20:15",
-		"on:" : "monty 1/21/2014 01:27",
+		"on:" : "monty 11/16/2014 04:55",
 		"readFrom:" : "monty 10/27/2014 08:36",
 		"readFrom:withBase:" : "monty 10/27/2014 08:37",
 		"readFrom:withBase:startingWithAny:orBase:" : "monty 10/27/2014 08:43",
@@ -15,6 +15,6 @@
 		"nextInteger" : "monty 10/27/2014 08:37",
 		"nextIntegerWithBase:" : "monty 10/27/2014 08:35",
 		"nextIntegerWithBase:startingWithAny:orBase:" : "monty 10/27/2014 08:44",
-		"nextIntegerWithBase:upTo:" : "monty 10/27/2014 08:40",
-		"peek" : "monty 10/27/2014 08:39",
-		"stream:" : "monty 1/21/2014 01:28" } }
+		"nextIntegerWithBase:upTo:" : "monty 11/14/2014 20:15",
+		"on:" : "monty 11/16/2014 04:54",
+		"peek" : "monty 10/27/2014 08:39" } }

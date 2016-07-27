@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/23/2014 15:44",
+	"commentStamp" : "monty 11/20/2014 02:27",
 	"instvars" : [
 		"path" ],
 	"name" : "XMLFileHandle",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "XMLAbstractImplementation",
 	"type" : "normal" }

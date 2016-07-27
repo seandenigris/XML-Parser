@@ -1,5 +1,5 @@
 initialization
 setName: aName value: aValue element: anElement
-	name := XMLNodeName qualified: aName.
+	name := aName.
 	value := aValue.
 	parent := anElement.

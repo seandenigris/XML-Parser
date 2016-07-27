@@ -10,4 +10,4 @@ readStreamUpToLimit: aMaxSize
 	(aMaxSize notNil and: [fileSize > aMaxSize])
 		ifTrue: [self errorFileSize: fileSize exceedsMaxSize: aMaxSize].
 
-	^ self readStreamOnFileOrDo: [:error | error resignalAs: XMLFileException]
+	^ self readStreamOnFileOrDo: [:error | XMLFileException signalMessageFrom: error]

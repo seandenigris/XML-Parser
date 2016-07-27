@@ -1,1 +1,0 @@
-This class wraps any readable stream that at the very least supports #next and #atEnd and makes it peekable. Additionally, it ensures that #next and #peek can be used at the end of a stream safely without raising an exception (the Squeak and Pharo behavior).

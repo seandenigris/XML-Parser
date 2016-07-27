@@ -1,7 +1,7 @@
 private
 validateAndResolvePrefix: aPrefix
 	^ self
-		prefixMappingsAt: aPrefix
+		prefixMappingAt: aPrefix
 		ifAbsent: [
 			aPrefix = 'xml'
 				ifTrue: [self class xmlNamespaceURI]

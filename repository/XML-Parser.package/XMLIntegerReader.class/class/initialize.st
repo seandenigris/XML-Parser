@@ -2,8 +2,6 @@ class initialization
 initialize
 	"self initialize"
 
-	super initialize.
-
 	"array instead of dictionary for speed"
 	CharacterDigitValues := Array new: 256 withAll: -1.
 	($0 to: $9) do: [:each |

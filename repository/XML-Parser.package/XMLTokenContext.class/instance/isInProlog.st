@@ -1,3 +1,0 @@
-testing
-isInProlog
-	^ context == #inProlog

@@ -1,3 +1,3 @@
 private
 maxNestedStreams
-	^ 10
+	^ 32

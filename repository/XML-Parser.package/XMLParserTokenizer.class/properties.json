@@ -1,9 +1,9 @@
 {
 	"category" : "XML-Parser",
 	"classinstvars" : [
-		"predefinedEntities" ],
-	"classvars" : [
 		 ],
+	"classvars" : [
+		"PredefinedEntities" ],
 	"commentStamp" : "monty 2/9/2014 02:44",
 	"instvars" : [
 		"driver",

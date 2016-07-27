@@ -1,1 +1,0 @@
-The class represents a name for an element or attribute. It stores the local part and qualified name. You should not need to use this class directly.

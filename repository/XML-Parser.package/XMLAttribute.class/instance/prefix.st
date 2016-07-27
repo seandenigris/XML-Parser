@@ -1,3 +1,3 @@
 accessing
 prefix
-	^ self nodeName prefix
+	^ self name prefixBeforeLocalName: self localName

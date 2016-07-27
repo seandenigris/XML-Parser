@@ -1,5 +1,5 @@
 validation
 validateAndAddTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
 	anAttributeValidatorDictionary
-		at: attribute
+		at: self attribute
 		put: self

@@ -1,0 +1,21 @@
+{
+	"category" : "XML-Parser-Streams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"NullCharacter",
+		"UTF16BigEndianByteOrderMark",
+		"UTF16LittleEndianByteOrderMark",
+		"UTF32BigEndianByteOrderMark",
+		"UTF32LittleEndianByteOrderMark",
+		"UTF8ByteOrderMark" ],
+	"commentStamp" : "monty 11/15/2014 05:04",
+	"instvars" : [
+		"stream",
+		"remainder",
+		"streamDecoder" ],
+	"name" : "XMLEncodingDetector",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

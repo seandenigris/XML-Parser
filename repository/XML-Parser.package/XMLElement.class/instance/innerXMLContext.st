@@ -1,3 +1,3 @@
 private
 innerXMLContext
-	^ #inContent
+	^ XMLContentContext new

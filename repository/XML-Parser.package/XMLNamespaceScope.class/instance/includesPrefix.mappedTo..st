@@ -1,3 +1,3 @@
 testing
 includesPrefix: aPrefix mappedTo: aUri
-	^ (self prefixMappingsAt: aPrefix ifAbsent: [^ false]) = aUri
+	^ (self prefixMappingAt: aPrefix ifAbsent: [^ false]) = aUri

@@ -6,13 +6,13 @@ nextPrologToken
 
 	self expectNext: $<.
 	streamReader peek == $?
-		ifTrue: [^ self nextPIOrXMLDecl].
+		ifTrue: [^ self nextPIOrXMLDeclaration].
 	streamReader peek == $!
 		ifTrue: [
 			streamReader next.
 			streamReader peek == $-
 				ifTrue: [^ self nextComment].
-			^ self nextDocTypeDecl].
+			^ self nextDoctypeDeclaration].
 
-	context enterContent.
+	context := context contentContext.
 	self nextTag.

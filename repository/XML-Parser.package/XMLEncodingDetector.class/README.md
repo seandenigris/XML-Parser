@@ -1,0 +1,1 @@
+An encoding auto-detector for streams.

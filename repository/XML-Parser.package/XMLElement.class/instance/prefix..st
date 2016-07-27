@@ -1,3 +1,3 @@
 namespaces
 prefix: aPrefix
-	self renameWith: [self nodeName prefix: aPrefix]
+	self renameWith: [name := self localName qualifyWithPrefix:  aPrefix]

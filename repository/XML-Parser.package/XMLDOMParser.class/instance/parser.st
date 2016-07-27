@@ -3,17 +3,15 @@ parser
 	| parser |
 
 	parser := super parser.
-	self nodeStack notEmpty
-		ifTrue: [| root |
-			root := self topNode.
-			self
-				configuration: root configuration;
-				document: root document.
+	self topNode
+		ifNotNil: [:root |
 			parser initialContext: root innerXMLContext.
-			root isElement
-				ifTrue: [
-					parser driver
-						setRootElement: root name
-						currentScope: root namespaceScope]].
+
+			self nodeStack do: [:each |
+				each isElement
+					ifTrue: [
+						self
+							startInnerXMLElement: each
+							forParser: parser]]].
 
 	^ parser.

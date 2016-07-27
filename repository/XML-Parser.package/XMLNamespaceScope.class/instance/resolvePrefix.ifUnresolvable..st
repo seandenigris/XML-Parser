@@ -1,7 +1,7 @@
 resolving
 resolvePrefix: aPrefix ifUnresolvable: aBlock
 	^ self
-		prefixMappingsAt: aPrefix
+		prefixMappingAt: aPrefix
 		ifAbsent: [
 			aPrefix = 'xml'
 				ifTrue: [self class xmlNamespaceURI]

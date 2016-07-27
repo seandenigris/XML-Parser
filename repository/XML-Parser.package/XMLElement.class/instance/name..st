@@ -1,3 +1,5 @@
 accessing
 name: aName
-	self renameWith: [self nodeName qualified: aName]
+	self renameWith: [
+		name := aName.
+		localName := aName localNameAfterPrefix]

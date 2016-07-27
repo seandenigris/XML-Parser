@@ -1,0 +1,1 @@
+An abstract factory for file read streams used by XMLFileHandle.

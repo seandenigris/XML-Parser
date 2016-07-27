@@ -7,6 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"name",
+		"localName",
 		"attributes",
 		"namespaceScope" ],
 	"name" : "XMLElement",

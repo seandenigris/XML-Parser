@@ -1,16 +1,12 @@
 {
 	"class" : {
 		"errorUnsupported" : "monty 10/31/2014 20:54",
-		"implementation" : "monty 10/26/2014 14:44",
-		"isSupported" : "monty 10/25/2014 17:43",
-		"new" : "monty 10/25/2014 18:13",
 		"preferredImplementation" : "monty 10/25/2014 18:56",
-		"selectImplementation" : "monty 10/31/2014 20:54",
 		"url:" : "monty 10/25/2014 18:04" },
 	"instance" : {
 		"defaultTimeout" : "monty 10/26/2014 09:14",
 		"get" : "monty 1/9/2014 05:08",
 		"getResponseUpToLimit:withTimeout:onError:" : "monty 1/13/2014 19:42",
-		"getUpToLimit:" : "monty 1/22/2014 22:50",
+		"getUpToLimit:" : "monty 11/17/2014 23:00",
 		"url" : "monty 1/10/2014 00:10",
 		"url:" : "monty 1/10/2014 00:10" } }

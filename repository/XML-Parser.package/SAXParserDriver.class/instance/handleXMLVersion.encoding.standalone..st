@@ -1,13 +1,13 @@
 handling tokens
 handleXMLVersion: aVersion encoding: anEncoding standalone: aYesOrNo
-	| versionNumber standaloneBoolean |
+	| versionNumber isStandalone |
 
-	aVersion ifNotEmpty: [versionNumber := aVersion asNumber].
-	standaloneBoolean := aYesOrNo = 'yes'.
+	versionNumber := Float readFrom: aVersion readStream.
+	isStandalone := aYesOrNo = 'yes'.
 
-	self dtd isStandalone: standaloneBoolean.
+	self dtd isStandalone: isStandalone.
 
 	self saxHandler
 		xmlVersion: versionNumber
 		encoding: anEncoding
-		standalone: standaloneBoolean
+		standalone: isStandalone.

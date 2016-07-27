@@ -1,5 +1,5 @@
 tokenizing
 nextEndDocument
-	context isInInternalSubset
+	context isInternalSubsetContext
 		ifTrue: [self errorExpected: 'end of internal subset'].
 	super nextEndDocument.

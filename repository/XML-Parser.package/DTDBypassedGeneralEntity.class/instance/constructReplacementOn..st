@@ -1,0 +1,3 @@
+replacement
+constructReplacementOn: aTokenizer
+	aTokenizer constructReplacementForBypassedGeneralEntity: self

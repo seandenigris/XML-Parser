@@ -1,0 +1,3 @@
+testing
+isTextDeclarationContext
+	^ true

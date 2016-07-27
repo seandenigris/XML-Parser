@@ -1,6 +1,6 @@
 tokenizing
 nextComment
-	| comment nextChar |
+	| nextChar |
 
 	"Skip first -"
 	streamReader next.
@@ -11,10 +11,8 @@ nextComment
 		or: [nextChar == $-
 			and: [(streamReader peek) == $-]]]
 		whileFalse: [writeStream nextPut: nextChar].
-	comment := writeStream contents.
-
 	self
 		expectNext: $-;
 		expectTerminator: $>.
 
-	driver handleComment: comment.
+	driver handleComment: writeStream contents.

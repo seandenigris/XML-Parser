@@ -1,3 +1,3 @@
 accessing
 initialContext: aContext
-	self tokenizer initialContext: aContext
+	self tokenizer tokenContext: aContext

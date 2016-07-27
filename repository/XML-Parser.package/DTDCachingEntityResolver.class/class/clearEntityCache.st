@@ -1,4 +1,4 @@
 clearing
 clearEntityCache
 	"self clearEntityCache"
-	self entityCache removeAll
+	self entityCache clear

@@ -1,3 +1,3 @@
 accessing
 maxCachedEntities
-	^ maxCachedEntities ifNil: [maxCachedEntities := 64]
+	^ self entityCache maxSize

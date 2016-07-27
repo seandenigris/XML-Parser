@@ -1,3 +1,5 @@
 positioning
 pushStream: aStream
-	self pushStream: aStream onClose: nil
+	self
+		pushStream: aStream
+		onClose: nil

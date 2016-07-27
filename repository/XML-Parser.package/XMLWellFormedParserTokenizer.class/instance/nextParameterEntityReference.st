@@ -1,14 +1,9 @@
 tokenizing - dtd
 nextParameterEntityReference
-	| name entity replacement |
+	| name |
 
 	name := self nextName.
 	self expectNext: $;.
 
-	entity := driver handleParameterEntityReference: name.
-	(replacement := self replacementFromParameterEntity: entity)
-		ifNotEmpty: [
-			self
-				pushBackReplacement: replacement
-				forEntity: entity
-				onClose: [self endReplacementForParameterEntity: entity]].
+	(driver handleParameterEntityReference: name)
+		ifNotNil: [:entity | entity constructReplacementOn: self]

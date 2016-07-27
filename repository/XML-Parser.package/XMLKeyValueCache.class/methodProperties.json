@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"collection:maxSize:" : "monty 11/15/2014 20:57",
+		"defaultMaxSize" : "monty 11/20/2014 02:25",
+		"maxSize:" : "monty 11/15/2014 20:56",
+		"new" : "monty 11/15/2014 20:56" },
+	"instance" : {
+		"at:" : "monty 11/15/2014 21:01",
+		"at:ifAbsent:" : "monty 11/15/2014 21:01",
+		"at:ifAbsentPut:" : "monty 11/15/2014 21:02",
+		"at:put:" : "monty 11/16/2014 00:04",
+		"clear" : "monty 11/15/2014 20:59",
+		"collection" : "monty 11/11/2014 23:45",
+		"includesKey:" : "monty 11/15/2014 23:59",
+		"isEmpty" : "monty 11/12/2014 04:03",
+		"maxSize" : "monty 11/15/2014 20:57",
+		"maxSize:" : "monty 11/15/2014 20:59",
+		"postCopy" : "monty 11/16/2014 07:27",
+		"setCollection:maxSize:" : "monty 11/15/2014 20:57",
+		"size" : "monty 11/15/2014 20:48" } }

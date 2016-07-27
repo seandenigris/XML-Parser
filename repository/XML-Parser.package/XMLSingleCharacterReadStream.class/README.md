@@ -1,0 +1,1 @@
+A read stream for single characters.

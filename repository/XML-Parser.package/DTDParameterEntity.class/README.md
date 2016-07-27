@@ -1,1 +1,1 @@
-This class is for paramter entities with replacements.
+This class is for parameter entities with replacements.

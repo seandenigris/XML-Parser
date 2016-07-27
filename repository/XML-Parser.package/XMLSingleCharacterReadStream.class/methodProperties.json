@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"on:" : "monty 11/16/2014 04:43" },
+	"instance" : {
+		"atEnd" : "monty 11/16/2014 04:44",
+		"basicNext" : "monty 11/20/2014 04:18",
+		"close" : "monty 11/20/2014 01:56",
+		"isBinary" : "monty 11/20/2014 02:02",
+		"isStream" : "monty 11/20/2014 01:56",
+		"next" : "monty 11/16/2014 04:44",
+		"on:" : "monty 11/16/2014 04:50",
+		"peek" : "monty 11/16/2014 04:44" } }

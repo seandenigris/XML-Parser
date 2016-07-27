@@ -3,5 +3,5 @@ innerXML: aStringOrStream parsedWith: aParser
 	self removeNodes.
 
 	aParser
-		pushNode: self;
+		pushInnerXMLRootNode: self;
 		parseDocument.

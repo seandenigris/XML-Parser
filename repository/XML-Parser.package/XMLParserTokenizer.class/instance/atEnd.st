@@ -1,3 +1,3 @@
 testing
 atEnd
-	^ context atEnd
+	^ context isTerminatedContext

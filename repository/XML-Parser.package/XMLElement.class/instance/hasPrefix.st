@@ -1,3 +1,3 @@
 namespaces
 hasPrefix
-	^ self nodeName isPrefixed
+	^ self name size > self localName size

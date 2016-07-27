@@ -7,7 +7,7 @@ getResponseUpToLimit: aMaxSize withTimeout: aTimeout onError: aBlock
 				timeout: aTimeout;
 				ifFail: [:error |
 					(error isKindOf: (Smalltalk at: #ZnEntityTooLarge))
-						ifTrue: [error resignalAs: XMLLimitException]
+						ifTrue: [XMLLimitException signalMessageFrom: error]
 						ifFalse: [error pass]];
 				url: url;
 				get) readStream]]

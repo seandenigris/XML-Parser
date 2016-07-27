@@ -1,3 +1,5 @@
 testing
 isNamed: aName
-	^ self nodeName isSameAs: aName
+	^ aName
+		isQualifiedName: self name
+		orLocalName: self localName

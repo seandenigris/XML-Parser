@@ -1,3 +1,5 @@
 private
 readStreamOnFileOrDo: aBlock
-	self subclassResponsibility
+	^ [XMLFileReadStreamFactory on: path]
+		on: Error
+		do: aBlock

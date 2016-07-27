@@ -1,0 +1,3 @@
+testing
+canDecodeEncoding: anEncoding
+	^ false

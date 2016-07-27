@@ -1,3 +1,0 @@
-testing
-atEnd
-	^ context == #atEnd

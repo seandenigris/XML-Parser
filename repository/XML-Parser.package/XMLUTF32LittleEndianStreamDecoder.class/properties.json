@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Streams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 11/20/2014 03:59",
+	"instvars" : [
+		 ],
+	"name" : "XMLUTF32LittleEndianStreamDecoder",
+	"pools" : [
+		 ],
+	"super" : "XMLUTF32StreamDecoder",
+	"type" : "normal" }

@@ -3,7 +3,7 @@ skipSeparatorsReplacingParameterEntities
 	"this can be used to replace references within declarations"
 
 	streamReader skipSeparators.
-	context isInExternalSubset
+	context isExternalSubsetContext
 		ifFalse: [^ self].
 	[streamReader peek == $%]
 		whileTrue: [

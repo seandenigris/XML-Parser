@@ -1,0 +1,3 @@
+changing
+doctypeContext
+	^ XMLDoctypeContext new

@@ -1,3 +1,3 @@
 initialization
 initialContext
-	^ #inExternalSubsetTextDeclaration
+	^ XMLExternalSubsetContext new textDeclarationContext

@@ -6,7 +6,7 @@ nextIntegerWithBase: aBase upTo: aReadLimit
 		ifFalse: [Error signal: 'Unsupported base ', aBase printString].
 
 	maxValue := self class maxIntegerValue.
-	maxBaseValue := (maxValue / aBase) asInteger.
+	maxBaseValue := (maxValue / aBase) floor.
 	readLimit := aReadLimit.
 	[self atEnd
 		or: [(readLimit notNil and: [readLimit <= 0])

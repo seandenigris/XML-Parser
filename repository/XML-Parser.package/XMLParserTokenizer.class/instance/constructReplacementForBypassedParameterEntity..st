@@ -1,0 +1,2 @@
+entity replacement
+constructReplacementForBypassedParameterEntity: anEntity

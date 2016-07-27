@@ -1,3 +1,0 @@
-testing
-isInDoctype
-	^ context == #inDoctype

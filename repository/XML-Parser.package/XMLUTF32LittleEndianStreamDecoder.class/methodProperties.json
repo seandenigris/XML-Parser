@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"basicEncodingNames" : "monty 11/11/2014 21:59",
+		"byteOrderMarkBytes" : "monty 11/11/2014 21:55" },
+	"instance" : {
+		"codePointFromFirstByte:secondByte:thirdByte:fourthByte:" : "monty 11/11/2014 18:57",
+		"isBigEndian" : "monty 11/11/2014 14:50" } }

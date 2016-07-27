@@ -7,5 +7,6 @@ SystemOrganization addCategory: 'XML-Parser-HTTP'!
 SystemOrganization addCategory: 'XML-Parser-Namespaces'!
 SystemOrganization addCategory: 'XML-Parser-Streams'!
 SystemOrganization addCategory: 'XML-Parser-URI'!
+SystemOrganization addCategory: 'XML-Parser-Util'!
 SystemOrganization addCategory: 'XML-Parser-Validation'!
 SystemOrganization addCategory: 'XML-Parser-Validation-DFA'!

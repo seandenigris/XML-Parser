@@ -1,5 +1,5 @@
 instance creation
 on: aStringOrStream documentURI: aUri
 	^ self new
-		setInput: aStringOrStream
+		on: aStringOrStream
 		documentURI: aUri

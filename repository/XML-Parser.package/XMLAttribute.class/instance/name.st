@@ -1,3 +1,3 @@
 accessing
 name
-	^ self nodeName qualified
+	^ name ifNil: [name := '']

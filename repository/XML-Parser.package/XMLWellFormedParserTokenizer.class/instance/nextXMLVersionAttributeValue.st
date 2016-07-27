@@ -6,7 +6,7 @@ nextXMLVersionAttributeValue
 
 	writeStream
 		reset;
-		nextPut: (self expectNext: $1);
+		nextPut: self expectDigit;
 		nextPut: (self expectNext: $.);
 		nextPut: self expectDigit.
 

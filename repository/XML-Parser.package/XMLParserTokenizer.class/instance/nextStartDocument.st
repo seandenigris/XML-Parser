@@ -1,4 +1,6 @@
 tokenizing
 nextStartDocument
-	context setContext: (driver initialContext ifNil: [#inProlog]).
+	context := driver initialContext ifNil: [XMLPrologContext new].
+	context isPrologContext
+		ifTrue: [streamReader detectCurrentEncoding].
 	driver handleStartDocument.

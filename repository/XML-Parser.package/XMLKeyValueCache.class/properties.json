@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Util",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "monty 11/11/2014 23:48",
+	"instvars" : [
+		"collection",
+		"maxSize" ],
+	"name" : "XMLKeyValueCache",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

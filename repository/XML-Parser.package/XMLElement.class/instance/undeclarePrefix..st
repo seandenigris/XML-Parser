@@ -2,7 +2,7 @@ namespaces
 undeclarePrefix: aPrefix
 	| currentMapping |
 
-	currentMapping := self namespaceScope prefixMappingsAt: aPrefix ifAbsent: [^ self].
+	currentMapping := self namespaceScope prefixMappingAt: aPrefix ifAbsent: [^ self].
 	self
 		updateEnclosedScopesWith: [:scope | scope unmapPrefix: aPrefix]
 		whileTrue: [:scope | scope includesPrefix: aPrefix mappedTo: currentMapping]
