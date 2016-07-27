@@ -1,0 +1,3 @@
+private
+parseExternalSubset
+	(self externalSubsetParserOnURI: self externalSubsetURI) parseDocument

@@ -1,9 +1,13 @@
 private
 externalSubsetParserOnURI: aURI
-	^ self saxHandler parserClass
-		driver:
-			(DTDExternalSubsetParserDriver
-				saxDriver: self
-				documentURI: aURI asString)
-		on: (self externalEntityResolver resolveEntityURI: aURI)
-	
+	| combinedURI |
+
+	combinedURI :=
+		self externalEntityResolver
+			combineSourceURI: self documentURI
+			withEntityURI: aURI.
+
+	^ self
+		externalSubsetParserOn:
+			(self externalEntityResolver resolveEntityURI: combinedURI)
+		documentURI: combinedURI asString.

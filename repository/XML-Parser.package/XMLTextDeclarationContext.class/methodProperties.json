@@ -4,4 +4,5 @@
 	"instance" : {
 		"nextTokenFrom:" : "monty 11/9/2014 17:15",
 		"previousContext" : "monty 4/13/2015 01:29",
-		"previousContext:" : "monty 11/9/2014 17:13" } }
+		"previousContext:" : "monty 11/9/2014 17:13",
+		"supportsEncodingDetection" : "monty 5/3/2015 17:02" } }
