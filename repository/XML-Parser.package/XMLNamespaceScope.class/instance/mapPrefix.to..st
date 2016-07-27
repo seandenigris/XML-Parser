@@ -1,17 +1,15 @@
 accessing
 mapPrefix: aPrefix to: aUri
-	aPrefix isEmpty
+	aPrefix isEmpty "avoid ifEmpty: closure overhead"
 		ifTrue: [^ self defaultNamespace: aUri].
-	(aPrefix at: 1) == $x "skip comparisons below"
+	aPrefix = 'xml'
 		ifTrue: [
-			aPrefix = 'xml'
-				ifTrue: [
-					aUri = self class xmlNamespaceURI
-						ifFalse: [self errorCannotRemapXmlPrefix].
-					self prefixMappings at: 'xml' put: aUri.
-					^ self].
-			aPrefix = 'xmlns'
-				ifTrue: [self errorCannotMapXmlnsPrefix]].
+			aUri = self class xmlNamespaceURI
+				ifFalse: [self errorCannotRemapXmlPrefix].
+			self prefixMappings at: 'xml' put: aUri.
+			^ self].
+	aPrefix = 'xmlns'
+		ifTrue: [self errorCannotMapXmlnsPrefix].
 	(aPrefix indexOf: $:) > 0 
 		ifTrue: [self errorInvalidPrefix: aPrefix].
 

@@ -2,15 +2,13 @@ tokenizing - dtd
 nextAttributeType
 	| nextChar |
 
-	writeStream reset.
-	[self skipSeparatorsReplacingParameterEntities.
-	(nextChar := streamReader peek) == nil
-		or: [AttributeTypeDelimiters includes: nextChar]]
-		whileFalse: [
-			(ValueListChars includes: nextChar)
-				ifTrue: [
-					writeStream position > 0
-						ifTrue: [writeStream space].
-					writeStream nextPut: streamReader next]
-				ifFalse: [self nextNmtokenOn: writeStream]].
-	^ writeStream contents.
+	self skipSeparatorsReplacingParameterEntities.
+	(nextChar := streamReader peek) == $C
+		ifTrue: [^ self expectNextAll: 'CDATA'].
+	nextChar == $I
+		ifTrue: [^ self nextAttributeIDOrIDRefType].
+	nextChar == $E
+		ifTrue: [^ self nextAttributeEntityType].
+	nextChar == $N
+		ifTrue: [^ self nextAttributeNotationEnumerationOrNmtokenType].
+	^ self nextAttributeEnumerationType.

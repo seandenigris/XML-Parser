@@ -1,3 +1,3 @@
 accessing
 defaultDocumentReadLimit
-	^ 10000000
+	^ self defaultReadLimit

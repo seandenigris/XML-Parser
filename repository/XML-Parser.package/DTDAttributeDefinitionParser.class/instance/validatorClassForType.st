@@ -3,8 +3,6 @@ validatorClassForType
 	^ NonEnumerationValidators
 		at: type
 		ifAbsent: [
-			type isEmpty
-				ifTrue: [self errorMissingAttributeType].
-			(self hasNotationType)
-				ifTrue: [XMLNotationListAttributeValidator]
-				ifFalse: [XMLValueListAttributeValidator]]
+			type first == $N
+				ifTrue: [XMLNotationEnumerationAttributeValidator]
+				ifFalse: [XMLEnumerationAttributeValidator]]

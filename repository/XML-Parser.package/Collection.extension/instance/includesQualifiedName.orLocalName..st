@@ -1,7 +1,8 @@
 *XML-Parser
 includesQualifiedName: aQualifiedName orLocalName: aLocalName
-	self do: [:each |
-		(each
+	"optimized"
+	1 to: self size do: [:i |
+		((self at: i)
 			isQualifiedName: aQualifiedName
 			orLocalName: aLocalName)
 			ifTrue: [^ true]].

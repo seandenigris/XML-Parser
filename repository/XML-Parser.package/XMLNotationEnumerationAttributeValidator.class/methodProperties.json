@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"enumerationListParserClass" : "monty 12/11/2014 05:53",
+		"errorMultipleNotationAttributes" : "monty 10/31/2014 17:33",
+		"errorUndeclaredNotation:" : "monty 10/31/2014 17:29",
+		"hasNotationValues" : "monty 1/4/2014 04:58",
+		"notations" : "monty 1/4/2014 05:00",
+		"validateAndAddTo:usingDeclarationsFrom:" : "monty 10/31/2014 17:33",
+		"validateAttributeValue:" : "monty 10/31/2014 17:29" } }

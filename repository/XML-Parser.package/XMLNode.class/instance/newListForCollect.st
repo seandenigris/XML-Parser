@@ -1,3 +1,3 @@
 private
 newListForCollect
-	^ XMLOrderedList new
+	^ XMLOrderedList new: 10

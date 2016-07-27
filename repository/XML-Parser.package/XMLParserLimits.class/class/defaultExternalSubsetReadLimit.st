@@ -1,3 +1,4 @@
 accessing
 defaultExternalSubsetReadLimit
-	^ (self defaultDocumentReadLimit / 4) asInteger
+	^ self defaultReadLimit
+		ifNotNil: [:limit | (limit / 4) asInteger]

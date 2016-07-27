@@ -1,13 +1,14 @@
 {
 	"class" : {
-		 },
+		"new" : "monty 12/11/2014 05:39",
+		"new:" : "monty 12/11/2014 05:39" },
 	"instance" : {
 		"=" : "monty 1/9/2014 22:12",
 		"add:" : "monty 12/28/2013 18:52",
 		"do:" : "monty 12/28/2013 18:47",
 		"hash" : "monty 12/28/2013 18:50",
 		"includes:" : "monty 12/28/2013 18:48",
-		"initialize" : "monty 12/28/2013 18:52",
+		"initialize:" : "monty 12/11/2014 05:39",
 		"isAccepting" : "monty 12/28/2013 18:53",
 		"remove:ifAbsent:" : "monty 12/28/2013 18:46",
 		"set" : "monty 12/28/2013 18:50",

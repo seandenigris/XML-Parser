@@ -1,3 +1,3 @@
 accessing
 defaultMaxExternalEntitySize
-	^ XMLParserLimits defaultExternalSubsetReadLimit
+	^ 2500000

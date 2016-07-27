@@ -1,13 +1,10 @@
 {
 	"class" : {
-		"element:attribute:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:53",
+		"element:attribute:type:defaultPragma:defaultValue:" : "monty 12/10/2014 07:14",
 		"initialize" : "monty 11/18/2014 06:30",
 		"initializeDefaultValueValidators" : "monty 12/31/2013 02:53",
 		"initializeNonEnumerationValidators" : "monty 12/31/2013 02:54" },
 	"instance" : {
-		"errorMissingAttributeType" : "monty 10/31/2014 17:07",
-		"hasNotationType" : "monty 1/25/2014 01:25",
-		"parse" : "monty 1/25/2014 01:28",
-		"setElement:attribute:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:52",
-		"validatorClassForType" : "monty 10/31/2014 17:07",
-		"validatorForTypeWithDefaultValueValidator:" : "monty 1/25/2014 01:29" } }
+		"parse" : "monty 12/11/2014 09:40",
+		"setElement:attribute:type:defaultValueValidator:" : "monty 12/10/2014 07:14",
+		"validatorClassForType" : "monty 12/11/2014 04:57" } }

@@ -1,0 +1,1 @@
+This adapter converts the byte contents of a binary stream to character objects.

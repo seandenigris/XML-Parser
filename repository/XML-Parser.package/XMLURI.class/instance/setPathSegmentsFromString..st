@@ -5,4 +5,4 @@ setPathSegmentsFromString: aString
 	aString ifNotEmpty: [
 		$/
 			xmlSplit: aString
-			do: [:segment | pathSegments addLast: segment]]
+			do: [:segment | pathSegments addLast: segment]].

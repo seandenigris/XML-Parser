@@ -1,1 +1,0 @@
-This parses element mixed content  (#PCDATA| ... ) lists.

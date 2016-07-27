@@ -1,12 +1,13 @@
 parsing
 parse
-	| defaultValueValidator |
+	| attributeValidator |
 
-	defaultValueValidator :=
-		(DefaultValueValidators
-			at: defaultPragma
-			ifAbsent: [XMLDefaultValueAttributeValidator])
-				attribute: attribute
-				defaultValue: defaultValue.
+	attributeValidator :=
+		self validatorClassForType
+			element: element
+			attribute: attribute
+			defaultValueValidator: defaultValueValidator.
+	attributeValidator isEnumerationValidator
+		ifTrue: [attributeValidator setAllowedValuesFromString: type].
 
-	^ self validatorForTypeWithDefaultValueValidator: defaultValueValidator.
+	^ attributeValidator.

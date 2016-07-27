@@ -1,7 +1,7 @@
 {
 	"category" : "XML-Parser",
 	"classinstvars" : [
-		 ],
+		"defaultReadLimit" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "monty 1/25/2014 04:00",

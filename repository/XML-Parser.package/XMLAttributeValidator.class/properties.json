@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"NormalizedSpace" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"element",

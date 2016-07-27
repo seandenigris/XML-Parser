@@ -1,4 +1,7 @@
 testing
 isNmtoken: aString
-	^ aString notEmpty
-		and: [aString allSatisfy: [:each | self isNmtokenChar: each]]
+	"optimized"
+	1 to: aString size do: [:i |
+		(NameChars includes: (aString at: i))
+			ifFalse: [^ false]].
+	^ aString size > 0.

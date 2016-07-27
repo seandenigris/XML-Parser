@@ -12,5 +12,5 @@ validateAttributes: anAttributeDictionary with: aValidatorDictionary
 					remove: attribute
 					ifAbsent: nil]].
 
-	unvalidatedAttributes
-		ifNotEmpty: [self unvalidatedAttributes: unvalidatedAttributes].
+	unvalidatedAttributes isEmpty
+		ifFalse: [self unvalidatedAttributes: unvalidatedAttributes].

@@ -4,4 +4,4 @@ initialize
 
 	self
 		initializeOperatorApplicators;
-		initializeSpecialCharacterParsers.
+		initializeSpecialCharacterParsers

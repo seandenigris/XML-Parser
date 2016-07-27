@@ -1,3 +1,3 @@
-testing
+tokenizing
 nextTokenFrom: aTokenizer
 	aTokenizer nextSubsetToken

@@ -1,6 +1,6 @@
 initialization
-setStream: anInitialStream readLimit: aReadLimit
+setStream: aStream readLimit: aReadLimit
 	currentLineNumber := 1.
 	normalizedLineEndingChar := LineFeed.
-	stream := anInitialStream.
 	readLimit := aReadLimit.
+	self stream: aStream.

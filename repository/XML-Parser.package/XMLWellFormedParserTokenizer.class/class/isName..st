@@ -1,9 +1,9 @@
 testing
 isName: aString
-	aString ifEmpty: [^ false].
-
-	aString doWithIndex: [:each :i | 
-		((NameChars includes: each)
-			and: [i > 1 or: [(AdditionalNameChars includes: each) not]])
+	"optimized"
+	1 to: aString size do: [:i | 
+		((NameChars includes: (aString at: i))
+			and: [i > 1
+				or: [(AdditionalNameChars includes: (aString at: i)) not]])
 			ifFalse: [^ false]].
-	^ true.
+	^ aString size > 0.

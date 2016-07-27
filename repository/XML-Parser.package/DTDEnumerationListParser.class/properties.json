@@ -4,11 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/25/2014 03:20",
+	"commentStamp" : "monty 12/8/2014 15:21",
 	"instvars" : [
-		 ],
+		"listString",
+		"listValues",
+		"startIndex" ],
 	"name" : "DTDEnumerationListParser",
 	"pools" : [
 		 ],
-	"super" : "DTDValueListParser",
+	"super" : "Object",
 	"type" : "normal" }

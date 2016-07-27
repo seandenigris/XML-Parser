@@ -2,6 +2,6 @@ initialization
 initialize
 	super initialize.
 
-	maxExternalEntities := 12.
+	maxExternalEntities := 16.
 	maxExternalEntitySize := self class defaultMaxExternalEntitySize.
 	resolvesLocalFromNonLocal := false.

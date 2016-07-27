@@ -1,3 +1,3 @@
 private
 newNodeListForSelect
-	^ XMLNodeList new
+	^ XMLNodeList new: 10

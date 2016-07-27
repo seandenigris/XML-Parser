@@ -3,11 +3,9 @@ initialize
 	"self initialize"
 
 	self
+		initializeNormalizedSpace;
 		initializeAdditionalNameChars;
 		initializeNameChars;
 		initializePubidChars;
-		initializeAttributeTypeDelimiters;
-		initializeValueListChars;
-		initializeUnaryOperatorChars;
 		initializeEncodingNameChars;
-		initializeNormalizedSpace
+		initializeUnaryOperatorChars

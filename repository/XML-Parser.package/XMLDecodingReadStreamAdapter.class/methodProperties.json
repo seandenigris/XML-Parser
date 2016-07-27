@@ -1,15 +1,11 @@
 {
 	"class" : {
 		"on:" : "monty 11/20/2014 00:18",
-		"on:streamDecoder:" : "monty 11/13/2014 05:07" },
+		"on:streamDecoder:" : "monty 12/8/2014 05:45" },
 	"instance" : {
 		"atEnd" : "monty 11/12/2014 23:06",
 		"basicNext" : "monty 11/11/2014 18:40",
-		"close" : "monty 11/13/2014 05:08",
-		"isBinary" : "monty 11/20/2014 01:55",
-		"isStream" : "monty 11/20/2014 01:55",
 		"next" : "monty 11/17/2014 21:14",
 		"peek" : "monty 11/17/2014 21:14",
-		"setStream:streamDecoder:" : "monty 11/13/2014 05:07",
 		"streamDecoder" : "monty 11/11/2014 15:48",
 		"streamDecoder:" : "monty 11/11/2014 15:49" } }

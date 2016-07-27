@@ -1,3 +1,3 @@
 private
 attributesByName
-	^ attributesByName ifNil: [attributesByName := Dictionary new]
+	^ attributesByName ifNil: [attributesByName := Dictionary new: 5]

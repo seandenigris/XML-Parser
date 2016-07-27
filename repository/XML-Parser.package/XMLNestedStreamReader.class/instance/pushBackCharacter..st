@@ -4,5 +4,5 @@ pushBackCharacter: aCharacter
 		ifNil: [peekChar := aCharacter]
 		ifNotNil: [
 			self
-				pushStream: (XMLSingleCharacterReadStream on: aCharacter)
+				pushBackStream: (XMLSingleCharacterReadStream on: aCharacter)
 				onClose: nil]

@@ -7,8 +7,6 @@
 		"SpecialCharacterParsers" ],
 	"commentStamp" : "monty 12/29/2013 04:00",
 	"instvars" : [
-		"contentModelStream",
-		"nameStream",
 		"operatorStack",
 		"nfaBuilder" ],
 	"name" : "DTDDFAContentModelParser",

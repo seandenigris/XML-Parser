@@ -1,23 +1,27 @@
 private
 furtherNormalizeAttributeValueIn: anAttributeDictionary
-	| attributeValue writeStream isInWhitespace |
+	"The tokenizer normalizes all whitespace in attribute values to spaces
+	and this step normalizes again by removing leading and trailing spaces
+	and turing multiple spaces to single spaces."
+	| attributeAssociation semiNormalizedValue writeStream isInWhitespace |
 
-	attributeValue := anAttributeDictionary at: self attribute ifAbsent: [^ self].
-	writeStream := WriteStream on: (String new: attributeValue size).
+	attributeAssociation :=
+		anAttributeDictionary
+			associationAt: self attribute
+			ifAbsent: [^ self].
+	semiNormalizedValue := attributeAssociation value.
+	writeStream := WriteStream on: (String new: semiNormalizedValue size).
 	isInWhitespace := false.
-	attributeValue do: [:each |
-		isInWhitespace
+	semiNormalizedValue do: [:each |
+		each == NormalizedSpace
 			ifTrue: [
-				each isSeparator
-					ifFalse: [
-						writeStream position > 0
-							ifTrue: [writeStream space].
-						isInWhitespace := false.
-						writeStream nextPut: each]]
+				isInWhitespace
+					ifFalse: [isInWhitespace := true]]
 			ifFalse: [
-				each isSeparator
-					ifTrue: [isInWhitespace := true]
-					ifFalse: [writeStream nextPut: each]]].
-	anAttributeDictionary
-		at: self attribute
-		put: writeStream contents.
+				isInWhitespace
+					ifTrue: [
+						writeStream position > 0
+							ifTrue: [writeStream nextPut: NormalizedSpace].
+						isInWhitespace := false].
+				writeStream nextPut: each]].
+	attributeAssociation value: writeStream contents.

@@ -10,8 +10,7 @@
 		"element",
 		"attribute",
 		"type",
-		"defaultPragma",
-		"defaultValue" ],
+		"defaultValueValidator" ],
 	"name" : "DTDAttributeDefinitionParser",
 	"pools" : [
 		 ],

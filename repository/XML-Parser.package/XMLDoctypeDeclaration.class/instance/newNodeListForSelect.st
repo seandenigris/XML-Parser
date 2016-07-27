@@ -1,3 +1,3 @@
 private
 newNodeListForSelect
-	^ XMLInternalSubsetList new
+	^ XMLInternalSubsetList new: 10

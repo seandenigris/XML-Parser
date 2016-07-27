@@ -1,7 +1,7 @@
 validation
 validateStartTag: aName
-	self elementValidatorStack
-		ifNotEmpty: [self currentElementValidator validateStartTag: aName].
+	self currentElementValidator
+		ifNotNil: [:currentValidator | currentValidator validateStartTag: aName].
 
 	self elementValidatorStack addLast:
 		((self elementValidatorFor: aName)

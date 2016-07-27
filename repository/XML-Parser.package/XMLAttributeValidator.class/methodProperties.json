@@ -1,23 +1,22 @@
 {
 	"class" : {
-		"element:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15" },
+		"element:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
+		"initialize" : "monty 12/10/2014 11:36" },
 	"instance" : {
 		"attribute" : "monty 12/10/2013 06:17",
 		"element" : "monty 12/10/2013 06:17",
 		"errorInvalidID:" : "monty 10/31/2014 17:12",
-		"errorInvalidName:" : "monty 10/31/2014 17:11",
-		"furtherNormalizeAttributeValueIn:" : "monty 11/2/2014 09:13",
+		"furtherNormalizeAttributeValueIn:" : "monty 12/10/2014 12:02",
 		"hasIDRefs" : "monty 12/29/2013 02:57",
 		"hasIDs" : "monty 12/29/2013 02:57",
 		"hasNotationValues" : "monty 1/4/2014 05:02",
+		"isEnumerationValidator" : "monty 12/11/2014 09:40",
 		"isIDValidator" : "monty 12/10/2013 06:06",
-		"isValueListValidator" : "monty 12/9/2013 02:24",
-		"listValuesIn:do:" : "monty 10/30/2014 12:51",
+		"listValuesIn:do:" : "monty 12/10/2014 11:44",
 		"setElement:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
 		"shouldFurtherNormalizeAttributeValue" : "monty 12/11/2013 02:14",
 		"validateAndAddTo:usingDeclarationsFrom:" : "monty 11/19/2014 19:26",
 		"validateAttributeDefaultIn:" : "monty 2/10/2014 19:58",
 		"validateAttributeValue:" : "monty 12/28/2013 20:03",
 		"validateAttributes:" : "monty 11/19/2014 18:35",
-		"validateID:" : "monty 10/31/2014 17:12",
-		"validateName:" : "monty 10/31/2014 17:11" } }
+		"validateID:" : "monty 10/31/2014 17:12" } }

@@ -1,3 +1,3 @@
-printing
+private
 sortKey
 	^ self target

@@ -1,18 +1,24 @@
 parsing
 parse
-	contentModelStream := contentModel readStream.
-	nameStream := WriteStream on: (String new: 16).
+	"the tokenizer removes all spaces from the content model"
+	| nameStart |
+
 	operatorStack := OrderedCollection new.
 	nfaBuilder := XMLNFABuilder new.
-
-	[contentModelStream atEnd]
-		whileFalse: [ 
-			(self parserForSpecialCharacter: contentModelStream peek)
+	1 to: contentModel size do: [:i |
+		(self parserForSpecialCharacter: (contentModel at: i))
+				ifNil: [
+					nameStart
+						ifNil: [nameStart := i]]
 				ifNotNil: [:selector |
+					nameStart
+						ifNotNil: [
+							nfaBuilder pushMatcher:
+								(contentModel copyFrom: nameStart to: i - 1).
+							nameStart := nil].
 					self
 						perform: selector
-						with: contentModelStream next]
-				ifNil: [self parseElementName]].
+						with: (contentModel at: i)]].
 	self popRemainingOperators.
 
 	^ XMLDFAElementValidator

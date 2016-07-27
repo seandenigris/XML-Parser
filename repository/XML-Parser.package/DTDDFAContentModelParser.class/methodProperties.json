@@ -1,22 +1,20 @@
 {
 	"class" : {
-		"initialize" : "monty 11/18/2014 06:30",
-		"initializeOperatorApplicators" : "monty 12/29/2013 05:08",
-		"initializeSpecialCharacterParsers" : "monty 12/29/2013 05:08" },
+		"initialize" : "monty 12/8/2014 13:58",
+		"initializeOperatorApplicators" : "monty 12/8/2014 15:48",
+		"initializeSpecialCharacterParsers" : "monty 12/8/2014 15:48" },
 	"instance" : {
 		"applyBinaryOperatorOnStack" : "monty 12/28/2013 19:46",
 		"applyOperator:" : "monty 12/30/2013 22:29",
 		"errorMismatchedParens" : "monty 12/18/2013 22:44",
 		"errorMissingOperand" : "monty 12/18/2013 22:44",
-		"errorUnexpectedPCDATA" : "monty 10/31/2014 17:17",
 		"hasOperatorOnStack" : "monty 11/2/2014 09:17",
 		"isBinaryOperator:higherPrecedenceThan:" : "monty 12/18/2013 22:44",
 		"isSpecialCharacter:" : "monty 1/16/2014 05:09",
-		"parse" : "monty 12/30/2013 22:28",
+		"parse" : "monty 12/9/2014 06:35",
 		"parseBinaryOperator:" : "monty 12/29/2013 02:23",
-		"parseElementName" : "monty 10/31/2014 17:17",
 		"parseParen:" : "monty 12/29/2013 02:24",
 		"parseUnaryOperator:" : "monty 12/29/2013 02:23",
-		"parserForSpecialCharacter:" : "monty 1/10/2014 17:07",
+		"parserForSpecialCharacter:" : "monty 12/8/2014 15:43",
 		"popParenthesizedOperators" : "monty 12/28/2013 23:02",
 		"popRemainingOperators" : "monty 12/18/2013 22:44" } }

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "monty 12/8/2014 15:16",
 	"instvars" : [
 		"nodes" ],
 	"name" : "XMLNodeWithChildren",
