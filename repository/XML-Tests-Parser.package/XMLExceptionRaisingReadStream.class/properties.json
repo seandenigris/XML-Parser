@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/30/2015 20:30",
+	"commentStamp" : "monty 6/18/2015 00:58",
 	"instvars" : [
 		"stream" ],
 	"name" : "XMLExceptionRaisingReadStream",
