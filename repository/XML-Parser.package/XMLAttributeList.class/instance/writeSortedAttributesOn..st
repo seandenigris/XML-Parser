@@ -1,11 +1,11 @@
 private
-writeSortedAttributesOn: aTagWriter
+writeSortedAttributesOn: aWriter
 	| sortedAttributes |
 
 	sortedAttributes := self sorted.
 	"use to:do: for speed"
 	1 to: self size do: [:i | | attribute |
 		attribute := sortedAttributes at: i.
-		aTagWriter
+		aWriter
 			writeAttributeName: attribute name
 			value: attribute value]
