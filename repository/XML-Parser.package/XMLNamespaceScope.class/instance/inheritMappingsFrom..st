@@ -1,5 +1,5 @@
 initializing
-inheritMappingsFrom: anEnclosingScope.
+inheritMappingsFrom: anEnclosingScope
 	self defaultNamespace
 		ifNil: [self defaultNamespace: anEnclosingScope defaultNamespace].
 
