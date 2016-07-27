@@ -3,4 +3,6 @@ convert
 	^ self
 		detectCurrentEncoding;
 		nextXMLDeclaration;
-		upToEnd
+		skipToEnd;
+		close;
+		contents

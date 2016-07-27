@@ -1,6 +1,6 @@
 *XML-Parser-GTExtensions
 gtInspectorXMLFileIn: composite
-	<gtInspectorPresentationOrder: 40>
+	<gtInspectorPresentationOrder: 4>
 
 	self isXMLFile
 		ifFalse: [^ self].
@@ -12,6 +12,7 @@ gtInspectorXMLFileIn: composite
 				GLMHighlighterTextRubEditingMode withStylerDecorator:
 					GLMXMLHighlighterTextStylerDecorator new];
 			display: [XMLPositionExternalStreamConverter convert: self readStream];
+			withLineNumbers: true;
 			act: [:presentation | 
 					self
 						ensureDelete;

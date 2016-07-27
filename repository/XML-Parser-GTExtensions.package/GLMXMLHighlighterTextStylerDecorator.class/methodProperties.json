@@ -4,5 +4,6 @@
 	"instance" : {
 		"defaultStyler" : "monty 10/1/2015 21:52",
 		"errorColor" : "monty 10/2/2015 02:16",
-		"parse:onError:" : "monty 10/2/2015 04:48",
+		"highlightableLengthLimit" : "monty 10/2/2015 21:57",
+		"parse:onError:" : "monty 10/2/2015 21:57",
 		"parser" : "monty 10/1/2015 21:54" } }

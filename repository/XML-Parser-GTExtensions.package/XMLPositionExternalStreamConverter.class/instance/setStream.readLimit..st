@@ -7,5 +7,5 @@ setStream: aStream readLimit: aReadLimit
 	"this is the preferred LE char for Pharo/Squeak"
 	streamReader normalizedLineEndingChar: Character cr.
 
-	outputStream := (String new: aReadLimit) writeStream.
-	writeStream := (String new: 128) writeStream.
+	outputStream := (String new: 10240) writeStream.
+	writeStream := (String new: 64) writeStream.
