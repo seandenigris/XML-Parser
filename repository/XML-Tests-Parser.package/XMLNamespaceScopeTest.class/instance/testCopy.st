@@ -1,6 +1,7 @@
 tests
 testCopy
-	| scope |
+	| scope oldPrefixMappings |
 
 	scope := self newNamespaceScopeWithNamespaces.
-	self assert: scope prefixMappings == scope copy prefixMappings.
+	oldPrefixMappings := scope prefixMappings.
+	self assert: scope copy prefixMappings == oldPrefixMappings.

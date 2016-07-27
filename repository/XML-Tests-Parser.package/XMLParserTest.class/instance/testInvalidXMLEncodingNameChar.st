@@ -1,5 +1,5 @@
 tests
-testInvalidEncodingNameChar
+testInvalidXMLEncodingNameChar
 	| validChars |
 
 	validChars := '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_.-'.
