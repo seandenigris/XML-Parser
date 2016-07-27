@@ -2,8 +2,7 @@ tests
 testSAXXMLDeclaration
 	| parser selectors arguments |
 
-	(parser := SAXHandlerProxy saxHandler:
-		(SAXHandler on: '<?xml version="1.0" encoding="UTF-8"?>'))
+	(parser := SAXHandlerProxy on: '<?xml version="1.0" encoding="UTF-8"?>')
 		parseDocument.
 	selectors := #(startDocument xmlVersion:encoding:standalone: endDocument).
 	self assert: (parser wasSentSelectors: selectors).
@@ -14,8 +13,9 @@ testSAXXMLDeclaration
 		assert: arguments second = 'UTF-8';
 		deny: arguments third.
 
-	(parser := SAXHandlerProxy saxHandler:
-		(SAXHandler on: '<?xml version="1.1" encoding="utf-8" standalone="yes"?>'))
+	(parser :=
+		SAXHandlerProxy on:
+			'<?xml version="1.1" encoding="utf-8" standalone="yes"?>')
 		parseDocument.
 	self assert: (parser wasSentSelectors: selectors).
 

@@ -7,7 +7,7 @@ testSAXEntityHandlers
 		%firstDeclaration;
 		<!ENTITY second " replacement ">]>
 	<root name="&second;">&first;</root>'.
-	(parser :=SAXHandlerProxy saxHandler: (SAXHandler on: xml)) parseDocument.
+	(parser :=SAXHandlerProxy on: xml) parseDocument.
 	self assert:
 		(parser wasSentSelectors: 
 			#(startDocument

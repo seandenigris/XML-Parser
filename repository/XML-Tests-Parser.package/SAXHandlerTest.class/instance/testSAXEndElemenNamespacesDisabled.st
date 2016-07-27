@@ -2,7 +2,7 @@ tests
 testSAXEndElemenNamespacesDisabled
 	| parser arguments |
 
-	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: self prefixedXMLSource))
+	(parser := SAXHandlerProxy on: self prefixedXMLSource)
 		usesNamespaces: false;
 		parseDocument.
 	self assert: (parser wasSentSelectors: self prefixedXMLSourceSelectorsNamespacesDisabled).

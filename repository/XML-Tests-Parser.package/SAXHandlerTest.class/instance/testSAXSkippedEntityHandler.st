@@ -3,7 +3,7 @@ testSAXSkippedEntityHandler
 	| xml parser |
 
 	xml := '<root>&undeclared;</root>'.
-	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: xml))
+	(parser := SAXHandlerProxy on: xml)
 		isValidating: false;
 		parseDocument.
 	self assert:

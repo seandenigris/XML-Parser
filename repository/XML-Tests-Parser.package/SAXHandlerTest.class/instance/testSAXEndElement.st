@@ -2,7 +2,7 @@ tests
 testSAXEndElement
 	| parser arguments |
 
-	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: self prefixedXMLSource))
+	(parser := SAXHandlerProxy on: self prefixedXMLSource)
 		parseDocument.
 	self assert: (parser wasSentSelectors: self prefixedXMLSourceSelectors).
 

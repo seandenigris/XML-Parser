@@ -2,7 +2,7 @@ tests
 testSAXPrefixMappingHandlers
 	| parser messages |
 
-	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: self prefixedXMLSource)) parseDocument.
+	(parser := SAXHandlerProxy on: self prefixedXMLSource) parseDocument.
 	self assert: (parser wasSentSelectors: self prefixedXMLSourceSelectors).
 
 	messages := parser allSentMessagesNamed: #startPrefixMapping:uri:.
