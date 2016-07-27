@@ -1,3 +1,3 @@
 converting
 contentsFromCharacter: aCharacter
-	^ self percentEncode: aCharacter
+	^ self percentEncodeCharacter: aCharacter

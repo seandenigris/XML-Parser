@@ -1,5 +1,5 @@
 converting
-percentEncode: aCharacter
+percentEncodeCharacter: aCharacter
 	| hexString |
 
 	(hexString := aCharacter asciiValue printStringHex asUppercase) size > 1
