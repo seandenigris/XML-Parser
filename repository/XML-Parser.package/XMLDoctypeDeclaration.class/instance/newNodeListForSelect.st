@@ -1,0 +1,3 @@
+private
+newNodeListForSelect
+	^ XMLInternalSubsetList new

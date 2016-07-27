@@ -1,0 +1,3 @@
+namespaces
+undeclareDefaultNamespace
+	self undeclarePrefix: ''

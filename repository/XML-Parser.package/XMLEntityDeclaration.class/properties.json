@@ -9,8 +9,7 @@
 		"name",
 		"replacement",
 		"publicId",
-		"systemId",
-		"ndata" ],
+		"systemId" ],
 	"name" : "XMLEntityDeclaration",
 	"pools" : [
 		 ],

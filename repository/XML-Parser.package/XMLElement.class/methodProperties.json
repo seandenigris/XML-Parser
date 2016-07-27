@@ -72,6 +72,7 @@
 		"setAttributes:" : "JAAyer 7/12/2010 14:40",
 		"setNamespaceScope:" : "monty 12/27/2013 03:42",
 		"setQualifiedName:localName:attributes:" : "monty 11/16/2014 17:37",
+		"undeclareDefaultNamespace" : "monty 11/24/2014 06:54",
 		"undeclarePrefix:" : "monty 11/17/2014 16:45",
 		"updateEnclosedScopesWith:whileTrue:validateAfter:" : "monty 11/4/2014 00:29",
 		"validateAttributes" : "monty 10/9/2014 21:08",

@@ -15,6 +15,7 @@
 		"allNodesDetect:ifNone:" : "monty 11/6/2014 21:40",
 		"allNodesDo:" : "monty 10/19/2014 08:44",
 		"allNodesSelect:" : "monty 10/14/2014 22:49",
+		"canHaveChildren" : "monty 11/23/2014 20:53",
 		"descendentNodes" : "monty 11/6/2014 21:25",
 		"descendentNodesCollect:" : "monty 11/7/2014 02:18",
 		"descendentNodesDetect:" : "monty 11/6/2014 21:37",
