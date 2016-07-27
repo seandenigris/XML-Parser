@@ -4,7 +4,7 @@ gtSpotterXMLDocumentFor: aStep
 	self extension = 'xml' ifFalse: [ ^ self ].
 	aStep listProcessor
 		title: 'XML document';
-		allCandidates: [ { XMLDOMParser parse: self } ];
+		allCandidates: [ (XMLDOMParser parse: self) allElements ];
 		itemName: [ :element | element gtDisplayString ];
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true
