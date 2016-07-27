@@ -1,3 +1,3 @@
 private
 newElementList
-	^ XMLElementList new
+	^ XMLOrderedList new

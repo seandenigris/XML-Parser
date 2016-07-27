@@ -3,7 +3,7 @@ newElementsNamed: aNameArray
 	| names qualifiedName element |
 
 	names := aNameArray asOrderedCollection.
-	^ XMLElementList newFrom:
+	^ XMLOrderedList newFrom:
 		(self
 			createNodes: aNameArray size
 			with: [
