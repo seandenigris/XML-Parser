@@ -38,6 +38,7 @@
 		"testNodeDetecting" : "monty 12/21/2013 06:21",
 		"testNodeListClass" : "monty 12/12/2013 01:06",
 		"testOverridingDefaultNamespace" : "monty 10/13/2014 01:37",
+		"testParseDocumentUntil" : "monty 11/26/2014 21:28",
 		"testParseDocumentWhile" : "monty 10/14/2014 23:11",
 		"testParsedElementNames" : "monty 10/29/2014 13:54",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",

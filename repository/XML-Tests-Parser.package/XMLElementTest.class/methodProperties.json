@@ -20,6 +20,7 @@
 		"testAttributeNodeAtNamespaceURI" : "monty 11/23/2014 00:34",
 		"testAttributeNodeAtNamespaceURIIfAbsent" : "monty 11/23/2014 00:35",
 		"testAttributeNodes" : "monty 11/23/2014 00:16",
+		"testAttributeNodesDo" : "monty 11/26/2014 19:24",
 		"testAttributeRenaming" : "monty 11/23/2014 08:06",
 		"testAttributes" : "monty 11/23/2014 00:25",
 		"testCanonicalPrinting" : "monty 10/12/2014 01:06",
