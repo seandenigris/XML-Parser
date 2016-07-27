@@ -7,5 +7,5 @@ initializeNonEnumerationValidators
 		at: 'IDREFS' put: XMLIDRefsAttributeValidator;
 		at: 'ENTITY' put: XMLEntityAttributeValidator;
 		at: 'ENTITIES' put: XMLEntitiesAttributeValidator;
-		at: 'NMTOKEN' put: XMLNameAttributeValidator;
-		at: 'NMTOKENS' put: XMLNamesAttributeValidator
+		at: 'NMTOKEN' put: XMLNmtokenAttributeValidator;
+		at: 'NMTOKENS' put: XMLNmtokensAttributeValidator
