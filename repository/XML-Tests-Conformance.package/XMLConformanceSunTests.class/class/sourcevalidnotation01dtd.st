@@ -1,0 +1,13 @@
+xml source
+sourcevalidnotation01dtd
+	"Source file: sun/valid/notation01.dtd"
+
+	^ '<?xml version="1.0" encoding="UTF-8"?>
+
+<!NOTATION GIF PUBLIC
+    "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION
+     CompuServe Graphic Interchange Format//EN">
+
+<!ELEMENT test (#PCDATA) >
+
+'

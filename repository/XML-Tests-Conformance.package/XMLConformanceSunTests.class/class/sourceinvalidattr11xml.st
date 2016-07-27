@@ -1,0 +1,20 @@
+xml source
+sourceinvalidattr11xml
+	"Source file: sun/invalid/attr11.xml"
+
+	^ '<!DOCTYPE reference [
+
+<!ELEMENT reference EMPTY>
+<!ATTLIST reference
+    value	ENTITY	"2orldbook"
+    >
+    <!-- tests the "attribute default legal" vc -->
+
+<!NOTATION encyclopaedia PUBLIC "-//fooCorp Inc//NOTATION something//EN">
+<!ENTITY brittannica SYSTEM "http://www.eb.com/" NDATA encyclopaedia>
+<!ENTITY worldbook SYSTEM "http://www.worldbook.com">
+
+]>
+
+<reference value="brittannica"/>
+'

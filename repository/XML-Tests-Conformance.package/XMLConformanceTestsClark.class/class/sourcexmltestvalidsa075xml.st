@@ -1,8 +1,0 @@
-source
-sourcexmltestvalidsa075xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST doc a ENTITIES #IMPLIED>
-]>
-<doc></doc>
-'

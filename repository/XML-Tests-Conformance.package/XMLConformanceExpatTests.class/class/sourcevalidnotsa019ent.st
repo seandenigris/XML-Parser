@@ -1,0 +1,8 @@
+xml source
+sourcevalidnotsa019ent
+	"Source file: xmltest/valid/not-sa/019.ent"
+
+	^ '<!ELEMENT doc (#PCDATA)>
+<!ENTITY % e "''v1''">
+<!ATTLIST doc a1 CDATA%e;>
+'

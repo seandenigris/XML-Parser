@@ -1,0 +1,13 @@
+xml source
+sourcevalidpe03xml
+	"Source file: sun/valid/pe03.xml"
+
+	^ '<!DOCTYPE root [
+<!ELEMENT root (p)>
+<!ELEMENT p (#PCDATA)>
+<!-- Example 1 from XML spec 1.0 Appendix D -->
+<!ENTITY example "<p>An ampersand (&#38;#38;) may be escaped
+numerically (&#38;#38;#38) or with a general entity (&amp;amp;).</p>" >
+]>
+<root>&example;</root>
+'

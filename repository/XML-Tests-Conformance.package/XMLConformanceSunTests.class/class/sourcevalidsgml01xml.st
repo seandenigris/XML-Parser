@@ -1,0 +1,19 @@
+xml source
+sourcevalidsgml01xml
+	"Source file: sun/valid/sgml01.xml"
+
+	^ '<!DOCTYPE root [
+    <!ELEMENT root EMPTY>
+    <!--
+	SGML dislikes token reuse.  It''s legal XML, so any
+	XML parser must accept it, though it''s discouraged
+	in documents "for interoperability"
+    -->
+    <!ATTLIST root
+	status		(initial-draft|revision|final) "initial-draft"
+	position	(first|intermediate|final) "first"
+	>
+]>
+
+<root/>
+'

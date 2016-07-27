@@ -1,0 +1,1 @@
+This class handles file requests by converting paths into XML source selectors.

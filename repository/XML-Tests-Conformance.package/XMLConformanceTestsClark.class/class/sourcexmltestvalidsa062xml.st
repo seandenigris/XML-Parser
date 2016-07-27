@@ -1,7 +1,0 @@
-source
-sourcexmltestvalidsa062xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-]>
-<doc>&#xe40;&#xe08;&#xe21;ส์</doc>
-'

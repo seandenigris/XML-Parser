@@ -1,3 +1,0 @@
-source
-sourcexmltestvalidsaout081xml
-	^ '<doc><a></a><b></b><c><a></a></c></doc>'

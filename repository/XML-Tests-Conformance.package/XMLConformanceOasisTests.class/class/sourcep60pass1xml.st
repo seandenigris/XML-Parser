@@ -1,0 +1,18 @@
+xml source
+sourcep60pass1xml
+	"Source file: oasis/p60pass1.xml"
+
+	^ '<!DOCTYPE doc
+[
+<!ELEMENT doc (a|b|c|d)*>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT d EMPTY>
+<!ATTLIST a att CDATA #REQUIRED>
+<!ATTLIST b att CDATA #IMPLIED>
+<!ATTLIST c att CDATA #FIXED "value">
+<!ATTLIST d att CDATA ''default''>
+]>
+<doc><c/><c att="value"/></doc>
+'

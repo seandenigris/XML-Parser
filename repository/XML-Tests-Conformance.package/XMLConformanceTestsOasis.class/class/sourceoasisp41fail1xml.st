@@ -1,7 +1,0 @@
-source
-sourceoasisp41fail1xml
-	^ '<!DOCTYPE doc
-[
-<!ELEMENT doc att (val|val2)>
-]>
-<doc att=val></doc>'

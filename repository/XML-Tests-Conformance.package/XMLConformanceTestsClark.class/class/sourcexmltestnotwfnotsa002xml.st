@@ -1,8 +1,0 @@
-source
-sourcexmltestnotwfnotsa002xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ENTITY % e "<?xml version=''1.0'' encoding=''UTF-8''?>">
-%e;
-]>
-<doc></doc>'

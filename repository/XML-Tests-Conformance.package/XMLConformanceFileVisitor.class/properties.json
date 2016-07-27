@@ -1,0 +1,18 @@
+{
+	"category" : "XML-Tests-Conformance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"failingTestFiles",
+		"passingTestFiles",
+		"entityFiles",
+		"suite",
+		"skipFilesInBase" ],
+	"name" : "XMLConformanceFileVisitor",
+	"pools" : [
+		 ],
+	"super" : "FileSystemVisitor",
+	"type" : "normal" }

@@ -1,9 +1,0 @@
-source
-sourcexmltestvalidsa053xml
-	^ '<!DOCTYPE doc [
-<!ENTITY e "<e/>">
-<!ELEMENT doc (e)>
-<!ELEMENT e EMPTY>
-]>
-<doc>&e;</doc>
-'

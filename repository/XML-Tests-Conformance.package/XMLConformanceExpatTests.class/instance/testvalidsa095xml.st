@@ -1,0 +1,10 @@
+tests
+testvalidsa095xml
+	"Source file: xmltest/valid/sa/095.xml"
+
+	self
+		shouldnt: [
+			self
+				parse: self class sourcevalidsa095xml
+				documentURI: 'valid/sa/095.xml']
+		raise: self exceptionClass

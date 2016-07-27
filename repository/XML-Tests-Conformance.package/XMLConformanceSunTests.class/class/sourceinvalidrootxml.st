@@ -1,0 +1,12 @@
+xml source
+sourceinvalidrootxml
+	"Source file: sun/invalid/root.xml"
+
+	^ '<?xml version=''1.0'' standalone=''yes''?>
+
+<!DOCTYPE attributes SYSTEM "../valid/sa.dtd">
+
+<!-- the name in the dtd must match the element type of the root element -->
+    
+<root/>
+'

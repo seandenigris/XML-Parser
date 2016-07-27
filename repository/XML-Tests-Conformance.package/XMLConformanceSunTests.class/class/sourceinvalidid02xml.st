@@ -1,0 +1,14 @@
+xml source
+sourceinvalidid02xml
+	"Source file: sun/invalid/id02.xml"
+
+	^ '<!DOCTYPE root SYSTEM "../valid/sa.dtd">
+
+<!-- a name must not appear more than once as a value of type id -->
+
+<root>
+    <attributes id="a42"/>
+    <attributes id="a42"/>
+</root>
+
+'

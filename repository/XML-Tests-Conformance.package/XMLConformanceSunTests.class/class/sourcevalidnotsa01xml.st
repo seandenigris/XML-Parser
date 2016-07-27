@@ -1,0 +1,15 @@
+xml source
+sourcevalidnotsa01xml
+	"Source file: sun/valid/not-sa01.xml"
+
+	^ '<?xml version=''1.0'' standalone=''no''?>
+
+<!DOCTYPE root SYSTEM "sa.dtd">
+
+<root>
+    <child>
+    The whitespace before and after this element keeps
+    this from being standalone.
+    </child>
+</root>
+'

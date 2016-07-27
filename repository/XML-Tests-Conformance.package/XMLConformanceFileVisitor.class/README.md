@@ -1,0 +1,1 @@
+This class can be used with a Guide to walk the file tree of a test suite and collect all file references to passing and failing XML test files and entity/DTD files.

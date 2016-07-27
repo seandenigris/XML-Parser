@@ -1,0 +1,10 @@
+tests
+testp22pass2xml
+	"Source file: oasis/p22pass2.xml"
+
+	self
+		shouldnt: [
+			self
+				parse: self class sourcep22pass2xml
+				documentURI: 'p22pass2.xml']
+		raise: self exceptionClass

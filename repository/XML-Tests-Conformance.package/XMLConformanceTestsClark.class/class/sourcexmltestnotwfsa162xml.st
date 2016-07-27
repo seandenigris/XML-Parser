@@ -1,9 +1,0 @@
-source
-sourcexmltestnotwfsa162xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ENTITY % e1 "">
-<!ENTITY % e2 "%e1;">
-]>
-<doc></doc>
-'

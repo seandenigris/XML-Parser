@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Tests-Conformance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XMLConformanceSunTests",
+	"pools" : [
+		 ],
+	"super" : "XMLConformanceTests",
+	"type" : "normal" }

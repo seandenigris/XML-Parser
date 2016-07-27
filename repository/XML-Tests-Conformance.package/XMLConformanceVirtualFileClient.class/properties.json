@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Tests-Conformance",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"testCaseClass" ],
+	"name" : "XMLConformanceVirtualFileClient",
+	"pools" : [
+		 ],
+	"super" : "XMLFileSystemClient",
+	"type" : "normal" }

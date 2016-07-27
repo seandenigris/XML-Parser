@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"suite:skipFilesInBase:" : "monty 11/28/2013 06:58" },
+	"instance" : {
+		"entityExtensions" : "monty 11/28/2013 09:05",
+		"entityFiles" : "monty 11/28/2013 08:59",
+		"failingNamePatterns" : "monty 11/28/2013 09:06",
+		"failingTestFiles" : "monty 11/28/2013 08:30",
+		"passingTestFiles" : "monty 11/28/2013 08:30",
+		"setSuite:skipFilesInBase:" : "monty 11/28/2013 06:59",
+		"suite:" : "monty 11/28/2013 09:07",
+		"visitReference:" : "monty 11/28/2013 23:10" } }

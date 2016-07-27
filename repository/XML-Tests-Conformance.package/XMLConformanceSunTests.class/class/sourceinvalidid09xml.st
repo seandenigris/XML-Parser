@@ -1,0 +1,22 @@
+xml source
+sourceinvalidid09xml
+	"Source file: sun/invalid/id09.xml"
+
+	^ '<!DOCTYPE root [
+    <!ELEMENT root ANY>
+    <!ATTLIST root
+	id	ID	#IMPLIED
+	idref	IDREF	#IMPLIED
+	idrefs	IDREFS	#IMPLIED
+	>
+]>
+
+<!-- each name must match the value of an id attribute on some element -->
+
+<root idrefs="d36 ee38">
+    <root id="d36"/>
+</root>
+
+
+
+'

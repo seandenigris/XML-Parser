@@ -1,0 +1,17 @@
+xml source
+sourcep58fail3xml
+	"Source file: oasis/p58fail3.xml"
+
+	^ '<!DOCTYPE doc
+[
+<!ELEMENT doc EMPTY>
+<!NOTATION a SYSTEM "a">
+<!--should fail at this AttlistDecl, before NOTATION decl-->
+<!ATTLIST doc att NOTATION (a|0b) #IMPLIED>
+
+
+
+<!NOTATION 0b SYSTEM "0b">
+]>
+<doc/>
+'

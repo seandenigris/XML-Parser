@@ -1,0 +1,3 @@
+accessing
+entityExtensions
+	^ #('.ent' '.dtd')

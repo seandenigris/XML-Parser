@@ -1,9 +1,0 @@
-source
-sourcexmltestnotwfsa088xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST doc a CDATA #IMPLIED>
-<!ENTITY e ''"''>
-]>
-<doc a="&e;></doc>
-'

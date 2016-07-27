@@ -1,8 +1,0 @@
-source
-sourcexmltestvalidsa073xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST doc a IDREFS #IMPLIED>
-]>
-<doc></doc>
-'

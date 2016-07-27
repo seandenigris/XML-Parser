@@ -1,8 +1,0 @@
-source
-sourcexmltestvalidsa113xml
-	^ '<!DOCTYPE doc [
-<!ELEMENT doc (#PCDATA)>
-<!ATTLIST e a CDATA #IMPLIED>
-]>
-<doc></doc>
-'

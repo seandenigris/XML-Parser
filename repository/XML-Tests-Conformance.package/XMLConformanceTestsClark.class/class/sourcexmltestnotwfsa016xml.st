@@ -1,4 +1,0 @@
-source
-sourcexmltestnotwfsa016xml
-	^ '<doc a1="v1" "v2"></doc>
-'

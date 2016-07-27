@@ -1,0 +1,16 @@
+xml source
+sourcep68pass1xml
+	"Source file: oasis/p68pass1.xml"
+
+	^ '<!DOCTYPE doc
+[
+<!ELEMENT doc (#PCDATA)>
+<!ENTITY ent "replacement text">
+]>
+<doc>
+&ent;aaa&ent;
+<!--Not a reference:-->
+<!--Charref to & doesn''t make a delimiter-->
+&#38;en
+</doc>
+'

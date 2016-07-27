@@ -1,0 +1,27 @@
+xml source
+sourceinvalidemptyxml
+	"Source file: sun/invalid/empty.xml"
+
+	^ '<!--
+    From: "Henry S. Thompson" <ht@cogsci.ed.ac.uk>
+
+    I''d be interested in reports from validating parsers wrt the
+    following:
+-->
+
+<!DOCTYPE foo [
+<!ELEMENT foo (a+)>
+<!ENTITY empty ''''>
+<!ENTITY space '' ''>
+<!ELEMENT a EMPTY>]>
+<foo>
+&empty;
+<a/>
+&space;
+<a/>
+<![CDATA[]]>
+<a/>
+<![CDATA[ ]]>
+<a/>
+</foo>
+'

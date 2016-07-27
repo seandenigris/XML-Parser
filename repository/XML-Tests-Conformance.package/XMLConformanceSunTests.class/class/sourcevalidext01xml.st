@@ -1,0 +1,14 @@
+xml source
+sourcevalidext01xml
+	"Source file: sun/valid/ext01.xml"
+
+	^ '<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT foo ANY>
+<!ELEMENT bar ANY>
+<!ELEMENT is ANY>
+<!ENTITY root SYSTEM "ext01.ent">
+<!ENTITY null SYSTEM "null.ent">
+]>
+<root> &root; &root; &null; &null; </root>
+'

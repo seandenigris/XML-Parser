@@ -1,0 +1,35 @@
+xml source
+sourcevalidnotsa04xml
+	"Source file: sun/valid/not-sa04.xml"
+
+	^ '<?xml version=''1.0'' standalone=''no''?>
+
+<!DOCTYPE attributes SYSTEM "sa.dtd" [
+    <!--
+	This one isn''t standalone since it''s got a defaulted
+	attribute (token) and one needing normalization
+	(notation).
+    -->
+
+    <!ATTLIST attributes
+	token		(a|b|c)		"a"
+	notation	(nonce|foo|bar)	#IMPLIED
+	>
+    <!ENTITY internal "internal&number;">
+    <!ENTITY number "42">
+]>
+
+<attributes
+    notation =	" nonce "
+    nmtoken =	"this-gets-normalized"
+    nmtokens =	"this also gets normalized"
+    id =	"&internal;"
+    idref =	"&internal;"
+    idrefs =	"&internal; &internal; &internal;"
+    entity =	"unparsed-1"
+    entities =	"unparsed-1 unparsed-2"
+    cdata =	"nothing happens to this one!"
+    />
+
+<?pi equals three?>
+'

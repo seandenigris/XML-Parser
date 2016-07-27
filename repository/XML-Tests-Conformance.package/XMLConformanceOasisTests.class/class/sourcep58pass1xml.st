@@ -1,0 +1,16 @@
+xml source
+sourcep58pass1xml
+	"Source file: oasis/p58pass1.xml"
+
+	^ '<!DOCTYPE doc
+[
+<!ELEMENT doc (a|b)*>
+<!ELEMENT a ANY>
+<!ELEMENT b ANY>
+<!NOTATION a SYSTEM "a">
+<!NOTATION b SYSTEM "b">
+<!ATTLIST a att NOTATION (a) #IMPLIED>
+<!ATTLIST b att NOTATION ( a | b ) #IMPLIED>
+]>
+<doc/>
+'

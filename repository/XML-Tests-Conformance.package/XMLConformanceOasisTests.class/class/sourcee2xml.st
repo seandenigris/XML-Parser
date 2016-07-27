@@ -1,0 +1,10 @@
+xml source
+sourcee2xml
+	"Source file: oasis/e2.xml"
+
+	^ '<!DOCTYPE el [
+<!ELEMENT el EMPTY>
+<!ATTLIST el at (one|two|two) #IMPLIED>
+]>
+<e1 at="two"/>
+'

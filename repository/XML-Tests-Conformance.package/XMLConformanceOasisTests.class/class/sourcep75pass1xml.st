@@ -1,0 +1,15 @@
+xml source
+sourcep75pass1xml
+	"Source file: oasis/p75pass1.xml"
+
+	^ '<!DOCTYPE doc
+[
+<!ENTITY ent SYSTEM "nop.ent">
+<!ENTITY ent2 PUBLIC "PublicID" "nop.ent">
+<!ENTITY ent3 PUBLIC
+              "PublicID"
+              "nop.ent"
+              >
+]>
+<doc/>
+'
