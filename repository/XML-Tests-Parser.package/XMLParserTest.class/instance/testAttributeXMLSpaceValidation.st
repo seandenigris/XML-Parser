@@ -17,6 +17,7 @@ testAttributeXMLSpaceValidation
 		'ENTITY'
 		'ENTITIES'
 		'(default|preserve|other)'
+		'(default|preserve|default)'
 		'NOTATION (default|preserve)')
 		do: [:each |
 			xml := xmlTemplate format: (Array with: each).

@@ -1,13 +1,12 @@
 tests
-testUnparsedEntitiesUndeclaredNotations
+testUnparsedEntityUndeclaredNotations
 	| beforeNotation afterNotation |
 
 	beforeNotation := '
-		<!DOCTYPE entity [
-			<!ELEMENT entity EMPTY>
-			<!ATTLIST entity name ENTITY #REQUIRED>
+		<!DOCTYPE test [
+			<!ELEMENT test EMPTY>
 			<!ENTITY notationEntity SYSTEM "note.txt" NDATA note>'.
-	afterNotation := ']><entity name="notationEntity"/>'.
+	afterNotation := ']><test/>'.
 	self
 		should: [SAXHandler parse: beforeNotation, afterNotation]
 		raise: XMLValidationException.

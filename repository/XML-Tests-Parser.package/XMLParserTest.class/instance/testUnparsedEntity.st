@@ -1,5 +1,5 @@
 tests
-testUnparsedEntities
+testUnparsedEntity
 	| dtd |
 
 	dtd := '
