@@ -5,9 +5,9 @@ parsePort
 	(self peekFor: $:)
 		ifTrue: [
 			port :=
-				self
-					nextIntegerWithBase: 10
-					upTo: nil.
+				XMLIntegerReader
+					readFrom: readStream
+					withBase: 10.
 			[self atEnd
 				or: [PathDelimiters includes: self peek]]
 				whileFalse: [self next]].

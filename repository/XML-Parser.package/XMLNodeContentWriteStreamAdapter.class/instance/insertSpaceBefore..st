@@ -3,4 +3,4 @@ insertSpaceBefore: aCharacter
 	(lastChar == nil
 		or: [lastChar xmlParserIsWhitespace
 			or: [aCharacter xmlParserIsWhitespace]])
-		ifFalse: [stream space]
+		ifFalse: [stream nextPut: SpaceCharacter]

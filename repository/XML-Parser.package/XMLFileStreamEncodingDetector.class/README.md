@@ -1,0 +1,1 @@
+An automatic encoding detector for file streams wrapped by decoding read stream adapters. It assumes the wrapped stream supports reset.

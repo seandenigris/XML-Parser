@@ -1,3 +1,5 @@
-accessing
+private
 basicNext
-	self subclassResponsibility
+	stream atEnd
+		ifTrue: [^ nil]
+		ifFalse: [^ stream next]

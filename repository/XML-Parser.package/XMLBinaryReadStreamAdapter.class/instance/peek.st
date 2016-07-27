@@ -1,3 +1,5 @@
 accessing
 peek
-	^ Character value: stream peek
+	stream atEnd
+		ifTrue: [^ nil]
+		ifFalse: [^ Character value: stream peek]

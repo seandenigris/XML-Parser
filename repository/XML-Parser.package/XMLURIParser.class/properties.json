@@ -12,7 +12,8 @@
 	"commentStamp" : "monty 1/6/2016 18:57",
 	"instvars" : [
 		"writeStream",
-		"readStream" ],
+		"readStream",
+		"decodingStream" ],
 	"name" : "XMLURIParser",
 	"pools" : [
 		 ],

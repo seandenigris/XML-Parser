@@ -1,0 +1,1 @@
+An abstract class for write stream adapters for basic streams that support nextPut:, nextPutAll:, contents, reset, positioning.

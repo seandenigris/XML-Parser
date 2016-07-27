@@ -1,0 +1,3 @@
+class initialization
+initializeEncodingNamesAndClassesCache
+	EncodingNamesAndClassesCache := XMLKeyValueCache maxSize: 128

@@ -1,1 +1,1 @@
-A GsFile read stream factory. This stream is preferred for Gemstone because it does no decoding so XMLParser can do its own.
+A GsFile read stream factory. This stream is preferred for Gemstone because it does no decoding and returns byte characters, so XMLParser can do its own decoding.

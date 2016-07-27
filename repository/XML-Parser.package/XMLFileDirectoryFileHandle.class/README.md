@@ -1,1 +1,1 @@
-This class uses FileDirectory/DirectoryEntry to implement file IO.
+This class uses FileDirectory/DirectoryEntry to implement file IO. This is used on Squeak and Gemstone, which don't support the FileSystem API.

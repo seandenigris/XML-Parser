@@ -1,1 +1,1 @@
-A read stream adapter that decodes stream contents using a stream decoder. Used with undecoded external streams.
+A read stream adapter that decodes stream contents using a stream converter. Used to handle encoded external streams.

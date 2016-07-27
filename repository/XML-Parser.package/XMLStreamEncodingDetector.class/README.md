@@ -1,1 +1,0 @@
-An automatic encoding detector for stream reader streams that infers encodings from byte order marks (BOM) or implicitly from null bytes before or after the first non-null byte.

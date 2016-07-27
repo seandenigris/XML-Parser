@@ -1,0 +1,1 @@
+A stream converter for big endian UTF-32 streams.

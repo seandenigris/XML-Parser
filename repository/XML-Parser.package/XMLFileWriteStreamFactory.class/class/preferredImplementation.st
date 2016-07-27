@@ -1,3 +1,3 @@
 private
 preferredImplementation
-	^ XMLFileStreamWriteStreamFactory
+	^ XMLStandardFileStreamWriteStreamFactory

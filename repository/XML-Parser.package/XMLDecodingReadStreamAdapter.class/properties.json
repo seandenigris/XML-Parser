@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 12/3/2015 07:20",
+	"commentStamp" : "monty 1/29/2016 19:23",
 	"instvars" : [
-		"streamDecoder",
-		"peekChar" ],
+		"peekChar",
+		"streamConverter" ],
 	"name" : "XMLDecodingReadStreamAdapter",
 	"pools" : [
 		 ],

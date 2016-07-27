@@ -1,0 +1,3 @@
+private
+pushBackCharacter: aCharacter
+	self subclassResponsibility

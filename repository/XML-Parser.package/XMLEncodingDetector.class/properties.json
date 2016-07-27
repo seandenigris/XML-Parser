@@ -1,0 +1,20 @@
+{
+	"category" : "XML-Parser-Streams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"EncodingHandlerTable",
+		"NullCharacter",
+		"UTF16BigEndianBOM",
+		"UTF16LittleEndianBOM",
+		"UTF32BigEndianBOM",
+		"UTF32LittleEndianBOM",
+		"UTF8BOM" ],
+	"commentStamp" : "monty 2/14/2016 02:17",
+	"instvars" : [
+		"stream" ],
+	"name" : "XMLEncodingDetector",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

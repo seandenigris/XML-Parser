@@ -1,3 +1,5 @@
 accessing
 peek
-	self subclassResponsibility
+	stream atEnd
+		ifTrue: [^ nil]
+		ifFalse: [^ stream peek]

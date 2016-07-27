@@ -2,5 +2,8 @@ private
 nextPercentEncodedUpToEnd
 	writeStream reset.
 	[self atEnd]
-		whileFalse: [writeStream nextPut: self nextPercentEncodedChar].
+		whileFalse: [
+			self peek == $%
+				ifTrue: [self nextPercentEncodedCharsOnWriteStream]
+				ifFalse: [writeStream nextPut: self next]].
 	^ writeStream contents.

@@ -1,3 +1,5 @@
 reading
 readStream
-	^ self readStreamUpToLimit: nil
+	^ self
+		readStreamUpToLimit: nil
+		decoding: true

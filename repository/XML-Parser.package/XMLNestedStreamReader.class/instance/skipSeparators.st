@@ -1,11 +1,11 @@
-streaming
+positioning
 skipSeparators
-	"nil understands xmlParserIsSeparator so the result of the inlined peek
+	"nil understands xmlParserIsSeparator so the result of the inlined #peek
 	does not need to be tested for nil first"
-	[(peekChar ifNil: [peekChar := self basicNext]) "inlined peek"
+	[(peekChar ifNil: [peekChar := self basicNext]) "inlined #peek"
 		xmlParserIsSeparator]
 		whileTrue: [
-			"inlined next"
+			"inlined #next"
 			peekChar == normalizedLineEndingChar
 				ifTrue: [currentLineNumber := currentLineNumber + 1].
 			readLimit ifNotNil: [

@@ -1,0 +1,3 @@
+private
+decodeStreamWithConverter: aStreamConverter
+	streamReader decodeStreamWithConverter: aStreamConverter

@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 11/20/2014 03:56",
+	"commentStamp" : "monty 2/14/2016 02:09",
 	"instvars" : [
-		"stream",
 		"lastChar" ],
 	"name" : "XMLNodeContentWriteStreamAdapter",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "XMLWriteStreamAdapter",
 	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"initialize" : "monty 2/10/2016 20:54" },
+	"instance" : {
+		"atBeginning" : "monty 2/13/2016 23:01",
+		"contents" : "monty 1/22/2016 23:57",
+		"cr" : "monty 2/10/2016 20:54",
+		"lf" : "monty 2/10/2016 20:54",
+		"nextPut:" : "monty 2/11/2016 22:23",
+		"nextPutAll:" : "monty 2/11/2016 22:23",
+		"position" : "monty 2/7/2016 00:25",
+		"position:" : "monty 2/7/2016 00:25",
+		"reset" : "monty 1/22/2016 23:57",
+		"space" : "monty 2/5/2016 01:57",
+		"tab" : "monty 2/10/2016 20:48" } }

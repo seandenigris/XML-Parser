@@ -1,4 +1,4 @@
-accessing
+private
 basicNext
 	"Returns next character in the stream after performing line-ending normalization."
 	| nextChar |
@@ -8,16 +8,16 @@ basicNext
 			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifTrue: [^ nil]].
-	(nextChar := stream next) == CarriageReturn
+	(nextChar := stream next) == CRCharacter
 		ifTrue: [
 			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifFalse: [
-					stream peek == LineFeed
+					stream peek == LFCharacter
 						ifTrue: [stream next]].
 			nextChar := normalizedLineEndingChar]
 		ifFalse: [
-			nextChar == LineFeed
+			nextChar == LFCharacter
 				ifTrue: [nextChar := normalizedLineEndingChar]].
 	isEscapingQuotes
 		ifTrue: [^ self escapeNextQuoteCharacter: nextChar]

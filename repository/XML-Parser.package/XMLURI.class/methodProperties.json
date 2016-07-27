@@ -6,7 +6,7 @@
 		"new" : "monty 2/9/2015 06:40",
 		"percentEncodeCharacter:" : "monty 1/5/2016 23:38",
 		"percentOrPlusEncodeCharacter:" : "monty 1/5/2016 23:38",
-		"printPercentEncodedCharacter:on:" : "monty 1/20/2016 10:01",
+		"printPercentEncodedCharacter:on:" : "monty 2/14/2016 04:19",
 		"printPercentOrPlusEncodedCharacter:on:" : "monty 1/10/2016 09:04",
 		"readFrom:" : "monty 1/5/2016 09:07" },
 	"instance" : {
@@ -16,7 +16,7 @@
 		"addDoubleDotPathSegment" : "monty 1/2/2016 00:15",
 		"addPathSegment:" : "monty 1/2/2016 00:21",
 		"addPathSegmentsFrom:" : "monty 1/2/2016 21:54",
-		"asRetrievableResource" : "monty 1/1/2016 08:03",
+		"asRetrievableResource" : "monty 2/13/2016 00:36",
 		"asString" : "monty 4/6/2015 08:05",
 		"asXMLURI" : "monty 1/10/2014 00:56",
 		"combinedWithRelativeURI:" : "monty 1/7/2016 02:02",

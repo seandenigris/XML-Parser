@@ -1,1 +1,1 @@
-A stream for writing node content with whitespace insertion if needed between writes.
+A write stream adapter for writing node content with whitespace insertion if needed between writes.

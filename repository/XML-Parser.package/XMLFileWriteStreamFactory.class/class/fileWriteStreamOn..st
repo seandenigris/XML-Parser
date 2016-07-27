@@ -1,3 +1,0 @@
-instance creation
-fileWriteStreamOn: aPath
-	self subclassResponsibility

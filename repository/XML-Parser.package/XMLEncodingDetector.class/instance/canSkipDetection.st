@@ -1,0 +1,3 @@
+private
+canSkipDetection
+	^ self atEnd

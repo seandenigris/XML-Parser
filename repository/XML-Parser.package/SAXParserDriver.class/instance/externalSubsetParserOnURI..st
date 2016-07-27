@@ -9,6 +9,6 @@ externalSubsetParserOnURI: aURIString
 
 	^ self
 		externalSubsetParserOn:
-			(XMLDecodingReadStreamAdapter onExternalStream:
+			(XMLDecodingReadStreamAdapter on:
 				(self externalEntityResolver streamResolveEntityURI: combinedURI))
 		documentURI: combinedURI asString.

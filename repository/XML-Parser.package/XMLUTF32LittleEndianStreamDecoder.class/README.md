@@ -1,1 +1,0 @@
-A stream decoder for little endian UTF-32 streams.

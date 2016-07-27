@@ -1,0 +1,3 @@
+private
+decodingReadStreamAdapter: aDecodingReadStreamAdapter
+	decodingReadStreamAdapter := aDecodingReadStreamAdapter

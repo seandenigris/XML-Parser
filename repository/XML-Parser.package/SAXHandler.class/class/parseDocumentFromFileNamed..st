@@ -1,5 +1,5 @@
 deprecated
-parseDocumentFromFileNamed: aFileName
+parseDocumentFromFileNamed: aFileNameString
 	self deprecated: 'Use #parseFileNamed: instead'.
 
-	^ self parseFileNamed: aFileName.
+	^ self parseFileNamed: aFileNameString.

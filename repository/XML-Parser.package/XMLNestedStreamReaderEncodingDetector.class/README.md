@@ -1,0 +1,1 @@
+An automatic encoding detector for stream reader streams.

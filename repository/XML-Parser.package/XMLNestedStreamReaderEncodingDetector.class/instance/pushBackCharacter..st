@@ -1,0 +1,3 @@
+private
+pushBackCharacter: aCharacter
+	streamReader pushBackCharacter: aCharacter

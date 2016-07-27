@@ -1,0 +1,3 @@
+private
+decodeStreamWithConverter: aStreamConverter
+	self subclassResponsibility

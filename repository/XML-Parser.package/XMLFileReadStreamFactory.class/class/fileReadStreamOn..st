@@ -1,3 +1,0 @@
-instance creation
-fileReadStreamOn: aPath
-	self subclassResponsibility

@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"codePointFromFirstByte:secondByte:thirdByte:fourthByte:" : "monty 11/11/2014 14:58",
-		"errorInvalidCodePoint" : "monty 11/11/2014 15:54",
-		"isBigEndian" : "monty 11/11/2014 14:49",
-		"nextFromStream:" : "monty 11/17/2014 21:14" } }

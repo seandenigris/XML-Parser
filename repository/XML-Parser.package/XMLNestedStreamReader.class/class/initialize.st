@@ -2,5 +2,6 @@ class initialization
 initialize
 	"self initialize"
 
-	CarriageReturn := Character cr.
-	LineFeed := Character lf.
+	"stored in class vars for faster access"
+	CRCharacter := Character cr.
+	LFCharacter := Character lf.

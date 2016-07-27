@@ -3,6 +3,8 @@
 		 },
 	"instance" : {
 		"asXMLEscapedString" : "monty 12/27/2014 02:57",
+		"asXMLFileHandle" : "monty 2/2/2016 17:37",
+		"asXMLHTTPRequest" : "monty 2/13/2016 00:35",
 		"asXMLString" : "JAAyer 4/14/2010 21:26",
 		"asXMLURI" : "monty 1/10/2014 00:56",
 		"expandWithNamespaceURI:" : "monty 3/22/2015 05:41",

@@ -1,7 +1,7 @@
 accessing
 next
 	peekChar
-		ifNil: [^ streamDecoder nextFromStream: self]
+		ifNil: [^ streamConverter nextFromStream: self]
 		ifNotNil: [:nextChar |
 			peekChar := nil.
 			^ nextChar]

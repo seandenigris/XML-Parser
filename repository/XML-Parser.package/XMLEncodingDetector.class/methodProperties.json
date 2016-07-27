@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"for:" : "monty 2/9/2016 06:36",
+		"handlerForByteValue:" : "monty 2/9/2016 05:54",
+		"initialize" : "monty 2/9/2016 03:51",
+		"initializeByteOrderMarks" : "monty 2/9/2016 03:52",
+		"initializeEncodingHandlerTable" : "monty 2/9/2016 03:52",
+		"initializeNullCharacter" : "monty 2/9/2016 03:52" },
+	"instance" : {
+		"atEnd" : "monty 2/9/2016 06:20",
+		"canSkipDetection" : "monty 2/14/2016 02:03",
+		"decodeStreamWithConverter:" : "monty 2/9/2016 05:53",
+		"detectCurrentEncoding" : "monty 2/14/2016 02:03",
+		"handleBOM:forConverterClass:" : "monty 2/9/2016 05:52",
+		"handleBOM:forConverterClass:ifUnmatched:" : "monty 2/9/2016 23:14",
+		"handleBigEndianUTF16BOM" : "monty 2/9/2016 05:51",
+		"handleBigEndianUTF32BOMOrImplicitEncoding" : "monty 2/9/2016 06:05",
+		"handleLittleEndianImplicitEncoding" : "monty 2/9/2016 06:05",
+		"handleLittleEndianUTF16BOMOrUTF32BOM" : "monty 2/9/2016 05:52",
+		"handleUTF8BOM" : "monty 2/9/2016 05:51",
+		"next" : "monty 2/9/2016 05:56",
+		"nextASCII" : "monty 2/9/2016 06:18",
+		"peek" : "monty 2/9/2016 05:56",
+		"peekForNull" : "monty 2/9/2016 23:14",
+		"pushBack:" : "monty 2/9/2016 05:53",
+		"pushBackCharacter:" : "monty 2/9/2016 05:53",
+		"stream:" : "monty 2/9/2016 03:55" } }

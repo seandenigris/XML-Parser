@@ -1,12 +1,12 @@
 retrieving
 getUpToLimit: aMaxSize decoding: aBoolean
-	| stream contents |
+	| stream upToEnd |
 
 	stream :=
 		self
 			streamGetUpToLimit: aMaxSize
 			decoding: aBoolean.
-	contents := stream contents.
+	upToEnd := stream upToEnd.
 	stream close.
 
-	^ contents.
+	^ upToEnd.

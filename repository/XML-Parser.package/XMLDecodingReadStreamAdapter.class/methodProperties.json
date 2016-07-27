@@ -1,15 +1,14 @@
 {
 	"class" : {
-		"on:" : "monty 11/20/2014 00:18",
-		"on:streamDecoder:" : "monty 5/23/2015 08:04",
-		"onExternalStream:" : "monty 5/24/2015 21:27",
-		"onStreamIfBinary:" : "monty 5/26/2015 01:17" },
+		"on:" : "monty 1/25/2016 22:39",
+		"on:streamConverter:" : "monty 2/2/2016 22:40",
+		"onStreamIfBinary:" : "monty 2/2/2016 22:46" },
 	"instance" : {
-		"atEnd" : "monty 11/12/2014 23:06",
-		"basicNext" : "monty 11/11/2014 18:40",
-		"isDecodingReadStreamAdapter" : "monty 5/23/2015 01:32",
-		"next" : "monty 11/17/2014 21:14",
-		"peek" : "monty 11/17/2014 21:14",
-		"printOn:" : "monty 4/24/2015 11:47",
-		"streamDecoder" : "monty 11/11/2014 15:48",
-		"streamDecoder:" : "monty 11/11/2014 15:49" } }
+		"atEnd" : "monty 1/27/2016 00:59",
+		"hasDefaultStreamConverter" : "monty 1/31/2016 22:49",
+		"isConvertingStreamAdapter" : "monty 2/3/2016 02:50",
+		"next" : "monty 1/23/2016 16:49",
+		"peek" : "monty 1/27/2016 00:59",
+		"printOn:" : "monty 1/23/2016 16:49",
+		"streamConverter" : "monty 1/23/2016 16:49",
+		"streamConverter:" : "monty 2/14/2016 03:07" } }

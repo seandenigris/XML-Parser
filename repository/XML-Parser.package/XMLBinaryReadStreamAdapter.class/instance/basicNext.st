@@ -1,3 +1,5 @@
-accessing
+private
 basicNext
-	^ Character value: stream next
+	stream atEnd
+		ifTrue: [^ nil]
+		ifFalse: [^ Character value: stream next]
