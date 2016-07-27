@@ -1,23 +1,25 @@
 tests
 testCDATASection
-	| document element output escapedOutput |
+	| document element unescaped escaped xml |
 
-	output := 'this is CDATA test content 1 < 2 & 5 > 3'.
-	escapedOutput := 'this is CDATA test content 1 &lt; 2 &amp; 5 &gt; 3'.
-
-	document := XMLDOMParser parse: self exampleCDATASectionXML.
+	unescaped := 'this is CDATA test content 1 < 2 & 5 > 3'.
+	escaped := 'this is CDATA test content 1 &lt; 2 &amp; 5 &gt; 3'.
+	xml := 
+		'<?xml version="1.0" encoding="UTF-8"?>
+		<test-data><![CDATA[', unescaped, ']]></test-data>'.
+	document := XMLDOMParser parse: xml.
 	element := document findElementNamed: 'test-data'.
 	self
 		assert: element nodes size = 1;
 		assert: element firstNode isStringNode;
-		assert: element firstNode printString = escapedOutput.
+		assert: element firstNode printString = escaped.
 
 	document :=
-		(XMLDOMParser on: self exampleCDATASectionXML)
+		(XMLDOMParser on: xml)
 			preservesCDataNodes: true;
 			parseDocument.
 	element := document findElementNamed: 'test-data'.
 	self
 		assert: element nodes size = 1;
 		assert: element firstNode isCData;
-		assert: element firstNode printString = ('<![CDATA[',output,']]>').
+		assert: element firstNode printString = ('<![CDATA[', unescaped, ']]>').

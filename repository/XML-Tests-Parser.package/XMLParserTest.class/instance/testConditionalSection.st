@@ -9,6 +9,10 @@ testConditionalSection
 			'<![INCLUDE [included',
 			'<![ IGNORE [ignored; <![INCLUDE[ignored;]]> ignored.]]>',
 			', included]]>, included.'.
-	tokenizer tokenContext enterInternalSubset.
+	tokenizer tokenContext enterExternalSubset.
 	tokenizer nextToken.
-	self assert: tokenizer streamReader upToEnd = 'included, included, included.'
+	self assert: tokenizer streamReader upToEnd = 'included, included, included.'.
+
+	self
+		should: [SAXHandler parse: '<!DOCTYPE root [ <![IGNORE[<!--ignored-->]]> ]><root/>']
+		raise: XMLParserException.
