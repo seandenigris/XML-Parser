@@ -10,5 +10,5 @@
 	"name" : "XMLDoctypeDeclarationTest",
 	"pools" : [
 		 ],
-	"super" : "XMLNodesWithChildrenTest",
+	"super" : "XMLNodeWithChildrenTest",
 	"type" : "normal" }

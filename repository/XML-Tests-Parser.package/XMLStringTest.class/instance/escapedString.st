@@ -1,3 +1,3 @@
 accessing
 escapedString
-	^ '&lt;test name="&amp;value;"/>'
+	^ '&lt;test name="&amp;name;">''&amp;value;''&lt;/test>'
