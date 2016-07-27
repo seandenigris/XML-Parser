@@ -1,0 +1,3 @@
+*XML-Parser-GemstoneCompatibility
+xmlLocalNameAfterPrefix
+	^ self xmlLocalNameAfterPrefix: self xmlPrefixBeforeLocalName

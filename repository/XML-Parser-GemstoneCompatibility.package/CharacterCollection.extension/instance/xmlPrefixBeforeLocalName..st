@@ -1,5 +1,5 @@
 *XML-Parser-GemstoneCompatibility
-prefixBeforeLocalName: aLocalName
+xmlPrefixBeforeLocalName: aLocalName
 	"optimized"
 	| prefixSize |
 

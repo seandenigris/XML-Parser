@@ -1,5 +1,5 @@
 *XML-Parser-GemstoneCompatibility
-qualifyWithPrefix: aPrefix
+qualifyWithXMLPrefix: aPrefix
 	"optimized"
 	aPrefix size > 0
 		ifTrue: [^ (aPrefix copyWith: $:), self]

@@ -1,5 +1,5 @@
 *XML-Parser-GemstoneCompatibility
-prefixBeforeLocalName
+xmlPrefixBeforeLocalName
 	"Split the name into namespace prefix
 	(Optimized code)"
 	| i |

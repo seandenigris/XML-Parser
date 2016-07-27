@@ -1,5 +1,5 @@
 *XML-Parser-GemstoneCompatibility
-isQualifiedName: aQualifiedName orLocalName: aLocalName
+isXMLQualifiedName: aQualifiedName orLocalName: aLocalName
 	"optimized"
 	^ self = aQualifiedName
 		or: [(aQualifiedName size > aLocalName size)
