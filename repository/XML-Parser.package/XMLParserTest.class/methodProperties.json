@@ -11,8 +11,9 @@
 		"testExampleAddressBook" : "JAAyer 3/11/2010 09:06",
 		"testExampleAddressBookWithDTD" : "JAAyer 3/11/2010 09:04",
 		"testLineEndingsDoNotMatter" : "JAAyer 3/7/2010 10:48",
-		"testNonUTF8Characters" : "FirstnameLastname 3/26/2010 18:20",
+		"testNonUTF8Characters" : "FirstnameLastname 3/29/2010 09:07",
 		"testParsing" : "JAAyer 3/11/2010 03:40",
 		"testParsingCharacters" : "JAAyer 3/14/2010 12:54",
 		"testTokenizerAddressBook" : "JAAyer 3/11/2010 09:06",
-		"testTokenizerAddressBookWithDTD" : "JAAyer 3/11/2010 09:06" } }
+		"testTokenizerAddressBookWithDTD" : "JAAyer 3/11/2010 09:06",
+		"utf8Example" : "FirstnameLastname 3/29/2010 09:07" } }
