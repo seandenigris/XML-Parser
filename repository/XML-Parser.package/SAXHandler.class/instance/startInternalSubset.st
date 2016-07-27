@@ -1,3 +1,0 @@
-private
-startInternalSubset
-	isInInternalSubset := true

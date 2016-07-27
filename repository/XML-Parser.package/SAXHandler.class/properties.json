@@ -9,7 +9,7 @@
 		"input",
 		"documentURI",
 		"configuration",
-		"isInInternalSubset",
+		"isInContent",
 		"isInCDataSection" ],
 	"name" : "SAXHandler",
 	"pools" : [

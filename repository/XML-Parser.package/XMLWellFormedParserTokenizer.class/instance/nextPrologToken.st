@@ -13,6 +13,6 @@ nextPrologToken
 			streamReader peek == $-
 				ifTrue: [^ self nextComment].
 			^ self nextDoctypeDeclaration].
-
-	context := context contentContext.
-	self nextTag.
+	self
+		nextStartContent;
+		nextTag.

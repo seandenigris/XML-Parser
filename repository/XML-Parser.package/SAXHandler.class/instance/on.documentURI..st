@@ -4,5 +4,5 @@ on: aStringOrStream documentURI: aURI
 	documentURI := aURI.
 	configuration
 		ifNil: [self configuration: self configurationClass new].
-	isInInternalSubset := false.
+	isInContent := false.
 	isInCDataSection := false.

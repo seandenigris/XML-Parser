@@ -1,0 +1,3 @@
+testing
+isInContent
+	^ isInContent
