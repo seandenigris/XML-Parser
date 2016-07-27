@@ -2,5 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDFAStateCacheLimit" : "monty 4/22/2015 15:51",
-		"testDFAStateTransitionLimit" : "monty 4/22/2015 14:51" } }
+		"testDFAStateCacheLimit" : "monty 11/14/2015 07:22",
+		"testDFAStateTransitionLimit" : "monty 11/10/2015 22:26" } }

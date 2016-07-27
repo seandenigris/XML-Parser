@@ -1,10 +1,11 @@
 tests
 testPrintedWithoutSelfClosingTags
-	| nodeWithElements printString |
+	| nodeWithElements printString printStringWithoutSelfClosingTags |
 
 	nodeWithElements := self newNodeWithElements.
 	printString := nodeWithElements printString.
-	self deny: printString = nodeWithElements printedWithoutSelfClosingTags.
+	printStringWithoutSelfClosingTags := nodeWithElements printedWithoutSelfClosingTags.
+	self deny: printString = printStringWithoutSelfClosingTags.
 
 	nodeWithElements allElementsDo: [:each |
 		each hasChildren
@@ -13,4 +14,4 @@ testPrintedWithoutSelfClosingTags
 					printString
 						copyReplaceAll: '<', each name, ' />'
 						with: '<', each name, '></', each name, '>']].
-	self assert: printString = nodeWithElements printedWithoutSelfClosingTags.
+	self assert: printString = printStringWithoutSelfClosingTags.

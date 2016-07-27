@@ -8,7 +8,7 @@ testAllNodes
 		assert: allNodes size = 16;
 		assert: (allNodes at: 1) == nodeWithElements;
 		assert: (allNodes at: 2) isComment;
-		assert: ((allNodes at: 3) isElementNamed: 'root');
+		assert: ((allNodes at: 3) isElementNamed: 'zero');
 		assert: (allNodes at: 4) isComment;
 		assert: ((allNodes at: 5) isElementNamed: 'one');
 		assert: ((allNodes at: 6) isStringNode: 'testing one');

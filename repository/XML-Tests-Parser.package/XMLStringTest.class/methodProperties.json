@@ -21,6 +21,7 @@
 		"testIsStringNode" : "monty 11/20/2014 02:48",
 		"testIsWhitespace" : "monty 4/7/2015 09:29",
 		"testMergeAdjacent" : "monty 11/4/2014 20:59",
+		"testNotEmpty" : "monty 11/14/2015 20:07",
 		"testPrepend" : "monty 11/4/2014 12:46",
 		"testReplaceAllWith" : "monty 11/4/2014 12:46",
 		"testReplaceFromToWith" : "monty 1/16/2015 08:46",

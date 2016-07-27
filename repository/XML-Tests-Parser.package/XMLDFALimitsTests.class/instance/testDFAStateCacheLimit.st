@@ -23,12 +23,16 @@ testDFAStateCacheLimit
 	names withIndexDo: [:name :i | | previousState |
 		visitedStates add: currentState.
 		previousState := currentState.
-		currentState := currentState detectNextStateMatching: name.
+		currentState := currentState nextDFAStateMatching: name.
 		self assert: currentState notNil.
 		i = names size
 			ifTrue: [
 				visitedStates do: [:each |
+					"the cache clearing was triggered by the last match, which
+					added one transition from previousState to currentState,
+					but other transitions should be cleared"
 					each = previousState
+						ifTrue: [self assert: each dfaStateTransitions size = 1]
 						ifFalse: [self assert: each dfaStateTransitions isEmpty]].
 				self
 					assert: firstState dfaStateTransitions isEmpty;
@@ -43,7 +47,7 @@ testDFAStateCacheLimit
 
 	currentState := firstState.
 	names withIndexDo: [:each :i |
-		currentState := currentState detectNextStateMatching: each.
+		currentState := currentState nextDFAStateMatching: each.
 		self deny: currentState isNil.
 		i = names size
 			ifTrue: [self assert: currentState isAccepting]

@@ -3,7 +3,7 @@ newNodeWithElements
 	^ self nodeClass new
 		addNode: (XMLComment string: 'before');
 		addNode:
-			((XMLElement name: 'root')
+			((XMLElement name: 'zero')
 				addNode: (XMLComment string: 'before');
 				addNode:
 					((XMLElement named: 'one')

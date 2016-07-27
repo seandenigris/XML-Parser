@@ -10,7 +10,7 @@ testAllElements
 			allElements removeFirst].
 	self assert:
 		(allElements collect: [:each | each name]) asArray =
-			#('root' 'one' 'two' 'three' 'four' 'prefix:four' 'prefix:five' 'four').
+			#('zero' 'one' 'two' 'three' 'four' 'prefix:four' 'prefix:five' 'four').
 	self
 		assertList: allElements first allElements selects: (allElements copyFrom: 1 to: 8);
 		assertList: allElements second allElements selects: (allElements copyFrom: 2 to: 3);

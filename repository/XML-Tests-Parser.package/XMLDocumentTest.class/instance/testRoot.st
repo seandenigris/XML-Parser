@@ -7,7 +7,7 @@ testRoot
 	nodeWithElements := self newNodeWithElements.
 	firstNode := XMLComment string: 'first'.
 	nodeWithElements addNodeFirst: firstNode.
-	self assert: (nodeWithElements root isElementNamed: 'root').
+	self assert: (nodeWithElements root isElementNamed: 'zero').
 
 	newRoot := XMLElement named: 'new-root'.
 	nodeWithElements root: newRoot.

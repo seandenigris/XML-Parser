@@ -1,5 +1,5 @@
 tests
-testSplit
+testXMLParserSplit
 	self
 		assert: ($: xmlParserSplit: '') = (OrderedCollection with: '');
 		assert: ($: xmlParserSplit: 'abc') = (OrderedCollection with: 'abc');
