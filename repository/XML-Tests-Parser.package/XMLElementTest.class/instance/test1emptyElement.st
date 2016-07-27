@@ -1,3 +1,0 @@
-tests
-test1emptyElement
-	self assertNodeHasNoChildren: XMLElement new

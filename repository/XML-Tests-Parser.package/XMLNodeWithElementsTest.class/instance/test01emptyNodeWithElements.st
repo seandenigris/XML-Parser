@@ -1,3 +1,0 @@
-tests
-test01emptyNodeWithElements
-	self assertNodeHasNoChildren: self nodeClass new

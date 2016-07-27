@@ -2,8 +2,8 @@ tests
 testWhitespacePreservation
 	| xml root notPreserved preserved |
 
-	xml :=
-		'<root xml:space="preserve">
+	xml := '
+		<root xml:space="preserve">
 			<not-preserved xml:space="default">
 				<preserved xml:space="preserve">
 				</preserved>

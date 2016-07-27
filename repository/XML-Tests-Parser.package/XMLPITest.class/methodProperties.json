@@ -4,5 +4,5 @@
 	"instance" : {
 		"assertPI:hasTarget:data:" : "monty 11/2/2014 11:15",
 		"nodeClass" : "monty 11/2/2014 11:18",
-		"nodeTypes" : "monty 11/4/2014 00:11",
-		"test3processingInstructionNodes" : "monty 11/4/2014 00:11" } }
+		"test3processingInstructionNodes" : "monty 11/4/2014 00:11",
+		"testIsPI" : "monty 11/19/2014 21:46" } }

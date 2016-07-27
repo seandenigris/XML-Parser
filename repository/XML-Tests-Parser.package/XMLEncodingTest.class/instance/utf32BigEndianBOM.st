@@ -1,0 +1,3 @@
+private
+utf32BigEndianBOM
+	^ XMLUTF32BigEndianStreamDecoder byteOrderMark

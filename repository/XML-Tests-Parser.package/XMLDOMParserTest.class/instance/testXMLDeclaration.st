@@ -8,8 +8,8 @@ testXMLDeclaration
 		assert: document encoding = 'UTF-8';
 		deny: document isStandalone.
 
-	document := XMLDOMParser parse: '<?xml version="1.1" encoding="UTF-16" standalone="yes"?>'.
+	document := XMLDOMParser parse: '<?xml version="1.1" encoding="utf-8" standalone="yes"?>'.
 	self
 		assert: document version = 1.1;
-		assert: document encoding = 'UTF-16';
+		assert: document encoding = 'utf-8';
 		assert: document isStandalone.

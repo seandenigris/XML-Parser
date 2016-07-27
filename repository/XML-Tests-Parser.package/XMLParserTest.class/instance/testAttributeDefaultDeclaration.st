@@ -2,7 +2,8 @@ tests
 testAttributeDefaultDeclaration
 	| dtd document |
 
-	dtd := '<!DOCTYPE root [
+	dtd := '
+		<!DOCTYPE root [
 		<!ELEMENT root EMPTY>
 		<!ATTLIST root one CDATA #IMPLIED
 						two CDATA #REQUIRED

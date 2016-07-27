@@ -9,7 +9,7 @@ testConditionalSection
 				'<![INCLUDE [included',
 				'<![ IGNORE [ignored; <![INCLUDE[ignored;]]> ignored.]]>',
 				', included]]>, included.'.
-	tokenizer tokenContext enterExternalSubset.
+	tokenizer tokenContext: XMLExternalSubsetContext new.
 	tokenizer nextToken.
 	self assert: tokenizer streamReader upToEnd = 'included, included, included.'.
 

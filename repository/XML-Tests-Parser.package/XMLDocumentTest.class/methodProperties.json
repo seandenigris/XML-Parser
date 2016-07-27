@@ -4,5 +4,5 @@
 	"instance" : {
 		"assertDocument:hasDoctype:version:encoding:" : "monty 11/2/2014 11:47",
 		"nodeClass" : "monty 11/2/2014 11:08",
-		"nodeTypes" : "monty 11/4/2014 00:20",
-		"test11documentTest" : "monty 11/2/2014 11:47" } }
+		"test11documentTest" : "monty 11/2/2014 11:47",
+		"testIsDocument" : "monty 11/19/2014 21:45" } }

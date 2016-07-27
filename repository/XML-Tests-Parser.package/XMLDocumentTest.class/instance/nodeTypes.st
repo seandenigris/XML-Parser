@@ -1,3 +1,0 @@
-accessing
-nodeTypes
-	^ #(isDocument isContentNode)

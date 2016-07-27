@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
+		"testLocalNameAfterPrefix" : "monty 11/16/2014 20:22",
 		"testParseXML" : "monty 10/24/2014 10:27",
-		"testQualifiedNameLocalPart" : "monty 10/24/2014 09:43",
-		"testQualifiedNamePrefix" : "monty 10/24/2014 09:43",
+		"testPrefixBeforeLocalName" : "monty 11/17/2014 06:36",
 		"testXMLSplit" : "monty 10/24/2014 15:18" } }

@@ -2,6 +2,8 @@ tests
 testIsStringNode
 	| node |
 
+	self assert: self nodeClass new isStringNode.
+
 	node := self nodeClass new.
 	self
 		assert: (node isStringNode: '');

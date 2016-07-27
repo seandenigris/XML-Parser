@@ -11,6 +11,6 @@ newElementsNamed: aNameArray
 					ifTrue: [
 						element := XMLElement
 							name: qualifiedName
-							namespaceURI: 'http://', (qualifiedName qualifiedNamePrefix)]
+							namespaceURI: 'http://', (qualifiedName prefixBeforeLocalName)]
 					ifFalse: [element := XMLElement named: qualifiedName].
 				element]).

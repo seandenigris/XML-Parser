@@ -1,14 +1,16 @@
 tests
 testUnparsedEntities
-	| document |
-
-	document := XMLDOMParser parse: '
+	| dtd |
+	dtd := '
 		<!DOCTYPE root [
 			<!NOTATION note PUBLIC "-//ext//note//EN">
 			<!ENTITY unparsedEntity SYSTEM "note.txt" NDATA note>
-		]>
-		<root notation=&unparsedEntity; />'.
-	self assert: (document root attributeAt: 'notation') = 'note'.
+			<!ELEMENT root EMPTY>
+			<!ATTLIST root notation ENTITY #REQUIRED>
+		]>'.
 	self
-		should: [XMLDOMParser parse: '<root attr=&undeclaredUnparsedEntity;/>']
+		shouldnt: [SAXHandler parse: dtd, '<root notation="unparsedEntity" />']
+		raise: XMLValidationException.
+	self
+		should: [SAXHandler parse: dtd, '<root notation="undeclaredUnparsedEntity" />']
 		raise: XMLValidationException.

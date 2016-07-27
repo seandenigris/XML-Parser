@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"cacheClass" : "monty 11/15/2014 20:42",
+		"keysAndValuesDo:" : "monty 11/15/2014 21:19",
+		"maxSize" : "monty 11/15/2014 20:57",
+		"newCache" : "monty 11/15/2014 20:58",
+		"newCacheWithEntries" : "monty 11/15/2014 21:18",
+		"testAtIfAbsent" : "monty 11/15/2014 21:35",
+		"testAtIfAbsentPut" : "monty 11/15/2014 21:19",
+		"testAtPut" : "monty 11/15/2014 21:38",
+		"testClear" : "monty 11/15/2014 21:03",
+		"testDefaultMaxSize" : "monty 11/15/2014 20:56",
+		"testIncludesKey" : "monty 11/16/2014 00:02",
+		"testIsEmpty" : "monty 11/15/2014 20:53",
+		"testMaxSize" : "monty 11/15/2014 20:57",
+		"testSize" : "monty 11/15/2014 20:57" } }
