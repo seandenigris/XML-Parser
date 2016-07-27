@@ -2,6 +2,8 @@ printing
 printSchemeOn: aStream
 	self hasScheme
 		ifTrue: [
-			aStream
+			aStream 
 				nextPutAll: scheme;
-				nextPutAll: '://']
+				nextPut: $:.
+			self hasAuthorityPrefix
+				ifTrue: [aStream nextPutAll: '//']]

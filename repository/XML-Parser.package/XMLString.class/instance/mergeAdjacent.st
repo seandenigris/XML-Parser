@@ -1,5 +1,6 @@
-split and merge
+splitting/merging
 mergeAdjacent
+	"merges a string node with adjacent string nodes in parent"
 	| siblingNodes selfIndex adjacentNode |
 
 	self hasParent

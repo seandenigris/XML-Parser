@@ -7,8 +7,10 @@ comparing
 		ifFalse: [^ false].
 
 	^ scheme = anObject scheme
-		and: [host = anObject host
-			and: [port = anObject port
-				and: [pathSegments = anObject pathSegments
-					and: [queryString = anObject queryString
-						and: [fragment = anObject fragment]]]]].
+		and: [hasAuthorityPrefix = anObject hasAuthorityPrefix
+			and: [userInfo = anObject userInfo
+				and: [host = anObject host
+					and: [port = anObject port
+						and: [pathSegments = anObject pathSegments
+							and: [queryString = anObject queryString
+								and: [fragment = anObject fragment]]]]]]].

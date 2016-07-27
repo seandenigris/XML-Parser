@@ -1,3 +1,3 @@
 instance creation
 on: aString
-	^ self new uri: aString
+	^ self new on: aString

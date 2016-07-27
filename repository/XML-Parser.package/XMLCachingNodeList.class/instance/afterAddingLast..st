@@ -1,5 +1,5 @@
 private
 afterAddingLast: aNode
 	aNode isElement
-		ifTrue: [self elementAddedAtEnd: aNode].
+		ifTrue: [self cacheElementAddedLast: aNode].
 	super afterAddingLast: aNode.

@@ -2,11 +2,9 @@ parsing
 parseScheme
 	| scheme |
 
-	scheme := uriStream upTo: $:.
-	^ self parseDoubleSlashOrReset
-		ifTrue: [scheme asLowercase]
-		ifFalse: [''].
-
-	
-	
-		
+	scheme := self parseUpToAnyNotSkipping: ':/@?#'.
+	(self parseNext: $:)
+		ifTrue: [^ scheme asLowercase]
+		ifFalse: [
+			readStream reset.
+			^ ''].

@@ -1,20 +1,23 @@
 notifications
 renamedElement: anElement from: anOldName to: aNewName
-	| oldPrefix |
+	| oldPrefix index |
 
 	self
 		cachedElementsByNameAt: anOldName
-		removeElement: anElement.
+		remove: anElement.
 	(oldPrefix := anOldName prefixBeforeLocalName)
 		ifNotEmpty: [
 			self
 				cachedElementsByNameAt: (anOldName localNameAfterPrefix: oldPrefix)
-				removeElement: anElement].
+				remove: anElement].
+	index := self indexOf: anElement.
 	self
 		cachedElementsByNameAt: anElement name
-		insertElement: anElement.
+		add: anElement
+		beforeNextAfterIndex: index.
 	anElement hasPrefix
 		ifTrue: [
 			self
 				cachedElementsByNameAt: anElement localName
-				insertElement: anElement].
+				add: anElement
+				beforeNextAfterIndex: index].

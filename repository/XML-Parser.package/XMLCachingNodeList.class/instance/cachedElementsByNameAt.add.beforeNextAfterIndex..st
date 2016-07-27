@@ -1,9 +1,15 @@
 private
-cachedElementsByNameAt: aName insertElement: anElement
-	| elementsWithName elementAfter |
+cachedElementsByNameAt: aName add: anElement beforeNextAfterIndex: anIndex
+	| elementAfter elementsWithName |
 
-	(elementAfter := self findElementAfter: anElement withName: aName)
-		ifNil: [^ self cachedElementsByNameAt: aName addElement: anElement].
+	(elementAfter :=
+		self
+			findElementAfterIndex: anIndex
+			named: aName)
+		ifNil: [
+			^ self
+				cachedElementsByNameAt: aName
+				addLast: anElement].
 
 	(elementsWithName := self cachedElementsByName at: aName) isCollection
 		ifTrue: [elementsWithName add: anElement before: elementAfter]

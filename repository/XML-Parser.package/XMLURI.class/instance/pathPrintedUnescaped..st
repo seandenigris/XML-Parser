@@ -2,7 +2,7 @@ printing
 pathPrintedUnescaped: aBoolean
 	| writeStream |
 
-	self hasPathSegments
+	self hasPath
 		ifFalse: [^ ''].
 
 	writeStream := (String new: pathSegments size * 10) writeStream.

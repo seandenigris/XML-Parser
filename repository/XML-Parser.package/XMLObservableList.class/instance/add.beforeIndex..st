@@ -6,5 +6,5 @@ add: anObject beforeIndex: anIndex
 		beforeIndex: anIndex.
 	self
 		afterAdding: anObject
-		at: anIndex - 1.
+		at: anIndex.
 	^ anObject.

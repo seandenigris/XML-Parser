@@ -1,4 +1,4 @@
-split and merge
+splitting/merging
 splitAt: anOffset
 	| newNode |
 

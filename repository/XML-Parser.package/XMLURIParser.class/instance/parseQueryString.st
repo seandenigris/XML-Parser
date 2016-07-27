@@ -2,4 +2,4 @@ parsing
 parseQueryString
 	^ self
 		parseUpToAnyNotSkipping: '#'
-		startingAfter: $?
+		afterNext: $?

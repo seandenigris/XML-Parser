@@ -1,3 +1,3 @@
 testing
-hasPathSegments
+hasPath
 	^ pathSegments notEmpty

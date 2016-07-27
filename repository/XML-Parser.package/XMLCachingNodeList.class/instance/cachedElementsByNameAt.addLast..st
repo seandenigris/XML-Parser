@@ -1,5 +1,5 @@
 private
-cachedElementsByNameAt: aName addElement: anElement
+cachedElementsByNameAt: aName addLast: anElement
 	| elementsWithName |
 
 	elementsWithName :=
@@ -8,8 +8,9 @@ cachedElementsByNameAt: aName addElement: anElement
 			ifAbsent: [
 				self cachedElementsByName at: aName put: anElement.
 				^ self].
+
 	 elementsWithName isCollection
-		ifTrue: [elementsWithName add: anElement]
+		ifTrue: [elementsWithName addLast: anElement]
 		ifFalse: [
 			self cachedElementsByName
 				at: aName

@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "monty 1/7/2014 04:42",
 	"instvars" : [
-		"uriStream",
-		"writeStream" ],
+		"writeStream",
+		"readStream" ],
 	"name" : "XMLURIParser",
 	"pools" : [
 		 ],

@@ -1,12 +1,8 @@
 parsing
 parsePort
-	(uriStream atEnd not
-		and: [uriStream peek == $:])
-		ifFalse: [^ nil].
-
-	^ XMLIntegerReader
-		readFrom:
-			(self
-				parseUpToAnyNotSkipping: '/?#'
-				startingAfter: $:) readStream
-		withBase: 10.
+	(self parseNext: $:)
+		ifTrue: [
+			^ XMLIntegerReader
+				readFrom: (self parseUpToAnyNotSkipping: '/?#') readStream
+				withBase: 10]
+		ifFalse: [^ nil]
