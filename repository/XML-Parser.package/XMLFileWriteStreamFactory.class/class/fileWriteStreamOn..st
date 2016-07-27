@@ -1,3 +1,3 @@
 instance creation
 fileWriteStreamOn: aPath
-	self subclassResponsiblity
+	self subclassResponsibility

@@ -1,5 +1,5 @@
 tokenizing
 nextEndDocument
-	context isInternalSubsetContext
-		ifTrue: [self errorExpected: 'end of internal subset'].
+	context canTerminateDocument
+		ifFalse: [self errorDocumentTerminatedPrematurely].
 	super nextEndDocument.

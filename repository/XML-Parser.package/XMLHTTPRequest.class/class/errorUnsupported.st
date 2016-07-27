@@ -1,3 +1,3 @@
 private
 errorUnsupported
-	XMLHTTPException signal: 'HTTP unsupported'.
+	XMLHTTPException signal: 'HTTP unsupported'

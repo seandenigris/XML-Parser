@@ -1,3 +1,3 @@
 private
 isMaxSizeException: anException
-	self subclassResponsibility
+	^ anException isKindOf: XMLLimitException

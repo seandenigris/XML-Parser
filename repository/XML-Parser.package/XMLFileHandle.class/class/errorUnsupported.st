@@ -1,3 +1,3 @@
 private
 errorUnsupported
-	XMLFileException signal: 'File IO unsupported'.
+	XMLFileException signal: 'File IO unsupported'

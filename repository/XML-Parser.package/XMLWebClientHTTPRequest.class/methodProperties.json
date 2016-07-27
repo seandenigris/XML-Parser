@@ -1,0 +1,5 @@
+{
+	"class" : {
+		"isSupported" : "monty 4/10/2015 10:52" },
+	"instance" : {
+		"getResponseUpToLimit:withTimeout:onError:" : "monty 4/10/2015 10:59" } }

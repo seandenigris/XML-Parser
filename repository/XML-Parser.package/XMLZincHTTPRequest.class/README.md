@@ -1,1 +1,1 @@
-This client uses Zinc-HTTP, but does not refer to Zinc classes directly to avoid compile errors on platforms without Zinc.
+This client uses Zinc-HTTP, but does not refer to Zinc classes directly to avoid compile errors on platforms without it.

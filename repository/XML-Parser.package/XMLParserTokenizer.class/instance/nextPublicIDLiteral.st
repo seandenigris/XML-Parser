@@ -1,3 +1,3 @@
 tokenizing - dtd
 nextPublicIDLiteral
-	self subclassResponsiblity
+	self subclassResponsibility
