@@ -11,5 +11,5 @@ testvalidsa099xml
 				do: [:error |
 					(self isSkippableException: error)
 						ifTrue: [self skip]
-						ifFalse: [error signal]]]
+						ifFalse: [error pass]]]
 		raise: self parserExceptions

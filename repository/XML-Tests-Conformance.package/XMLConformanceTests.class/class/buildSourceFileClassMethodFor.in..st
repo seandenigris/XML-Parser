@@ -1,5 +1,5 @@
 building subclasses
-buildSourceFileMethodFor: aFileReference class: aClass
+buildSourceFileClassMethodFor: aFileReference in: aClass
 	| sourceSelector pathString sourceStream |
 
 	sourceSelector := (self sourceSelectorFor: aFileReference).

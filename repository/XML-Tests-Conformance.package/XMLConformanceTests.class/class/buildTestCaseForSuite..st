@@ -14,8 +14,8 @@ buildTestCaseForSuite: aSuite
 		fileVisitor failingTestFiles,
 		fileVisitor entityFiles) do: [:each |
 			[self
-				buildSourceFileMethodFor: each
-				class: testCaseClass]
+				buildSourceFileClassMethodFor: each
+				in: testCaseClass]
 				on: ZnCharacterEncodingError
 				do: [:error | badSourceFiles add: each]].
 
