@@ -2,7 +2,7 @@
 	"class" : {
 		"badNCNames" : "monty 3/14/2016 21:06",
 		"badNames" : "monty 3/14/2016 21:05",
-		"badNmtokenChars" : "monty 3/14/2016 21:26",
+		"badNmtokenChars" : "monty 3/19/2016 01:22",
 		"badNmtokens" : "monty 3/14/2016 19:43",
 		"nonNCNameNames" : "monty 3/14/2016 21:02",
 		"nonNameNmtokens" : "monty 3/14/2016 21:08",
@@ -16,7 +16,7 @@
 		"testIsNCName" : "monty 3/14/2016 13:38",
 		"testIsName" : "monty 3/14/2016 21:02",
 		"testIsNmtoken" : "monty 3/14/2016 21:02",
-		"testNextNCNameFrom" : "monty 3/14/2016 14:46",
-		"testNextNameFromOn" : "monty 3/14/2016 21:02",
-		"testNextNmtokenFromOn" : "monty 3/14/2016 21:02",
+		"testNextNCNameFrom" : "monty 3/19/2016 01:24",
+		"testNextNameFromOn" : "monty 3/19/2016 01:23",
+		"testNextNmtokenFromOn" : "monty 3/19/2016 01:24",
 		"tokenizerClass" : "monty 3/14/2016 13:25" } }
