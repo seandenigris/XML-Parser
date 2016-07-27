@@ -1,6 +1,6 @@
 private
 detectBigEndianUTF16BOM
 	(self
-		detectByteOrderMark: UTF16BigEndianByteOrderMark
+		detectBOM: UTF16BigEndianBOM
 		forDecoderClass: XMLUTF16BigEndianStreamDecoder)
 		ifNotNil: [:remainder | streamReader pushBack: remainder]

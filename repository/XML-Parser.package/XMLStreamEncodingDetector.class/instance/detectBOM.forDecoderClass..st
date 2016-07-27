@@ -1,5 +1,5 @@
 private
-detectByteOrderMark: aByteOrderMark forDecoderClass: aClass
+detectBOM: aByteOrderMark forDecoderClass: aClass
 	stream next.
 	2 to: aByteOrderMark size do: [:i |
 		(stream atEnd not

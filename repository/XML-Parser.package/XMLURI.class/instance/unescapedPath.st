@@ -1,3 +1,3 @@
 accessing
 unescapedPath
-	^ self pathPrintStringUnescaped: true
+	^ self pathPrintedUnescaped: true

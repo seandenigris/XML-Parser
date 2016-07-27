@@ -1,16 +1,17 @@
 {
 	"class" : {
 		"for:" : "monty 11/28/2014 10:16",
-		"handlerForLeadByte:" : "monty 12/26/2014 23:06",
-		"initialize" : "monty 1/12/2015 00:35",
-		"initializeByteOrderMarks" : "monty 11/28/2014 03:00",
-		"initializeEncodingHandlerTable" : "monty 11/28/2014 03:00" },
+		"handlerForLeadByte:" : "monty 1/27/2015 23:28",
+		"initialize" : "monty 1/27/2015 23:36",
+		"initializeByteOrderMarks" : "monty 1/27/2015 23:31",
+		"initializeEncodingHandlerTable" : "monty 11/28/2014 03:00",
+		"initializeNullCharacter" : "monty 1/27/2015 23:36" },
 	"instance" : {
-		"detectBigEndianUTF16BOM" : "monty 12/26/2014 23:01",
-		"detectBigEndianUTF32BOMOrImplicitEncoding" : "monty 12/26/2014 23:01",
-		"detectByteOrderMark:forDecoderClass:" : "monty 11/28/2014 01:56",
+		"detectBOM:forDecoderClass:" : "monty 1/27/2015 23:32",
+		"detectBigEndianUTF16BOM" : "monty 1/27/2015 23:32",
+		"detectBigEndianUTF32BOMOrImplicitEncoding" : "monty 1/27/2015 23:32",
 		"detectCurrentEncoding" : "monty 11/28/2014 10:17",
 		"detectLittleEndianImplicitEncoding" : "monty 12/26/2014 22:53",
-		"detectLittleEndianUTF16BOMOrUTF32BOM" : "monty 12/26/2014 23:05",
-		"detectUTF8ByteOrderMark" : "monty 12/26/2014 23:06",
+		"detectLittleEndianUTF16BOMOrUTF32BOM" : "monty 1/27/2015 23:32",
+		"detectUTF8BOM" : "monty 1/27/2015 23:32",
 		"streamReader:" : "monty 11/28/2014 10:16" } }

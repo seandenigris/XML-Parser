@@ -1,3 +1,3 @@
 accessing
 path
-	^ self pathPrintStringUnescaped: false
+	^ self pathPrintedUnescaped: false

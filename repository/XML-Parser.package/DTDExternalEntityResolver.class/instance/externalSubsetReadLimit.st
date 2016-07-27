@@ -1,0 +1,3 @@
+configuration
+externalSubsetReadLimit
+	^ self externalEntityLimits externalSubsetReadLimit

@@ -6,6 +6,6 @@ nextContentMarkupToken
 		ifTrue: [
 			streamReader next.
 			streamReader peek == $-
-				ifTrue: [^self nextComment].
+				ifTrue: [^ self nextComment].
 			^ self nextCDataSection].
 	self nextTag.

@@ -4,7 +4,7 @@ detectBigEndianUTF32BOMOrImplicitEncoding
 
 	(remainder :=
 		self
-			detectByteOrderMark: UTF32BigEndianByteOrderMark
+			detectBOM: UTF32BigEndianBOM
 			forDecoderClass: XMLUTF32BigEndianStreamDecoder)
 		ifNil: [^ self].
 	(remainder allSatisfy: [:each | each == NullCharacter])

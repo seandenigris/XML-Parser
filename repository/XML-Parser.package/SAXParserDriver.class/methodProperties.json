@@ -18,7 +18,6 @@
 		"errorUndeclaredUnparsedEntity:" : "monty 10/31/2014 21:41",
 		"externalEntityResolver" : "monty 2/3/2014 17:42",
 		"externalSubsetParserOnURI:" : "monty 10/3/2014 00:19",
-		"externalSubsetReadLimit" : "monty 1/19/2014 04:45",
 		"handleAttributeDeclaration:name:type:defaultPragma:defaultValue:" : "monty 12/30/2013 23:56",
 		"handleCData:" : "monty 11/3/2014 13:14",
 		"handleComment:" : "monty 12/11/2013 22:26",

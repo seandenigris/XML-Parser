@@ -1,3 +1,3 @@
 accessing
 readLimit
-	^ self saxDriver externalSubsetReadLimit
+	^ self externalEntityResolver externalSubsetReadLimit

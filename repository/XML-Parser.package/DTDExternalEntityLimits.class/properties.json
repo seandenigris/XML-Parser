@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "monty 1/25/2014 04:01",
 	"instvars" : [
+		"externalSubsetReadLimit",
 		"maxExternalEntities",
 		"maxExternalEntitySize",
 		"resolvesLocalFromNonLocal" ],

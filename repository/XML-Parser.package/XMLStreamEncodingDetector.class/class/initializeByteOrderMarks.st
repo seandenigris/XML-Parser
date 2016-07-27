@@ -1,7 +1,7 @@
 class initialization
 initializeByteOrderMarks
-	UTF8ByteOrderMark := XMLUTF8StreamDecoder byteOrderMark.
-	UTF16BigEndianByteOrderMark := XMLUTF16BigEndianStreamDecoder byteOrderMark.
-	UTF16LittleEndianByteOrderMark := XMLUTF16LittleEndianStreamDecoder byteOrderMark.
-	UTF32BigEndianByteOrderMark := XMLUTF32BigEndianStreamDecoder byteOrderMark.
-	UTF32LittleEndianByteOrderMark := XMLUTF32LittleEndianStreamDecoder byteOrderMark.
+	UTF8BOM := XMLUTF8StreamDecoder byteOrderMark.
+	UTF16BigEndianBOM := XMLUTF16BigEndianStreamDecoder byteOrderMark.
+	UTF16LittleEndianBOM := XMLUTF16LittleEndianStreamDecoder byteOrderMark.
+	UTF32BigEndianBOM := XMLUTF32BigEndianStreamDecoder byteOrderMark.
+	UTF32LittleEndianBOM := XMLUTF32LittleEndianStreamDecoder byteOrderMark.

@@ -1,6 +1,6 @@
 private
-detectUTF8ByteOrderMark
+detectUTF8BOM
 	(self
-		detectByteOrderMark: UTF8ByteOrderMark
+		detectBOM: UTF8BOM
 		forDecoderClass: XMLUTF8StreamDecoder)
 		ifNotNil: [:remainder | streamReader pushBack: remainder]

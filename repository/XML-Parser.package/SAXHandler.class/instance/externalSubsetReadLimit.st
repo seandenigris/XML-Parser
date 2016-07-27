@@ -1,3 +1,3 @@
 configuration
 externalSubsetReadLimit
-	^ self parserLimits externalSubsetReadLimit
+	^ self externalEntityResolver externalSubsetReadLimit

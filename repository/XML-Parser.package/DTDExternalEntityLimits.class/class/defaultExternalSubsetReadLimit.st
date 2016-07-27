@@ -1,4 +1,4 @@
 accessing
 defaultExternalSubsetReadLimit
-	^ self defaultReadLimit
+	^ XMLParserLimits defaultReadLimit
 		ifNotNil: [:limit | (limit / 4) asInteger]

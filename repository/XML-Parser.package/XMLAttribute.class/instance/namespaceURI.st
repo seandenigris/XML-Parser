@@ -3,8 +3,7 @@ namespaceURI
 	| prefix |
 
 	"attributes must have prefixes to be namespaced"
-	(self element notNil
+	(self hasParent
 		and: [(prefix := self prefix) notEmpty])
-		ifFalse: [^ ''].
-	
-	^ self element resolvePrefix: prefix.
+		ifTrue: [^ self parent resolvePrefix: prefix]
+		ifFalse: [^ '']

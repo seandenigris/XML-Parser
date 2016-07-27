@@ -5,11 +5,11 @@
 	"classvars" : [
 		"EncodingHandlerTable",
 		"NullCharacter",
-		"UTF16BigEndianByteOrderMark",
-		"UTF16LittleEndianByteOrderMark",
-		"UTF32BigEndianByteOrderMark",
-		"UTF32LittleEndianByteOrderMark",
-		"UTF8ByteOrderMark" ],
+		"UTF16BigEndianBOM",
+		"UTF16LittleEndianBOM",
+		"UTF32BigEndianBOM",
+		"UTF32LittleEndianBOM",
+		"UTF8BOM" ],
 	"commentStamp" : "monty 12/8/2014 15:27",
 	"instvars" : [
 		"stream",

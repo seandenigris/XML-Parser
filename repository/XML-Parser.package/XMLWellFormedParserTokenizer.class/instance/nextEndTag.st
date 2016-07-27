@@ -1,11 +1,7 @@
 tokenizing
 nextEndTag
-	| tagName |
-
 	"Skip /"
 	streamReader next.
-	tagName := self nextName.
+	driver handleEndTag: self nextName.
 	streamReader skipSeparators.
 	self expectTerminator: $>.
-
-	driver handleEndTag: tagName.

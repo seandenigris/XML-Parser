@@ -1,0 +1,3 @@
+testing
+hasPathSegments
+	^ pathSegments notEmpty

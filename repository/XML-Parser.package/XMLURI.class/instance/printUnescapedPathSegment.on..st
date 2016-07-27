@@ -1,5 +1,5 @@
 printing
-printUnescaped: aString on: aStream
+printUnescapedPathSegment: aString on: aStream
 	| readStream nextChar charCode |
 
 	readStream := aString readStream.
@@ -12,5 +12,5 @@ printUnescaped: aString on: aStream
 							readFrom: readStream
 							withBase: 16
 							upTo: 2.
-					nextChar := (charCode ifNil: [$%]) asCharacter].
-			aStream nextPut: nextChar].
+					aStream nextPut: (charCode ifNil: [$%]) asCharacter]
+				ifFalse: [aStream nextPut: nextChar]].
