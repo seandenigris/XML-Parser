@@ -6,9 +6,9 @@ testCollectThenSelect
 	self
 		assertList:
 			(list
-				collect: [:each | self changeListItem: each]
+				collect: [:each | self changedListItem: each]
 				thenSelect: [:each | each ~= self changedSingleListItem])
-		collectedFrom: list
+		copiedFrom: list
 		equals:
-			(self listSpecies newFrom:
+			(self listClass newFrom:
 				(self changedListItems copyWithout: self changedSingleListItem)).

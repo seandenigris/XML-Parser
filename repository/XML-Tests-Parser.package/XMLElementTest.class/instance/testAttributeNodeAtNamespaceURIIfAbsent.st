@@ -5,17 +5,18 @@ testAttributeNodeAtNamespaceURIIfAbsent
 	element := self newElementWithAttributes.
 	self assert:
 		(element
-			attributeNodeAt: 'prefix:three'
+			attributeNodeAt: 'prefix:two'
 			namespaceURI: 'prefixNS'
-			ifAbsent: [#absent]) ==
-				(element attributeNodes third).
+			ifAbsent: [#absent]) =
+				element attributeNodes third.
 	self assert:
 		(element
-			attributeNodeAt: 'three'
+			attributeNodeAt: 'two'
 			namespaceURI: 'prefixNS'
-			ifAbsent: [#absent]) = #absent.
+			ifAbsent: [#absent]) =
+				element attributeNodes third.
 	self assert:
 		(element
-			attributeNodeAt: 'prefix:three'
+			attributeNodeAt: 'prefix:two'
 			namespaceURI: 'absent'
 			ifAbsent: [#absent]) = #absent.

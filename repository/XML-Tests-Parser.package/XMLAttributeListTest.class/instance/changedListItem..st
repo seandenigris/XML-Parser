@@ -1,5 +1,5 @@
 accessing
-changeListItem: anAttribute
+changedListItem: anAttribute
 	^ (changedAttributes ifNil: [changedAttributes := IdentityDictionary new])
 		at: anAttribute
 		ifAbsentPut: [

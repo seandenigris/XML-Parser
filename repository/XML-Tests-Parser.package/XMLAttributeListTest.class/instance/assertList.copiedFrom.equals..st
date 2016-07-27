@@ -5,6 +5,6 @@ assertList: aList copiedFrom: aSecondList equals: aThirdList
 		copiedFrom: aSecondList
 		equals: aThirdList.
 	self
-		assert: aList attributesByName size = aList size;
-		assert: aList attributesByName = aThirdList attributesByName;
-		deny: aList attributesByName == aSecondList attributesByName.
+		assert: aList attributeNodesByName size = aList size;
+		assert: aList attributeNodesByName = aThirdList attributeNodesByName;
+		deny: aList attributeNodesByName == aSecondList attributeNodesByName.

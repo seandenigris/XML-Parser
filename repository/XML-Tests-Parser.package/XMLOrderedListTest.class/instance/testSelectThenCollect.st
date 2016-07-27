@@ -7,7 +7,7 @@ testSelectThenCollect
 		assertList:
 			(list
 				select: [:each | each ~= self singleListItem]
-				thenCollect: [:each | self changeListItem: each])
+				thenCollect: [:each | self changedListItem: each])
 		collectedFrom: list
 		equals:
 			(self listSpecies newFrom:

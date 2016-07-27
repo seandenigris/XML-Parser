@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"assertIgnorableWhitespace:" : "monty 4/13/2016 11:39",
 		"prefixedXMLAttributes" : "monty 4/12/2015 09:28",
 		"prefixedXMLAttributesNamespacesDisabled" : "monty 4/12/2015 09:28",
 		"prefixedXMLSource" : "monty 1/31/2014 21:05",
@@ -15,7 +16,7 @@
 		"testSAXEndElementPrefixURILocalNameNamespacesDisabled" : "monty 4/12/2015 10:10",
 		"testSAXEndPrefixMapping" : "monty 3/13/2016 19:40",
 		"testSAXEntityHandlers" : "monty 11/26/2014 06:28",
-		"testSAXIgnorableWhitespace" : "monty 3/12/2016 19:09",
+		"testSAXIgnorableWhitespace" : "monty 4/12/2016 06:38",
 		"testSAXParsingInterrupt" : "monty 4/5/2015 01:45",
 		"testSAXSkippedEntityUndeclared" : "monty 4/13/2015 02:35",
 		"testSAXSkippedEntityUndeclaredPreserved" : "monty 4/13/2015 02:36",

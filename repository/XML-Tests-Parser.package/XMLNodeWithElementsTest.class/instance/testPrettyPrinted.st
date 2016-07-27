@@ -3,6 +3,12 @@ testPrettyPrinted
 	| nodeWithElements printString prettyPrintString prettyNodeWithElements |
 
 	nodeWithElements := self newNodeWithElements.
+	"remove any whitespace formatting around elements"
+	nodeWithElements allNodes do: [:each |
+		(each isStringNode
+			and: [each isWhitespace])
+			ifTrue: [each parent removeNode: each]].
+
 	printString := nodeWithElements printString.
 	prettyPrintString := nodeWithElements prettyPrinted.
 	self deny: printString = prettyPrintString.
@@ -10,20 +16,7 @@ testPrettyPrinted
 	prettyNodeWithElements :=
 		(XMLDOMParser on: prettyPrintString)
 			preservesCommentNodes: true;
-			preservesIgnorableWhitespace: true;
 			parseDocument.
-	nodeWithElements allElements
-		with: prettyNodeWithElements allElements
-		do: [:element :prettyElement |
-			element hasChildren
-				ifTrue: [
-					element firstNode isStringNode
-						ifFalse: [
-							self
-								assert: prettyElement firstNode isStringNode;
-								assert: prettyElement firstNode isWhitespace].
-					element hasStringNodes
-						ifFalse: [
-							self
-								assert: prettyElement lastNode isStringNode;
-								assert: prettyElement lastNode isWhitespace]]].
+	self
+		assertElements: prettyNodeWithElements allElements
+		werePrettyPrintFormattedFrom: nodeWithElements allElements.

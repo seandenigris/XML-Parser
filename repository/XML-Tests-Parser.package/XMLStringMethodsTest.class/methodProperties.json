@@ -19,9 +19,11 @@
 		"testAsXMLStreamConverter" : "monty 3/5/2016 16:20",
 		"testAsXMLString" : "monty 2/15/2016 23:38",
 		"testIsXMLNCName" : "monty 4/1/2016 07:15",
+		"testIsXMLNSAttributeName" : "monty 4/12/2016 09:59",
 		"testIsXMLName" : "monty 3/24/2016 21:44",
 		"testIsXMLNmtoken" : "monty 3/24/2016 21:44",
-		"testIsXMLQualifiedNameOrLocalName" : "monty 4/1/2016 01:02",
+		"testIsXMLQualifiedOrLocalName" : "monty 4/21/2016 07:18",
+		"testIsXMLReservedAttributeName" : "monty 4/12/2016 09:59",
 		"testParseXML" : "monty 3/7/2016 20:11",
 		"testXMLLocalNameAfterPrefix" : "monty 4/1/2016 01:01",
 		"testXMLPrefixBeforeLocalName" : "monty 4/1/2016 01:02" } }

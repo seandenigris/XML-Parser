@@ -4,8 +4,9 @@ testIsNamedAny
 
 	element := self nodeClass named: 'one'.
 	self
-		assert: (element isNamedAny: #('two' 'one' 'three'));
-		deny: (element isNamedAny: #('two' 'three')).
+		assert: (element isNamedAny: #('two' 'one' 'three') asSet);
+		deny: (element isNamedAny: #('two' 'three') asSet).
+
 	element name: 'one:two' namespaceURI: 'testNS'.
 	self
 		assert: (element isNamedAny: #('one' 'one:two' 'three'));

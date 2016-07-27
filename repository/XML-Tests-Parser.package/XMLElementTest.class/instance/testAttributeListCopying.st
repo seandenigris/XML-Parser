@@ -7,7 +7,7 @@ testAttributeListCopying
 	self
 		assert: attributeListCopy = element attributeNodes;
 		deny: attributeListCopy == element attributeNodes;
-		assert: attributeListCopy attributesByName = element attributeNodes attributesByName;
-		deny: attributeListCopy attributesByName == element attributeNodes attributesByName;
+		assert: attributeListCopy attributeNodesByName = element attributeNodes attributeNodesByName;
+		deny: attributeListCopy attributeNodesByName == element attributeNodes attributeNodesByName;
 		assert: element attributeNodes observer == element;
 		assert: attributeListCopy observer isNil.

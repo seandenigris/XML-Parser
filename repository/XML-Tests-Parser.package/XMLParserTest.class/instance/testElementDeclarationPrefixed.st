@@ -4,6 +4,7 @@ testElementDeclarationPrefixed
 
 	dtd := '<!DOCTYPE prefix:root [
 		<!ELEMENT prefix:root ANY>
+		<!ATTLIST prefix:root xmlns:prefix CDATA #IMPLIED>
 		<!ELEMENT unprefixed EMPTY>]>'.
 	self
 		shouldnt: [SAXHandler parse: dtd, '<prefix:root xmlns:prefix="ns"><unprefixed/></prefix:root>']

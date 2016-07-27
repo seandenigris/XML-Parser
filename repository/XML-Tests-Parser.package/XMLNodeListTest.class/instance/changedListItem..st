@@ -1,5 +1,5 @@
 accessing
-changeListItem: anElement
+changedListItem: anObject
 	^ (changedNodes ifNil: [changedNodes := IdentityDictionary new])
-		at: anElement
-		ifAbsentPut: [anElement copy]
+		at: anObject
+		ifAbsentPut: [anObject copy]

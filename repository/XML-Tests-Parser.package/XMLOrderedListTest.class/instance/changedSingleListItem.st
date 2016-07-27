@@ -1,3 +1,3 @@
 accessing
 changedSingleListItem
-	^ self changeListItem: self singleListItem
+	^ self changedListItem: self singleListItem

@@ -15,7 +15,7 @@ testDFAStateCacheLimit
 		stream nextPut: $)].
 
 	firstState :=
-		(DTDDFAContentModelParser
+		(DTDElementContentModelParser
 			element: 'test'
 			contentModel: contentModel) parse dfa.
 	currentState := firstState.

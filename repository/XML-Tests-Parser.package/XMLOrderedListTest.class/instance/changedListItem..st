@@ -1,3 +1,3 @@
 accessing
-changeListItem: anObject
+changedListItem: anObject
 	^ anObject asUppercase

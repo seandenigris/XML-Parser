@@ -4,9 +4,10 @@ testAttributeNodeAtNamespaceURI
 
 	element := self newElementWithAttributes.
 	self assert:
-		(element attributeNodeAt: 'prefix:three' namespaceURI: 'prefixNS') ==
+		(element attributeNodeAt: 'prefix:two' namespaceURI: 'prefixNS') =
 			(element attributeNodes third).
 	self assert:
-		(element attributeNodeAt: 'three' namespaceURI: 'prefixNS') isNil.
+		(element attributeNodeAt: 'two' namespaceURI: 'prefixNS') =
+			(element attributeNodes third).
 	self assert:
-		(element attributeNodeAt: 'prefix:three' namespaceURI: 'absent') isNil.
+		(element attributeNodeAt: 'prefix:two' namespaceURI: 'absent') isNil.

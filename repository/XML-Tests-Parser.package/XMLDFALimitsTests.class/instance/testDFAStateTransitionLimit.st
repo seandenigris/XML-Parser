@@ -3,7 +3,7 @@ testDFAStateTransitionLimit
 	| dfaState elementName |
 
 	dfaState :=
-		(DTDDFAContentModelParser
+		(DTDElementContentModelParser
 			element: 'test'
 			contentModel: '(test)') parse dfa.
 	1 to: dfaState maxDFAStateTransitions do: [:i |
