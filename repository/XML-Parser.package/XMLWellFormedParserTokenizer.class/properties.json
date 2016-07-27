@@ -8,7 +8,7 @@
 		"NameChars",
 		"NormalizedSpace",
 		"PubidChars" ],
-	"commentStamp" : "monty 4/12/2015 10:25",
+	"commentStamp" : "monty 6/15/2015 23:55",
 	"instvars" : [
 		"activeEntities",
 		"totalOpenIncludeSections" ],

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/28/2014 18:54",
+	"commentStamp" : "monty 6/16/2015 01:29",
 	"instvars" : [
 		"attributesByName" ],
 	"name" : "XMLAttributeList",

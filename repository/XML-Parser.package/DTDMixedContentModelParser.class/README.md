@@ -1,1 +1,1 @@
-This class parses mixed content declarations like "(#PCDATA|one|two)" using a DTDMixedContentListParser.
+This class parses mixed content declarations like "(#PCDATA|one|two)" using a DTDEnumerationListParser.

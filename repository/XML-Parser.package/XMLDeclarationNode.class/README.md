@@ -1,1 +1,1 @@
-This is a generic class to represent markup declarations in the internal subset. Each subclass represents a specific kind of declaration.
+This is an abstract class for markup declaration nodes in the internal subset.

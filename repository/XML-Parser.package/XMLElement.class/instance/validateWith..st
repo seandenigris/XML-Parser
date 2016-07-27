@@ -9,6 +9,7 @@ validateWith: aValidator
 	aValidator
 		validateStartTag: self name
 		attributes: attributeDictionary.
+	"validation can change/add attribute values"
 	self setAttributes: attributeDictionary.
 
 	super validateWith: aValidator.

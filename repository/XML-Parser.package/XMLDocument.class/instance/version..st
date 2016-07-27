@@ -1,3 +1,3 @@
 accessing
-version: aVersionNumber
-	version := aVersionNumber
+version: aVersionFloat
+	version := aVersionFloat
