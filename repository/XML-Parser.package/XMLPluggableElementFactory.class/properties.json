@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"elementClassesByName" ],
+		"elementClasses" ],
 	"name" : "XMLPluggableElementFactory",
 	"pools" : [
 		 ],

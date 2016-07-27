@@ -1,6 +1,8 @@
 element handling
 handleElement: anElementName namespaceURI: aURI withClass: aClass
-	(self elementClassesByName
-		at: anElementName
-		ifAbsentPut: [Dictionary new])
-			at: aURI put: aClass
+	self elementClasses
+		at:
+			(aURI isEmpty
+				ifTrue: [anElementName]
+				ifFalse: [anElementName -> aURI])
+		put: aClass

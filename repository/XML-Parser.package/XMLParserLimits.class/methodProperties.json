@@ -1,13 +1,14 @@
 {
 	"class" : {
 		"defaultDocumentReadLimit" : "monty 12/9/2014 07:41",
+		"defaultMaxEntityReplacementDepth" : "monty 7/13/2015 13:14",
 		"defaultReadLimit" : "monty 12/9/2014 07:52",
 		"defaultReadLimit:" : "monty 12/9/2014 07:41",
 		"initialize" : "monty 12/9/2014 07:41" },
 	"instance" : {
 		"documentReadLimit" : "monty 1/16/2014 18:43",
 		"documentReadLimit:" : "monty 1/16/2014 18:44",
-		"initialize" : "monty 4/26/2015 15:07",
+		"initialize" : "monty 7/13/2015 13:12",
 		"maxEntityReplacementDepth" : "monty 1/16/2014 18:45",
 		"maxEntityReplacementDepth:" : "monty 1/16/2014 18:45",
 		"removeAll" : "monty 1/27/2015 22:46" } }

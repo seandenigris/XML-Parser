@@ -1,9 +1,9 @@
 accessing
 classForElement: aName prefix: aPrefix uri: aURI localName: aLocalName
-	^ (self classForElement: aName uri: aURI)
+	^ (self elementClassAtName: aName uri: aURI)
 		ifNil: [
-			aPrefix isEmpty
-				ifTrue: [self elementClass]
-				ifFalse: [
-					(self classForElement: aLocalName uri: aURI)
-						ifNil: [self elementClass]]]
+			aPrefix size > 0
+				ifTrue: [
+					(self elementClassAtName: aLocalName uri: aURI)
+						ifNil: [self elementClass]]
+				ifFalse: [self elementClass]]

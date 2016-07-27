@@ -3,4 +3,4 @@ initialize
 	super initialize.
 
 	documentReadLimit := self class defaultDocumentReadLimit.
-	maxEntityReplacementDepth := 10.
+	maxEntityReplacementDepth := self class defaultMaxEntityReplacementDepth.

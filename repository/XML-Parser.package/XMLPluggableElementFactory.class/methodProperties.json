@@ -2,16 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"classForElement:prefix:uri:localName:" : "monty 3/21/2015 22:37",
-		"classForElement:uri:" : "monty 3/21/2015 22:37",
-		"elementClassesByName" : "JAAyer 11/13/2010 08:36",
-		"handleElement:namespaceURI:withClass:" : "monty 3/21/2015 22:37",
-		"handleElement:withClass:" : "JAAyer 11/13/2010 19:37",
+		"classForElement:prefix:uri:localName:" : "monty 7/15/2015 09:28",
+		"elementClassAtName:uri:" : "monty 7/15/2015 09:28",
+		"elementClasses" : "monty 7/15/2015 09:27",
+		"handleElement:namespaceURI:withClass:" : "monty 7/15/2015 09:31",
+		"handleElement:withClass:" : "monty 7/14/2015 14:17",
 		"handleElements:namespaceURI:withClass:" : "JAAyer 11/20/2010 11:39",
 		"handleElements:withClass:" : "JAAyer 11/20/2010 11:36",
 		"handleElementsMatchingClass:" : "JAAyer 11/22/2010 11:10",
 		"handleElementsMatchingClasses:" : "JAAyer 11/20/2010 11:26",
-		"postCopy" : "monty 6/19/2015 20:40",
+		"initialize" : "monty 7/15/2015 09:27",
+		"postCopy" : "monty 7/15/2015 09:27",
 		"toCamelCasedName:" : "JAAyer 11/20/2010 11:29",
 		"toHyphenatedName:" : "JAAyer 11/20/2010 11:34",
 		"toNameWithoutPrefixAndElementSuffix:" : "monty 12/14/2014 14:41" } }

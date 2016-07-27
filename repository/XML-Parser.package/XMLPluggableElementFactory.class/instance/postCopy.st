@@ -2,5 +2,5 @@ copying
 postCopy
 	super postCopy.
 
-	elementClassesByName
-		ifNotNil: [elementClassesByName := elementClassesByName copy].
+	elementClasses
+		ifNotNil: [elementClasses := elementClasses copy].

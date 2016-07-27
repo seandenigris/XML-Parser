@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"defaultNodeFactoryClass" : "monty 7/13/2015 13:10",
 		"defaultParserHandlerClass" : "monty 3/17/2015 16:54",
-		"initialize" : "monty 6/20/2015 01:33",
+		"initialize" : "monty 7/13/2015 13:10",
 		"nodeFactory" : "monty 3/12/2015 13:50",
 		"nodeFactory:" : "JAAyer 11/23/2010 14:10",
 		"nodeListClass" : "monty 4/17/2015 10:42",

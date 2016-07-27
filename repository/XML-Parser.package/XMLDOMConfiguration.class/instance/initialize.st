@@ -6,4 +6,4 @@ initialize
 	preservesCDataNodes := false.
 	preservesCommentNodes := false.
 	preservesIgnorableWhitespace := false.
-	nodeFactory := XMLNodeFactory new.
+	nodeFactory := self defaultNodeFactoryClass new.
