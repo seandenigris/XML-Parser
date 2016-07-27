@@ -3,7 +3,7 @@
 		"compileHTMLEntityPageWithNamedEntities:" : "monty 12/1/2013 13:25",
 		"generateHTMLEntityPage" : "monty 12/7/2013 04:36",
 		"htmlEntityPage" : "monty 12/1/2013 13:17",
-		"initialize" : "monty 12/1/2013 01:03",
+		"initialize" : "monty 12/19/2013 07:23",
 		"initializeHTMLNameDelimiters" : "monty 12/1/2013 00:49",
 		"initializePredefinedEntities" : "monty 12/18/2013 23:17",
 		"isNonHTMLCodeSectionTag:" : "monty 12/1/2013 01:02",

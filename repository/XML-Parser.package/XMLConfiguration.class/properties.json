@@ -8,6 +8,7 @@
 	"instvars" : [
 		"isValidating",
 		"usesNamespaces",
+		"requiresDtdDeclarations",
 		"resolvesExternalEntities",
 		"preservesUndeclaredEntityReferences",
 		"externalEntityResolver",

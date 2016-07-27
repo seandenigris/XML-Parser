@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"initialize" : "JAA 3/23/2011 10:40",
+		"initialize" : "monty 12/19/2013 08:12",
 		"on:onClose:" : "monty 12/13/2013 05:13" },
 	"instance" : {
 		"atEnd" : "JAAyer 12/14/2010 02:23",
 		"atQuote" : "monty 12/6/2013 08:36",
 		"basicNext" : "monty 11/12/2013 01:28",
 		"currentLineNumber" : "JAAyer 7/14/2010 00:39",
-		"initialize" : "monty 12/6/2013 06:52",
+		"initialize" : "monty 12/19/2013 07:32",
 		"maxIntegerValue" : "JAA 3/23/2011 10:54",
 		"maxNestedStreams" : "monty 12/6/2013 06:47",
 		"next" : "JAAyer 12/14/2010 02:44",

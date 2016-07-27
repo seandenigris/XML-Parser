@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"element:attribute:type:default:" : "monty 12/10/2013 06:21",
-		"initialize" : "monty 12/1/2013 22:16" },
+		"initialize" : "monty 12/19/2013 07:26" },
 	"instance" : {
 		"isNotationList:" : "monty 12/11/2013 02:38",
 		"parse" : "monty 12/11/2013 02:35",

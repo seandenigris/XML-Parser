@@ -1,5 +1,7 @@
 initialization
 initialize
+	super initialize.
+
 	stream := nil.
 	nestedStreams := nil.
 	hasNestedStreams := false.

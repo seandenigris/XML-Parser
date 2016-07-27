@@ -2,8 +2,9 @@ initialization
 initialize
 	"self initialize"
 
-	SeparatorCharacters := CharacterSet newFrom: Character separators.
+	super initialize.
 
+	SeparatorCharacters := CharacterSet newFrom: Character separators.
 	CarriageReturn := Character cr.
 	LineFeed := Character lf.
 
