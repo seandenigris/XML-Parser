@@ -3,5 +3,5 @@ with: aBlock onError: errorBlock
 	^ aBlock
 		on: Error
 		do: [:error |
-			errorBlock valueWithPossibleArgument: error.
-			error signal]
+			error signal.
+			errorBlock valueWithPossibleArgument: error]
