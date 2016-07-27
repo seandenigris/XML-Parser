@@ -8,9 +8,9 @@
 	"instvars" : [
 		"context",
 		"driver",
-		"nameStream",
 		"streamReader",
-		"writeStream" ],
+		"writeStream",
+		"nameStream" ],
 	"name" : "XMLParserTokenizer",
 	"pools" : [
 		 ],

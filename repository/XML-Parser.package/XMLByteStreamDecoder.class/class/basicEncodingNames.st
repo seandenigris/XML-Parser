@@ -1,3 +1,3 @@
 private
 basicEncodingNames
-	^ #('' 'ASCII' 'ISO-8859-1' 'iso-ir-100' 'csISOLatin1' 'Latin1' 'Latin-1' 'l1' 'IBM819' 'CP819')
+	^ #('ASCII' 'Latin-1' 'Latin1' 'CP819' 'IBM819' 'ISO-8859-1' 'ISO-IR-100' 'L1' 'csISOLatin1')

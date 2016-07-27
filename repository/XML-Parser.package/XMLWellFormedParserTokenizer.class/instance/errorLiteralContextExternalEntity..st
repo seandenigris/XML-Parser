@@ -1,3 +1,4 @@
 errors
 errorLiteralContextExternalEntity: anEntity
-	self parseError: 'External general entity ', anEntity asReference, ' in literal context'
+	self parseError:
+		'External general entity reference ', anEntity asReference, ' in literal context'

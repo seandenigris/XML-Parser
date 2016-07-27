@@ -1,3 +1,3 @@
 errors
-errorExpected: anExpectedString
-	self parseError: 'Expected ', anExpectedString
+errorExpected: aString
+	self parseError: 'Expected ', aString

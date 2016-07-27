@@ -1,7 +1,7 @@
 errors
-errorExpected: anExpectedCharacterOrString butGot: aReceivedCharacterOrString
+errorExpected: aString butGot: aCharacter
 	self errorExpected:
 		('{1} but got "{2}"' format:
 			(Array
-				with: anExpectedCharacterOrString
-				with: (aReceivedCharacterOrString ifNil: [''])))
+				with: aString
+				with: (aCharacter ifNil: [''])))

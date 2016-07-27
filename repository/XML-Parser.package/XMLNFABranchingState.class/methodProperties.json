@@ -5,4 +5,5 @@
 	"instance" : {
 		"addTo:" : "monty 12/29/2013 01:10",
 		"connectToState:" : "monty 12/27/2013 23:45",
+		"printOn:" : "monty 4/25/2015 23:09",
 		"setLeftBranch:rightBranch:" : "monty 12/28/2013 00:45" } }

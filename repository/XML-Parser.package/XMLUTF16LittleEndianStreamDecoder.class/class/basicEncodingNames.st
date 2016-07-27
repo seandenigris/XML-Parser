@@ -1,3 +1,3 @@
 private
 basicEncodingNames
-	^ #('utf16le' 'utf-16le' 'utf-16-le' 'utf16-le')
+	^ #('UTF-16LE' 'UTF-16-LE' 'UTF16-LE' 'UTF16LE')

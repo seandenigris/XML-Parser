@@ -1,3 +1,3 @@
 handling
-handleParseError: anErrorString
-	XMLWellFormednessException signal: anErrorString
+handleParseError: aString
+	XMLWellFormednessException signal: aString

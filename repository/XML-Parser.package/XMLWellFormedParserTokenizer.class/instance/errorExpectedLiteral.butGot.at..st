@@ -1,8 +1,8 @@
 errors
-errorExpectedLiteral: anExpectedLiteral butGot: aCharacter at: aPosition
+errorExpectedLiteral: aCharacterOrString butGot: aCharacter at: aPosition
 	| literal replacement |
 
-	literal := anExpectedLiteral asString.
+	literal := aCharacterOrString asString.
 	replacement := (aCharacter ifNil: ['']) asString.
 	self errorExpected:
 		('"{1}" but got "{2}"' format:

@@ -1,8 +1,6 @@
 instance creation
 newForEncoding: anEncoding
-	^ (StreamDecoderCache
+	^ (self streamDecoderCache
 		at: anEncoding
 		ifAbsentPut: [self findStreamDecoderForEncoding: anEncoding])
-			ifNotNil: [:decoderClass |
-				decoderClass new
-					setEncodingName: anEncoding]
+			ifNotNil: [:decoderClass | decoderClass new encodingName: anEncoding]

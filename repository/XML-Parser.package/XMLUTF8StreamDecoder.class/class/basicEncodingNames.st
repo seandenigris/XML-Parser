@@ -1,3 +1,3 @@
 private
 basicEncodingNames
-	^ #('utf8' 'utf-8')
+	^ #('UTF-8' 'UTF8')

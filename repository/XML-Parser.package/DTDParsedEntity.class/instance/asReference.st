@@ -1,3 +1,3 @@
 converting
 asReference
-	^ self printString
+	^ String streamContents: [:stream | self printReferenceOn: stream]

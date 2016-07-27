@@ -1,3 +1,0 @@
-private
-printLimit
-	^ 5

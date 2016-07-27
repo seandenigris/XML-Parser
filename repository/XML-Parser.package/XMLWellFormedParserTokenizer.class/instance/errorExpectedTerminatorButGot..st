@@ -1,5 +1,5 @@
 errors
-errorExpectedTerminatorButGot: aReceivedCharacer
+errorExpectedTerminatorButGot: aCharacter
 	self
 		errorExpected: '">" terminator'
-		butGot: aReceivedCharacer
+		butGot: aCharacter

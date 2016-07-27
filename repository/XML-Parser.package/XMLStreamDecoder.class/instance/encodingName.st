@@ -1,4 +1,3 @@
 accessing
 encodingName
-	^ encodingName
-		ifNil: [encodingName := self class encodingName anyOne]
+	^ encodingName ifNil: [encodingName := self class defaultEncodingName]

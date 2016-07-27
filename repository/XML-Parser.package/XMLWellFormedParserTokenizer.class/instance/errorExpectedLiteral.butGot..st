@@ -1,6 +1,6 @@
 errors
-errorExpectedLiteral: anExpectedLiteral butGot: aCharacter
+errorExpectedLiteral: aCharacterOrString butGot: aCharacter
 	self
-		errorExpectedLiteral: anExpectedLiteral
+		errorExpectedLiteral: aCharacterOrString
 		butGot: aCharacter
 		at: 1

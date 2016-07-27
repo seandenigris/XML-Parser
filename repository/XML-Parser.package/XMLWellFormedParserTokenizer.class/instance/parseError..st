@@ -1,3 +1,3 @@
 errors
-parseError: anErrorString
-	driver handleParseError: anErrorString
+parseError: aString
+	driver handleParseError: aString

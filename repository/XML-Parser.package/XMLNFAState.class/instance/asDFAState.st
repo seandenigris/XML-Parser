@@ -4,5 +4,4 @@ asDFAState
 
 	nfaStates := XMLNFAStateSet new.
 	self addTo: nfaStates.
-
-	^ XMLDFAState nfaStates: nfaStates.
+	^ nfaStates asDFAState.
