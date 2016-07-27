@@ -1,3 +1,3 @@
 testing
 includesName: aString
-	^ self attributesByName includesKey: aString
+	^ self nodesByName includesKey: aString

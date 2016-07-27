@@ -7,5 +7,5 @@ nextPI
 	piTarget asUppercase = 'XML'
 		ifTrue: [^ self nextXMLDecl].
 	streamReader skipSeparators.
-	piData := streamReader nextUpToAll: '?>'.
+	piData := streamReader upToAll: '?>'.
 	self handlePI: piTarget data: piData.

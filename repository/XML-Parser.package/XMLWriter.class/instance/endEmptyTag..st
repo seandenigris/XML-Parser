@@ -1,6 +1,6 @@
 writing xml
-endEmptyTag: tagName
-	self popTag: tagName.
+endEmptyTag: aTagName
+	self openTags closeTag: aTagName.
 	self stream nextPutAll: '/>'.
 	self canonical
 		ifFalse: [self stream space].

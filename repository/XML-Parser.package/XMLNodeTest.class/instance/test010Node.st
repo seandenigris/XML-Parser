@@ -7,8 +7,8 @@ test010node
 	accessors := #(nextNode previousNode parent).
 	self
 		assert: node isEmpty;
-		deny: (testingMessages anySatisfy: [:each | node perform: each]);
-		deny: (accessors anySatisfy: [:each | (node perform: each) notNil]).
+		assert: (testingMessages noneSatisfy: [:each | node perform: each]);
+		assert: (accessors allSatisfy: [:each | (node perform: each) isNil]).
 
 	parent := XMLNode new.
 	node parent: parent.

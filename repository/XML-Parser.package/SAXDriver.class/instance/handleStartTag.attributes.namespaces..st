@@ -1,25 +1,29 @@
 handling tokens
-handleStartTag: elementName attributes: attributes namespaces: namespaces
+handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	| localName prefix namespaceURI |
 
-	(attributes includesKey: 'xml:lang')
-		ifTrue: [self languageEnvironment: (attributes at: 'xml:lang')].
+	self openTag: anElementName.
 
-	elementName splitQualifiedNameInto: [:ns :ln |
-		prefix := ns.
-		localName := ln].
+	(anAttributeDictionary includesKey: 'xml:lang')
+		ifTrue: [self languageEnvironment: (anAttributeDictionary at: 'xml:lang')].
+
+	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
+		prefix := prefixPart.
+		localName := localPart].
 	self usesNamespaces
 		ifTrue: [
 			self nestedScopes enterScope.
-			self declareNamespaces: namespaces.
+			self declareNamespaces: aNamespaceDictionary.
 			namespaceURI := self nestedScopes resolvePrefix: prefix.
-
-			self validateStartTag: localName prefix: prefix attributes: attributes]
+			self
+				validateStartTag: anElementName
+				prefix: prefix
+				attributes: anAttributeDictionary]
 		ifFalse: [namespaceURI := nil].
 
 	self activeSaxHandler 
 		startElement: localName
-		qualifiedName: elementName
+		qualifiedName: anElementName
 		prefix: prefix
 		uri: namespaceURI
-		attributes: attributes
+		attributes: anAttributeDictionary.

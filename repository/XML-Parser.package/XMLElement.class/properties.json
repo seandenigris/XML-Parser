@@ -7,8 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"name",
-		"attributeList",
-		"scope" ],
+		"attributes",
+		"scope",
+		"usesNamespaces" ],
 	"name" : "XMLElement",
 	"pools" : [
 		 ],

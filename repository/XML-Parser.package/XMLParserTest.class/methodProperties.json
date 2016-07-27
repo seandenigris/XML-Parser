@@ -4,15 +4,14 @@
 	"instance" : {
 		"addressBookXML" : "AlexandreBergel 1/29/2009 11:49",
 		"addressBookXMLWithDTD" : "AlexandreBergel 1/29/2009 11:49",
-		"benchmark1" : "JAAyer 3/8/2010 23:52",
-		"categoriesForClass:" : "Alexandre Bergel 2/26/2010 13:45",
-		"targetClass" : "Alexandre Bergel 2/26/2010 13:42",
-		"testClassComment" : "Alexandre Bergel 2/26/2010 13:43",
+		"benchmark1" : "JAAyer 3/22/2010 15:12",
+		"benchmark2" : "JAAyer 3/22/2010 15:12",
+		"benchmark3" : "JAAyer 3/22/2010 15:21",
+		"benchmark4" : "JAAyer 3/22/2010 15:48",
 		"testExampleAddressBook" : "JAAyer 3/11/2010 09:06",
 		"testExampleAddressBookWithDTD" : "JAAyer 3/11/2010 09:04",
 		"testLineEndingsDoNotMatter" : "JAAyer 3/7/2010 10:48",
 		"testParsing" : "JAAyer 3/11/2010 03:40",
-		"testParsingCharacters" : "JAAyer 3/11/2010 09:05",
+		"testParsingCharacters" : "JAAyer 3/14/2010 12:54",
 		"testTokenizerAddressBook" : "JAAyer 3/11/2010 09:06",
-		"testTokenizerAddressBookWithDTD" : "JAAyer 3/11/2010 09:06",
-		"testUnCategorizedMethods" : "Alexandre Bergel 2/26/2010 13:43" } }
+		"testTokenizerAddressBookWithDTD" : "JAAyer 3/11/2010 09:06" } }

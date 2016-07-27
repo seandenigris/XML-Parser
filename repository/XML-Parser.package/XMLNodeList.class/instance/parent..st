@@ -1,3 +1,3 @@
 accessing
-parent: aNodeWithChildren
-	parent := aNodeWithChildren
+parent: aParent
+	parent := aParent

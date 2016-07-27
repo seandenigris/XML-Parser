@@ -5,4 +5,4 @@ entity: aReference
 
 	^ self entities
 		at: aReference
-		ifAbsentPut: [self parseError: 'XML undefined entity ', aReference printString]
+		ifAbsentPut: [self parseError: 'Undefined entity ', aReference printString]

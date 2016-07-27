@@ -1,3 +1,3 @@
-namespace
+namespaces
 prefix
-	^ self namespacedName prefix
+	^ self nodeName prefix

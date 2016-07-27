@@ -1,3 +1,3 @@
-namespace
+namespaces
 expandedName
-	^ self namespacedName expandedName
+	^ self nodeName expandedWith: self namespaceURI

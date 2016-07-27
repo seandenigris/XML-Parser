@@ -7,6 +7,7 @@ next
 	and replacment texts the streams are held in a stack representing the
 	nested streams. The current stream is the top one."
 	| nextChar |
+
 	peekChar
 		ifNil: [
 			nestedStreams ifNotNil: [self checkNestedStream].

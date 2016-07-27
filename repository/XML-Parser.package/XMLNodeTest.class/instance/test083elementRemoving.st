@@ -13,7 +13,7 @@ test083elementRemoving
 		assert: (node removeNode: elements second) = elements second;
 		assert: node elements = (elements last: 2);
 		assert: (node elementAt: 'bar') = elements third;
-		assert: (node elementsAt: 'bar') = (OrderedCollection with: elements third);
+		assert: (node elementsAt: 'bar') = (XMLElementList with: elements third);
 		assert: (node removeNode: elements third) = elements third;
 		assert: node elements = (elements last: 1);
 		assert: (node elementAt: 'bar') isNil;

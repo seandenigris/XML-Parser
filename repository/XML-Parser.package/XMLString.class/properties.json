@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"string" ],
+	"name" : "XMLString",
+	"pools" : [
+		 ],
+	"super" : "XMLNode",
+	"type" : "normal" }

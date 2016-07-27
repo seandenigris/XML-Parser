@@ -1,4 +1,3 @@
 accessing
 prefix: aPrefix
-	self namespacedName prefix: aPrefix.
-	self notifyParentOfRenaming.
+	self notifyParentAfterRenamingWith: [self nodeName prefix: aPrefix]

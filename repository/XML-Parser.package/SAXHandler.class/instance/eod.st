@@ -1,3 +1,3 @@
 accessing
 eod
-	^eod
+	^ eod ifNil: [eod := false]

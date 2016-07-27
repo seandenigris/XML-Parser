@@ -1,3 +1,0 @@
-private
-newElements
-	^ OrderedCollection new

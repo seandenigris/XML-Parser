@@ -1,3 +1,3 @@
 accessing
 newLinesAllowed
-	^ newLinesAllowed
+	^ newLinesAllowed ifNil: [newLinesAllowed := false]

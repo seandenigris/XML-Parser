@@ -1,7 +1,6 @@
 tokenizing
 nextCDataContent
 	| cdata |
-	"Skip $[ "
-	streamReader next.
-	cdata := streamReader nextUpToAll: ']]>'.
+
+	cdata := streamReader upToAll: ']]>'.
 	self handleCData: cdata

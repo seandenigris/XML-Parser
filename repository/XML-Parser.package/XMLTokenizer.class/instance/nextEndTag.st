@@ -5,6 +5,5 @@ nextEndTag
 	streamReader next.
 	tagName := self nextName.
 	streamReader skipSeparators.
-	(streamReader nextTrimmedBlanksUpTo: $>)
-		ifNotEmpty: [self parseError: 'XML invalid end tag ' , tagName].
+	self expectNext: $>.
 	self handleEndTag: tagName

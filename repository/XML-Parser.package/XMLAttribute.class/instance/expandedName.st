@@ -1,3 +1,3 @@
 accessing
 expandedName
-	^ self namespacedName expandedName
+	^ self nodeName expandedWith: self namespaceURI

@@ -1,3 +1,6 @@
 printing
 printNameOn: aStream
-	aStream nextPutAll: 'an ', self class name
+	aStream
+		nextPutAll: 'an';
+		space;
+		nextPutAll: self class name

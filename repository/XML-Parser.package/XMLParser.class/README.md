@@ -1,1 +1,0 @@
-This is a generic parser that supports rudimentary handling of elements and character data. For a more complete SAX-like API, see SAXHandler (and SAXDriver). For a DOM-like API, see XMLDOMParser and the classes under XML-Parser-Nodes.

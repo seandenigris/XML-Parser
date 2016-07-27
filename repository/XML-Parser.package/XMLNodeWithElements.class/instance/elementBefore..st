@@ -1,3 +1,3 @@
 accessing
 elementBefore: anElement
-	^ self elements before: anElement ifAbsent: [nil]
+	^ self elements before: anElement

@@ -16,6 +16,6 @@ test080elementAccessing
 		assert: (node elementAt: 'bar') = elements second;
 		assert: (node elementsAt: 'foo') = ((elements first: 3) copyWithout: elements second);
 		assert: (node elementAt: 'prefix:foo') = elements third;
-		assert: (node elementsAt: 'prefix:foo') = (OrderedCollection with: elements third);
+		assert: (node elementsAt: 'prefix:foo') = (XMLElementList with: elements third);
 		assert: (node elementAtAny: #('bar' 'prefix:foo')) = elements second;
 		assert: (node elementAtAny: #('absent' 'baz')) = elements last.

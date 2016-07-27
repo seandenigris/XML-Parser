@@ -1,3 +1,3 @@
 accessing
 elementsAt: aString
-	^ self elementsAt: aString ifAbsent: [self newElements]
+	^ self elementCache elementsNamed: aString

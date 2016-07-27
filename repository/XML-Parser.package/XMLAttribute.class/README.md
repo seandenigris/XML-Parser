@@ -1,0 +1,1 @@
+The class represents an attribute node. You should seldom if ever need to interact with these objects directly; instead use XMLElement's various #attribute- messages.

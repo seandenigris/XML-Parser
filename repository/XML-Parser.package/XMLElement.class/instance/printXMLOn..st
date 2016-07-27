@@ -3,7 +3,7 @@ printXMLOn: writer
 	writer
 		startElement: self name
 		attributeList: self attributeNodes
-		scope: self scope.
+		namespaces: self declaredNamespaces.
 	(writer canonical not
 		and: [self isEmpty and: [self attributeNodes notEmpty]])
 		ifTrue: [writer endEmptyTag: self name]

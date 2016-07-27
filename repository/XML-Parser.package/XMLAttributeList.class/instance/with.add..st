@@ -1,12 +1,11 @@
 private
 with: aBlock add: aNode
-	aNode isAttribute
-		ifFalse: [^ self errorNonAttributeNode].
+	aNode isAttribute ifFalse: [^ self errorNonAttributeNode].
 
 	(super with: aBlock add: aNode) ifNil: [^ nil].
 
-	self attributesByName
+	self nodesByName
 		at: aNode name
 		ifPresent: [self removeNodeNamed: aNode name].
-	self attributesByName at: aNode name put: aNode.
+	self nodesByName at: aNode name put: aNode.
 	^ aNode.

@@ -1,3 +1,3 @@
 accessing
 nodeNamed: aString
-	^ self nodeNamed: aString ifAbsent: [nil]
+	^ self nodeNamed: aString ifAbsent: [self defaultValue]

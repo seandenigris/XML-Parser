@@ -24,5 +24,5 @@ nextExternalId
 		ifFalse: [^''].
 	dir := streamReader topStream directory.
 	^(dir fileExists: systemId)
-		ifTrue: [(dir readOnlyFileNamed: systemId) contentsOfEntireFile]
+		ifTrue: [(dir readOnlyFileNamed: systemId) stringContentsOfEntireFile]
 		ifFalse: ['']

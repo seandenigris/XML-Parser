@@ -1,3 +1,0 @@
-testing
-hasNestedStreams
-	^nestedStreams notNil

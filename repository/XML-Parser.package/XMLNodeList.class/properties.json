@@ -10,5 +10,5 @@
 	"name" : "XMLNodeList",
 	"pools" : [
 		 ],
-	"super" : "OrderedCollection",
+	"super" : "XMLOrderedList",
 	"type" : "normal" }

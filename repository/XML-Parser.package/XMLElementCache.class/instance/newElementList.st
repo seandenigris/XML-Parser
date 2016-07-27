@@ -1,0 +1,3 @@
+private
+newElementList
+	^ XMLElementList new

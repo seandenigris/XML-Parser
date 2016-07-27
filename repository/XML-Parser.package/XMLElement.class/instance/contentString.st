@@ -2,7 +2,7 @@ accessing
 contentString
 	| firstContentNode |
 
-	firstContentNode := self elementsAndContents at: 1 ifAbsent: [^ ''].
-	^ firstContentNode isText
+	firstContentNode := self elementsAndContents first.
+	^ (firstContentNode notNil and:[firstContentNode isText])
 		ifTrue: [firstContentNode string]
 		ifFalse: ['']

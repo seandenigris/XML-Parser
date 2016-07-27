@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tags" ],
+	"name" : "XMLOpenTags",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

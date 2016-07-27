@@ -13,11 +13,9 @@ nextDocTypeDecl
 			[streamReader skipSeparators.
 			streamReader peek == $]] whileFalse: [
 				self checkAndExpandReference: #dtd.
-				self nextNode].
-			streamReader next == $] 
-				ifFalse: [self errorExpected: ']' ]].
+				self nextMarkupToken].
+			self expectNext: $]].
 	streamReader skipSeparators.
-	streamReader next == $>
-		ifFalse: [self errorExpected: '>' ].
+	self expectNext: $>.
 
 	self endParsingMarkup

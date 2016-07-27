@@ -1,3 +1,3 @@
 content
 characters: aString
-	self top addContent: aString
+	self topNode addContent: aString

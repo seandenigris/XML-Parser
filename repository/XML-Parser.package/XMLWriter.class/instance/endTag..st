@@ -1,8 +1,8 @@
 writing xml
-endTag: tagName
+endTag: aTagName
 	self outdent.
-	self popTag: tagName.
+	self openTags closeTag: aTagName.
 	self stream
 		nextPutAll: '</';
-		nextPutAll: tagName.
+		nextPutAll: aTagName.
 	self endTag.

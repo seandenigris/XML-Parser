@@ -1,3 +1,3 @@
 accessing
 canonical
-	^canonical
+	^ canonical ifNil: [canonical := false]

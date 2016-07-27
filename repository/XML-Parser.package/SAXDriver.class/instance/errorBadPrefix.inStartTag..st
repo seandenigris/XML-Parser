@@ -1,5 +1,4 @@
 errors
-errorBadPrefix: aPrefix inStartTag: anElementName
-	self parseError:
-		('Start tag ', anElementName,
-		' refers to unmapped prefix ', aPrefix asString)
+errorBadPrefix: aPrefix inStartTag: aStartTag
+	XMLNamespaceException signal:
+		'Start tag <', aStartTag, '> refers to unmapped prefix ', aPrefix

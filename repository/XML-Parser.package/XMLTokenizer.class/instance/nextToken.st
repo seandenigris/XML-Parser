@@ -6,10 +6,12 @@ nextToken
 	| whitespace |
 	"branch, depending on what the first character is"
 	whitespace := self nextWhitespace.
-	streamReader atEnd ifTrue: [self handleEndDocument. ^ nil].
+	streamReader atEnd
+		ifTrue: [^ self handleEndDocument].
+
 	self checkAndExpandReference: (self parsingMarkup ifTrue: [#dtd] ifFalse: [#content]).
 	^ (streamReader peek = $<)
-		ifTrue: [self nextNode]
+		ifTrue: [self nextMarkupToken]
 		ifFalse: [
 			whitespace ifNotEmpty: [streamReader pushBack: whitespace].
-			self nextPCData]
+			self nextPCData].

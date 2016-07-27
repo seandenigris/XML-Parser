@@ -1,3 +1,0 @@
-namespaces
-leaveScope
-	self nestedScopes leaveScope

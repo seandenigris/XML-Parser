@@ -1,3 +1,3 @@
 accessing
 elementAt: aString ifAbsent: aBlock
-	^ (self elementsAt: aString ifAbsent: [^ aBlock value]) first
+	^ (self elementCache firstElementNamed:  aString) ifNil: aBlock

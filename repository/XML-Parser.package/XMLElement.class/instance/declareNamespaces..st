@@ -1,9 +1,9 @@
-namespace
+namespaces
 declareNamespaces: aDictionaryOrArray
 	self
 		from: aDictionaryOrArray 
-		keysAndValuesDo: [:prefix :uri |
-			prefix splitQualifiedNameInto: [:xmlns :name |
-				(name = 'xmlns')
+		keysAndValuesDo: [:namespaceName :uri |
+			namespaceName splitQualifiedNameInto: [:xmlns :prefix |
+				(prefix = 'xmlns')
 					ifTrue: [self defaultNamespace: uri]
-					ifFalse: [self declareNamespace: name uri: uri]]]
+					ifFalse: [self declareNamespace: prefix uri: uri]]]

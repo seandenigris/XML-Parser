@@ -1,7 +1,10 @@
 writing xml
-xmlns: namespace uri: uri
-	self declareNamespace: namespace uri: uri.
+xmlns: aNamespace uri: aUri
+	self nestedScopes declareNamespace: aNamespace uri: aUri.
 
 	self
-		attribute: (namespace ifNil: ['xmlns'] ifNotNil: ['xmlns:', namespace])
-		value: uri
+		attribute:
+			(aNamespace = 'xmlns'
+				ifTrue: ['xmlns']
+				ifFalse: ['xmlns:', aNamespace])
+		value: aUri

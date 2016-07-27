@@ -1,3 +1,3 @@
 accessing
 qualifiedName
-	^ self namespacedName qualifiedName
+	^ self nodeName qualifiedName

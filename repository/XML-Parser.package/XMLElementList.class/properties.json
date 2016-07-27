@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XMLElementList",
+	"pools" : [
+		 ],
+	"super" : "XMLOrderedList",
+	"type" : "normal" }

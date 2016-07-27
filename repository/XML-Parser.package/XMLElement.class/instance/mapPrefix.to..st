@@ -4,7 +4,7 @@ mapPrefix: aPrefix to: aUri
 
 	oldMapping := self scope resolvePrefix: aPrefix ifUnmapped: [nil].
 	self
-		updateEnclosedScopesWith: [:each |
-			each mapPrefix: aPrefix to: aUri]
+		updateEnclosedScopesWith: [:each | each mapPrefix: aPrefix to: aUri]
 		where: [:each |
-			(each resolvePrefix: aPrefix ifUnmapped: [nil]) = oldMapping]
+			(each isPrefix: aPrefix mappedTo: oldMapping)
+				or: [(each isMappedPrefix: aPrefix) not]]

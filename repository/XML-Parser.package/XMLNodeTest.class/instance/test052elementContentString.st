@@ -18,7 +18,7 @@ test052elementContentString
 
 	"addContent: should combine neighboring string nodes"
 	self
-		assertElement: (element addContent: (XMLStringNode string: str))
+		assertElement: (element addContent: (XMLString string: str))
 		contentString: str
 		contents: (Array with: str with: str, str).
 

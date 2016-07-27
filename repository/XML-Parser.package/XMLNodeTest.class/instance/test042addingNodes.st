@@ -23,5 +23,5 @@ test042addingNodes
 	self
 		should: [node addNode: (XMLNode new parent: XMLNode new)] raise: Error;
 		should: [node addNode: children first] raise: Error;
-		assert: node nodes = children;
+		assert: node nodes asOrderedCollection = children;
 		assert: node topNode = children first.

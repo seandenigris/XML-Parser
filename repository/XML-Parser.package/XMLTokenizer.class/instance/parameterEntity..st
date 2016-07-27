@@ -1,5 +1,5 @@
 entities
 parameterEntity: refName
-	^self parameterEntities
+	^ self parameterEntities
 		at: refName
-		ifAbsent: [self parseError: 'XML undefined parameter entity ' , refName printString]
+		ifAbsent: [self parseError: 'undefined parameter entity ', refName printString]

@@ -1,3 +1,0 @@
-namespaces
-enterScope
-	self nestedScopes enterScope

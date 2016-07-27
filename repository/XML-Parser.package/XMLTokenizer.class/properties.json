@@ -9,13 +9,12 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"streamReader",
-		"isValidating",
+		"buffer",
 		"entities",
 		"externalEntities",
 		"parameterEntities",
-		"parsingMarkup",
-		"nameBuffer",
-		"attributeBuffer" ],
+		"isValidating",
+		"parsingMarkup" ],
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],

@@ -11,7 +11,8 @@
 	"instvars" : [
 		"stream",
 		"nestedStreams",
-		"peekChar" ],
+		"peekChar",
+		"buffer" ],
 	"name" : "XMLStreamReader",
 	"pools" : [
 		 ],

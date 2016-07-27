@@ -7,8 +7,8 @@ validateAttribute: anAttributeName in: aDictionary
 		self validatePrefix: prefix.
 		namespaceUri := self resolvePrefix: prefix.
 
-		(self aliasesOf: prefix) do: [:aliasingPrefix |
-			aliasingAttributeName := aliasingPrefix qualifyName: localName.
+		(self prefixesAliasing: prefix) do: [:aliasingPrefix |
+			aliasingAttributeName := aliasingPrefix, ':', localName.
 			(aDictionary includesKey: aliasingAttributeName)
 				ifTrue: [
 					self

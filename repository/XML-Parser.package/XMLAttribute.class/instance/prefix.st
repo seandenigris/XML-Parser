@@ -1,3 +1,3 @@
 accessing
 prefix
-	^ self namespacedName prefix
+	^ self nodeName prefix

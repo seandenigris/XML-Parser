@@ -1,15 +1,11 @@
 tokenizing
 nextEntityValue
 	| delimiterChar entityValueStream nextChar nextPeek referenceString entity entityValue |
-	delimiterChar := streamReader next.
-	(delimiterChar == $"
-		or: [delimiterChar == $'])
-		ifFalse: [self errorExpected: 'Entity value delimiter expected.'].
-
-	entityValueStream := WriteStream on: (String new).
+	delimiterChar := self expectQuote.
+	entityValueStream := WriteStream on: (String new: 32).
 	[
+	self expectMore.
 	nextPeek := nextChar := streamReader peek.
-	nextChar ifNil: [self errorExpected: 'Character expected.'].
 	nextChar == $&
 		ifTrue: [
 			streamReader next.
@@ -19,8 +15,7 @@ nextEntityValue
 					nextChar := self nextCharReference]
 				ifFalse: [
 					referenceString := self nextLiteral.
-					streamReader next == $;
-						ifFalse: [self errorExpected: ';'].
+					self expectNext: $;.
 					entity := self entity: referenceString.
 					entityValue := entity valueForContext: #entityValue.
 					streamReader pushStream: (ReadStream on: entityValue asString).
@@ -36,4 +31,4 @@ nextEntityValue
 	nextPeek == delimiterChar]
 		whileFalse: [
 			nextChar ifNotNil: [entityValueStream nextPut: nextChar]].
-	^entityValueStream contents
+	^ entityValueStream stringContents.

@@ -4,8 +4,7 @@ nextAttributeInto: attributes namespaces: namespaces
 	| attrName attrValue |
 	attrName := self nextName.
 	streamReader skipSeparators.
-	streamReader next == $=
-		ifFalse: [self errorExpected: '='].
+	self expectNext: $=.
 	streamReader skipSeparators.
 	attrValue := self nextAttributeValue.
 

@@ -1,3 +1,3 @@
 testing
 validatesAttributes
-	^validateAttributes
+	^ validateAttributes ifNil: [validateAttributes := true]

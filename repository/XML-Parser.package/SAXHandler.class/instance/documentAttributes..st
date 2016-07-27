@@ -1,2 +1,2 @@
 content
-documentAttributes: attributeList
+documentAttributes: aDictionary

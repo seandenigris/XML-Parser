@@ -1,23 +1,23 @@
 handling tokens
-handleEndTag: elementName
+handleEndTag: anElementName
 	| prefix localName namespaceURI |
 
-	elementName splitQualifiedNameInto: [:prefixPart :localPart |
+	self closeTag: anElementName.
+
+	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
 		localName := localPart].
 	self usesNamespaces
-		ifTrue: [
-			namespaceURI := self nestedScopes resolvePrefix: prefix.
-			self validateEndTag: localName prefix: prefix]
+		ifTrue: [namespaceURI := self nestedScopes resolvePrefix: prefix]
 		ifFalse: [namespaceURI := nil].
 
 	self activeSaxHandler 
 		endElement: localName
-		qualifiedName: elementName
+		qualifiedName: anElementName
 		prefix: prefix
 		uri: namespaceURI.
 
 	self usesNamespaces
 		ifTrue: [
-			self undeclareNamespaces: self currentScope prefixMappings.
+			self undeclareNamespaces.
 			self nestedScopes leaveScope.].

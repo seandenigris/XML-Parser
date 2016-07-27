@@ -1,3 +1,3 @@
 accessing
 elements
-	^ elements ifNil: [elements := self newElements]
+	^ self elementCache elements

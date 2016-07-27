@@ -1,9 +1,13 @@
 private
-localName: aString prefix: aPrefix attributes: attributeList scope: namespaceScope
-	| element |
+localName: aString prefix: aPrefix attributes: anAttributeDictionary scope: aNamespaceScope
+	| element attributeNodes |
+
 	element := self new.
-	element setScope: namespaceScope.
-	element namespacedName setPrefix: aPrefix localName: aString.
-	attributeList keysAndValuesDo: [:key :value |
-		element attributeNodes addName: key value: value].
+	element setScope: aNamespaceScope.
+	element nodeName setPrefix: aPrefix localName: aString.
+	attributeNodes := XMLAttributeList new.
+	anAttributeDictionary keysAndValuesDo: [:key :value |
+		attributeNodes addLast: (XMLAttribute name: key value: value)].
+	element setAttributeNodes: attributeNodes.
+
 	^ element.

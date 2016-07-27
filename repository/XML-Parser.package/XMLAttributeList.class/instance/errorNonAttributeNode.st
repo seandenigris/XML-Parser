@@ -1,3 +1,3 @@
 private
 errorNonAttributeNode
-	^ self domError: 'cannot contain non-attribute nodes'.
+	^ self domError: 'Cannot contain non-attribute nodes'.

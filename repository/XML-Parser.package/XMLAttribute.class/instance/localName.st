@@ -1,3 +1,3 @@
 accessing
 localName
-	^ self namespacedName localName
+	^ self nodeName localName

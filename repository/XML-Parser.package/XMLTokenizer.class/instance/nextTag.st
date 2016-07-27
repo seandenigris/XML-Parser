@@ -6,7 +6,7 @@ nextTag
 	tagName := self nextName.
 	streamReader skipSeparators.
 	attributes := XMLOrderPreservingDictionary new: 10.
-	namespaces := XMLOrderPreservingDictionary new: 5.
+	namespaces := XMLOrderPreservingDictionary new.
 	[(nextChar := streamReader peek) == $> or: [nextChar == $/]] whileFalse: [
 		self checkAndExpandReference: #content.
 		self nextAttributeInto: attributes namespaces: namespaces.
@@ -15,4 +15,4 @@ nextTag
 	streamReader next == $/
 		ifTrue: [
 			self handleEndTag: tagName.
-			streamReader next].
+			self expectNext: $>].

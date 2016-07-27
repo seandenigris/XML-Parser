@@ -7,8 +7,7 @@
 	"commentStamp" : "JAAyer 3/11/2010 00:01",
 	"instvars" : [
 		"defaultNamespace",
-		"prefixMappings",
-		"isValidating" ],
+		"prefixMappings" ],
 	"name" : "XMLNamespaceScope",
 	"pools" : [
 		 ],

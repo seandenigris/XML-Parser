@@ -1,5 +1,5 @@
 namespaces
-declareNamespaces: namespaces
-	namespaces keysAndValuesDo: [:ns :uri |
-		self nestedScopes declareNamespace: ns uri: uri.
-		self activeSaxHandler startPrefixMapping: ns uri: uri].
+declareNamespaces: aDictionary
+	aDictionary keysAndValuesDo: [:prefix :uri |
+		self nestedScopes declareNamespace: prefix uri: uri.
+		self activeSaxHandler startPrefixMapping: prefix uri: uri]

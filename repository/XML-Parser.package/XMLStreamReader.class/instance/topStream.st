@@ -1,5 +1,5 @@
 streaming
 topStream
-	^self hasNestedStreams
-		ifTrue: [self nestedStreams first]
-		ifFalse: [self stream]
+	^ nestedStreams
+		ifNil: [self stream]
+		ifNotNil: [self nestedStreams first]

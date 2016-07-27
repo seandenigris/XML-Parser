@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"parent:" : "JAAyer 3/10/2010 02:04" },
+		"parent:" : "JAAyer 3/22/2010 19:38" },
 	"instance" : {
 		"add:after:" : "JAAyer 3/10/2010 07:10",
 		"add:afterIndex:" : "JAAyer 3/10/2010 07:10",
@@ -9,21 +9,15 @@
 		"addFirst:" : "JAAyer 3/10/2010 07:10",
 		"addLast:" : "JAAyer 3/10/2010 07:11",
 		"at:ifAbsentPut:" : "JAAyer 3/10/2010 07:14",
-		"at:put:" : "JAAyer 3/10/2010 07:17",
-		"copy" : "JAAyer 3/10/2010 08:27",
-		"copyEmpty" : "JAAyer 3/10/2010 08:34",
-		"domError:" : "JAAyer 3/11/2010 05:21",
-		"errorNodeWithParent" : "JAAyer 3/11/2010 05:21",
-		"parent" : "JAAyer 3/10/2010 07:31",
-		"parent:" : "JAAyer 3/10/2010 02:04",
-		"printOn:" : "JAAyer 3/10/2010 22:10",
-		"printXMLOn:" : "JAAyer 3/10/2010 22:10",
+		"at:put:" : "JAAyer 3/12/2010 06:49",
+		"errorNodeWithParent" : "JAAyer 3/22/2010 22:44",
+		"parent" : "JAAyer 3/22/2010 17:16",
+		"parent:" : "JAAyer 3/22/2010 17:16",
 		"remove:ifAbsent:" : "JAAyer 3/10/2010 07:25",
 		"removeAll" : "JAAyer 3/10/2010 08:53",
 		"removeAt:" : "JAAyer 3/10/2010 07:33",
 		"removeFirst" : "JAAyer 3/10/2010 07:33",
 		"removeLast" : "JAAyer 3/10/2010 07:33",
-		"species" : "JAAyer 3/10/2010 08:27",
-		"with:add:" : "JAAyer 3/10/2010 23:53",
-		"with:onError:" : "JAAyer 3/10/2010 03:21",
-		"with:remove:" : "JAAyer 3/10/2010 22:44" } }
+		"with:add:" : "JAAyer 3/22/2010 21:27",
+		"with:onError:" : "JAAyer 3/22/2010 12:57",
+		"with:remove:" : "JAAyer 3/22/2010 17:18" } }

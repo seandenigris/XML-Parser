@@ -1,3 +1,3 @@
 accessing
 elementAt: aString
-	^ self elementAt: aString ifAbsent: [nil]
+	^ self elementCache firstElementNamed: aString

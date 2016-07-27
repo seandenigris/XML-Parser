@@ -1,3 +1,3 @@
 accessing
 attributeNodes
-	^ attributeList ifNil: [attributeList := XMLAttributeList parent: self]
+	^ attributes ifNil: [self setAttributeNodes: XMLAttributeList new. attributes]

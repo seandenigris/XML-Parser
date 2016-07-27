@@ -1,9 +1,9 @@
 writing xml
-startTag: tagName
+startTag: aTagName
 	self writeIndent.
 	self stream
 		nextPut: $<;
-		nextPutAll: tagName.
+		nextPutAll: aTagName.
 	"self canonical
 		ifFalse: [self stream space]."
-	self pushTag: tagName
+	self openTags openTag: aTagName

@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"CanonicalTable" ],
+		 ],
 	"commentStamp" : "JAAyer 3/5/2010 03:47",
 	"instvars" : [
 		"parent" ],

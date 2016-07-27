@@ -1,4 +1,4 @@
 accessing
 name: aName
-	self namespacedName qualifiedName: aName.
-	self notifyParentOfRenaming.
+	self notifyParentAfterRenamingWith: [self nodeName name: aName].
+	self validateName.

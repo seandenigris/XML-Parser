@@ -1,0 +1,3 @@
+errors
+notWellFormedError: anErrorMessage
+	SAXNotWellFormedException signal: anErrorMessage

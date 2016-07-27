@@ -1,3 +1,3 @@
 instance creation
-parent: aNodeWithChildren
-	^ self new parent: aNodeWithChildren
+parent: aParentNode
+	^ self new parent: aParentNode

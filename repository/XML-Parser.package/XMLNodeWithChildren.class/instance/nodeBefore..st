@@ -1,3 +1,3 @@
 accessing
 nodeBefore: aNode
-	^ self nodes before: aNode ifAbsent: [nil]
+	^ self nodes before: aNode

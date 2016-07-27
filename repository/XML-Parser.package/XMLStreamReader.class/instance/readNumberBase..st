@@ -4,16 +4,16 @@ readNumberBase: base
 
 	| value digit |
 
-	base = 10 ifFalse: [	| numberString | 
-		numberString := self nextUpTo: $;.
-		stream skip: -1.
-		^Integer readFrom: numberString asUppercase readStream base: base. 
-	].
+	base = 10
+		ifFalse: [ | numberString | 
+			numberString := self upTo: $;.
+			stream skip: -1.
+			^ Integer readFrom: numberString asUppercase readStream base: base].
 
 	value := 0.
 	digit := DigitTable at: self peek asciiValue.
 	digit < 0
-		ifTrue: [self errorExpected: 'At least one digit expected here'].
+		ifTrue: [^ nil].
 	self next.
 	value := digit.
 	[digit := DigitTable at: self peek asciiValue.

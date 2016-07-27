@@ -2,4 +2,6 @@ private
 with: aBlock onError: errorBlock
 	^ aBlock
 		on: Error
-		do: [:error | error signal. errorBlock valueWithPossibleArgument: error]
+		do: [:error |
+			errorBlock valueWithPossibleArgument: error.
+			error signal]

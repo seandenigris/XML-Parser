@@ -1,3 +1,3 @@
-namespace
+namespaces
 namespaceURI
-	^ self namespacedName namespaceURI
+	^ self resolvePrefix: self prefix

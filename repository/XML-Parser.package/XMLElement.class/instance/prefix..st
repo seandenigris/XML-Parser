@@ -1,4 +1,4 @@
-namespace
+namespaces
 prefix: aPrefix
-	self namespacedName prefix: aPrefix.
-	self notifyParentOfRenaming.
+	self notifyParentAfterRenamingWith: [self nodeName prefix: aPrefix].
+	self validateName.

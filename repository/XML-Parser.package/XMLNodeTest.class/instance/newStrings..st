@@ -2,4 +2,4 @@ accessing
 newStrings: aNumber
 	^ self
 		createNodes: aNumber
-		with: [:i | XMLStringNode string: 'test', i asString]
+		with: [:i | XMLString string: 'test', i asString]

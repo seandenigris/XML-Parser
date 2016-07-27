@@ -1,3 +1,3 @@
 behaviors
 notRecognized
-	SAXMalformedException signal: 'Malformed entity.'
+	SAXNotWellFormedException signal: 'Malformed entity.'

@@ -1,4 +1,3 @@
 entities
 parameterEntities
-	parameterEntities ifNil: [parameterEntities := Dictionary new].
-	^parameterEntities
+	^ parameterEntities ifNil: [parameterEntities := Dictionary new]

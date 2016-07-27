@@ -1,7 +1,7 @@
 streaming
 checkNestedStream
-	nestedStreams == nil
-		ifFalse: [(peekChar == nil and: [self stream atEnd])
+	nestedStreams ifNotNil: [
+		(peekChar isNil and: [stream atEnd])
 			ifTrue: [
 				self popNestingLevel.
 				self checkNestedStream]]
