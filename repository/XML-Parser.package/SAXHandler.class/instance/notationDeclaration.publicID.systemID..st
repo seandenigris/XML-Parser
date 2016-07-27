@@ -1,2 +1,2 @@
 declaration
-notationDeclaration: aName publicID: aPublicId systemID: aSytemId
+notationDeclaration: aName publicID: aPublicId systemID: aSystemId

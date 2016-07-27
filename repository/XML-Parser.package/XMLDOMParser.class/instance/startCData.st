@@ -1,3 +1,0 @@
-lexical
-startCData
-	isInCDataSection := true

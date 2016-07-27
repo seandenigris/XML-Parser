@@ -1,3 +1,5 @@
 handling tokens
 handleEndDTD
-	self saxHandler endDTD
+	self saxHandler
+		endDTD;
+		isInDTD: false.
