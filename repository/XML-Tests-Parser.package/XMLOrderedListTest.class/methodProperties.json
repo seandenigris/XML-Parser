@@ -98,6 +98,7 @@
 		"testLastFew" : "monty 11/24/2014 08:35",
 		"testLastIndexOf" : "monty 1/18/2015 11:31",
 		"testLastIndexOfIfAbsent" : "monty 1/18/2015 11:32",
+		"testLastOrNil" : "monty 12/3/2015 02:30",
 		"testNew" : "monty 12/14/2014 13:58",
 		"testNewFrom" : "JAA 3/26/2011 18:21",
 		"testNewWithAll" : "monty 1/18/2015 11:26",

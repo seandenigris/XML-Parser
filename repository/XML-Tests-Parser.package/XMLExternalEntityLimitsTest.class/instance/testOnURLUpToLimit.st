@@ -5,7 +5,10 @@ testOnURLUpToLimit
 	self isSkipping
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
-	size := (self feedURL asXMLURI get) contents size.
+	size :=
+		(self feedURL asXMLURI
+			getUpToLimit: nil
+			decoding: false) size.
 	self
 		shouldnt: [
 			parser :=

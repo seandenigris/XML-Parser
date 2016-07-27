@@ -7,7 +7,10 @@ testExternalEntitySizeLimit
 
 	url := self musicXMLExternalEntityURLs first asXMLURI.
 	xml := self doctypeWithDeclarationsForEntityURIs: (Array with: url asString).
-	size := url get contents size.
+	size :=
+		(url
+			getUpToLimit: nil
+			decoding: false) size.
 	((parser := SAXHandler on: xml)
 		resolvesExternalEntities: true;
 		externalEntityResolver)

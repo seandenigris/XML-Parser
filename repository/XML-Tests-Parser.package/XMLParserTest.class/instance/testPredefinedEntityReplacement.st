@@ -9,6 +9,7 @@ testPredefinedEntityReplacement
 			nextPut: $&;
 			nextPutAll: name;
 			nextPut: $;.
+
 		replacements nextPut: char].
 
 	document :=
@@ -21,5 +22,5 @@ testPredefinedEntityReplacement
 			</root>' format: (Array with: references contents)).
 	self
 		assert: (document root attributeAt: 'name') = replacements contents;
-		assert: (document findElementNamed: 'one') contentString = replacements contents;
-		assert: (document findElementNamed: 'two') contentString = '&nonRecursive;'.
+		assert: (document root contentStringAt: 'one') = replacements contents;
+		assert: (document root contentStringAt: 'two') = '&nonRecursive;'.
