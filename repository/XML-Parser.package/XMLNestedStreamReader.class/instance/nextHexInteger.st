@@ -1,21 +1,14 @@
 accessing
 nextHexInteger
-	| maxBaseValue value digitChar |
+	| value digitChar digitValue |
 
-	maxBaseValue := SmallInteger maxVal / 16.
 	value := HexDigitCharacterMap at: self peek ifAbsent: [^ 0].
 	self next.
 	[self atEnd not
 		and: [HexDigitCharacterMap includesKey: (digitChar := self peek)]]
-		whileTrue: [| baseValue digitValue |
+		whileTrue: [
 			self next.
-
-			value <= maxBaseValue
-				ifFalse: [^ value].
-			baseValue := value * 16.
-
-			digitValue := HexDigitCharacterMap at: digitChar.
-			((SmallInteger maxVal - digitValue) > baseValue)
-				ifFalse: [^ value].
-			value := baseValue + digitValue].
+			value := (value * 16) + (HexDigitCharacterMap at: digitChar).
+			value < SmallInteger maxVal
+				ifFalse: [^ Smalltalk maxVal].].
 	^ value.

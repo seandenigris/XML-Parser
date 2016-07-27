@@ -2,8 +2,8 @@ accessing
 nextWhitespace
 	| nextChar |
 
-	buffer reset.
+	writeBuffer reset.
 	[(nextChar := self peek) notNil
 		and: [SeparatorCharacters includes: nextChar]]
-		whileTrue: [buffer nextPut: self next].
-	^ buffer stringContents.
+		whileTrue: [writeBuffer nextPut: self next].
+	^ writeBuffer stringContents.

@@ -1,3 +1,9 @@
-This class represents a node with elements. You will likely use its API through XMLDocument or XMLElement objects.
+This class represents a node with elements. You will likely use its API through its subclasses instead.
 
-To retrieve child elements by name, you can send any of the #element- messages under "accessing." These messages accept both qualified and unqualified names and have constant time complexity. The #firstTag- messages search the receiver and its descendants using depth-first traversal for specific elements, and the #tagsNamed- messages iterate over descendent elements also using depth-first traversal.
+Instances provide "accessing" messages to retrieve child elements by their name and namespace information. The #elementAt: forms return the first matching element, while the #elementsAt: forms return all matching child elements.
+
+As with node enumeration in the superclass, there are two different modes of enumeration: the #elements* enumerating messages that enumerate child elements only, and the #allElements* forms that enumerate all descendent elements, including the receiver if it is an element (but not if it is a document), using depth-first traversal.
+
+The #findElementNamed:* forms can be used to search using depth-first traversal for a specific element. Searching will start with the receiver if it is an element.
+
+All element name matching is done using both the qualified and local name of elements, so 'prefix:element-name' will only match 'prefix:element-name' while 'element-name' will match 'element-name', 'prefix:element-name' or 'different-prefix:element-name' and so on.

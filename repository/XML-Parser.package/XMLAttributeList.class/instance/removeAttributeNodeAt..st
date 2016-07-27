@@ -1,3 +1,3 @@
 accessing
-removeAttributeNamed: aName
+removeAttributeNodeAt: aName
 	^ self remove: (self attributeNodeAt: aName).

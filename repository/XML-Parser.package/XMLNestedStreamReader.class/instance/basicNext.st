@@ -5,6 +5,12 @@ basicNext
 
 	| nextChar |
 
+	basicNextChar
+		ifNotNil: [
+			nextChar := basicNextChar.
+			basicNextChar := nil.
+			^ nextChar].
+
 	stream atEnd
 		ifTrue: [
 			hasNestedStreams ifFalse: [^nil].
@@ -17,8 +23,8 @@ basicNext
 	(nextChar := stream next) == CarriageReturn
 		ifTrue: [
 			nextChar := normalizedLineEndingChar.
-			(stream peek == LineFeed)
-				ifTrue: [stream next]]
+			(stream atEnd not and: [(basicNextChar := stream next) == LineFeed])
+				ifTrue: [basicNextChar := nil]]
 		ifFalse: [
 			(nextChar == LineFeed)
 				ifTrue: [nextChar := normalizedLineEndingChar]].

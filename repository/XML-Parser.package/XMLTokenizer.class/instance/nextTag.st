@@ -5,9 +5,9 @@ nextTag
 		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
 	streamReader skipSeparators.
-	attributes := OrderPreservingDictionary new: 10.
+	attributes := OrderPreservingDictionary new: 10 withDefaultValue: ''.
 	driver usesNamespaces
-		ifTrue: [namespaces := OrderPreservingDictionary new].
+		ifTrue: [namespaces := OrderPreservingDictionary defaultValue: ''].
 	[(nextChar := streamReader peek) == $> or: [nextChar == $/]] whileFalse: [
 		self checkAndExpandReference: #content.
 		self nextAttributeInto: attributes namespaces: namespaces.

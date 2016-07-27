@@ -1,25 +1,22 @@
 testing
 nextMatchAll: aString
-	| i oldStream oldPosition oldPeekChar nextChar pushBackString |
+	| i nextChar pushBackString |
 
-	(oldPeekChar := self peek) == (aString at: 1)
+	self peek == (aString at: 1)
 		ifFalse: [^ false].
-	oldPosition := (oldStream := stream) position.
-	i := 1.
+
+	"we unrolled the first iteration with the above #peek"
+	i := 2.
+	self next.
 	[(i <= aString size)
 		and: [(aString at: i) == (nextChar := self next)]]
 		whileTrue: [i := i + 1].
 	(i > aString size)
 		ifTrue: [^ true].
 
-	stream == oldStream
-		ifTrue: [
-			peekChar := oldPeekChar.
-			stream position: oldPosition]
-		ifFalse:[
-			pushBackString := aString copyFrom: 1 to: i - 1.
-			self pushBack:
-				(nextChar
-					ifNotNil: [pushBackString copyWith: nextChar]
-					ifNil: [pushBackString])].
+	pushBackString := aString copyFrom: 1 to: i - 1.
+	self pushBack:
+		(nextChar
+			ifNotNil: [pushBackString copyWith: nextChar]
+			ifNil: [pushBackString]).
 	^ false.

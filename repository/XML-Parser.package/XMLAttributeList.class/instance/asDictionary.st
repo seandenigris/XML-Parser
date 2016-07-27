@@ -1,3 +1,3 @@
 converting
 asDictionary
-	^ OrderPreservingDictionary newFrom: self asNameValueAssociations
+	^ (OrderPreservingDictionary newFrom: self asNameValueAssociations) defaultValue: ''

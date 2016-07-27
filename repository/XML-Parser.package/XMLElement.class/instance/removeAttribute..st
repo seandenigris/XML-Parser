@@ -1,3 +1,3 @@
 accessing
 removeAttribute: aName
-	^ (self attributeNodes removeAttributeNamed: aName) value
+	^ (self attributeNodes removeAttributeNodeAt: aName) value.

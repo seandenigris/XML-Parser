@@ -2,7 +2,7 @@ accessing
 nextDecimalInteger
 	| digitChar |
 
-	buffer reset.
+	writeBuffer reset.
 	[self atEnd not and: [(digitChar := self peek) isDigit]]
-		whileTrue: [buffer nextPut: self next].
-	^ Integer readFrom: buffer contents readStream.
+		whileTrue: [writeBuffer nextPut: self next].
+	^ Integer readFrom: writeBuffer contents readStream.

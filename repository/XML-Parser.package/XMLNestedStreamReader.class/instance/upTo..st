@@ -2,8 +2,8 @@ streaming
 upTo: aDelimiter
 	| nextChar |
 
-	buffer reset.
+	writeBuffer reset.
 	[self atEnd or: [(nextChar := self next) == aDelimiter]]
-		whileFalse: [buffer nextPut: nextChar].
+		whileFalse: [writeBuffer nextPut: nextChar].
 
-	^ buffer stringContents.
+	^ writeBuffer stringContents.

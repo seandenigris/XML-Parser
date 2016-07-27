@@ -1,3 +1,3 @@
 testing
-includesElementNamed: aName
+includesElementAt: aName
 	^ self elementsByName includesKey: aName

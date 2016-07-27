@@ -1,3 +1,3 @@
 testing
-includesAttributeNamed: aName
+includesAttribute: aName
 	^ self attributesByName includesKey: aName

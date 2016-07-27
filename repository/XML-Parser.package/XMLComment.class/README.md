@@ -1,1 +1,1 @@
-This class represents comments preserved as nodes. 
+This class represents comments preserved as nodes. Comments are ignored during parsing by default. If you want them preserved as comment nodes, use #preservesCommentNodes: with the DOM parser before parsing.

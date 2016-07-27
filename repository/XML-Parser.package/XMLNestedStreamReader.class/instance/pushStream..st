@@ -1,7 +1,8 @@
 streaming
 pushStream: aStream
 	"Continue parsing from the new nested stream."
-	self unpeek.
+	(peekChar isNil and: [basicNextChar isNil])
+		ifFalse: [self pushBack: ''].
 
 	nestedStreams
 		ifNil: [nestedStreams := OrderedCollection with: stream]

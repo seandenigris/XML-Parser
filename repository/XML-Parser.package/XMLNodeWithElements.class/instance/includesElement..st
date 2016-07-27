@@ -1,3 +1,3 @@
 testing
 includesElement: aName
-	^ self nodes includesElementNamed: aName
+	^ self nodes includesElementAt: aName

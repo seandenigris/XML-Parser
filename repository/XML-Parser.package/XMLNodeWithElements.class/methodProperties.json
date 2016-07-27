@@ -4,6 +4,7 @@
 	"instance" : {
 		"addElement:" : "JAAyer 2/25/2010 14:37",
 		"addedElement:" : "JAAyer 11/24/2010 07:16",
+		"allElements" : "JAAyer 12/4/2010 12:32",
 		"allElementsCollect:" : "JAAyer 11/28/2010 12:21",
 		"allElementsDetect:" : "JAAyer 11/25/2010 10:47",
 		"allElementsDetect:ifNone:" : "JAAyer 11/25/2010 14:20",
@@ -45,7 +46,7 @@
 		"firstTagNamed:with:" : "JAAyer 11/25/2010 13:51",
 		"hasContentNodes" : "JAAyer 10/19/2010 11:13",
 		"hasElements" : "JAAyer 11/24/2010 09:27",
-		"includesElement:" : "JAAyer 10/24/2010 16:14",
+		"includesElement:" : "JAAyer 12/6/2010 21:21",
 		"innerXMLParserOn:" : "JAAyer 11/27/2010 09:19",
 		"isContentNode" : "JAAyer 7/20/2010 10:15",
 		"lastElement" : "JAAyer 3/12/2010 10:34",

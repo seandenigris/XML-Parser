@@ -1,3 +1,3 @@
 accessing
 prefixMappings
-	^ prefixMappings ifNil: [prefixMappings := OrderPreservingDictionary new]
+	^ prefixMappings ifNil: [prefixMappings := OrderPreservingDictionary defaultValue: '']
