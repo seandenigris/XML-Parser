@@ -1,4 +1,4 @@
-printing
+private
 withNewXMLWriterOn: aStream do: aOneArgBlock whenAbsent: aZeroArgBlock
 	^ aOneArgBlock value:
 		((Smalltalk

@@ -1,3 +1,3 @@
 private
-newNodeListForCollect
+newListForCollect
 	^ XMLOrderedList new

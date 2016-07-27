@@ -1,5 +1,4 @@
 instance creation
 newElementNamed: aName
-	^ (self classForElement: aName) new
-		name: aName;
-		nodeFactory: self
+	^ (self classForElement: aName)
+		named: aName

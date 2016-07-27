@@ -4,5 +4,7 @@ allElementsDetect: aBlock ifNone: anExceptionBlock
 	of aBlock with an element is true, then return that element. If no evaluation is
 	true, then return nil."
 
-	self allElementsDo: [:each | (aBlock value: each) ifTrue: [^ each]].
+	self allElementsDo: [:each |
+		(aBlock value: each)
+			ifTrue: [^ each]].
 	^ anExceptionBlock value.

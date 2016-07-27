@@ -1,7 +1,7 @@
 enumerating
 allNodesCollect: aBlock
-	| collectedNodes |
+	| collectedObjects |
 
-	collectedNodes := self newNodeListForCollect.
-	self allNodesDo: [:each | collectedNodes addLast: (aBlock value: each)].
-	^ collectedNodes.
+	collectedObjects := self newListForCollect.
+	self allNodesDo: [:each | collectedObjects addLast: (aBlock value: each)].
+	^ collectedObjects.
