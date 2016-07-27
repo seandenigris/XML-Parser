@@ -1,3 +1,5 @@
 *XML-Parser-GTExtensions
 treeNodeLabelText
-	^ self asHighlightedText
+	^ XMLHighlightingWriter new
+		writeWith: [:writer | self writeTreeNodeLabelXMLOn: writer];
+		asHighlightedText

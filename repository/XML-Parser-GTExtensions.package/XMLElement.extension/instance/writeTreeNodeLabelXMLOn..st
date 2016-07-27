@@ -1,17 +1,13 @@
 *XML-Parser-GTExtensions
-treeNodeLabelText
-	| writer |
-
-	writer := XMLHighlightingWriter new.
+writeTreeNodeLabelXMLOn: aWriter
 	self hasTreeNodeChildren
 		ifTrue: [
-			writer startTag
+			aWriter startTag
 				name: self name;
 				setAttributes: attributes]
 		ifFalse: [| tagWriter |
-			(tagWriter := writer tag)
+			(tagWriter := aWriter tag)
 				name: self name;
 				setAttributes: attributes.
 			self hasChildren
-				ifTrue: [tagWriter with: [self writeInnerXMLOn: writer]]].
-	^ writer asHighlightedText.
+				ifTrue: [tagWriter with: [self writeInnerXMLOn: aWriter]]].

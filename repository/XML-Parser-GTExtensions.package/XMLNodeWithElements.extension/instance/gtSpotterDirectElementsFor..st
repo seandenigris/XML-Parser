@@ -4,6 +4,6 @@ gtSpotterDirectElementsFor: aStep
 	aStep listProcessor
 		title: 'Direct elements';
 		allCandidates: [self elements];
-		itemName: #asHighlightedSpotterText;
+		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true

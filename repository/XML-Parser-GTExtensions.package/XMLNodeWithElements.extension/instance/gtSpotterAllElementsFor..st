@@ -4,6 +4,6 @@ gtSpotterAllElementsFor: aStep
 	aStep listProcessor
 		title: 'All elements';
 		allCandidates: [self allElements];
-		itemName: #asHighlightedSpotterText;
+		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true

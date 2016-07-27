@@ -4,5 +4,10 @@ spotterPreviewSourceIn: aComposite
 	
 	aComposite text
 		title: 'Source';
-		display: #asHighlightedSpotterText;
+		display: [
+			XMLHighlightingWriter new
+				writeWith: [:writer |
+					writer formatter indentString: '  '.
+					self writeXMLOn: writer];
+				asHighlightedText];
 		entity: self

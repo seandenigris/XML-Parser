@@ -5,6 +5,6 @@ gtSpotterXMLDocumentFor: aStep
 	aStep listProcessor
 		title: 'XML document';
 		allCandidates: [ (XMLDOMParser parse: self) allElements ];
-		itemName: [ :element | element gtDisplayString ];
+		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
 		wantsToDisplayOnEmptyQuery: true
