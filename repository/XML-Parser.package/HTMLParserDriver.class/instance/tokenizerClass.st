@@ -1,3 +1,0 @@
-private
-tokenizerClass
-	^ HTMLParserTokenizer

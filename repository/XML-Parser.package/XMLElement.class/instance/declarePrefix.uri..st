@@ -2,7 +2,7 @@ namespaces
 declarePrefix: aPrefix uri: aUri
 	| oldMapping |
 
-	(oldMapping := self namespaceScope resolvePrefix: aPrefix) = aUri
+	(oldMapping := self namespaceScope resolvePrefix: aPrefix ifUnmapped: [nil]) = aUri
 		ifTrue: [^ self].
 
 	self

@@ -1,6 +1,6 @@
 private
 validateAttributes
 	self usesNamespaces
-		ifFalse: [^ self].
-
-	self namespaceScope validateAttributePrefixes: self attributeNodes attributesByName.
+		ifTrue: [
+			self namespaceScope
+				validateAttributePrefixes: self attributeNodes attributesByName]

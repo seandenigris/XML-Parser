@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/7/2014 01:27",
+	"commentStamp" : "monty 10/9/2014 20:58",
 	"instvars" : [
 		"matcher",
 		"nextState" ],

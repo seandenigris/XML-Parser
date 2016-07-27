@@ -1,1 +1,0 @@
-This class adds HTML-specific contexts.

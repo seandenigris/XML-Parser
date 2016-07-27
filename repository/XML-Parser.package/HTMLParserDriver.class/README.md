@@ -1,1 +1,0 @@
-This is the driver for the HTMLHandler. It uses the HTMLElementNester to make bad HTML nest correctly.

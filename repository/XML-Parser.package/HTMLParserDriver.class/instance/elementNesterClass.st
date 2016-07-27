@@ -1,3 +1,0 @@
-private
-elementNesterClass
-	^ HTMLElementNester

@@ -1,1 +1,0 @@
-This is the implementation of the tokenizer for the HTML driver.

@@ -5,11 +5,12 @@ validateAttributePrefixes: aDictionary
 
 	aDictionary keysDo: [:each | | prefix |
 		(prefix := each qualifiedNamePrefix) isEmpty "avoid ifNotEmpty: closure overhead"
+			ifTrue: [self validateUnprefixedName: each]
 			ifFalse: [ | namespace oldSize |
 				"not initialized unless needed"
 				namespacedAttributes
 					ifNil: [namespacedAttributes := Set new: aDictionary size].
-				namespace := self validateAndResolvePrefix: prefix ofName: each.
+				namespace := self validateAndResolvePrefix: prefix.
 
 				"checking size after is faster than includes:"
 				oldSize := namespacedAttributes size.

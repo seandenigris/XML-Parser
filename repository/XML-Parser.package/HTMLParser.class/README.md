@@ -1,3 +1,0 @@
-This class is a DOM parser that turns potentially invalid and malformed HTML into a DOM tree. All tag and attribute names are converted to lowercase and markup is unrecognized in <script>, <style>, <title>, and <textarea> sections.
-
-(When printing the DOM tree, use canonicallyPrintOn: or canonicallyPrinted instead of printOn:, printString, or asString to avoid empty elements being printed as self-closing tags, because some (like <script/>) are not handled correctly by browsers.)

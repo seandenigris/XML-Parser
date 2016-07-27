@@ -1,7 +1,7 @@
 private
 validateName
-	(self usesNamespaces and: [self hasPrefix])
+	self usesNamespaces
 		ifTrue: [
 			self namespaceScope
 				validateAndResolvePrefix: self prefix
-				ofName: self name]
+				ofElement: self name]

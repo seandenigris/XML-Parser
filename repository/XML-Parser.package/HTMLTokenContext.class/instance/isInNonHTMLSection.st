@@ -1,3 +1,0 @@
-testing
-isInNonHTMLSection
-	^ context == #inNonHTMLSection
