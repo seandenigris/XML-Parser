@@ -7,4 +7,4 @@ testReset
 	self
 		should: [list reset]
 		removeAll: self listElements
-		fromAndNotifyOf: list.
+		fromAndNotify: list.

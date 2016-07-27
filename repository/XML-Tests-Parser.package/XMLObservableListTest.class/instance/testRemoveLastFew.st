@@ -1,11 +1,16 @@
 tests
 testRemoveLastFew
-	| list  |
-
-	super testRemoveLastFew.
+	| list |
 	
-	list := self listWithElements.
+	super testRemoveLastFew.
+
+	1 to: self listElements size do: [:i |
+		list := self listWithElements.
+		self
+			should: [list removeLast: i]
+			removeAll: (self listElementsLast: i) reversed
+			fromAndNotify: list].
+	list := self emptyList.
 	self
-		should: [list removeLast: 2]
-		removeAll: (self listElementsLast: 2) reversed
-		fromAndNotifyOf: list.
+		should: [list removeFirst: list size + 1] raise: Error;
+		deny: list observer hasNotifications.

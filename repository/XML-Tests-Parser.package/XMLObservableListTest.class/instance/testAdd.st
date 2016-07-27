@@ -5,7 +5,8 @@ testAdd
 	super testAdd.
 
 	list := self emptyList.
-	self
-		should: [list add: self singleElement]
-		add: self singleElement
-		toAndNotifyOf: list.
+	self listElements do: [:each |
+		self
+			should: [list add: each]
+			add: each
+			toAndNotify: list].

@@ -1,18 +1,26 @@
 tests
 testAtPut
-	| list observer |
+	| list |
 
 	super testAtPut.
 
-	list := self listWithSingleElement.
-	observer := XMLRecordingListObserver new.
-	list observer: observer.
-	list at: 1 put: self newElement.
+	list := self listWithElements.
+	1 to: list size do: [:i | | old new |
+		old := list at: i.
+		new := self changedListElements at: i.
+		list at: i put: new.
+		self
+			assertList: list
+			receivedNotificationOfRemoving: old.
+		self
+			assertList: list
+			receivedNotificationOfAdding: new].
 	self
-		assertObserver: observer
-		receivedNotificationOfRemoving: self singleElement
-		from: list.
+		should: [list at: list size + 2 put: self newElement]
+		raise: Error.
 	self
-		assertObserver: observer
-		receivedNotificationOfAdding: self newElement
-		to: list.
+		assert: list observer hasNotifications;
+		assert:
+			(self beforeAddingToNotifications includes:
+				list observer nextNotification selector);
+		deny: list observer hasNotifications.

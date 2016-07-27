@@ -1,0 +1,3 @@
+accesing
+clearNotifications
+	self notificationsQueue removeAll

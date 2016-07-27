@@ -1,17 +1,14 @@
 tests
 testRemoveIfAbsent
-	| list observer |
+	| list |
 
 	super testRemoveIfAbsent.
 
-	list := self listWithSingleElement.
+	list := self listWithElements.
 	self
 		should: [list remove: self singleElement ifAbsent: [nil]]
 		remove: self singleElement
-		fromAndNotifyOf: list.
-
-	observer := XMLRecordingListObserver new.
-	list observer: observer.
+		fromAndNotify: list.
 	self
 		assert: (list remove: self singleElement ifAbsent: [nil]) isNil;
-		deny: observer hasNotifications.
+		deny: list observer hasNotifications.

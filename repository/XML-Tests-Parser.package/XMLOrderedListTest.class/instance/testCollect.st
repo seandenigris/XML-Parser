@@ -4,6 +4,6 @@ testCollect
 
 	list := self listWithElements.
 	self
-		assertList: (list collect: [:each | each asUppercase])
+		assertList: (list collect: [:each | self changeElement: each])
 		collectedFrom: list
-		equals: (self listSpecies newFrom: (self listElements collect: [:each | each asUppercase])).
+		equals: (self listSpecies newFrom: self changedListElements).

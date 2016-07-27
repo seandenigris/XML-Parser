@@ -1,11 +1,9 @@
 tests
 testRemoveAt
-	| list |
-
-	self listElements do: [:each |
+	self listElements withIndexDo: [:each :i | | list |
 		list := self listWithElements.
 		self
-			assert: (list removeAt: (self listElements indexOf: each)) = each;
+			assert: (list removeAt: i) = each;
 			assert: (list = (self listClass newFrom: (self listElements copyWithout: each)))].
 	self
 		should: [self listWithElements removeAt: 0] raise: Error;

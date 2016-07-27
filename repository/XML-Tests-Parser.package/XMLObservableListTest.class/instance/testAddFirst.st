@@ -4,8 +4,9 @@ testAddFirst
 
 	super testAddFirst.
 
-	list := self listWithSingleElement.
-	self
-		should: [list addFirst: self absentElement]
-		add: self absentElement
-		toAndNotifyOf: list.
+	list := self emptyList.
+	self listElements reverseDo: [:each |
+		self
+			should: [list addFirst: each]
+			add: each
+			toAndNotify: list].

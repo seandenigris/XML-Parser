@@ -6,11 +6,9 @@ testCollectThenSelect
 	self
 		assertList:
 			(list
-				collect: [:each | each asUppercase]
-				thenSelect: [:each | each ~= self singleElement asUppercase])
+				collect: [:each | self changeElement: each]
+				thenSelect: [:each | each ~= self changedSingleElement])
 		collectedFrom: list
 		equals:
 			(self listSpecies newFrom:
-				(self listElements
-					collect: [:each | each asUppercase]
-					thenSelect: [:each | each ~= self singleElement asUppercase])).
+				(self changedListElements copyWithout: self changedSingleElement)).

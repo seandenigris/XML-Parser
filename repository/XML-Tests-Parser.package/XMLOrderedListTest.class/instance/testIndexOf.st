@@ -6,5 +6,5 @@ testIndexOf
 	1 to: list size do: [:i |
 		self
 			assert: (list indexOf: (list at: i)) = i;
-			assert: (list indexOf: (list at: i) copy) = i].
-	self assert: (list indexOf: self newElement) isZero.
+			assert: (list indexOf: (self listElements at: i)) = i].
+	self assert: (list indexOf: self absentElement) isZero.

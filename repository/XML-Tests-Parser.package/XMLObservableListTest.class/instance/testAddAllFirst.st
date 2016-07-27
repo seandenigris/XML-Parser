@@ -3,8 +3,13 @@ testAddAllFirst
 	| list |
 
 	super testAddAllFirst.
+
 	list := self emptyList.
 	self
 		should: [list addAllFirst: self listElements]
 		addAll: self listElements reversed
-		toAndNotifyOf: list.
+		toAndNotify: list.
+	self
+		should: [list addAllFirst: self changedListElements]
+		addAll: self changedListElements reversed
+		toAndNotify: list.

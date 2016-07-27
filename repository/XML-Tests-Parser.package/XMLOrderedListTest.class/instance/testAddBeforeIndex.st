@@ -1,15 +1,11 @@
 tests
 testAddBeforeIndex
-	| list i |
+	| list |
 
 	(list := self emptyList) add: self listElements last.
-	i := 0.
+	self listElements allButLast withIndexDo: [:each :i |
+		self assert: (list add: each beforeIndex: i) = each].
 	self
-		assert:
-			(self listElements allButLast
-				allSatisfy: [:each |
-					i := i + 1.
-					(list add: each beforeIndex: i) = each]);
 		assert: list = self listWithElements;
 		should: [list add: self newElement beforeIndex: self listElements size + 2] raise: Error;
 		should: [list add: self newElement beforeIndex: 0] raise: Error.

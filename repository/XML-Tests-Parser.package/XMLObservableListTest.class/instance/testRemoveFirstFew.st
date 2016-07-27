@@ -1,11 +1,16 @@
 tests
 testRemoveFirstFew
-	| list  |
+	| list |
 
 	super testRemoveFirstFew.
-	
-	list := self listWithElements.
+
+	1 to: self listElements size do: [:i |
+		list := self listWithElements.
+		self
+			should: [list removeFirst: i]
+			removeAll: (self listElementsFirst: i)
+			fromAndNotify: list].
+	list := self emptyList.
 	self
-		should: [list removeFirst: 2]
-		removeAll: (self listElementsFirst: 2)
-		fromAndNotifyOf: list.
+		should: [list removeFirst: list size + 1] raise: Error;
+		deny: list observer hasNotifications.

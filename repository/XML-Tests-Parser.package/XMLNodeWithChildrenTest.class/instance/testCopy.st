@@ -1,6 +1,9 @@
 tests
 testCopy
-	| nodeWithNodes nodeWithNodesCopy unvisitedPairs visitedPairs copiedTypes |
+	"this traverses the object graph of each node and compares it with
+	its copy to make sure nodes and the inst vars that should be copied
+	are copied. See #copiedClasses"
+	| nodeWithNodes nodeWithNodesCopy unvisitedPairs visitedPairs copiedClasses |
 
 	super testCopy.
 	nodeWithNodes := self newNodeWithNodes.
@@ -15,10 +18,7 @@ testCopy
 		do: [:node :nodeCopy | unvisitedPairs add: node -> nodeCopy].
 
 	visitedPairs := Set new.
-	copiedTypes :=
-		#(OrderedCollection Dictionary
-			XMLNode XMLNamespaceScope XMLOrderedList)
-			collect: [:each | Smalltalk at: each].
+	copiedClasses := self copiedClasses collect: [:each | Smalltalk at: each].
 	[unvisitedPairs isEmpty]
 		whileFalse: [ | pair originalObject copyObject |
 			pair := unvisitedPairs remove: unvisitedPairs anyOne.
@@ -27,8 +27,10 @@ testCopy
 
 			self deny: originalObject == copyObject.
 			visitedPairs add: pair.
-			1 to: originalObject class instSize do: [:i | | newPair |
-				newPair := (originalObject instVarAt: i) -> (copyObject instVarAt: i).
-				((visitedPairs includes: newPair)
-					or: [copiedTypes noneSatisfy: [:each | newPair key isKindOf: each]])
-					ifFalse: [unvisitedPairs add: newPair]]].
+			1
+				to: (originalObject class instSize min: copyObject class instSize)
+				do: [:i | | newPair |
+					newPair := (originalObject instVarAt: i) -> (copyObject instVarAt: i).
+					((visitedPairs includes: newPair)
+						or: [copiedClasses noneSatisfy: [:each | newPair key isKindOf: each]])
+						ifFalse: [unvisitedPairs add: newPair]]].

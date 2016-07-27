@@ -6,5 +6,7 @@ testLastIndexOf
 	list do: [:each |
 		self assert:
 			(list lastIndexOf: each) =
-				((self listElements, self listElements) lastIndexOf: each)].
+				(self allowsDuplicates
+					ifTrue: [self listElements, self listElements lastIndexOf: each]
+					ifFalse: [self listElements lastIndexOf: each])].
 	self assert: (list lastIndexOf: self newElement) isZero.

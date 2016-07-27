@@ -4,8 +4,9 @@ testAddLast
 
 	super testAddLast.
 
-	list := self listWithSingleElement.
-	self
-		should: [list addLast: self absentElement]
-		add: self absentElement
-		toAndNotifyOf: list.
+	list := self emptyList.
+	self listElements do: [:each |
+		self
+			should: [list addLast: each]
+			add: each
+			toAndNotify: list].

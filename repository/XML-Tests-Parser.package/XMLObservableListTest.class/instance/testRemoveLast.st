@@ -1,17 +1,15 @@
 tests
 testRemoveLast
-	| list observer |
+	| list |
 
 	super testRemoveLast.
 
-	list := self listWithSingleElement.
+	list := self listWithElements.
+	self listElements reverseDo: [:each |
+		self
+			should: [list removeLast]
+			remove: each
+			fromAndNotify: list].
 	self
-		should: [list removeLast]
-		remove: self singleElement
-		fromAndNotifyOf: list.
-
-	observer := XMLRecordingListObserver new.
-	list observer: observer.
-	self
-		should: [list removeLast] raise: Error;
-		deny: observer hasNotifications.
+		should: [list removeFirst] raise: Error;
+		deny: list observer hasNotifications.

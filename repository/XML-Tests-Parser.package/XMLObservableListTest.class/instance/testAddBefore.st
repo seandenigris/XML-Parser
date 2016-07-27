@@ -1,11 +1,14 @@
 tests
 testAddBefore
-	| list |
+	| list last |
 
 	super testAddBefore.
 
-	list := self listWithSingleElement.
-	self
-		should: [list add: self absentElement before: self singleElement]
-		add: self absentElement 
-		toAndNotifyOf: list.
+	last := self listElements last.
+	(list := self emptyList) add: last.
+	"allButLastDo: is not portable"
+	self listElements allButLast do: [:each |
+		self
+			should: [list add: each before: last]
+			add: each
+			toAndNotify: list].

@@ -1,0 +1,3 @@
+accessing
+beforeAddingToNotifications
+	^ #(adding:to:)

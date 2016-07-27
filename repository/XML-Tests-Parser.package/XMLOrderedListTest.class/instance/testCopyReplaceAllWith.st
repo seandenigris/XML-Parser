@@ -9,13 +9,13 @@ testCopyReplaceAllWith
 			assertList:
 				(list
 					copyReplaceAll: replacedElements
-					with: (replacedElements collect: [:each | each asUppercase]))
+					with: (replacedElements collect: [:each | self changeElement: each]))
 			copiedFrom: list
 			equals: 
 				(self listClass newFrom:
 					((self listElements, self listElements) 
 						copyReplaceAll: replacedElements
-						with: (replacedElements collect: [:each | each asUppercase]))).
+						with: (replacedElements collect: [:each | self changeElement: each]))).
 		self
 			assertList:
 				(list

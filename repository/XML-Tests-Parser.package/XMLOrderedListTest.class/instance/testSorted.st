@@ -6,8 +6,8 @@ testSorted
 	self
 		assertList: list sorted
 		copiedFrom: list
-		equals: (self listClass newFrom: (self listElements copy sorted: [:a :b | a <= b])).
+		equals: (self listClass newFrom: (self listElements copy sorted: self sortBlock)).
 	self
-		assertList: (list sorted: [:a :b | a > b])
+		assertList: (list sorted: self reverseSortBlock)
 		copiedFrom: list
-		equals: (self listClass newFrom: (self listElements copy sorted: [:a :b | a > b])).
+		equals: (self listClass newFrom: (self listElements copy sorted: self reverseSortBlock)).

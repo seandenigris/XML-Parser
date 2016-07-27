@@ -1,8 +1,6 @@
 tests
 testRemoveFirstFew
-	| list removedElements |
-
-	1 to: self listElements size do: [:i |
+	1 to: self listElements size do: [:i | | list removedElements |
 		list := self listWithElements.
 		removedElements := list removeFirst: i.
 		self

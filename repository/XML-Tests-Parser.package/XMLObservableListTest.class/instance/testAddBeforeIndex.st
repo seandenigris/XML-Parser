@@ -4,8 +4,9 @@ testAddBeforeIndex
 
 	super testAddBeforeIndex.
 
-	list := self listWithSingleElement.
-	self
-		should: [list add: self absentElement beforeIndex: (list indexOf: self singleElement)]
-		add: self absentElement 
-		toAndNotifyOf: list.
+	(list := self emptyList) add: self listElements last.
+	self listElements allButLast withIndexDo: [:each :i |
+		self
+			should: [list add: each beforeIndex: i]
+			add: each
+			toAndNotify: list].
