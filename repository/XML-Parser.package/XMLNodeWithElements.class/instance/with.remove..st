@@ -7,7 +7,7 @@ with: aBlock remove: aNode
 	Methods that remove anything from #nodes should be implemented around this
 	message."
 
-	self with: aBlock onError: [^ nil].
-	aNode parent: nil.
+	(super with: aBlock remove: aNode) ifNil: [^ nil].
+
 	aNode isTag ifTrue: [self elementCacheRemove: aNode].
 	^ aNode.

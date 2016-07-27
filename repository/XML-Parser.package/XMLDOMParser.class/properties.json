@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "JAAyer 2/21/2010 17:56",
 	"instvars" : [
+		"document",
 		"entity",
 		"stack",
 		"incremental" ],

@@ -1,1 +1,0 @@
-A XMLNamespaceScopeStack keeps track of XMLNamespaceScopes. Sending #enterScope will cause an instance to push a new scope onto the stack that inherits all bindings from the current enclosing scope. Sending #leaveScop causes that scope to be removed.

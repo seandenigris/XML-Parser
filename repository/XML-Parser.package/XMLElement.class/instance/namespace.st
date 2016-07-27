@@ -1,3 +1,3 @@
 namespace
 namespace
-	^ namespace
+	^ self namespacedName namespace

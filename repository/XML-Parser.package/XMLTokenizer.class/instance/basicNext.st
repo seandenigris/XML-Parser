@@ -1,12 +1,11 @@
 streaming
 basicNext
 	"Returns next character in the stream after performing line endings normalization"
-	| char nextChar |
+	| char |
 	
-	char := stream next.
-	char == Character cr 
+	((char := stream next) == CarriageReturn)
 		ifTrue: [
-			char := Character lf.
-			nextChar := stream next.
-			(nextChar = Character lf or: [nextChar == nil]) ifFalse: [self pushBack: nextChar asString]].
+			char := LineFeed.
+			(stream peek == LineFeed)
+				ifTrue: [stream next]].
 	^ char

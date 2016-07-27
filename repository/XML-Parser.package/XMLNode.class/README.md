@@ -1,7 +1,1 @@
-A XMLNode is xxxxxxxxx.
-
-Instance Variables
-	parent:		<Object>
-
-parent
-	- xxxxx
+This is a base class for XML nodes. It contains testing messages and methods to set and access the parent node.

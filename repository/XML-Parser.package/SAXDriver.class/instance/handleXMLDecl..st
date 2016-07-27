@@ -1,5 +1,4 @@
 handling tokens
 handleXMLDecl: attributes
-	self saxHandler
-		checkEOD; 
+	self activeSaxHandler 
 		documentAttributes: attributes

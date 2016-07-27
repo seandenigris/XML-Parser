@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"attributesByName",
+		"scope" ],
+	"name" : "XMLAttributeList",
+	"pools" : [
+		 ],
+	"super" : "XMLNodeWithChildren",
+	"type" : "normal" }

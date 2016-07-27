@@ -1,3 +1,3 @@
 enumerating
-elementsAt: aSymbol do: aBlock
-	(self elementsAt: aSymbol) do: aBlock
+elementsAt: aString do: aBlock
+	(self elementsAt: aString) do: aBlock

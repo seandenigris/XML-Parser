@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 3/5/2010 03:28",
+	"instvars" : [
+		"scopes" ],
+	"name" : "XMLNestedNamespaceScopes",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
 writing xml
 endElement: anElementName
-	self scoping leaveScope.
+	self nestedScopes leaveScope.
 	self endTag: anElementName.

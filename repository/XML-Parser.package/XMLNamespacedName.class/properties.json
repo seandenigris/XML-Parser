@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 3/7/2010 11:31",
+	"instvars" : [
+		"localName",
+		"qualifiedName",
+		"prefix",
+		"scope" ],
+	"name" : "XMLNamespacedName",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

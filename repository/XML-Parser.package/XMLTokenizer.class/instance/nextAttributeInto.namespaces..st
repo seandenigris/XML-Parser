@@ -10,7 +10,7 @@ nextAttributeInto: attributes namespaces: namespaces
 	attrValue := self nextAttributeValue.
 
 	(self usesNamespaces
-		and: [(attrName findString: 'xmlns') = 1])
+		and: [attrName beginsWith: 'xmlns'])
 		ifTrue: [attrName size > 6
 			ifTrue: [namespaces at: (attrName copyFrom: 7 to: attrName size) put: attrValue]
 			ifFalse: [namespaces at: attrName put: attrValue]]

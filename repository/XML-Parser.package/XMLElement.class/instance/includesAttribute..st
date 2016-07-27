@@ -1,3 +1,3 @@
 testing
-includesAttribute: aSymbol
-	^ self attributes includesKey: aSymbol asSymbol
+includesAttribute: aString
+	^ self attributeList includesName: aString

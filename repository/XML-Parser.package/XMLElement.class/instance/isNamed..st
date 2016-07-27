@@ -1,4 +1,4 @@
 testing
-isNamed: aSymbol
-	^ (self localName == aSymbol asSymbol)
-		or: [self qualifiedName == aSymbol asSymbol]
+isNamed: aString
+	^ (self localName = aString)
+		or: [self qualifiedName = aString]

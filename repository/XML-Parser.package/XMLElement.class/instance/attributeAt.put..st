@@ -1,3 +1,3 @@
 accessing
-attributeAt: aSymbol put: aValue
-	^ self attributes at: aSymbol asSymbol put: aValue
+attributeAt: aString put: aValue
+	^ self attributeList valueAt: aString put: aValue

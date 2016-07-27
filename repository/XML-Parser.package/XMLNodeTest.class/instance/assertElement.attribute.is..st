@@ -1,7 +1,7 @@
 assertions
-assertElement: anElement attribute: aSymbol is: aValue
+assertElement: anElement attribute: aString is: aValue
 	self
-		assert: (anElement includesAttribute: aSymbol);
-		assert: (anElement attributeAt: aSymbol) = aValue;
-		assert: (anElement at: aSymbol) = aValue;
-		assert: (anElement @ aSymbol) = aValue
+		assert: (anElement includesAttribute: aString);
+		assert: (anElement attributeAt: aString) = aValue;
+		assert: (anElement at: aString) = aValue;
+		assert: (anElement @ aString) = aValue

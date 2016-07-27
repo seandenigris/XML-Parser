@@ -1,2 +1,0 @@
-content
-startElement: elementName attributeList: attributeList

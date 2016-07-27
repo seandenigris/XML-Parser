@@ -1,3 +1,3 @@
 namespaces
 leaveScope
-	self scoping leaveScope
+	self nestedScopes leaveScope

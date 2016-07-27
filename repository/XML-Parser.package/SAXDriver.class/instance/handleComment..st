@@ -1,5 +1,4 @@
 handling tokens
 handleComment: aString
-	self saxHandler
-		checkEOD; 
+	self activeSaxHandler 
 		comment: aString

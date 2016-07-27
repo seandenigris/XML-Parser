@@ -1,3 +1,3 @@
 accessing
-contentStringAt: aSymbol
-	^ (self elementAt: aSymbol ifAbsent: [^ '']) contentString
+contentStringAt: aString
+	^ (self elementAt: aString ifAbsent: [^ '']) contentString

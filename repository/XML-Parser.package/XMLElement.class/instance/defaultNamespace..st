@@ -4,7 +4,7 @@ defaultNamespace: aNamespaceUri
 
 	oldDefaultNamespace := self defaultNamespace.
 	self
-		updateEnclosedScopesWith: [:scope |
-			scope defaultNamespace: aNamespaceUri]
-		where: [:scope |
-			scope defaultNamespace = oldDefaultNamespace].
+		updateEnclosedScopesWith: [:each |
+			each defaultNamespace: aNamespaceUri]
+		where: [:each |
+			each defaultNamespace = oldDefaultNamespace].

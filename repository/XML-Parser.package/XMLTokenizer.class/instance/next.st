@@ -6,9 +6,8 @@ next
 	peekChar
 		ifNil: [
 			nestedStreams ifNotNil: [self checkNestedStream].
-			^nextChar := self basicNext]
+			^ self basicNext]
 		ifNotNil: [
 			nextChar := peekChar.
 			peekChar := nil.
-			^nextChar].
-	
+			^ nextChar].

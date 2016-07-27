@@ -3,7 +3,7 @@ test060addingElements
 	| node elements children |
 
 	node := XMLNodeWithElements new.
-	elements := self newElementsNamed: #(foo bar baz).
+	elements := self newElementsNamed: #('foo' 'bar' 'baz').
 	node addNodes: (self interspersedWithNodes: elements).
 	self
 		assert: node hasElements;

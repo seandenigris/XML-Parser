@@ -1,14 +1,13 @@
 writing xml
 startElement: elementName attributeList: attributeList scope: namespaceScope
 	self startTag: elementName.
-	self scoping enterScope.
+	self nestedScopes enterScope.
 
-	namespaceScope bindingsDo: [:namespace :uri |
-		(self scoping isNamespace: namespace boundTo: uri)
-			ifFalse: [self xmlns: namespace uri: uri]].
+	namespaceScope prefixMappingsDo: [:prefix :uri |
+		(self nestedScopes isPrefix: prefix mappedTo: uri)
+			ifFalse: [self xmlns: prefix uri: uri]].
 
-	(namespaceScope defaultNamespace ~= self scoping defaultNamespace)
+	(namespaceScope defaultNamespace ~= self nestedScopes defaultNamespace)
 		ifTrue: [self xmlns: nil uri: namespaceScope defaultNamespace].
 
-	attributeList keys asSortedCollection do: [:key |
-		self attribute: key value: (attributeList at: key)]
+	attributeList printXMLOn: self.

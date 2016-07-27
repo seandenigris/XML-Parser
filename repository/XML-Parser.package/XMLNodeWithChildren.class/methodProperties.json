@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addNode:" : "JAAyer 3/6/2010 06:36",
+		"addNode:after:" : "JAAyer 3/6/2010 06:36",
+		"addNode:before:" : "JAAyer 3/6/2010 06:36",
+		"addNodeFirst:" : "JAAyer 3/6/2010 06:36",
+		"addNodes:" : "JAAyer 3/6/2010 06:36",
+		"changedChildNode:" : "JAAyer 3/7/2010 04:08",
+		"includesNode:" : "JAAyer 3/6/2010 06:37",
+		"isEmpty" : "JAAyer 3/6/2010 06:37",
+		"lastNode" : "JAAyer 3/7/2010 05:56",
+		"nodeAfter:" : "JAAyer 3/6/2010 06:36",
+		"nodeBefore:" : "JAAyer 3/6/2010 06:36",
+		"nodes" : "JAAyer 3/6/2010 06:36",
+		"nodesDo:" : "JAAyer 3/6/2010 06:37",
+		"printXMLOn:" : "JAAyer 3/6/2010 06:37",
+		"removeNode:" : "JAAyer 3/6/2010 06:36",
+		"removeNodes" : "JAAyer 3/6/2010 06:36",
+		"removeNodes:" : "JAAyer 3/6/2010 06:36",
+		"topNode" : "JAAyer 3/6/2010 06:37",
+		"with:add:" : "JAAyer 3/6/2010 06:41",
+		"with:onError:" : "JAAyer 3/6/2010 06:41",
+		"with:remove:" : "JAAyer 3/6/2010 06:41" } }

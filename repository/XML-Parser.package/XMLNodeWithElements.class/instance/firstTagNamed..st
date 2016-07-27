@@ -1,5 +1,5 @@
 searching
-firstTagNamed: aSymbol 
+firstTagNamed: aString 
 	"Return the first encountered node with the specified tag. Pass the message on"
 
-	^ self recurseUntilTrue: [:each | each isNamed: aSymbol]
+	^ self recurseUntilTrue: [:each | each isNamed: aString]

@@ -1,5 +1,5 @@
 accessing
-valueFor: aSymbol
+valueFor: aString
 	self deprecated: 'use #at: as a shortcut instead'.
 
-	^ self at: aSymbol.
+	^ self at: aString.

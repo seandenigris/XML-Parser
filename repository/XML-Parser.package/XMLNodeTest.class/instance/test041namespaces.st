@@ -7,4 +7,4 @@ test041namespaces
 	uri := 'http://foo'.
 	self
 		assertNode: node namespace: nil uri: nil;
-		assertNode: (node namespace: ns uri: uri) namespace: ns uri: uri.
+		assertNode: (node prefix: ns uri: uri) namespace: ns uri: uri.

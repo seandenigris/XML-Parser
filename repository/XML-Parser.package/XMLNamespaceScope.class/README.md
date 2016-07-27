@@ -1,1 +1,1 @@
-An XMLNamespaceScope is a set of bindings between namespaces prefixes and URIs, and also a default URI. Scopes can be created from other scopes by sending #enclosingScope: to XMLNamespaceScope with the other XMLNamespaceScope as the argument.
+An XMLNamespaceScope is a set of bindings between namespace prefixes and URIs, and also a default URI. Scopes can be created from other scopes by sending #enclosingScope: to XMLNamespaceScope with the other XMLNamespaceScope as the argument.

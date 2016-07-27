@@ -1,0 +1,3 @@
+testing
+hasPrefix
+	^ prefix notNil

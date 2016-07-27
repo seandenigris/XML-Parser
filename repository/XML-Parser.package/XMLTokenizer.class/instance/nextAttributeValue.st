@@ -35,5 +35,4 @@ nextAttributeValue
 	nextPeek == delimiterChar]
 		whileFalse: [
 			nextChar ifNotNil: [attributeValueStream nextPut: nextChar]].
-	^self fastStreamStringContents: attributeValueStream
-"	^attributeValueStream contents"
+	^self fastStreamStringContents: attributeValueStream.

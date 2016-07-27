@@ -1,5 +1,4 @@
 handling tokens
 handleWhitespace: aString
-	self saxHandler
-		checkEOD; 
+	self activeSaxHandler 
 		ignorableWhitespace: aString

@@ -1,26 +1,23 @@
 handling tokens
 handleEndTag: elementName
-	| namespace localName namespaceURI |
+	| prefix localName namespaceURI |
 
 	self usesNamespaces
 		ifTrue: [
-			elementName splitQualifiedNameInto: [:ns :ln |
-				namespace := ns.
-				localName := ln].
+			elementName splitQualifiedNameInto: [:prefixPart :localPart |
+				prefix := prefixPart.
+				localName := localPart.
+				namespaceURI := self nestedScopes resolvePrefix: prefix].
+			self validateEndTag: localName prefix: prefix]
+		ifFalse: [localName := elementName].
+		
+	self activeSaxHandler 
+		endElement: localName
+		qualifiedName: elementName
+		prefix: prefix
+		uri: namespaceURI.
 
-			(namespace isNil or: [self scoping isBoundNamespace: namespace])
-				ifFalse: [self errorBadNamespace: namespace inEndTag: elementName].
-
-			"call the handler"
-			self saxHandler
-				checkEOD; 
-				endElement: localName
-				namespace: namespace
-				qualifiedName: elementName
-				scope: self scoping currentScope.
-			self scoping leaveScope]
-		ifFalse: [
-			"call the handler"
-			self saxHandler
-				checkEOD; 
-				endElement: elementName namespace: nil namespaceURI: nil qualifiedName: elementName]
+	self usesNamespaces
+		ifTrue: [
+			self nestedScopes leaveScope.
+			self activeSaxHandler endPrefixMapping: prefix].

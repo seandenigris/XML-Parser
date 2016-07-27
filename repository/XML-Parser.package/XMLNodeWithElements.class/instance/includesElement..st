@@ -1,3 +1,3 @@
 testing
-includesElement: aSymbol
-	^ (self elementAt: aSymbol) notNil
+includesElement: aString
+	^ (self elementAt: aString) notNil

@@ -1,3 +1,3 @@
 private
 elementsByName 
-	^ elementsByName ifNil: [elementsByName := IdentityDictionary new].
+	^ elementsByName ifNil: [elementsByName := Dictionary new].

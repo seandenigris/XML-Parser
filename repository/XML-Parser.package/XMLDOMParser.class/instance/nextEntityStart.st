@@ -1,5 +1,5 @@
 parsing
 nextEntityStart
-	[self driver nextEntity.
+	[self driver nextToken.
 	self stack isEmpty] whileTrue.
 	^entity

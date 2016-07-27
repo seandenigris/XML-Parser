@@ -1,3 +1,3 @@
 accessing
-at: aSymbol ifAbsent: aBlock
-    ^ self attributeAt: aSymbol ifAbsent: aBlock
+at: aString ifAbsent: aBlock
+	^ self attributeAt: aString ifAbsent: aBlock

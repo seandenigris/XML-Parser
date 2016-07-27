@@ -5,8 +5,8 @@ nextTag
 		ifTrue: [^self nextEndTag].
 	tagName := self nextName.
 	self skipSeparators.
-	attributes := Dictionary new: 33.
-	namespaces := Dictionary new: 5.
+	attributes := XMLOrderPreservingDictionary new: 10.
+	namespaces := XMLOrderPreservingDictionary new: 5.
 	[(nextChar := self peek) == $> or: [nextChar == $/]] whileFalse: [
 		self checkAndExpandReference: #content.
 		self nextAttributeInto: attributes namespaces: namespaces.

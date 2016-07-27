@@ -1,7 +1,9 @@
 instance creation
 on: aStream
-	| driver parser |
-	driver := SAXDriver on: aStream.
+	| driver |
+	driver := SAXDriver on:
+		(aStream isStream
+			ifTrue: [aStream]
+			ifFalse: [aStream readStream]).
 	driver validating: true.
-	parser := self new driver: driver.
-	^parser
+	^ self new driver: driver.

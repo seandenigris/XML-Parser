@@ -1,3 +1,5 @@
-initialize
+initialization
 setScope: aNamespaceScope
-	namespaceScope := XMLNamespaceScope enclosingScope: aNamespaceScope
+	scope := (XMLNamespaceScope enclosingScope: aNamespaceScope).
+	self namespacedName setScope: scope.
+	self attributeList setScope: scope.

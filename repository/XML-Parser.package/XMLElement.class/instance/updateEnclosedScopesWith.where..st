@@ -4,8 +4,8 @@ updateEnclosedScopesWith: aBlock where: aConditional
 	where aConditional is true. It stops descending down a path of a subtree
 	as soon as aConditional is false, but continues down other paths."
 
-	(aConditional value: self namespaceScope)
-		ifTrue: [aBlock value: self namespaceScope]
+	(aConditional value: self scope)
+		ifTrue: [aBlock value: self scope]
 		ifFalse: [^ self].
 
 	self elementsDo: [:each |

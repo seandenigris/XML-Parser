@@ -1,5 +1,5 @@
 accessing
-valueFor: aSymbol ifAbsent: aBlock 
+valueFor: aString ifAbsent: aBlock 
 	self deprecated: 'use #at:ifAbsent: as a shortcut instead'.
 
-	^ self at: aSymbol ifAbsent: aBlock
+	^ self at: aString ifAbsent: aBlock

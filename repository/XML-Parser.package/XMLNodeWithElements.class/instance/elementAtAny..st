@@ -1,3 +1,3 @@
 accessing
-elementAtAny: aSymbolArray
-	^ self elementAtAny: aSymbolArray ifAbsent: [nil]
+elementAtAny: aStringArray
+	^ self elementAtAny: aStringArray ifAbsent: [nil]

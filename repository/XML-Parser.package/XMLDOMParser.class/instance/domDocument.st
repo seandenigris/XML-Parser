@@ -1,5 +1,5 @@
 parsing
 domDocument
-	[self startDocument; parseDocument]
-		ensure: [self driver stream close].
-	^document
+	[self parseDocument] ensure: [self driver stream close].
+
+	^ document.

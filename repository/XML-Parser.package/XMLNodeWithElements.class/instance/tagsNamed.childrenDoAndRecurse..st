@@ -1,5 +1,5 @@
 searching
-tagsNamed: aSymbol childrenDoAndRecurse: aOneArgumentBlock
+tagsNamed: aString childrenDoAndRecurse: aOneArgumentBlock
 	"Evaluate aOneArgumentBlock for all children who match and recurse"
 
-	self elementsDo: [:each | each tagsNamed: aSymbol do: aOneArgumentBlock]
+	self elementsDo: [:each | each tagsNamed: aString do: aOneArgumentBlock]

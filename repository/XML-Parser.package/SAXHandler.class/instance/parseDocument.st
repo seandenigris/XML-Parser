@@ -1,3 +1,4 @@
 parsing
 parseDocument
-	[self driver nextEntity isNil or: [self eod]] whileFalse
+	self startDocument.
+	[self driver nextToken isNil or: [self eod]] whileFalse

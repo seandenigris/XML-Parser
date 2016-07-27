@@ -1,3 +1,3 @@
 accessing
-at: aSymbol
-    ^ self at: aSymbol ifAbsent: ['']
+at: aString
+	^ self at: aString ifAbsent: ['']

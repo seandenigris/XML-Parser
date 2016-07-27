@@ -1,3 +1,3 @@
 accessing
-elementsAt: aSymbol
-	^ self elementsAt: aSymbol ifAbsent: [self newElements]
+elementsAt: aString
+	^ self elementsAt: aString ifAbsent: [self newElements]

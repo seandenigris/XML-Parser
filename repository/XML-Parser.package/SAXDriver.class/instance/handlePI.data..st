@@ -1,5 +1,4 @@
 handling tokens
 handlePI: piTarget data: piData
-	self saxHandler
-		checkEOD; 
+	self activeSaxHandler 
 		processingInstruction: piTarget data: piData

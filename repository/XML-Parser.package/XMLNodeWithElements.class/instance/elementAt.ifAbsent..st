@@ -1,3 +1,3 @@
 accessing
-elementAt: aSymbol ifAbsent: aBlock
-	^ (self elementsAt: aSymbol ifAbsent: [^ aBlock value]) first
+elementAt: aString ifAbsent: aBlock
+	^ (self elementsAt: aString ifAbsent: [^ aBlock value]) first

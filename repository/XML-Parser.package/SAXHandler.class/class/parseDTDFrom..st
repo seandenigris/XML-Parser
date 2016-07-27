@@ -5,6 +5,4 @@ parseDTDFrom: aStream
 	driver validating: true.
 	driver startParsingMarkup.
 	parser := self new driver: driver.
-	parser startDocument.
-	parser parseDocument.
-	^parser
+	^ parser parseDocument.

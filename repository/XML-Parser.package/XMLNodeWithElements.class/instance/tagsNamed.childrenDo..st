@@ -1,7 +1,7 @@
 searching
-tagsNamed: aSymbol childrenDo: aOneArgumentBlock
+tagsNamed: aString childrenDo: aOneArgumentBlock
 	"Evaluate aOneArgumentBlock for all children who match"
 
 	self deprecated: 'use #elementsAt:do: instead'.
 
-	self elementsAt: aSymbol do: aOneArgumentBlock.
+	self elementsAt: aString do: aOneArgumentBlock.

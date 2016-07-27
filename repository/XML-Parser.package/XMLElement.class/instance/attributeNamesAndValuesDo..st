@@ -1,0 +1,3 @@
+enumerating
+attributeNamesAndValuesDo: aTwoArgumentBlock
+	self attributeList namesAndValuesDo: aTwoArgumentBlock

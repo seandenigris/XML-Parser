@@ -1,5 +1,5 @@
 private
-elementCacheAt: aSymbol add: anElement
+elementCacheAt: aString add: anElement
 	(self elementsByName
-		at: aSymbol asSymbol
+		at: aString
 		ifAbsentPut: [self newElements]) add: anElement

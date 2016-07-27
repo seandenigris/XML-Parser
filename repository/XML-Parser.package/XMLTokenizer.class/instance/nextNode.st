@@ -14,4 +14,4 @@ nextNode
 			ifTrue: [self nextMarkupDeclaration]
 			ifFalse: [self nextDocType]].
 	nextChar == $? ifTrue: [^self nextPI].
-	^self nextTag
+	self nextTag

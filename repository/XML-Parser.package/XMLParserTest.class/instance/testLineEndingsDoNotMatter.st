@@ -9,5 +9,5 @@ testLineEndingsDoNotMatter
 	cr := XMLDOMParser parseDocumentFrom: text readStream.
 	crlf := XMLDOMParser parseDocumentFrom: text withInternetLineEndings readStream.
 	self assert:
-		(cr elements first contentString) =
-		(crlf elements first contentString).
+		(cr root contentString) =
+		(crlf root contentString).

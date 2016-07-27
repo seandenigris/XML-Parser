@@ -3,8 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"CarriageReturn",
 		"CharEscapes",
 		"DigitTable",
+		"LineFeed",
 		"LiteralChars",
 		"NameDelimiters",
 		"SeparatorTable" ],

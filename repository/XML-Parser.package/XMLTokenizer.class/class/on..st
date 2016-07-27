@@ -1,3 +1,3 @@
 instance creation
 on: aStream
-	^self new parseStream: aStream
+	^self new stream: aStream

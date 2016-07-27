@@ -1,3 +1,3 @@
 namespace
 defaultNamespace
-	^ self namespaceScope defaultNamespace
+	^ self scope defaultNamespace

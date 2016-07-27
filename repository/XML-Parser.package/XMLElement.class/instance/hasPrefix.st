@@ -1,3 +1,3 @@
 testing
 hasPrefix
-	^ self localName ~~ self qualifiedName
+	^ self namespacedName hasPrefix

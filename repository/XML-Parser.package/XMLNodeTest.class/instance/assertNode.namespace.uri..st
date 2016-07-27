@@ -1,5 +1,5 @@
 assertions
 assertNode: aNode namespace: aNamespace uri: aUri
 	self
-		assert: aNode namespace = aNamespace;
+		assert: aNode prefix = aNamespace;
 		assert: aNode namespaceURI = aUri

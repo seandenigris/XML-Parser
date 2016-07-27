@@ -3,7 +3,7 @@ test010node
 	| node parent testingMessages accessors |
 
 	node := XMLNode new.
-	testingMessages := (XMLNode methodsInCategory: #testing) copyWithout: #isEmpty.
+	testingMessages := (XMLNode methodsInCategory: 'testing') copyWithout: 'isEmpty'.
 	accessors := #(nextNode previousNode parent).
 	self
 		assert: node isEmpty;

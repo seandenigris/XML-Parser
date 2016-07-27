@@ -1,4 +1,4 @@
 private
 push: anObject
-	self stack add: anObject.
+	self stack addLast: anObject.
 	entity := anObject

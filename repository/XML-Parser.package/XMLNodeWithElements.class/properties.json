@@ -6,11 +6,10 @@
 		 ],
 	"commentStamp" : "JAAyer 3/1/2010 18:53",
 	"instvars" : [
-		"nodes",
 		"elements",
 		"elementsByName" ],
 	"name" : "XMLNodeWithElements",
 	"pools" : [
 		 ],
-	"super" : "XMLNode",
+	"super" : "XMLNodeWithChildren",
 	"type" : "normal" }

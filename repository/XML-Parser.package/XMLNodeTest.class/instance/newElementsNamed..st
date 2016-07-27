@@ -1,18 +1,16 @@
 accessing
 newElementsNamed: aNameArray
-	| names fullName localName namespace |
+	| names qualifiedName element |
 
 	names := aNameArray asOrderedCollection.
 	^ self
 		createNodes: aNameArray size
 		with: [
-			fullName := names removeFirst asString.
-			(localName := fullName copyAfter: $:)
-				ifNotEmpty: [
-					namespace := (fullName copyUpTo: $:).
-					XMLElement
-						named: localName
-						namespace: namespace
-						uri: 'http://', namespace
-						attributes: Dictionary new]
-				ifEmpty: [XMLElement named: fullName]].
+			((qualifiedName := names removeFirst) includes: $:)
+				ifTrue: [
+					qualifiedName splitQualifiedNameInto: [:prefix :localPart |
+						element := XMLElement
+							named: qualifiedName
+							namespaceURI: 'http://', prefix]]
+				ifFalse: [element := XMLElement named: qualifiedName].
+				element].

@@ -1,3 +1,3 @@
 namespace
 namespaceURI
-	^ self namespaceScope resolveNamespace: self namespace
+	^ self namespacedName namespaceURI

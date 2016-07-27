@@ -1,5 +1,5 @@
 searching
-tagsNamed: aSymbol ifReceiverDoAndRecurse: aOneArgumentBlock
+tagsNamed: aString ifReceiverDoAndRecurse: aOneArgumentBlock
 	self deprecated: 'use #tagsNamed:do: instead'.
 
-	self tagsNamed: aSymbol do: aOneArgumentBlock.
+	self tagsNamed: aString do: aOneArgumentBlock.

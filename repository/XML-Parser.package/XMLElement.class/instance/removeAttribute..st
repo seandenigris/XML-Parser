@@ -1,3 +1,3 @@
 accessing
-removeAttribute: aSymbol
-	^ self attributes removeKey: aSymbol asSymbol
+removeAttribute: aString
+	^ self attributeList removeName: aString

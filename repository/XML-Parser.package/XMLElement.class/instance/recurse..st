@@ -2,6 +2,6 @@ searching
 recurse: aBlock
 	"See superclass version."
 
-	aBlock valueWithPossibleArgument: self.
+	aBlock value: self.
 
 	super recurse: aBlock.

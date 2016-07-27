@@ -1,4 +1,4 @@
 accessing
-@ aSymbolOrString
+@ aString
 	"shorthand form"
-	^ self at: aSymbolOrString
+	^ self at: aString

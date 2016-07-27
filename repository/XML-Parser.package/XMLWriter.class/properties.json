@@ -9,11 +9,11 @@
 	"instvars" : [
 		"stream",
 		"stack",
-		"scoping",
 		"canonical",
 		"currentIndent",
 		"indentString",
-		"newLinesAllowed" ],
+		"newLinesAllowed",
+		"nestedScopes" ],
 	"name" : "XMLWriter",
 	"pools" : [
 		 ],

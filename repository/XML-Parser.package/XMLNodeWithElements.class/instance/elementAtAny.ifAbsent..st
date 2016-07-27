@@ -1,6 +1,6 @@
 accessing
-elementAtAny: aSymbolArray ifAbsent: aBlock
+elementAtAny: aStringArray ifAbsent: aBlock
 	| answer |
 
-	aSymbolArray do: [:each | (answer := self elementAt: each) ifNotNil: [^ answer]].
+	aStringArray do: [:each | (answer := self elementAt: each) ifNotNil: [^ answer]].
 	^ aBlock value.

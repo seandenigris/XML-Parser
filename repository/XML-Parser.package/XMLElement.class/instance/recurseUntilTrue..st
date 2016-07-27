@@ -2,7 +2,7 @@ searching
 recurseUntilTrue: aBlock
 	"See superclass version."
 
-	(aBlock valueWithPossibleArgument: self)
+	(aBlock value: self)
 		ifTrue: [^ self].
 
 	^ super recurseUntilTrue: aBlock.

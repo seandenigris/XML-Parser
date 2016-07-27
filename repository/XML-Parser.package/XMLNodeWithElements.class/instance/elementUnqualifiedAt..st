@@ -1,5 +1,5 @@
 accessing
-elementUnqualifiedAt: aSymbol
+elementUnqualifiedAt: aString
 	self deprecated: 'use #elementAt: with an unqualified name instead'.
 
-	^ self elementAt: aSymbol.
+	^ self elementAt: aString.

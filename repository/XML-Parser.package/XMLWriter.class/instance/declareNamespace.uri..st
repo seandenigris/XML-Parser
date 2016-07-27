@@ -1,3 +1,3 @@
 namespaces
 declareNamespace: ns uri: uri
-	self scoping declareNamespace: ns uri: uri
+	self nestedScopes declareNamespace: ns uri: uri

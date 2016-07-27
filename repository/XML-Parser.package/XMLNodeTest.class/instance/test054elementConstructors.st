@@ -4,31 +4,34 @@ test054elementConstructors
 
 	noAttributes := Dictionary new.
 	self
-		assertElement: (XMLElement named: #foo)
-		name: #foo
+		assertElement: (XMLElement named: 'foo')
+		name: 'foo'
 		attributes: noAttributes
 		contentString: ''.
 
-	attributes := Dictionary with: #foo->'test1' with: 'bar'->'test2'.
+	attributes := Dictionary with: 'foo'->'test1' with: 'bar'->'test2'.
 	self
-		assertElement: (XMLElement named: #foo attributes: attributes)
-		name: #foo
+		assertElement: (XMLElement named: 'foo' attributes: attributes)
+		name: 'foo'
 		attributes: attributes
 		contentString: ''.
 
 	str := self markupString.
 	self
-		assertElement: (XMLElement named: #foo contentString: str)
-		name: #foo
+		assertElement: (XMLElement named: 'foo' content: str)
+		name: 'foo'
 		attributes: noAttributes
 		contentString: str.
 	self
-		assertElement: (XMLElement named: #foo attributes: attributes contentString: str)
-		name: #foo
+		assertElement: (XMLElement named: 'foo' attributes: attributes content: str)
+		name: 'foo'
 		attributes: attributes
 		contentString: str.
 
-	element := XMLElement named: #foo namespace: 'prefix' uri: 'http://foo' attributes: attributes.
+	element := XMLElement
+		named: 'prefix:foo'
+		namespaceURI: 'http://foo'
+		attributes: attributes.
 	self
-		assertElement: element name: #prefix:foo attributes: attributes contentString: '';
+		assertElement: element name: 'prefix:foo' attributes: attributes contentString: '';
 		assertNode: element namespace: 'prefix' uri: 'http://foo'.

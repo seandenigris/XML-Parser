@@ -1,5 +1,3 @@
 instance creation
-named: aString attributes: attributeList
-	^ self new
-		name: aString;
-		setAttributes: attributeList
+named: aString attributes: aDictionary
+	^ (self named: aString) setAttributes: aDictionary

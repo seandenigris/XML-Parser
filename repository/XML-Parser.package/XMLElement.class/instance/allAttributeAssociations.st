@@ -1,3 +1,0 @@
-accessing
-allAttributeAssociations
-	^ self attributes associations asSortedCollection asOrderedCollection
