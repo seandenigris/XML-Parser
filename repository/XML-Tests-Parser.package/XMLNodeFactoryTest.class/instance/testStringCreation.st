@@ -3,7 +3,8 @@ testStringCreation
 	| factory document string |
 
 	factory := self newFactory.
-	document := factory newDocument.
+	(document := factory newDocument)
+		nodeFactory: factory.
 	string := document newString: 'test'.
 	self
 		assert: string class == self stringClass;

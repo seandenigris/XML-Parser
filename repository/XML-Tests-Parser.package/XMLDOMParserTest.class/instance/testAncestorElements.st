@@ -1,5 +1,5 @@
 tests
-testAncestors
+testAncestorElements
 	| document nodesAndAncestors ancestorStack |
 
 	document := XMLDOMParser parse: self addressBookXML.
@@ -15,7 +15,7 @@ testAncestors
 
 	nodesAndAncestors keysAndValuesDo: [:node :ancestors | | enumerated |
 		enumerated := OrderedCollection new.
-		node ancestorNodesDo: [:each | enumerated add: each].
+		node ancestorElementsDo: [:each | enumerated add: each].
 		self
-			assert: enumerated = ancestors;
-			assert: node ancestorNodes asOrderedCollection = ancestors].
+			assert: enumerated = (ancestors select: [:each | each isElement]);
+			assert: node ancestorElements asOrderedCollection = (ancestors select: [:each | each isElement])].

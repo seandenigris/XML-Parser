@@ -3,7 +3,8 @@ testDocumentCreation
 	| factory document newDocument |
 
 	factory := self newFactory.
-	document := factory newDocument.
+	(document := factory newDocument)
+		nodeFactory: factory.
 	newDocument := document newDocument.
 	self
 		assert: newDocument class == self documentClass;
