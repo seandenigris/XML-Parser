@@ -1,3 +1,3 @@
 testing
 canDecodeEncoding: anEncoding
-	^ false
+	^ self encodingNames includes: anEncoding

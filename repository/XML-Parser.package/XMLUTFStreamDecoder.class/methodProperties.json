@@ -1,11 +1,7 @@
 {
 	"class" : {
-		"basicEncodingNames" : "monty 11/12/2014 03:25",
-		"byteOrderMark" : "monty 11/12/2014 05:10",
-		"byteOrderMarkBytes" : "monty 11/11/2014 22:01",
-		"canDecodeEncoding:" : "monty 11/11/2014 22:07",
-		"encodingNames" : "monty 12/10/2014 04:56",
-		"newForEncoding:" : "monty 11/12/2014 01:06" },
+		"byteOrderMark" : "monty 12/14/2014 07:04",
+		"byteOrderMarkBytes" : "monty 11/11/2014 22:01" },
 	"instance" : {
 		"characterWithValue:" : "monty 11/11/2014 18:55",
 		"errorInvalidCodePoint" : "monty 11/11/2014 18:50" } }

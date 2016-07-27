@@ -1,4 +1,4 @@
-instance creation
+private
 textConverterForEncoding: anEncoding
 	^ TextConverterCache
 		at: anEncoding

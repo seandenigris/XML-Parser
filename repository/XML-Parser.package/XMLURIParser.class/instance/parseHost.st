@@ -1,6 +1,6 @@
 parsing
 parseHost
-	^ (uriStream position > 0
+	^ (uriStream xmlParserAtBeginning not
 		or: [self parseDoubleSlashOrReset])
 		ifTrue: [(self parseUpToAnyNotSkipping: ':/?#') asLowercase]
 		ifFalse: [''].

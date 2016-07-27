@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 11/20/2014 04:00",
+	"commentStamp" : "monty 12/14/2014 15:14",
 	"instvars" : [
 		 ],
-	"name" : "XMLUTFStreamDecoder",
+	"name" : "XMLLatin1StreamDecoder",
 	"pools" : [
 		 ],
 	"super" : "XMLStreamDecoder",

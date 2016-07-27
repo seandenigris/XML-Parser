@@ -1,3 +1,3 @@
 converting
 asArray
-	^ Array newFrom: collection
+	^ Array withAll: collection

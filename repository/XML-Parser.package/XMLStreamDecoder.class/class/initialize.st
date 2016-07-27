@@ -3,4 +3,6 @@ initialize
 	"self initialize"
 
 	StreamDecoderCache := XMLKeyValueCache maxSize: 128.
-	PreferredStreamDecoders := IdentitySet newFrom: XMLUTFStreamDecoder allSubclasses.
+	(PreferredStreamDecoders := IdentitySet new)
+		addAll: XMLUTFStreamDecoder allSubclasses;
+		add: XMLLatin1StreamDecoder

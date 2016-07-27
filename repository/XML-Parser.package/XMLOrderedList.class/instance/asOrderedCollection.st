@@ -1,3 +1,3 @@
 converting
 asOrderedCollection
-	^ OrderedCollection newFrom: collection
+	^ OrderedCollection withAll: collection

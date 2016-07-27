@@ -1,5 +1,5 @@
 private
 listValuesIn: aSpaceSeparatedList do: aBlock
 	NormalizedSpace
-		xmlSplit: aSpaceSeparatedList
+		xmlParserSplit: aSpaceSeparatedList
 		do: aBlock

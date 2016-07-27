@@ -1,3 +1,4 @@
 accessing
 byteOrderMark
-	^ String newFrom: (self byteOrderMarkBytes collect: [:each | each asCharacter])
+	"avoid asString for portability"
+	^ String withAll: (self byteOrderMarkBytes collect: [:each | each asCharacter])

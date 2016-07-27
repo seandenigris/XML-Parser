@@ -1,5 +1,5 @@
 *XML-Parser
-xmlSplit: aCollection do: aBlock
+xmlParserSplit: aCollection do: aBlock
 	"faster, portable version"
 	| start |
 
