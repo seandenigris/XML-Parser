@@ -6,10 +6,7 @@ constructReplacementForGeneralEntity: anEntity
 				ifTrue: [self errorLiteralContextExternalEntity: anEntity].
 			^ self constructReplacementForLiteralContextEntity: anEntity].
 
-	self addActiveEntity: anEntity.
 	driver handleStartContentEntityReplacement: anEntity name.
 	self
 		pushBackEntity: anEntity
-		onClose: [
-			driver handleEndContentEntityReplacement: anEntity name.
-			self removeActiveEntity: anEntity].
+		onClose: [driver handleEndContentEntityReplacement: anEntity name].

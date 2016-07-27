@@ -1,19 +1,15 @@
 entity replacement
 constructReplacementForLiteralContextEntity: anEntity
-	anEntity replacement
-		ifEmpty: [^ self].
+	| previousEscaper |
 
-	self addActiveEntity: anEntity.
-	streamReader
-		pushStream: (ReadStream on: anEntity replacement)
-		onClose: [
-			streamReader isEscapingQuotes: false.
-			self removeActiveEntity: anEntity].
-	anEntity isExternal
+	previousEscaper := streamReader characterEscaper.
+	self
+		pushBackEntity: anEntity
+		onClose: [streamReader characterEscaper: previousEscaper].
+
+	"wait till after the text declaration was read to start escaping"
+	(self currentActiveEntity == anEntity
+		and: [previousEscaper isNil])
 		ifTrue: [
-			streamReader detectCurrentEncoding.
-			(context := context textDeclarationContext)
-				nextTokenFrom: self].
-
-	self currentActiveEntity == anEntity
-		ifTrue: [streamReader isEscapingQuotes: true].
+			streamReader characterEscaper:
+				(XMLQuoteCharacterEscaper for: streamReader)].

@@ -3,18 +3,18 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"EncodingHandlerTable",
 		"NullCharacter",
 		"UTF16BigEndianByteOrderMark",
 		"UTF16LittleEndianByteOrderMark",
 		"UTF32BigEndianByteOrderMark",
 		"UTF32LittleEndianByteOrderMark",
 		"UTF8ByteOrderMark" ],
-	"commentStamp" : "monty 11/15/2014 05:04",
+	"commentStamp" : "monty 11/28/2014 11:29",
 	"instvars" : [
 		"stream",
-		"remainder",
-		"streamDecoder" ],
-	"name" : "XMLEncodingDetector",
+		"streamReader" ],
+	"name" : "XMLStreamEncodingDetector",
 	"pools" : [
 		 ],
 	"super" : "Object",

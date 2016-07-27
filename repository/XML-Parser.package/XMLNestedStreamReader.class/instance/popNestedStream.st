@@ -1,5 +1,5 @@
 private
-popCurrentStream
+popNestedStream
 	| nextStreamAndCallback |
 
 	self closeCurrentStream.

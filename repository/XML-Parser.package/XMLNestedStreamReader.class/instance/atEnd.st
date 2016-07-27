@@ -1,6 +1,12 @@
 testing
 atEnd
-	^ peekChar == nil
-		and: [stream atEnd
-			and: [self hasNestedStreams not
-				or: [nestedStreams allSatisfy: [:each | each key atEnd]]]]
+	peekChar == nil
+		ifFalse: [^ false].
+	stream atEnd
+		ifFalse: [^ false].
+
+	nestedStreams ifNotNil: [
+		nestedStreams do: [:each |
+			each key atEnd
+				ifFalse: [^ false]]].
+	^ true.

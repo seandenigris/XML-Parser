@@ -1,5 +1,6 @@
 file open/close
 closeStreams
-	[self hasNestedStreams]
-		whileTrue: [self popCurrentStream].
+	nestedStreams ifNotNil: [
+		[nestedStreams notEmpty]
+			whileTrue: [self popNestedStream]].
 	self closeCurrentStream.

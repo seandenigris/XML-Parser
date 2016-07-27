@@ -4,7 +4,6 @@
 		 ],
 	"classvars" : [
 		"CarriageReturn",
-		"EncodingHandlerTable",
 		"LineFeed" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
@@ -12,11 +11,10 @@
 		"onClose",
 		"nestedStreams",
 		"peekChar",
-		"writeBuffer",
 		"normalizedLineEndingChar",
 		"currentLineNumber",
 		"readLimit",
-		"isEscapingQuotes" ],
+		"characterEscaper" ],
 	"name" : "XMLNestedStreamReader",
 	"pools" : [
 		 ],

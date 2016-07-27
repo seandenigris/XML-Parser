@@ -1,11 +1,17 @@
 entity replacement
 pushBackEntity: anEntity onClose: aBlock
 	anEntity replacement
-		ifEmpty: [^ aBlock value].
+		ifEmpty: [
+			aBlock ifNotNil: [aBlock value].
+			^ self].
 
+	self addActiveEntity: anEntity.
 	streamReader
 		pushStream: (ReadStream on: anEntity replacement)
-		onClose: aBlock.
+		onClose: [
+			self removeActiveEntity: anEntity.
+			aBlock ifNotNil: [aBlock value]].
+
 	anEntity isExternal
 		ifTrue: [
 			streamReader detectCurrentEncoding.

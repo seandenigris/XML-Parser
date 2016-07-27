@@ -4,8 +4,7 @@ constructReplacementForParameterEntity: anEntity
 		ifTrue: [^ self constructReplacementForLiteralContextEntity: anEntity].
 
 	streamReader pushBackCharacter: NormalizedSpace.
-	self addActiveEntity: anEntity.
 	self
 		pushBackEntity: anEntity
-		onClose: [self removeActiveEntity: anEntity].
+		onClose: nil.
 	streamReader pushBackCharacter: NormalizedSpace.

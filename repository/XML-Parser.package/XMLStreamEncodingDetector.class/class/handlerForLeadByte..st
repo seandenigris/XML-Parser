@@ -1,4 +1,4 @@
-accessing
+private
 handlerForLeadByte: aByte
 	aByte = 0
 		ifTrue: [^ #detectBigEndianUTF32OrImplicitEncdoing].
@@ -8,4 +8,6 @@ handlerForLeadByte: aByte
 		ifTrue: [^ #detectUTF8ByteOrderMark].
 	aByte = XMLUTF16LittleEndianStreamDecoder byteOrderMarkBytes first
 		ifTrue: [^ #detectLittleEndianUTF16OrUTF32ByteOrderMark].
+	aByte = $< asciiValue
+		ifTrue: [^ #detectLittleEndianImplicitEncoding].
 	^ nil.

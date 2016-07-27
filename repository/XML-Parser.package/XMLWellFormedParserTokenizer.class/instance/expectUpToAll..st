@@ -1,15 +1,9 @@
 tokenizing - expecting
 expectUpToAll: aString
-	| isTerminated |
-
-	"upToAll: can't distinguish between a missing terminator or terminator at the end of a string"
-	isTerminated := false.
 	writeStream reset.
-	[streamReader atEnd
-		or: [(isTerminated := streamReader nextMatchAll: aString)]]
-		whileFalse: [writeStream nextPut: streamReader next].
-
-	isTerminated
-		ifFalse: [self errorExpectedLiteral: aString].
-
-	^ writeStream contents.
+	[streamReader atEnd]
+		whileFalse: [
+			(streamReader nextMatchAll: aString)
+				ifTrue: [^ writeStream contents].
+			writeStream nextPut: streamReader next].
+	self errorExpectedLiteral: aString.

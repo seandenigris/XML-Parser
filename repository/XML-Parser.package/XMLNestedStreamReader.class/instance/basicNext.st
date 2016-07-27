@@ -5,22 +5,20 @@ basicNext
 
 	stream atEnd
 		ifTrue: [
-			[self hasNestedStreams and: [stream atEnd]]
-				whileTrue: [self popCurrentStream].
+			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifTrue: [^ nil]].
 	(nextChar := stream next) == CarriageReturn
 		ifTrue: [
-			[stream atEnd and: [self hasNestedStreams]]
-				whileTrue: [self popCurrentStream].
+			self popNestedStreamWhileAtEnd.
 			stream atEnd
 				ifFalse: [
-					(stream peek == LineFeed)
+					stream peek == LineFeed
 						ifTrue: [stream next]].
-			^ normalizedLineEndingChar].
-	(nextChar == LineFeed)
-		ifTrue: [^ normalizedLineEndingChar].
-	isEscapingQuotes
-		ifTrue: [^ self escapeQuote: nextChar].
-
-	^ nextChar.
+			nextChar := normalizedLineEndingChar]
+		ifFalse: [
+			nextChar == LineFeed
+				ifTrue: [nextChar := normalizedLineEndingChar]].
+	characterEscaper
+		ifNil: [^ nextChar]
+		ifNotNil: [^ characterEscaper nextCharacter: nextChar].
