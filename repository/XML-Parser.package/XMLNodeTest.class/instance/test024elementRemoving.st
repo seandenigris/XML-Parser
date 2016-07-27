@@ -1,5 +1,5 @@
 tests
-test083elementRemoving
+test024elementRemoving
 	| node nodes elements |
 
 	node := XMLMockNodeWithElements new.

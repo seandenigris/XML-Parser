@@ -1,5 +1,5 @@
 tests
-test042addingNodes
+test007addingNodes
 	| node children |
 
 	node := XMLMockNodeWithElements new.

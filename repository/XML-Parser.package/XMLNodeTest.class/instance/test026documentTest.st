@@ -1,5 +1,5 @@
 tests
-test090documentTest
+test026documentTest
 	| doc root doctype |
 
 	doc := XMLDocument new.

@@ -1,5 +1,5 @@
 tests
-test080elementAccessing
+test021elementAccessing
 	| node nodes elements |
 
 	node := XMLMockNodeWithElements new.

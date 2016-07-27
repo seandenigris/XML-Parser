@@ -1,5 +1,5 @@
 tests
-test070nodeAndElementEnumeration
+test019nodeAndElementEnumeration
 	| node nodes elements |
 
 	node := XMLMockNodeWithElements new.

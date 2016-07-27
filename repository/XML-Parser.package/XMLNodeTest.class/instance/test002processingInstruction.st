@@ -1,5 +1,5 @@
 tests
-test020processingInstruction
+test002processingInstruction
 	| pi t d |
 
 	pi := XMLPI new.

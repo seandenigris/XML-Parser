@@ -1,5 +1,5 @@
 tests
-test053elementAttributes
+test013elementAttributes
 	| element attrs |
 
 	element := XMLElement new.

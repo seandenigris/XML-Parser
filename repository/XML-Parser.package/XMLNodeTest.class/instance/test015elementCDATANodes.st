@@ -1,5 +1,5 @@
 tests
-test055elementCDATANodes
+test015elementCDATANodes
 	| element str |
 
 	str := self markupString.

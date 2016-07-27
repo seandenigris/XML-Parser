@@ -1,5 +1,5 @@
 tests
-test040emptyNodeWithElements
+test005emptyNodeWithElements
 	| node |
 
 	node := XMLMockNodeWithElements new.

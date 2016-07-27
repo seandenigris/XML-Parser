@@ -1,5 +1,5 @@
 tests
-test081firstTagSearching
+test022firstTagSearching
 	| node elements |
 
 	node := XMLMockNodeWithElements new.

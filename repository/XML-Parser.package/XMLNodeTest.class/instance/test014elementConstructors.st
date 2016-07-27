@@ -1,5 +1,5 @@
 tests
-test054elementConstructors
+test014elementConstructors
 	| noAttributes attributes str element |
 
 	noAttributes := XMLOrderPreservingDictionary new.

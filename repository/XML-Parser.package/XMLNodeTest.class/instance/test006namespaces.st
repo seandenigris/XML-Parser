@@ -1,5 +1,5 @@
 tests
-test041namespaces
+test006namespaces
 	| node |
 
 	node := XMLElement new.

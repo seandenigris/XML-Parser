@@ -1,5 +1,5 @@
 tests
-test050emptyElement
+test010emptyElement
 	| element |
 
 	element := XMLElement new.

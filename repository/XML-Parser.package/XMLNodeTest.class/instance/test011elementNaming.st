@@ -1,5 +1,5 @@
 tests
-test051elementNaming
+test011elementNaming
 	| element |
 
 	element := XMLElement new.

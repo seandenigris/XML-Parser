@@ -1,5 +1,5 @@
 tests
-test035cdataNode
+test004cdataNode
 	| node raw |
 
 	node := XMLCData new.

@@ -1,5 +1,5 @@
 tests
-test084elementRenaming
+test025elementRenaming
 	| node nodes elements |
 
 	node := XMLMockNodeWithElements new.

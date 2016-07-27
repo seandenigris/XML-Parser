@@ -1,5 +1,5 @@
 tests
-test052elementContentString
+test012elementContentString
 	| element str |
 
 	str := self markupString.

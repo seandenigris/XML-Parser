@@ -1,5 +1,5 @@
 tests
-test044accessingBeforeAfterNodes
+test009accessingBeforeAfterNodes
 	| node children |
 
 	node := XMLMockNodeWithElements new.

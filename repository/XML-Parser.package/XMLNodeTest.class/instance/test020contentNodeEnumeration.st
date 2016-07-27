@@ -1,5 +1,5 @@
 tests
-test071contentNodeEnumeration
+test020contentNodeEnumeration
 	| node nodes elements stringNodes contentNodes |
 
 	node := XMLElement new.

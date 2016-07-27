@@ -1,5 +1,5 @@
 tests
-test030stringNode
+test003stringNode
 	| node raw escaped |
 
 	node := XMLString new.

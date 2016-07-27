@@ -1,5 +1,5 @@
 tests
-test062elementPrinting
+test018elementPrinting
 	| element attributes |
 
 	element := (XMLElement named: 'element').

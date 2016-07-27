@@ -1,5 +1,5 @@
 tests
-test010node
+test001node
 	| node parent |
 
 	node := XMLMockNode new.
