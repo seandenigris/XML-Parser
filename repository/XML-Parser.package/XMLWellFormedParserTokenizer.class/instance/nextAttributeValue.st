@@ -8,11 +8,11 @@ nextAttributeValue
 	
 	context enterLiteralValue.
 	writeStream reset.
-	[(nextChar := streamReader peek) == quote
+	[(nextChar := streamReader next) == quote
 		or: [nextChar == $<
 			or: [nextChar == nil]]]
 		whileFalse: [
-			(streamReader next) == $&
+			nextChar == $&
 				ifTrue: [
 					streamReader peek == $#
 						ifTrue: [writeStream nextPut: self nextDecodedCharReference]
@@ -25,7 +25,7 @@ nextAttributeValue
 					writeStream nextPut: nextChar]].
 	context exitLiteralValue.
 
-	(streamReader next == quote)
+	nextChar == quote
 		ifFalse: [self errorExpectedAttributeValueEnd].
 
 	^ writeStream contents.
