@@ -1,3 +1,3 @@
-private
+accessing
 utf32LittleEndianBOM
-	^ XMLUTF32LittleEndianStreamDecoder byteOrderMark
+	^ XMLUTF32LittleEndianStreamConverter byteOrderMark

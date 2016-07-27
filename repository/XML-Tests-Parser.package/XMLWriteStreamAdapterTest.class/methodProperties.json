@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"adapterClass" : "monty 2/11/2016 19:45",
+		"contentsFromCharacter:" : "monty 2/12/2016 06:00",
+		"inputCollection" : "monty 2/11/2016 22:20",
+		"outputCollection" : "monty 2/11/2016 22:20",
+		"streamClass" : "monty 2/11/2016 22:22",
+		"testAtBeginning" : "monty 2/13/2016 23:02",
+		"testCR" : "monty 2/12/2016 05:59",
+		"testLF" : "monty 2/12/2016 05:59",
+		"testNextPut" : "monty 2/11/2016 22:22",
+		"testNextPutAll" : "monty 2/11/2016 22:24",
+		"testPosition" : "monty 2/13/2016 23:25",
+		"testReset" : "monty 2/13/2016 23:25",
+		"testSpace" : "monty 2/12/2016 05:59",
+		"testTab" : "monty 2/12/2016 08:56" } }

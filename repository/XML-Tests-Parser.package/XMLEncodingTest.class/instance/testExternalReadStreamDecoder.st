@@ -3,9 +3,9 @@ testExternalReadStreamDecoder
 	| readStreamAdapter |
 
 	readStreamAdapter :=
-		XMLDecodingReadStreamAdapter onExternalStream: 
+		XMLDecodingReadStreamAdapter on: 
 			(self convertableStreamOn:
-				self utf16LittleEndianBOM, (self toUTF16: self sourceXML littleEndian: true)).
+				self utf16LittleEndianBOM, (self asciiToUTF16LE: self sourceXML)).
 
 	self
 		shouldnt: [SAXHandler parse: readStreamAdapter]
@@ -13,4 +13,4 @@ testExternalReadStreamDecoder
 
 	self
 		assert: readStreamAdapter atEnd;
-		assert: (readStreamAdapter streamDecoder isKindOf: XMLUTF16StreamDecoder).
+		assert: (readStreamAdapter streamConverter isKindOf: XMLUTF16StreamConverter).

@@ -5,16 +5,14 @@ testEncodingDeclarationUTF16LE
 			SAXHandler parse:
 				(self convertableStreamOn:
 					(self
-						encodingDeclaration: 'UTF-16LE'
-						withUTF16XML: self sourceXML
-						littleEndian: false))]
+						sourceXMLWithEncoding: 'UTF-16LE'
+						andASCIIContentAsUTF16BE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			SAXHandler parse:
 				(self convertableStreamOn:
 					(self
-						encodingDeclaration: 'UTF-16LE'
-						withUTF16XML: self sourceXML
-						littleEndian: true))]
+						sourceXMLWithEncoding: 'UTF-16BE'
+						andASCIIContentAsUTF16BE: self sourceXML))]
 		raise: XMLParserException.

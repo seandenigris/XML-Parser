@@ -1,3 +1,3 @@
-private
+accessing
 utf16BigEndianBOM
-	^ XMLUTF16BigEndianStreamDecoder byteOrderMark
+	^ XMLUTF16BigEndianStreamConverter byteOrderMark

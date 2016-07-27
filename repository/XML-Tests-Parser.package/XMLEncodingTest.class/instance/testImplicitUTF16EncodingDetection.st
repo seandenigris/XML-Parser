@@ -3,10 +3,10 @@ testImplicitUTF16EncodingDetection
 	self
 		shouldnt: [
 			SAXHandler parse:
-				(self convertableStreamOn: (self toUTF16: self sourceXML littleEndian: true))]
+				(self convertableStreamOn: (self asciiToUTF16LE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			SAXHandler parse:
-				(self convertableStreamOn: (self toUTF16: self sourceXML littleEndian: false))]
+				(self convertableStreamOn: (self asciiToUTF16BE: self sourceXML))]
 		raise: XMLParserException.

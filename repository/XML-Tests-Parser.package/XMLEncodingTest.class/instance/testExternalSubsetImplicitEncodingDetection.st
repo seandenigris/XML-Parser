@@ -8,13 +8,13 @@ testExternalSubsetImplicitEncodingDetection
 		shouldnt: [
 			((SAXHandler on: '') parser driver
 				externalSubsetParserOn:
-					(self convertableStreamOn: (self toUTF16: xml littleEndian: true))
+					(self convertableStreamOn: (self asciiToUTF16LE: xml))
 				documentURI: uri) parseDocument]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			((SAXHandler on: '') parser driver
 				externalSubsetParserOn:
-					(self convertableStreamOn: (self toUTF16: xml littleEndian: false))
+					(self convertableStreamOn: (self asciiToUTF16BE: xml))
 				documentURI: uri) parseDocument]
 		raise: XMLParserException.

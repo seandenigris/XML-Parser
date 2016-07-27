@@ -2,8 +2,7 @@ tests
 testEncodingDeclarationLatin1
 	| xml |
 
-	"avoid asString for portability"
-	xml := self sourceXMLWith: (String withAll: (#(126 127 128) collect: [:each | each asCharacter])).
+	xml := self sourceXMLWithContent: (self stringFrom: #(126 127 128 255)).
 	self
 		should: [
 			SAXHandler parse:

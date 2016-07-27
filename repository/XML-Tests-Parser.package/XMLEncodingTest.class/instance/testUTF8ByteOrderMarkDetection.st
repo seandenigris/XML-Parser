@@ -4,16 +4,17 @@ testUTF8ByteOrderMarkDetection
 		should: [
 			SAXHandler parse:
 				(self convertableStreamOn:
-					self utf8BOM, (self toUTF16: self sourceXML littleEndian: true))]
+					self utf8BOM, (self asciiToUTF16LE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		should: [
 			SAXHandler parse:
 				(self convertableStreamOn:
-					self utf8BOM, (self toUTF16: self sourceXML littleEndian: false))]
+					self utf8BOM, (self asciiToUTF16BE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			SAXHandler parse:
-				(self convertableStreamOn: self utf8BOM, self sourceXML)]
+				(self convertableStreamOn:
+					self utf8BOM, self sourceXML)]
 		raise: XMLParserException.

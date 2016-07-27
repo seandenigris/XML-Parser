@@ -2,7 +2,7 @@ tests
 testDecodingDisabledEncodingDetection
 	| xml |
 
-	xml := self toUTF16: self sourceXML littleEndian: true.
+	xml := self asciiToUTF16LE: self sourceXML.
 	self
 		should: [
 			(SAXHandler on: (self convertableStreamOn: xml))

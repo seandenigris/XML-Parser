@@ -1,3 +1,3 @@
-private
+converting
 convertableStreamOn: aString
 	^ aString readStream

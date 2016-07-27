@@ -9,7 +9,7 @@ testExternalSubsetByteOrderMarkDetection
 			((SAXHandler on: '') parser driver
 				externalSubsetParserOn:
 					(self convertableStreamOn:
-						self utf16LittleEndianBOM, (self toUTF16: xml littleEndian: true))
+						self utf16LittleEndianBOM, (self asciiToUTF16LE: xml))
 				documentURI: uri) parseDocument]
 		raise: XMLParserException.
 	self
@@ -17,6 +17,6 @@ testExternalSubsetByteOrderMarkDetection
 			((SAXHandler on: '') parser driver
 				externalSubsetParserOn:
 					(self convertableStreamOn:
-						self utf16BigEndianBOM, (self toUTF16: xml littleEndian: false))
+						self utf16BigEndianBOM, (self asciiToUTF16BE: xml))
 				documentURI: uri) parseDocument]
 		raise: XMLParserException.

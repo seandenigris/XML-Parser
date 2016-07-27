@@ -1,5 +1,4 @@
 files
 fileNamed: aFileName write: aString
-	(XMLFileHandle path: aFileName) writeStream
-		nextPutAll: aString;
-		close.
+	aFileName asXMLFileHandle writeStreamDo: [:writeStream |
+		writeStream nextPutAll: aString]

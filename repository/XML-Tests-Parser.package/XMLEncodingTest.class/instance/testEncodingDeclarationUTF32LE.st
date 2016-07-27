@@ -5,16 +5,14 @@ testEncodingDeclarationUTF32LE
 			SAXHandler parse:
 				(self convertableStreamOn:
 					(self
-						encodingDeclaration: 'utf-32-le'
-						withUTF32XML: self sourceXML
-						littleEndian: false))]
+						sourceXMLWithEncoding: 'utf-32-le'
+						andASCIIContentAsUTF32BE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			SAXHandler parse:
 				(self convertableStreamOn:
 					(self
-						encodingDeclaration: 'utf-32-le'
-						withUTF32XML: self sourceXML
-						littleEndian: true))]
+						sourceXMLWithEncoding: 'utf-32-le'
+						andASCIIContentAsUTF32LE: self sourceXML))]
 		raise: XMLParserException.

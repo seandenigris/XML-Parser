@@ -1,3 +1,3 @@
 files
 deleteFileNamed: aFileName
-	(XMLFileHandle path: aFileName) delete
+	aFileName asXMLFileHandle delete

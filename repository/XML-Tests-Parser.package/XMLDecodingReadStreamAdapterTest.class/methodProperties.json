@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"adapterClass" : "monty 2/10/2016 23:02",
+		"newAdapter" : "monty 2/11/2016 03:49",
+		"streamConverterClass" : "monty 2/11/2016 03:49",
+		"testHasDefaultStreamConverter" : "monty 2/11/2016 03:46",
+		"testIsConvertingStreamAdapter" : "monty 2/10/2016 23:12",
+		"testStreamConverter" : "monty 2/14/2016 03:08" } }

@@ -1,3 +1,3 @@
 source
 sourceXML
-	^ self sourceXMLWith: 'encoding test'
+	^ self sourceXMLWithContent: self sourceContent

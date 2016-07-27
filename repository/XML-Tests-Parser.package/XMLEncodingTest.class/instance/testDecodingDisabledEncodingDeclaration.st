@@ -4,9 +4,8 @@ testDecodingDisabledEncodingDeclaration
 
 	xml := 
 		self
-			encodingDeclaration: 'UTF-16-BE'
-			withUTF16XML: self sourceXML
-			littleEndian: false.
+			sourceXMLWithEncoding: 'UTF-16-BE'
+			andASCIIContentAsUTF16BE: self sourceXML.
 	self
 		should: [
 			(SAXHandler on: (self convertableStreamOn: xml))

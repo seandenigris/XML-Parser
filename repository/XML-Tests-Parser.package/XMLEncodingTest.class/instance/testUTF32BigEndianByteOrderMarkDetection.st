@@ -10,11 +10,11 @@ testUTF32BigEndianByteOrderMarkDetection
 		should: [
 			SAXHandler parse:
 				(self convertableStreamOn:
-					self utf32BigEndianBOM, (self toUTF32: self sourceXML littleEndian: true))]
+					self utf32BigEndianBOM, (self asciiToUTF32LE: self sourceXML))]
 		raise: XMLParserException.
 	self
 		shouldnt: [
 			SAXHandler parse:
 				(self convertableStreamOn:
-					self utf32BigEndianBOM, (self toUTF32: self sourceXML littleEndian: false))]
+					self utf32BigEndianBOM, (self asciiToUTF32BE: self sourceXML))]
 		raise: XMLParserException.
