@@ -8,12 +8,12 @@
 	"instvars" : [
 		"isValidating",
 		"usesNamespaces",
-		"requiresDtdDeclarations",
 		"resolvesExternalEntities",
 		"preservesUndeclaredEntityReferences",
 		"externalEntityResolver",
 		"parserHandlerClass",
-		"parserLimits" ],
+		"parserLimits",
+		"requiresDocumentConstraints" ],
 	"name" : "XMLConfiguration",
 	"pools" : [
 		 ],

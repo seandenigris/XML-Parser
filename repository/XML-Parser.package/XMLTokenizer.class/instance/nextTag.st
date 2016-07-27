@@ -47,7 +47,7 @@ nextTag
 		attributes: attributes
 		namespaces: namespaces.
 	reservedAttributes
-		ifNotNil: [driver reservedAttributes: reservedAttributes].
+		ifNotNil: [driver handleReservedAttributes: reservedAttributes].
 
 	streamReader peek == $/
 		ifTrue: [

@@ -1,5 +1,5 @@
 instance creation
 onURL: aUrlString
 	^ self
-		on: (XMLHTTPRequest url: aUrlString) get
-		documentURI: aUrlString
+		onURL: aUrlString
+		upToLimit: XMLParserLimits defaultDocumentReadLimit

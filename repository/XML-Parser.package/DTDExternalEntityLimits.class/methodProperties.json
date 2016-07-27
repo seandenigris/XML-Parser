@@ -1,8 +1,8 @@
 {
 	"class" : {
-		 },
+		"defaultMaxExternalEntitySize" : "monty 1/26/2014 04:19" },
 	"instance" : {
-		"initialize" : "monty 1/24/2014 23:51",
+		"initialize" : "monty 1/26/2014 04:19",
 		"maxExternalEntities" : "monty 1/16/2014 06:14",
 		"maxExternalEntities:" : "monty 1/16/2014 06:14",
 		"maxExternalEntitySize" : "monty 1/16/2014 06:14",
