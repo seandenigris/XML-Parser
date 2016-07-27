@@ -1,3 +1,3 @@
 testing
-isSupported
+isSupportedImplementation
 	^ Smalltalk includesKey: #ZnClient

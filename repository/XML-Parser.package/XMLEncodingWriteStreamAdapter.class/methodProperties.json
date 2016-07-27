@@ -6,10 +6,11 @@
 		"basicNextPut:" : "monty 1/26/2016 02:35",
 		"basicNextPutByte:" : "monty 1/29/2016 15:16",
 		"hasDefaultStreamConverter" : "monty 2/3/2016 02:54",
+		"hasNullStreamConverter" : "monty 3/5/2016 12:26",
 		"isConvertingStreamAdapter" : "monty 2/3/2016 02:50",
 		"nextPut:" : "monty 1/29/2016 20:51",
 		"nextPutAll:" : "monty 2/17/2016 12:02",
 		"nextPutByteOrderMark" : "monty 2/11/2016 23:57",
 		"printOn:" : "monty 1/26/2016 04:03",
 		"streamConverter" : "monty 1/23/2016 22:21",
-		"streamConverter:" : "monty 2/14/2016 03:07" } }
+		"streamConverter:" : "monty 3/6/2016 09:09" } }

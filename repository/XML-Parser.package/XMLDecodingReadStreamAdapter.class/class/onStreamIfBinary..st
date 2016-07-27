@@ -1,11 +1,12 @@
 instance creation
 onStreamIfBinary: aStream
-	| streamAdapter |
+	| binaryReadStreamAdapter |
 
-	streamAdapter := XMLBinaryReadStreamAdapter onStreamIfBinary: aStream.
-	streamAdapter == aStream
+	binaryReadStreamAdapter :=
+		XMLBinaryReadStreamAdapter onStreamIfBinary: aStream.
+	binaryReadStreamAdapter == aStream
 		ifTrue: [^ aStream]
 		ifFalse: [
 			^ self new
-				on: streamAdapter;
-				streamConverter: XMLStreamConverter default]
+				on: binaryReadStreamAdapter;
+				streamConverter: XMLStreamConverter default].

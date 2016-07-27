@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"currentWorkingDirectoryPathString" : "monty 10/22/2014 04:43",
-		"isSupported" : "monty 10/25/2014 20:40" },
+		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
 	"instance" : {
 		"deleteFileOrDo:" : "monty 12/18/2014 18:43",
 		"directoryEntry" : "monty 12/16/2014 15:54",

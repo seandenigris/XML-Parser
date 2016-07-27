@@ -1,3 +1,3 @@
 private
-errorUnsupported
+errorNoSupportedImplementation
 	XMLHTTPException signal: 'HTTP unsupported'

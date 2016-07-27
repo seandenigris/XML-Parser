@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"errorUnsupported" : "monty 11/17/2014 00:44",
+		"errorNoSupportedImplementation" : "monty 3/4/2016 16:27",
 		"fileReadStreamOnPath:" : "monty 2/4/2016 17:57",
 		"onPath:" : "monty 2/4/2016 17:58",
 		"preferredImplementation" : "monty 11/20/2014 02:32" },

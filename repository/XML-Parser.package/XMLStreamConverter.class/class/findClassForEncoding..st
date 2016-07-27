@@ -1,15 +1,14 @@
 private
 findClassForEncoding: anEncodingName
+	"check preferred classes first"
 	self preferredClasses do: [:each |
 		(each canConvertEncoding: anEncodingName)
 			ifTrue: [^ each]].
 
-	(self isPreferred not
-		and: [self canConvertEncoding: anEncodingName])
-			ifTrue: [^ self].
+	(self isNonPreferredClassForEncoding: anEncodingName)
+		ifTrue: [^ self].
 	self allSubclassesDo: [:each |
-		(each isPreferred not
-			and: [each canConvertEncoding: anEncodingName])
+		(each isNonPreferredClassForEncoding: anEncodingName)
 			ifTrue: [^ each]].
 
 	^ nil.

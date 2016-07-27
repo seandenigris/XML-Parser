@@ -1,3 +1,3 @@
 testing
-isPreferred
+isPreferredClass
 	^ self preferredClasses includes: self

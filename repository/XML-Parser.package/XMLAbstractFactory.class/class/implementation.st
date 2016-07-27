@@ -1,7 +1,7 @@
-private
+accessing
 implementation
 	^ implementation
 		ifNil: [
-			self isSupported
-				ifTrue: [implementation := self]
-				ifFalse: [implementation := self selectImplementation]]
+			(implementation := self findSupportedImplementation)
+				ifNil: [self errorNoSupportedImplementation].
+			implementation]

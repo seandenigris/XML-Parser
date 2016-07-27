@@ -1,3 +1,3 @@
-encodings
+decoding
 detectCurrentEncoding
 	(XMLNestedStreamReaderEncodingDetector for: self) detectCurrentEncoding

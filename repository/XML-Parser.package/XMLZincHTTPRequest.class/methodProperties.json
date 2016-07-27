@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"isSupported" : "monty 10/25/2014 17:43" },
+		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
 	"instance" : {
 		"getResponseUpToLimit:decoding:timeout:onError:" : "monty 2/19/2016 10:30",
 		"isMaxSizeException:" : "monty 12/16/2014 20:26",

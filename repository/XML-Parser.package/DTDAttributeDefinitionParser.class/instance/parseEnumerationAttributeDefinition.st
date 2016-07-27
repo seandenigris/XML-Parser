@@ -1,4 +1,4 @@
-parsing
+private
 parseEnumerationAttributeDefinition
 	| attributeValidatorClass enumerationListParserClass |
 

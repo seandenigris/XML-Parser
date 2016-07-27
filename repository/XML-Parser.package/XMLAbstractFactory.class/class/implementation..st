@@ -1,3 +1,3 @@
-private
+accessing
 implementation: aClass
 	implementation := aClass

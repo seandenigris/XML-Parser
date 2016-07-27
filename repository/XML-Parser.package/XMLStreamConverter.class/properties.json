@@ -7,7 +7,7 @@
 		"PreferredClasses" ],
 	"commentStamp" : "monty 2/14/2016 03:54",
 	"instvars" : [
-		"encodingName" ],
+		"encoding" ],
 	"name" : "XMLStreamConverter",
 	"pools" : [
 		 ],

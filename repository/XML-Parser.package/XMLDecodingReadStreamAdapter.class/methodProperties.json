@@ -2,13 +2,14 @@
 	"class" : {
 		"on:" : "monty 1/25/2016 22:39",
 		"on:streamConverter:" : "monty 2/2/2016 22:40",
-		"onStreamIfBinary:" : "monty 2/2/2016 22:46" },
+		"onStreamIfBinary:" : "monty 3/5/2016 13:54" },
 	"instance" : {
 		"atEnd" : "monty 1/27/2016 00:59",
 		"hasDefaultStreamConverter" : "monty 1/31/2016 22:49",
+		"hasNullStreamConverter" : "monty 3/5/2016 12:26",
 		"isConvertingStreamAdapter" : "monty 2/3/2016 02:50",
 		"next" : "monty 1/23/2016 16:49",
 		"peek" : "monty 1/27/2016 00:59",
 		"printOn:" : "monty 1/23/2016 16:49",
 		"streamConverter" : "monty 1/23/2016 16:49",
-		"streamConverter:" : "monty 2/14/2016 03:07" } }
+		"streamConverter:" : "monty 3/6/2016 09:08" } }

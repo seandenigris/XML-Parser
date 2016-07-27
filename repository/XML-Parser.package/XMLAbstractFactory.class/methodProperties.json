@@ -1,13 +1,14 @@
 {
 	"class" : {
-		"clearImplementations" : "monty 1/27/2015 22:58",
-		"errorUnsupported" : "monty 11/12/2014 18:22",
-		"implementation" : "monty 11/18/2014 07:03",
+		"clearAllImplementations" : "monty 3/4/2016 16:37",
+		"errorNoSupportedImplementation" : "monty 3/4/2016 16:27",
+		"findSupportedImplementation" : "monty 3/5/2016 13:24",
+		"hasSupportedImplementation" : "monty 3/4/2016 16:30",
+		"implementation" : "monty 3/4/2016 16:30",
 		"implementation:" : "monty 12/18/2014 19:07",
-		"initialize" : "monty 2/17/2016 00:54",
-		"isSupported" : "monty 11/12/2014 18:21",
+		"initialize" : "monty 3/4/2016 16:37",
+		"isSupportedImplementation" : "monty 3/4/2016 16:23",
 		"new" : "monty 11/12/2014 18:24",
-		"preferredImplementation" : "monty 11/12/2014 18:22",
-		"selectImplementation" : "monty 11/12/2014 18:25" },
+		"preferredImplementation" : "monty 11/12/2014 18:22" },
 	"instance" : {
 		 } }

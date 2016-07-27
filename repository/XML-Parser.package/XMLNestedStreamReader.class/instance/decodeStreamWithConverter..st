@@ -1,4 +1,4 @@
-encodings
+decoding
 decodeStreamWithConverter: aStreamConverter
 	stream isConvertingStreamAdapter
 		ifTrue: [stream streamConverter: aStreamConverter]

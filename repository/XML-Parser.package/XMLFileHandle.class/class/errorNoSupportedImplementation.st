@@ -1,3 +1,3 @@
 private
-errorUnsupported
+errorNoSupportedImplementation
 	XMLFileException signal: 'File IO unsupported'

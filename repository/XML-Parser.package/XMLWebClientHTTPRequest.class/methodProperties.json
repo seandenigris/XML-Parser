@@ -1,5 +1,5 @@
 {
 	"class" : {
-		"isSupported" : "monty 4/10/2015 10:52" },
+		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
 	"instance" : {
 		"getResponseUpToLimit:decoding:timeout:onError:" : "monty 11/29/2015 22:42" } }

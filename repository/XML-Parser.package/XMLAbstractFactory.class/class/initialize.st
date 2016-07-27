@@ -2,4 +2,4 @@ class initialization
 initialize
 	"self initialize"
 
-	self clearImplementations
+	self clearAllImplementations
