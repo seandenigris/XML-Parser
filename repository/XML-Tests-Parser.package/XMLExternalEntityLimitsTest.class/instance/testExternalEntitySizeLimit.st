@@ -5,7 +5,7 @@ testExternalEntitySizeLimit
 	self isSkipping
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
-	url := self externalEntityURLs first asXMLURI.
+	url := self musicXMLExternalEntityURLs first asXMLURI.
 	xml := self doctypeWithDeclarationsForEntityURIs: (Array with: url asString).
 	size := url get contents size.
 	((parser := SAXHandler on: xml)

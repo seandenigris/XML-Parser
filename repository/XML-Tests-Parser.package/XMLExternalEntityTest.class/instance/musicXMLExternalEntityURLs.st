@@ -1,5 +1,5 @@
 urls
-externalEntityURLs
+musicXMLExternalEntityURLs
 	^  #('http://www.musicxml.org/dtds/note.mod'
 		'http://www.musicxml.org/dtds/isolat1.ent'
 		'http://www.musicxml.org/dtds/isolat2.ent'

@@ -8,23 +8,23 @@ testParsingExternalEntities
 
 	DTDCachingExternalEntityResolver clearEntityCache.
 	entityCache := DTDCachingExternalEntityResolver entityCache.
-	self externalEntityURLs do: [:each |
+	self musicXMLExternalEntityURLs do: [:each |
 		self deny: (entityCache includesKey: each asXMLURI)].
 
 	SAXHandler
-		parse: self sourceXML
+		parse: self musicXMLDocument
 		usingNamespaces: true
 		validation: true
 		externalEntities: true.
-	self externalEntityURLs do: [:each |
+	self musicXMLExternalEntityURLs do: [:each |
 		self assert: (entityCache at: each asXMLURI ifAbsent: ['']) notEmpty].
 
 	"check for re-requesting"
 	entityCacheCopy := entityCache copy.
 	SAXHandler
-		parse: self sourceXML
+		parse: self musicXMLDocument
 		usingNamespaces: true
 		validation: true
 		externalEntities: true.
-	self externalEntityURLs do: [:each |
+	self musicXMLExternalEntityURLs do: [:each |
 		self assert: (entityCache at: each asXMLURI) == (entityCacheCopy at: each asXMLURI)].

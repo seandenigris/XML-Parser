@@ -12,7 +12,7 @@ testParsingFile
 		raise: XMLFileException.
 	self
 		fileNamed: fileName
-		write: self sourceXML.
+		write: self musicXMLDocument.
 	self
 		shouldnt: [doc := XMLDOMParser parseFileNamed: fileName]
 		raise: XMLFileException.
