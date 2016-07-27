@@ -3,9 +3,14 @@ nextXMLDecl
 	| version encoding standalone |
 
 	version := self nextXMLDeclAttribute: 'version'.
-	encoding := self nextXMLDeclAttribute: 'encoding'.
+	streamReader skipSeparators.
+	encoding := 
+		streamReader peek == $e
+			ifTrue: [self nextXMLDeclAttribute: 'encoding']
+			ifFalse: [''].
 	context isInTextDeclaration
 		ifFalse: [standalone := self nextXMLDeclAttribute: 'standalone'].
+
 	streamReader skipSeparators.
 	self expectNext: $?.
 	self expectTerminator: $>.

@@ -5,13 +5,9 @@ nextParameterEntityReference
 	name := self nextName.
 	self expectNext: $;.
 
-	replacement := ''.
-	(entity := driver handleParameterEntityReference: name)
-		ifNotNil: [
-			replacement :=
-				(context isInLiteralValue
-					ifTrue: [entity replacementForLiteralContext]
-					ifFalse: [entity replacementForDTDContext])].
+	entity := driver handleParameterEntityReference: name.
+	replacement := self replacementFromParameterEntity: entity.
+
 	replacement
 		ifNotEmpty: [
 			self

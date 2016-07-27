@@ -4,4 +4,7 @@ popRemainingOperators
 		whileTrue: [
 			operatorStack last == $(
 				ifTrue: [self errorMismatchedParens].
-			self applyBinaryOperatorOnStack]
+			self applyBinaryOperatorOnStack].
+
+	nfaBuilder fragmentStack size = 1
+		ifFalse: [self errorMissingOperand].

@@ -7,13 +7,9 @@ nextGeneralEntityReference
 	(self predefinedEntities includesKey: name)
 		ifTrue: [^ self predefinedEntities at: name].
 
-	replacement := ''.
-	(entity := driver handleGeneralEntityReference: name)
-		ifNotNil: [
-			replacement :=
-				(context isInLiteralValue
-					ifTrue: [entity replacementForLiteralContext]
-					ifFalse: [entity replacementForContentContext])].
+	entity := driver handleGeneralEntityReference: name.
+	replacement := self replacementFromGeneralEntity: entity.
+
 	replacement
 		ifNotEmpty: [
 			context isInContent

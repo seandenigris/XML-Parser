@@ -1,8 +1,10 @@
 tokenizing dtd
 skipSeparatorsReplacingParameterEntities
 	"this can be used to replace references within declarations"
-	[streamReader atEnd not and: [streamReader peek isSeparator]]
+	streamReader skipSeparators.
+	[streamReader atEnd not
+		and: [context isInExternalSubset
+			and: [streamReader peek == $%]]]
 		whileTrue: [
-			streamReader skipSeparators.
-			(context isInExternalSubset and: [streamReader peek == $%])
-				ifTrue: [self replaceParameterEntityReference]]
+			self replaceParameterEntityReference.
+			streamReader skipSeparators].
