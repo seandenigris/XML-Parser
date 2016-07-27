@@ -1,1 +1,1 @@
-A simple key-value cache that empties when full.
+A simple key-value cache that automatically empties when it reaches a maximum size.

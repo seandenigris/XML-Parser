@@ -5,8 +5,8 @@ resolvePrefix: aPrefix ifUnresolvable: aBlock
 		prefixMappingAt: aPrefix
 		ifAbsent: [
 			aPrefix = 'xml'
-				ifTrue: [self class xmlNamespaceURI]
+				ifTrue: [self xmlNamespaceURI]
 				ifFalse: [
 					aPrefix = 'xmlns'
-						ifTrue: [self class xmlnsNamespaceURI]
+						ifTrue: [self xmlnsNamespaceURI]
 						ifFalse: [aBlock value]]]

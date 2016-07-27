@@ -3,10 +3,10 @@ prefixesOfNamespaceURI: aURI
 	| prefixes |
 
 	prefixes := Set new.
-	aURI = self class xmlNamespaceURI
+	aURI = self xmlNamespaceURI
 		ifTrue: [prefixes add: 'xml']
 		ifFalse: [
-			aURI = self class xmlnsNamespaceURI
+			aURI = self xmlnsNamespaceURI
 				ifTrue: [prefixes add: 'xmlns']
 				ifFalse: [
 					self prefixesAndURIsDo: [:prefix :uri |
