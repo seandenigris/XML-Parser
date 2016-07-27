@@ -1,6 +1,7 @@
 handling tokens
 handleEndTag: anElementName
-	| prefix |
+	"performance critical method"
+	| prefix currentScope |
 
 	self elementNester hasScopedAttributes
 		ifTrue: [
@@ -15,13 +16,13 @@ handleEndTag: anElementName
 		prefix: prefix
 		uri:
 			(self usesNamespaces
-				ifTrue: [self scopeAllocator resolvePrefix: prefix]
+				ifTrue: [
+					currentScope := self scopeAllocator exitScope.
+					currentScope resolvePrefix: prefix]
 				ifFalse: [''])
 		localName: (anElementName qualifiedNameLocalPart: prefix).
 
-	self usesNamespaces
-		ifTrue: [
-			self undeclareNamespaces.
-			self scopeAllocator exitScope].
+	(currentScope notNil and: [currentScope hasNamespaces])
+		ifTrue: [self undeclareNamespacesInScope: currentScope].
 	self isValidating
 		ifTrue: [self validator validateEndTag: anElementName].

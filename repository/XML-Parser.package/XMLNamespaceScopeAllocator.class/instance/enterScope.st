@@ -1,3 +1,3 @@
 scope
 enterScope
-	self scopes addLast: self currentScope copy
+	^ self scopes addLast: self currentScope copy

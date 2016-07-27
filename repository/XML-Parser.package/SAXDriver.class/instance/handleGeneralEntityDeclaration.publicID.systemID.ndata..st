@@ -6,7 +6,7 @@ handleGeneralEntityDeclaration: aName publicID: aPublicId systemID: aSystemId nd
 				addUnparsedEntity: aName
 				ndata: aNotation]
 		ifEmpty: [
-			self resolvesExternalEntities
+			self saxHandler resolvesExternalEntities
 				ifTrue: [
 					self dtd
 						addExternalGeneralEntity: aName

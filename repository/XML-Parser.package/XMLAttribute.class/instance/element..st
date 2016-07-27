@@ -1,3 +1,3 @@
 accessing
 element: anElement
-	element := anElement
+	parent := anElement

@@ -6,6 +6,6 @@ handleParameterEntityReference: aName
 		ifNil: [
 			self isValidating
 				ifTrue: [(XMLValidationException undeclaredParameterEntity: aName) signal].
-			self preservesUndeclaredEntityReferences
+			self saxHandler preservesUndeclaredEntityReferences
 				ifTrue: [entity := DTDBypassedParameterEntity named: aName]].
 	^ entity.

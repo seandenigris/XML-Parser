@@ -31,6 +31,7 @@
 		"handleUnparsedEntityReference:" : "monty 11/16/2013 03:47",
 		"handleWhitespace:" : "JAAyer 11/27/2010 07:23",
 		"handleXMLVersion:encoding:standalone:" : "JAAyer 11/27/2010 07:23",
+		"isParsingExternalSubset" : "monty 2/8/2014 02:03",
 		"isValidating" : "JAAyer 11/27/2010 07:24",
 		"readLimit" : "monty 1/16/2014 19:45",
 		"removeURI:" : "monty 2/2/2014 07:33",

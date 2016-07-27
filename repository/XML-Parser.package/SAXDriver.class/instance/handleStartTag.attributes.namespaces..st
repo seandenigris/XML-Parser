@@ -1,22 +1,22 @@
 handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	"performance critical method"
-	| prefix namespaceUri |
+	| prefix namespaceUri currentScope |
 
 	self elementNester startElement: anElementName.
 
 	prefix := anElementName qualifiedNamePrefix.
 	self usesNamespaces
 		ifTrue: [
-			self scopeAllocator enterScope.
+			currentScope := self scopeAllocator enterScope.
 			aNamespaceDictionary
-				ifNotNil: [self declareNamespaces: aNamespaceDictionary].
+				ifNotNil: [self declareNamespaces: aNamespaceDictionary inScope: currentScope].
 			namespaceUri :=
-				self scopeAllocator
+				currentScope
 					validateAndResolvePrefix: prefix
 					ofName: anElementName.
-			anAttributeDictionary isEmpty
-				ifFalse: [self scopeAllocator validateAttributePrefixes: anAttributeDictionary]].
+			anAttributeDictionary isEmpty "avoid ifNotEmpty: closure overhead"
+				ifFalse: [currentScope validateAttributePrefixes: anAttributeDictionary]].
 	self isValidating
 		ifTrue: [self validateStartTag: anElementName attributes: anAttributeDictionary].
 
@@ -26,5 +26,5 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		uri: (namespaceUri ifNil: [''])
 		localName: (anElementName qualifiedNameLocalPart: prefix)
 		attributes: anAttributeDictionary.
-	self usesNamespaces
-		ifTrue: [self saxHandler currentScope: self scopeAllocator currentScope].
+	currentScope
+		ifNotNil: [self saxHandler currentScope: currentScope].

@@ -1,6 +1,6 @@
 handling tokens
 handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
-	self resolvesExternalEntities
+	self saxHandler resolvesExternalEntities
 		ifTrue: [
 			self dtd
 				addExternalParameterEntity: aName

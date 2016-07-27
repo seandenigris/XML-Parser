@@ -6,7 +6,7 @@ setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attribute
 		setQualified: aQualifiedName prefix: aPrefix localPart: aLocalName;
 		addObserver: self.
 
-	anAttributeDictionary isEmpty
+	anAttributeDictionary isEmpty "avoid ifNotEmpty: closure overhead"
 		ifFalse: [
 			"The setFrom method is used to avoid revalidating the
 			attributes when adding them to the list"

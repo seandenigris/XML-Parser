@@ -1,5 +1,5 @@
 namespaces
-declareNamespaces: aDictionary
+declareNamespaces: aDictionary inScope: aScope
 	aDictionary keysAndValuesDo: [:prefix :uri |
-		self scopeAllocator declarePrefix: prefix uri: uri.
+		aScope mapPrefix: prefix to: uri.
 		self saxHandler startPrefixMapping: prefix uri: uri]
