@@ -7,6 +7,7 @@
 		"absoluteDirRelativeCombined" : "monty 1/8/2014 18:17",
 		"absoluteRelativeCombined" : "monty 1/8/2014 18:17",
 		"domain" : "monty 1/8/2014 18:17",
+		"escaped" : "monty 1/21/2014 02:11",
 		"fileHostURIString" : "monty 1/8/2014 18:17",
 		"fileURIString" : "monty 1/8/2014 18:17",
 		"fragment" : "monty 1/8/2014 18:17",
@@ -17,7 +18,8 @@
 		"scheme" : "monty 1/8/2014 18:17",
 		"schemelessURIString" : "monty 1/8/2014 18:17",
 		"testCombiningAbsoluteURIs" : "monty 1/10/2014 06:08",
-		"testCombiningRelativeURIs" : "monty 1/10/2014 06:11",
+		"testCombiningDotPathURIs" : "monty 1/16/2014 09:06",
+		"testCombiningRelativeURIs" : "monty 1/16/2014 08:55",
 		"testConverting" : "monty 1/10/2014 06:10",
 		"testParsingAbsolutePathURI" : "monty 1/10/2014 06:10",
 		"testParsingDomainURI" : "monty 1/12/2014 23:05",
@@ -26,6 +28,8 @@
 		"testParsingFullURI" : "monty 1/12/2014 23:06",
 		"testParsingRelativePathURI" : "monty 1/10/2014 06:08",
 		"testParsingURIWithoutScheme" : "monty 1/10/2014 06:07",
+		"testPathUnescaping" : "monty 1/21/2014 02:11",
 		"testSchemeAndHostCaseSensitivity" : "monty 1/10/2014 06:04",
 		"testURIEquality" : "monty 1/10/2014 06:07",
-		"testURIPrinting" : "monty 1/13/2014 21:51" } }
+		"testURIPrinting" : "monty 1/13/2014 21:51",
+		"unescaped" : "monty 1/21/2014 02:10" } }

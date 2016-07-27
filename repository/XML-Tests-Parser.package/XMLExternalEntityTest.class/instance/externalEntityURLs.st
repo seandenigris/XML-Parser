@@ -1,4 +1,4 @@
-source
+urls
 externalEntityURLs
 	^  #('http://www.musicxml.org/dtds/note.mod'
 		'http://www.musicxml.org/dtds/isolat1.ent'

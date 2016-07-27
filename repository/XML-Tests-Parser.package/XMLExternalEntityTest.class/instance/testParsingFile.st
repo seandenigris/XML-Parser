@@ -1,7 +1,6 @@
 tests
 testParsingFile
 	"This test creates/deletes a file so is skipped by default
-
 	(self isSkipping: false) testParsingFile
 	"
 	| fileName doc |
@@ -13,13 +12,12 @@ testParsingFile
 	self
 		should: [XMLDOMParser parseFileNamed: fileName]
 		raise: XMLFileException.
-
-	(fileName asFileReference writeStream)
-		nextPutAll: self sourceXML;
-		close.
+	self
+		fileNamed: fileName
+		write: self sourceXML.
 	self
 		shouldnt: [doc := XMLDOMParser parseFileNamed: fileName]
-		raise: [XMLFileException].
+		raise: XMLFileException.
 	self assert: (doc root isNamed: 'score-partwise').
 
-	fileName asFileReference delete.
+	self deleteFileNamed: fileName.

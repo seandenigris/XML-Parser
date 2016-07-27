@@ -6,6 +6,7 @@ testCombiningRelativeURIs
 	absolutePathUri := (self domain, self absolute) asXMLURI.
 	absoluteDirPathUri := (self domain, self absoluteDir) asXMLURI.
 	self
+		assert: (domainUri / self relative) = (self domain, '/', self relative) asXMLURI;
 		assert: (domainUri / self absolute) = (self domain, self absolute) asXMLURI;
 		assert: (domainUri / self absoluteDir) = (self domain, self absoluteDir) asXMLURI;
 		assert: (absolutePathUri / self relative) = (self domain, self absoluteRelativeCombined) asXMLURI;

@@ -1,16 +1,14 @@
 tests
 testParsingURL
 	"This uses HTTP so is skipped by default
-
 	(self isSkipping: false) testParsingURL
 	"
-	| url doc |
+	| doc |
 
 	self isSkipping
 		ifTrue: [self skip].
 
-	url := 'http://www.pharo-project.org/news?rss'.
 	self
-		shouldnt: [doc := XMLDOMParser parseURL: url]
-		raise: [XMLFileException].
+		shouldnt: [doc := XMLDOMParser parseURL: self rssURL]
+		raise: XMLHTTPException.
 	self assert: (doc root isNamed: 'rss').

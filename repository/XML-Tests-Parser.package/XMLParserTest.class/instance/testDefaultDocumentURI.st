@@ -5,7 +5,7 @@ testDefaultDocumentURI
 	documentUri := (SAXHandler on: '' documentURI: 'test/test.xml') documentURI.
 	self assert: documentUri = 'test/test.xml'.
 
-	cwd := XMLFileHandle defaultImplementation currentWorkingDirectoryPath.
+	cwd := XMLFileHandle currentWorkingDirectory.
 	documentUri := (SAXHandler on: '') documentURI.
 	self
 		assert: documentUri size > (cwd size + 1);

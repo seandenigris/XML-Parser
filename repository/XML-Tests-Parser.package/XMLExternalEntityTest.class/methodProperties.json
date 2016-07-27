@@ -2,10 +2,16 @@
 	"class" : {
 		"isSkipping:" : "monty 1/13/2014 02:42" },
 	"instance" : {
+		"deleteFileNamed:" : "monty 1/21/2014 23:36",
+		"doctypeWithDeclarationsForEntityURIs:" : "monty 1/21/2014 22:18",
 		"externalEntityURLs" : "monty 1/13/2014 02:04",
+		"fileNamed:write:" : "monty 1/22/2014 00:22",
 		"isSkipping" : "monty 1/13/2014 02:43",
 		"isSkipping:" : "monty 1/13/2014 02:43",
+		"rssURL" : "monty 1/23/2014 01:02",
 		"sourceXML" : "monty 1/13/2014 01:54",
-		"testParsingExternalEntities" : "monty 1/13/2014 22:12",
-		"testParsingFile" : "monty 1/13/2014 04:50",
-		"testParsingURL" : "monty 1/13/2014 18:31" } }
+		"testOnFileNamed" : "monty 1/23/2014 02:46",
+		"testOnURL" : "monty 1/23/2014 01:05",
+		"testParsingExternalEntities" : "monty 1/23/2014 02:43",
+		"testParsingFile" : "monty 1/23/2014 02:43",
+		"testParsingURL" : "monty 1/23/2014 02:43" } }

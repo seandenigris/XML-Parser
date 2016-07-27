@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testExternalEntitiesLimit" : "monty 1/21/2014 22:20",
+		"testExternalEntitySizeLimit" : "monty 1/21/2014 22:20",
+		"testExternalSubsetReadLimit" : "monty 1/23/2014 02:43",
+		"testRemoveLimits" : "monty 1/22/2014 00:11" } }

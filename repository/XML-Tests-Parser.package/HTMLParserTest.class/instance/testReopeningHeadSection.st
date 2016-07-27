@@ -2,7 +2,7 @@ tests
 testReopeningHeadSection
 	| document |
 
-	document := HTMLParser parse: '<head><p>text<title>reopened'.
+	document := HTMLParser parse: '<head><p>text<Title>reopened'.
 	self
 		assert: (document root elementsCollect: [:each | each name]) asArray = #('head' 'body');
 		assert: (document findElementNamed: 'head') elements size = 1;
