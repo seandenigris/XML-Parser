@@ -4,4 +4,4 @@ initialize
 
 	self
 		initializeEncodingNamesAndClassesCache;
-		initializePreferredClasses
+		initializePreferredClasses.
