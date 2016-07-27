@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Tests-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"saxHandler",
+		"sentHandlerMessages" ],
+	"name" : "SAXHandlerProxy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

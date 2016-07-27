@@ -1,20 +1,11 @@
 tests
 testLineEndingsDoNotMatter
-	| source docWithCrs docWithCrlfs |
+	| source docFromSourceWithCrs docFromSourceWithLfs docFromSourceWithCrlfs |
 
-	(source := String new writeStream)
-		nextPutAll: '<foo>';
-		cr;
-		nextPutAll: 'bar';
-		cr;
-		nextPutAll: 'baz';
-		cr;
-		nextPutAll: '</foo>'.
-
-	docWithCrs := XMLDOMParser parse: source contents.
-	docWithCrlfs :=
-		XMLDOMParser parse:
-			(source contents
-				copyReplaceAll: String cr
-				with: String crlf).
-	self assert: (docWithCrs root contentString) = (docWithCrlfs root contentString)
+	source := '<root>{1}one{1}two{1}</root>'.
+	docFromSourceWithCrs := XMLDOMParser parse: (source format: (Array with: String cr)).
+	docFromSourceWithLfs := XMLDOMParser parse: (source format: (Array with: String lf)).
+	docFromSourceWithCrlfs := XMLDOMParser parse: (source format: (Array with: String crlf)).
+	self
+		assert: (docFromSourceWithCrs root contentString) = (docFromSourceWithLfs root contentString);
+		assert: (docFromSourceWithLfs root contentString) = (docFromSourceWithCrlfs root contentString).

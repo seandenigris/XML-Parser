@@ -7,8 +7,18 @@ testTokenizerCharacters
 
 	tokenizer := XMLTokenizer driver: nil on: self addressBookXML readStream.
 
-	self assert: tokenizer streamReader next = $<.
-	self assert: tokenizer streamReader next = $a.
-	self assert: tokenizer streamReader next = $d.
-	self assert: tokenizer streamReader next = $d.
-	self assert: tokenizer streamReader next = $r.
+	self
+		assert: tokenizer streamReader next == $<;
+		assert: ('address' allSatisfy: [:each | tokenizer streamReader next == each]);
+		assert: tokenizer streamReader peek == $b.
+	tokenizer streamReader pushBack: 'test'.
+	self
+		assert: ('test' allSatisfy: [:each | tokenizer streamReader next == each]);
+		assert: tokenizer streamReader peek == $b;
+		assert: ('book' allSatisfy: [:each | tokenizer streamReader next == each]).
+	tokenizer streamReader
+		pushBack: 'book';
+		pushBack: 'test'.
+	self
+		assert: ('test' allSatisfy: [:each | tokenizer streamReader next == each]);
+		assert: ('book' allSatisfy: [:each | tokenizer streamReader next == each]).
