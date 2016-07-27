@@ -2,7 +2,7 @@ tests
 testRemoveLimits
 	|  parser resolver entityLimit entitySizeLimit |
 
-	parser := SAXHandler new.
+	parser := SAXHandler on: ''.
 	entityLimit := 10.
 	entitySizeLimit := 100.
 	(resolver := parser externalEntityResolver)

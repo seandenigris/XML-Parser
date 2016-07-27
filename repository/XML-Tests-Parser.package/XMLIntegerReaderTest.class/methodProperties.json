@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"maxBase" : "monty 10/24/2014 20:31",
+		"testBaseMarker" : "monty 10/27/2014 13:32",
 		"testBases" : "monty 10/26/2014 10:24",
 		"testMaxValue" : "monty 10/24/2014 20:31",
 		"testNonDigit" : "monty 10/26/2014 10:42",
+		"testPositioning" : "monty 10/27/2014 08:50",
 		"testReadLimit" : "monty 10/24/2014 20:40" } }
