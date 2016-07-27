@@ -1,0 +1,3 @@
+initialization
+initializeDefaultHighlight
+	defaultHighlight := XMLHighlight new

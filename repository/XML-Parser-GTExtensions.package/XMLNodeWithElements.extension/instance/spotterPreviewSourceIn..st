@@ -4,5 +4,5 @@ spotterPreviewSourceIn: aComposite
 	
 	aComposite text
 		title: 'Source';
-		display: [ :anElement | self prettyPrinted ];
+		display: #asHighlightedSpotterText;
 		entity: self

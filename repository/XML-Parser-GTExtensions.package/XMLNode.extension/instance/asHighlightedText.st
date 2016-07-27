@@ -1,7 +1,5 @@
 *XML-Parser-GTExtensions
 asHighlightedText
-	| writer |
-
-	writer := XMLHighlightingWriter new.
-	self writeXMLOn: writer.
-	^ writer asHighlightedText.
+	^ XMLHighlightingWriter new
+		writeWith: [:writer | self writeXMLOn: writer];
+		asHighlightedText

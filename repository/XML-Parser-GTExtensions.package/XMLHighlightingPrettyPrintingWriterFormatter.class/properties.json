@@ -1,6 +1,7 @@
 {
 	"category" : "XML-Parser-GTExtensions",
 	"classinstvars" : [
+		"defaultDefaultColor",
 		"defaultCDataColor",
 		"defaultCommentColor",
 		"defaultEntityReferenceColor",
@@ -20,6 +21,7 @@
 		"tagColor",
 		"cdataColor",
 		"quotedStringValueColor",
+		"defaultHighlight",
 		"xmlDeclarationHighlight",
 		"doctypeDeclarationHighlight",
 		"declarationHighlight",
