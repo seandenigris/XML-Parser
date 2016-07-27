@@ -9,4 +9,6 @@ writeXMLOn: aWriter
 	self hasAttributes 
 		ifTrue: [self writeAttributesOn: tagWriter].
 
-	tagWriter with: [self writeInnerXMLOn: aWriter].
+	tagWriter with: [
+		self hasChildren
+			ifTrue: [self writeInnerXMLOn: aWriter]].

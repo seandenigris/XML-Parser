@@ -1,7 +1,6 @@
 initialization
 setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attributes: anAttributeDictionary
-	(name := XMLNodeName qualified: aQualifiedName localPart: aLocalName)
-		addObserver: self.
+	name := XMLNodeName qualified: aQualifiedName localPart: aLocalName.
 
 	anAttributeDictionary isEmpty "avoid ifNotEmpty: closure overhead"
 		ifFalse: [

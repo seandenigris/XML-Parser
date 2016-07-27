@@ -1,6 +1,8 @@
 testing
 isNamedAny: aNameCollection
 	"Does the receiver's qualified or local name match any of the names supplied as the argument?'"
-	^ aNameCollection anySatisfy: [:each |
+	aNameCollection do: [:each |
 		"inline isNamed:"
-		self nodeName isSameAs: each]
+		(self nodeName isSameAs: each)
+			ifTrue: [^ true]].
+	^ false.

@@ -1,3 +1,3 @@
 accessing
 name: aName
-	self nodeName qualified: aName
+	self renameWith: [self nodeName qualified: aName]

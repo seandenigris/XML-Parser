@@ -7,7 +7,7 @@ pushStream: aStream onClose: aBlock
 		ifNil: [nestedStreams := OrderedCollection with: stream]
 		ifNotNil: [
 			(nestedStreams size >= self maxNestedStreams)
-				ifTrue: [XMLLimitException signal: 'cannot further nest input streams'].
+				ifTrue: [XMLLimitException signal: 'Cannot further nest input streams'].
 			nestedStreams addLast: stream].
 
 	self setStream: aStream onClose: aBlock

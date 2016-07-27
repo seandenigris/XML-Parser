@@ -1,1 +1,1 @@
-The class represents a name for an element or attribute. It stores the local part and qualified name. It also notifies any observers whenever any part of the name it models changes using #nodeNameChangedFrom:to:. You should not need to use this class directly.
+The class represents a name for an element or attribute. It stores the local part and qualified name. You should not need to use this class directly.

@@ -1,3 +1,3 @@
 accessing
 prefix: aPrefix
-	self nodeName prefix: aPrefix
+	self renameWith: [self nodeName prefix: aPrefix]

@@ -1,5 +1,4 @@
 accessing
 qualified: aQualifiedName
-	self changeWith: [
-		qualified := aQualifiedName.
-		localPart := aQualifiedName qualifiedNameLocalPart]
+	qualified := aQualifiedName.
+	localPart := aQualifiedName qualifiedNameLocalPart.

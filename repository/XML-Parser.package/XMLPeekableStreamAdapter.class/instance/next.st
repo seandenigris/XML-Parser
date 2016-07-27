@@ -1,13 +1,11 @@
 accessing
 next
-	| nextChar |
-
 	peekChar
-		ifNotNil: [
+		ifNotNil: [| nextChar |
 			nextChar := peekChar.
-			peekChar := nil]
+			peekChar := nil.
+			^ nextChar]
 		ifNil: [
-			nextChar := stream atEnd
+			^ stream atEnd
 				ifTrue: [nil]
-				ifFalse: [stream next]].
-	^ nextChar.
+				ifFalse: [stream next]]

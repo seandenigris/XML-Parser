@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/3/2014 04:31",
+	"commentStamp" : "monty 10/14/2014 07:17",
 	"instvars" : [
 		"qualified",
-		"localPart",
-		"notifier" ],
+		"localPart" ],
 	"name" : "XMLNodeName",
 	"pools" : [
 		 ],

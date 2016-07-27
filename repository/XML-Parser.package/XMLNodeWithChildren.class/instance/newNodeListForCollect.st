@@ -1,0 +1,3 @@
+private
+newNodeListForCollect
+	^ XMLOrderedList new

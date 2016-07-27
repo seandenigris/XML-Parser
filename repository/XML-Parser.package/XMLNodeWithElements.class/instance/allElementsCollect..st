@@ -2,6 +2,6 @@ enumerating
 allElementsCollect: aBlock
 	| collectedElements |
 
-	collectedElements := self nodes copyEmpty.
+	collectedElements := self newNodeListForCollect.
 	self allElementsDo: [:each | collectedElements addLast: (aBlock value: each)].
 	^ collectedElements.
