@@ -1,0 +1,3 @@
+accessing
+newVirtualFileResolver
+	^ XMLConformanceVirtualFileResolver virtualFileClass: self class

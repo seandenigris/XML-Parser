@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"testCaseClass" ],
-	"name" : "XMLConformanceVirtualFileClient",
+		 ],
+	"name" : "XMLConformanceVirtualFileHandle",
 	"pools" : [
 		 ],
-	"super" : "XMLFileSystemClient",
+	"super" : "XMLFileHandle",
 	"type" : "normal" }

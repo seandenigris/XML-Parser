@@ -6,10 +6,9 @@ parse: aString documentURI: aUri
 		self parserClass
 			on: aString
 			documentURI: aUri.
-	parser externalEntityResolver fileClient:
-		(self fileClientClass testCaseClass: self class).
 	parser
 		usesNamespaces: false;
 		isValidating: true;
 		resolvesExternalEntities: true;
+		externalEntityResolver: self newVirtualFileResolver;
 		parseDocument.
