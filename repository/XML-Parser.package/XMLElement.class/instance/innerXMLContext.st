@@ -1,3 +1,0 @@
-private
-innerXMLContext
-	^ XMLContentContext new

@@ -1,8 +1,8 @@
 parsing
 innerXMLParsedWith: aParser
-	| oldNodes |
+	| removedNodes |
 
-	oldNodes := self nodes asArray.
+	removedNodes := self nodes asArray.
 	self removeNodes.
 	[aParser
 		pushInnerXMLRootNode: self;
@@ -11,5 +11,5 @@ innerXMLParsedWith: aParser
 		do: [:error |
 			self
 				removeNodes;
-				addNodes: oldNodes.
+				addNodes: removedNodes.
 			error pass].

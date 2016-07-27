@@ -1,3 +1,3 @@
 private
 innerXMLContext
-	self subclassResponsibility
+	^ XMLContentContext new
