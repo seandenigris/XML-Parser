@@ -1,4 +1,4 @@
-resolving
+accessing
 prefixesOfNamespaceURI: aNamespaceUri
 	| prefixes |
 

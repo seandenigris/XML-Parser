@@ -15,7 +15,8 @@ nextTag
 		whileFalse: [ | attributeName attributeValue |
 			attributeName := self nextName.
 			streamReader skipSeparators.
-			self expectNext: $=.
+			streamReader next == $=
+				ifFalse: [self errorExpectedAttributeNameValueSeparator].
 			streamReader skipSeparators.
 			attributeValue := self nextAttributeValue.
 	

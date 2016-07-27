@@ -1,4 +1,4 @@
-private
+accessing
 mapPrefixesAndURIs: anAssociationCollection
 	| copiedPrefixMappings |
 
