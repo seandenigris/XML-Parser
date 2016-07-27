@@ -1,3 +1,4 @@
 private
 scopedAttributeNames
-	^ #('xml:space' 'xml:base' 'xml:lang')
+	"the scoped attributes tracked by this driver"
+	^ #('xml:space' 'xml:base')

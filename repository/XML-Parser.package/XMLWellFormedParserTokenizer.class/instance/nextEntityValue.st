@@ -26,7 +26,10 @@ nextEntityValue
 								ifFalse: [
 									self errorInternalDeclarationParameterEntityReference].
 							self nextParameterEntityReferenceOnWriteStream]
-						ifFalse: [writeStream nextPut: nextChar]]].
+						ifFalse: [
+							nextChar isXMLChar
+								ifFalse: [self errorNonCharInEntityValue: nextChar].
+							writeStream nextPut: nextChar]]].
 	context exitLiteralValue.
 	self expectNext: quote.
 

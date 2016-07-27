@@ -1,6 +1,6 @@
 private
 findTextConverterClassForEncoding: anEncoding
-	^ (Smalltalk
-		at: #TextConverter
+	^ (XMLClassFinder
+		classNamed: #TextConverter
 		ifAbsent: [^ nil])
 			defaultConverterClassForEncoding: anEncoding asLowercase

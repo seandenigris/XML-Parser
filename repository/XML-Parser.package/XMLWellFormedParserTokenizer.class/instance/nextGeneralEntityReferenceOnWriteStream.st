@@ -1,6 +1,6 @@
 tokenizing
 nextGeneralEntityReferenceOnWriteStream
-	"returns true if writeStream is written to, false otherwise"
+	"returns the (first) character written to 'writeStream' if any, nil otherwise"
 	| name |
 
 	name := self nextName.
@@ -11,7 +11,7 @@ nextGeneralEntityReferenceOnWriteStream
 			driver replacesContentEntityReferences
 				ifFalse: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
 			writeStream nextPut: character.
-			^ true].
+			^ character].
 
 	(driver handleGeneralEntityReference: name)
 		ifNil: [
@@ -23,4 +23,4 @@ nextGeneralEntityReferenceOnWriteStream
 			driver replacesContentEntityReferences
 				ifFalse: [^ self nextUnreplacedGeneralEntityOnWriteStreamNamed: name].
 			self constructReplacementForGeneralEntity: entity].
-	^ false.
+	^ nil.

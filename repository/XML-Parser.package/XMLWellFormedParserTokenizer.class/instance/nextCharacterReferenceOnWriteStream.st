@@ -1,6 +1,6 @@
 tokenizing
 nextCharacterReferenceOnWriteStream
-	"returns true if writeStream is written to, false otherwise"
+	"returns the character written to the stream or $& if it wasn't replaced"
 	| codePoint |
 
 	"skip #"
@@ -17,12 +17,13 @@ nextCharacterReferenceOnWriteStream
 			writeStream
 				nextPutAll: '&#';
 				nextPutAll: nameStream contents;
-				nextPut: $;]
+				nextPut: $;.
+			^ $&]
 		ifFalse: [| character |
 			(codePoint := streamReader nextInteger)
 				ifNil: [self errorExpectedIntegerCharacterReference].
 			(character := self characterFromCodePoint: codePoint)
 				ifNil: [self errorInvalidCharacterReferenceCodePoint: codePoint].
 			self expectNext: $;.
-			writeStream nextPut: character].
-	^ true.
+			writeStream nextPut: character.
+			^ character].

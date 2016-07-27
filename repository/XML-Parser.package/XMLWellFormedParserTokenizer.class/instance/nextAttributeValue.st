@@ -12,15 +12,16 @@ nextAttributeValue
 		or: [nextChar == $<
 			or: [nextChar == nil]]]
 		whileFalse: [
-			nextChar isXMLChar
-				ifFalse: [self errorNonCharInAttributeValue: nextChar].
 			nextChar == $&
 				ifTrue: [
 					"char refs should be ignored by whitespace normalization"
 					self nextGeneralEntityOrCharacterReferenceOnWriteStream]
 				ifFalse: [
 					nextChar isXMLSeparator
-						ifTrue: [nextChar := NormalizedSpace].
+						ifTrue: [nextChar := NormalizedSpace]
+						ifFalse: [
+							nextChar isXMLChar
+								ifFalse: [self errorNonCharInAttributeValue: nextChar]].
 					writeStream nextPut: nextChar]].
 	context exitLiteralValue.
 

@@ -1,3 +1,3 @@
 signalling
-formatSignal: aString withAll: anArray
+formatSignal: aString withArguments: anArray
 	^ self signal: (aString format: anArray)

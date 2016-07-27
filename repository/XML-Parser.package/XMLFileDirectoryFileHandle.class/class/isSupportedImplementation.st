@@ -1,3 +1,3 @@
 testing
 isSupportedImplementation
-	^ Smalltalk includesKey: #FileDirectory
+	^ XMLClassFinder hasClassNamed: #FileDirectory

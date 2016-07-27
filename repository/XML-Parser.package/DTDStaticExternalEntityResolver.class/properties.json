@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 3/22/2016 01:57",
+	"commentStamp" : "monty 6/27/2016 04:13",
 	"instvars" : [
 		"externalEntities" ],
-	"name" : "DTDPluggableExternalEntityResolver",
+	"name" : "DTDStaticExternalEntityResolver",
 	"pools" : [
 		 ],
 	"super" : "DTDExternalEntityResolver",

@@ -1,3 +1,3 @@
 instance creation
 basicOnPath: aPathString
-	^ (Smalltalk at: #StandardFileStream) readOnlyFileNamed: aPathString
+	^ (XMLClassFinder classNamed: #StandardFileStream) readOnlyFileNamed: aPathString

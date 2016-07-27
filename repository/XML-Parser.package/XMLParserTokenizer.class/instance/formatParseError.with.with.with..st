@@ -2,7 +2,7 @@ errors
 formatParseError: aString with: aFirstValue with: aSecondValue with: aThirdValue
 	self
 		formatParseError: aString
-		withAll:
+		withArguments:
 			(Array
 				with: aFirstValue
 				with: aSecondValue

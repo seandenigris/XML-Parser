@@ -5,4 +5,4 @@ nextUnreplacedGeneralEntityOnWriteStreamNamed: aName
 		nextPut: $&;
 		nextPutAll: aName;
 		nextPut: $;.
-	^ true.
+	^ $&.

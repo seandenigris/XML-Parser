@@ -1,3 +1,3 @@
 testing
 isSupportedImplementation
-	^ Smalltalk includesKey: #ZnClient
+	^ XMLClassFinder hasClassNamed: #ZnClient

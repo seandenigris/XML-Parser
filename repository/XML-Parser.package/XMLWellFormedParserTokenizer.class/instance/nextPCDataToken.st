@@ -1,27 +1,32 @@
 tokenizing
 nextPCDataToken
-	| isIgnorableWhitespace nextChar |
+	| isWhitespace nextChar |
 
-	isIgnorableWhitespace := true.
+	isWhitespace := true.
 	writeStream reset.
 	[(nextChar := streamReader peek) == $<
 		or: [nextChar == nil]]
 		whileFalse: [
-			streamReader next isXMLChar
-				ifFalse: [self errorNonCharInPCData: nextChar].
-			nextChar == $&
+			streamReader next == $&
 				ifTrue: [
 					self nextGeneralEntityOrCharacterReferenceOnWriteStream
-						ifTrue: [isIgnorableWhitespace := false]]
+						ifNotNil: [:writtenChar |
+							isWhitespace
+								ifTrue: [isWhitespace := writtenChar isXMLSeparator]]]
 				ifFalse: [
 					nextChar == $]
 						ifTrue: [
 							(streamReader nextMatch: $] followedBy: $>)
-								ifTrue: [self errorUnexpectedCDataTerminator]].
-					isIgnorableWhitespace
-						ifTrue: [isIgnorableWhitespace := nextChar isXMLSeparator].
+								ifTrue: [self errorUnexpectedCDataTerminator].
+							isWhitespace := false]
+						ifFalse: [
+							(isWhitespace
+								and: [isWhitespace := nextChar isXMLSeparator])
+								ifFalse: [
+									nextChar isXMLChar
+										ifFalse: [self errorNonCharInPCData: nextChar]]].
 					writeStream nextPut: nextChar]].
-	isIgnorableWhitespace
+	isWhitespace
 		ifTrue: [
 			writeStream position > 0
 				ifTrue: [driver handleWhitespace: writeStream contents]]

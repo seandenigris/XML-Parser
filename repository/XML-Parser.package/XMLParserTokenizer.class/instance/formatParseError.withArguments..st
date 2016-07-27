@@ -1,3 +1,3 @@
 errors
-formatParseError: aString withAll: aValueCollection
+formatParseError: aString withArguments: aValueCollection
 	self parseError: (aString format: aValueCollection)

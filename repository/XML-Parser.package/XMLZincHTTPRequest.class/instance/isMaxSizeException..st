@@ -1,3 +1,3 @@
 private
 isMaxSizeException: anException
-	^ anException isKindOf: (Smalltalk at: #ZnEntityTooLarge)
+	^ anException isKindOf: (XMLClassFinder classNamed: #ZnEntityTooLarge)

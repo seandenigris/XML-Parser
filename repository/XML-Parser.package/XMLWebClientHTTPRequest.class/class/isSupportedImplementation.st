@@ -1,3 +1,3 @@
 testing
 isSupportedImplementation
-	^ Smalltalk includesKey: #WebClient
+	^ XMLClassFinder hasClassNamed: #WebClient

@@ -1,3 +1,3 @@
 private
 basicCurrentWorkingDirectory
-	^ (Smalltalk at: #FileDirectory) default pathName
+	^ (XMLClassFinder classNamed: #FileDirectory) default pathName

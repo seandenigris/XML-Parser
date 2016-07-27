@@ -1,4 +1,4 @@
-handling - declarations
+handling - declaration
 generalEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotationName
 	self topNode addNode:
 		(self nodeFactory generalEntityDeclarationClass

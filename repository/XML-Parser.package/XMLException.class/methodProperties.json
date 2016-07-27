@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"formatSignal:with:" : "monty 12/22/2014 17:06",
-		"formatSignal:with:with:" : "monty 12/22/2014 17:06",
-		"formatSignal:with:with:with:" : "monty 12/22/2014 17:06",
-		"formatSignal:with:with:with:with:" : "monty 12/22/2014 17:06",
-		"formatSignal:withAll:" : "monty 12/22/2014 17:06",
+		"formatSignal:with:" : "monty 7/3/2016 18:38",
+		"formatSignal:with:with:" : "monty 7/3/2016 18:38",
+		"formatSignal:with:with:with:" : "monty 7/3/2016 18:38",
+		"formatSignal:with:with:with:with:" : "monty 7/3/2016 18:38",
+		"formatSignal:withArguments:" : "monty 7/3/2016 18:38",
 		"signalMessageFrom:" : "monty 12/3/2015 05:31" },
 	"instance" : {
 		"append:withDescription:" : "monty 3/30/2016 05:30" } }

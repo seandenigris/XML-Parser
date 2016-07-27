@@ -1,4 +1,4 @@
-handling - declarations
+handling - declaration
 generalEntityDeclaration: aName replacement: aReplacement
 	self topNode addNode:
 		(self nodeFactory generalEntityDeclarationClass

@@ -1,6 +1,6 @@
 tokenizing
 nextGeneralEntityOrCharacterReferenceOnWriteStream
-	"returns true if writeStream is written to, false otherwise"
+	"returns the (first) character written to 'writeStream' if any, nil otherwise"
 	| generalEntity result |
 
 	generalEntity := self topPushedBackEntity.
@@ -11,6 +11,5 @@ nextGeneralEntityOrCharacterReferenceOnWriteStream
 	generalEntity
 		ifNotNil: [
 			(self pushedBackEntities includes: generalEntity)
-				ifFalse: [
-					self errorImproperGeneralEntityNesting]].
+				ifFalse: [self errorImproperGeneralEntityNesting]].
 	^ result.

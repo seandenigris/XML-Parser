@@ -1,6 +1,7 @@
 SystemOrganization addCategory: #'XML-Parser'!
 SystemOrganization addCategory: 'XML-Parser-DOM'!
 SystemOrganization addCategory: 'XML-Parser-DTD'!
+SystemOrganization addCategory: 'XML-Parser-Drivers'!
 SystemOrganization addCategory: 'XML-Parser-Exceptions'!
 SystemOrganization addCategory: 'XML-Parser-Files'!
 SystemOrganization addCategory: 'XML-Parser-HTTP'!

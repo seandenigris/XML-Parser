@@ -5,4 +5,9 @@ printToFileNamed: aFileName
 
 	self
 		withNewWriteStreamOnFileNamed: aFileName
-		do: [:writeStream | self printOn: writeStream]
+		do: [:writeStream |
+			self
+				printOn: writeStream
+				beforeWritingDo: [:writer |
+					"use the platform's line break because we're writing to a file"
+					writer enablePlatformSpecificLineBreak]]

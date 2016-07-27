@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"isSupportedImplementation" : "monty 3/4/2016 16:23" },
+		"isSupportedImplementation" : "monty 7/6/2016 02:40" },
 	"instance" : {
-		"basicGetUpToLimit:decoding:" : "monty 3/13/2016 23:38",
-		"isMaxSizeException:" : "monty 12/16/2014 20:26" } }
+		"basicGetUpToLimit:decoding:" : "monty 7/6/2016 02:38",
+		"isMaxSizeException:" : "monty 7/6/2016 02:37" } }

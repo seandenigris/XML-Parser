@@ -1,4 +1,4 @@
 accessing
 fileDirectory
 	^ fileDirectory
-		ifNil: [fileDirectory := (Smalltalk at: #FileDirectory) default]
+		ifNil: [fileDirectory := (XMLClassFinder classNamed: #FileDirectory) default]

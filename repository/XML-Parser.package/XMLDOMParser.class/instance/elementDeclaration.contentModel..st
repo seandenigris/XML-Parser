@@ -1,4 +1,4 @@
-handling - declarations
+handling - declaration
 elementDeclaration: anElementName contentModel: aContentModel
 	self topNode addNode:
 		(self nodeFactory elementDeclarationClass
