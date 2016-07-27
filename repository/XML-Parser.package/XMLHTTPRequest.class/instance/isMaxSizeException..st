@@ -1,0 +1,3 @@
+private
+isMaxSizeException: anException
+	self subclassResponsibility

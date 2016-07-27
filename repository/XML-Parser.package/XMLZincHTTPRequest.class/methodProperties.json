@@ -2,4 +2,6 @@
 	"class" : {
 		"isSupported" : "monty 10/25/2014 17:43" },
 	"instance" : {
-		"getResponseUpToLimit:withTimeout:onError:" : "monty 11/17/2014 23:00" } }
+		"getResponseUpToLimit:withTimeout:onError:" : "monty 12/16/2014 20:27",
+		"isMaxSizeException:" : "monty 12/16/2014 20:26",
+		"setZincMaxEntitySize:during:onError:" : "monty 12/16/2014 20:35" } }
