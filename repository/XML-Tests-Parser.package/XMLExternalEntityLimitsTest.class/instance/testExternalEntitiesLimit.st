@@ -2,7 +2,8 @@ tests
 testExternalEntitiesLimit
 	| parser xml entityLimit |
 
-	self skipOrReturnWith: [^ self].
+	self isSkipping
+		ifTrue: [self skipOrReturnWith: [^ self]].
 
 	entityLimit := 2.
 	xml := self doctypeWithDeclarationsForEntityURIs: (self externalEntityURLs copyFrom: 1 to: entityLimit).

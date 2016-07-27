@@ -2,7 +2,8 @@ tests
 testOnURL
 	| parser |
 
-	self skipOrReturnWith: [^ self].
+	self isSkipping
+		ifTrue: [self skipOrReturnWith: [^ self]].
 
 	self
 		shouldnt: [parser := SAXHandler onURL: self feedURL]

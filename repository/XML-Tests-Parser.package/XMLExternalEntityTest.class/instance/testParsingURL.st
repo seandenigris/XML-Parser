@@ -3,7 +3,8 @@ testParsingURL
 	"This uses HTTP so is skipped by default"
 	| doc |
 
-	self skipOrReturnWith: [^ self].
+	self isSkipping
+		ifTrue: [self skipOrReturnWith: [^ self]].
 
 	self
 		shouldnt: [doc := XMLDOMParser parseURL: self feedURL]

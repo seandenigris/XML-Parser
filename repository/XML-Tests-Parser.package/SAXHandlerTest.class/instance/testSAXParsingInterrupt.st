@@ -13,5 +13,3 @@ testSAXParsingInterrupt
 		self assert:
 			(parser wasSentSelectors:
 				((self prefixedXMLSourceSelectors copyUpTo: each) copyWith: each))].
-		
-	
