@@ -2,14 +2,14 @@ tests
 test5elementConstructors
 	| noAttributes attributes str element |
 
-	noAttributes := XMLOrderPreservingDictionary new.
+	noAttributes := OrderPreservingDictionary new.
 	self
 		assertElement: (XMLElement named: 'foo')
 		hasName: 'foo'
 		attributes: noAttributes
 		contentString: ''.
 
-	attributes := XMLOrderPreservingDictionary with: 'foo'->'test1' with: 'bar'->'test2'.
+	attributes := OrderPreservingDictionary with: 'foo'->'test1' with: 'bar'->'test2'.
 	self
 		assertElement: (XMLElement name: 'foo' attributes: attributes)
 		hasName: 'foo'

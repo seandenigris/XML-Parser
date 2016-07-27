@@ -22,7 +22,7 @@ test4elementAttributes
 	self
 		assertElement: element
 		hasAttributes:
-			(XMLOrderPreservingDictionary
+			(OrderPreservingDictionary
 				with: 'foo'->'test'
 				with: 'bar'->'test2').
 
