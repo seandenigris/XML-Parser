@@ -8,4 +8,4 @@ nextName
 		ifNil: [self errorExpected: 'Character expected.'].
 	NameDelimiters includes: nextChar] whileFalse: [
 			nameBuffer nextPut: self next].
-	^self fastStreamStringContents: nameBuffer
+	^ (self fastStreamStringContents: nameBuffer) 
