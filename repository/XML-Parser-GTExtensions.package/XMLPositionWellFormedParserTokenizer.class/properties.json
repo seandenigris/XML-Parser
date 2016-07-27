@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/2/2015 06:17",
+	"commentStamp" : "monty 3/6/2016 08:18",
 	"instvars" : [
 		"initialReadLimit" ],
 	"name" : "XMLPositionWellFormedParserTokenizer",

@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 10/2/2015 04:56",
+	"commentStamp" : "monty 3/6/2016 08:22",
 	"instvars" : [
 		"highlighter",
-		"encodingName" ],
+		"encoding" ],
 	"name" : "XMLHighlightingParser",
 	"pools" : [
 		 ],

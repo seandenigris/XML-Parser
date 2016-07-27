@@ -3,4 +3,4 @@ on: aStringOrStream
 	super on: aStringOrStream.
 
 	highlighter := XMLHighlighter new.
-	encodingName := ''.
+	encoding := ''.

@@ -10,4 +10,4 @@ spotterForXMLFileFor: aStep
 		allCandidates: [(XMLDOMParser parseFileNamed: self fullName) allElements];
 		itemName: #gtDisplayString;
 		filter: GTFilterSubstring;
-		wantsToDisplayOnEmptyQuery: true
+		wantsToDisplayOnEmptyQuery: true.

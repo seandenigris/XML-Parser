@@ -1,1 +1,1 @@
-This class is a non-validating SAX driver that forwards token start/end positions to a SAXHandler.
+This class is a SAX driver that forwards token start/end positions to a SAXHandler. Does not support entities or validation, but does support namespaces.

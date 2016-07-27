@@ -2,7 +2,8 @@ converting
 asHighlightedText
 	| text |
 
-	"#contents does not truncate unlike printString or asString"
+	"printString/asString forward to printStringLimitedTo: which truncates,
+	so contents is used instead to get the complete text"
 	text := self contents asText.
 	self highlighter highlightText: text.
 	^ text.

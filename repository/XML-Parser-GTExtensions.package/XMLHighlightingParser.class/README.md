@@ -1,1 +1,1 @@
-This class is an XML parser that can convert its input to styled Text objects after parsing.
+This class is an XML parser that can convert its input to Text objects styled with highlighting after parsing.

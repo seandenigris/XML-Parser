@@ -18,6 +18,6 @@ parse: aString onError: anError
 						(parser currentPosition >= aString size
 							ifTrue: [1]
 							ifFalse: [parser currentPosition])].
-	encodingName := highlightingParser encodingName.
+	encoding := highlightingParser encoding.
 
 	^ highlightedText.
