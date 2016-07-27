@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asXMLEscapedString" : "monty 12/16/2014 16:10",
+		"asXMLString" : "monty 12/16/2014 16:10",
+		"asXMLURI" : "monty 12/16/2014 16:10",
+		"expandWithNamespaceURI:" : "monty 12/16/2014 16:10",
+		"hasPrefixBeforeLocalName" : "monty 12/16/2014 16:10",
+		"isNamespaceAttributeName" : "monty 12/16/2014 16:10",
+		"isQualifiedName:orLocalName:" : "monty 12/16/2014 16:10",
+		"isReservedAttributeName" : "monty 12/16/2014 16:10",
+		"localNameAfterPrefix" : "monty 12/16/2014 16:10",
+		"localNameAfterPrefix:" : "monty 12/16/2014 16:10",
+		"parseXML" : "monty 12/16/2014 16:10",
+		"prefixBeforeLocalName" : "monty 12/16/2014 16:10",
+		"prefixBeforeLocalName:" : "monty 12/16/2014 16:10",
+		"qualifyWithPrefix:" : "monty 12/16/2014 16:10" } }
