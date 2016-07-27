@@ -4,6 +4,7 @@
 	"instance" : {
 		"addExternalGeneralEntity:resolver:uri:from:" : "monty 3/22/2015 16:23",
 		"addExternalParameterEntity:resolver:uri:from:" : "monty 3/22/2015 16:22",
+		"addGeneralEntitiesFrom:" : "monty 5/9/2015 16:50",
 		"addGeneralEntity:replacement:from:" : "monty 3/22/2015 16:22",
 		"addNotation:" : "monty 11/14/2013 23:59",
 		"addParameterEntity:replacement:from:" : "monty 3/22/2015 16:23",

@@ -10,7 +10,9 @@
 		"encoding" : "monty 3/24/2015 18:28",
 		"encoding:" : "mir 1/17/2002 12:57",
 		"errorAddingDoctypeDeclarationWithParent" : "monty 4/11/2015 01:00",
-		"innerXMLContext" : "monty 4/6/2015 01:43",
+		"hasDoctypeDeclaration" : "monty 5/9/2015 03:10",
+		"hasDoctypeDefinition" : "monty 5/9/2015 03:11",
+		"innerXMLContext" : "monty 5/9/2015 23:23",
 		"isDocument" : "JAAyer 2/19/2010 23:51",
 		"isStandalone" : "monty 11/19/2013 05:38",
 		"isStandalone:" : "monty 11/19/2013 05:40",
@@ -21,6 +23,6 @@
 		"validateWith:" : "monty 4/5/2015 21:11",
 		"version" : "JAAyer 2/25/2010 01:48",
 		"version:" : "JAAyer 8/9/2010 19:39",
-		"writeDoctypeDeclarationOn:" : "monty 5/7/2015 18:53",
+		"writeDoctypeDeclarationOn:" : "monty 5/9/2015 03:11",
 		"writeXMLDeclarationOn:" : "monty 5/7/2015 18:53",
 		"writeXMLOn:" : "monty 5/7/2015 18:53" } }

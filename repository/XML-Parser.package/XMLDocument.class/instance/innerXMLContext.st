@@ -1,3 +1,3 @@
 private
 innerXMLContext
-	^ XMLXMLDeclarationContext new
+	^ XMLPostDoctypeDeclarationContext new

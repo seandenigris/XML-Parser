@@ -1,3 +1,0 @@
-accessing
-elementIDValidator
-	self doctypeDefinition elementIDValidator
