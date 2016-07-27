@@ -14,7 +14,8 @@
 		"generalEntities",
 		"parameterEntities",
 		"unparsedEntities",
-		"notations" ],
+		"notations",
+		"elementIds" ],
 	"name" : "DTDDoctypeDefinition",
 	"pools" : [
 		 ],

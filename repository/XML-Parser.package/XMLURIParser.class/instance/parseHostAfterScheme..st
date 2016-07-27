@@ -1,6 +1,6 @@
 parsing
-parseHost
-	^ (uriStream xmlParserAtBeginning not
+parseHostAfterScheme: aScheme
+	^ (aScheme notEmpty
 		or: [self parseDoubleSlashOrReset])
 		ifTrue: [(self parseUpToAnyNotSkipping: ':/?#') asLowercase]
 		ifFalse: [''].

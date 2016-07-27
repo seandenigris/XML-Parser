@@ -1,3 +1,3 @@
-*XML-Parser
+*XML-Parser-URI
 asXMLURI
 	^ XMLURI fromString: self

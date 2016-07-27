@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "monty 1/23/2014 17:59",
+	"commentStamp" : "monty 12/23/2014 16:36",
 	"instvars" : [
 		 ],
-	"name" : "XMLParserException",
+	"name" : "XMLException",
 	"pools" : [
 		 ],
-	"super" : "XMLException",
+	"super" : "Error",
 	"type" : "normal" }

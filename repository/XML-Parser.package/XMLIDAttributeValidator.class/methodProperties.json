@@ -1,11 +1,12 @@
 {
 	"class" : {
-		 },
+		"classForAttribute:" : "monty 12/23/2014 18:32",
+		"element:attribute:defaultValueValidator:" : "monty 12/23/2014 18:33" },
 	"instance" : {
 		"errorDuplicateID:" : "monty 10/31/2014 17:26",
 		"errorElementWithMultipleIDAttributes" : "monty 10/31/2014 17:26",
 		"hasIDs" : "monty 12/29/2013 02:57",
 		"ids" : "monty 11/19/2013 08:18",
 		"isIDValidator" : "monty 12/10/2013 06:07",
-		"validateAndAddTo:usingDeclarationsFrom:" : "monty 10/31/2014 17:25",
-		"validateAttributeValue:" : "monty 10/31/2014 17:26" } }
+		"validateAttributeValue:" : "monty 10/31/2014 17:26",
+		"validateBeforeAddingTo:usingDeclarationsFrom:" : "monty 12/23/2014 20:27" } }

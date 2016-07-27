@@ -1,3 +1,4 @@
-private
+validation
 validateXMLIDAttributeIn: anAttributeDictionary
-	self xmlIDValidator validateAttributes: anAttributeDictionary
+	self hasValidators
+		ifFalse: [self defaultXMLIDValidator validateAttributes: anAttributeDictionary]

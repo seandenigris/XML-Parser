@@ -1,0 +1,1 @@
+A generic exception class that supports message formatting.

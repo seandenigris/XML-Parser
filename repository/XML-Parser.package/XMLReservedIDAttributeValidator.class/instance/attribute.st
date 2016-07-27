@@ -1,3 +1,0 @@
-accessing
-attribute
-	^ 'xml:id'

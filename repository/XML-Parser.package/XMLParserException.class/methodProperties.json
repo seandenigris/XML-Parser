@@ -1,10 +1,6 @@
 {
 	"class" : {
-		"formatSignal:with:" : "monty 11/6/2014 16:18",
-		"formatSignal:with:with:" : "monty 11/6/2014 16:18",
-		"formatSignal:with:with:with:" : "monty 11/6/2014 16:18",
-		"formatSignal:withAll:" : "monty 11/6/2014 16:17",
-		"signalMessageFrom:" : "monty 11/17/2014 23:00" },
+		 },
 	"instance" : {
 		"appendLineNumber:" : "monty 12/13/2014 21:48",
 		"shouldPassOnWhenCaught" : "monty 11/26/2014 06:03" } }

@@ -1,0 +1,3 @@
+validation
+validateBeforeAddingTo: anAttributeValidatorDictionary usingDeclarationsFrom: aDeclarationDelegate
+	self validateReservedAttributeValidator

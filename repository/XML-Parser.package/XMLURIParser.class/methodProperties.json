@@ -4,7 +4,7 @@
 	"instance" : {
 		"parseDoubleSlashOrReset" : "monty 1/7/2014 04:18",
 		"parseFragment" : "monty 1/10/2014 06:59",
-		"parseHost" : "monty 12/14/2014 12:28",
+		"parseHostAfterScheme:" : "monty 12/22/2014 13:52",
 		"parsePath" : "monty 1/7/2014 01:34",
 		"parsePort" : "monty 10/22/2014 07:06",
 		"parseQueryString" : "monty 1/10/2014 06:59",

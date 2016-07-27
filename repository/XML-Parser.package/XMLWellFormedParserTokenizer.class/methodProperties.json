@@ -7,8 +7,10 @@
 		"initializeNormalizedSpace" : "monty 2/10/2014 01:18",
 		"initializePubidChars" : "monty 11/12/2013 01:44",
 		"initializeUnaryOperatorChars" : "monty 1/21/2014 23:45",
+		"isNCName:" : "monty 12/23/2014 18:03",
 		"isName:" : "monty 12/11/2014 05:17",
-		"isNmtoken:" : "monty 12/11/2014 05:17" },
+		"isNmtoken:" : "monty 12/11/2014 05:17",
+		"nextNameFrom:on:" : "monty 12/23/2014 16:45" },
 	"instance" : {
 		"activeEntities" : "monty 1/17/2014 05:28",
 		"addActiveEntity:" : "monty 10/31/2014 17:45",
