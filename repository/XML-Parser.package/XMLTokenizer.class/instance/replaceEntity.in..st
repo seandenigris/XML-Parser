@@ -1,5 +1,5 @@
 entities
-handleEntity: referenceString in: parsingContext 
+replaceEntity: referenceString in: parsingContext 
 
 	| entity entityValue |
 	entity := self entity: referenceString.

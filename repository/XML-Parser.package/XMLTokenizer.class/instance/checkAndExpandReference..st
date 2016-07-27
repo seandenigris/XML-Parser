@@ -12,7 +12,7 @@ checkAndExpandReference: parsingContext
 				ifTrue: [^ streamReader pushStream: (ReadStream on: self nextCharReference asString)].
 			referenceString := self nextLiteral.
 			self expectNext: $;.
-			driver handleEntity: referenceString in: parsingContext ]
+			self replaceEntity: referenceString in: parsingContext ]
 		ifFalse: [
 			((nextChar == $%
 				and: [self isParsingMarkup])
@@ -20,7 +20,7 @@ checkAndExpandReference: parsingContext
 				ifTrue: [
 					streamReader skipSeparators.
 					referenceString := self nextLiteral.
-					driver handleEntity: referenceString in: parsingContext]].
+					self replaceEntity: referenceString in: parsingContext]].
 
 	self expectMore.
 	^ nextChar.

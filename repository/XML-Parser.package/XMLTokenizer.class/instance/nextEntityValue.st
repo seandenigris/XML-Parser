@@ -25,7 +25,7 @@ nextEntityValue
 				ifTrue: [
 					streamReader skipSeparators.
 					referenceString := self nextLiteral.
-					nextChar := driver handleEntity: referenceString in: #entityValue.
+					nextChar := self replaceEntity: referenceString in: #entityValue.
 					nextPeek := nextChar := streamReader next]
 				ifFalse: [streamReader next]].
 	nextPeek == delimiterChar]

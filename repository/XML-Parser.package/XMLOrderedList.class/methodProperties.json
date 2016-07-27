@@ -18,6 +18,7 @@
 		"addLast:" : "JAAyer 8/4/2010 13:12",
 		"after:" : "JAAyer 8/4/2010 12:48",
 		"asArray" : "JAAyer 8/4/2010 12:53",
+		"asNINode" : "JAAyer 11/29/2010 14:00",
 		"at:" : "JAAyer 8/4/2010 12:49",
 		"at:ifAbsentPut:" : "JAAyer 8/4/2010 15:12",
 		"at:put:" : "JAAyer 8/4/2010 13:25",
@@ -25,6 +26,7 @@
 		"before:" : "JAAyer 8/4/2010 12:50",
 		"capacity" : "JAAyer 8/4/2010 13:14",
 		"collect:" : "JAAyer 11/28/2010 13:04",
+		"collect:displayingProgress:" : "JAAyer 11/28/2010 21:13",
 		"collect:from:to:" : "JAAyer 11/28/2010 13:04",
 		"collect:thenSelect:" : "JAAyer 11/28/2010 13:04",
 		"copy" : "JAAyer 8/4/2010 14:54",
@@ -51,4 +53,5 @@
 		"sort:" : "JAAyer 8/4/2010 13:43",
 		"species" : "JAAyer 3/12/2010 11:02",
 		"with:collect:" : "JAAyer 11/28/2010 13:04",
-		"withIndexCollect:" : "JAAyer 11/28/2010 13:04" } }
+		"withIndexCollect:" : "JAAyer 11/28/2010 13:04",
+		"withIndexCollect:displayingProgress:" : "JAAyer 11/28/2010 21:23" } }

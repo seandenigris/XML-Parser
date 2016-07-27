@@ -14,5 +14,5 @@
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],
-	"super" : "XMLDriver",
+	"super" : "XMLParserDriver",
 	"type" : "normal" }

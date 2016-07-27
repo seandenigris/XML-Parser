@@ -1,1 +1,0 @@
-This is a base class for drivers. Drivers are sent messages by a tokenize that prompt it to handle XML tokens.
