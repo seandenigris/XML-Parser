@@ -4,7 +4,7 @@ newNodeWithElements
 		addNode: (XMLComment string: 'before');
 		addNode:
 			((XMLElement name: 'zero')
-				addNode: (XMLComment string: 'before');
+				addNode: (XMLComment string: 'during');
 				addNode:
 					((XMLElement named: 'one')
 						attributeAt: 'one' put: '1';

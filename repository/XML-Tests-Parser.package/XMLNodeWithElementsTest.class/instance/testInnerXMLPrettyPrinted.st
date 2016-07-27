@@ -1,10 +1,10 @@
 tests
-testPrettyPrinted
+testInnerXMLPrettyPrinted
 	| nodeWithElements printString prettyPrintString prettyNodeWithElements |
 
 	nodeWithElements := self newNodeWithElements.
-	printString := nodeWithElements printString.
-	prettyPrintString := nodeWithElements prettyPrinted.
+	printString := nodeWithElements innerXML.
+	prettyPrintString := nodeWithElements innerXMLPrettyPrinted.
 	self deny: printString = prettyPrintString.
 
 	prettyNodeWithElements :=
@@ -12,8 +12,8 @@ testPrettyPrinted
 			preservesCommentNodes: true;
 			preservesIgnorableWhitespace: true;
 			parseDocument.
-	nodeWithElements allElements
-		with: prettyNodeWithElements allElements
+	(nodeWithElements allElements copyWithout: nodeWithElements)
+		with: (prettyNodeWithElements allElements copyWithout: prettyNodeWithElements)
 		do: [:element :prettyElement |
 			element hasChildren
 				ifTrue: [
