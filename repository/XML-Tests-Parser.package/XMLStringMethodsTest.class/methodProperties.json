@@ -4,7 +4,7 @@
 	"instance" : {
 		"testAsXMLEscapedString" : "monty 2/15/2016 23:37",
 		"testAsXMLFileHandle" : "monty 3/4/2016 16:32",
-		"testAsXMLHTTPRequest" : "monty 2/15/2016 23:41",
+		"testAsXMLHTTPRequest" : "monty 3/6/2016 10:42",
 		"testAsXMLStreamConverter" : "monty 3/5/2016 16:20",
 		"testAsXMLString" : "monty 2/15/2016 23:38",
 		"testHasPrefixBeforeLocalName" : "monty 11/22/2014 20:00",
