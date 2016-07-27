@@ -38,6 +38,15 @@ testEntityExternalResolution
 			(SAXHandler on: xml)
 				externalEntityResolver:
 					(DTDStaticExternalEntityResolver externalEntities: entities);
+				resolvesExternalEntities: false;
+				isValidating: false;
+				parseDocument]
+		raise: XMLParserException.
+	self
+		shouldnt: [
+			(SAXHandler on: xml)
+				externalEntityResolver:
+					(DTDStaticExternalEntityResolver externalEntities: entities);
 				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLParserException.
