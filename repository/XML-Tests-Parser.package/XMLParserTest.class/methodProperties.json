@@ -26,6 +26,7 @@
 		"testElementContentModels" : "monty 11/20/2013 23:12",
 		"testElementMixedContentDeclaration" : "monty 11/29/2013 14:16",
 		"testEntityReplacement" : "monty 12/8/2013 01:54",
+		"testEntityURIInheritance" : "monty 12/13/2013 22:38",
 		"testFileClientPaths" : "monty 12/7/2013 06:19",
 		"testHTTPClientPaths" : "monty 11/16/2013 06:06",
 		"testInvalidElementContentModels" : "monty 12/6/2013 20:35",
