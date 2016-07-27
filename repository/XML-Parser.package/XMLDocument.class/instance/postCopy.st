@@ -2,4 +2,5 @@ copying
 postCopy
 	super postCopy.
 
-	doctypeDeclaration := doctypeDeclaration copy.
+	doctypeDeclaration
+		ifNotNil: [doctypeDeclaration := doctypeDeclaration copy].

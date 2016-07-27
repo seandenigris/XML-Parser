@@ -1,3 +1,3 @@
 removing
 removeAttributes
-	^ self attributeNodes removeAll
+	self attributeNodes removeAll

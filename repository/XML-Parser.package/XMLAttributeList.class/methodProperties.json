@@ -24,6 +24,7 @@
 		"includesAttribute:" : "monty 10/28/2014 18:35",
 		"newWithCollection:" : "monty 10/28/2014 18:50",
 		"removeAttributeNodeAt:" : "monty 10/28/2014 14:42",
+		"removeAttributeNodeAt:ifAbsent:" : "monty 11/23/2014 00:53",
 		"renamedAttribute:from:to:" : "monty 10/28/2014 18:35",
 		"resetDictionaryFromCollection" : "monty 10/28/2014 18:52",
 		"setFromDictionary:" : "monty 10/28/2014 18:35",

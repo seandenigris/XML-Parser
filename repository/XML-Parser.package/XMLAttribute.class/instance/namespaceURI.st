@@ -1,6 +1,10 @@
 accessing
 namespaceURI
-	(self element notNil and: [self hasPrefix])
+	| prefix |
+
+	"attributes must have prefixes to be namespaced"
+	(self element notNil
+		and: [(prefix := self prefix) notEmpty])
 		ifFalse: [^ ''].
 	
-	^ self element resolvePrefix: self prefix.
+	^ self element resolvePrefix: prefix.

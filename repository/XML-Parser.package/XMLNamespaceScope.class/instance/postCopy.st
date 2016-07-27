@@ -1,3 +1,4 @@
 copying
 postCopy
-	prefixMappings ifNotNil: [prefixMappings := prefixMappings copy].
+	prefixMappings
+		ifNotNil: [prefixMappings := prefixMappings copy]
