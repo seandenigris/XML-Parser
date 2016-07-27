@@ -3,9 +3,12 @@ nextName
 	| nextChar |
 
 	^ streamWriter writeWith: [:writeStream |
-		[(nextChar := streamReader peek) isNil
-			or: [NameDelimiters includes: nextChar]]
-				whileFalse: [writeStream nextPut: streamReader next].
-		writeStream position > 0
+		(NameStartChars includes: (nextChar := streamReader next))
 			ifFalse: [self errorExpected: 'name'].
+		writeStream nextPut: nextChar.
+
+		[streamReader atEnd not
+			and: [(NameStartChars includes: (nextChar := streamReader peek))
+				or: [AdditionalNameChars includes: nextChar]]]
+			whileTrue: [writeStream nextPut: streamReader next].
 		writeStream stringContents]

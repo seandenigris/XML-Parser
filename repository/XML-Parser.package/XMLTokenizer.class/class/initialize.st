@@ -1,16 +1,14 @@
 class initialization
 initialize
-	"XMLTokenizer initialize"
+	"self initialize"
 
 	CharEscapes := CharacterSet newFrom: #( $& $" $' $> $< ).
+	(LiteralChars := CharacterSet new)
+		addAll: #( $: $- $: $= $.);
+		addAll: ($a to: $z);
+		addAll: ($A to: $Z);
+		addAll: ($0 to: $9).
 
-	LiteralChars := CharacterSet newFrom: #( $: $- $: $= $.).
-	0 to: 255 do: [:i | 
-		| char |
-		char := i asCharacter.
-		(char isDigit or: [char isLetter])
-		ifTrue: [LiteralChars add: char]].
-
-	NameDelimiters := CharacterSet new.
-	#(9 10 12 13 32 61 "$= asInteger 61" 62 "$> asInteger" 47 "$/ asInteger")
-		do: [:each | NameDelimiters add: each asCharacter].
+	self
+		initializeNameStartChars;
+		initializeAdditionalNameChars.

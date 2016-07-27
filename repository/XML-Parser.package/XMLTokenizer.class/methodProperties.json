@@ -1,7 +1,9 @@
 {
 	"class" : {
 		"driver:on:" : "JAAyer 11/28/2010 07:15",
-		"initialize" : "JAAyer 3/11/2010 08:38",
+		"initialize" : "JAAyer 1/20/2011 02:37",
+		"initializeAdditionalNameChars" : "JAAyer 1/20/2011 02:45",
+		"initializeNameStartChars" : "JAAyer 1/20/2011 02:45",
 		"isCharEscape:" : "JAAyer 3/11/2010 07:53" },
 	"instance" : {
 		"atEnd" : "JAAyer 11/27/2010 07:38",
@@ -38,7 +40,7 @@
 		"nextLiteral" : "JAAyer 3/24/2010 16:24",
 		"nextMarkupDeclaration" : "JAAyer 11/28/2010 11:48",
 		"nextMarkupToken" : "JAAyer 11/27/2010 07:28",
-		"nextName" : "JAAyer 3/24/2010 16:25",
+		"nextName" : "JAAyer 1/20/2011 02:37",
 		"nextPCData" : "JAAyer 11/28/2010 11:48",
 		"nextPCDataDelimitedBy:putOn:" : "JAAyer 3/16/2010 16:45",
 		"nextPI" : "JAAyer 11/27/2010 07:33",

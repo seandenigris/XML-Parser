@@ -3,9 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AdditionalNameChars",
 		"CharEscapes",
 		"LiteralChars",
-		"NameDelimiters" ],
+		"NameStartChars" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"driver",
