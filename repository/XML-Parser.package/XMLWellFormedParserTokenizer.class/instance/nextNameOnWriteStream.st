@@ -2,10 +2,12 @@ tokenizing - dtd
 nextNameOnWriteStream
 	| nextChar |
 
-	((NameChars xmlParserIncludes: (nextChar := streamReader next))
-		and: [(AdditionalNameChars xmlParserIncludes: nextChar) not])
+	((nextChar := streamReader next) notNil
+		and: [(NameChars includes: nextChar)
+			and: [(AdditionalNameChars includes: nextChar) not]])
 		ifFalse: [self errorExpectedName].
 	writeStream nextPut: nextChar.
 
-	[NameChars xmlParserIncludes: streamReader peek]
+	[(nextChar := streamReader peek) notNil
+		and: [NameChars includes: nextChar]]
 		whileTrue: [writeStream nextPut: streamReader next].

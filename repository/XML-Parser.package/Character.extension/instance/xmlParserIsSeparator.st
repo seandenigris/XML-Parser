@@ -1,13 +1,16 @@
 *XML-Parser
 xmlParserIsSeparator
-	"Overridden in Gemstone version"
-	value = 32 "space"
+	"a temp is used because Character in newer SpurVM images
+	has no 'value' inst var"
+	| tempValue |
+
+	(tempValue := self asciiValue) = 32 "space"
 		ifTrue: [^ true].
-	value = 10 "lf"
+	tempValue = 10 "lf"
 		ifTrue: [^ true].
-	value = 9 "tab"
+	tempValue = 9 "tab"
 		ifTrue: [^ true].
-	value = 13 "cr"
+	tempValue = 13 "cr"
 		ifTrue: [^ true].
 	"no form feeds"
 	^ false.

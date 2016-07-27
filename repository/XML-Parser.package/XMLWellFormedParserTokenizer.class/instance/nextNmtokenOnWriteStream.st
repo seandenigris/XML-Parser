@@ -1,9 +1,13 @@
 tokenizing - dtd
 nextNmtokenOnWriteStream
-	"matches the nmtoken production"
-	(NameChars xmlParserIncludes: streamReader peek)
-		ifFalse: [self errorExpected: 'name token'].
+	"matches the Nmtoken production"
+	| nextChar |
+
+	((nextChar := streamReader peek) notNil
+		and: [(NameChars includes: nextChar)])
+		ifFalse: [self errorExpectedNmtoken].
 	writeStream nextPut: streamReader next.
 		
-	[NameChars xmlParserIncludes: streamReader peek]
+	[(nextChar := streamReader peek) notNil
+		and: [NameChars includes: nextChar]]
 		whileTrue: [writeStream nextPut: streamReader next].

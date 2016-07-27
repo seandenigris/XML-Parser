@@ -1,13 +1,14 @@
 tokenizing
 nextXMLEncodingAttributeValue
-	| quote |
+	| quote nextChar |
 
 	quote := self expectQuote.
 	writeStream
 		reset;
 		nextPut: self expectLetter.
-	[EncodingNameChars xmlParserIncludes: streamReader peek]
-		whileTrue: [writeStream nextPut: streamReader next].
+	[(nextChar := streamReader peek) == nil
+		or: [(EncodingNameChars includes: nextChar) not]]
+		whileFalse: [writeStream nextPut: streamReader next].
 	self expectNext: quote.
 
 	^ writeStream contents.
