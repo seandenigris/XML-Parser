@@ -2,5 +2,6 @@
 	"class" : {
 		"virtualPath:sourceClass:" : "monty 10/27/2014 17:24" },
 	"instance" : {
-		"get" : "monty 10/27/2014 17:22",
-		"setVirtualPath:sourceClass:" : "monty 10/27/2014 17:21" } }
+		"get" : "monty 5/22/2015 00:35",
+		"setVirtualPath:sourceClass:" : "monty 10/27/2014 17:21",
+		"streamGet" : "monty 5/24/2015 23:30" } }
