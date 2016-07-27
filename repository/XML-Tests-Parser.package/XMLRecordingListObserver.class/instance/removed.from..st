@@ -1,4 +1,4 @@
-notifications
+notifying
 removed: anObject from: aList
 	self recordNotification:
 		(MessageSend

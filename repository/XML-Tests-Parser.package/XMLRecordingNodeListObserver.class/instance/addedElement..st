@@ -1,4 +1,4 @@
-notifications
+notifying
 addedElement: anElement
 	self recordNotification:
 		(MessageSend

@@ -1,4 +1,4 @@
-notifications
+notifying
 removedAttribute: anAttribute
 	self recordNotification:
 		(MessageSend

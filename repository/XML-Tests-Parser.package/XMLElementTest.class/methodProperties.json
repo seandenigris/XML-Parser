@@ -33,6 +33,7 @@
 		"testElementSorting" : "monty 11/1/2014 21:02",
 		"testExpandedName" : "monty 12/30/2014 02:40",
 		"testHasAttributes" : "monty 11/23/2014 00:27",
+		"testHasNamespaceURI" : "monty 2/13/2015 22:25",
 		"testHasNamespaces" : "monty 11/23/2014 02:06",
 		"testHasPrefix" : "monty 11/23/2014 01:45",
 		"testIncludesAttribute" : "monty 11/23/2014 00:31",

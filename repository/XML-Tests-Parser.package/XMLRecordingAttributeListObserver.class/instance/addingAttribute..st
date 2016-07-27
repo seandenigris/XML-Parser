@@ -1,4 +1,4 @@
-notifications
+notifying
 addingAttribute: anAttribute
 	self recordNotification:
 		(MessageSend

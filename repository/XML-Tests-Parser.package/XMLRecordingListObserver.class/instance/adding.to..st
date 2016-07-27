@@ -1,4 +1,4 @@
-notifications
+notifying
 adding: anObject to: aList
 	self recordNotification:
 		(MessageSend

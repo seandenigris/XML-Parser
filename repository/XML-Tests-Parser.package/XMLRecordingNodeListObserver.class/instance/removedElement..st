@@ -1,4 +1,4 @@
-notifications
+notifying
 removedElement: anElement
 	self recordNotification:
 		(MessageSend

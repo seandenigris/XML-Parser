@@ -1,3 +1,7 @@
 accessing
 handlerCategories
-	^ #(content lexical declaration)
+	^ #(
+		'handling - content'
+		'handling - lexical'
+		'handling - declarations'
+		)

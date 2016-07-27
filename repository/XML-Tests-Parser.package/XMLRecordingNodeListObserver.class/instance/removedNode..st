@@ -1,4 +1,4 @@
-notifications
+notifying
 removedNode: aNode
 	self recordNotification:
 		(MessageSend
