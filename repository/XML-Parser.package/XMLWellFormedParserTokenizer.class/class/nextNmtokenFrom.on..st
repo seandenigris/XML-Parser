@@ -1,8 +1,7 @@
 streaming
-nextNameFrom: aReadStream on: aWriteStream
+nextNmtokenFrom: aReadStream on: aWriteStream
 	(aReadStream atEnd
-		or: [(NameChars includes: aReadStream peek) not
-			or: [AdditionalNameChars includes: aReadStream peek]])
+		or: [(NameChars includes: aReadStream peek) not])
 		ifTrue: [^ false].
 	aWriteStream nextPut: aReadStream next.
 

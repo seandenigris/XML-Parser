@@ -1,7 +1,5 @@
 streaming
 nextNCNameFrom: aReadStream on: aWriteStream
-	"atEnd test is used instead of xmlParserIncludes: because the argument
-	readStream may not return nil when atEnd on other platforms"
 	| nextChar |
 
 	(aReadStream atEnd
