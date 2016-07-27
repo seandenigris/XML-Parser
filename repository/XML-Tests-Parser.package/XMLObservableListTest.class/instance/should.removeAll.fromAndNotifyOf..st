@@ -2,7 +2,7 @@ assertions
 should: aBlock removeAll: anElementCollection fromAndNotifyOf: aList
 	| observer |
 
-	observer := XMLStubListObserver new.
+	observer := XMLRecordingListObserver new.
 	aList observer: observer.
 	aBlock value.
 	anElementCollection do: [:each |

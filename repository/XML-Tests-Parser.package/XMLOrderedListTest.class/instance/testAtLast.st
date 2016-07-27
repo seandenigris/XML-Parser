@@ -1,7 +1,9 @@
 tests
 testAtLast
+	| list |
+
+	list := self listWithElements.
+	1 to: list size do: [:i | self assert: (list atLast: i) = (self listElements atLast: i)].
 	self
-		assert: (self emptyList atLast: 1) = self defaultValue;
-		assert: (self listWithSingleElement atLast: 1) = self singleElement;
-		assert: (self listWithElements atLast: 2) = (self listElements atLast: 2);
-		assert: (self listWithElements atLast: self listWithElements size + 1) = self defaultValue.
+		assert: (list atLast: 0) = self defaultValue;
+		assert: (list atLast: list size + 1) = self defaultValue.

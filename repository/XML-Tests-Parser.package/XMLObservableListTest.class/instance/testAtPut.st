@@ -5,14 +5,14 @@ testAtPut
 	super testAtPut.
 
 	list := self listWithSingleElement.
-	observer := XMLStubListObserver new.
+	observer := XMLRecordingListObserver new.
 	list observer: observer.
-	list at: 1 put: self absentElement.
+	list at: 1 put: self newElement.
 	self
 		assertObserver: observer
 		receivedNotificationOfRemoving: self singleElement
 		from: list.
 	self
 		assertObserver: observer
-		receivedNotificationOfAdding: self absentElement
+		receivedNotificationOfAdding: self newElement
 		to: list.

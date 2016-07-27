@@ -3,6 +3,14 @@ testCollectThenSelect
 	| list |
 
 	list := self listWithElements.
-	self assert:
-		(list collect: [:each | each asUppercase] thenSelect: [:each | each ~= 'ONE']) =
-			(self listWithElements collect: [:each | each asUppercase]) allButFirst
+	self
+		assertList:
+			(list
+				collect: [:each | each asUppercase]
+				thenSelect: [:each | each ~= self singleElement asUppercase])
+		copiedFrom: list
+		equals:
+			(self listClass newFrom:
+				(self listElements
+					collect: [:each | each asUppercase]
+					thenSelect: [:each | each ~= self singleElement asUppercase])).

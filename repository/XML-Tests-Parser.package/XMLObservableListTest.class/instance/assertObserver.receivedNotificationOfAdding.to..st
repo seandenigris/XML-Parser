@@ -2,8 +2,8 @@ assertions
 assertObserver: anObserver receivedNotificationOfAdding: anElement to: aList
 	| firstNotification secondNotification |
 
-	firstNotification := anObserver notifications removeFirst.
-	secondNotification := anObserver notifications removeFirst.
+	firstNotification := anObserver nextNotification.
+	secondNotification := anObserver nextNotification.
 	self
 		assert:firstNotification selector = self beforeAddingToNotification;
 		assert: firstNotification arguments = (Array with: anElement with: aList);

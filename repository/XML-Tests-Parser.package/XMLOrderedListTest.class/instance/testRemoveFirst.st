@@ -3,7 +3,8 @@ testRemoveFirst
 	| list |
 
 	list := self listWithElements.
+	self listElements do: [:each | 
 	self
-		assert: list removeFirst = self listWithElements first;
-		assert: list = self listWithElements allButFirst;
-		should: [self emptyList removeFirst] raise: Error.
+		assert: list removeFirst = each;
+		assert: list = (self listClass newFrom: (self listElements copyAfter: each))].
+	self should: [list removeFirst] raise: Error.

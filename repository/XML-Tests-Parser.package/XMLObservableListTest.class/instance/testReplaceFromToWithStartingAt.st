@@ -5,7 +5,7 @@ testReplaceFromToWithStartingAt
 	super testReplaceFromToWithStartingAt.
 
 	list := self listWithElements.
-	observer := XMLStubListObserver new.
+	observer := XMLRecordingListObserver new.
 	list observer: observer.
 	list
 		replaceFrom: 2

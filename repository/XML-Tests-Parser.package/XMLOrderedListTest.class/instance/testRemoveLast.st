@@ -3,7 +3,8 @@ testRemoveLast
 	| list |
 
 	list := self listWithElements.
-	self
-		assert: list removeLast = self listWithElements last;
-		assert: list = self listWithElements allButLast;
-		should: [self emptyList removeLast] raise: Error.
+	self listElements reverseDo: [:each |
+		self
+			assert: list removeLast = each;
+			assert: list = (self listClass newFrom: (self listElements copyUpTo: each))].
+	self should: [list removeLast] raise: Error.

@@ -1,6 +1,7 @@
 source
 doctypeWithDeclarationsForEntityURIs: aUrlCollection
-	^  '<!DOCTYPE test [',
-		('' join: (aUrlCollection collectWithIndex: [:each :i |
-			'<!ENTITY entity', i printString, ' SYSTEM "', each, '">'])),
-		']>'
+	^  String streamContents: [:stream |
+		stream nextPutAll: '<!DOCTYPE test ['.
+		aUrlCollection doWithIndex: [:each :i |
+			stream nextPutAll: '<!ENTITY entity', i printString, ' SYSTEM "', each, '">'].
+		stream nextPutAll: ']>']

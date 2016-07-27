@@ -1,19 +1,19 @@
 {
 	"class" : {
-		"addressBookNamespacePrefixedXML" : "monty 1/25/2014 04:46",
-		"addressBookNamespacedXML" : "monty 1/25/2014 04:46" },
+		"addressBookNamespacePrefixedXML" : "monty 10/24/2014 11:32",
+		"addressBookNamespacedXML" : "monty 10/24/2014 11:30" },
 	"instance" : {
 		"addressBookNamespacePrefixedXML" : "monty 1/25/2014 04:44",
 		"addressBookNamespacedXML" : "monty 1/25/2014 04:46",
 		"internalSubsetWithDeclarations" : "monty 12/21/2013 04:00",
 		"testAllElementsNamespaceURIs" : "monty 1/25/2014 04:46",
-		"testAttributeNamespaces" : "monty 1/25/2014 04:44",
-		"testAttributeNamespacesDisabled" : "monty 1/25/2014 04:44",
+		"testAttributeNamespaces" : "monty 10/24/2014 12:06",
+		"testAttributeNamespacesDisabled" : "monty 10/24/2014 12:06",
 		"testAttributeRenaming" : "monty 2/2/2014 22:04",
 		"testAttributesExcludingDeclarations" : "monty 1/25/2014 04:46",
 		"testAttributesIncludingDeclarations" : "monty 1/25/2014 04:46",
 		"testCDATASection" : "monty 2/11/2014 00:22",
-		"testChangingNamespaces" : "monty 1/25/2014 04:46",
+		"testChangingNamespaces" : "monty 10/24/2014 12:07",
 		"testCollectingParsedNodes" : "monty 12/21/2013 06:10",
 		"testConfiguration" : "monty 12/29/2013 00:56",
 		"testDeclaringXMLNamespace" : "monty 10/11/2014 00:19",
@@ -43,6 +43,5 @@
 		"testParseDocumentWhile" : "monty 10/14/2014 23:11",
 		"testParsingAttributes" : "monty 12/12/2013 00:41",
 		"testParsingRoot" : "monty 12/12/2013 00:42",
-		"testStringParseXML" : "monty 10/18/2014 05:52",
 		"testXMLComment" : "monty 12/12/2013 01:09",
 		"testXMLDeclaration" : "monty 2/9/2014 00:22" } }

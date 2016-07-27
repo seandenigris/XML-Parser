@@ -1,18 +1,16 @@
 tests
 testSAXPrefixMappingHandlers
-	| parser |
+	| parser messages |
 
 	(parser := SAXHandlerProxy saxHandler: (SAXHandler on: self prefixedXMLSource)) parseDocument.
-	self assert:
-		#(startDocument
-			startPrefixMapping:uri: startPrefixMapping:uri:
-			startElement:prefix:uri:localName:attributes:
-			characters:
-			endElement:prefix:uri:localName:
-			endPrefixMapping: endPrefixMapping:
-			endDocument) = parser sentHandlerSelectors.
-	self assert:
-		((parser sentHandlerMessages select: [:each |
-			#(startPrefixMapping:uri: endPrefixMapping:) includes: each selector])
-				collect: [:each | each arguments asArray]) asArray =
-					#(#('prefix' 'prefixNS') #('' 'defaultNS') #('prefix') #('')).
+	self assert: (parser wasSentSelectors: self prefixedXMLSourceSelectors).
+
+	messages := parser allSentMessagesNamed: #startPrefixMapping:uri:.
+	self
+		assert: messages first arguments = #('prefix' 'prefixNS');
+		assert: messages second arguments = #('' 'defaultNS').
+
+	messages := parser allSentMessagesNamed: #endPrefixMapping:.
+	self
+		assert: messages first arguments = #('prefix');
+		assert: messages second arguments = #('').

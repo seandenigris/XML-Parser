@@ -10,9 +10,9 @@ testRemoveFirst
 		remove: self singleElement
 		fromAndNotifyOf: list.
 
-	observer := XMLStubListObserver new.
+	observer := XMLRecordingListObserver new.
 	list observer: observer.
 	self
 		should: [list removeFirst] raise: Error;
-		assert: observer notifications isEmpty.
+		deny: observer hasNotifications.
 	

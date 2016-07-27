@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testIsQualifiedNameOrLocalName" : "monty 10/24/2014 15:07",
+		"testParseXML" : "monty 10/24/2014 10:27",
+		"testQualifiedNameLocalPart" : "monty 10/24/2014 09:43",
+		"testQualifiedNamePrefix" : "monty 10/24/2014 09:43",
+		"testXMLSplit" : "monty 10/24/2014 15:18" } }

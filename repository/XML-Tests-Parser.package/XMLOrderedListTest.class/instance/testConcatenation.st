@@ -1,9 +1,15 @@
 tests
 testConcatenation
+	| list |
+
+	list := self emptyList.
 	self
-		assert: (self emptyList, self emptyList) = self emptyList;
-		assert: (self listWithElements, self emptyList) = self listWithElements;
-		assert: (self emptyList, self listWithElements) = self listWithElements;
-		assert:
-			(self listWithElements, self listWithElements) =
-				(self listClass newFrom: (self listElements, self listElements)).
+		assertList: (list, self emptyList) copiedFrom: list equals: self emptyList;
+		assertList: (list, self listWithElements) copiedFrom: list equals: self listWithElements.
+
+	list := self listWithElements.
+	self assertList: (list, self emptyList) copiedFrom: list equals: self listWithElements.
+	self
+		assertList: (list, self listWithElements)
+		copiedFrom: list
+		equals: (self listClass newFrom: (self listElements, self listElements)).

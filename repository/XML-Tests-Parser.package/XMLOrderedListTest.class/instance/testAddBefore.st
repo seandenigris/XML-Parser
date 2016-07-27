@@ -8,4 +8,4 @@ testAddBefore
 			(self listElements allButLast
 				allSatisfy: [:each | (list add: each before: self listElements last) = each]);
 		assert: list = self listWithElements;
-		should: [list add: self singleElement before: self absentElement] raise: Error.
+		should: [list add: self newElement before: self absentElement] raise: Error.

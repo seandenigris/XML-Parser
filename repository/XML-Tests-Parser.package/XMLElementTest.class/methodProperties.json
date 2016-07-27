@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"assertElement:hasAttribute:equalTo:" : "JAAyer 11/26/2010 18:39",
-		"assertElement:hasAttributes:" : "JAAyer 11/1/2010 03:56",
+		"assertElement:hasAttributes:" : "monty 10/23/2014 15:40",
 		"assertElement:hasContentString:withStrings:" : "JAAyer 11/1/2010 03:56",
 		"assertElement:hasName:attributes:contentString:" : "JAAyer 11/1/2010 03:56",
 		"assertNodeHasNoContentNodes:" : "JAAyer 10/30/2010 19:51",

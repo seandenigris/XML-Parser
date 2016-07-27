@@ -1,0 +1,1 @@
+This observer records notifications in a queue.

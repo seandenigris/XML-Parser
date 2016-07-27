@@ -9,6 +9,7 @@ testParsingFileHostURI
 		assert: uri isLocalURI;
 		assert: uri scheme = 'file';
 		assert: uri host = self host;
+		assert: uri port isNil;
 		assert: uri path = self absolute;
 		assert: uri queryString isEmpty;
 		assert: uri fragment isEmpty.

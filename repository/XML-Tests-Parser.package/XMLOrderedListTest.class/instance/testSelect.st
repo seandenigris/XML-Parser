@@ -3,6 +3,9 @@ testSelect
 	| list |
 
 	list := self listWithElements.
-	self assert:
-		(list select: [:each | each ~= self singleElement]) =
-			((self listClass newFrom: self listWithElements) copyWithout: self singleElement).
+	self
+		assertList: (list select: [:each | each ~= self singleElement])
+		copiedFrom: list
+		equals:
+			(self listClass newFrom:
+				(self listWithElements copyWithout: self singleElement)).
