@@ -14,6 +14,7 @@
 		"expectNext:" : "monty 11/22/2013 19:19",
 		"expectNextAll:" : "monty 11/22/2013 19:11",
 		"expectTerminator:" : "monty 11/22/2013 19:19",
+		"expectUpToAll:" : "monty 12/8/2013 04:38",
 		"nextAttlistDeclaration" : "monty 12/7/2013 03:33",
 		"nextAttributeValue" : "monty 12/6/2013 08:36",
 		"nextContentToken" : "monty 11/30/2013 07:56",

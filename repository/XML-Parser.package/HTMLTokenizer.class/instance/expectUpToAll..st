@@ -1,3 +1,3 @@
 tokenizing
 expectUpToAll: aString
-	self subclassResponsibility
+	^ streamReader upToAll: aString

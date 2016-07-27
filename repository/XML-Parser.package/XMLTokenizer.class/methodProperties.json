@@ -9,6 +9,10 @@
 		"isNmtoken:" : "monty 11/28/2013 20:19" },
 	"instance" : {
 		"atEnd" : "monty 11/13/2013 20:14",
+		"expectNext:" : "monty 12/8/2013 04:35",
+		"expectNextAll:" : "monty 12/8/2013 04:36",
+		"expectTerminator:" : "monty 12/8/2013 04:36",
+		"expectUpToAll:" : "monty 12/8/2013 04:38",
 		"nextAttlistDeclaration" : "monty 11/22/2013 19:16",
 		"nextAttributeType" : "monty 11/20/2013 04:25",
 		"nextAttributeValue" : "monty 11/22/2013 09:34",
