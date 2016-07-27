@@ -1,12 +1,14 @@
 {
 	"class" : {
-		"initialize" : "monty 1/21/2014 01:35",
+		"initialize" : "monty 10/25/2014 17:33",
+		"maxBase" : "monty 10/24/2014 20:28",
+		"maxIntegerValue" : "monty 10/24/2014 20:15",
 		"on:" : "monty 1/21/2014 01:27",
-		"readFrom:" : "monty 2/4/2014 00:36",
+		"readFrom:" : "monty 10/26/2014 12:37",
 		"readFrom:withBase:" : "monty 1/21/2014 02:02",
+		"readFrom:withBase:startingWithAny:orBase:" : "monty 10/26/2014 14:17",
 		"readFrom:withBase:upTo:" : "monty 1/21/2014 17:42" },
 	"instance" : {
-		"maxIntegerValue" : "monty 1/21/2014 01:26",
-		"nextDigitWithBase:" : "monty 10/22/2014 06:57",
-		"nextIntegerWithBase:upTo:" : "monty 1/21/2014 02:14",
+		"nextDigitWithBase:" : "monty 10/25/2014 17:34",
+		"nextIntegerWithBase:upTo:" : "monty 10/24/2014 20:29",
 		"stream:" : "monty 1/21/2014 01:28" } }

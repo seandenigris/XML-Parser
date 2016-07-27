@@ -1,10 +1,13 @@
 reading
-nextIntegerWithBase: aBase upTo: anInteger
+nextIntegerWithBase: aBase upTo: aReadLimit
 	| integer maxValue maxBaseValue digitValue readLimit |
 
-	maxValue := self maxIntegerValue.
+	(aBase > 1 and: [aBase <= self class maxBase])
+		ifFalse: [Error signal: 'Unsupported base ', aBase printString].
+
+	maxValue := self class maxIntegerValue.
 	maxBaseValue := (maxValue / aBase) asInteger.
-	readLimit := anInteger.
+	readLimit := aReadLimit.
 	[stream atEnd
 		or: [(readLimit notNil and: [readLimit <= 0])
 			or: [(digitValue := self nextDigitWithBase: aBase) isNil]]]
@@ -12,11 +15,11 @@ nextIntegerWithBase: aBase upTo: anInteger
 			integer ifNil: [integer := 0].
 	
 			integer > maxBaseValue
-				ifTrue: [^ integer].
+				ifTrue: [^ maxValue].
 			integer := integer * aBase.
 
 			integer > (maxValue - digitValue)
-				ifTrue: [^ integer].
+				ifTrue: [^ maxValue].
 			integer := integer + digitValue.
 			readLimit ifNotNil: [readLimit := readLimit - 1]].
 	^ integer.

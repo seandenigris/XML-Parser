@@ -1,8 +1,5 @@
 instance creation
 name: aName replacement: aReplacement
 	^ self new
-		setName: aName
+		name: aName;
 		replacement: aReplacement
-		publicID: nil
-		systemID: nil
-		ndata: nil

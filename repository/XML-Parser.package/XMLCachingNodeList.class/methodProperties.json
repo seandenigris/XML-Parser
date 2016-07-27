@@ -9,7 +9,7 @@
 		"elementInsertedBeforeEnd:" : "monty 11/26/2013 21:56",
 		"elements" : "monty 11/26/2013 22:01",
 		"elementsAt:" : "monty 11/26/2013 22:01",
-		"elementsByName" : "monty 11/26/2013 21:56",
+		"elementsByName" : "monty 10/25/2014 14:50",
 		"elementsByNameAt:addElement:" : "monty 11/26/2013 21:56",
 		"elementsByNameAt:insertElement:" : "monty 11/26/2013 21:56",
 		"elementsByNameAt:removeElement:" : "monty 11/26/2013 21:56",
@@ -20,7 +20,7 @@
 		"findElementAfter:withName:" : "monty 11/26/2013 21:56",
 		"firstElement" : "monty 2/10/2014 23:11",
 		"hasElements" : "monty 11/26/2013 22:01",
-		"includesElementAt:" : "monty 11/26/2013 22:01",
+		"includesElement:" : "monty 10/25/2014 21:04",
 		"lastElement" : "monty 2/10/2014 23:11",
 		"renamedElement:from:to:" : "monty 10/3/2014 20:26",
 		"sort:" : "monty 10/19/2014 07:33" } }

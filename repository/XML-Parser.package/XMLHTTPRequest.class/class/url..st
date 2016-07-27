@@ -1,3 +1,3 @@
 instance creation
 url: aUrl
-	^ self implementation new url: aUrl
+	^ self new url: aUrl

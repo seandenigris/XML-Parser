@@ -1,3 +1,3 @@
 private
 defaultTimeout
-	^ 10
+	^ 30

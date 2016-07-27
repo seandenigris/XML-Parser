@@ -1,5 +1,5 @@
 {
 	"class" : {
-		 },
+		"isSupported" : "monty 10/25/2014 17:43" },
 	"instance" : {
-		"getResponseUpToLimit:withTimeout:onError:" : "monty 1/23/2014 15:52" } }
+		"getResponseUpToLimit:withTimeout:onError:" : "monty 10/26/2014 09:31" } }

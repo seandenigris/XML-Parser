@@ -1,5 +1,5 @@
-accessing
+private
 implementation
 	^ self == XMLFileHandle
-		ifTrue: [self defaultImplementation]
+		ifTrue: [self selectImplementation]
 		ifFalse: [self]

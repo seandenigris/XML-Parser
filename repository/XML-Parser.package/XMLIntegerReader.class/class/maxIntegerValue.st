@@ -1,4 +1,4 @@
 private
 maxIntegerValue
-	"SmallInteger maxValue"
+	"SmallInteger maxVal"
 	^ 1073741823

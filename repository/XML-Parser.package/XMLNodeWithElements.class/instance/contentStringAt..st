@@ -1,3 +1,3 @@
 accessing
 contentStringAt: aName
-	^ (self elementAt: aName ifAbsent: [^ '']) contentString
+	^ self nodes contentStringAt: aName

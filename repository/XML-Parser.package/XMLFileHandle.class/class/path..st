@@ -1,3 +1,3 @@
 instance creation
 path: aSystemPath
-	^ self implementation new path: aSystemPath
+	^ self new path: aSystemPath

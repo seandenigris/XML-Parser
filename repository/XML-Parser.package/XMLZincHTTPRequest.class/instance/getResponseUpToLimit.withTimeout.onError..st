@@ -1,6 +1,6 @@
 private
 getResponseUpToLimit: aMaxSize withTimeout: aTimeout onError: aBlock
-	^ (Smalltalk at: #ZnMaximumEntitySize)
+	^ [(Smalltalk at: #ZnMaximumEntitySize)
 		value: aMaxSize
 		during: [
 			((Smalltalk at: #ZnClient) new
@@ -10,4 +10,6 @@ getResponseUpToLimit: aMaxSize withTimeout: aTimeout onError: aBlock
 						ifTrue: [error resignalAs: XMLLimitException]
 						ifFalse: [error pass]];
 				url: url;
-				get) readStream]
+				get) readStream]]
+		on: Error
+		do: aBlock

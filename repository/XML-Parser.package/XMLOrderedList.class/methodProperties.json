@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"collectionClass" : "monty 1/29/2014 01:12",
-		"inspectorClass" : "monty 10/22/2014 16:57",
+		"inspectorClass" : "monty 10/25/2014 20:34",
 		"new" : "monty 1/28/2014 05:54",
 		"new:" : "monty 1/29/2014 01:13",
 		"new:withAll:" : "monty 1/29/2014 01:13",
@@ -48,7 +48,7 @@
 		"copyAfterLast:" : "monty 10/22/2014 16:15",
 		"copyEmpty" : "monty 10/19/2014 07:14",
 		"copyFrom:to:" : "monty 10/20/2014 02:30",
-		"copyReplaceAll:with:" : "monty 10/22/2014 16:17",
+		"copyReplaceAll:with:" : "monty 10/26/2014 10:00",
 		"copyReplaceFrom:to:with:" : "monty 10/23/2014 18:53",
 		"copyUpTo:" : "monty 10/22/2014 16:37",
 		"copyUpToLast:" : "monty 10/22/2014 16:37",
@@ -80,7 +80,7 @@
 		"pairsDo:" : "monty 10/22/2014 16:23",
 		"readStream" : "monty 10/22/2014 16:10",
 		"reject:" : "monty 10/19/2014 06:27",
-		"reject:thenCollect:" : "monty 10/19/2014 06:27",
+		"reject:thenCollect:" : "monty 10/26/2014 09:45",
 		"remove:ifAbsent:" : "JAAyer 8/4/2010 13:33",
 		"removeAll" : "JAAyer 8/4/2010 16:00",
 		"removeAt:" : "JAAyer 8/4/2010 15:46",

@@ -1,3 +1,3 @@
 private
 elementsByName
-	^ elementsByName ifNil: [elementsByName := Dictionary new].
+	^ elementsByName ifNil: [elementsByName := Dictionary new]

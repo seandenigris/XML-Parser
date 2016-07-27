@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"HexDigitCharacterMap" ],
+		"CharacterDigitValues" ],
 	"commentStamp" : "monty 1/21/2014 01:36",
 	"instvars" : [
 		"stream" ],
