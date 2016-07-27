@@ -2,8 +2,16 @@ tests
 testElementsUndeclared
 	self
 		shouldnt: [
+			"entity and notation declarations aren't enough to trigger
+			DTD validation; at least one element or attlist declaration
+			is needed"
 			SAXHandler
-				parse: '<!DOCTYPE root [<!ENTITY ignored "">]><root/>'
+				parse: '
+					<!DOCTYPE root [
+						<!ENTITY ignored "">
+						<!NOTATION ignored2 PUBLIC "ignored2">
+					]>
+					<root/>'
 				usingNamespaces:true
 				validation: true]
 		raise:XMLValidationException.

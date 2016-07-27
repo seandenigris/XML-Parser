@@ -1,20 +1,24 @@
 tests
-testExternalSubsetImplicitEncodingDetection
-	| xml uri |
+testExternalSubsetImplicitEncodingDetection	
+	| document dtd |
 
-	xml := '<!ELEMENT name EMPTY>'.
-	uri := '/external.xml'.
+	document := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
+	dtd := '<!ELEMENT test EMPTY>'.
 	self
 		shouldnt: [
-			((SAXHandler on: '') parser driver
-				externalSubsetParserOn:
-					(self convertableStreamOn: (self asciiToUTF16LE: xml))
-				documentURI: uri) parseDocument]
+			(SAXHandler on: document)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> (self asciiToUTF16BE: dtd)));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLParserException.
 	self
 		shouldnt: [
-			((SAXHandler on: '') parser driver
-				externalSubsetParserOn:
-					(self convertableStreamOn: (self asciiToUTF16BE: xml))
-				documentURI: uri) parseDocument]
+			(SAXHandler on: document)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> (self asciiToUTF16LE: dtd)));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLParserException.

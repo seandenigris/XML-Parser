@@ -107,6 +107,7 @@
 		"testQueryIncludesKey" : "monty 1/8/2016 04:51",
 		"testQueryKeys" : "monty 1/8/2016 04:53",
 		"testQueryKeysAndValuesDo" : "monty 1/8/2016 04:52",
+		"testQueryKeysDo" : "monty 3/21/2016 20:25",
 		"testQueryNonPercentOrPlusEncodedCharacters" : "monty 1/11/2016 08:15",
 		"testQueryPercentOrPlusEncodedCharacters" : "monty 1/11/2016 08:15",
 		"testQueryWithEmptyKeysOrValues" : "monty 1/5/2016 23:55",

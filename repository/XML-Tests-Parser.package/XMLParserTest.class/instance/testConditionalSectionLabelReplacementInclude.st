@@ -1,5 +1,8 @@
 tests
 testConditionalSectionLabelReplacementInclude
+	| xml dtd |
+
+	xml := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
 	#('<!ENTITY % label "{1}">
 		<![%label;[
 			<!ENTITY % comment "<!--comment-->">
@@ -7,19 +10,25 @@ testConditionalSectionLabelReplacementInclude
 		'<!ENTITY % label "{1}">
 		<![ %label; [
 			<!ENTITY % comment "<!--comment-->">
-		]]> %comment;'
-	) do: [:each |
-		self
-			shouldnt: [
-				(SAXHandler on: (each format: (Array with: 'INCLUDE')))
-					parser
-						context: XMLExternalSubsetContext new;
+		]]> %comment;')
+		do: [:each |
+			self
+				shouldnt: [
+					dtd := each format: (Array with: 'INCLUDE').
+					(SAXHandler on: xml)
+						externalEntityResolver:
+							(DTDPluggableExternalEntityResolver entities:
+								(Array with: 'extern.dtd' -> dtd));
+						resolvesExternalEntities: true;
 						parseDocument]
-			raise: XMLValidationException.
-		self
-			should: [
-				(SAXHandler on: (each format: (Array with: 'IGNORE')))
-					parser
-						context: XMLExternalSubsetContext new;
+				raise: XMLValidationException.
+			self
+				should: [
+					dtd := each format: (Array with: 'IGNORE').
+					(SAXHandler on: xml)
+						externalEntityResolver:
+							(DTDPluggableExternalEntityResolver entities:
+								(Array with: 'extern.dtd' -> dtd));
+						resolvesExternalEntities: true;
 						parseDocument]
-			raise: XMLValidationException].
+				raise: XMLValidationException].

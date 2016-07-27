@@ -1,13 +1,19 @@
 tests
 testConditionalSectionUnterminatedIgnore
+	| xml |
+
+	xml := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
 	#('<![IGNORE['
 		'<![IGNORE[<!--comment-->'
 		'<![IGNORE[<!--comment--><![IGNORE['
-		'<![IGNORE[<!--comment--><![IGNORE[ ]]>'
-	) do: [:each |
-		self
-			should: [
-				(SAXHandler on: each) parser
-					context: XMLExternalSubsetContext new;
-					parseDocument]
-			raise: XMLWellFormednessException]
+		'<![IGNORE[<!--comment--><![IGNORE[ ]]>')
+		do: [:each |
+			self
+				should: [
+					(SAXHandler on: xml)
+						externalEntityResolver:
+							(DTDPluggableExternalEntityResolver entities:
+								(Array with: 'extern.dtd' -> each));
+						resolvesExternalEntities: true;
+						parseDocument]
+				raise: XMLWellFormednessException]

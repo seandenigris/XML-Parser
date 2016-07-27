@@ -1,22 +1,26 @@
 tests
 testExternalSubsetByteOrderMarkDetection
-	| xml uri |
+	| document dtd encodedDTDWithBOM |
 
-	xml := '<!ELEMENT name EMPTY>'.
-	uri := '/external.xml'.
+	document := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
+	dtd := '<!ELEMENT test EMPTY>'.
 	self
 		shouldnt: [
-			((SAXHandler on: '') parser driver
-				externalSubsetParserOn:
-					(self convertableStreamOn:
-						self utf16LittleEndianBOM, (self asciiToUTF16LE: xml))
-				documentURI: uri) parseDocument]
+			encodedDTDWithBOM := self utf16BigEndianBOM, (self asciiToUTF16BE: dtd).
+			(SAXHandler on: document)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> encodedDTDWithBOM));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLParserException.
 	self
 		shouldnt: [
-			((SAXHandler on: '') parser driver
-				externalSubsetParserOn:
-					(self convertableStreamOn:
-						self utf16BigEndianBOM, (self asciiToUTF16BE: xml))
-				documentURI: uri) parseDocument]
+			encodedDTDWithBOM := self utf16LittleEndianBOM, (self asciiToUTF16LE: dtd).
+			(SAXHandler on: document)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> encodedDTDWithBOM));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLParserException.

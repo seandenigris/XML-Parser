@@ -1,8 +1,9 @@
 tests
 testConditionalSectionNestedIgnore
-	| xml |
+	| xml dtdTemplate dtd |
 
-	xml := '
+	xml := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
+	dtdTemplate := '
 		<![ IGNORE [
 			<!--ignored terminator {1} -->
 			<![ INCLUDE [
@@ -13,15 +14,21 @@ testConditionalSectionNestedIgnore
 		]]>'.
 	self
 		shouldnt: [
-			(SAXHandler on: (xml format: (Array with: ']]')))
-				parser
-					context: XMLExternalSubsetContext new;
-					parseDocument]
+			dtd := dtdTemplate format: (Array with: ']]').
+			(SAXHandler on: xml)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> dtd));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLWellFormednessException.
 	self
 		should: [
-			(SAXHandler on: (xml format: (Array with: ']]>')))
-				parser
-					context: XMLExternalSubsetContext new;
-					parseDocument]
+			dtd := dtdTemplate format: (Array with: ']]>').
+			(SAXHandler on: xml)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> dtd));
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLWellFormednessException.

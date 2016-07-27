@@ -1,8 +1,9 @@
 tests
 testConditionalSectionNestedInclude
-	| xml |
+	| xml dtd |
 
-	xml := '
+	xml := '<!DOCTYPE test SYSTEM "extern.dtd"><test/>'.
+	dtd := '
 		<![ INCLUDE [
 			<!--ignored terminator ]]> -->
 			<![ INCLUDE [
@@ -14,7 +15,10 @@ testConditionalSectionNestedInclude
 		%comment;'.
 	self
 		shouldnt: [
-			(SAXHandler on: xml) parser
-				context: XMLExternalSubsetContext new;
+			(SAXHandler on: xml)
+				externalEntityResolver:
+					(DTDPluggableExternalEntityResolver entities:
+						(Array with: 'extern.dtd' -> dtd));
+				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLValidationException.
