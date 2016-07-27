@@ -6,11 +6,6 @@ testDeclaringNamespaces
 	self
 		shouldnt: [SAXHandler parse: '<root xmlns="defaultNS"/>']
 		raise: XMLNamespaceException.
-
-	"Cannot change xmlns or xml prefixes"
 	self
-		should: [SAXHandler parse: '<root xmlns:xmlns="newNS"/>']
-		raise: XMLNamespaceException.
-	self
-		should: [SAXHandler parse: '<root xmlns:xml="newNS" />']
+		shouldnt: [SAXHandler parse: '<root xmlns=""/>' usingNamespaces: true]
 		raise: XMLNamespaceException.
