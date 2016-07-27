@@ -1,6 +1,4 @@
 enumerating
 prefixMappingsDo: aTwoArgumentBlock
-	self mappedPrefixes do: [:namespace |
-		aTwoArgumentBlock
-			value: namespace
-			value: (self resolvePrefix: namespace)]
+	self prefixMappings keysAndValuesDo: [:prefix :uri |
+		aTwoArgumentBlock value: prefix value: uri]

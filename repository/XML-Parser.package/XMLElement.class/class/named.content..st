@@ -1,3 +1,3 @@
 instance creation
-named: aString content: aContentString
-	^ (self named: aString) contentString: aContentString
+named: aLocalName content: aContentString
+	^ (self named: aLocalName) contentString: aContentString

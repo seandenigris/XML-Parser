@@ -1,3 +1,3 @@
 instance creation
-named: aString
-	^ self new localName: aString
+named: aLocalName
+	^ self new localName: aLocalName

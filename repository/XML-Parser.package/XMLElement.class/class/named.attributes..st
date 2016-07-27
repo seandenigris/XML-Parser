@@ -1,3 +1,3 @@
 instance creation
-named: aString attributes: aDictionary
-	^ (self named: aString) setAttributes: aDictionary
+named: aLocalName attributes: aDictionary
+	^ (self named: aLocalName) setAttributes: aDictionary

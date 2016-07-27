@@ -5,5 +5,6 @@ on: aStream
 		(aStream isStream
 			ifTrue: [aStream]
 			ifFalse: [aStream readStream]).
-	driver validating: true.
-	^ self new driver: driver.
+	^ self new
+		driver: driver;
+		validating: true.
