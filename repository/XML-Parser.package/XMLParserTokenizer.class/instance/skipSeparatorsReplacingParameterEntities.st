@@ -7,5 +7,6 @@ skipSeparatorsReplacingParameterEntities
 		ifFalse: [^ self].
 	[streamReader peek == $%]
 		whileTrue: [
-			self replaceParameterEntityReference.
+			streamReader next.
+			self nextParameterEntityReference.
 			streamReader skipSeparators].

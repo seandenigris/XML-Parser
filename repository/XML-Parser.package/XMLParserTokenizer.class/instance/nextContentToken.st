@@ -1,3 +1,7 @@
 tokenizing
 nextContentToken
-	self subclassResponsibility
+	streamReader peek == $<
+		ifTrue: [
+			streamReader next.
+			^ self nextContentMarkupToken].
+	self nextPCDataToken.

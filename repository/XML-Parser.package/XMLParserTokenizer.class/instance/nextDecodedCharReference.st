@@ -1,3 +1,0 @@
-tokenizing
-nextDecodedCharReference
-	self subclassResponsibility
