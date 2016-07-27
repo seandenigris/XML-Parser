@@ -5,6 +5,6 @@ expectTerminator: aCharacter
 	(nextChar := streamReader next) == aCharacter
 		ifFalse: [
 			self
-				errorExpectedLiteral: aCharacter
+				errorExpectedTerminator: aCharacter
 				butGot: nextChar].
 	^ nextChar.

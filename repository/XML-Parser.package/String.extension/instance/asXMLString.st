@@ -1,3 +1,3 @@
-*XML-Parser-DOM
+*XML-Parser
 asXMLString
 	^ XMLString string: self
