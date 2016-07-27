@@ -1,3 +1,3 @@
-accessing
+dummy element classes
 userElementClass
-	^ self elementClassAt: #XMLTESTUserElement
+	^ Smalltalk at: #XMLTESTUserElement

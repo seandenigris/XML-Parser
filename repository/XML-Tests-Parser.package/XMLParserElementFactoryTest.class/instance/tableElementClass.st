@@ -1,3 +1,3 @@
-accessing
+dummy element classes
 tableElementClass
-	^ self elementClassAt: #XMLTESTTableNameElement
+	^ Smalltalk at: #XMLTESTTableElement

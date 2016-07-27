@@ -1,3 +1,3 @@
-accessing
+dummy element classes
 defaultElementClass
-	^ self elementClassAt: #XMLTESTDefaultElement
+	^ Smalltalk at: #XMLTESTDefaultElement

@@ -1,5 +1,5 @@
 utility
-reorderTests: aSelectorCollection
+reorderTests: aSelectorCollection in: aClass
 	"
 	This utility method reorders test* messages the receiver (a TestCase subclass) implements.
 
@@ -15,11 +15,11 @@ reorderTests: aSelectorCollection
 
 	(aSelectorCollection allSatisfy: [:each | each asString beginsWith: 'test'])
 		ifFalse: [self error: 'Will not reorder non-test selector'].
-	digitsNeeded := aSelectorCollection size asString size.
+	digitsNeeded := aSelectorCollection size printString size.
 	aSelectorCollection doWithIndex: [:oldSelector :i |
-		oldSource := (self sourceCodeAt: oldSelector) asString readStream.
+		oldSource := (aClass sourceCodeAt: oldSelector) asString readStream.
 		newSource := (String new: oldSource size) writeStream.
-		methodCategory := self whichCategoryIncludesSelector: oldSelector.
+		methodCategory := aClass whichCategoryIncludesSelector: oldSelector.
 
 		oldSource skip: 'test' size.
 		[oldSource peek isDigit]
@@ -30,6 +30,6 @@ reorderTests: aSelectorCollection
 			nextPutAll: (i printPaddedWith: $0 to: digitsNeeded);
 			nextPutAll: oldSource upToEnd.
 
-		self
+		aClass
 			removeSelector: oldSelector;
 			compile: newSource contents classified: methodCategory].

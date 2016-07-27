@@ -1,3 +1,3 @@
-accessing
+dummy element classes
 dateElementClass
-	^ self elementClassAt: #XMLTESTDateRegisteredElement
+	^ Smalltalk at: #XMLTESTDateElement
