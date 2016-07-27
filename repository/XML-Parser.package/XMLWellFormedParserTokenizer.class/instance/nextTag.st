@@ -7,7 +7,6 @@ nextTag
 		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
 
-	attributes := OrderPreservingStringDictionary new: 10.
 	"nil understands isXMLSeparator so is not tested for"
 	[(nextChar := streamReader peek) isXMLSeparator
 		and: [
@@ -22,10 +21,16 @@ nextTag
 			streamReader next == $=
 				ifFalse: [self errorExpectedAttributeNameValueSeparator].
 			streamReader skipSeparators.
-			(attributes
+
+			"delay initializing attributes until now to know for sure if it
+			needs a non-zero capacity, otherwise default initialize to zero
+			later for performance"
+			((attributes
+				ifNil: [attributes := OrderPreservingStringDictionary new: 10])
 				xmlAt: attributeName
 				newPut: self nextAttributeValue)
 				ifFalse: [self errorDuplicateAttribute: attributeName].
+
 			"the ordering of these tests is optimized"
 			(attributeName at: 1) == $x
 				ifTrue: [
@@ -33,9 +38,12 @@ nextTag
 						ifFalse: [
 							attributeName isXMLReservedAttributeName
 								ifTrue: [driver haveUnhandledReservedAttributes]]]].
+
 	driver
 		handleStartTag: tagName
-		attributes: attributes.
+		attributes:
+			(attributes
+				ifNil: [OrderPreservingStringDictionary new: 0]).
 
 	nextChar == $/
 		ifTrue: [

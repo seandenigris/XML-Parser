@@ -3,7 +3,7 @@ handleNotationDeclaration: aName publicID: aPublicID systemID: aSystemID
 	self isValidating
 		ifTrue: [
 			self doctypeDefinition unparsedEntityValidator
-				validateNotationDeclaration: aName].
+				validateNotation: aName].
 	self doctypeDefinition addNotation: aName.
 
 	self saxHandler

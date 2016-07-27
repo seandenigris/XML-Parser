@@ -1,6 +1,6 @@
 *XML-Parser
 isXMLNCNameStartChar
-	"should be the same as isXMLNameChar except without a test for $:"
+	"should be the same as isXMLNameStartChar except without a test for $:"
 
 	| tempValue |
 

@@ -1,6 +1,6 @@
 private
 errorUndeclaredNotation: aNotation inAttribute: anAttribute
 	XMLValidationException
-		formatSignal: 'Undeclared NOTATION "{1}" in "{2}" attribute'
+		formatSignal: 'Undeclared notation "{1}" in NOTATION (...) attribute "{2}"'
 		with: aNotation
 		with: anAttribute

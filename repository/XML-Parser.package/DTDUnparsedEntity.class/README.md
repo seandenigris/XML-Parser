@@ -1,0 +1,1 @@
+A class for unparsed entities. These should never be referenced with the &name; syntax and only appear in values to ENTITY and ENTITIES attributes.

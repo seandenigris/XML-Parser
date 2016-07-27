@@ -1,3 +1,3 @@
 initialization
 initializeWithValidatorsFrom: aValidatorContainer
-	unparsedEntityValidator := aValidatorContainer unparsedEntityValidator
+	aValidatorContainer unparsedEntityValidator addNotationAttributeValidator: self

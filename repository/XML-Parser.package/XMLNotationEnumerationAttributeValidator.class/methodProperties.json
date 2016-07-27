@@ -2,8 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializeWithValidatorsFrom:" : "monty 11/14/2015 20:31",
-		"unparsedEntityValidator" : "monty 1/1/2015 20:50",
-		"validateAttributeDeclaration" : "monty 4/9/2016 21:22",
-		"validateAttributeValue:" : "monty 1/1/2015 21:31",
+		"initializeWithValidatorsFrom:" : "monty 7/13/2016 01:15",
 		"validateXMLSpaceAttributeValidator" : "monty 3/22/2015 03:56" } }

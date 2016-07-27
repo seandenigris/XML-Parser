@@ -1,5 +1,11 @@
 adding
 addUnparsedEntity: aName ndata: aNotation
-	self unparsedEntities
+	self generalEntities
 		at: aName
-		ifAbsentPut: [aNotation]
+		ifAbsentPut: [
+			self unparsedEntities
+				at: aName
+				put:
+					(DTDUnparsedEntity
+						name: aName
+						ndata: aNotation)]
