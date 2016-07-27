@@ -1,3 +1,3 @@
 *XML-Parser-GTExtensions
 gtDisplayOn: stream
-	self subclassResponsibility
+	self printOn: stream
