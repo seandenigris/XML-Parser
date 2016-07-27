@@ -2,7 +2,7 @@ tokenizing
 nextPITarget
 	| target |
 
-	(target := self nextName) size = 3
+	(target := self nextName) size = 3 "optimization"
 		ifTrue: [
 			target = 'xml'
 				ifTrue: [

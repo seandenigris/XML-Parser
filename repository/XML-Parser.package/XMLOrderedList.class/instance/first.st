@@ -1,3 +1,6 @@
 accessing
 first
-	^ self at: 1
+	"optimized implementation"
+	^ collection size > 0
+		ifTrue: [collection at: 1]
+		ifFalse: [self defaultValue]

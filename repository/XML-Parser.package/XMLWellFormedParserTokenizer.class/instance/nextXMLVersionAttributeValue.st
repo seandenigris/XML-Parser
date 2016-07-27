@@ -1,8 +1,10 @@
 tokenizing
 nextXMLVersionAttributeValue
-	| quote |
+	| quote nextChar |
 
-	quote := self expectQuote.
+	((quote := streamReader next) == $"
+		or: [quote == $'])
+		ifFalse: [self errorExpectedXMLVersionValueStartButGot: quote].
 
 	writeStream
 		reset;
@@ -10,9 +12,14 @@ nextXMLVersionAttributeValue
 		nextPut: (self expectNext: $.);
 		nextPut: self expectVersionDigit.
 
-	[streamReader atEnd
-		or: [streamReader peek == quote]]
-		whileFalse: [writeStream nextPut: self expectVersionDigit].
+	[(nextChar := streamReader next) == nil
+		or: [(VersionDigitChars includes: nextChar) not]]
+		whileFalse: [writeStream nextPut: nextChar].
 
-	self expectNext: quote.
+	nextChar == quote
+		ifFalse: [
+			self
+				errorExpectedXMLVersionValueEnd: quote
+				butGot: nextChar].
+
 	^ writeStream contents.

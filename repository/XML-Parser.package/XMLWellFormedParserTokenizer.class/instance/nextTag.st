@@ -18,8 +18,9 @@ nextTag
 		whileTrue: [| attributeName |
 			attributeName := self nextName.
 			streamReader skipSeparators.
-			streamReader next == $=
-				ifFalse: [self errorExpectedAttributeNameValueSeparator].
+			(nextChar := streamReader next) == $=
+				ifFalse: [
+					self errorExpectedAttributeNameValueSeparatorButGot: nextChar].
 			streamReader skipSeparators.
 
 			"delay initializing attributes until now to know for sure if it

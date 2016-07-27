@@ -3,12 +3,13 @@ nextEntityValue
 	| quote nextChar |
 
 	quote := streamReader next.
+
 	context enterLiteralValue.
 	writeStream reset.
-	[(nextChar := streamReader peek) == quote
+	[(nextChar := streamReader next) == quote
 		or: [nextChar == nil]]
 		whileFalse: [
-			streamReader next == $&
+			nextChar == $&
 				ifTrue: [
 					streamReader peek == $#
 						ifTrue: [
@@ -31,6 +32,11 @@ nextEntityValue
 								ifFalse: [self errorNonCharInEntityValue: nextChar].
 							writeStream nextPut: nextChar]]].
 	context exitLiteralValue.
-	self expectNext: quote.
+
+	nextChar == quote
+		ifFalse: [
+			self
+				errorExpectedEntityValueEnd: quote
+				butGot: nextChar].
 
 	^ writeStream contents.

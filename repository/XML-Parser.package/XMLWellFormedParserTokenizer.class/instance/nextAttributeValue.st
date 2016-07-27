@@ -4,7 +4,7 @@ nextAttributeValue
 
 	((quote := streamReader next) == $"
 		or: [quote == $'])
-		ifFalse: [self errorExpectedAttributeValueStart].
+		ifFalse: [self errorExpectedAttributeValueStartButGot: quote].
 	
 	context enterLiteralValue.
 	writeStream reset.
@@ -26,6 +26,9 @@ nextAttributeValue
 	context exitLiteralValue.
 
 	nextChar == quote
-		ifFalse: [self errorExpectedAttributeValueEndButGot: nextChar].
+		ifFalse: [
+			self
+				errorExpectedAttributeValueEnd: quote
+				butGot: nextChar].
 
 	^ writeStream contents.
