@@ -5,7 +5,6 @@
 		"addressBookXML" : "monty 1/12/2014 23:38",
 		"addressBookXMLWithDTD" : "monty 1/12/2014 23:38",
 		"testChangingNormalizedLineEnding" : "monty 1/16/2014 09:08",
-		"testConditionalSection" : "monty 11/28/2014 08:59",
 		"testNextMatchAll" : "monty 4/3/2015 04:37",
 		"testSkipSeparators" : "monty 4/3/2015 03:37",
 		"testStreamReadingPortability" : "monty 10/13/2014 23:51",
