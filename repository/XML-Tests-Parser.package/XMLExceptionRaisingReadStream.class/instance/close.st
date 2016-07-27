@@ -1,3 +1,3 @@
-initialize-release
+closing
 close
 	stream close
