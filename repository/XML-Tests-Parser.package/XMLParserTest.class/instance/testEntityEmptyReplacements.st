@@ -2,8 +2,7 @@ tests
 testEntityEmptyReplacements
 	| xml document |
 
-	xml := '
-	<?xml version="1.0"?>
+	xml := '<?xml version="1.0"?>
 	<!DOCTYPE entities [
 		<!ENTITY % inner "">
 		%inner;

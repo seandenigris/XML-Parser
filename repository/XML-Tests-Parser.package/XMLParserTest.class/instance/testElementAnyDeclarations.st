@@ -6,7 +6,7 @@ testElementAnyDeclarations
 				'<!DOCTYPE one [
 					<!ELEMENT one ANY>
 					<!ELEMENT two ANY>]>
-				<one>one<two><![CDATA[two]]><two/></two>three</one>']
+				<one>one<two><![CDATA[two]]><two /></two>three</one>']
 		raise: XMLValidationException.
 	self
 		shouldnt: [

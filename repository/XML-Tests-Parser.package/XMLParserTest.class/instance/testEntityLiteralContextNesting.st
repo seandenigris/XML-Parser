@@ -2,8 +2,7 @@ tests
 testEntityLiteralContextNesting
 	| xml inner outer document |
 
-	xml := '
-	<?xml version="1.0"?>
+	xml := '<?xml version="1.0"?>
 	<!DOCTYPE entities [
 		<!ENTITY % inner " '' inner &#34; ">
 		<!ENTITY % outer '' "%inner;&#39; ''>
