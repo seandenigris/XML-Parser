@@ -2,11 +2,21 @@ namespacing
 declarePrefix: aPrefix uri: aURI
 	| oldMapping |
 
-	(oldMapping := self namespaceScope prefixMappingAt: aPrefix ifAbsent: [nil]) = aURI
+	oldMapping :=
+		self namespaceScope
+			prefixMappingAt: aPrefix
+			ifAbsent: [nil].
+	(oldMapping notNil
+		and: [oldMapping = aURI])
 		ifFalse: [
 			self
-				updateEnclosedScopesWith: [:scope | scope mapPrefix: aPrefix to: aURI]
+				allNamespaceScopesDo: [:scope |
+					scope
+						mapPrefix: aPrefix
+						to: aURI]
 				whileTrue: [:scope |
 					(scope includesPrefix: aPrefix) not
-						or: [scope includesPrefix: aPrefix mappedTo: oldMapping]]
-				validateAfter: false]
+						or: [
+							scope
+								includesPrefix: aPrefix
+								mappedTo: oldMapping]]]

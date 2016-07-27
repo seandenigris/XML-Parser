@@ -1,4 +1,4 @@
-accessing
+mapping
 inheritMappingsFrom: anEnclosingScope
 	anEnclosingScope hasNamespaces
 		ifFalse: [^ self].
@@ -7,10 +7,12 @@ inheritMappingsFrom: anEnclosingScope
 			anEnclosingScope prefixesAndURIsDo: [:prefix :uri |
 				(self includesPrefix: prefix)
 					ifFalse: [
-						(copiedPrefixMappings "used so we only copy once"
+						"nil test ensures we only copy the first time when needed"
+						(copiedPrefixMappings
 							ifNil: [copiedPrefixMappings := self copiedPrefixMappings])
 							at: prefix
 							put: uri]]]
 		ifFalse: [
-			"can reuse because of copy-on-write"
+			"can safely share anEnclosingScope's prefixMappings because of
+			copy-on-write behavior"
 			prefixMappings := anEnclosingScope prefixMappings].

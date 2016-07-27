@@ -1,4 +1,4 @@
-accessing
+mapping
 mapPrefix: aPrefix to: aURI
 	self
 		validatePrefix: aPrefix

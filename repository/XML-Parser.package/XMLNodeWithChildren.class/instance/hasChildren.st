@@ -1,5 +1,5 @@
 testing
 hasChildren
-	"Direct variable access avoids possibly unnecessary lazy initialization of the node list"
-
-	^ nodes notNil and: [nodes size > 0]
+	"nil test and size check to avoid lazy initializing"
+	^ nodes notNil
+		and: [nodes size > 0]

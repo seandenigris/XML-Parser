@@ -11,6 +11,8 @@ validatePrefix: aPrefix beforeMappingTo: aURI
 				ifTrue: [self errorCannotMapXMLNSPrefix].
 			(aPrefix indexOf: $:) > 0 
 				ifTrue: [self errorInvalidPrefix: aPrefix].
+			"non-default namespaces cannot be mapped to empty the uris,
+			even to shadow an inherited namesapce"
 			aURI size > 0
 				ifFalse: [self errorCannotMapPrefixToEmptyURI]].
 

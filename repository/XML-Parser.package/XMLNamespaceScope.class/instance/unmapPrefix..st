@@ -1,9 +1,5 @@
-accessing
+unmapping
 unmapPrefix: aPrefix
-	"copy-on-write"
-	^ self copiedPrefixMappings 
-		removeKey: aPrefix
-		ifAbsent: [
-			XMLNamespaceException
-				formatSignal: 'Prefix "{1}" was not mapped and cannot be unmapped'
-				with: aPrefix]
+	^ self
+		unmapPrefix: aPrefix
+		ifAbsent: [self errorCannotUnmapPrefix: aPrefix]

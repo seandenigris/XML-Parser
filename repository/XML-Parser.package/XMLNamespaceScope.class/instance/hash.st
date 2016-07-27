@@ -3,6 +3,6 @@ hash
 	| hash |
 
 	hash := self class hash.
-	prefixMappings
-		ifNotNil: [hash := hash bitXor: prefixMappings hash].
+	self hasNamespaces
+		ifTrue: [hash := hash bitXor: self prefixMappings hash].
 	^ hash.

@@ -1,9 +1,4 @@
-enumerating
+deprecated
 descendentElementsSelect: aBlock
-	| selectedElements |
-
-	selectedElements := self newListForSelect.
-	self descendentElementsDo: [:each |
-		(aBlock value: each)
-			ifTrue: [selectedElements addLast: each]].
-	^ selectedElements.
+	"less common alternate spelling"
+	^ self descendantElementsSelect: aBlock

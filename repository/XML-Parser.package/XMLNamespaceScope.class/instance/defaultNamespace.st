@@ -1,4 +1,4 @@
-accessing
+mapping
 defaultNamespace
 	^ prefixMappings
 		ifNil: ['']

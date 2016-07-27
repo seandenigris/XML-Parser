@@ -1,4 +1,5 @@
 testing
 hasAttributes
-	"avoid lazy initializing"
-	^ attributes notNil and: [attributes notEmpty]
+	"nil test and size check to avoid lazy initializing"
+	^ attributes notNil
+		and: [attributes size > 0]

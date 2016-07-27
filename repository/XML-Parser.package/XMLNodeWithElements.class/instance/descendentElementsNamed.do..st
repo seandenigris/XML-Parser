@@ -1,5 +1,6 @@
-enumerating
+deprecated
 descendentElementsNamed: aName do: aBlock
-	self descendentElementsDo: [:each |
-		(each isNamed: aName)
-			ifTrue: [aBlock value: each]]
+	"less common alternate spelling"
+	^ self
+		descendantElementsNamed: aName
+		do: aBlock

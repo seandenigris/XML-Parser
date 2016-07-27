@@ -1,6 +1,6 @@
 namespacing
-declareNamespaces: aDictionaryOrArray
-	aDictionaryOrArray associationsDo: [:each |
+declareNamespaces: anAssociationCollection
+	anAssociationCollection associationsDo: [:each |
 		self
 			declarePrefix: each key
 			uri: each value]

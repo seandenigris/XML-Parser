@@ -1,5 +1,6 @@
-accessing
+deprecated
 descendentElementsNamed: aName namespaceURI: aURI
-	^ self descendentElementsSelect: [:each |
-		(each isNamed: aName)
-			and: [each namespaceURI = aURI]]
+	"less common alternate spelling"
+	^ self
+		descendantElementsNamed: aName
+		namespaceURI: aURI

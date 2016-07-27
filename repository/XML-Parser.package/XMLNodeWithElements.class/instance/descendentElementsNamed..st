@@ -1,3 +1,4 @@
-accessing
+deprecated
 descendentElementsNamed: aName
-	^ self descendentElementsSelect: [:each | each isNamed: aName]
+	"less common alternate spelling"
+	^ self descendantElementsNamed: aName

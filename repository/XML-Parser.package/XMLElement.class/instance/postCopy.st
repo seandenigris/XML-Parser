@@ -5,4 +5,7 @@ postCopy
 	namespaceScope
 		ifNotNil: [namespaceScope := namespaceScope copy].
 	attributes
-		ifNotNil: [attributes := attributes deepCopyWithObserver: self].
+		ifNotNil: [| copiedAttributes |
+			copiedAttributes := attributes copyEmpty observer: self.
+			attributes do: [:each | copiedAttributes addLast: each copy].
+			attributes := copiedAttributes].

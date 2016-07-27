@@ -1,4 +1,4 @@
-enumerating
+deprecated
 descendentElementsDo: aBlock
-	self hasChildren
-		ifTrue: [self elementsDo: [:each | each allElementsDo: aBlock]]
+	"less common alternate spelling"
+	^ self descendantElementsDo: aBlock

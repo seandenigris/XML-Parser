@@ -1,3 +1,5 @@
 searching
 findElementNamed: aName with: aBlock
-	^ self allElementsDetect: [:each | (each isNamed: aName) and: [aBlock value: each]]
+	^ self allElementsDetect: [:each |
+		(each isNamed: aName)
+			and: [aBlock value: each]]

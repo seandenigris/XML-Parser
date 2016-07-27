@@ -1,3 +1,4 @@
-enumerating
+deprecated
 descendentNodesDetect: aBlock
-	^ self descendentNodesDetect: aBlock ifNone: [nil]
+	"less common alternate spelling"
+	^ self descendantNodesDetect: aBlock
