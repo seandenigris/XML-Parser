@@ -9,6 +9,7 @@
 		"testParsingAttributes" : "monty 2/6/2014 03:56",
 		"testParsingCDATA" : "monty 2/11/2014 00:51",
 		"testParsingForms" : "monty 2/6/2014 18:46",
+		"testParsingImplicitStartTag" : "monty 2/15/2014 01:20",
 		"testParsingInvalidPCData" : "monty 2/4/2014 02:50",
 		"testParsingNonHTMLSections" : "monty 1/16/2014 05:09",
 		"testParsingTables" : "monty 2/5/2014 23:45",
