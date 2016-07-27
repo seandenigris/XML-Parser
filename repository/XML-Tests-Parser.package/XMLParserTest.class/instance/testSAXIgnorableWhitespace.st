@@ -1,6 +1,6 @@
 tests
 testSAXIgnorableWhitespace
-	| xml parser |
+	| xml parser whitespace |
 
 	xml := '
 	<root>
@@ -21,4 +21,6 @@ testSAXIgnorableWhitespace
 			endDocument) = parser sentHandlerSelectors.
 	self assert:
 		((parser sentHandlerMessages select: [:each | each selector == #ignorableWhitespace:])
-			allSatisfy: [:each | each arguments first notEmpty]).
+			allSatisfy: [:each |
+				(whitespace := each arguments first) notEmpty
+					and: [whitespace allSatisfy: [:char | char isSeparator]]]).

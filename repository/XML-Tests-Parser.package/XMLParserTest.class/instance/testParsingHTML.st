@@ -13,9 +13,9 @@ testParsingHTML
 		assert: (document findElementNamed: 'body') contentString = '< text'.
 
 	document := HTMLParser parse:
-		'<head><title><b>"title</b></title><script>',
+		'<head><title><b>"title</b></TITLE><SCRIPT>',
 		'1 < 2; 3 > 2; document.write("</script>");</script>
-		<style>//"</style><head>'.
+		<style>//"</style><HEAD>'.
 	self
 		assert: (document findElementNamed: 'title') contentString = '<b>"title</b>';
 		assert: (document findElementNamed: 'script') contentString =
@@ -37,5 +37,5 @@ testParsingHTML
 		deny: (document findElementNamed: 'img') hasChildren.
 
 	self assert:
-		((HTMLParser parse: '<html><b></body></html><i>')
+		((HTMLParser parse: '<html><B></body></html><I>')
 			allElementsCollect: [:each | each name]) asArray = #('html' 'body' 'b' 'i').

@@ -9,7 +9,7 @@ testRecursiveParameterEntityReplacement
 					<!ENTITY % third "<!--last-->">
 					%first;]>
 				<root/>']
-		raise: XMLParserException.
+		raise: XMLEntityDepthException.
 	self
 		should: [
 			SAXHandler parse:
@@ -20,4 +20,4 @@ testRecursiveParameterEntityReplacement
 					<!ENTITY % fourth "<!--last-->">
 					%first;]>
 				<root/>']
-		raise: XMLParserException.
+		raise: XMLEntityDepthException.

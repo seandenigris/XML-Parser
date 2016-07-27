@@ -1,9 +1,19 @@
 tests-utf8
 testDecodingCharacters
-	| xmlDocument element |
+	| xml document  |
 
-	xmlDocument := XMLDOMParser parse: self exampleEncodedXML.
-	element := xmlDocument findElementNamed: 'test-data'.
+	xml := '<?xml version="1.0" encoding="UTF-8"?>
+			<test-data>&#{1};</test-data>'.
 
-	self assert: element contentString first charCode = 8230.	
+	document := XMLDOMParser parse: (xml format: (Array with: '8230')).
+	self assert: document root contentString first charCode = 8230.
 
+	self
+		should: [XMLDOMParser parse: (xml format: (Array with: 'xFFFFFFF'))]
+		raise: XMLParserException.
+	self
+		should: [XMLDOMParser parse: (xml format: (Array with: '0'))]
+		raise: XMLParserException.
+	self
+		should: [XMLDOMParser parse: (xml format: (Array with: '-1'))]
+		raise: XMLParserException.

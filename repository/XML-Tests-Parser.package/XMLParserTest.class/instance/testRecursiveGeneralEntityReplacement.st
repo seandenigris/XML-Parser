@@ -8,7 +8,7 @@ testRecursiveGeneralEntityReplacement
 					<!ENTITY second "&third;">
 					<!ENTITY third "last">]>
 				<root>&first;</root>']
-		raise: XMLParserException.
+		raise: XMLEntityDepthException.
 	self
 		should: [
 			SAXHandler parse:
@@ -18,4 +18,4 @@ testRecursiveGeneralEntityReplacement
 					<!ENTITY third "&fourth;">
 					<!ENTITY fourth "last">]>
 				<root>&first;</root>']
-		raise: XMLParserException.
+		raise: XMLEntityDepthException.
