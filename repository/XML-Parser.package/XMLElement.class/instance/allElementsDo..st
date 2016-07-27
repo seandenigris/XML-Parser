@@ -3,5 +3,5 @@ allElementsDo: aBlock
 	"See superclass version."
 
 	aBlock value: self.
-
-	super allElementsDo: aBlock.
+	self hasChildren
+		ifTrue: [self elementsDo: [:each | each allElementsDo: aBlock]]

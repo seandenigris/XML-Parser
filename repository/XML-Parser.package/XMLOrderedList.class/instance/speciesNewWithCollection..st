@@ -1,3 +1,3 @@
 private
-newWithCollection: aCollection
+speciesNewWithCollection: aCollection
 	^ self species basicNew setCollection: aCollection

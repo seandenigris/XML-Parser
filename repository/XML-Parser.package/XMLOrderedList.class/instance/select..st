@@ -1,3 +1,3 @@
 enumerating
 select: aBlock
-	^ self newWithCollection: (collection select: aBlock)
+	^ self speciesNewWithCollection: (collection select: aBlock)

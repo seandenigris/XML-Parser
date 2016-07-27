@@ -1,3 +1,3 @@
 enumerating
 withIndexCollect: aTwoArgumentBlock
-	^ self newWithCollection: (collection withIndexCollect: aTwoArgumentBlock)
+	^ self speciesNewWithCollection: (collection withIndexCollect: aTwoArgumentBlock)
