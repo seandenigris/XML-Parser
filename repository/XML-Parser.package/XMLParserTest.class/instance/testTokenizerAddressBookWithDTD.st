@@ -1,4 +1,4 @@
-xmltokenizer
+tests-xmltokenizer
 testTokenizerAddressBookWithDTD
 	| tokenizer |
 	tokenizer := XMLTokenizer on: self addressBookXMLWithDTD readStream.

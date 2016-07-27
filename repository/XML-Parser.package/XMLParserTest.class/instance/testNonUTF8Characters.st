@@ -1,4 +1,4 @@
-utf8
+tests-utf8
 testNonUTF8Characters
 
 	self shouldnt: [XMLDOMParser parseDocumentFrom: 
