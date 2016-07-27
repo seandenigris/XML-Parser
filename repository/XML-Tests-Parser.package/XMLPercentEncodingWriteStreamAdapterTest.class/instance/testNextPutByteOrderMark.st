@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testNextPutByteOrderMark
 	self
 		should: [self newStreamAdapter nextPutByteOrderMark]

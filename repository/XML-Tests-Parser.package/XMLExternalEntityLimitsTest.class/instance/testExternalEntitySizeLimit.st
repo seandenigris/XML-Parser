@@ -6,7 +6,9 @@ testExternalEntitySizeLimit
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
 	url := self musicXMLExternalEntityURLs first asXMLURI.
-	xml := self doctypeWithDeclarationsForEntityURIs: (Array with: url asString).
+	xml :=
+		(self doctypeWithDeclarationsForEntityURIs: (Array with: url asString)),
+		'<test/>'.
 	size :=
 		(url
 			getUpToLimit: nil

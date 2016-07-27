@@ -3,9 +3,9 @@
 		 },
 	"instance" : {
 		"testDefaultLimits" : "monty 1/27/2015 23:06",
-		"testExternalEntitiesLimit" : "monty 6/21/2015 03:02",
-		"testExternalEntitySizeLimit" : "monty 12/3/2015 02:33",
-		"testExternalSubsetReadLimit" : "monty 4/4/2015 06:02",
+		"testExternalEntitiesLimit" : "monty 3/9/2016 19:02",
+		"testExternalEntitySizeLimit" : "monty 3/9/2016 19:03",
+		"testExternalSubsetReadLimit" : "monty 3/9/2016 20:53",
 		"testOnURLUpToLimit" : "monty 12/3/2015 02:34",
 		"testRemoveLimits" : "monty 5/25/2015 02:39",
 		"testResolvingLocalFromNonLocal" : "monty 1/24/2014 17:33" } }

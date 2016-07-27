@@ -1,14 +1,16 @@
 tests
 testExternalSubsetReadLimit
-	| xml externalSubset fileName parser |
+	| xml fileHandle externalSubset parser |
 
 	self isSkipping
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
-	fileName := 'externalSubset.dtd'.
+	fileHandle := self fileHandleForNewFileSuffixed: 'externalSubset.dtd'.
 	externalSubset := '<?xml encoding="UTF-8"?><!ELEMENT test EMPTY>'.
-	self fileNamed: fileName write: externalSubset.
-	xml := '<!DOCTYPE test SYSTEM "', fileName, '"><test/>'.
+	fileHandle writeStreamDo: [:writeStream |
+		writeStream nextPutAll: externalSubset].
+	xml := '<!DOCTYPE test SYSTEM "', fileHandle path, '"><test/>'.
+
 	self
 		shouldnt: [
 			(parser := SAXHandler on: xml)
@@ -17,6 +19,7 @@ testExternalSubsetReadLimit
 				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLLimitException.
+
 	self
 		should: [
 			(parser := SAXHandler on: xml)
@@ -25,4 +28,5 @@ testExternalSubsetReadLimit
 				resolvesExternalEntities: true;
 				parseDocument]
 		raise: XMLLimitException.
-	self deleteFileNamed: fileName.
+
+	fileHandle delete.

@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"encodedInvalidCharacters" : "monty 3/9/2016 10:32",
 		"newStreamAdapterOn:" : "monty 3/5/2016 12:39",
 		"streamAdapterClass" : "monty 3/5/2016 12:38",
 		"streamConverterClass" : "monty 3/5/2016 12:24",
 		"testHasDefaultStreamConverter" : "monty 3/5/2016 16:09",
 		"testHasNullStreamConverter" : "monty 3/5/2016 16:09",
+		"testInvalidCharacters" : "monty 3/9/2016 10:35",
 		"testIsConvertingStreamAdapter" : "monty 3/5/2016 12:39",
 		"testOn" : "monty 3/6/2016 08:29",
 		"testStreamConverter" : "monty 3/5/2016 12:39" } }

@@ -1,0 +1,3 @@
+accessing
+decodedInvalidCharacters
+	^ self decodedUnicodeInvalidCharacters

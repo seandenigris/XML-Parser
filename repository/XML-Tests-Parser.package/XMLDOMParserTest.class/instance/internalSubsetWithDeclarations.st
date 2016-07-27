@@ -10,4 +10,5 @@ internalSubsetWithDeclarations
 			<!ENTITY % parameter "replacement">
 			<!ENTITY % externalParameter SYSTEM "external2.dtd">
 			<!NOTATION notation SYSTEM "note.doc">
-		]>'
+		]>
+		<root>test</root>'

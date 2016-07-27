@@ -1,17 +1,18 @@
 tests
 testOnFileNamed
-	| parser fileName |
+	| parser fileHandle |
 
 	self isSkipping
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
-	fileName := 'testOnFileNamed.xml'.
-	self fileNamed: fileName write: ''.
+	fileHandle := self fileHandleForNewFileSuffixed: 'testOnFileNamed.xml'.
+	fileHandle writeStreamDo: [:writeStream |
+		writeStream nextPutAll: '<test/>'].
 	self
-		shouldnt: [parser := SAXHandler onFileNamed: fileName]
+		shouldnt: [parser := SAXHandler onFileNamed: fileHandle path]
 		raise: XMLFileException.
 	self
-		assert: parser documentURI = fileName;
+		assert: parser documentURI = fileHandle path;
 		assert: parser documentURI asXMLURI isLocalURI.
 
-	self deleteFileNamed: fileName.
+	fileHandle delete.

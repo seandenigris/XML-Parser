@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
+		"encodedInvalidCharacters" : "monty 3/9/2016 10:32",
 		"streamConverterClass" : "monty 3/5/2016 12:24" } }

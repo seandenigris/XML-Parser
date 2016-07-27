@@ -1,0 +1,3 @@
+accessing
+decodedInvalidCharacters
+	^ self decodedUnicodeInvalidCharacters copyWithFirst: 256 asCharacter

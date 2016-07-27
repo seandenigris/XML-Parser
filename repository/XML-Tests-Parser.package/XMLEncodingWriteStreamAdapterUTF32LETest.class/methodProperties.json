@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"contentsFromCharacter:" : "monty 2/12/2016 09:00",
+		"decodedInvalidCharacters" : "monty 3/8/2016 16:58",
 		"inputCollection" : "monty 2/12/2016 00:02",
 		"outputCollection" : "monty 2/12/2016 00:03",
 		"streamConverterClass" : "monty 2/12/2016 00:02" } }

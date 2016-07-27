@@ -6,7 +6,7 @@ testNotationDeclarationWhitespace
 		'<!DOCTYPE test [<!NOTATION name SYSTEM"systemid">]>')
 		do: [:each |
 			self
-				should: [SAXHandler parse: each]
+				should: [SAXHandler parse: each, '<test/>']
 				raise: XMLWellFormednessException].
 
 	#('<!DOCTYPE test [<!NOTATION     name  PUBLIC  "publicid"   >]>'
@@ -14,5 +14,5 @@ testNotationDeclarationWhitespace
 		'<!DOCTYPE test [<!NOTATION name SYSTEM        "systemid"		>]>')
 		do: [:each |
 			self
-				shouldnt: [SAXHandler parse: each]
+				shouldnt: [SAXHandler parse: each, '<test/>']
 				raise: XMLWellFormednessException].

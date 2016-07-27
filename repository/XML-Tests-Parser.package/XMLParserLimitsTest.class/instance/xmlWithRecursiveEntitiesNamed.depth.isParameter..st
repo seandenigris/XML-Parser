@@ -10,7 +10,7 @@ xmlWithRecursiveEntitiesNamed: aName depth: aLimit isParameter: aBoolean
 			depth: aLimit
 			isParameter: aBoolean).
 	aBoolean
-		ifTrue: [xml nextPutAll: '%', aName, '1;]>']
+		ifTrue: [xml nextPutAll: '%', aName, '1;]><test/>']
 		ifFalse: [xml nextPutAll: ']><test>&', aName, '1;</test>'].
 
 	^ xml contents.

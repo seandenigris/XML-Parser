@@ -8,3 +8,6 @@ testXMLParserIsSeparator
 		(separators includes: char)
 			ifTrue: [self assert: char xmlParserIsSeparator]
 			ifFalse: [self deny: char xmlParserIsSeparator]].
+	self
+		assert: (nil respondsTo: #xmlParserIsSeparator);
+		deny: nil xmlParserIsSeparator.

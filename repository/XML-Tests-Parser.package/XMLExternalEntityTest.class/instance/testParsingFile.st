@@ -1,21 +1,21 @@
 tests
 testParsingFile
 	"This test creates/deletes a file so is skipped by default"
-	| fileName doc |
+	| fileHandle doc |
 
 	self isSkipping
 		ifTrue: [self skipOrReturnWith: [^ self]].
 
-	fileName := 'testParsingFile.xml'.
+	fileHandle := self fileHandleForNewFileSuffixed: 'testParsingFile.xml'.
 	self
-		should: [XMLDOMParser parseFileNamed: fileName]
+		should: [XMLDOMParser parseFileNamed: fileHandle path]
 		raise: XMLFileException.
+
+	fileHandle writeStreamDo: [:writeStream |
+		writeStream nextPutAll: self musicXMLDocument].
 	self
-		fileNamed: fileName
-		write: self musicXMLDocument.
-	self
-		shouldnt: [doc := XMLDOMParser parseFileNamed: fileName]
+		shouldnt: [doc := XMLDOMParser parseFileNamed: fileHandle path]
 		raise: XMLFileException.
 	self assert: (doc root isNamed: 'score-partwise').
 
-	self deleteFileNamed: fileName.
+	fileHandle delete.
