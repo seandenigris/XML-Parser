@@ -16,4 +16,5 @@
 		"factoryClass" : "monty 11/1/2014 16:51",
 		"newFactory" : "monty 11/1/2014 21:44",
 		"piClass" : "monty 11/1/2014 22:38",
-		"stringClass" : "monty 11/1/2014 22:38" } }
+		"stringClass" : "monty 11/1/2014 22:38",
+		"testAsPluggableNodeFactory" : "monty 4/17/2015 10:49" } }
