@@ -5,7 +5,9 @@ printOn: aStream
 			writeStream := (String new: 64) writeStream.
 			self
 				printSchemeOn: writeStream;
+				printAuthorityPrefixOn: writeStream;
 				printAuthorityOn: writeStream;
+				printPathPrefixOn: writeStream;
 				printPathOn: writeStream;
 				printQueryOn: writeStream;
 				printFragmentOn: writeStream.
