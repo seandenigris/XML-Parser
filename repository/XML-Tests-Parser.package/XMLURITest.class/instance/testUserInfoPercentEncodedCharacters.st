@@ -1,5 +1,5 @@
 tests
-testPercentEncodedUserInfo
+testUserInfoPercentEncodedCharacters
 	| prefix suffix uri |
 
 	prefix := 'mailto:'.

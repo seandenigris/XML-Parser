@@ -1,5 +1,5 @@
 tests
-testPercentEncodedPath
+testPathPercentEncodedCharacters
 	| uri |
 
 	self asciiCharactersDo: [:each | | encodedURIString |

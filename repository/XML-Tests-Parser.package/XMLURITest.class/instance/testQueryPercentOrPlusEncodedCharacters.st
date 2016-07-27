@@ -1,5 +1,5 @@
 tests
-testPercentEncodedQuery
+testQueryPercentOrPlusEncodedCharacters
 	| uri |
 
 	self asciiCharactersDo: [:each | | encodedURIString |

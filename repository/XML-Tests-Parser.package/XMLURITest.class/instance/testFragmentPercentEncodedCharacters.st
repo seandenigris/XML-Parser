@@ -1,5 +1,5 @@
 tests
-testPercentEncodedFragment
+testFragmentPercentEncodedCharacters
 	| uri |
 
 	self asciiCharactersDo: [:each | | encodedURIString |

@@ -1,5 +1,5 @@
 tests
-testPercentEncodedHost
+testHostPercentEncodedCharacters
 	| prefix uri |
 
 	prefix := 'http://'.
