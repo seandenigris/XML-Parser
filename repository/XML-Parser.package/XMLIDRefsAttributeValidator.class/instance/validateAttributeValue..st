@@ -1,5 +1,5 @@
 validation
-validateValue: aValue
+validateAttributeValue: aValue
 	Character space
 		split: aValue
 		do: [:each |

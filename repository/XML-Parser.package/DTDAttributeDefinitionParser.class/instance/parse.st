@@ -14,7 +14,6 @@ parse
 			element: element
 			attribute: attribute
 			defaultValueValidator: defaultValueValidator.
-
 	attributeValidator isValueListValidator
 		ifTrue: [attributeValidator allowedValues: (self parseEnumerationType)].
 

@@ -10,7 +10,7 @@ addValidatorForAttributeIn: anElement named: aName type: aType default: aDefault
 			default: aDefaultDeclaration.
 	validator := parser parse.
 
-	(validator isValueListValidator and: [parser isNotationEnumeration: aType])
+	(validator isValueListValidator and: [parser isNotationList: aType])
 		ifTrue: [
 			(validator allowedValues allSatisfy: [:each | self includesNotation: each])
 				ifFalse: [XMLValidationException signal: 'Undeclared notation in enumeration']].

@@ -8,7 +8,7 @@
 		"PubidChars" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"activeEntities" ],
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],

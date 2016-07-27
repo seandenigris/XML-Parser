@@ -1,3 +1,3 @@
 validation
-validateValue: aValue
+validateAttributeValue: aValue
 	self validateName: aValue

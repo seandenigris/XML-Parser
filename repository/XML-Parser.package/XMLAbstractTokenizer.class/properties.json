@@ -9,8 +9,7 @@
 		"driver",
 		"context",
 		"streamReader",
-		"streamWriter",
-		"activeEntities" ],
+		"streamWriter" ],
 	"name" : "XMLAbstractTokenizer",
 	"pools" : [
 		 ],

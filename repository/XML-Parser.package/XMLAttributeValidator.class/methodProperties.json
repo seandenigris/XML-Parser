@@ -4,14 +4,14 @@
 	"instance" : {
 		"attribute" : "monty 12/10/2013 06:17",
 		"element" : "monty 12/10/2013 06:17",
-		"furtherNormalizeValueIn:" : "monty 12/10/2013 06:14",
+		"furtherNormalizeAttributeValueIn:" : "monty 12/11/2013 02:14",
 		"isEntityValidator" : "monty 11/19/2013 21:59",
 		"isIDValidator" : "monty 12/10/2013 06:06",
 		"isValueListValidator" : "monty 12/9/2013 02:24",
 		"setElement:attribute:defaultValueValidator:" : "monty 12/10/2013 06:15",
-		"shouldFurtherNormalizeValue" : "monty 11/19/2013 17:05",
-		"validateAttributes:" : "monty 12/10/2013 06:14",
-		"validateDefaultValueIn:" : "monty 12/10/2013 06:14",
+		"shouldFurtherNormalizeAttributeValue" : "monty 12/11/2013 02:14",
+		"validateAttributeDefaultIn:" : "monty 12/11/2013 02:23",
+		"validateAttributeValue:" : "monty 12/11/2013 02:12",
+		"validateAttributes:" : "monty 12/11/2013 02:23",
 		"validateID:" : "monty 12/10/2013 06:14",
-		"validateName:" : "monty 12/10/2013 06:14",
-		"validateValue:" : "monty 12/9/2013 06:04" } }
+		"validateName:" : "monty 12/10/2013 06:14" } }

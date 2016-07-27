@@ -4,7 +4,7 @@
 	"instance" : {
 		"addAttributeValidator:" : "monty 12/10/2013 06:39",
 		"addNotation:" : "monty 11/14/2013 23:59",
-		"addValidatorForAttributeIn:named:type:default:" : "monty 12/10/2013 06:48",
+		"addValidatorForAttributeIn:named:type:default:" : "monty 12/11/2013 02:38",
 		"addValidatorForElement:contentModel:" : "monty 12/10/2013 06:32",
 		"attributeValidators" : "monty 11/19/2013 01:01",
 		"elementValidators" : "monty 11/18/2013 19:26",

@@ -1,3 +1,3 @@
 testing
-isNotationEnumeration: aType
+isNotationList: aType
 	^ aType beginsWith: 'NOTATION '

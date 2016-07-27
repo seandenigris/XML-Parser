@@ -1,4 +1,4 @@
 validation
-validateValue: aValue
+validateAttributeValue: aValue
 	self validateID: aValue.
 	self idrefs add: aValue.

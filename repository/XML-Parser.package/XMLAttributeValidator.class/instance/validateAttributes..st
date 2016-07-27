@@ -1,6 +1,6 @@
 validation
 validateAttributes: anAttributeDictionary
 	self
-		validateDefaultValueIn: anAttributeDictionary;
-		validateValue: (anAttributeDictionary at: attribute ifAbsent: [^ self])
+		validateAttributeDefaultIn: anAttributeDictionary;
+		validateAttributeValue: (anAttributeDictionary at: attribute ifAbsent: [^ self])
 						

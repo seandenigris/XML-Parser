@@ -1,6 +1,10 @@
 parsing
 parseEnumerationType
-	^ (((self isNotationEnumeration: type)
-		ifTrue: [DTDNotationListParser]
-		ifFalse: [DTDEnumerationListParser])
-			on: type) parse
+	| listParserClass |
+
+	listParserClass :=
+		(self isNotationList: type)
+			ifTrue: [DTDNotationListParser]
+			ifFalse: [DTDEnumerationListParser].
+
+	^ (listParserClass on: type) parse.

@@ -1,5 +1,5 @@
 normalization
-furtherNormalizeValueIn: anAttributeDictionary
+furtherNormalizeAttributeValueIn: anAttributeDictionary
 	| readStream writeStream |
 
 	readStream := (anAttributeDictionary at: attribute) readStream.
