@@ -5,6 +5,7 @@ nextAttributeValue
 	streamReader atQuote
 		ifFalse: [^ self nextName].
 	quote := streamReader next.
+
 	context
 		saveCurrent;
 		enterLiteralValue.

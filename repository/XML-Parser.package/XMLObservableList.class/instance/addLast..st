@@ -4,4 +4,4 @@ addLast: anObject
 	self beforeAdding: anObject.
 	collection addLast: anObject.
 	self afterAdding: anObject.
-	^ anObject
+	^ anObject.

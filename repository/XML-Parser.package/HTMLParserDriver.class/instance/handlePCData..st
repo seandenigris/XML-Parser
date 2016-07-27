@@ -1,7 +1,7 @@
 handling tokens
 handlePCData: aString
-	self
-		endElements: self elementNester elementsToEndBeforePCData;
-		startElements: self elementNester elementsToStartBeforePCData.
+	self elementNester
+		elementsToEndBeforePCDataDo: [:each | self endElement: each ];
+		elementsToStartBeforePCDataDo: [:each | self startElement: each].
 
 	self saxHandler characters: aString.

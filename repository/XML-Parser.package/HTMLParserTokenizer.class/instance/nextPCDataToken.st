@@ -4,8 +4,8 @@ nextPCDataToken
 
 	isIgnorableWhitespace := true.
 	writeStream reset.
-	[(nextChar := streamReader peek) == nil
-		or: [nextChar == $<]]
+	[(nextChar := streamReader peek) == $<
+		or: [nextChar == nil]]
 		whileFalse: [
 			streamReader next.
 			nextChar == $&

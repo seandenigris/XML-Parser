@@ -14,6 +14,7 @@ nextAttributeValue
 		enterLiteralValue.
 	value := self nextAttributeValueDelimitedBy: quote.
 	context resetPrevious.
+
 	(streamReader next == quote)
 		ifFalse: [self errorExpected: 'end of quoted attribute value'].
 

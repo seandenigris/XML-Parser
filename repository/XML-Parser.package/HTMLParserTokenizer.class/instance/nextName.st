@@ -3,7 +3,7 @@ nextName
 	| nextChar |
 
 	nameStream reset.
-	 [(nextChar := streamReader peek) isNil
+	 [(nextChar := streamReader peek) == nil
 		or: [(HtmlNameDelimiters includes: nextChar)
 			or: [(context isInDoctype and: [nextChar == $[])
 				or: [context isInInternalSubset and: [nextChar == $]]]]]]

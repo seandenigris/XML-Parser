@@ -9,9 +9,9 @@ nextTag
 
 	attributes := OrderPreservingDictionary new: 10 withDefaultValue: ''.
 	[streamReader skipSeparators.
-	((nextChar := streamReader peek) == nil
-		or: [nextChar == $>
-			or: [nextChar == $/]])]
+	((nextChar := streamReader peek) == $>
+		or: [nextChar == $/
+			or: [nextChar == nil]])]
 		whileFalse: [
 			attributeName := self nextName.
 			streamReader skipSeparators.

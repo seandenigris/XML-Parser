@@ -6,7 +6,7 @@ initialize
 	self
 		initializeHeadSectionElements;
 		initializeBodySectionElements;
-		initializeNonNestableElements;
 		initializeNestableTagGroups;
+		initializeNonNestableElements;
 		initializeMutuallyExcludingTags;
-		initializeVoidElements
+		initializeVoidElements.

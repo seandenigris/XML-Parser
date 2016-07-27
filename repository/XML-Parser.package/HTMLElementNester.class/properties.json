@@ -11,9 +11,7 @@
 		"VoidElements" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"openElementsByName",
-		"elementsToStart",
-		"elementsToEnd" ],
+		"openElementsByName" ],
 	"name" : "HTMLElementNester",
 	"pools" : [
 		 ],

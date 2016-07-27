@@ -3,9 +3,9 @@ nextAttributeValueDelimitedBy: aQuote
 	| nextChar |
 
 	writeStream reset.
-	[(nextChar := streamReader peek) == nil
-		or: [nextChar == aQuote
-			or: [nextChar == $<]]]
+	[(nextChar := streamReader peek) == aQuote
+		or: [nextChar == $<
+			or: [nextChar == nil]]]
 		whileFalse: [
 			(streamReader next) == $&
 				ifTrue: [

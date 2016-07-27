@@ -1,6 +1,6 @@
 tokenizing - dtd
 nextAttlistDeclaration
-	| element  defaultPragma |
+	| element defaultPragma |
 
 	self
 		expectNextAll: 'ATTLIST';

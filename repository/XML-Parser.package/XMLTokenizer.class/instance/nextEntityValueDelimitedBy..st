@@ -3,8 +3,8 @@ nextEntityValueDelimitedBy: aQuote
 	| nextChar |
 
 	writeStream reset.
-	[(nextChar := streamReader peek) == nil
-		or: [nextChar == aQuote]]
+	[(nextChar := streamReader peek) == aQuote
+		or: [nextChar == nil]]
 		whileFalse: [
 			(streamReader next) == $&
 				ifTrue: [

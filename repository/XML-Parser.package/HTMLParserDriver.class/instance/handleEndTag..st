@@ -4,6 +4,7 @@ handleEndTag: anElementName
 		or: [(self elementNester hasOpenElement: anElementName) not])
 		ifTrue: [^ self].
 
-	self
-		endElements: (self elementNester elementsToEndBeforeEnding: anElementName);
-		endElement: anElementName.
+	self elementNester
+		elementsToEndBeforeEnding: anElementName
+		do: [:each | self endElement: each].
+	self endElement: anElementName.
