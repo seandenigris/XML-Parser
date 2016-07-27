@@ -6,4 +6,4 @@ endedElement: anElementName
 				ifTrue: [self errorImproperlyNestedElements: anElementName]
 				ifFalse: [self errorUnmatchedEndTag: anElementName]].
 
-	self openElements removeLast.
+	super endedElement: anElementName.

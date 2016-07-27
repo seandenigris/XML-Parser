@@ -1,19 +1,36 @@
 tokenizing
 nextTag
-	| tagName attributes namespaces nextChar |
+	| tagName attributes namespaces nextChar attributeName attributeValue |
 
 	(streamReader peek = $/)
 		ifTrue: [^ self nextEndTag].
 	tagName := self nextName.
 
 	attributes := OrderPreservingDictionary new: 10 withDefaultValue: ''.
-	driver usesNamespaces
-		ifTrue: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
 	[streamReader skipSeparators.
 	((nextChar := streamReader peek) isNil
 		or: [nextChar == $>
 			or: [nextChar == $/]])]
-		whileFalse: [self nextAttributeInto: attributes namespaces: namespaces].
+		whileFalse: [
+			attributeName := self nextName.
+			streamReader skipSeparators.
+			self expectNext: $=.
+			streamReader skipSeparators.
+			attributeValue := self nextAttributeValue.
+	
+			((attributeName at: 1) == $x
+				and: [driver usesNamespaces
+					and: [attributeName beginsWith: 'xmlns']])
+				ifTrue: [
+					namespaces
+						ifNil: [namespaces := OrderPreservingDictionary new: 5 withDefaultValue: ''].
+					attributeName size > 6
+						ifTrue: [
+							namespaces
+								at: (attributeName copyFrom: 7 to: attributeName size)
+								put: attributeValue]
+						ifFalse: [namespaces at: '' put: attributeValue]]
+				ifFalse: [attributes at: attributeName put: attributeValue]].
 
 	driver
 		handleStartTag: tagName

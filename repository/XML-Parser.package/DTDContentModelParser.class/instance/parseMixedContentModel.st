@@ -13,6 +13,6 @@ parseMixedContentModel
 	(mayContainElements or: [allowedElements isEmpty])
 		ifFalse: [XMLValidationException signal: 'Missing * after mixed content list with elements'].
 
-	^ XMLMixedElementValidator
-		name: name
-		elements: allowedElements.
+	^ XMLMixedContentElementValidator
+		element: name
+		allowedElements: allowedElements.

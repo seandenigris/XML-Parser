@@ -9,6 +9,7 @@
 		"isValidating",
 		"usesNamespaces",
 		"resolvesExternalEntities",
+		"preservesUndeclaredEntityReferences",
 		"externalEntityResolver",
 		"parserHandlerClass" ],
 	"name" : "XMLConfiguration",

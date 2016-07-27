@@ -1,0 +1,3 @@
+testing
+hasActiveEntities
+	^ activeEntities notEmpty

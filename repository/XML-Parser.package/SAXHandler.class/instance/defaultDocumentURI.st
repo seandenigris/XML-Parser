@@ -4,4 +4,4 @@ defaultDocumentURI
 		ifTrue: [input path]
 		ifFalse: [
 			self configuration fileClient currentWorkingDirectory,
-				(self identityHash printString copyWithFirst: $/)]
+				self class name asString, '.xml'].

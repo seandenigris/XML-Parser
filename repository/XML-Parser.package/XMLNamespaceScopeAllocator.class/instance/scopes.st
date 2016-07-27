@@ -1,3 +1,3 @@
 accessing
 scopes
-	^ scopes ifNil: [scopes := OrderedCollection new: 20]
+	^ scopes ifNil: [scopes := OrderedCollection new: 10]

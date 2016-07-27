@@ -1,0 +1,3 @@
+entity replacement
+endReplacementForParameterEntity: anEntity
+	activeEntities remove: anEntity

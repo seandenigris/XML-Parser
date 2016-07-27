@@ -5,14 +5,14 @@ combineRelative: aRelativePath withBase: aBasePath
 	(self isNonRelative: aRelativePath)
 		ifTrue: [^ aRelativePath].
 
-	basePathObject := self pathClass from: aBasePath.
+	basePathObject := self pathObjectFrom: aBasePath.
 	fullPathString :=
-		basePathObject asFileReference isDirectory
-			ifTrue: [self systemPathFrom: (basePathObject / (self trimRelativePath: aRelativePath))]
+		(basePathObject isRoot or: [aBasePath last == self pathSeparator])
+			ifTrue: [self pathToString: (basePathObject / (self trimRelativePath: aRelativePath))]
 			ifFalse: [
 				self pathSeparator join:
-					(basePathObject segments allButLast,
-						(self pathClass from: (self trimRelativePath: aRelativePath)))].
+					(basePathObject segments allButLast
+						copyWith: (self trimRelativePath: aRelativePath))].
 	^ (self isNonRelative: aBasePath)
-		ifTrue: [fullPathString copyWithFirst: self pathSeparator]
+		ifTrue: [self makeNonRelative: fullPathString]
 		ifFalse: [fullPathString].

@@ -1,3 +1,3 @@
 accessing
 currentScope: aScope
-	^ self pushScope: aScope
+	self pushScope: aScope

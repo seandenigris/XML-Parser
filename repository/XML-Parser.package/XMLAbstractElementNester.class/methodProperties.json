@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"currentElement" : "monty 12/6/2013 17:25",
+		"enclosedElementsAsString:" : "monty 12/6/2013 17:25",
+		"endedElement:" : "monty 12/6/2013 17:50",
+		"ensureNoElementsRemainOpen" : "monty 12/6/2013 17:49",
+		"hasExternalRoot" : "monty 12/6/2013 17:30",
+		"hasOpenElement:" : "monty 12/6/2013 17:29",
+		"hasOpenElements" : "monty 12/6/2013 17:29",
+		"openElements" : "monty 12/6/2013 17:29",
+		"printLimit" : "monty 12/6/2013 17:29",
+		"printOn:" : "monty 12/6/2013 17:29",
+		"printOn:startingAt:" : "monty 12/6/2013 17:29",
+		"rootElement" : "monty 12/6/2013 17:28",
+		"rootElement:" : "monty 12/6/2013 17:28",
+		"startedElement:" : "monty 12/6/2013 17:51",
+		"totalOpen" : "monty 12/6/2013 17:29" } }

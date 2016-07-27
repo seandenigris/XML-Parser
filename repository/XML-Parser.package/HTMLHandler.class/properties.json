@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-HTML",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "HTMLHandler",
+	"pools" : [
+		 ],
+	"super" : "SAXHandler",
+	"type" : "normal" }

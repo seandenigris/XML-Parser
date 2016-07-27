@@ -5,7 +5,7 @@ nextAttributeValue
 	streamReader peek == $&
 		ifTrue: [^ self nextUnparsedEntityReference].
 
-	self atQuote
+	streamReader atQuote
 		ifFalse: [^ self nextName].
 	quote := streamReader next.
 	context resetAfter: [

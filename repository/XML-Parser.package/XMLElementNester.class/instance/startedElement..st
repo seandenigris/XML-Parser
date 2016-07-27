@@ -1,11 +1,11 @@
 checking
-startedElement: aTagName
+startedElement: anElementName
 	rootElement
-		ifNil: [rootElement := aTagName]
+		ifNil: [rootElement := anElementName]
 		ifNotNil: [
 			(self hasOpenElements or: [self hasExternalRoot])
 				ifFalse: [
 					XMLWellFormednessException signal:
 						'Document cannot have multiple root elements']].
 
-	self openElements addLast: aTagName
+	super startedElement: anElementName.

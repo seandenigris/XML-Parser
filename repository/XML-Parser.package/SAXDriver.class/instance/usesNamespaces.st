@@ -1,3 +1,3 @@
 testing
 usesNamespaces
-	^ self configuration usesNamespaces
+	^ saxHandler usesNamespaces

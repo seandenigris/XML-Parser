@@ -1,0 +1,3 @@
+accessing
+escapedReferenceSymbol
+	^ '&#37;'

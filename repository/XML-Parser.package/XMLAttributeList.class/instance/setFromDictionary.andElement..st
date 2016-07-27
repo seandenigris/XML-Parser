@@ -1,6 +1,6 @@
 private
 setFromDictionary: aDictionary andElement: anElement
-	| attributeNode |
+	| attributeAssoc attributeNode |
 
 	"Hack to reuse a dictionary for speed"
 	attributesByName :=
@@ -9,13 +9,16 @@ setFromDictionary: aDictionary andElement: anElement
 			ifFalse: [aDictionary].
 
 	aDictionary keysDo: [:each |
-		attributeNode :=
+		attributeAssoc :=
+			attributesByName
+				associationAt: each
+				ifAbsent: [nil].
+		(attributeNode :=
 			XMLAttribute
 				name: each
-				value: (attributesByName at: each ifAbsent: ['']).
-		attributeNode
+				value: attributeAssoc value)
 			addObserver: self;
 			addObserver: anElement;
 			element: anElement.
-		collection add: attributeNode.
-		attributesByName at: each put: attributeNode].
+		attributeAssoc value: attributeNode.
+		collection add: attributeNode].

@@ -2,8 +2,8 @@ class initialization
 initialize
 	"self initialize"
 
+	super initialize.
 	self
-		initializePredefinedEntities;
 		initializeNameStartChars;
 		initializeAdditionalNameChars;
 		initializePubidChars.

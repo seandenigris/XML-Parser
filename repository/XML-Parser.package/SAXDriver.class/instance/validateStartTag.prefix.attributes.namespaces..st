@@ -4,7 +4,7 @@ validateStartTag: aStartTag prefix: aPrefix attributes: anAttributeDictionary na
 		ifTrue: [
 			self scopeAllocator enterScope.
 			aNamespaceDictionary
-				ifNotEmpty: [self declareNamespaces: aNamespaceDictionary].
+				ifNotNil: [self declareNamespaces: aNamespaceDictionary].
 		aPrefix ifNotEmpty: [
 			self scopeAllocator
 				validatePrefix: aPrefix

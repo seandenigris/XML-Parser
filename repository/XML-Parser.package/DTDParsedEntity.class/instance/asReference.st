@@ -1,3 +1,3 @@
 converting
 asReference
-	^ self referenceSymbol asString, self name, ';'
+	^ self asReferenceStartingWith: self referenceSymbol asString

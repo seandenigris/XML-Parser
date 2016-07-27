@@ -1,0 +1,3 @@
+accessing
+maxEntityReplacementDepth
+	^ 3

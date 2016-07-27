@@ -6,5 +6,5 @@ popRemainingOperators
 				ifTrue: [self errorMismatchedParens].
 			self applyBinaryOperatorOnStack].
 
-	nfaBuilder fragmentStack size = 1
+	nfaBuilder totalFragments = 1
 		ifFalse: [self errorMissingOperand].

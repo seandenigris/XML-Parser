@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"currentScope" : "JAAyer 7/27/2010 14:27",
-		"currentScope:" : "JAAyer 11/28/2010 11:57",
+		"currentScope:" : "monty 12/7/2013 20:09",
 		"declarePrefix:uri:" : "JAAyer 8/8/2010 14:45",
 		"defaultNamespace" : "JAAyer 3/3/2010 22:37",
 		"emptyScope" : "JAAyer 3/13/2010 13:44",
@@ -16,6 +16,6 @@
 		"pushScope:" : "JAAyer 11/24/2010 08:39",
 		"resolvePrefix:" : "JAAyer 3/5/2010 06:00",
 		"resolvePrefix:ifUnmapped:" : "JAAyer 3/5/2010 09:50",
-		"scopes" : "JAAyer 3/2/2010 21:35",
+		"scopes" : "monty 12/6/2013 06:47",
 		"validatePrefix:ofElementName:" : "JAAyer 8/7/2010 13:42",
 		"validatePrefixedAttributeNames:" : "JAAyer 8/6/2010 23:14" } }

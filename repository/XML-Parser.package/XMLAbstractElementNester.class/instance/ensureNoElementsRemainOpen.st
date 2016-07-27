@@ -1,0 +1,3 @@
+checking
+ensureNoElementsRemainOpen
+	self subclassResponsibility

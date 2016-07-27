@@ -1,3 +1,3 @@
 tokenizing dtd
 nextDefaultValue
-	^ $" asString, self nextAttributeValue, $" asString
+	^ (self nextAttributeValue copyWithFirst: $") copyWith: $"

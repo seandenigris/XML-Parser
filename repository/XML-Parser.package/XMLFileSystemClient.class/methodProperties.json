@@ -2,8 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"combineRelative:withBase:" : "monty 11/30/2013 22:35",
-		"currentWorkingDirectory" : "monty 11/22/2013 09:04",
-		"get:onError:" : "monty 11/16/2013 00:03",
-		"pathClass" : "monty 11/15/2013 22:16",
-		"systemPathFrom:" : "monty 11/22/2013 09:04" } }
+		"combineRelative:withBase:" : "monty 12/7/2013 06:43",
+		"currentWorkingDirectory" : "monty 12/7/2013 06:42",
+		"get:onError:" : "monty 12/7/2013 06:39",
+		"isNonRelative:" : "monty 12/7/2013 06:39",
+		"makeNonRelative:" : "monty 12/7/2013 06:43",
+		"pathObjectFrom:" : "monty 12/7/2013 06:38",
+		"pathToString:" : "monty 12/7/2013 21:46",
+		"trimRelativePath:" : "monty 12/7/2013 06:37" } }

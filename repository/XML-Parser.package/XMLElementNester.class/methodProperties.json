@@ -2,20 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentElement" : "JAAyer 11/27/2010 15:29",
-		"enclosedElementsAsString:" : "JAAyer 10/15/2010 15:13",
-		"endedElement:" : "JAAyer 11/27/2010 15:29",
+		"endedElement:" : "monty 12/6/2013 17:51",
 		"ensureNoElementsRemainOpen" : "JAAyer 11/28/2010 07:03",
 		"errorImproperlyNestedElements:" : "JAAyer 11/28/2010 07:03",
 		"errorUnmatchedEndTag:" : "JAAyer 11/28/2010 07:03",
-		"hasExternalRoot" : "monty 11/18/2013 16:25",
-		"hasOpenElement:" : "JAAyer 10/15/2010 15:16",
-		"hasOpenElements" : "JAAyer 10/15/2010 15:15",
-		"openElements" : "JAAyer 10/15/2010 15:06",
-		"printLimit" : "JAAyer 10/16/2010 06:50",
-		"printOn:" : "JAAyer 3/16/2010 16:07",
-		"printOn:startingAt:" : "JAAyer 10/16/2010 06:50",
-		"rootElement" : "monty 11/18/2013 15:59",
-		"rootElement:" : "monty 11/18/2013 16:27",
-		"startedElement:" : "monty 11/18/2013 22:38",
-		"totalOpen" : "JAAyer 10/15/2010 15:06" } }
+		"startedElement:" : "monty 12/6/2013 17:50" } }

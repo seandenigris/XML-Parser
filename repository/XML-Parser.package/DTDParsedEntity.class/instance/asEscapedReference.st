@@ -1,0 +1,3 @@
+converting
+asEscapedReference
+	^ self asReferenceStartingWith: self escapedReferenceSymbol

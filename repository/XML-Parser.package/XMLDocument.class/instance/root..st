@@ -1,5 +1,5 @@
 accessing
 root: anElement
 	self
-		removeNodes;
+		removeNodes: self elements;
 		addNode: anElement

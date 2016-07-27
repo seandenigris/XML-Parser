@@ -1,0 +1,3 @@
+tokenizing dtd
+nextElementDeclaration
+	self subclassResponsibility

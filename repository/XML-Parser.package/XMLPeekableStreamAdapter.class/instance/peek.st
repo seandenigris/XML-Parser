@@ -1,4 +1,4 @@
-reading
+accessing
 peek
 	^ peekChar
 		ifNil: [

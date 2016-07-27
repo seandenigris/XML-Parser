@@ -1,3 +1,3 @@
 accessing
 defaultElementValidatorFor: aName
-	^ XMLAnyElementValidator name: aName
+	^ XMLAnyElementValidator element: aName

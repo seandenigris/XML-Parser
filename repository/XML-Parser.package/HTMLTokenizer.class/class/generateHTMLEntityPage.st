@@ -7,8 +7,8 @@ generateHTMLEntityPage
 	json :=
 		XMLHTTPClient defaultImplementation
 			get: 'http://www.w3.org/TR/html5/entities.json'.
-	[json atEnd not]
-		whileTrue: [
+	[json atEnd]
+		whileFalse: [
 			fields := $: split: (json upToAny: String crlf).
 			fields size > 1
 				ifTrue: [

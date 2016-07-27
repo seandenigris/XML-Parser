@@ -2,9 +2,9 @@ parsing
 parse
 	"the tokenizer removes all spaces from the content model"
 	(contentModel isEmpty or: [contentModel = 'ANY'])
-		ifTrue: [^ XMLAnyElementValidator name: name].
+		ifTrue: [^ XMLAnyElementValidator element: name].
 	(contentModel = 'EMPTY')
-		ifTrue: [^ XMLEmptyElementValidator name: name].
+		ifTrue: [^ XMLEmptyElementValidator element: name].
 
 	(contentModel beginsWith: '(#PCDATA')
 		ifTrue: [^ self parseMixedContentModel]

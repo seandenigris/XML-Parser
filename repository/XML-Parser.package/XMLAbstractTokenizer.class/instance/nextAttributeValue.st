@@ -1,0 +1,3 @@
+tokenizing
+nextAttributeValue
+	self subclassResponsibility

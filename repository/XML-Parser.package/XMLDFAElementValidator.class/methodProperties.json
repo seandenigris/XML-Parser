@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"name:dfa:" : "monty 11/18/2013 23:01" },
+		"element:dfa:" : "monty 12/7/2013 19:47" },
 	"instance" : {
 		"atEnd" : "monty 11/18/2013 05:43",
 		"postCopy" : "monty 11/18/2013 05:41",
-		"setName:dfa:" : "monty 11/18/2013 23:01",
+		"setElement:dfa:" : "monty 12/7/2013 19:47",
 		"validatePCData:" : "monty 11/18/2013 05:53",
 		"validateStartTag:" : "monty 11/18/2013 05:53" } }

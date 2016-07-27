@@ -1,3 +1,3 @@
 replacement
 replacementForDTDContext
-	^ ' ', self replacement, ' '
+	^ (self replacement copyWithFirst: Character space) copyWith: Character space.

@@ -30,5 +30,5 @@ parseDFAContentModel
 
 	nfa := nfaBuilder buildNFAFromFragments.
 	^ XMLDFAElementValidator
-		name: name
+		element: name
 		dfa: (XMLDFABuilder nfa: nfa) buildDFA.

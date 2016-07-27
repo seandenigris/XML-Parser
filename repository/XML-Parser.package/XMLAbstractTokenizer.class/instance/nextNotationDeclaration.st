@@ -1,0 +1,3 @@
+tokenizing dtd
+nextNotationDeclaration
+	self subclassResponsibility

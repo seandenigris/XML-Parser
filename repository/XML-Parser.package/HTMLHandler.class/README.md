@@ -1,0 +1,1 @@
+This is class is a SAXHandler for HTML.

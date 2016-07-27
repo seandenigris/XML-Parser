@@ -1,0 +1,3 @@
+tokenizing dtd
+nextAttlistDeclaration
+	self skipDeclaration

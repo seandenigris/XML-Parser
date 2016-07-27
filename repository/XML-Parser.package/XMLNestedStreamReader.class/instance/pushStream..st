@@ -1,6 +1,6 @@
 streaming
 pushStream: aStream
-	^ self
+	self
 		pushStream: aStream
 		from: nil
 		onClose: nil

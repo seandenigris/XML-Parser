@@ -1,4 +1,4 @@
 testing
 hasOperatorOnStack
 	^ operatorStack notEmpty
-		and: [operatorStack last == $| or: [operatorStack last == $,]]
+		and: [self isBinaryOperator: operatorStack last]

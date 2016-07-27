@@ -1,6 +1,6 @@
 parsing
 applyBinaryOperatorOnStack
-	nfaBuilder fragmentStack size >= 2
+	nfaBuilder totalFragments > 1
 		ifFalse: [self errorMissingOperand].
 
 	operatorStack last == $|

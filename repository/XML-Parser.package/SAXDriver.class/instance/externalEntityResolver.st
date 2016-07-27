@@ -1,3 +1,3 @@
 accessing
 externalEntityResolver
-	^ self configuration externalEntityResolver
+	^ saxHandler externalEntityResolver
