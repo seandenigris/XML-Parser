@@ -1,3 +1,3 @@
 testing
 hasPrefix
-	^ self nodeName hasPrefix
+	^ self nodeName isPrefixed

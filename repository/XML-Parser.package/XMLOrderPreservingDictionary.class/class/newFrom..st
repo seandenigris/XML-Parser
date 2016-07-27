@@ -1,3 +1,7 @@
 instance creation
-newFrom: aDictionary
-	^ self new setAssociationsFrom: aDictionary
+newFrom: aDictionaryOrArray
+	| newDictionary |
+
+	newDictionary := self new: aDictionaryOrArray size.
+	aDictionaryOrArray associationsDo: [:each | newDictionary add: each].
+	^ newDictionary.

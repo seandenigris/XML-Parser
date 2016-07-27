@@ -1,4 +1,3 @@
 accessing
-@ aString
-	"shorthand form"
-	^ self at: aString
+@ aName
+	^ self attributeAt: aName

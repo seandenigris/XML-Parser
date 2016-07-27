@@ -1,8 +1,8 @@
 accessing
-addContent: aString
+addContent: aStringOrStringNode
 	"Adds a string or string node. If the last child node is already a string node,
 	the characters being added are concatenated to it."
 
-	(self hasContents and: [self lastNode isText])
-		ifTrue: [self lastNode addContent: aString]
-		ifFalse: [self addNode: (XMLString string: aString)]
+	(self notEmpty and: [self lastNode isStringNode])
+		ifTrue: [self lastNode addContent: aStringOrStringNode]
+		ifFalse: [self addNode: aStringOrStringNode asXMLString]

@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/10/2010 23:59",
+	"commentStamp" : "<historical>",
 	"instvars" : [
+		"dictionary",
 		"orderedKeys" ],
 	"name" : "XMLOrderPreservingDictionary",
 	"pools" : [
 		 ],
-	"super" : "Dictionary",
+	"super" : "Collection",
 	"type" : "normal" }

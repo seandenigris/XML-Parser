@@ -4,8 +4,8 @@ test050emptyElement
 
 	element := XMLElement new.
 	self
-		assert: element isTag & element isTagOrText & element isElement;
+		assert: element isElement & element isContentNode;
 		deny: element hasAttributes;
-		deny: element hasContents;
-		assert: element elementsAndContents isEmpty;
-		assert: element contents isEmpty.
+		deny: element hasContent;
+		assert: element contentNodes isEmpty;
+		assert: element stringNodes isEmpty.

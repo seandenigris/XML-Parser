@@ -1,6 +1,6 @@
+initialization
 initialize
-initialize
-	streamReader := XMLStreamReader new.
-	streamWriter := XMLStreamWriter new.
+	streamReader := XMLNestedStreamReader new.
+	streamWriter := XMLNestedStreamWriter new.
 	parsingMarkup := false.
 	isValidating := false.

@@ -1,2 +1,2 @@
 *xml-parser
-applyLanguageInfomation: languageEnvironment
+applyLanguageInfomation: aLanguageEnvironment

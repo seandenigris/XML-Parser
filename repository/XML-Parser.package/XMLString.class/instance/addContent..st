@@ -1,3 +1,3 @@
 accessing
-addContent: aString
-	self string: self string, (self toString: aString)
+addContent: aStringOrStringNode
+	self string: self string, (self toString: aStringOrStringNode)

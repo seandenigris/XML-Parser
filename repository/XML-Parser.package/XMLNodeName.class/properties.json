@@ -2,15 +2,18 @@
 	"category" : "XML-Parser-Nodes",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TXMLObservable classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/23/2010 14:10",
+	"commentStamp" : "JAAyer 8/14/2010 20:50",
 	"instvars" : [
-		"qualifiedName",
 		"prefix",
-		"localName" ],
+		"notifier",
+		"localPart",
+		"qualified" ],
 	"name" : "XMLNodeName",
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TXMLObservable",
 	"type" : "normal" }

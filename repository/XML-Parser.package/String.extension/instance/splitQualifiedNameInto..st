@@ -1,8 +1,8 @@
 *xml-parser
 splitQualifiedNameInto: aTwoArgumentBlock
 	"Split the name into namespace prefix and local name (the block arguments)."
-
 	| i |
+
 	i := self size.
 	[i > 1]
 		whileTrue: [
@@ -13,5 +13,5 @@ splitQualifiedNameInto: aTwoArgumentBlock
 						value: (self copyFrom: i + 1 to: self size)].
 			i := i - 1].
 	^ aTwoArgumentBlock
-		value: nil
+		value: ''
 		value: self

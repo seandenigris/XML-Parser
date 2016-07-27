@@ -1,3 +1,3 @@
 accessing
 name
-	^ self nodeName asString
+	^ self nodeName qualified

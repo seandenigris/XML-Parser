@@ -1,0 +1,3 @@
+private
+quote
+	self nextPut: $"

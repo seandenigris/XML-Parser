@@ -1,0 +1,1 @@
+Generates a comment; XMLWriter>>comment: should normally suffice.

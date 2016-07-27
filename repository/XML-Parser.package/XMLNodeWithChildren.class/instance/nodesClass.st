@@ -1,0 +1,3 @@
+private
+nodesClass
+	self subclassResponsibility

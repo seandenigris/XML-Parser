@@ -1,3 +1,3 @@
 accessing
 elements
-	^ self elementCache elements
+	^ self nodes elements

@@ -3,7 +3,7 @@ testParsing
 	| xmlDocument root firstPerson numberOfPersons |
 	"self debug: #testParsing"
 
-	xmlDocument := XMLDOMParser parseDocumentFrom: self addressBookXML readStream.
+	xmlDocument := XMLDOMParser parse: self addressBookXML.
 	self assert: (xmlDocument isKindOf: XMLDocument).
 	root := xmlDocument root.
 	self assert: (root class == XMLElement).

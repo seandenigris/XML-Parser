@@ -1,3 +1,3 @@
 accessing
 elementAt: aString
-	^ self elementCache firstElementNamed: aString
+	^ self nodes elementNamed: aString

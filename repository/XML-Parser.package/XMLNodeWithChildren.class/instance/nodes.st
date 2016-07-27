@@ -1,3 +1,6 @@
 accessing
 nodes
-	^ nodes ifNil: [nodes := XMLNodeList parent: self]
+	^ nodes ifNil: [
+		(nodes := self nodesClass new)
+			addObserver: self;
+			yourself]

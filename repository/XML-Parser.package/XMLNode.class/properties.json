@@ -2,13 +2,16 @@
 	"category" : "XML-Parser-Nodes",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TXMLObservable classTrait + TXMLObserver classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/5/2010 03:47",
+	"commentStamp" : "JAAyer 7/10/2010 05:48",
 	"instvars" : [
-		"parent" ],
+		"parent",
+		"notifier" ],
 	"name" : "XMLNode",
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TXMLObservable + TXMLObserver",
 	"type" : "normal" }

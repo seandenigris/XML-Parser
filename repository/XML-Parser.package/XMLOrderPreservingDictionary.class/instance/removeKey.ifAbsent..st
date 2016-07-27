@@ -1,4 +1,4 @@
-accessing
+removing
 removeKey: aKey ifAbsent: aBlock
-	self removeKeyFromSequence: aKey.
-	^ super removeKey: aKey ifAbsent: aBlock.
+	self removeOrderedKeyIfPresent: aKey.
+	^ dictionary removeKey: aKey ifAbsent: aBlock.

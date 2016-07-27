@@ -2,9 +2,9 @@ tests
 test084elementRenaming
 	| node nodes elements |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	elements := self newElementsNamed: #('foo' 'prefix:bar' 'bar' 'baz').
-	node addNodes: (self interspersedWithNodes: elements).
+	node addNodes: (self intersperseWithNodes: elements).
 
 	elements first name: 'notfoo'.
 	self
@@ -13,7 +13,7 @@ test084elementRenaming
 		assert: (node elementsAt: 'foo') isEmpty;
 		assert: (node elementAt: 'notfoo') = elements first.
 
-	elements third prefix: 'prefix' uri: ''.
+	elements third name: 'prefix:bar' namespaceURI: 'http://bar'.
 	self assert: (node elementsAt: 'prefix:bar') = (elements copyFrom: 2 to: 3).
 
 	elements fourth name: 'bar'.

@@ -1,1 +1,1 @@
-The class represents a name for an element or attribute.
+The class represents a name for an element or attribute. It stores the prefix, local part and qualified name.

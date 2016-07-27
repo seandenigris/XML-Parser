@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addObserver:" : "JAAyer 7/20/2010 10:05",
+		"notifyOf:with:" : "JAAyer 7/20/2010 10:04",
+		"notifyOf:with:with:" : "JAAyer 7/20/2010 10:04",
+		"notifyOf:with:with:with:" : "JAAyer 7/20/2010 10:04",
+		"notifyOf:withArguments:" : "JAAyer 7/20/2010 10:05",
+		"observers" : "JAAyer 7/20/2010 10:02",
+		"removeObserver:" : "JAAyer 7/20/2010 10:03" } }

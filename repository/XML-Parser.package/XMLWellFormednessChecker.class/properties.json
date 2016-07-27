@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 8/6/2010 17:29",
+	"instvars" : [
+		"openElements" ],
+	"name" : "XMLWellFormednessChecker",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+This class represents a document node, which is often the root of an XMLNode tree.

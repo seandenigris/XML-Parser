@@ -1,4 +1,3 @@
 namespaces
 prefix: aPrefix
-	self notifyParentAfterRenamingWith: [self nodeName prefix: aPrefix].
-	self validateName.
+	self nodeName prefix: aPrefix

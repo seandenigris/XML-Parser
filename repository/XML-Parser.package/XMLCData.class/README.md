@@ -1,0 +1,1 @@
+This class represents a preserved CDATA section in the document. It behaves like a string, but its printed form differs.

@@ -1,0 +1,3 @@
+converting
+asXMLString
+	^ self

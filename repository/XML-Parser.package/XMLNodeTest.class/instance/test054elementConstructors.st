@@ -11,7 +11,7 @@ test054elementConstructors
 
 	attributes := XMLOrderPreservingDictionary with: 'foo'->'test1' with: 'bar'->'test2'.
 	self
-		assertElement: (XMLElement named: 'foo' attributes: attributes)
+		assertElement: (XMLElement name: 'foo' attributes: attributes)
 		name: 'foo'
 		attributes: attributes
 		contentString: ''.
@@ -23,13 +23,13 @@ test054elementConstructors
 		attributes: noAttributes
 		contentString: ''.
 	self
-		assertElement: (XMLElement named: 'foo' attributes: attributes)
+		assertElement: (XMLElement name: 'foo' attributes: attributes)
 		name: 'foo'
 		attributes: attributes
 		contentString: ''.
 
 	element := XMLElement
-		named: 'prefix:foo'
+		name: 'prefix:foo'
 		namespaceURI: 'http://foo'
 		attributes: attributes.
 	self

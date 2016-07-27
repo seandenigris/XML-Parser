@@ -1,9 +1,6 @@
 namespaces
 declareNamespaces: aDictionaryOrArray
-	self
-		from: aDictionaryOrArray 
-		keysAndValuesDo: [:namespaceName :uri |
-			namespaceName splitQualifiedNameInto: [:xmlns :prefix |
-				(prefix = 'xmlns')
-					ifTrue: [self defaultNamespace: uri]
-					ifFalse: [self declareNamespace: prefix uri: uri]]]
+	aDictionaryOrArray associationsDo: [:each |
+		(each key isEmptyOrNil or: [each key = 'xmlns'])
+			ifTrue: [self defaultNamespace: each value]
+			ifFalse: [self declarePrefix: each key uri: each value]]

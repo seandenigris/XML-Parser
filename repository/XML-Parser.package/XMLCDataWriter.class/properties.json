@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 7/11/2010 05:02",
+	"instvars" : [
+		 ],
+	"name" : "XMLCDataWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLEmbeddedMarkupWriter",
+	"type" : "normal" }

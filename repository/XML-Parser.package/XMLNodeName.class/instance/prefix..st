@@ -1,3 +1,3 @@
 accessing
 prefix: aPrefix
-	self setPrefix: aPrefix localName: self localName
+	self changeWith: [self setPrefix: aPrefix localPart: self localPart]

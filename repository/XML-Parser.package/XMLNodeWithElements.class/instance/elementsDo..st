@@ -1,3 +1,3 @@
 enumerating
 elementsDo: aBlock
-	self elements do: aBlock
+	self nodes elementsDo: aBlock

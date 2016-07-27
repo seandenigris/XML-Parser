@@ -1,0 +1,3 @@
+accessing
+defaultDeclaration: aDefaultDeclaration
+	defaultDeclaration := aDefaultDeclaration

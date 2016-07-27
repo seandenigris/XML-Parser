@@ -1,0 +1,3 @@
+testing
+hasContentsInExplorer
+	^ collection hasContentsInExplorer

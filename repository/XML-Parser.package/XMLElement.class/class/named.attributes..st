@@ -1,4 +1,5 @@
 instance creation
-named: aLocalName attributes: aDictionaryOrArray
-	^ (self named: aLocalName)
-		setAttributes: aDictionaryOrArray
+named: aString attributes: aDictionary
+	self deprecated: 'use #name:attributes: instead'.
+
+	^ self name: aString attributes: aDictionary.

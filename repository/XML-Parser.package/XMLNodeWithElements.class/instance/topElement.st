@@ -1,3 +1,5 @@
 accessing
 topElement
-	^ self firstElement
+	self deprecated: 'use #firstElement instead'.
+
+	^ self firstElement.

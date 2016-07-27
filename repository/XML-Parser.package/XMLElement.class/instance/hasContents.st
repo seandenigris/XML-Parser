@@ -1,3 +1,5 @@
 testing
 hasContents
-	^ self contents notEmpty
+	self deprecated: 'use #hasStringNodes instead'.
+
+	^ self hasStringNodes.

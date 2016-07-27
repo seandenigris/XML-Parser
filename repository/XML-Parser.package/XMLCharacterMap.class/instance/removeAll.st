@@ -1,0 +1,3 @@
+removing
+removeAll
+	characterCodeTable removeAll

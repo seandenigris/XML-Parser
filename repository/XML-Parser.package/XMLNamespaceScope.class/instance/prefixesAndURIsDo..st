@@ -1,0 +1,3 @@
+enumerating
+prefixesAndURIsDo: aTwoArgumentBlock
+	self prefixMappings keysAndValuesDo: aTwoArgumentBlock

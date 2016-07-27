@@ -9,7 +9,7 @@ nextCharReference
 			base := 16]
 		ifFalse: [base := 10].
 
-	(charValue := streamReader readNumberBase: base)
+	(charValue := streamReader nextIntegerWithBase: base)
 		ifNil: [self errorExpected: 'number'].
 	self expectNext: $;.
 	^ Unicode value: charValue.

@@ -1,0 +1,1 @@
+This class represents an ordered list of child nodes for some kind of XMLNodeWithElements, either an XMLDocument or XMLElement object. It treats element nodes specially, keeping both an ordered list of child elements and a dictionary that allows for faster retrieval of element(s) by qualified name or local name only.

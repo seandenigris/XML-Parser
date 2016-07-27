@@ -1,8 +1,11 @@
 *xml-parser
-applyLanguageInfomation: languageEnvironment
-	
+applyLanguageInfomation: aLanguageEnvironment
 	| leadingChar |
-	leadingChar := languageEnvironment leadingChar.
-	self withIndexDo: [:each :idx |
+
+	leadingChar := aLanguageEnvironment leadingChar.
+	self withIndexDo: [:each :i |
 		each asciiValue > 255
-			ifTrue: [self at: idx put: (Character leadingChar: leadingChar code: each asUnicode)]]
+			ifTrue: [
+				self
+					at: i
+					put: (Character leadingChar: leadingChar code: each asUnicode)]]

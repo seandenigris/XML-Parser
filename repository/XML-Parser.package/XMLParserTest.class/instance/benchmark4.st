@@ -8,7 +8,7 @@ benchmark4
 		parseDocumentFrom: self addressBookXML readStream
 		useNamespaces: false.
 	^ [100000 timesRepeat: [
-		doc root topElement
+		doc root firstElement
 			elementAt: 'contact-info';
 			elementAt: 'address';
 			elementAt: 'job-info';

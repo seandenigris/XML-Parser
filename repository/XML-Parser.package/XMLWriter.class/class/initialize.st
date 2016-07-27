@@ -1,16 +1,17 @@
 class initialization
 initialize
-	"XMLWriter initialize"
+	"self initialize"
 
-	XMLTranslation := Dictionary new.
-	XMLTranslation
-		at: Character cr put: '&#13;';
-		at: Character lf put: '&#10;';
-		at: Character tab put: '&#9;';
+	(CharacterEscapes := XMLCharacterMap new)
 		at: $& put: '&amp;';
+		at: $" put: '&quot;';
 		at: $< put: '&lt;';
-		at: $> put: '&gt;';
-"		at: $' put: '&apos;'; "
-		at: $" put: '&quot;'.
-	XMLTranslationMap := ByteArray new: 256.
-	XMLTranslation keysDo:[:ch| XMLTranslationMap at: ch asciiValue+1 put: 1].
+		at: $> put: '&gt;'.
+
+	CarriageReturn := Character cr.
+	LineFeed := Character lf.
+
+	(SpecialCharacters := CharacterSet new)
+		addAll: CharacterEscapes keys;
+		add: CarriageReturn;
+		add: LineFeed.

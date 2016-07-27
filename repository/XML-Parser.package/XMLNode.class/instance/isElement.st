@@ -1,3 +1,3 @@
 testing
 isElement
-	^ self isTag
+	^ false

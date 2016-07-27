@@ -2,14 +2,13 @@ tests
 test080elementAccessing
 	| node nodes elements |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	elements := self newElementsNamed: #('foo' 'bar' 'prefix:foo' 'baz').
-	node addNodes: (self interspersedWithNodes: elements).
+	node addNodes: (self intersperseWithNodes: elements).
 	self
 		assert: (node elementAt: 'absent') isNil;
 		assert: (node elementAt: 'absent' ifAbsent: ['absent']) = 'absent';
 		assert: (node elementsAt: 'absent') isEmpty;
-		assert: (node elementsAt: 'absent' ifAbsent: ['absent']) = 'absent';
 		assert: (node elementAtAny: #('absent')) isNil;
 		assert: (node elementAtAny: #('absent') ifAbsent: ['absent']) = 'absent';
 		assert: (node elementAt: 'foo') = elements first;

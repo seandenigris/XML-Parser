@@ -1,3 +1,3 @@
 private
 eq
-	self stream nextPut: $=
+	self nextPut: $=

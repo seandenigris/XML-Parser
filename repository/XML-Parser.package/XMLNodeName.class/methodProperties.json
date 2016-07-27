@@ -2,14 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asString" : "JAAyer 3/17/2010 03:46",
-		"expandedWith:" : "JAAyer 3/22/2010 00:32",
-		"hasPrefix" : "JAAyer 3/5/2010 07:31",
-		"localName" : "JAAyer 3/8/2010 05:10",
-		"name:" : "JAAyer 3/22/2010 20:09",
-		"prefix" : "JAAyer 3/5/2010 07:49",
-		"prefix:" : "JAAyer 3/22/2010 20:09",
-		"printOn:" : "JAAyer 3/13/2010 12:01",
-		"qualifiedName" : "JAAyer 3/17/2010 03:46",
-		"setPrefix:localName:" : "JAAyer 3/24/2010 17:02",
-		"setQualifiedName:prefix:localName:" : "JAAyer 3/24/2010 17:02" } }
+		"changeWith:" : "JAAyer 7/12/2010 00:13",
+		"expandWith:" : "JAAyer 8/9/2010 15:01",
+		"isPrefixed" : "JAAyer 8/9/2010 14:46",
+		"isSameAs:" : "JAAyer 7/26/2010 14:23",
+		"localPart" : "JAAyer 7/26/2010 14:23",
+		"localPart:" : "JAAyer 7/26/2010 14:23",
+		"notifier" : "JAAyer 6/15/2010 15:18",
+		"prefix" : "JAAyer 8/9/2010 14:43",
+		"prefix:" : "JAAyer 6/27/2010 15:17",
+		"printOn:" : "JAAyer 6/27/2010 15:15",
+		"qualified" : "JAAyer 7/26/2010 14:23",
+		"qualified:" : "JAAyer 6/27/2010 15:19",
+		"setPrefix:localPart:" : "JAAyer 8/14/2010 20:50",
+		"setQualified:prefix:localPart:" : "JAAyer 6/27/2010 15:20" } }

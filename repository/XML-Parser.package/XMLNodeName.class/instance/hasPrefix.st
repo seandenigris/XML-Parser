@@ -1,3 +1,0 @@
-testing
-hasPrefix
-	^ prefix notNil

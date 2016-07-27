@@ -2,15 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"dtd" : "JAAyer 2/25/2010 01:48",
-		"dtd:" : "mir 11/30/2000 17:48",
-		"encoding" : "JAAyer 2/25/2010 01:48",
+		"doctypeDeclaration" : "JAAyer 7/10/2010 05:16",
+		"doctypeDeclaration:" : "JAAyer 7/10/2010 05:16",
+		"document" : "JAAyer 7/12/2010 03:19",
+		"encoding" : "JAAyer 7/22/2010 03:03",
 		"encoding:" : "mir 1/17/2002 12:57",
 		"isDocument" : "JAAyer 2/19/2010 23:51",
-		"printCanonicalOn:" : "JAAyer 2/25/2010 14:37",
-		"printXMLOn:" : "mir 5/16/2003 14:08",
-		"requiredMarkup" : "JAAyer 2/25/2010 01:48",
-		"requiredMarkup:" : "mir 1/17/2002 12:57",
-		"root" : "mir 11/29/2007 14:42",
+		"printCanonicalOn:" : "JAAyer 6/20/2010 20:42",
+		"printXMLOn:" : "JAAyer 8/7/2010 20:12",
+		"root" : "JAAyer 7/12/2010 01:36",
 		"version" : "JAAyer 2/25/2010 01:48",
-		"version:" : "mir 1/17/2002 12:57" } }
+		"version:" : "JAAyer 8/9/2010 19:39" } }

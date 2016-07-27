@@ -1,3 +1,0 @@
-scope
-leaveScope
-	self popScope

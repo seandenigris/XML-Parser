@@ -1,3 +1,6 @@
 accessing
 attributeNodes
-	^ attributes ifNil: [self setAttributeNodes: XMLAttributeList new. attributes]
+	^ attributes ifNil: [
+		(attributes := XMLAttributeList new)
+			addObserver: self;
+			yourself]

@@ -1,8 +1,10 @@
 SystemOrganization addCategory: #'XML-Parser'!
-SystemOrganization addCategory: #'XML-Parser-Exception'!
-SystemOrganization addCategory: #'XML-Parser-Test'!
-SystemOrganization addCategory: #'XML-Parser-DTD'!
 SystemOrganization addCategory: #'XML-Parser-Nodes'!
-SystemOrganization addCategory: #'XML-Parser-Parser'!
+SystemOrganization addCategory: #'XML-Parser-Writers'!
+SystemOrganization addCategory: #'XML-Parser-Namespaces'!
+SystemOrganization addCategory: #'XML-Parser-DTD'!
+SystemOrganization addCategory: #'XML-Parser-Exceptions'!
+SystemOrganization addCategory: #'XML-Parser-Tests'!
+SystemOrganization addCategory: #'XML-Parser-Utilities'!
 SystemOrganization addCategory: #'XML-Parser-Opax'!
 SystemOrganization addCategory: #'XML-Parser-Opax-Test'!

@@ -1,3 +1,3 @@
 testing
 isPI
-	^ self isProcessingInstruction
+	^ false

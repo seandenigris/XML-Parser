@@ -1,3 +1,3 @@
 enumerating
 associationsDo: aBlock
-	^ self associations do: [:each | aBlock value: each]
+	self keysDo: [:each | aBlock value: (self associationAt: each)]

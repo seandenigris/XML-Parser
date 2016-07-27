@@ -1,3 +1,5 @@
 testing
 isText
-	^ false
+	self deprecated: 'use #isStringNode instead'.
+
+	^ self isStringNode.

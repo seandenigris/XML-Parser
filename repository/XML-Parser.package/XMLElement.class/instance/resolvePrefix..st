@@ -1,3 +1,3 @@
 namespaces
 resolvePrefix: aPrefix
-	^ self scope resolvePrefix: aPrefix
+	^ self namespaceScope resolvePrefix: aPrefix

@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 7/12/2010 01:22",
+	"instvars" : [
+		"streams",
+		"nextStreamIndex" ],
+	"name" : "XMLNestedStreamWriter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

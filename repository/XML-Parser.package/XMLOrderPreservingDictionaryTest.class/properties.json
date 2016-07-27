@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "XMLOrderPreservingDictionaryTest",
+	"pools" : [
+		 ],
+	"super" : "DictionaryTest",
+	"type" : "normal" }

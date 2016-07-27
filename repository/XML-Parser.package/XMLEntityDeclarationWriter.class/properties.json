@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"replacement",
+		"ndata",
+		"externalIdWriter" ],
+	"name" : "XMLEntityDeclarationWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLMarkupDeclarationWriter",
+	"type" : "normal" }

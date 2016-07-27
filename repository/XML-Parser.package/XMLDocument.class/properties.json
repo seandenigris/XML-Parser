@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"dtd",
 		"version",
 		"encoding",
-		"requiredMarkup" ],
+		"doctypeDeclaration" ],
 	"name" : "XMLDocument",
 	"pools" : [
 		 ],

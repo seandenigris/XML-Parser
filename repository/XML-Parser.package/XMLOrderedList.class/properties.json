@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"collection" ],
 	"name" : "XMLOrderedList",
 	"pools" : [
 		 ],
-	"super" : "OrderedCollection",
+	"super" : "SequenceableCollection",
 	"type" : "normal" }

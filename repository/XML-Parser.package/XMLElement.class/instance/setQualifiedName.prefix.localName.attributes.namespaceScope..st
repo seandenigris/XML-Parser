@@ -1,0 +1,17 @@
+initialization
+setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attributes: anAttributeDictionary namespaceScope: aNamespaceScope
+	self nodeName
+		setQualified: aQualifiedName
+		prefix: aPrefix
+		localPart: aLocalName.
+
+	"By not observing 'attributes' until after it is filled, we avoid
+	re-validating the attributes, which the parser should have already done"
+	anAttributeDictionary
+		ifNotEmpty: [
+			attributes := XMLAttributeList new: anAttributeDictionary size.
+			anAttributeDictionary keysAndValuesDo: [:key :value |
+				self beParentOf: (attributes addName: key value: value)].
+			self startObserving: attributes].
+
+	namespaceScope := aNamespaceScope.

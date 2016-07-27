@@ -1,3 +1,3 @@
 accessing
-version: aString	
-	version := aString
+version: aVersionNumber
+	version := aVersionNumber

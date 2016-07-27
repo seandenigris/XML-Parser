@@ -1,3 +1,3 @@
 accessing
 qualifiedName
-	^ self nodeName qualifiedName
+	^ self nodeName qualified

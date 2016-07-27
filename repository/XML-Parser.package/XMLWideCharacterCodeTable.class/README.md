@@ -1,0 +1,1 @@
+This is a wide (multibyte) character code table. It is effectively a tree of byte tables with the leafs at level 4.

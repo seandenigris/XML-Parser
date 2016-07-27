@@ -1,5 +1,3 @@
-writing xml
+writing markup
 cdata: aString
-	self startCData.
-	self stream nextPutAll: aString.
-	self endCData
+	self cdata with: aString

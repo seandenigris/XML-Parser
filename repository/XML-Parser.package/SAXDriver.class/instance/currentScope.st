@@ -1,5 +1,5 @@
 accessing
 currentScope
 	^ self usesNamespaces
-		ifTrue: [self nestedScopes currentScope]
+		ifTrue: [self scopeManager currentScope]
 		ifFalse: [nil]

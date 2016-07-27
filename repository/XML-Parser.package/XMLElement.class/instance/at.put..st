@@ -1,3 +1,5 @@
 accessing
-at: aString put: aValue
-	^ self attributeAt: aString put: aValue
+at: aName put: aValue
+	self deprecated: 'use #attributeAt:put: instead'.
+
+	^ self attributeAt: aName put: aValue

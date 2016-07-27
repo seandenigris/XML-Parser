@@ -1,0 +1,22 @@
+{
+	"category" : "XML-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CarriageReturn",
+		"HexDigitCharacterMap",
+		"LineFeed",
+		"SeparatorCharacters" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream",
+		"nestedStreams",
+		"buffer",
+		"peekChar",
+		"normalizedLineEndingChar",
+		"currentLineNumber" ],
+	"name" : "XMLNestedStreamReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

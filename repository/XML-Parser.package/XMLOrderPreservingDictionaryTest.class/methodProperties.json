@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "JAAyer 8/4/2010 20:24" },
+	"instance" : {
+		"classToBeTested" : "JAAyer 8/4/2010 18:51",
+		"collectionClass" : "JAAyer 8/4/2010 18:28",
+		"testAssociationAtError" : "JAAyer 8/4/2010 20:40",
+		"testAtError" : "JAAyer 8/4/2010 20:29",
+		"testKeyAtIdentityValue" : "JAAyer 8/4/2010 20:36",
+		"testKeyAtValue" : "JAAyer 8/4/2010 20:33",
+		"testKeysAndValuesRemove" : "JAAyer 8/4/2010 20:40",
+		"testPrintNameOn" : "JAAyer 8/4/2010 20:36",
+		"testRemoveKey" : "JAAyer 8/4/2010 20:29",
+		"testRemoveKeyIfAbsent" : "JAAyer 8/5/2010 00:53" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 7/21/2010 12:40",
+	"instvars" : [
+		"observers" ],
+	"name" : "XMLNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,3 +1,5 @@
 testing
 isTag
-	^ false
+	self deprecated: 'use #isElement instead'.
+
+	^ self isElement.

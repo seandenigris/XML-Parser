@@ -1,5 +1,5 @@
 {
-	"category" : "XML-Parser-Parser",
+	"category" : "XML-Parser",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,11 +7,11 @@
 	"commentStamp" : "JAAyer 3/23/2010 16:10",
 	"instvars" : [
 		"saxHandler",
-		"openTags",
-		"nestedScopes",
 		"useNamespaces",
 		"validateAttributes",
-		"languageEnvironment" ],
+		"languageEnvironment",
+		"scopeManager",
+		"wellFormednessChecker" ],
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],

@@ -1,3 +1,0 @@
-accessing
-maxTagsToPrint
-	^ 5

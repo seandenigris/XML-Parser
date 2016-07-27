@@ -1,3 +1,5 @@
 accessing
-at: aString
-	^ self at: aString ifAbsent: ['']
+at: aName
+	self deprecated: 'use #attributeAt: or @ instead'.
+
+	^ self attributeAt: aName

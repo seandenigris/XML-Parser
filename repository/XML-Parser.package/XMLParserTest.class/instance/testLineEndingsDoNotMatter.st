@@ -1,12 +1,20 @@
 tests
 testLineEndingsDoNotMatter
-   |text cr crlf|
-   text :=
- '<foo>
- bar
- baz
- </foo>'.
-	cr := XMLDOMParser parseDocumentFrom: text readStream.
-	crlf := XMLDOMParser parseDocumentFrom:
-		(text copyReplaceAll: String cr with: String crlf) readStream.
-	self assert: (cr root contentString) = (crlf root contentString).
+   | source docWithCrs docWithCrlfs |
+
+   (source := String new writeStream)
+		nextPutAll: '<foo>';
+		cr;
+		nextPutAll: 'bar';
+		cr;
+		nextPutAll: 'baz';
+		cr;
+		nextPutAll: '</foo>'.
+
+	docWithCrs := XMLDOMParser parse: source contents.
+	docWithCrlfs :=
+		XMLDOMParser parse:
+			(source contents
+				copyReplaceAll: String cr
+				with: String crlf).
+	self assert: (docWithCrs root contentString) = (docWithCrlfs root contentString).

@@ -1,3 +1,5 @@
 accessing
 namespaceURI
-	^ self hasParent ifTrue: [self parent resolvePrefix: self prefix]
+	self hasParent ifFalse: [^ ''].
+
+	^ self parent resolvePrefix: self prefix.

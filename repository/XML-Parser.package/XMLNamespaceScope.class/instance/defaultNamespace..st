@@ -1,3 +1,3 @@
 accessing
-defaultNamespace: aNamespaceUri
-	defaultNamespace := aNamespaceUri
+defaultNamespace: aUri
+	defaultNamespace := aUri

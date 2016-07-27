@@ -1,0 +1,1 @@
+This class maps characters to other kinds of objects.

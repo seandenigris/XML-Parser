@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"initialize" : "JAAyer 8/18/2010 23:57",
+		"on:" : "JAAyer 3/11/2010 09:34" },
+	"instance" : {
+		"atEnd" : "JAAyer 10/16/2010 05:09",
+		"basicNext" : "JAAyer 10/16/2010 05:27",
+		"currentLineNumber" : "JAAyer 7/14/2010 00:39",
+		"initialize" : "JAAyer 8/8/2010 16:01",
+		"next" : "JAAyer 10/16/2010 05:21",
+		"nextDecimalInteger" : "JAAyer 10/15/2010 14:53",
+		"nextHexInteger" : "JAAyer 9/7/2010 10:09",
+		"nextIntegerWithBase:" : "JAAyer 8/31/2010 14:26",
+		"nextMatchAll:" : "JAAyer 10/15/2010 14:46",
+		"nextWhitespace" : "JAAyer 7/21/2010 11:39",
+		"peek" : "JAAyer 10/16/2010 05:22",
+		"popCurrentStream" : "JAAyer 10/16/2010 05:23",
+		"pushBack:" : "JAAyer 10/16/2010 04:45",
+		"pushStream:" : "JAAyer 8/11/2010 17:50",
+		"skipSeparators" : "JAAyer 7/21/2010 11:39",
+		"skipUpTo:" : "JAAyer 7/12/2010 01:12",
+		"stream" : "JAAyer 3/11/2010 08:01",
+		"stream:" : "JAAyer 10/15/2010 14:44",
+		"streamEncoding:" : "JAAyer 10/15/2010 14:51",
+		"unpeek" : "JAAyer 3/11/2010 07:46",
+		"upTo:" : "JAAyer 8/11/2010 14:03",
+		"upToAll:" : "JAAyer 3/19/2010 14:27" } }

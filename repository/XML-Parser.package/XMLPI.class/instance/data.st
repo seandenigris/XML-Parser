@@ -1,3 +1,3 @@
 accessing
 data
-	^ data ifNil: ['']
+	^ data ifNil: [data := '']

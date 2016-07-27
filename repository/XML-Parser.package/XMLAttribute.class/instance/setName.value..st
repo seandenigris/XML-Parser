@@ -1,4 +1,4 @@
 initialization
 setName: aName value: aValue
-	self nodeName name: aName.
+	self nodeName qualified: aName.
 	value := aValue.

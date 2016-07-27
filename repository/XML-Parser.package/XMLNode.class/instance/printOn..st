@@ -1,3 +1,7 @@
 printing
-printOn: stream
-	self printXMLOn: (XMLWriter on: stream)
+printOn: aStream
+	| writer |
+
+	writer := XMLWriter on: aStream.
+	self printXMLOn: writer.
+	writer flushMarkup.

@@ -1,3 +1,5 @@
 accessing
 topNode
-	^ self firstNode
+	self deprecated: 'use #firstNode instead'.
+
+	^ self firstNode.

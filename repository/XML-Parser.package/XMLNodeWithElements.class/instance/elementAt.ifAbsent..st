@@ -1,3 +1,3 @@
 accessing
 elementAt: aString ifAbsent: aBlock
-	^ (self elementCache firstElementNamed:  aString) ifNil: aBlock
+	^ self nodes elementNamed: aString ifAbsent: aBlock

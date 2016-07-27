@@ -1,0 +1,15 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"publicId",
+		"systemId" ],
+	"name" : "XMLExternalIDWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLMarkupWriter",
+	"type" : "normal" }

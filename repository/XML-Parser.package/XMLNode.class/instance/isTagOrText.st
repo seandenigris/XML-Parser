@@ -1,3 +1,5 @@
 testing
 isTagOrText
-	^ self isTag or: [self isText]
+	self deprecated: 'use #isContentNode instead'.
+
+	^ self isContentNode.

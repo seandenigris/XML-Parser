@@ -1,3 +1,5 @@
 printing
-printXMLOn: writer
-	writer pi: self target data: self data
+printXMLOn: aWriter
+	aWriter pi
+		target: self target;
+		data: self data

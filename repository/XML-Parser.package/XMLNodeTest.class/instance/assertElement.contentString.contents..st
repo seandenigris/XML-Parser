@@ -1,10 +1,8 @@
 assertions
 assertElement: anElement contentString: aContentString contents: aContentArray
-	| contentStrings |
+	| strings |
 
-	self
-		assert: anElement contentString = aContentString;
-		assert: anElement characterData = aContentString.
+	self assert: anElement contentString = aContentString.
 	
-	contentStrings := (anElement contents collect: [:each | each string]).
-	self assert: contentStrings asArray = aContentArray.
+	strings := (anElement stringNodes collect: [:each | each string]).
+	self assert: strings asArray = aContentArray.

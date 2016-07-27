@@ -1,3 +1,3 @@
 accessing
 after: anObject
-	^ self after: anObject ifAbsent: [self defaultValue]
+	^ collection after: anObject ifAbsent: [self defaultValue]

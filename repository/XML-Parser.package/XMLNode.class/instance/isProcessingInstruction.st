@@ -1,3 +1,5 @@
 testing
 isProcessingInstruction
-	^ false
+	self deprecated: 'use #isPI instead'.
+
+	^ self isPI.

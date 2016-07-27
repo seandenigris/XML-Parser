@@ -1,4 +1,4 @@
-tests-utf8
+tests
 testCDATASection
 	| xmlDocument element output |
 
@@ -6,7 +6,7 @@ testCDATASection
 		(XMLDOMParser on: self exampleCDATASectionXML readStream)
 			preservesCDataSections: true;
 			parseDocument.
-	element := xmlDocument firstTagNamed: #'test-data'.
+	element := xmlDocument firstTagNamed: 'test-data'.
 
 	self assert: element contentString = 'this is CDATA test content 1 < 2 & 5 > 3'.
 	

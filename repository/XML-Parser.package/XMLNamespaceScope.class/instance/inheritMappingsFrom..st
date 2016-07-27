@@ -1,8 +1,13 @@
 initializing
 inheritMappingsFrom: anEnclosingScope
-	self defaultNamespace
-		ifNil: [self defaultNamespace: anEnclosingScope defaultNamespace].
+	anEnclosingScope hasNamespaces
+		ifFalse: [^ self].
 
-	anEnclosingScope prefixMappingsDo: [:prefix :uri |
-		(self isMappedPrefix: prefix)
-			ifFalse: [self mapPrefix: prefix to: uri]].
+	self hasDefaultNamespace
+		ifFalse: [self defaultNamespace: anEnclosingScope defaultNamespace].
+
+	anEnclosingScope hasPrefixMappings
+		ifTrue: [
+			anEnclosingScope prefixesAndURIsDo: [:prefix :uri |
+				(self includesPrefix: prefix)
+					ifFalse: [self mapPrefix: prefix to: uri]]].

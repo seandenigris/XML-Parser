@@ -1,0 +1,14 @@
+{
+	"category" : "XML-Parser-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "XMLWideCharacterCodeTable",
+	"pools" : [
+		 ],
+	"super" : "XMLCharacterCodeTable",
+	"type" : "normal" }

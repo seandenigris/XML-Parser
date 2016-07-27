@@ -1,6 +1,7 @@
 accessing
 resolvePrefix: aPrefix
-	"Retrieve the URI of the given namespace prefix, if it is defined. A nil namespace
-	returns the global namespace"
+	"Retrieve the URI of the given namespace prefix, if it is defined.
 
-	^ self resolvePrefix: aPrefix ifUnmapped: [nil]
+	If prefix is empty, nil, or xmlns, the default namespace will be returned."
+
+	^ self resolvePrefix: aPrefix ifUnmapped: ['']

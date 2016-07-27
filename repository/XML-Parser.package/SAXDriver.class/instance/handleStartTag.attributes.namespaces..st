@@ -2,7 +2,7 @@ handling tokens
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	| prefix localName namespaceURI |
 
-	self openTag: anElementName.
+	self wellFormednessChecker startedElement: anElementName.
 	(anAttributeDictionary includesKey: 'xml:lang')
 		ifTrue: [self languageEnvironment: (anAttributeDictionary at: 'xml:lang')].
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
@@ -10,9 +10,9 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 		localName := localPart].
 
 	self usesNamespaces ifTrue: [
-		self nestedScopes enterScope.
+		self scopeManager enterScope.
 		self declareNamespaces: aNamespaceDictionary.
-		namespaceURI := self nestedScopes resolvePrefix: prefix.
+		namespaceURI := self scopeManager resolvePrefix: prefix.
 		self
 			validateStartTag: anElementName
 			prefix: prefix

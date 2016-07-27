@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TXMLObservable classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"notifier" ],
+	"name" : "XMLObservableList",
+	"pools" : [
+		 ],
+	"super" : "XMLOrderedList",
+	"traitcomposition" : "TXMLObservable",
+	"type" : "normal" }

@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/23/2010 15:43",
+	"commentStamp" : "JAAyer 7/13/2010 13:56",
 	"instvars" : [
 		"name",
 		"attributes",
-		"scope",
-		"usesNamespaces" ],
+		"namespaceScope",
+		"document" ],
 	"name" : "XMLElement",
 	"pools" : [
 		 ],

@@ -1,5 +1,3 @@
-writing xml
-pcData: aString
-	self writeIndent.
-	self writeXmlEncoded: aString.
-	self cr.
+writing markup
+pcdata: aString
+	self string: aString

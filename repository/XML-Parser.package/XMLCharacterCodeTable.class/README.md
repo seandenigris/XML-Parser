@@ -1,0 +1,1 @@
+This an abstract class for tables with integer character code keys. It is not a subclass of ArrayedCollection becuase its indexes (character codes) are zero-based rather than one-based and nil elements of the table are ignored during enumeration.

@@ -1,0 +1,1 @@
+XMLNotifier is used by objects using TXMLObservable to send notifications to objects that have registered themselves as observers. The notifications are selectors that observers are expected to implement, typically under the category "notifications."

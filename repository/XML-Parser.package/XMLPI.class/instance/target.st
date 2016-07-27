@@ -1,3 +1,3 @@
 accessing
 target
-	^ target ifNil: ['']
+	^ target ifNil: [target := '']

@@ -1,0 +1,3 @@
+validation
+validatePrefixedAttributeNames: aDictionary
+	self currentScope validatePrefixedAttributeNames: aDictionary.

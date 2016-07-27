@@ -1,0 +1,1 @@
+This class is a simple byte-indexed character code table with 256 (0-255) entries.

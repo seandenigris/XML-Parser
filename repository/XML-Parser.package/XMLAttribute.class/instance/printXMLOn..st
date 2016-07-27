@@ -1,4 +1,3 @@
 printing
 printXMLOn: aWriter
-	aWriter attribute: self name value: self value
-	
+	aWriter writeName: self name value: self value

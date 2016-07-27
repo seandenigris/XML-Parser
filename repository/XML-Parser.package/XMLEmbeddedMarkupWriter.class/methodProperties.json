@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"embedBlock:" : "JAAyer 7/26/2010 12:33",
+		"embedCollection:" : "JAAyer 7/26/2010 12:34",
+		"embedString:" : "JAAyer 7/26/2010 12:35",
+		"embedValue:" : "JAAyer 7/26/2010 12:34",
+		"flushMarkup" : "JAAyer 10/15/2010 15:22",
+		"hasEmbeddedMarkup" : "JAAyer 7/26/2010 14:55",
+		"hasEmbeddedMarkupWriters" : "JAAyer 7/26/2010 16:49",
+		"isWritingBody" : "JAAyer 7/26/2010 14:55",
+		"nextMarkupWriter:" : "JAAyer 7/26/2010 16:49",
+		"startWritingEmbeddedMarkup" : "JAAyer 7/26/2010 12:37",
+		"with:" : "JAAyer 10/15/2010 15:20",
+		"writeBeforeEmbeddedMarkup" : "JAAyer 7/26/2010 16:11",
+		"writeBody:" : "JAAyer 7/26/2010 16:12" } }

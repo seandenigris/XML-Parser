@@ -1,3 +1,3 @@
 printing
-printXMLOn: writer
-	writer pcData: self string
+printXMLOn: aWriter
+	aWriter string: self string

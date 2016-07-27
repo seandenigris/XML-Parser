@@ -1,3 +1,3 @@
 accessing
-attributeAt: aString put: aValue
-	^ self attributeNodes valueAt: aString put: aValue
+attributeAt: aName put: aValue
+	^ self attributeNodes attributeValueAt: aName put: aValue

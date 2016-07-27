@@ -11,7 +11,7 @@ newElementsNamed: aNameArray
 					ifTrue: [
 						qualifiedName splitQualifiedNameInto: [:prefix :localPart |
 							element := XMLElement
-								named: qualifiedName
+								name: qualifiedName
 								namespaceURI: 'http://', prefix]]
 					ifFalse: [element := XMLElement named: qualifiedName].
 				element]).

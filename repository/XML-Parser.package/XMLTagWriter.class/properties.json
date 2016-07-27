@@ -1,0 +1,17 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 8/18/2010 21:28",
+	"instvars" : [
+		"name",
+		"prefixMappings",
+		"defaultNamespace",
+		"attributes" ],
+	"name" : "XMLTagWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLEmbeddedMarkupWriter",
+	"type" : "normal" }

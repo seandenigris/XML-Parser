@@ -1,0 +1,3 @@
+removing
+removeFirst
+	^ collection removeFirst

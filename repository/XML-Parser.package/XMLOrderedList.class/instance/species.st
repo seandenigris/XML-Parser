@@ -1,3 +1,3 @@
-copying
+private
 species
 	^ XMLOrderedList

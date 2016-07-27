@@ -6,7 +6,7 @@ test030stringNode
 	raw := self markupString.
 	escaped := self escapedString.
 	self
-		assert: node isText & node isTagOrText;
+		assert: node isStringNode & node isContentNode;
 		assertString: node is: '' printed: '';
 		assertString: (node string: raw) is: raw printed: escaped;
 		assertString: (node addContent: raw) is: raw, raw printed: escaped, escaped.
@@ -21,4 +21,4 @@ test030stringNode
 		is: raw
 		printed: escaped.
 
-	self assertString: raw asXMLNode is: raw printed: escaped.
+	self assertString: raw asXMLString is: raw printed: escaped.

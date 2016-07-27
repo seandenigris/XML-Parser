@@ -1,4 +1,4 @@
-accessing
+removing
 removeAll
 	orderedKeys removeAll.
-	super removeAll.
+	dictionary removeAll.

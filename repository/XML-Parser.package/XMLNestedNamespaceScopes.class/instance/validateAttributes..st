@@ -1,3 +1,0 @@
-validation
-validateAttributes: attributeList
-	self currentScope validateAttributes: attributeList

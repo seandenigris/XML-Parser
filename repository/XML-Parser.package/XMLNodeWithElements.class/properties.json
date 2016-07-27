@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/23/2010 14:30",
+	"commentStamp" : "JAAyer 7/10/2010 05:51",
 	"instvars" : [
-		"elementCache" ],
+		 ],
 	"name" : "XMLNodeWithElements",
 	"pools" : [
 		 ],

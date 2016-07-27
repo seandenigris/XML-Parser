@@ -1,0 +1,1 @@
+Objects that use this trait can observe objects using TXMLObservable.

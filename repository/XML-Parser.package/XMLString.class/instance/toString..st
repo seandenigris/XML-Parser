@@ -1,5 +1,5 @@
 private
-toString: aString
-	^ (aString isKindOf: String)
-		ifTrue: [aString]
-		ifFalse: [aString string]
+toString: aStringOrStringNode
+	^ (aStringOrStringNode isKindOf: self class)
+		ifTrue: [aStringOrStringNode string]
+		ifFalse: [aStringOrStringNode]

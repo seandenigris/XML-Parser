@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 7/21/2010 12:33",
+	"instvars" : [
+		"root",
+		"publicId",
+		"systemId" ],
+	"name" : "XMLDoctypeDeclaration",
+	"pools" : [
+		 ],
+	"super" : "XMLNodeWithChildren",
+	"type" : "normal" }

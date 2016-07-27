@@ -1,3 +1,5 @@
 accessing
 contents
-	^ self nodes select: [:each | each isText]
+	self deprecated: 'use #stringNodes instead'.
+
+	^ self stringNodes.

@@ -1,4 +1,3 @@
 private
 indent
-	currentIndent
-		ifNotNil: [currentIndent := currentIndent +1]
+	currentIndentLevel := self currentIndentLevel + 1

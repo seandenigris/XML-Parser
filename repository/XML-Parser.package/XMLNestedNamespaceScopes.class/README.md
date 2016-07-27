@@ -1,1 +1,0 @@
-An XMLNestedNamespaceScopes represents a stack of XMLNamespaceScopes. Sending #enterScope to an instance will cause it to push a new scope onto the stack that inherits all mappings from the previous, enclosing scope. Sending #leaveScop causes that scope to be removed.

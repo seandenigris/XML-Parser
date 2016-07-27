@@ -2,11 +2,11 @@ tests
 test040emptyNodeWithElements
 	| node |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	self
 		assert: node isEmpty;
 		deny: node hasElements;
 		assert: node nodes isEmpty;
 		assert: node elements isEmpty;
-		assert: node topNode isNil;
-		assert: node topElement isNil.
+		assert: node firstNode isNil;
+		assert: node firstElement isNil.

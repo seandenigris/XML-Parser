@@ -1,3 +1,3 @@
 accessing
 localName
-	^ self nodeName localName
+	^ self nodeName localPart

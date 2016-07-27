@@ -1,1 +1,1 @@
-This class represents a node that has child nodes. It provides a basic protocol to add/remove nodes and iterate over them. You will likely use its API through either XMLElement or XMLDocument.
+This class represents a node that can contain child nodes. It provides message that allow you to add, remove, access, and enumerate child nodes. The nodes themselves are stored in some type of XMLObservableList, the exact type of which varies depending on the subclass, and can be accessed directly by sending #nodes.

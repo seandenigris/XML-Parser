@@ -1,4 +1,4 @@
 behaviors
 include
 	"Return my expanded value."
-	^value ifNil: [SAXWarning signal: 'XML undefined entity ' , name printString]
+	^ value ifNil: [XMLWarning signal: 'XML undefined entity ' , name printString]

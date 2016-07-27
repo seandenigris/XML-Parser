@@ -1,4 +1,4 @@
-accessing
-addAll: anAssociationCollection
-	anAssociationCollection do: [:association | self add: association].
-	^ anAssociationCollection.
+adding
+addAll: aKeyedCollection
+	aKeyedCollection associationsDo: [:each | self add: each].
+	^ aKeyedCollection.

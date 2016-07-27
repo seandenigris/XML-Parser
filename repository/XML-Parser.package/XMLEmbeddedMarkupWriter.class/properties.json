@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 8/8/2010 17:29",
+	"instvars" : [
+		"isWritingBody",
+		"hasEmbeddedMarkup",
+		"hasEmbeddedMarkupWriters" ],
+	"name" : "XMLEmbeddedMarkupWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLMarkupWriter",
+	"type" : "normal" }

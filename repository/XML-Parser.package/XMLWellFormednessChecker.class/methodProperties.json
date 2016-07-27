@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"enclosedElementsAsString:" : "JAAyer 10/15/2010 15:13",
+		"enclosingElement" : "JAAyer 10/15/2010 15:07",
+		"endedElement:" : "JAAyer 10/15/2010 15:15",
+		"ensureNoElementsRemainOpen" : "JAAyer 10/15/2010 15:14",
+		"errorImproperlyNestedElements:" : "JAAyer 10/15/2010 15:13",
+		"errorUnmatchedEndTag:" : "JAAyer 10/15/2010 15:15",
+		"hasOpenElement:" : "JAAyer 10/15/2010 15:16",
+		"hasOpenElements" : "JAAyer 10/15/2010 15:15",
+		"openElements" : "JAAyer 10/15/2010 15:06",
+		"printLimit" : "JAAyer 10/16/2010 06:50",
+		"printOn:" : "JAAyer 3/16/2010 16:07",
+		"printOn:startingAt:" : "JAAyer 10/16/2010 06:50",
+		"startedElement:" : "JAAyer 10/15/2010 15:10",
+		"totalOpen" : "JAAyer 10/15/2010 15:06" } }

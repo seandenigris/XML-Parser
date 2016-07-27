@@ -6,6 +6,6 @@ test055elementCDATASection
 	(element := XMLElement new) addNode: (XMLCData string: str).
 	self
 		deny: element isEmpty;
-		assert: element hasContents;
+		assert: element hasStringNodes;
 		assert: element contentString = str;
 		assert: (element firstNode isKindOf: XMLCData) 

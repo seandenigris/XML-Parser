@@ -1,1 +1,3 @@
-The class is a Dictionary that preserves the order in which associations are added to it.
+This class is a Dictionary that preserves the order in which associations are added to it. That means #keys, #keysDo:, #keysAndValuesDo:, #values, #valuesDo:, #associations, and #associationsDo: are all ordered based on key insertion order.
+
+This class is not a subclass of HashedCollection due to a belief that relying on the public API of Dictionary is probably a safer long-term bet than relying on the public and private API of a relatively recent addition to Squeak and Pharo.

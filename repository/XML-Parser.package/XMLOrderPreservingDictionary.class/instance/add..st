@@ -1,4 +1,4 @@
-accessing
+adding
 add: anAssociation
-	self at: anAssociation key put: anAssociation value.
-	^ anAssociation.
+	self addOrderedKeyIfAbsent: anAssociation key.
+	^ dictionary add: anAssociation.

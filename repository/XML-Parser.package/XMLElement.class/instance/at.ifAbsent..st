@@ -1,3 +1,5 @@
 accessing
-at: aString ifAbsent: aBlock
-	^ self attributeAt: aString ifAbsent: aBlock
+at: aName ifAbsent: aBlock	
+	self deprecated: 'use #attributeAt:ifAbsent: instead'.
+
+	^ self attributeAt: aName ifAbsent: aBlock

@@ -4,4 +4,5 @@ firstTagNamed: aString with: aBlock
 	allows the block to evaluate to true. Pass the message on"
 
 	^ self recurseUntilTrue: [:each |
-		(each isNamed: aString) and: [aBlock valueWithPossibleArgument: each]]
+		(each isNamed: aString)
+			and: [aBlock valueWithPossibleArgument: each]]

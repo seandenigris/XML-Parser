@@ -1,0 +1,3 @@
+private
+printLimit
+	^ 5

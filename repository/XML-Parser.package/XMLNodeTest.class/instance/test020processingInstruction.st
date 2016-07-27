@@ -6,7 +6,7 @@ test020processingInstruction
 	t := 'target'.
 	d := 'data'.
 	self
-		assert: pi isPI & pi isProcessingInstruction;
+		assert: pi isPI;
 		assertPI: pi target: '' data: '';
 		assertPI: (pi target: t) target: t data: '';
 		assertPI: (pi data: d) target: t data: d;

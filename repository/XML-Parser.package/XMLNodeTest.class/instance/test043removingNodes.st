@@ -2,7 +2,7 @@ tests
 test043removingNodes
 	| node children |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	children := self newNodes: 5.
 	node addNodes: children.
 	self

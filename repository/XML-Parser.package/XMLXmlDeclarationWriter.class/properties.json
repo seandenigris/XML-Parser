@@ -1,0 +1,16 @@
+{
+	"category" : "XML-Parser-Writers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JAAyer 8/18/2010 21:30",
+	"instvars" : [
+		"encoding",
+		"version",
+		"standalone" ],
+	"name" : "XMLXmlDeclarationWriter",
+	"pools" : [
+		 ],
+	"super" : "XMLPIWriter",
+	"type" : "normal" }

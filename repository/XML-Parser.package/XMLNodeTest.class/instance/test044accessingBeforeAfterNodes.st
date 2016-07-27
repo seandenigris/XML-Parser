@@ -2,7 +2,7 @@ tests
 test044accessingBeforeAfterNodes
 	| node children |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	children := self newNodes: 3.
 	node addNodes: children.
 	children do: [:each | | next previous |

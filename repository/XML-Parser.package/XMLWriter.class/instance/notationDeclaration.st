@@ -1,0 +1,3 @@
+writing markup
+notationDeclaration
+	^ self addNewMarkupWriter: XMLNotationDeclarationWriter

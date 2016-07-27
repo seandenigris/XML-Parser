@@ -2,9 +2,9 @@ tests
 test083elementRemoving
 	| node nodes elements |
 
-	node := XMLNodeWithElements new.
+	node := XMLMockNodeWithElements new.
 	elements := self newElementsNamed: #('foo' 'prefix:bar' 'bar' 'baz').
-	node addNodes: (self interspersedWithNodes: elements).
+	node addNodes: (self intersperseWithNodes: elements).
 	self
 		assert: (node removeNode: elements first) = elements first;
 		assert: node elements = elements allButFirst;
@@ -18,7 +18,7 @@ test083elementRemoving
 		assert: node elements = (elements last: 1);
 		assert: (node elementAt: 'bar') isNil;
 		assert: (node elementsAt: 'bar') isEmpty;
-		assert: node topElement = elements last;
+		assert: node firstElement = elements last;
 		assert: (node removeNode: elements last) = elements last;
 		deny: node hasElements;
-		assert: node topElement isNil.
+		assert: node firstElement isNil.

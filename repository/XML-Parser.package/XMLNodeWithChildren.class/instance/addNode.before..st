@@ -1,3 +1,3 @@
 accessing
-addNode: aNode before: beforeNode
-	^ self nodes add: aNode before: beforeNode
+addNode: aNode before: aSubsequentNode
+	^ self nodes add: aNode before: aSubsequentNode

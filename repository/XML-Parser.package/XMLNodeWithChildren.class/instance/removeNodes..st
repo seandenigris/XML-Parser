@@ -1,4 +1,3 @@
 accessing
 removeNodes: aNodeCollection
-	aNodeCollection do: [:each | self removeNode: each].
-	^ aNodeCollection.
+	^ self nodes removeAll: aNodeCollection

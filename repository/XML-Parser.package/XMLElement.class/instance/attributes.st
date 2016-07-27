@@ -1,3 +1,3 @@
 accessing
 attributes
-	^ XMLOrderPreservingDictionary withAll: self attributeAssociations
+	^ self attributeNodes asDictionary

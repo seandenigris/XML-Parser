@@ -1,19 +1,21 @@
 {
-	"category" : "XML-Parser-Parser",
+	"category" : "XML-Parser-Writers",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"XMLTranslation",
-		"XMLTranslationMap" ],
-	"commentStamp" : "",
+		"CarriageReturn",
+		"CharacterEscapes",
+		"LineFeed",
+		"SpecialCharacters" ],
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"stream",
-		"openTags",
-		"nestedScopes",
-		"canonical",
-		"currentIndent",
+		"activeMarkupWriter",
+		"currentIndentLevel",
 		"indentString",
-		"newLinesAllowed" ],
+		"lineBreak",
+		"isCanonical",
+		"omitsLineBreaks" ],
 	"name" : "XMLWriter",
 	"pools" : [
 		 ],

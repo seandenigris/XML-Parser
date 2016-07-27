@@ -1,3 +1,3 @@
 accessing
 attributeNames
-	^ self attributeNodes names
+	^ self attributeNodes attributeNames

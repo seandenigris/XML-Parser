@@ -1,0 +1,3 @@
+notifications
+removedAttribute: anAttribute
+	self stopBeingParentOf: anAttribute

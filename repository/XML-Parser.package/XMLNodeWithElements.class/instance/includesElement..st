@@ -1,3 +1,3 @@
 testing
 includesElement: aString
-	^ (self elementAt: aString) notNil
+	^ self nodes includesElementNamed: aString

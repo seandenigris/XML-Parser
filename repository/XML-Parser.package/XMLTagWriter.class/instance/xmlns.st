@@ -1,0 +1,3 @@
+accessing
+xmlns
+	^ defaultNamespace ifNil: ['']

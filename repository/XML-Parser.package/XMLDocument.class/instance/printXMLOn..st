@@ -1,4 +1,10 @@
 printing
-printXMLOn: writer
-	version ifNotNil: [writer xmlDeclaration: self version encoding: self encoding].
-	super printXMLOn: writer
+printXMLOn: aWriter
+	self version ifNotNil: [
+		aWriter xml
+			version: self version;
+			encoding: self encoding].
+	self doctypeDeclaration
+		ifNotNil: [self doctypeDeclaration printXMLOn: aWriter].
+	
+	super printXMLOn: aWriter

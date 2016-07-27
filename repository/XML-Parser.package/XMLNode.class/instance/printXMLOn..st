@@ -1,3 +1,3 @@
 printing
-printXMLOn: writer
+printXMLOn: aWriter
 	self subclassResponsibility

@@ -1,3 +1,5 @@
 enumerating
 contentsDo: aBlock
-	self nodesDo: [:each | each isText ifTrue: [aBlock value: each]]
+	self deprecated: 'use #stringNodesDo: instead'.
+
+	self stringNodesDo: aBlock.

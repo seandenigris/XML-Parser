@@ -1,3 +1,4 @@
 copying
-copyFrom: start to: end
-	^ super copyFrom: (start max: 1) to: (self size min: end)
+copyFrom: aStart to: anEnd
+	^ self copyEmptyWithCollection:
+		(collection copyFrom: (aStart max: 1) to: (self size min: anEnd))

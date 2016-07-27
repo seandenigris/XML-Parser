@@ -1,3 +1,3 @@
 accessing
-attributeAt: aString ifAbsent: aBlock
-	^ self attributeNodes valueAt: aString ifAbsent: aBlock
+attributeAt: aName ifAbsent: aBlock
+	^ self attributeNodes attributeValueAt: aName ifAbsent: aBlock

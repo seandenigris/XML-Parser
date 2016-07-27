@@ -1,0 +1,1 @@
+The class ensures tags are nested properly and that all opening tags have corresponding closing tags.

@@ -1,3 +1,3 @@
 accessing
 keys
-	^ orderedKeys copy
+	^ Array newFrom: orderedKeys

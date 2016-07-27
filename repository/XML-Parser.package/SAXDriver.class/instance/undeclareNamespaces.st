@@ -2,11 +2,13 @@ namespaces
 undeclareNamespaces
 	| currentScope enclosingScope |
 
-	currentScope := self nestedScopes currentScope.
-	enclosingScope := self nestedScopes enclosingScope.
+	currentScope := self scopeManager currentScope.
+	currentScope hasNamespaces
+		ifFalse: [^ self].
+	enclosingScope := self scopeManager enclosingScope.
 
-	currentScope prefixMappingsDo: [:prefix :uri |
-		(enclosingScope isPrefix: prefix mappedTo: uri)
+	currentScope prefixesAndURIsDo: [:prefix :uri |
+		(enclosingScope includesPrefix: prefix mappedTo: uri)
 			ifFalse: [self activeSaxHandler endPrefixMapping: prefix]].
 
 	(currentScope defaultNamespace notNil

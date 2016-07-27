@@ -1,0 +1,3 @@
+accessing
+swapInWideCharacterCodeTable
+	characterCodeTable := characterCodeTable asWideCharacterCodeTable

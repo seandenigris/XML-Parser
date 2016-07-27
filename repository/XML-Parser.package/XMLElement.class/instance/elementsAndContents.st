@@ -1,3 +1,5 @@
 accessing
 elementsAndContents
-	^ self nodes select: [:each | each isTagOrText]
+	self deprecated: 'use #contentNodes instead'.
+
+	^ self contentNodes.
