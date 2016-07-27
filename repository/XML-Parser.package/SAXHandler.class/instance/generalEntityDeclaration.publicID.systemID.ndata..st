@@ -1,2 +1,2 @@
 handling - declarations
-generalEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotation
+generalEntityDeclaration: aName publicID: aPublicID systemID: aSystemID ndata: aNotationName

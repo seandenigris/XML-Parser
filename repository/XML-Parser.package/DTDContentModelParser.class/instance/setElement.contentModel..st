@@ -1,4 +1,4 @@
 initialization
-setElement: aName contentModel: aContentModel
-	element := aName.
+setElement: anElement contentModel: aContentModel
+	element := anElement.
 	contentModel := aContentModel.

@@ -1,6 +1,6 @@
 handling - declarations
-elementDeclaration: aName contentModel: aContentModel
+elementDeclaration: anElementName contentModel: aContentModel
 	self topNode addNode:
 		(self nodeFactory elementDeclarationClass
-			element: aName
+			element: anElementName
 			contentModel: aContentModel)
