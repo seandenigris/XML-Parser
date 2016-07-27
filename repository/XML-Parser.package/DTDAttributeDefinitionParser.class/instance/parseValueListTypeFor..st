@@ -8,6 +8,4 @@ parseValueListTypeFor: anAttributeValidator
 			ifTrue: [DTDNotationListParser]
 			ifFalse: [DTDEnumerationListParser].
 
-	anAttributeValidator
-		allowedValues: (listParserClass on: type) parse;
-		hasNotationValues: isNotationList.
+	anAttributeValidator allowedValues: (listParserClass on: type) parse.

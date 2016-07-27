@@ -4,8 +4,5 @@
 	"instance" : {
 		"allowedValues" : "monty 12/9/2013 02:17",
 		"allowedValues:" : "monty 12/9/2013 02:16",
-		"hasNotationValues" : "monty 1/4/2014 04:42",
-		"hasNotationValues:" : "monty 1/4/2014 04:42",
 		"isValueListValidator" : "monty 12/9/2013 02:24",
-		"validateAndAddTo:" : "monty 1/4/2014 03:46",
 		"validateAttributeValue:" : "monty 12/11/2013 02:12" } }

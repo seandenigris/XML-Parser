@@ -1,6 +1,6 @@
 adding
 addValidatorForAttributeIn: anElement named: aName type: aType defaultPragma: aDefaultPragma defaultValue: aDefaultValue
-	| parser attributeValidatorsForElement |
+	| attributeValidatorsForElement validator |
 
 	attributeValidatorsForElement :=
 		self attributeValidators
@@ -9,14 +9,14 @@ addValidatorForAttributeIn: anElement named: aName type: aType defaultPragma: aD
 	(attributeValidatorsForElement includesKey: aName)
 		ifTrue: [^ nil].
 
-	parser :=
-		DTDAttributeDefinitionParser
+	validator :=
+		(DTDAttributeDefinitionParser
 			element:  anElement
 			attribute: aName
 			type: aType
 			defaultPragma: aDefaultPragma
-			defaultValue: aDefaultValue.
+			defaultValue: aDefaultValue) parse.
 
-	self
-		addAttributeValidator: parser parse
-		to: attributeValidatorsForElement.
+	validator
+		validateAndAddTo: attributeValidatorsForElement
+		usingDeclarationsFrom: self.

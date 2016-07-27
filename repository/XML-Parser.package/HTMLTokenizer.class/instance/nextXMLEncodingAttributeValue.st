@@ -1,3 +1,3 @@
 tokenizing
-nextXMLDeclAttributeValue
+nextXMLEncodingAttributeValue
 	^ self nextQuotedValue

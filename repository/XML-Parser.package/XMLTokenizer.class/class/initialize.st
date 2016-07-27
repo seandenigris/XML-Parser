@@ -9,4 +9,5 @@ initialize
 		initializePubidChars;
 		initializeAttributeTypeDelimiters;
 		initializeValueListChars;
-		initializeUnaryOperatorChars.
+		initializeUnaryOperatorChars;
+		initializeEncodingNameChars.

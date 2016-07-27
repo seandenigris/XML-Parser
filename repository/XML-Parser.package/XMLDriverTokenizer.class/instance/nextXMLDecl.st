@@ -3,10 +3,11 @@ nextXMLDecl
 	| version encoding standalone isTextDeclaration |
 
 	isTextDeclaration  := context isInTextDeclaration.
-	version := self nextXMLDeclAttribute: 'version' isOptional: isTextDeclaration.
-	(encoding := self nextXMLDeclAttribute: 'encoding' isOptional: isTextDeclaration not)
+	version := self nextXMLVersionAttributeRequired: isTextDeclaration not.
+	(encoding := self nextXMLEncodingAttributeRequired: isTextDeclaration)
 		ifNotEmpty: [streamReader useConverterForEncoding: encoding].
-	standalone := self nextXMLDeclAttribute: 'standalone' isOptional: true.
+	isTextDeclaration
+		ifFalse: [standalone := self nextXMLStandaloneAttribute].
 
 	streamReader skipSeparators.
 	self

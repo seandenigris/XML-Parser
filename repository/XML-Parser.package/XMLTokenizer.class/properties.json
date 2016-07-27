@@ -5,6 +5,7 @@
 	"classvars" : [
 		"AdditionalNameChars",
 		"AttributeTypeDelimiters",
+		"EncodingNameChars",
 		"NameStartChars",
 		"PubidChars",
 		"UnaryOperatorChars",

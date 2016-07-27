@@ -4,9 +4,7 @@ nextPIOrXMLDecl
 
 	"Skip ?"
 	streamReader next.
-	piTarget := self nextName.
-	((context isInProlog or: [context isInTextDeclaration])
-		and: [piTarget asUppercase = 'XML'])
+	(piTarget := self nextPITarget) = 'xml'
 		ifTrue: [^ self nextXMLDecl]
 		ifFalse: [
 			context isInExternalSubsetTextDeclaration

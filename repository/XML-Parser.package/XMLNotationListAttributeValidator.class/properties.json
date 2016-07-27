@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"allowedValues" ],
-	"name" : "XMLValueListAttributeValidator",
+		"notations" ],
+	"name" : "XMLNotationListAttributeValidator",
 	"pools" : [
 		 ],
-	"super" : "XMLAttributeValidator",
+	"super" : "XMLValueListAttributeValidator",
 	"type" : "normal" }

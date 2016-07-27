@@ -1,3 +1,0 @@
-tokenizing
-nextXMLDeclAttributeValue
-	self subclassResponsibility
