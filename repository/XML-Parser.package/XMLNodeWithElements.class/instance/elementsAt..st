@@ -1,3 +1,3 @@
 accessing
 elementsAt: aName
-	^ self nodes elementsNamed: aName
+	^ self nodes elementsAt: aName

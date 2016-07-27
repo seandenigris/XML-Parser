@@ -2,15 +2,15 @@ handling tokens
 handleEndTag: anElementName
 	| prefix localName namespaceUri |
 
-	self wellFormednessChecker endedElement: anElementName.
+	self elementNester endedElement: anElementName.
 
 	anElementName splitQualifiedNameInto: [:prefixPart :localPart |
 		prefix := prefixPart.
 		localName := localPart].
 	self usesNamespaces
-		ifTrue: [namespaceUri := self scopeManager resolvePrefix: prefix].
+		ifTrue: [namespaceUri := self scopeAllocator resolvePrefix: prefix].
 
-	self activeSaxHandler 
+	self saxHandler 
 		endElement: anElementName
 		prefix: prefix
 		uri: namespaceUri
@@ -19,4 +19,4 @@ handleEndTag: anElementName
 	self usesNamespaces
 		ifTrue: [
 			self undeclareNamespaces.
-			self scopeManager exitScope].
+			self scopeAllocator exitScope].

@@ -1,0 +1,3 @@
+printing
+writeXMLWith: aWriter
+	self subclassResponsibility

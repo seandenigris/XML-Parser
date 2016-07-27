@@ -1,1 +1,1 @@
-This class reads XML tokens from a stream using a nested stream reader. To create a parser, subclass this class and override the #handle- messages to handle tokens as they are read. To cause a token to be read, send #nextToken to an instance.
+This class reads XML tokens from a stream using a nested stream reader. To create a parser, subclass this class and override the #handle- messages to handle tokens as they are read. To cause it to read a token, send #nextToken to an instance.

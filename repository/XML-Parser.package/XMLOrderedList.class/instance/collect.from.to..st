@@ -1,4 +1,4 @@
 enumerating
 collect: aBlock from: aStartIndex to: anEndIndex
-	^ self copyThenSetCollection:
+	^ self newWithCollection:
 		(collection collect: aBlock from: aStartIndex to: anEndIndex)

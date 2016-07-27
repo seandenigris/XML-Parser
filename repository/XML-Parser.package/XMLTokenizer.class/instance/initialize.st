@@ -2,4 +2,4 @@ initialization
 initialize
 	streamReader := XMLNestedStreamReader new.
 	streamWriter := XMLNestedStreamWriter new.
-	parsingMarkup := false.
+	state := #atStart.

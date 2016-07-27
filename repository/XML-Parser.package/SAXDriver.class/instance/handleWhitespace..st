@@ -1,4 +1,4 @@
 handling tokens
 handleWhitespace: aString
-	self activeSaxHandler 
+	self saxHandler 
 		ignorableWhitespace: aString

@@ -1,3 +1,3 @@
 private
 endParsingMarkup
-	parsingMarkup := false
+	state := #parsing.

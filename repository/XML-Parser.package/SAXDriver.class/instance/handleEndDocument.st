@@ -1,4 +1,4 @@
 handling tokens
 handleEndDocument
-	self wellFormednessChecker ensureNoElementsRemainOpen.
+	self elementNester ensureNoElementsRemainOpen.
 	self saxHandler endDocument

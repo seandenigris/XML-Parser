@@ -3,4 +3,4 @@ nextCDataContent
 	| cdata |
 
 	cdata := streamReader upToAll: ']]>'.
-	self handleCData: cdata
+	driver handleCData: cdata

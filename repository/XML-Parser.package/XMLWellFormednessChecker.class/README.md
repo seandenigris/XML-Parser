@@ -1,1 +1,0 @@
-The class ensures tags are nested properly and that all start tags have corresponding end tags.

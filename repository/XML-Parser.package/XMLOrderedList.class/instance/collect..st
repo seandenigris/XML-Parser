@@ -1,3 +1,3 @@
 enumerating
 collect: aBlock
-	^ self copyThenSetCollection: (collection collect: aBlock)
+	^ self newWithCollection: (collection collect: aBlock)

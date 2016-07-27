@@ -8,7 +8,7 @@ nextCDataOrConditional
 	nextChar := streamReader peek.
 	nextChar == $%
 		ifTrue: [
-			self checkAndExpandReference: (self parsingMarkup ifTrue: [#dtd] ifFalse: [#content]).
+			self checkAndExpandReference: (self isParsingMarkup ifTrue: [#dtd] ifFalse: [#content]).
 			conditionalKeyword := self nextLiteral.
 			streamReader skipSeparators.
 			self expectNext: $[.

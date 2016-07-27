@@ -1,3 +1,3 @@
 testing
 isValidating
-	^ saxHandler configuration isValidating
+	^ self configuration isValidating

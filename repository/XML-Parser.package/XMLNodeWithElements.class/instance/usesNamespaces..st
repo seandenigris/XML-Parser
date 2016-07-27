@@ -1,3 +1,3 @@
 accessing
 usesNamespaces: aBoolean
-	configuration usesNamespaces: aBoolean
+	self configuration usesNamespaces: aBoolean

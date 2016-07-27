@@ -1,4 +1,4 @@
 private
 inheritNamespacesFrom: anElement
-	self traverseWith: [:each |
+	self allElementsDo: [:each |
 		each namespaceScope inheritMappingsFrom: anElement namespaceScope]

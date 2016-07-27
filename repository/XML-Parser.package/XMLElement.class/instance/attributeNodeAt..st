@@ -1,3 +1,3 @@
 accessing
 attributeNodeAt: aName
-	^ self attributeNodes attributeNamed: aName
+	^ self attributeNodes attributeNodeAt: aName

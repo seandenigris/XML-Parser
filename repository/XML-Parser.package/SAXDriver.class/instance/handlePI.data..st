@@ -1,4 +1,4 @@
 handling tokens
 handlePI: piTarget data: piData
-	self activeSaxHandler 
+	self saxHandler 
 		processingInstruction: piTarget data: piData

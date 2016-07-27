@@ -1,1 +1,1 @@
-XMLDOMParser parses XML into a tree of XML nodes representing the document structure. To see what kinds of nodes it produces and what can be done with them, browse XML-Parser-Nodes. 
+This class is an XML parser that produces tree of nodes representing the document structure. To see what kinds of nodes it produces and what can be done with them, browse XML-Parser-Nodes.

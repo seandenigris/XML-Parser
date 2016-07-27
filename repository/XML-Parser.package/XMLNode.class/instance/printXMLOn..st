@@ -1,3 +1,5 @@
 printing
 printXMLOn: aWriter
-	self subclassResponsibility
+	self deprecated: 'use #writeXMLWith: instead'.
+
+	self writeXMLWith: aWriter.

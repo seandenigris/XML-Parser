@@ -1,5 +1,5 @@
 searching
-firstTagNamed: aName 
-	"Return the first encountered node with the specified tag. Pass the message on"
+firstTagNamed: aName
+	self deprecated: 'use #findElementNamed: instead'.
 
-	^ self searchWith: [:each | each isNamed: aName]
+	^ self findElementNamed: aName.

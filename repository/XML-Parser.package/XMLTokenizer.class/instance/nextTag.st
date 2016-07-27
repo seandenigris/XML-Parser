@@ -6,14 +6,14 @@ nextTag
 	tagName := self nextName.
 	streamReader skipSeparators.
 	attributes := OrderPreservingDictionary new: 10.
-	self usesNamespaces
+	driver usesNamespaces
 		ifTrue: [namespaces := OrderPreservingDictionary new].
 	[(nextChar := streamReader peek) == $> or: [nextChar == $/]] whileFalse: [
 		self checkAndExpandReference: #content.
 		self nextAttributeInto: attributes namespaces: namespaces.
 		streamReader skipSeparators.].
-	self handleStartTag: tagName attributes: attributes namespaces: namespaces.
+	driver handleStartTag: tagName attributes: attributes namespaces: namespaces.
 	streamReader next == $/
 		ifTrue: [
-			self handleEndTag: tagName.
+			driver handleEndTag: tagName.
 			self expectNext: $>].

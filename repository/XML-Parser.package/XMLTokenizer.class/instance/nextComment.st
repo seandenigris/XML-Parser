@@ -3,4 +3,4 @@ nextComment
 	"Skip first -"
 	streamReader next.
 	self expectNext: $-.
-	self handleComment: (streamReader upToAll: '-->')
+	driver handleComment: (streamReader upToAll: '-->')

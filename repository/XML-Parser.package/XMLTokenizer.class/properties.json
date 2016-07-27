@@ -8,12 +8,12 @@
 		"NameDelimiters" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
+		"driver",
+		"state",
 		"streamReader",
 		"streamWriter",
 		"entities",
-		"externalEntities",
-		"parameterEntities",
-		"parsingMarkup" ],
+		"parameterEntities" ],
 	"name" : "XMLTokenizer",
 	"pools" : [
 		 ],

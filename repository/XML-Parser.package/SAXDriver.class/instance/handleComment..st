@@ -1,4 +1,4 @@
 handling tokens
 handleComment: aString
-	self activeSaxHandler 
+	self saxHandler 
 		comment: aString

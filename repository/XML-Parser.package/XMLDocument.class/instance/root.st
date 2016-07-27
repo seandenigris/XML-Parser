@@ -1,3 +1,3 @@
 accessing
 root
-	^ self firstElement 
+	^ self firstElement

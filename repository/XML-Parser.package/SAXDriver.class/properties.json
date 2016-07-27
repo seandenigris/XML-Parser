@@ -7,11 +7,12 @@
 	"commentStamp" : "JAAyer 3/23/2010 16:10",
 	"instvars" : [
 		"saxHandler",
-		"languageEnvironment",
-		"scopeManager",
-		"wellFormednessChecker" ],
+		"configuration",
+		"elementNester",
+		"scopeAllocator",
+		"languageEnvironment" ],
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],
-	"super" : "XMLTokenizer",
+	"super" : "XMLDriver",
 	"type" : "normal" }

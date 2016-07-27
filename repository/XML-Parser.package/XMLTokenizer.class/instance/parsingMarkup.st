@@ -1,3 +1,0 @@
-private
-parsingMarkup
-	^ parsingMarkup

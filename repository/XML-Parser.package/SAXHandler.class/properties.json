@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 3/9/2010 12:11",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"driver",
-		"eod",
-		"configuration" ],
+		"input",
+		"configuration",
+		"elementNester",
+		"scopeAllocator" ],
 	"name" : "SAXHandler",
 	"pools" : [
 		 ],

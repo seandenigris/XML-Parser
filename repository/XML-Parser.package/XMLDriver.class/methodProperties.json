@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"handleCData:" : "JAAyer 11/27/2010 07:23",
+		"handleComment:" : "JAAyer 11/27/2010 07:23",
+		"handleEndDocument" : "JAAyer 11/27/2010 07:23",
+		"handleEndTag:" : "JAAyer 11/27/2010 07:23",
+		"handlePCData:" : "JAAyer 11/27/2010 07:23",
+		"handlePI:data:" : "JAAyer 11/27/2010 07:23",
+		"handleStartDocument" : "JAAyer 11/27/2010 07:23",
+		"handleStartTag:attributes:namespaces:" : "JAAyer 11/27/2010 07:23",
+		"handleWhitespace:" : "JAAyer 11/27/2010 07:23",
+		"handleXMLVersion:encoding:standalone:" : "JAAyer 11/27/2010 07:23",
+		"isValidating" : "JAAyer 11/27/2010 07:24",
+		"tokenizerClass" : "JAAyer 11/27/2010 07:42",
+		"tokenizerOn:" : "JAAyer 11/28/2010 07:16",
+		"usesNamespaces" : "JAAyer 11/27/2010 07:24" } }

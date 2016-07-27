@@ -10,7 +10,7 @@ nextMarkupToken
 		nextChar := streamReader peek.
 		nextChar == $- ifTrue: [^ self nextComment].
 		nextChar == $[ ifTrue: [^ self nextCDataOrConditional].
-		^ self parsingMarkup
+		^ self isParsingMarkup
 			ifTrue: [self nextMarkupDeclaration]
 			ifFalse: [self nextDocType]].
 	nextChar == $? ifTrue: [^ self nextPI].

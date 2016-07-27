@@ -6,4 +6,4 @@ nextEndTag
 	tagName := self nextName.
 	streamReader skipSeparators.
 	self expectNext: $>.
-	self handleEndTag: tagName
+	driver handleEndTag: tagName

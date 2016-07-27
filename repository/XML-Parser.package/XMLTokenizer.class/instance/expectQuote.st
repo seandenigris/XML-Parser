@@ -1,6 +1,6 @@
 tokenizing
 expectQuote
-	| nextChar expected |
+	| nextChar |
 
 	(((nextChar := streamReader next) == $")
 		or: [nextChar == $'])

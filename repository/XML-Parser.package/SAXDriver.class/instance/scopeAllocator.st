@@ -1,0 +1,3 @@
+accessing
+scopeAllocator
+	^ scopeAllocator

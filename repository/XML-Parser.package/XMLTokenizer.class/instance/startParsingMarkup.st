@@ -1,3 +1,3 @@
 private
 startParsingMarkup
-	parsingMarkup := true
+	state := #isParsingMarkup

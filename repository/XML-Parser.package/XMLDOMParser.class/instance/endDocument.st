@@ -1,4 +1,3 @@
 content
 endDocument
-	self popNode.
-	super endDocument.
+	self popNode

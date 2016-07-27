@@ -1,8 +1,8 @@
 namespaces
 validateStartTag: aStartTag prefix: aPrefix attributes: anAttributeDictionary
 	aPrefix ifNotEmpty: [
-		self scopeManager
+		self scopeAllocator
 			validatePrefix: aPrefix
 			ofElementName: aStartTag].
 
-	self scopeManager validatePrefixedAttributeNames: anAttributeDictionary.
+	self scopeAllocator validatePrefixedAttributeNames: anAttributeDictionary.

@@ -2,7 +2,7 @@ tokenizing
 checkAndExpandReference: parsingContext
 	| referenceString nextChar |
 	nextChar := streamReader peek.
-	self isValidating
+	driver isValidating
 		ifFalse: [^ nil].
 
 	nextChar == $&
@@ -12,15 +12,15 @@ checkAndExpandReference: parsingContext
 				ifTrue: [^ streamReader pushStream: (ReadStream on: self nextCharReference asString)].
 			referenceString := self nextLiteral.
 			self expectNext: $;.
-			self handleEntity: referenceString in: parsingContext ]
+			driver handleEntity: referenceString in: parsingContext ]
 		ifFalse: [
 			((nextChar == $%
-				and: [self parsingMarkup])
+				and: [self isParsingMarkup])
 				and: [parsingContext == #entityValue])
 				ifTrue: [
 					streamReader skipSeparators.
 					referenceString := self nextLiteral.
-					self handleEntity: referenceString in: parsingContext]].
+					driver handleEntity: referenceString in: parsingContext]].
 
 	self expectMore.
 	^ nextChar.

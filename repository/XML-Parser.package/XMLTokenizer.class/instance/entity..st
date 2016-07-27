@@ -1,6 +1,6 @@
 entities
 entity: aReference
-	self isValidating
+	driver isValidating
 		ifFalse: [^ DTDEntityDeclaration name: aReference value: ''].
 
 	^ self entities

@@ -12,7 +12,7 @@ nextXMLDecl
 	self expectNext: $>.
 	(attributes includesKey: 'encoding')
 		ifTrue: [streamReader streamEncoding: (attributes at: 'encoding')].
-	self
+	driver
 		handleXMLVersion: (attributes at: 'version' ifAbsent: [''])
 		encoding: (attributes at: 'encoding' ifAbsent: [''])
 		standalone: (attributes at: 'standalone' ifAbsent: ['']).

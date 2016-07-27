@@ -8,7 +8,7 @@ nextAttributeInto: attributes namespaces: namespaces
 	streamReader skipSeparators.
 	attrValue := self nextAttributeValue.
 
-	(self usesNamespaces
+	(driver usesNamespaces
 		and: [attrName beginsWith: 'xmlns'])
 		ifTrue: [attrName size > 6
 			ifTrue: [namespaces at: (attrName copyFrom: 7 to: attrName size) put: attrValue]

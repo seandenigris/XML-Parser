@@ -1,6 +1,6 @@
 handling tokens
 handleCData: aString
-	self activeSaxHandler
+	self saxHandler
 		startCData;
 		characters: aString;
 		endCData

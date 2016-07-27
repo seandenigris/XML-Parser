@@ -2,5 +2,5 @@ handling tokens
 handlePCData: aString
 	self languageEnvironment
 		ifNotNil: [aString applyLanguageInfomation: self languageEnvironment].
-	self activeSaxHandler 
+	self saxHandler 
 		characters: aString

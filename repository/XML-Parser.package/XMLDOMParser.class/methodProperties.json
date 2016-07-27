@@ -1,15 +1,14 @@
 {
 	"class" : {
-		"on:withRootNode:" : "JAAyer 11/24/2010 12:36" },
+		"on:withRootNode:" : "JAAyer 11/28/2010 13:25" },
 	"instance" : {
 		"characters:" : "JAAyer 11/23/2010 14:19",
 		"comment:" : "JAAyer 11/23/2010 14:43",
 		"configurationClass" : "JAAyer 11/23/2010 14:37",
 		"document" : "JAAyer 3/9/2010 01:38",
 		"document:" : "JAAyer 11/24/2010 12:31",
-		"domDocument" : "JAAyer 3/8/2010 20:29",
 		"endCData" : "JAAyer 8/9/2010 17:27",
-		"endDocument" : "JAAyer 11/10/2010 06:02",
+		"endDocument" : "JAAyer 11/27/2010 06:53",
 		"endElement:prefix:uri:localName:" : "JAAyer 3/24/2010 16:55",
 		"isInCDataSection" : "JAAyer 8/9/2010 17:27",
 		"nodeFactory" : "JAAyer 11/23/2010 14:18",
@@ -24,10 +23,10 @@
 		"preservesCommentNodes" : "JAAyer 11/23/2010 14:18",
 		"preservesCommentNodes:" : "JAAyer 11/23/2010 14:18",
 		"processingInstruction:data:" : "JAAyer 11/10/2010 05:42",
-		"pushElement:" : "JAAyer 11/23/2010 15:07",
-		"pushNode:" : "JAAyer 3/16/2010 09:31",
+		"pushElement:" : "JAAyer 11/28/2010 13:25",
+		"pushNode:" : "JAAyer 11/28/2010 13:25",
 		"startCData" : "JAAyer 8/9/2010 17:27",
-		"startDocument" : "JAAyer 11/23/2010 15:21",
+		"startDocument" : "JAAyer 11/28/2010 13:25",
 		"startElement:prefix:uri:localName:attributes:" : "JAAyer 11/10/2010 05:43",
 		"topNode" : "JAAyer 3/16/2010 09:29",
-		"xmlVersion:encoding:standalone:" : "JAAyer 11/10/2010 05:58" } }
+		"xmlVersion:encoding:standalone:" : "JAAyer 11/27/2010 06:45" } }

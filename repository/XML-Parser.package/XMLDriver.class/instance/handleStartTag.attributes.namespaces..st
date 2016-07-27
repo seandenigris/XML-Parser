@@ -1,0 +1,2 @@
+handling tokens
+handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary

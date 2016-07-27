@@ -1,3 +1,3 @@
 accessing
 currentScope: aScope
-	self driver currentScope: aScope
+	self scopeAllocator currentScope: aScope

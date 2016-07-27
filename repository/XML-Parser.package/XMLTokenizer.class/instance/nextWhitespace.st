@@ -3,5 +3,5 @@ nextWhitespace
 	| whitespace |
 
 	(whitespace := streamReader nextWhitespace)
-		ifNotEmpty: [self handleWhitespace: whitespace].
+		ifNotEmpty: [driver handleWhitespace: whitespace].
 	^ whitespace.

@@ -1,4 +1,4 @@
 enumerating
 select: aSelectBlock thenCollect: aCollectBlock
-	^ self copyThenSetCollection:
+	^ self newWithCollection:
 		(collection select: aSelectBlock thenCollect: aCollectBlock)

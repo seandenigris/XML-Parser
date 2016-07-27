@@ -1,7 +1,5 @@
-searching
-tagsNamed: aName do: aOneArgumentBlock
-	"Search for nodes with tag aName. When encountered evaluate aOneArgumentBlock"
+enumerating
+tagsNamed: aName do: aBlock
+	self deprecated: 'use #allElementsNamed:do: instead'.
 
-	self traverseWith: [:each |
-		(each isNamed: aName)
-			ifTrue: [aOneArgumentBlock valueWithPossibleArgument: each]]
+	self allElementsNamed: aName do: aBlock.
