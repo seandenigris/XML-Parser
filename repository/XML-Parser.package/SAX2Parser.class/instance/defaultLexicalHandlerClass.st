@@ -1,3 +1,3 @@
 private
 defaultLexicalHandlerClass
-	^ SAXLexicalHandler
+	^ SAX2LexicalHandler

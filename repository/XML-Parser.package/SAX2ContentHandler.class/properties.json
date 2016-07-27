@@ -7,7 +7,7 @@
 	"commentStamp" : "monty 7/4/2016 23:17",
 	"instvars" : [
 		 ],
-	"name" : "SAXDeclarationHandler",
+	"name" : "SAX2ContentHandler",
 	"pools" : [
 		 ],
 	"super" : "Object",

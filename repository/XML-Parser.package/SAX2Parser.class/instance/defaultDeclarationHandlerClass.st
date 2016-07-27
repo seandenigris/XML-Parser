@@ -1,3 +1,3 @@
 private
 defaultDeclarationHandlerClass
-	^ SAXDeclarationHandler
+	^ SAX2DeclarationHandler

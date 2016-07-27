@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"generateHandlerForwardingMethods" : "monty 7/4/2016 06:45",
-		"generateMethodsInHandlerClasses" : "monty 7/4/2016 06:45" },
+		"generateMethodsInHandlerClasses" : "monty 7/10/2016 02:42" },
 	"instance" : {
 		"attributeDeclaration:name:type:defaultPragma:defaultValue:" : "monty 6/24/2016 23:32",
 		"characters:" : "monty 6/24/2016 23:32",
@@ -10,9 +10,9 @@
 		"contentHandler:" : "monty 6/23/2016 18:22",
 		"declarationHandler" : "monty 6/22/2016 16:27",
 		"declarationHandler:" : "monty 6/23/2016 18:22",
-		"defaultContentHandlerClass" : "monty 6/22/2016 16:36",
-		"defaultDeclarationHandlerClass" : "monty 6/22/2016 16:37",
-		"defaultLexicalHandlerClass" : "monty 6/22/2016 16:36",
+		"defaultContentHandlerClass" : "monty 7/10/2016 02:41",
+		"defaultDeclarationHandlerClass" : "monty 7/10/2016 02:42",
+		"defaultLexicalHandlerClass" : "monty 7/10/2016 02:42",
 		"elementDeclaration:contentModel:" : "monty 6/24/2016 23:32",
 		"endCData" : "monty 6/24/2016 23:32",
 		"endDTD" : "monty 6/24/2016 23:32",

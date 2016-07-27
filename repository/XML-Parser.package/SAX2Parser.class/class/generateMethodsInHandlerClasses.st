@@ -5,9 +5,9 @@ generateMethodsInHandlerClasses
 	"
 
 	(Array
-		with: SAXContentHandler -> #'handling - content'
-		with: SAXLexicalHandler -> #'handling - lexical'
-		with: SAXDeclarationHandler -> #'handling - declaration')
+		with: SAX2ContentHandler -> #'handling - content'
+		with: SAX2LexicalHandler -> #'handling - lexical'
+		with: SAX2DeclarationHandler -> #'handling - declaration')
 		do: [:handlerClassAndCategory | | handlerClass handlerCategory |
 			handlerClass := handlerClassAndCategory key.
 			handlerCategory := handlerClassAndCategory value.
