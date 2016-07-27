@@ -7,4 +7,4 @@ testinvalidoptional23xml
 			self
 				parse: self class sourceinvalidoptional23xml
 				documentURI: 'invalid/optional23.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

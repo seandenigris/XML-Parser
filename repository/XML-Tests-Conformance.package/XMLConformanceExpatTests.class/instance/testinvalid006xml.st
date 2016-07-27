@@ -7,4 +7,4 @@ testinvalid006xml
 			self
 				parse: self class sourceinvalid006xml
 				documentURI: 'invalid/006.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

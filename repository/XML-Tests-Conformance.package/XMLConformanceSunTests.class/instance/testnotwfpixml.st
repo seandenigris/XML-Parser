@@ -7,4 +7,4 @@ testnotwfpixml
 			self
 				parse: self class sourcenotwfpixml
 				documentURI: 'not-wf/pi.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

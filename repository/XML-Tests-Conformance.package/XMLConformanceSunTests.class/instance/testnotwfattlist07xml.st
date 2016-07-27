@@ -7,4 +7,4 @@ testnotwfattlist07xml
 			self
 				parse: self class sourcenotwfattlist07xml
 				documentURI: 'not-wf/attlist07.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

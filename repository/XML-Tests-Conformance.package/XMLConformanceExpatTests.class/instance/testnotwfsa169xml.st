@@ -7,4 +7,4 @@ testnotwfsa169xml
 			self
 				parse: self class sourcenotwfsa169xml
 				documentURI: 'not-wf/sa/169.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

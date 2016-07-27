@@ -4,7 +4,12 @@ testp16pass3xml
 
 	self
 		shouldnt: [
-			self
+			[self
 				parse: self class sourcep16pass3xml
 				documentURI: 'p16pass3.xml']
-		raise: self exceptionClass
+				on: self parserExceptions
+				do: [:error |
+					(self isSkippableException: error)
+						ifTrue: [self skip]
+						ifFalse: [error signal]]]
+		raise: self parserExceptions

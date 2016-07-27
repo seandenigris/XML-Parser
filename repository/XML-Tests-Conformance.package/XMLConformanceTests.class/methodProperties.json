@@ -11,10 +11,10 @@
 		"createSubclassForSuite:" : "monty 11/28/2013 08:26",
 		"directoryForSuite:" : "monty 11/29/2013 00:43",
 		"documentURIFrom:" : "monty 11/28/2013 10:31",
-		"failingTestMethodTemplate" : "monty 11/28/2013 07:59",
-		"passingTestMethodTemplate" : "monty 11/28/2013 07:59",
+		"failingTestMethodTemplate" : "monty 12/10/2013 08:22",
+		"passingTestMethodTemplate" : "monty 12/10/2013 08:22",
 		"pathStringFrom:" : "monty 11/29/2013 00:43",
-		"sanitizedSelectorPartFromSegments:" : "monty 11/28/2013 09:56",
+		"sanitizedSelectorPartFromSegments:" : "monty 12/10/2013 08:15",
 		"segmentsAfterSuite:" : "monty 11/29/2013 00:43",
 		"sourceFileMethodTemplate" : "monty 11/28/2013 10:15",
 		"sourceSelectorFrom:" : "monty 11/28/2013 09:48",
@@ -24,7 +24,8 @@
 		"supportedTestSuites" : "monty 11/28/2013 05:46",
 		"testSelectorFrom:" : "monty 11/28/2013 10:31" },
 	"instance" : {
-		"exceptionClass" : "monty 11/28/2013 20:07",
 		"fileClientClass" : "monty 11/28/2013 05:45",
-		"parse:documentURI:" : "monty 11/29/2013 00:40",
-		"parserClass" : "monty 11/28/2013 08:12" } }
+		"isSkippableException:" : "monty 12/10/2013 08:44",
+		"parse:documentURI:" : "monty 12/10/2013 05:35",
+		"parserClass" : "monty 11/28/2013 08:12",
+		"parserExceptions" : "monty 12/10/2013 08:22" } }

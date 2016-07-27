@@ -7,4 +7,4 @@ testnotwfencoding03xml
 			self
 				parse: self class sourcenotwfencoding03xml
 				documentURI: 'not-wf/encoding03.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

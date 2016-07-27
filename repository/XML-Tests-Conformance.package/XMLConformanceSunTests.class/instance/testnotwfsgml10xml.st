@@ -7,4 +7,4 @@ testnotwfsgml10xml
 			self
 				parse: self class sourcenotwfsgml10xml
 				documentURI: 'not-wf/sgml10.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

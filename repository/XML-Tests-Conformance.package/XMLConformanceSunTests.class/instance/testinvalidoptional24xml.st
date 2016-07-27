@@ -7,4 +7,4 @@ testinvalidoptional24xml
 			self
 				parse: self class sourceinvalidoptional24xml
 				documentURI: 'invalid/optional24.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

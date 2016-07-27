@@ -7,4 +7,4 @@ testp64fail1xml
 			self
 				parse: self class sourcep64fail1xml
 				documentURI: 'p64fail1.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions

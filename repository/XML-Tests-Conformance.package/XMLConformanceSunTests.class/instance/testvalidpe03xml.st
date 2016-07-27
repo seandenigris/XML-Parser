@@ -4,7 +4,12 @@ testvalidpe03xml
 
 	self
 		shouldnt: [
-			self
+			[self
 				parse: self class sourcevalidpe03xml
 				documentURI: 'valid/pe03.xml']
-		raise: self exceptionClass
+				on: self parserExceptions
+				do: [:error |
+					(self isSkippableException: error)
+						ifTrue: [self skip]
+						ifFalse: [error signal]]]
+		raise: self parserExceptions

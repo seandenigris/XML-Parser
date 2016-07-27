@@ -5,7 +5,12 @@ passingTestMethodTemplate
 
 	self
 		shouldnt: [
-			self
+			[self
 				parse: self class {3}
 				documentURI: ''{4}'']
-		raise: self exceptionClass'
+				on: self parserExceptions
+				do: [:error |
+					(self isSkippableException: error)
+						ifTrue: [self skip]
+						ifFalse: [error signal]]]
+		raise: self parserExceptions'

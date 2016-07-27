@@ -6,7 +6,7 @@ parse: aString documentURI: aUri
 		self parserClass
 			on: aString
 			documentURI: aUri.
-	parser configuration fileClient:
+	parser externalEntityResolver fileClient:
 		(self fileClientClass testCaseClass: self class).
 	parser
 		usesNamespaces: true;

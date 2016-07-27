@@ -7,4 +7,4 @@ testinvalidnotsa14xml
 			self
 				parse: self class sourceinvalidnotsa14xml
 				documentURI: 'invalid/not-sa14.xml']
-		raise: self exceptionClass
+		raise: self parserExceptions
