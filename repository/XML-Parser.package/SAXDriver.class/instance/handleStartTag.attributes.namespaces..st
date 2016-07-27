@@ -3,6 +3,8 @@ handleStartTag: elementName attributes: attributeList namespaces: namespaces
 
 	| localName namespace namespaceURI |
 
+	(attributeList includesKey: 'xml:lang')
+		ifTrue: [languageEnvironment := LanguageEnvironment localeID: (LocaleID isoString: (attributeList at: 'xml:lang'))].
 	self usesNamespaces
 		ifTrue: [
 			self scope enterScope.

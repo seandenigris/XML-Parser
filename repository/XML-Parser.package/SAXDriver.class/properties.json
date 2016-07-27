@@ -9,7 +9,8 @@
 		"saxHandler",
 		"scope",
 		"useNamespaces",
-		"validateAttributes" ],
+		"validateAttributes",
+		"languageEnvironment" ],
 	"name" : "SAXDriver",
 	"pools" : [
 		 ],

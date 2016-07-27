@@ -1,0 +1,2 @@
+*xml-parser
+applyLanguageInfomation: languageEnvironment
