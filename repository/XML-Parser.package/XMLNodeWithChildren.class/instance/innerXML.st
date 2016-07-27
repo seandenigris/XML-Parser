@@ -3,5 +3,5 @@ innerXML
 	| writer |
 
 	writer := XMLWriter new.
-	self writeInnerXMLWith: writer.
+	self writeInnerXMLOn: writer.
 	^ writer contents.

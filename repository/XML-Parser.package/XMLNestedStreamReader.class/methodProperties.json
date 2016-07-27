@@ -1,16 +1,17 @@
 {
 	"class" : {
-		"initialize" : "JAAyer 1/19/2011 20:27",
+		"initialize" : "JAA 3/23/2011 10:40",
 		"on:" : "JAAyer 3/11/2010 09:34" },
 	"instance" : {
 		"atEnd" : "JAAyer 12/14/2010 02:23",
 		"basicNext" : "JAAyer 12/14/2010 02:25",
 		"currentLineNumber" : "JAAyer 7/14/2010 00:39",
 		"initialize" : "JAAyer 12/14/2010 02:25",
+		"maxIntegerValue" : "JAA 3/23/2011 10:54",
 		"next" : "JAAyer 12/14/2010 02:44",
-		"nextDecimalInteger" : "JAAyer 12/5/2010 22:23",
-		"nextHexInteger" : "JAAyer 12/4/2010 12:19",
-		"nextIntegerWithBase:" : "JAAyer 8/31/2010 14:26",
+		"nextDigitWithBase:" : "JAA 3/23/2011 10:48",
+		"nextInteger" : "JAA 3/23/2011 11:07",
+		"nextIntegerWithBase:" : "JAA 3/23/2011 11:14",
 		"nextMatchAll:" : "JAAyer 12/6/2010 21:40",
 		"nextWhitespace" : "JAA 3/22/2011 11:49",
 		"peek" : "JAAyer 10/18/2010 16:17",

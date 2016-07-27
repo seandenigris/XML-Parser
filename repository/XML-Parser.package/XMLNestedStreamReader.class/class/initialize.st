@@ -7,7 +7,10 @@ initialize
 	CarriageReturn := Character cr.
 	LineFeed := Character lf.
 
-	HexDigitCharacterMap :=
-		Dictionary newFrom:
-			(($0 to: $9), ($a to: $f), ($A to: $F)
-				collect: [:each | each -> each asUppercase digitValue]).
+	HexDigitCharacterMap := Dictionary new.
+	($0 to: $9) do: [:each | HexDigitCharacterMap at: each put: each asciiValue - $0 asciiValue].
+	($a to: $f) do: [:each | | digitValue |
+		digitValue := each asciiValue - $a asciiValue + 10.
+		HexDigitCharacterMap
+			at: each put: digitValue;
+			at: each asUppercase put: digitValue].

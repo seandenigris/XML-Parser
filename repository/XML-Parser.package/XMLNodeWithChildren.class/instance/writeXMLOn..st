@@ -1,3 +1,3 @@
 printing
 writeXMLOn: aWriter
-	self writeInnerXMLWith: aWriter
+	self writeInnerXMLOn: aWriter

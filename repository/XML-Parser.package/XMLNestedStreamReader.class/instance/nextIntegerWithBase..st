@@ -1,8 +1,18 @@
 accessing
 nextIntegerWithBase: aBase
-	aBase = 10
-		ifTrue: [^ self nextDecimalInteger].
-	aBase = 16
-		ifTrue: [^ self nextHexInteger].
+	| integer maxValue maxBaseValue digitValue |
 
-	self error: 'Only base 10 and 16 supported'.
+	integer := 0.
+	maxValue := self maxIntegerValue.
+	maxBaseValue := (maxValue / aBase) asInteger.
+	[self atEnd not
+		and: [(digitValue := self nextDigitWithBase: aBase) notNil]]
+		whileTrue: [
+			integer > maxBaseValue
+				ifTrue: [^ integer].
+			integer := integer * aBase.
+
+			integer > (maxValue - digitValue)
+				ifTrue: [^ integer].
+			integer := integer + digitValue].
+	^ integer.

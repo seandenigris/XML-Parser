@@ -1,3 +1,3 @@
 printing
-writeInnerXMLWith: aWriter
+writeInnerXMLOn: aWriter
 	self nodesDo: [:each | each writeXMLOn: aWriter]
