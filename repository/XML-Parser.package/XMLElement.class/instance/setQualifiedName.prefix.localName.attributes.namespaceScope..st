@@ -5,10 +5,10 @@ setQualifiedName: aQualifiedName prefix: aPrefix localName: aLocalName attribute
 		prefix: aPrefix
 		localPart: aLocalName.
 
-	"By not observing 'attributes' until after it is filled, we avoid
-	re-validating the attributes, which the parser should have already done"
 	anAttributeDictionary
 		ifNotEmpty: [
+			"By not observing 'attributes' until after it is filled, we avoid
+			re-validating the attributes, which the parser should have already done"
 			attributes := XMLAttributeList new: anAttributeDictionary size.
 			anAttributeDictionary keysAndValuesDo: [:key :value |
 				self beParentOf: (attributes addName: key value: value)].

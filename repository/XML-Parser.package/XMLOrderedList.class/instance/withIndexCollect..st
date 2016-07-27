@@ -1,3 +1,3 @@
 enumerating
 withIndexCollect: aTwoArgumentBlock
-	^ self copyEmptyWithCollection: (collection withIndexCollect: aTwoArgumentBlock)
+	^ self copyThenSetCollection: (collection withIndexCollect: aTwoArgumentBlock)

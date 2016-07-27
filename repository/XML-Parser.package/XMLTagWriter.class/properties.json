@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 8/18/2010 21:28",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"name",
-		"prefixMappings",
 		"defaultNamespace",
+		"prefixMappings",
 		"attributes" ],
 	"name" : "XMLTagWriter",
 	"pools" : [

@@ -2,9 +2,9 @@ tests
 test062elementPrinting
 	| element attributes |
 
-	element := (XMLElement named: 'foo').
+	element := (XMLElement named: 'element').
 	attributes := XMLOrderPreservingDictionary with: 'b'->'two' with: 'a'->'one'.
 	self
-		assert: element printString = '<foo />';
-		assert: (element contentString: 'test') printString = '<foo>test</foo>';
-		assert: (element setAttributes: attributes) printString = '<foo b="two" a="one">test</foo>'
+		assert: element printString = '<element />';
+		assert: (element contentString: 'test') printString = '<element>test</element>';
+		assert: (element setAttributes: attributes) printString = '<element b="two" a="one">test</element>'

@@ -2,7 +2,7 @@ private
 writeXmlnsDeclarations
 	self xmlns
 		ifNotEmpty: [
-			(self hasAlreadyWrittenDefaultNamespace: self xmlns)
+			(self hasWrittenXmlns: self xmlns)
 				ifFalse: [self writer writeName: 'xmlns' value: self xmlns]].
 
 	self prefixMappings
@@ -10,5 +10,5 @@ writeXmlnsDeclarations
 			self
 				writeKeysAndValuesFrom: self prefixMappings
 				with: [:prefix :uri |
-					(self hasAlreadyWrittenPrefix: prefix uri: uri)
+					(self hasWrittenXmlns: prefix uri: uri)
 						ifFalse: [self writer writeName: 'xmlns:', prefix value: uri]]].

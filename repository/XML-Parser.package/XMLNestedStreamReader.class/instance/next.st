@@ -6,17 +6,10 @@ next
 	| nextChar |
 
 	peekChar
-		ifNil: [
-			stream atEnd
-				ifTrue: [
-					nestedStreams ifNil: [^nil].
-					self popCurrentStream.
-					[stream atEnd and: [nestedStreams notNil]]
-						whileTrue: [self popCurrentStream].
-					stream atEnd
-						ifTrue: [^ nil]].
-			^ self basicNext]
+		ifNil: [nextChar := self basicNext]
 		ifNotNil: [
 			nextChar := peekChar.
-			peekChar := nil.
-			^ nextChar].
+			peekChar := nil].
+	nextChar == normalizedLineEndingChar
+		ifTrue: [currentLineNumber := currentLineNumber + 1].
+	^ nextChar.

@@ -4,10 +4,10 @@ test041namespaces
 
 	node := XMLElement new.
 	self
-		assertNode: node prefix: '' uri: '';
-		assertNode: (node name: 'foo:name' namespaceURI: 'http://foo') prefix: 'foo' uri: 'http://foo'.
+		assertNode: node hasPrefix: '' uri: '';
+		assertNode: (node name: 'foo:name' namespaceURI: 'http://foo') hasPrefix: 'foo' uri: 'http://foo'.
 
 	node declarePrefix: 'bar' uri: 'http://bar'.
-	self assertNode: (node prefix: 'bar') prefix: 'bar' uri: 'http://bar'.
+	self assertNode: (node prefix: 'bar') hasPrefix: 'bar' uri: 'http://bar'.
 
 	self should: [node prefix: 'badprefix'] raise: XMLNamespaceException.

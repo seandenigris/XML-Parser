@@ -2,10 +2,10 @@ private
 elementAddedAtEnd: anElement
 	self elements add: anElement.
 	self
-		elementsByNameAt: anElement localName
+		elementsByNameAt: anElement name
 		addElement: anElement.
 	anElement hasPrefix
 		ifTrue: [
 			self
-				elementsByNameAt: anElement qualifiedName
+				elementsByNameAt: anElement localName
 				addElement: anElement]

@@ -1,14 +1,19 @@
 tests
 test010node
-	| node parent testingMessages accessors |
+	| node parent |
 
 	node := XMLMockNode new.
-	testingMessages := #(isAttribute isContentNode isDocument isElement isPI isStringNode).
-	accessors := #(nextNode previousNode parent).
 	self
 		assert: node isEmpty;
-		assert: (testingMessages noneSatisfy: [:each | node perform: each]);
-		assert: (accessors allSatisfy: [:each | (node perform: each) isNil]).
+		assert:
+			(#(isAttribute isCData isComment isContentNode isDocument
+				isElement isPI isStringNode hasParent notEmpty)
+					noneSatisfy: [:each | node perform: each]);
+		assert:
+			(#(nextNode previousNode parent)
+				allSatisfy: [:each | (node perform: each) isNil]);
+		assert: node asString = (node class asString, '(', node identityHash asString, ') ');
+		assert: node contentString isEmpty.
 
 	parent := XMLMockNode new.
 	node parent: parent.

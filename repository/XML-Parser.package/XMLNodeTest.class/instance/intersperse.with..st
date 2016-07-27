@@ -1,9 +1,9 @@
 accessing
-intersperse: aCollection with: aPaddingCollection
+intersperse: aNodeCollection with: aPaddingCollection
 	| mixedCollection nodeStream paddingStream |
 
 	mixedCollection := XMLOrderedList new.
-	nodeStream := aCollection readStream.
+	nodeStream := aNodeCollection readStream.
 	paddingStream := aPaddingCollection readStream.
 	[nodeStream atEnd and: [paddingStream atEnd]]
 		whileFalse: [

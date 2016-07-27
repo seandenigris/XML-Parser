@@ -6,5 +6,6 @@ pushStream: aStream
 	nestedStreams
 		ifNil: [nestedStreams := OrderedCollection with: stream]
 		ifNotNil: [nestedStreams addLast: stream].
+	hasNestedStreams := true.
 
 	self stream: aStream.

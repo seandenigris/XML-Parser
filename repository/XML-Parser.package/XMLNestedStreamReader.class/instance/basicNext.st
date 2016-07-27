@@ -5,16 +5,22 @@ basicNext
 
 	| nextChar |
 
+	stream atEnd
+		ifTrue: [
+			hasNestedStreams ifFalse: [^nil].
+			self popCurrentStream.
+			[hasNestedStreams and: [stream atEnd]]
+				whileTrue: [self popCurrentStream].
+			stream atEnd
+				ifTrue: [^ nil]].
+
 	(nextChar := stream next) == CarriageReturn
 		ifTrue: [
 			nextChar := normalizedLineEndingChar.
-			currentLineNumber := currentLineNumber + 1.
 			(stream peek == LineFeed)
 				ifTrue: [stream next]]
 		ifFalse: [
 			(nextChar == LineFeed)
-				ifTrue: [
-					nextChar := normalizedLineEndingChar.
-					currentLineNumber := currentLineNumber + 1]].
+				ifTrue: [nextChar := normalizedLineEndingChar]].
 
 	^ nextChar.

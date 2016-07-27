@@ -7,7 +7,7 @@ test020processingInstruction
 	d := 'data'.
 	self
 		assert: pi isPI;
-		assertPI: pi target: '' data: '';
-		assertPI: (pi target: t) target: t data: '';
-		assertPI: (pi data: d) target: t data: d;
-		assertPI: (XMLPI target: t data: d) target: t data: d.
+		assertPI: pi hasTarget: '' data: '';
+		assertPI: (pi target: t) hasTarget: t data: '';
+		assertPI: (pi data: d) hasTarget: t data: d;
+		assertPI: (XMLPI target: t data: d) hasTarget: t data: d.

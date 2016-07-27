@@ -4,4 +4,4 @@ benchmark2
 	XMLParserTest new benchmark2
 	"
 	Smalltalk garbageCollect.
-	^ [600 timesRepeat: [XMLDOMParser parse: self addressBookXML]] timeToRun
+	^ [1500 timesRepeat: [XMLDOMParser parse: self addressBookXML]] timeToRun

@@ -5,12 +5,12 @@ writeEpilogue
 			self writer outdent.
 			self hasEmbeddedMarkupWriters
 				ifTrue: [self writer cr].
-			self writeClosingTag]
+			self writeEndTag]
 		ifFalse: [
 			self writer isCanonical
 				ifTrue: [
 					self writer nextPut: $>.
-					self writeClosingTag]
+					self writeEndTag]
 				ifFalse: [
 					self writer
 						space;

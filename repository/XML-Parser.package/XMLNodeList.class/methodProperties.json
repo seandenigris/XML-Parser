@@ -4,8 +4,8 @@
 	"instance" : {
 		"added:" : "JAAyer 6/25/2010 13:53",
 		"adding:" : "JAAyer 7/22/2010 11:04",
-		"elementAddedAtEnd:" : "JAAyer 7/21/2010 12:07",
-		"elementInsertedBeforeEnd:" : "JAAyer 7/28/2010 08:49",
+		"elementAddedAtEnd:" : "JAAyer 10/19/2010 10:57",
+		"elementInsertedBeforeEnd:" : "JAAyer 10/19/2010 10:57",
 		"elementNamed:" : "JAAyer 6/10/2010 11:43",
 		"elementNamed:ifAbsent:" : "JAAyer 7/20/2010 11:41",
 		"elementNamed:namespaceURI:" : "JAAyer 7/28/2010 08:56",
@@ -22,5 +22,5 @@
 		"findElementBefore:withName:" : "JAAyer 6/9/2010 08:22",
 		"hasElements" : "JAAyer 7/20/2010 12:20",
 		"includesElementNamed:" : "JAAyer 6/10/2010 11:43",
-		"removed:" : "JAAyer 7/21/2010 12:07",
-		"renamedElement:from:to:" : "JAAyer 8/9/2010 14:45" } }
+		"removed:" : "JAAyer 10/19/2010 10:56",
+		"renamedElement:from:to:" : "JAAyer 10/19/2010 10:55" } }

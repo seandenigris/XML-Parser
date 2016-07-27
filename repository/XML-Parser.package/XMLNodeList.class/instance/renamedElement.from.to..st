@@ -1,13 +1,15 @@
 notifications
 renamedElement: anElement from: anOldName to: aNewName
+	self elementsByNameAt: anOldName removeElement: anElement.
 	anOldName splitQualifiedNameInto: [:oldPrefix :oldLocalName |
-		self elementsByNameAt: oldLocalName removeElement: anElement.
-		oldPrefix
-			ifNotEmpty: [self elementsByNameAt: anOldName removeElement: anElement]].
+		oldPrefix ifNotEmpty: [
+			self
+				elementsByNameAt: oldLocalName
+				removeElement: anElement]].
 
-	self elementsByNameAt: anElement localName insertElement: anElement.
+	self elementsByNameAt: anElement name insertElement: anElement.
 	anElement hasPrefix
 		ifTrue: [
 			self
-				elementsByNameAt: anElement qualifiedName
+				elementsByNameAt: anElement localName
 				insertElement: anElement].

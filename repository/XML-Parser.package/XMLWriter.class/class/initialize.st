@@ -2,7 +2,7 @@ class initialization
 initialize
 	"self initialize"
 
-	(CharacterEscapes := XMLCharacterMap new)
+	(CharacterEscapes := CharacterMap new)
 		at: $& put: '&amp;';
 		at: $" put: '&quot;';
 		at: $< put: '&lt;';

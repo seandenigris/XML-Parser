@@ -7,11 +7,9 @@ write
 				space;
 				writeXmlEncodedString: self publicID]
 		ifEmpty: [
-			self systemID
-				ifNotEmpty: [self writer nextPutAll: 'SYSTEM']].
+			self systemID ifNotEmpty: [self writer nextPutAll: 'SYSTEM']].
 
-	self systemID
-		ifNotEmpty: [
-			self writer
-				space
-				writeXmlEncodedString: self systemID].
+	self systemID ifNotEmpty: [
+		self writer
+			space
+			writeXmlEncodedString: self systemID].

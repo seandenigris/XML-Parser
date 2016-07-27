@@ -1,4 +1,4 @@
 enumerating
 collect: aCollectBlock thenSelect: aSelectBlock
-	^ self copyEmptyWithCollection:
+	^ self copyThenSetCollection:
 		(collection collect: aCollectBlock thenSelect: aSelectBlock)

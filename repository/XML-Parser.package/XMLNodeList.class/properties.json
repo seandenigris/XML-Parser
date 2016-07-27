@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TXMLObserver classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "JAAyer 7/27/2010 12:45",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"elements",
 		"elementsByName" ],

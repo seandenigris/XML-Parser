@@ -7,7 +7,7 @@ benchmark4
 	doc := XMLDOMParser
 		parseDocumentFrom: self addressBookXML readStream
 		useNamespaces: false.
-	^ [100000 timesRepeat: [
+	^ [500000 timesRepeat: [
 		doc root firstElement
 			elementAt: 'contact-info';
 			elementAt: 'address';

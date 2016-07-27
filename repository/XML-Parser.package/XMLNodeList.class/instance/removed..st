@@ -4,8 +4,8 @@ removed: aNode
 	aNode isElement
 		ifTrue: [
 			self elements remove: aNode.
-			self elementsByNameAt: aNode localName removeElement: aNode.
+			self elementsByNameAt: aNode name removeElement: aNode.
 			aNode hasPrefix
-				ifTrue: [self elementsByNameAt: aNode qualifiedName removeElement: aNode].
+				ifTrue: [self elementsByNameAt: aNode localName removeElement: aNode].
 			self notifyOf: #removedElement: with: aNode].
 	self notifyOf: #removedNode: with: aNode.

@@ -9,20 +9,20 @@ test090documentTest
 		assert: doc isDocument;
 		assert: doc root isNil;
 		assert: (doc addElement: root) root = root;
-		assertDocument: doc doctype: nil version: nil encoding: 'UTF-8'.
+		assertDocument: doc hasDoctype: nil version: nil encoding: 'UTF-8'.
 
 	self
 		assertDocument: (doc doctypeDeclaration: doctype)
-		doctype: doctype
+		hasDoctype: doctype
 		version: nil
 		encoding: 'UTF-8'.
 	self
 		assertDocument: (doc version: 1.0)
-		doctype: doctype
+		hasDoctype: doctype
 		version: 1.0
 		encoding: 'UTF-8'.
 	self
 		assertDocument: (doc encoding: 'ISO Latin-1')
-		doctype: doctype
+		hasDoctype: doctype
 		version: 1.0
 		encoding: 'ISO Latin-1'.

@@ -11,9 +11,9 @@ test053elementAttributes
 	self
 		assert: (element attributeAt: 'foo' put: 'test') = 'test';
 		assert: element hasAttributes;
-		assertElement: element attribute: 'foo' is: 'test';
+		assertElement: element hasAttribute: 'foo' equalTo: 'test';
 		assert: (element attributeAt: 'bar' ifAbsentPut: ['test2']) = 'test2';
-		assertElement: element attribute: 'bar' is: 'test2';
+		assertElement: element hasAttribute: 'bar' equalTo: 'test2';
 		assert: element attributeNames asArray =  #('foo' 'bar').
 
 	self
@@ -21,7 +21,7 @@ test053elementAttributes
 			(Array with: 'foo'->'test' with: 'bar'->'test2').
 	self
 		assertElement: element
-		attributes:
+		hasAttributes:
 			(XMLOrderPreservingDictionary
 				with: 'foo'->'test'
 				with: 'bar'->'test2').

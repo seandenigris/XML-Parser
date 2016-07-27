@@ -7,18 +7,18 @@ test030stringNode
 	escaped := self escapedString.
 	self
 		assert: node isStringNode & node isContentNode;
-		assertString: node is: '' printed: '';
-		assertString: (node string: raw) is: raw printed: escaped;
-		assertString: (node addContent: raw) is: raw, raw printed: escaped, escaped.
+		assertStringNode: node equals: '' withPrintString: '';
+		assertStringNode: (node string: raw) equals: raw withPrintString: escaped;
+		assertStringNode: (node addContent: raw) equals: raw, raw withPrintString: escaped, escaped.
 	self
-		assertString: (node addContent: (XMLString string: raw))
-		is: raw, raw, raw
-		printed: escaped, escaped, escaped.
+		assertStringNode: (node addContent: (XMLString string: raw))
+		equals: raw, raw, raw
+		withPrintString: escaped, escaped, escaped.
 
-	self assertString: (XMLString string: raw) is: raw printed: escaped.
+	self assertStringNode: (XMLString string: raw) equals: raw withPrintString: escaped.
 	self
-		assertString: (XMLString string: (XMLString string: raw))
-		is: raw
-		printed: escaped.
+		assertStringNode: (XMLString string: (XMLString string: raw))
+		equals: raw
+		withPrintString: escaped.
 
-	self assertString: raw asXMLString is: raw printed: escaped.
+	self assertStringNode: raw asXMLString equals: raw withPrintString: escaped.

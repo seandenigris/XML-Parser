@@ -6,6 +6,6 @@ test050emptyElement
 	self
 		assert: element isElement & element isContentNode;
 		deny: element hasAttributes;
-		deny: element hasContent;
+		deny: element hasContentNodes;
 		assert: element contentNodes isEmpty;
 		assert: element stringNodes isEmpty.

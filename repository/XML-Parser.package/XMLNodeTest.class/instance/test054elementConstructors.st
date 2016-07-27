@@ -5,26 +5,26 @@ test054elementConstructors
 	noAttributes := XMLOrderPreservingDictionary new.
 	self
 		assertElement: (XMLElement named: 'foo')
-		name: 'foo'
+		hasName: 'foo'
 		attributes: noAttributes
 		contentString: ''.
 
 	attributes := XMLOrderPreservingDictionary with: 'foo'->'test1' with: 'bar'->'test2'.
 	self
 		assertElement: (XMLElement name: 'foo' attributes: attributes)
-		name: 'foo'
+		hasName: 'foo'
 		attributes: attributes
 		contentString: ''.
 
 	str := self markupString.
 	self
 		assertElement: (XMLElement named: 'foo')
-		name: 'foo'
+		hasName: 'foo'
 		attributes: noAttributes
 		contentString: ''.
 	self
 		assertElement: (XMLElement name: 'foo' attributes: attributes)
-		name: 'foo'
+		hasName: 'foo'
 		attributes: attributes
 		contentString: ''.
 
@@ -33,5 +33,5 @@ test054elementConstructors
 		namespaceURI: 'http://foo'
 		attributes: attributes.
 	self
-		assertElement: element name: 'prefix:foo' attributes: attributes contentString: '';
-		assertNode: element prefix: 'prefix' uri: 'http://foo'.
+		assertElement: element hasName: 'prefix:foo' attributes: attributes contentString: '';
+		assertNode: element hasPrefix: 'prefix' uri: 'http://foo'.

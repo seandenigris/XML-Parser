@@ -1,5 +1,5 @@
 accessing
 tag
-	self deprecated: 'use #name or #qualifiedName instead'.
+	self deprecated: 'use #name instead'.
 
-	^ self qualifiedName.
+	^ self name.

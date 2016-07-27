@@ -1,3 +1,0 @@
-testing
-hasContentsInExplorer
-	^ collection hasContentsInExplorer
