@@ -6,5 +6,5 @@ gtInspectorTreeIn: composite
 		display: [ {self} ];
 		children: #treeViewChildren;
 		format: #treeViewLabelText;
-		when: #requiresTreeView;
+		when: [self requiresTreeView];
 		rootsExpanded
