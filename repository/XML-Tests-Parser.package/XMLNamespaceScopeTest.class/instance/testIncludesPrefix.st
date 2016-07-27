@@ -1,17 +1,17 @@
 tests
 testIncludesPrefix
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
+	scope := self newNamespaceScope.
 	self
-		deny: (namespaceScope includesPrefix: 'xml');
-		deny: (namespaceScope includesPrefix: 'xmlns').
+		deny: (scope includesPrefix: 'xml');
+		deny: (scope includesPrefix: 'xmlns').
 
 	"cannot map xmlns prefix, but can map xml"
-	namespaceScope mapPrefix: 'xml' to: XMLNamespaceScope xmlNamespaceURI.
-	self assert: (namespaceScope includesPrefix: 'xml').
+	scope mapPrefix: 'xml' to: XMLNamespaceScope xmlNamespaceURI.
+	self assert: (scope includesPrefix: 'xml').
 
 	self namespaces keysAndValuesDo: [:prefix :uri |
-		self deny: (namespaceScope includesPrefix: prefix).
-		namespaceScope mapPrefix: prefix to: uri.
-		self assert: (namespaceScope includesPrefix: prefix)].
+		self deny: (scope includesPrefix: prefix).
+		scope mapPrefix: prefix to: uri.
+		self assert: (scope includesPrefix: prefix)].

@@ -1,13 +1,13 @@
 tests
 testHasNamespaces
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
-	self deny: namespaceScope hasNamespaces.
+	scope := self newNamespaceScope.
+	self deny: scope hasNamespaces.
 
-	namespaceScope mapPrefixesAndURIs: self namespaces.
-	self assert: namespaceScope hasNamespaces.
+	scope mapPrefixesAndURIs: self namespaces.
+	self assert: scope hasNamespaces.
 	self namespaces keysDo: [:each |
-		self assert: namespaceScope hasNamespaces.
-		namespaceScope unmapPrefix: each].
-	self deny: namespaceScope hasNamespaces.
+		self assert: scope hasNamespaces.
+		scope unmapPrefix: each].
+	self deny: scope hasNamespaces.

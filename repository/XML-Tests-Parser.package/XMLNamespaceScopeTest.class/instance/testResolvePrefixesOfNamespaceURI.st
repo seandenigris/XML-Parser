@@ -1,32 +1,38 @@
 tests
 testResolvePrefixesOfNamespaceURI
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
+	scope := self newNamespaceScope.
 
 	self namespaces keysAndValuesDo: [:prefix :uri |
 		self assert:
-			(namespaceScope resolvePrefixesOfNamespaceURI: uri) isEmpty.
+			(scope resolvePrefixesOfNamespaceURI: uri) isEmpty.
 
-		namespaceScope mapPrefix: prefix to: uri.
+		scope
+			mapPrefix: prefix
+			to: uri.
 		self assert:
-			(namespaceScope resolvePrefixesOfNamespaceURI: uri) =
+			(scope resolvePrefixesOfNamespaceURI: uri) =
 				(Set with: prefix).
 
-		namespaceScope mapPrefix: 'newPrefix' to: uri.
+		scope
+			mapPrefix: 'newPrefix'
+			to: uri.
 		self assert:
-			(namespaceScope resolvePrefixesOfNamespaceURI: uri) =
+			(scope resolvePrefixesOfNamespaceURI: uri) =
 				(Set with: prefix with: 'newPrefix')].
 
 	self assert:
-		(namespaceScope resolvePrefixesOfNamespaceURI:
-			XMLNamespaceScope xmlNamespaceURI) = (Set with: 'xml').
+		(scope resolvePrefixesOfNamespaceURI: scope xmlNamespaceURI) =
+			(Set with: 'xml').
 	self assert:
-		(namespaceScope resolvePrefixesOfNamespaceURI:
-			XMLNamespaceScope xmlnsNamespaceURI) = (Set with: 'xmlns').
+		(scope resolvePrefixesOfNamespaceURI: scope xmlnsNamespaceURI) =
+			(Set with: 'xmlns').
 
-	"cannot map xmlns prefix, but can map xml"
-	namespaceScope mapPrefix: 'xml' to: XMLNamespaceScope xmlNamespaceURI.
+	"cannot map xmlns prefix at all, but can map xml to the same URI"
+	scope
+		mapPrefix: 'xml'
+		to: scope xmlNamespaceURI.
 	self assert:
-		(namespaceScope resolvePrefixesOfNamespaceURI:
-			XMLNamespaceScope xmlNamespaceURI) = (Set with: 'xml').
+		(scope resolvePrefixesOfNamespaceURI: scope xmlNamespaceURI) =
+			(Set with: 'xml').

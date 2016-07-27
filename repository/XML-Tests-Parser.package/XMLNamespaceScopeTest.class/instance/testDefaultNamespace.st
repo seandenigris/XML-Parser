@@ -1,16 +1,16 @@
 tests
 testDefaultNamespace
-	| namespaceScope oldPrefixMappings |
+	| scope oldPrefixMappings |
 
-	namespaceScope := self newNamespaceScope.
-	self assert: namespaceScope defaultNamespace isEmpty.
+	scope := self newNamespaceScope.
+	self assert: scope defaultNamespace isEmpty.
 
-	oldPrefixMappings := namespaceScope prefixMappings.
-	namespaceScope defaultNamespace: 'test'.
+	oldPrefixMappings := scope prefixMappings.
+	scope defaultNamespace: 'test'.
 	self
-		assert: namespaceScope defaultNamespace = 'test';
-		assert: (namespaceScope prefixMappings at: '') = 'test';
-		deny: namespaceScope prefixMappings = oldPrefixMappings.
+		assert: scope defaultNamespace = 'test';
+		assert: (scope prefixMappings at: '') = 'test';
+		deny: scope prefixMappings = oldPrefixMappings.
 
-	namespaceScope unmapPrefix: ''.
-	self assert: namespaceScope defaultNamespace isEmpty.
+	scope unmapPrefix: ''.
+	self assert: scope defaultNamespace isEmpty.

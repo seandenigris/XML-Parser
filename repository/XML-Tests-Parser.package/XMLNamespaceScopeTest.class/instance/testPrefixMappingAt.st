@@ -1,17 +1,17 @@
 tests
 testPrefixMappingAt
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
+	scope := self newNamespaceScope.
 	self
-		assert: (namespaceScope prefixMappingAt: 'xml') isEmpty;
-		assert: (namespaceScope prefixMappingAt: 'xmlns') isEmpty.
+		assert: (scope prefixMappingAt: 'xml') isEmpty;
+		assert: (scope prefixMappingAt: 'xmlns') isEmpty.
 
 	"cannot map xmlns prefix, but can map xml"
-	namespaceScope mapPrefix: 'xml' to: XMLNamespaceScope xmlNamespaceURI.
-	self assert: (namespaceScope prefixMappingAt: 'xml') = XMLNamespaceScope xmlNamespaceURI.
+	scope mapPrefix: 'xml' to: XMLNamespaceScope xmlNamespaceURI.
+	self assert: (scope prefixMappingAt: 'xml') = XMLNamespaceScope xmlNamespaceURI.
 
 	self namespaces keysAndValuesDo: [:prefix :uri |
-		self assert: (namespaceScope prefixMappingAt: prefix) isEmpty.
-		namespaceScope mapPrefix: prefix to: uri.
-		self assert: (namespaceScope prefixMappingAt: prefix) = uri].
+		self assert: (scope prefixMappingAt: prefix) isEmpty.
+		scope mapPrefix: prefix to: uri.
+		self assert: (scope prefixMappingAt: prefix) = uri].

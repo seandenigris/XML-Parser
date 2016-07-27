@@ -13,12 +13,13 @@ testResolvePrefixIfUnresolvable
 			(element
 				resolvePrefix: prefix
 				ifUnresolvable: [#absent]) = uri].
-	self
-		assert:
-			(element
-				resolvePrefix: 'xml'
-				ifUnresolvable: [#absent]) = XMLNamespaceScope xmlNamespaceURI;
-		assert:
-			(element
-				resolvePrefix: 'xmlns'
-				ifUnresolvable: [#absent]) = XMLNamespaceScope xmlnsNamespaceURI.
+
+	self assert:
+		(element
+			resolvePrefix: 'xml'
+			ifUnresolvable: [#absent]) = XMLNamespaceScope xmlNamespaceURI.
+	
+	self assert:
+		(element
+			resolvePrefix: 'xmlns'
+			ifUnresolvable: [#absent]) = XMLNamespaceScope xmlnsNamespaceURI.

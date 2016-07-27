@@ -23,9 +23,11 @@ testDeclarePrefixURI
 	self
 		should: [element declarePrefix: 'nonDefault' uri: '']
 		raise: XMLNamespaceException.
+	"cannot rebind the xml prefix to a new NS"
+	self 
+		should: [element declarePrefix: 'xml' uri: 'newNS']
+		raise: XMLNamespaceException.
+	"cannot rebind the xmlns prefix, even to the same NS"
 	self
 		should: [element declarePrefix: 'xmlns' uri: XMLNamespaceScope xmlnsNamespaceURI]
-		raise: XMLNamespaceException.
-	self
-		should: [element declarePrefix: 'xml' uri: 'newNS']
 		raise: XMLNamespaceException.

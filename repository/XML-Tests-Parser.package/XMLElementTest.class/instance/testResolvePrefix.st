@@ -7,6 +7,9 @@ testResolvePrefix
 		self assert: (element resolvePrefix: prefix) = ''.
 		element declarePrefix: prefix uri: uri.
 		self assert: (element resolvePrefix: prefix) = uri].
-	self
-		assert: (element resolvePrefix: 'xml') = XMLNamespaceScope xmlNamespaceURI;
-		assert: (element resolvePrefix: 'xmlns') = XMLNamespaceScope xmlnsNamespaceURI.
+
+	self assert:
+		(element resolvePrefix: 'xml') = XMLNamespaceScope xmlNamespaceURI.
+
+	self assert:
+		(element resolvePrefix: 'xmlns') = XMLNamespaceScope xmlnsNamespaceURI.

@@ -1,24 +1,25 @@
 tests
 testResolvePrefixIfUnresolvable
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
+	scope := self newNamespaceScope.
 	self namespaces keysAndValuesDo: [:prefix :uri |
 		self assert:
-			(namespaceScope
+			(scope
 				resolvePrefix: prefix
 				ifUnresolvable: [#unresolvable]) = #unresolvable.
-		namespaceScope mapPrefix: prefix to: uri.
+		scope mapPrefix: prefix to: uri.
 		self assert:
-			(namespaceScope
+			(scope
 				resolvePrefix: prefix
 				ifUnresolvable: [#unresolvable]) = uri].
 
 	self assert:
-		(namespaceScope
+		(scope
 			resolvePrefix: 'xml'
-			ifUnresolvable: [#unresolvable]) = XMLNamespaceScope xmlNamespaceURI.
+			ifUnresolvable: [#unresolvable]) = scope xmlNamespaceURI.
+
 	self  assert:
-		(namespaceScope
+		(scope
 			resolvePrefix: 'xmlns'
-			ifUnresolvable: [#unresolvable]) = XMLNamespaceScope xmlnsNamespaceURI.
+			ifUnresolvable: [#unresolvable]) = scope xmlnsNamespaceURI.

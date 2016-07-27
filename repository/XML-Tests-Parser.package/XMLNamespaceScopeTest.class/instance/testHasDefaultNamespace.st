@@ -1,15 +1,15 @@
 tests
 testHasDefaultNamespace
-	| namespaceScope |
+	| scope |
 
-	namespaceScope := self newNamespaceScope.
-	self deny: namespaceScope hasDefaultNamespace.
+	scope := self newNamespaceScope.
+	self deny: scope hasDefaultNamespace.
 
-	namespaceScope defaultNamespace: 'test'.
-	self assert: namespaceScope hasDefaultNamespace.
+	scope defaultNamespace: 'test'.
+	self assert: scope hasDefaultNamespace.
 
-	namespaceScope defaultNamespace: ''.
-	self assert: namespaceScope hasDefaultNamespace.
+	scope defaultNamespace: ''.
+	self assert: scope hasDefaultNamespace.
 
-	namespaceScope unmapPrefix: ''.
-	self deny: namespaceScope hasDefaultNamespace.
+	scope unmapPrefix: ''.
+	self deny: scope hasDefaultNamespace.
