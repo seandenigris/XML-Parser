@@ -10,7 +10,7 @@ nextFromStream: aStream
 				(aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
 
 	(codePoint < 16rD800 or: [codePoint > 16rDBFF])
-		ifTrue: [^ self characterWithValue: codePoint]
+		ifTrue: [^ self characterForValue: codePoint]
 		ifFalse: [
 			^ self
 				surrogatePairFromStream: aStream

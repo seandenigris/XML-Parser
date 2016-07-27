@@ -9,7 +9,7 @@ surrogatePairFromStream: aStream withHighSurrogate: aHighSurrogate
 			secondByte:
 				(aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
 
-	^ self characterWithValue:
+	^ self characterForValue:
 		((aHighSurrogate bitAnd: 16r3FF) bitShift: 10) +
 		(lowSurrogate bitAnd: 16r3FF) +
 		16r10000.

@@ -2,7 +2,7 @@ encoding
 nextPut: aCharacter toStream: aStream
 	| codePoint |
 
-	(codePoint := self valueFromCharacter: aCharacter) < 16r80
+	(codePoint := self valueOfCharacter: aCharacter) < 16r80
 		ifTrue: [^ aStream basicNextPut: aCharacter].
 
 	codePoint < 16r0800

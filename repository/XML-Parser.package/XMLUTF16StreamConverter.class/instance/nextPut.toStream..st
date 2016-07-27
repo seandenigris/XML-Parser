@@ -2,7 +2,7 @@ encoding
 nextPut: aCharacter toStream: aStream
 	| codePoint |
 
-	(codePoint := self valueFromCharacter: aCharacter) < 16r10000
+	(codePoint := self valueOfCharacter: aCharacter) < 16r10000
 		ifTrue: [
 			self
 				nextPutFirstByte: ((codePoint bitShift: -8) bitAnd: 16rFF)

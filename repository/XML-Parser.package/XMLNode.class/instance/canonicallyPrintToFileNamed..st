@@ -1,5 +1,6 @@
 printing
 canonicallyPrintToFileNamed: aFileName
+ 	"Prints to specified file as canonical XML"
 	self
-		withWriteStreamOnFileNamed: aFileName
+		withNewWriteStreamOnFileNamed: aFileName
 		do: [:writeStream | self canonicallyPrintOn: writeStream]

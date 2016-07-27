@@ -1,5 +1,5 @@
 printing
 printWithoutSelfClosingTagsToFileNamed: aFileName
 	self
-		withWriteStreamOnFileNamed: aFileName
+		withNewWriteStreamOnFileNamed: aFileName
 		do: [:writeStream | self printWithoutSelfClosingTagsOn: writeStream]

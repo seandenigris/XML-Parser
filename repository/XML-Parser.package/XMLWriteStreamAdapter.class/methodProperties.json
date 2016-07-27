@@ -2,7 +2,6 @@
 	"class" : {
 		"initialize" : "monty 2/10/2016 20:54" },
 	"instance" : {
-		"atBeginning" : "monty 2/13/2016 23:01",
 		"contents" : "monty 1/22/2016 23:57",
 		"cr" : "monty 2/10/2016 20:54",
 		"lf" : "monty 2/10/2016 20:54",

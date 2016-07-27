@@ -12,19 +12,19 @@ nextFromStream: aStream
 	secondByte := (aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
 	(firstByte bitAnd: 16rF0) < 16rE0 "two bytes"
 		ifTrue: [
-			^ self characterWithValue: 
+			^ self characterForValue: 
 				((firstByte bitAnd: 16r1F) bitShift: 6) +
 				(secondByte bitAnd: 16r3F)].
 
 	thirdByte := (aStream basicNext ifNil: [self errorInvalidCharacter]) asciiValue.
 	(firstByte bitAnd: 16rF0) = 16rE0 "three bytes"
 		ifTrue: [
-			^ self characterWithValue: 
+			^ self characterForValue: 
 				((firstByte bitAnd: 16r0F) bitShift: 12) +
 				((secondByte bitAnd: 16r3F) bitShift: 6) +
 				(thirdByte bitAnd: 16r3F)].
 
-	^ self characterWithValue: "four"
+	^ self characterForValue: "four"
 		((firstByte bitAnd: 16r07) bitShift: 18) +
 		((secondByte bitAnd: 16r3F) bitShift: 12) +
 		((thirdByte bitAnd: 16r3F) bitShift: 6) +

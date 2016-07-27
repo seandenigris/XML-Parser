@@ -1,6 +1,7 @@
 printing
 printOn: aStream
-	"uses XMLWriter if supported, otherwise uses basic Object>>printOn:"
+	"Uses XMLWriter if supported to print XML on aStream, uses the
+	basic Object>>printOn: otherwise"
 	self
 		withNewXMLWriterOn: aStream
 		do: [:writer |

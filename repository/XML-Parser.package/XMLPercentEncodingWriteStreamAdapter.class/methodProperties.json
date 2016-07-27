@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"basicNextPut:" : "monty 1/27/2016 18:51" } }
+		"basicNextPut:" : "monty 1/27/2016 18:51",
+		"nextPutByteOrderMark" : "monty 2/17/2016 12:01" } }

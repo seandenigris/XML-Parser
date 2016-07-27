@@ -1,6 +1,6 @@
 printing
 printOn: aStream beforeWritingDo: aBlock
-	"used to customize printOn:. raises error without XMLWriter support"
+	"Used to customize XML writing. Raises error without XMLWriter support"
 	self
 		withNewXMLWriterOn: aStream
 		do: [:writer |
