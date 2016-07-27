@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"DefaultValueValidators",
 		"NonEnumerationValidators" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [

@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		"element",
 		"name",
-		"defaultValueValidator" ],
-	"name" : "XMLAttributeValidator",
+		"defaultValue" ],
+	"name" : "XMLAttributeDefaultValidator",
 	"pools" : [
 		 ],
 	"super" : "Object",

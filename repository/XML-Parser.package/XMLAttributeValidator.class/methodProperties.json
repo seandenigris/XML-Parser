@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"element:name:defaultPragma:defaultValue:" : "monty 11/19/2013 18:45" },
+		"element:name:defaultValueValidator:" : "monty 12/1/2013 22:05" },
 	"instance" : {
 		"furtherNormalizeValueIn:" : "monty 11/19/2013 22:09",
 		"isEntityValidator" : "monty 11/19/2013 21:59",
 		"isEnumerationValidator" : "monty 11/19/2013 21:59",
-		"setElement:name:defaultPragma:defaultValue:" : "monty 11/19/2013 18:47",
+		"setElement:name:defaultValueValidator:" : "monty 12/1/2013 22:07",
 		"shouldFurtherNormalizeValue" : "monty 11/19/2013 17:05",
 		"validateAttributes:" : "monty 11/19/2013 08:11",
-		"validateDefaultValueIn:" : "monty 11/19/2013 20:12",
+		"validateDefaultValueIn:" : "monty 12/1/2013 22:07",
 		"validateID:" : "monty 11/20/2013 00:29",
 		"validateName:" : "monty 11/19/2013 17:26" } }

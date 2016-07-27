@@ -2,6 +2,11 @@ class initialization
 initialize
 	"self initialize"
 
+	(DefaultValueValidators := Dictionary new)
+		at: 'FIXED' put: XMLFixedValueAttributeValidator;
+		at: 'IMPLIED' put: XMLImpliedValueAttributeValidator;
+		at: 'REQUIRED' put: XMLRequiredValueAttributeValidator.
+
 	(NonEnumerationValidators := Dictionary new)
 		at: 'CDATA' put: XMLCDataAttributeValidator;
 		at: 'ID' put: XMLIDAttributeValidator;
