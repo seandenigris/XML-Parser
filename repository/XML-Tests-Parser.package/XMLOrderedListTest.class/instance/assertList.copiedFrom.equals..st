@@ -1,6 +1,6 @@
 assertions
-assertList: aList isCopyOf: aSecondList
+assertList: aList copiedFrom: aSecondList equals: aThirdList
 	self
-		assert: aList = aSecondList;
+		assert: aList = aThirdList;
 		deny: aList == aSecondList;
 		deny: aList collection == aSecondList collection
