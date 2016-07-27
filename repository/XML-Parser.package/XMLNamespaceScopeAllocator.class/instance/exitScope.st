@@ -1,3 +1,3 @@
 scope
 exitScope
-	^ self scopes removeLast
+	^ scopes removeLast

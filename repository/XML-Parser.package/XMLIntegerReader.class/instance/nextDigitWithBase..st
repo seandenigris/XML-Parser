@@ -4,9 +4,9 @@ nextDigitWithBase: aBase
 	
 	digit :=
 		CharacterDigitValues
-			at: stream peek asciiValue
+			at: self peek asciiValue
 			ifAbsent: [^ nil].
 	(digit >= 0 and: [digit < aBase])
 		ifFalse: [^ nil].
-	stream next.
+	self next.
 	^ digit.

@@ -8,7 +8,7 @@ nextIntegerWithBase: aBase upTo: aReadLimit
 	maxValue := self class maxIntegerValue.
 	maxBaseValue := (maxValue / aBase) asInteger.
 	readLimit := aReadLimit.
-	[stream atEnd
+	[self atEnd
 		or: [(readLimit notNil and: [readLimit <= 0])
 			or: [(digitValue := self nextDigitWithBase: aBase) isNil]]]
 		whileFalse: [

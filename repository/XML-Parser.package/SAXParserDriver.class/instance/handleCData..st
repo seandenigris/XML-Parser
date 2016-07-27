@@ -1,8 +1,8 @@
 handling tokens
 handleCData: aString
 	self saxHandler
-		isInCDataSection: true;
 		startCData;
+		startCDataSection;
 		characters: aString;
-		endCData;
-		isInCDataSection: false
+		endCDataSection;
+		endCData

@@ -5,5 +5,5 @@ handleEndDTD
 		ifTrue: [self parseExternalSubset: self dtd externalSubsetURI].
 
 	self saxHandler
-		endDTD;
-		isInDTD: false.
+		endInternalSubset;
+		endDTD.

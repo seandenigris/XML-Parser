@@ -1,3 +1,3 @@
 accessing
 currentScope: aScope
-	self scopes addLast: aScope
+	scopes addLast: aScope

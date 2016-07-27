@@ -1,3 +1,3 @@
-reading
+accessing
 stream: aStream
 	stream := aStream

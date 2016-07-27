@@ -1,6 +1,6 @@
 tokenizing
 nextAttributeValue
-	| quote value |
+	| quote nextChar |
 
 	((quote := streamReader next) == $"
 		or: [quote == $'])
@@ -12,10 +12,25 @@ nextAttributeValue
 	context
 		saveCurrent;
 		enterLiteralValue.
-	value := self nextAttributeValueDelimitedBy: quote.
+	writeStream reset.
+	[(nextChar := streamReader peek) == quote
+		or: [nextChar == $<
+			or: [nextChar == nil]]]
+		whileFalse: [
+			(streamReader next) == $&
+				ifTrue: [
+					streamReader peek == $#
+						ifTrue: [writeStream nextPut: self nextDecodedCharReference]
+						ifFalse: [
+							(nextChar := self nextGeneralEntityReference)
+								ifNotNil: [writeStream nextPut: nextChar]]]
+				ifFalse: [
+					nextChar isSeparator
+						ifTrue: [nextChar := NormalizedSpace].
+					writeStream nextPut: nextChar]].
 	context resetPrevious.
 
 	(streamReader next == quote)
 		ifFalse: [self errorExpected: 'end of quoted attribute value'].
 
-	^ value.
+	^ writeStream contents.

@@ -5,7 +5,7 @@ handleStartDTD: aRoot publicID: aPublicId systemID: aSystemId
 		externalSubsetURI: aSystemId.
 	
 	self saxHandler
-		isInDTD: true;
 		startDTD: aRoot
 		publicID: aPublicId
-		systemID: aSystemId.
+		systemID: aSystemId;
+		startInternalSubset.

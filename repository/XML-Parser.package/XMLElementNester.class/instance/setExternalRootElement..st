@@ -1,4 +1,4 @@
 accessing
-rootElement: anElement
+setExternalRootElement: anElement
 	rootElement := anElement.
 	hasExternalRoot := true.

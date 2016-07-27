@@ -9,7 +9,7 @@ parser
 				configuration: self topNode configuration;
 				document: self topNode document.
 			parser driver
-				rootElement: self topNode name;
+				setRootElement: self topNode name
 				currentScope: self topNode namespaceScope].
 
 	^ parser.

@@ -1,3 +1,3 @@
 testing
 hasExternalRoot
-	^ hasExternalRoot ifNil: [hasExternalRoot := false]
+	^ hasExternalRoot
