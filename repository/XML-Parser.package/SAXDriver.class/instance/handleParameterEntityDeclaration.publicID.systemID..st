@@ -3,7 +3,7 @@ handleParameterEntityDeclaration: aName publicID: aPublicId systemID: aSystemId
 	self resolvesExternalEntities
 		ifTrue: [
 			self dtd
-				parameterAt: aName
+				parameterEntityAt: aName
 				put: (self externalEntityResolver
 					resolveParameterEntity: aName
 					uri: aSystemId
