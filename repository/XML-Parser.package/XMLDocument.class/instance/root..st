@@ -1,5 +1,6 @@
 accessing
 root: anElement
-	self
-		removeNodes: self elements;
-		addNode: anElement
+	"replaces root element with new element"
+	self hasChildren
+		ifTrue: [self removeNodes: self elements].
+	self addNode: anElement.

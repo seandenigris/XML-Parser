@@ -1,3 +1,3 @@
 accessing
 encoding	
-	^ encoding ifNil: [encoding := 'UTF-8']
+	^ encoding ifNil: [encoding := '']
