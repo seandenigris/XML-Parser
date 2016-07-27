@@ -2,7 +2,7 @@ tests
 testAttributeNamespaces
 	| document  people |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXMLWithPrefixes.
+	document := XMLDOMParser parse: self addressBookNamespacePrefixedXML.
 	people := document allElementsNamed: 'person' namespaceURI: 'personNS'.
 	self assert: people notEmpty.
 	

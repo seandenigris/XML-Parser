@@ -4,7 +4,7 @@ testNamespacesDisabled
 
 	document :=
 		XMLDOMParser
-			parse: self addressBookNamespacesXMLWithPrefixes
+			parse: self addressBookNamespacePrefixedXML
 			usingNamespaces: false.
 	document allElementsDo: [:each |
 		self assert: each namespaceURI isEmpty.

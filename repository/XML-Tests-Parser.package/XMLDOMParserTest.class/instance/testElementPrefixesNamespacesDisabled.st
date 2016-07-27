@@ -4,7 +4,7 @@ testElementPrefixesNamespacesDisabled
 
 	document :=
 		XMLDOMParser
-			parse: self addressBookNamespacesXMLWithPrefixes
+			parse: self addressBookNamespacePrefixedXML
 			usingNamespaces: false.
 	persons := 	document allElementsSelect: [:each |
 		(each isNamedAny: #('notperson' 'ps:person'))

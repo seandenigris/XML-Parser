@@ -2,7 +2,7 @@ tests
 testElementPrefixes
 	| document  persons |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXMLWithPrefixes.
+	document := XMLDOMParser parse: self addressBookNamespacePrefixedXML.
 	persons := 	document allElementsSelect: [:each |
 		(each isNamedAny: #('notperson' 'ps:person'))
 			and: [(each isNamedAny: #('notperson' 'person'))

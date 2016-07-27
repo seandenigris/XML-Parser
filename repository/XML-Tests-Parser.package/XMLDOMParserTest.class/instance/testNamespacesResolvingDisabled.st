@@ -4,7 +4,7 @@ testNamespacesResolvingDisabled
 
 	document :=
 		XMLDOMParser
-			parse: self addressBookNamespacesXML
+			parse: self addressBookNamespacedXML
 			usingNamespaces: false.
 	document allElementsDo: [:each |
 		self

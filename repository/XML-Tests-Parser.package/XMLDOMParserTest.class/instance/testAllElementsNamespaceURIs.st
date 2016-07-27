@@ -2,7 +2,7 @@ tests
 testAllElementsNamespaceURIs
 	| document people |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML.
+	document := XMLDOMParser parse: self addressBookNamespacedXML.
 
 	people :=
 		document

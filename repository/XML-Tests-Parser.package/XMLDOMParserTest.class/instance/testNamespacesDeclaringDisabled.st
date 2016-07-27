@@ -2,7 +2,7 @@ tests
 testNamespacesDeclaringDisabled
 	| document |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML usingNamespaces: false.
+	document := XMLDOMParser parse: self addressBookNamespacedXML usingNamespaces: false.
 	document allElementsDo: [:each |
 		self
 			deny: each hasNamespaces;

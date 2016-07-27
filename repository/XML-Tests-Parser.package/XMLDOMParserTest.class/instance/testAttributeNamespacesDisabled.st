@@ -4,7 +4,7 @@ testAttributeNamespacesDisabled
 
 	document :=
 		XMLDOMParser
-			parse: self addressBookNamespacesXMLWithPrefixes
+			parse: self addressBookNamespacePrefixedXML
 			usingNamespaces: false.
 	people := document allElementsNamed: 'person'.
 	self assert: people notEmpty.

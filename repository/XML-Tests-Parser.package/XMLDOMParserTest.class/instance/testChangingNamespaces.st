@@ -2,7 +2,7 @@ tests
 testChangingNamespaces
 	| document people person |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML.
+	document := XMLDOMParser parse: self addressBookNamespacedXML.
 
 	people := document allElementsNamed: 'person' namespaceURI: 'defaultNS'.
 	(person := people third) prefix: 'ps'.

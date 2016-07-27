@@ -2,7 +2,7 @@ tests
 testNamespacesResolving
 	| document |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML.
+	document := XMLDOMParser parse: self addressBookNamespacedXML.
 	document allElementsDo: [:each |
 		self
 			assert: each defaultNamespace = 'defaultNS';

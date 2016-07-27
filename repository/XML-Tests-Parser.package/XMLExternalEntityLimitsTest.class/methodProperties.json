@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDefaultLimits" : "monty 1/24/2014 07:11",
-		"testExternalEntitiesLimit" : "monty 1/21/2014 22:20",
+		"testDefaultLimits" : "monty 1/24/2014 23:55",
+		"testExternalEntitiesLimit" : "monty 1/25/2014 00:15",
 		"testExternalEntitySizeLimit" : "monty 1/21/2014 22:20",
 		"testExternalSubsetReadLimit" : "monty 1/23/2014 02:43",
 		"testRemoveLimits" : "monty 1/24/2014 07:03",

@@ -15,13 +15,19 @@ testExternalEntitiesLimit
 		clearEntityCache;
 		maxExternalEntities: entityLimit.
 	self
-		shouldnt: [parser parseDocument]
+		shouldnt: [
+			parser
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLLimitException.
 
 	parser := SAXHandler on: xml.
 	parser externalEntityResolver
 		clearEntityCache;
-		maxExternalEntities: entityLimit - 1.
+		maxExternalEntities: 0.
 	self
-		should: [parser parseDocument]
+		should: [
+			parser
+				resolvesExternalEntities: true;
+				parseDocument]
 		raise: XMLLimitException.

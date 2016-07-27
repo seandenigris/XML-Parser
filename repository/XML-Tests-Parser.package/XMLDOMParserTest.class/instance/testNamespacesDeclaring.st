@@ -2,7 +2,7 @@ tests
 testNamespacesDeclaring
 	| document |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML.
+	document := XMLDOMParser parse: self addressBookNamespacedXML.
 	document allElementsDo: [:each |
 		self assert: each hasNamespaces.
 		each == document root

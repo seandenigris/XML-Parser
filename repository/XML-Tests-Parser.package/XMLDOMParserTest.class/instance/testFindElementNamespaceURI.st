@@ -2,7 +2,7 @@ tests
 testFindElementNamespaceURI
 	| document people |
 
-	document := XMLDOMParser parse: self addressBookNamespacesXML.
+	document := XMLDOMParser parse: self addressBookNamespacedXML.
 
 	people := document allElementsNamed: 'person' namespaceURI: 'defaultNS'.
 	self assert:

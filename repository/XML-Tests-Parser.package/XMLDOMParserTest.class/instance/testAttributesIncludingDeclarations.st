@@ -4,7 +4,7 @@ testAttributesIncludingDeclarations
 
 	document :=
 		XMLDOMParser
-			parse: self addressBookNamespacesXML
+			parse: self addressBookNamespacedXML
 			usingNamespaces: false.
 	root := document root.
 	self

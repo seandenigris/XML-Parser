@@ -4,6 +4,7 @@
 	"instance" : {
 		"testAcceptingInvalidPCData" : "monty 12/11/2013 22:58",
 		"testHTMLEntities" : "monty 1/17/2014 01:43",
+		"testHTMLHandler" : "monty 1/25/2014 04:46",
 		"testParsingNonHTMLSections" : "monty 1/16/2014 05:09",
 		"testParsingText" : "monty 12/11/2013 22:00",
 		"testParsingVoidElements" : "monty 12/11/2013 22:03",
