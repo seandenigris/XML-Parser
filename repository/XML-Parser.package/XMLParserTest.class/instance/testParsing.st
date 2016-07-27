@@ -22,3 +22,6 @@ testParsing
 	self assert: (firstPerson attributeAt: #'employee-number') = 'A0000'.
 	self assert: (firstPerson attributeAt: #'family-name') = 'Gates'.
 	self assert: (firstPerson attributeAt: #'first-name') = 'Bob'.
+	
+	self assert: (firstPerson @ #'employee-number') = (firstPerson attributeAt: #'employee-number').
+	self assert: (firstPerson @ #'employee-number') = (firstPerson @ 'employee-number').

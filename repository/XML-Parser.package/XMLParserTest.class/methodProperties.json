@@ -7,5 +7,7 @@
 		"testExampleAddressBook" : "AlexandreBergel 1/29/2009 11:52",
 		"testExampleAddressBookWithDTD" : "AlexandreBergel 1/29/2009 11:53",
 		"testLineEndingsDoNotMatter" : "GeorgeHerolyants 1/8/2010 20:50",
-		"testParsing" : "JAAyer 2/15/2010 12:47",
-		"testParsingCharacters" : "AlexandreBergel 1/29/2009 12:21" } }
+		"testParsing" : "Alexandre Bergel 2/24/2010 11:22",
+		"testParsingCharacters" : "AlexandreBergel 1/29/2009 12:21",
+		"testTokenizerAddressBook" : "Alexandre Bergel 2/24/2010 11:16",
+		"testTokenizerAddressBookWithDTD" : "Alexandre Bergel 2/24/2010 11:16" } }

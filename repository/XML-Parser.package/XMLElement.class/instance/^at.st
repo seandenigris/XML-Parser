@@ -1,4 +1,4 @@
 accessing
-@ aSymbol
+@ aSymbolOrAString
 	"shorthand form"
-	^ self at: aSymbol 
+	^ self at: aSymbolOrAString

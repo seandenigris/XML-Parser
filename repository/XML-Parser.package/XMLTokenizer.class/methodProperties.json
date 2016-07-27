@@ -1,9 +1,5 @@
 {
 	"class" : {
-		"addressBookXML" : "mir 8/14/2000 11:41",
-		"addressBookXMLWithDTD" : "mir 7/12/2006 16:49",
-		"exampleAddressBook" : "mir 8/14/2000 11:41",
-		"exampleAddressBookWithDTD" : "mir 8/14/2000 16:23",
 		"initialize" : "mir 10/31/2007 17:22",
 		"isCharEscape:" : "mir 11/23/2007 15:50",
 		"on:" : "mir 11/16/2000 07:58" },
