@@ -11,11 +11,20 @@ nextEntityValue
 			streamReader next == $&
 				ifTrue: [
 					streamReader peek == $#
-						ifTrue: [self nextCharacterReferenceOnWriteStream]
-						ifFalse: [writeStream nextPut: $&]]
+						ifTrue: [
+							"character refs are replaced in entity values"
+							self nextCharacterReferenceOnWriteStream]
+						ifFalse: [
+							"general entity refs aren't replaced but must be complete"
+							writeStream nextPut: $&.
+							self nextNameOnWriteStream.
+							writeStream nextPut: (self expectNext: $;)]]
 				ifFalse: [
 					nextChar == $%
-						ifTrue: [self nextParameterEntityReferenceOnWriteStream]
+						ifTrue: [
+							self isInExternalSubsetOrExternallyDefinedEntity
+								ifFalse: [self errorInternalEntityValueParameterEntityReference].
+							self nextParameterEntityReferenceOnWriteStream]
 						ifFalse: [writeStream nextPut: nextChar]]].
 	context exitLiteralValue.
 	self expectNext: quote.

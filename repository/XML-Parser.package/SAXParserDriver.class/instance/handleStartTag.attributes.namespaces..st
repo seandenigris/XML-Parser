@@ -1,7 +1,7 @@
 handling
 handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNamespaceDictionary
 	"performance critical method"
-	| prefix totalAttributes namespaceUri currentScope |
+	| prefix totalAttributes namespaceURI currentScope |
 
 	self elementNester startElement: anElementName.
 
@@ -15,7 +15,7 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 					self
 						declareNamespaces: aNamespaceDictionary
 						inScope: currentScope].
-			namespaceUri :=
+			namespaceURI :=
 				currentScope
 					validateAndResolvePrefix: prefix
 					ofElement: anElementName.
@@ -39,7 +39,7 @@ handleStartTag: anElementName attributes: anAttributeDictionary namespaces: aNam
 	self saxHandler
 		startElement: anElementName
 		prefix: prefix
-		uri: (namespaceUri ifNil: [''])
+		uri: (namespaceURI ifNil: [''])
 		localName: (anElementName localNameAfterPrefix: prefix)
 		attributes: anAttributeDictionary.
 

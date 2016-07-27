@@ -5,7 +5,8 @@ handleGeneralEntityDeclaration: aName publicID: aPublicID systemID: aSystemID nd
 			self doctypeDefinition
 				addExternalGeneralEntity: aName
 				resolver: self externalEntityResolver
-				uri: aSystemID
+				publicID: aPublicID
+				systemID: aSystemID
 				from: self currentURI]
 		ifFalse: [
 			self doctypeDefinition

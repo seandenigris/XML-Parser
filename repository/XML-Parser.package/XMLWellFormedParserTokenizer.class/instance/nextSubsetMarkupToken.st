@@ -10,9 +10,8 @@ nextSubsetMarkupToken
 
 	(streamReader peek == $[)
 		ifTrue: [
-			(context isExternalSubsetContext
-				or: [self hasActiveExternalEntity])
-				ifTrue: [^ self nextConditionalSection].
-			self errorInternalSubsetConditionalSection].
+			self isInExternalSubsetOrExternallyDefinedEntity
+				ifFalse: [self errorInternalSubsetConditionalSection].
+			^ self nextConditionalSection].
 
 	self nextSubsetDeclaration.

@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"name:replacement:" : "monty 5/25/2015 23:39",
+		"name:replacement:" : "monty 3/20/2016 23:12",
 		"name:replacement:uri:" : "monty 5/23/2015 03:04",
 		"named:" : "monty 5/23/2015 03:05" },
 	"instance" : {
@@ -8,6 +8,7 @@
 		"constructReplacementOn:" : "monty 11/16/2014 21:00",
 		"hasReplacement" : "monty 4/5/2015 07:55",
 		"isExternal" : "monty 11/16/2013 02:56",
+		"isInternalTo:" : "monty 3/20/2016 23:10",
 		"name" : "monty 11/13/2013 23:45",
 		"printOn:" : "monty 4/25/2015 15:02",
 		"printReferenceOn:" : "monty 4/25/2015 20:46",
