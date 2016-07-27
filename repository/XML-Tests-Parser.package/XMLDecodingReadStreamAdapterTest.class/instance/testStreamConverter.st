@@ -2,7 +2,7 @@ tests
 testStreamConverter
 	| adapter newConverter |
 
-	adapter := self newAdapter.
+	adapter := self newStreamAdapter.
 	self
 		deny: adapter streamConverter isNil;
 		assert: adapter streamConverter class == self streamConverterClass.

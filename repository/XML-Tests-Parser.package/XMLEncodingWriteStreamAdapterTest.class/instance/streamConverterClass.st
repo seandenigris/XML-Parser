@@ -1,3 +1,3 @@
 accessing
 streamConverterClass
-	^ XMLByteStreamConverter
+	^ XMLNullStreamConverter

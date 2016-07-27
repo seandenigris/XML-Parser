@@ -2,7 +2,7 @@ tests
 testCR
 	| adapter |
 
-	adapter := self newAdapter.
+	adapter := self newStreamAdapter.
 	self
 		assert: adapter cr == Character cr;
 		assert: adapter contents = (self contentsFromCharacter: Character cr).

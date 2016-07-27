@@ -1,3 +1,3 @@
 tests
 testIsConvertingStreamAdapter
-	self deny: self newAdapter isConvertingStreamAdapter
+	self deny: self newStreamAdapter isConvertingStreamAdapter

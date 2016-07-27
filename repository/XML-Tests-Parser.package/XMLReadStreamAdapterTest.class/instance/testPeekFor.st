@@ -2,7 +2,7 @@ tests
 testPeekFor
 	| adapter |
 
-	adapter := self newAdapter.
+	adapter := self newStreamAdapter.
 	self outputCollection do: [:each |
 		self
 			deny: (adapter peekFor: #absent);

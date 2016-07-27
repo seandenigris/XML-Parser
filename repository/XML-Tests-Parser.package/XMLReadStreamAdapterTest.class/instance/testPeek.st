@@ -2,7 +2,7 @@ tests
 testPeek
 	| adapter |
 
-	adapter := self newAdapter.
+	adapter := self newStreamAdapter.
 	self outputCollection do: [:each |
 		self assert: adapter peek = each.
 		adapter next].

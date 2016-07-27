@@ -2,16 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"adapterClass" : "monty 2/11/2016 03:27",
 		"inputCollection" : "monty 2/11/2016 22:17",
 		"outputCollection" : "monty 2/11/2016 03:41",
+		"streamAdapterClass" : "monty 3/5/2016 12:38",
 		"streamCollection" : "monty 2/11/2016 22:17",
-		"testAtEnd" : "monty 2/11/2016 03:41",
-		"testNext" : "monty 2/11/2016 05:23",
-		"testPeek" : "monty 2/11/2016 03:41",
-		"testPeekFor" : "monty 2/11/2016 03:41",
-		"testSkip" : "monty 2/11/2016 05:23",
-		"testSkipTo" : "monty 2/11/2016 04:49",
-		"testStreamReadingPortability" : "monty 2/15/2016 09:18",
-		"testUpTo" : "monty 2/11/2016 03:44",
-		"testUpToEnd" : "monty 2/11/2016 03:41" } }
+		"testAtEnd" : "monty 3/5/2016 12:39",
+		"testNext" : "monty 3/5/2016 12:39",
+		"testOnStreamIfBinary" : "monty 3/5/2016 12:38",
+		"testPeek" : "monty 3/5/2016 12:39",
+		"testPeekFor" : "monty 3/5/2016 12:39",
+		"testSkip" : "monty 3/5/2016 12:39",
+		"testSkipTo" : "monty 3/5/2016 12:39",
+		"testStreamReadingPortability" : "monty 3/5/2016 12:39",
+		"testUpTo" : "monty 3/5/2016 12:39",
+		"testUpToEnd" : "monty 3/5/2016 12:39" } }

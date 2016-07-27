@@ -1,5 +1,5 @@
 tests
 testClose
 	self
-		shouldnt: [self newAdapter close]
+		shouldnt: [self newStreamAdapter close]
 		raise: Error

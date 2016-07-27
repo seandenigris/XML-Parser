@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"adapterClass" : "monty 2/10/2016 23:02",
-		"newAdapterOn:" : "monty 2/15/2016 09:20",
-		"streamConverterClass" : "monty 2/11/2016 03:49",
-		"testHasDefaultStreamConverter" : "monty 2/15/2016 09:31",
-		"testIsConvertingStreamAdapter" : "monty 2/10/2016 23:12",
-		"testStreamConverter" : "monty 2/14/2016 03:08" } }
+		"newStreamAdapterOn:" : "monty 3/5/2016 12:39",
+		"streamAdapterClass" : "monty 3/5/2016 12:38",
+		"streamConverterClass" : "monty 3/5/2016 12:24",
+		"testHasDefaultStreamConverter" : "monty 3/5/2016 16:09",
+		"testHasNullStreamConverter" : "monty 3/5/2016 16:09",
+		"testIsConvertingStreamAdapter" : "monty 3/5/2016 12:39",
+		"testOn" : "monty 3/6/2016 08:29",
+		"testStreamConverter" : "monty 3/5/2016 12:39" } }

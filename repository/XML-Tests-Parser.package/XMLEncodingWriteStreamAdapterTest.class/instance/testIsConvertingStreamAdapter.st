@@ -1,3 +1,3 @@
 tests
 testIsConvertingStreamAdapter
-	self assert: self newAdapter isConvertingStreamAdapter
+	self assert: self newStreamAdapter isConvertingStreamAdapter

@@ -1,3 +1,3 @@
 tests
 testIsBinary
-	self deny: self newAdapter isBinary
+	self deny: self newStreamAdapter isBinary

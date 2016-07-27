@@ -2,16 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"adapterClass" : "monty 2/11/2016 19:45",
 		"contentsFromCharacter:" : "monty 2/12/2016 06:00",
 		"inputCollection" : "monty 2/11/2016 22:20",
 		"outputCollection" : "monty 2/11/2016 22:20",
+		"streamAdapterClass" : "monty 3/5/2016 12:38",
 		"streamClass" : "monty 2/11/2016 22:22",
-		"testCR" : "monty 2/12/2016 05:59",
-		"testLF" : "monty 2/12/2016 05:59",
-		"testNextPut" : "monty 2/11/2016 22:22",
-		"testNextPutAll" : "monty 2/11/2016 22:24",
-		"testPosition" : "monty 2/13/2016 23:25",
-		"testReset" : "monty 2/13/2016 23:25",
-		"testSpace" : "monty 2/12/2016 05:59",
-		"testTab" : "monty 2/12/2016 08:56" } }
+		"testCR" : "monty 3/5/2016 12:39",
+		"testLF" : "monty 3/5/2016 12:39",
+		"testNextPut" : "monty 3/5/2016 12:39",
+		"testNextPutAll" : "monty 3/5/2016 12:39",
+		"testPosition" : "monty 3/5/2016 12:39",
+		"testReset" : "monty 3/5/2016 12:39",
+		"testSpace" : "monty 3/5/2016 12:39",
+		"testTab" : "monty 3/5/2016 12:39" } }

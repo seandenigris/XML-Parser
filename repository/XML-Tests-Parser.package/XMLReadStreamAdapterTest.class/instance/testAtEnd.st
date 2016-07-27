@@ -2,7 +2,7 @@ tests
 testAtEnd
 	| adapter |
 
-	adapter := self newAdapter.
+	adapter := self newStreamAdapter.
 	self outputCollection size timesRepeat: [
 		self deny: adapter atEnd.
 		adapter next].

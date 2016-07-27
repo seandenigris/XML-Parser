@@ -3,7 +3,7 @@ testStreamReadingPortability
 	| stream adapter |
 
 	stream := XMLExceptionRaisingReadStream on: self streamCollection.
-	adapter := self newAdapterOn: stream.
+	adapter := self newStreamAdapterOn: stream.
 	self outputCollection do: [:each |
 		self
 			deny: adapter atEnd;

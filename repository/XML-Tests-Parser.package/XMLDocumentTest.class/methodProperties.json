@@ -10,9 +10,11 @@
 		"testEncoding" : "monty 3/24/2015 18:37",
 		"testHasDoctypeDeclaration" : "monty 5/9/2015 03:12",
 		"testHasDoctypeDefinition" : "monty 5/9/2015 03:14",
+		"testHasEncoding" : "monty 3/6/2016 09:14",
+		"testHasRoot" : "monty 3/6/2016 10:04",
 		"testIsDocument" : "monty 11/19/2014 21:45",
 		"testIsStandalone" : "monty 11/22/2014 23:18",
-		"testRoot" : "monty 11/14/2015 05:18",
+		"testRoot" : "monty 3/6/2016 09:32",
 		"testValidate" : "monty 4/7/2015 00:06",
 		"testValidateNoSubset" : "monty 4/7/2015 00:10",
 		"testVersion" : "monty 11/22/2014 23:19" } }

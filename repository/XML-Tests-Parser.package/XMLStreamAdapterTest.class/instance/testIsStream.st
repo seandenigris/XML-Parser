@@ -1,3 +1,3 @@
 tests
 testIsStream
-	self assert: self newAdapter isStream
+	self assert: self newStreamAdapter isStream
