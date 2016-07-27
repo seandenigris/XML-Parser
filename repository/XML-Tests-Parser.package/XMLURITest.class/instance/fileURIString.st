@@ -1,3 +1,3 @@
-strings
+accessing
 fileURIString
 	^ 'file://', self absolute

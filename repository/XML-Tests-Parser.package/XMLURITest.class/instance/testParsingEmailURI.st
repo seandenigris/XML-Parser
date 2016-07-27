@@ -1,14 +1,14 @@
 tests
-testParsingDomainURI
+testParsingEmailURI
 	| uri |
 
-	uri := self domain asXMLURI.
+	uri := self emailURIString asXMLURI.
 	self
 		deny: uri isFileURI;
 		deny: uri isRelative;
 		deny: uri isLocalURI;
-		assert: uri scheme = self scheme;
-		assert: uri userInfo isEmpty;
+		assert: uri scheme = 'mailto';
+		assert: uri userInfo = self userInfo;
 		assert: uri host = self host;
 		assert: uri port isNil;
 		assert: uri path isEmpty;

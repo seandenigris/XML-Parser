@@ -3,4 +3,6 @@
 		 },
 	"instance" : {
 		"listClass" : "monty 1/17/2015 11:48",
-		"listCopyClass" : "monty 1/17/2015 11:50" } }
+		"listCopyClass" : "monty 1/17/2015 11:50",
+		"testSort" : "monty 2/8/2015 23:08",
+		"testSwapWith" : "monty 2/2/2015 00:01" } }

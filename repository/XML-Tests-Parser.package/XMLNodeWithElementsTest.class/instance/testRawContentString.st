@@ -1,3 +1,3 @@
 tests
 testRawContentString
-	self assert: self newNodeWithNodes rawContentString = 'testing onetesting twotesting three'
+	self assert: self newNodeWithElements rawContentString = 'testing onetesting twotesting three'

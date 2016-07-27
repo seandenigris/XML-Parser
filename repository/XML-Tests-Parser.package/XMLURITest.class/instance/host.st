@@ -1,3 +1,3 @@
-strings
+accessing
 host
 	^ self domain copyAfterLast: $/

@@ -1,3 +1,3 @@
-strings
+accessing
 relative
 	^ 'relative/path'

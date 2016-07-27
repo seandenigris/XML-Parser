@@ -8,6 +8,7 @@ testParsingFullURIWithPort
 		deny: uri isRelative;
 		deny: uri isLocalURI;
 		assert: uri scheme = self scheme;
+		assert: uri userInfo isEmpty;
 		assert: uri host = self host;
 		assert: uri port = self port;
 		assert: uri path = self absolute;

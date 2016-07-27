@@ -8,6 +8,7 @@ testParsingSchemelessURI
 		assert: uri isRelative;
 		assert: uri isLocalURI;
 		assert: uri scheme isEmpty;
+		assert: uri userInfo isEmpty;
 		assert: uri host = self host;
 		assert: uri port isNil;
 		assert: uri path = self absolute;

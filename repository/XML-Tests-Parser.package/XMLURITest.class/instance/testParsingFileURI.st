@@ -8,6 +8,7 @@ testParsingFileURI
 		assert: uri isFileURI;
 		assert: uri isLocalURI;
 		assert: uri scheme = 'file';
+		assert: uri userInfo isEmpty;
 		assert: uri host isEmpty;
 		assert: uri port isNil;
 		assert: uri path = self absolute;

@@ -1,3 +1,3 @@
-strings
+accessing
 absolute
 	^ '/absolute/path'

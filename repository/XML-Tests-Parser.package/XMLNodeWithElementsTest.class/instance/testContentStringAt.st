@@ -2,6 +2,6 @@ tests
 testContentStringAt
 	| root |
 
-	root := self newNodeWithNodes firstElement.
+	root := self newNodeWithElements firstElement.
 	root elementsDo: [:each |
 		self assert: (root contentStringAt: each name) = each contentString].

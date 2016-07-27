@@ -27,10 +27,12 @@
 		"testUTF32LittleEndianByteOrderMarkDetection" : "monty 11/20/2014 03:31",
 		"testUTF8ByteOrderMarkDetection" : "monty 11/20/2014 03:31",
 		"testUTF8Characters" : "monty 11/20/2014 03:29",
+		"testWideCharacterNames" : "monty 2/2/2015 03:58",
 		"toUTF16:littleEndian:" : "monty 11/18/2014 21:29",
 		"toUTF32:littleEndian:" : "monty 11/19/2014 05:04",
 		"utf16BigEndianBOM" : "monty 11/12/2014 21:35",
 		"utf16LittleEndianBOM" : "monty 11/12/2014 21:34",
 		"utf32BigEndianBOM" : "monty 11/19/2014 05:51",
 		"utf32LittleEndianBOM" : "monty 11/19/2014 05:51",
-		"utf8BOM" : "monty 11/12/2014 21:35" } }
+		"utf8BOM" : "monty 11/12/2014 21:35",
+		"wideStringFrom:" : "monty 2/2/2015 03:58" } }
